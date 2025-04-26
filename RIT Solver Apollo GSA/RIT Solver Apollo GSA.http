@@ -1,0 +1,6 @@
+@RIT_Solver_Apollo_GSA_HostAddress = http://localhost:5221
+
+GET {{RIT_Solver_Apollo_GSA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,26 @@
+Licencia de Software Gratuito
+
+1. Concesión de Uso
+El titular de los derechos de autor (en adelante, "Titular") otorga permiso para usar esta aplicación de software (en adelante, "Software") de manera gratuita para cualquier propósito personal y no comercial.
+
+2. Distribución
+Se permite la distribución de copias exactas del Software, siempre y cuando este aviso de licencia se incluya con todas las copias distribuidas.
+
+3. No Comercial
+No se permite el uso del Software para fines comerciales sin el consentimiento previo por escrito del Titular. Si deseas utilizar el Software para fines comerciales, por favor contacta al Titular para obtener una licencia comercial.
+
+4. Prohibición de Modificación
+No se permite la modificación, alteración o creación de trabajos derivados del Software. El Software debe ser distribuido en su forma original.
+
+5. Limitación de Responsabilidad
+El Software se proporciona "tal cual", sin garantías de ningún tipo, ya sean expresas o implícitas, incluyendo, pero no limitándose a, las garantías implícitas de comerciabilidad y adecuación para un propósito particular. En ningún caso el Titular será responsable por ningún daño especial, directo, indirecto, incidental o consecuente, ni por ninguna pérdida de beneficios, que surja de o en conexión con el uso o rendimiento del Software.
+
+6. Aceptación de Términos
+El uso del Software implica la aceptación de estos términos. Si no estás de acuerdo con estos términos, no uses el Software.
+
+7. Actualizaciones y Soporte
+El Titular no está obligado a proporcionar actualizaciones, mejoras o soporte técnico para el Software.
+
+Información del Titular
+- Nombre del Titular: Arturo Venegas IDC 2024
+- Contacto: soporte.hermosillo@ferromex.mx

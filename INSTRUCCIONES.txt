@@ -1,0 +1,35 @@
+================= [ PASOS PARA INSTALACION ] =================
+
+1.- Ejecutar el archivo de setup (SETUP_1017.exe)
+2.- Siguiente, siguiente y siguiente hasta finalizar
+3.- Ejecutar el programa RIT Solver for IDC 2022"
+4.- Llenar los campos que se solicitan
+5.- En el campo "Ruta destino para RIT" se puede elegir cualquier carpeta en la que
+    se desea se guarde una copia de los RIT en PDF. Por defecto se almacena en
+    "Documentos" dentro de la carpeta "RITs" (se crea en automatico).
+7.- Click en continuar. Se recomienda prestar atencion al tour inicial (es un gif)
+
+
+================= [ NOTAS ] =================
+* La pestaña "Subir RIT" contiene un boton llamado "Ejecutar Macro" la cual su funcion es
+  llenar en automatico los campos del Forms en base a lo ingresado en la pestaña "Llenar RIT".
+  Una vez llenado en automatico solo hay que seleccionar el archivo RIT PDF a subir, y listo.
+* En la pastaña "Subir RIT" se debe ingresar con el correo corporativo de cada IDC
+
+
+================= [ PROXIMAS NOVEDADES ] =================
+* Resolver bugs.
+* Arreglos visuales.
+* Perfiles de datos
+  Especialmente para mantenimientos, podremos guardar perfiles de informacion para evitar
+  Llenar las mismas acciones tomadas en varias ocasiones manualmente.
+
+**** Centro de Descargas - Nuestra Google Play de aplicaciones FXE ****
+Un centro de descargas de software de aplicaciones como MIIT CAT, SAP, mCrew, SOP, Office, 
+drivers, etc. actualizados de forma constante a su ultima version (versiones anteriores tambien 
+estaran disponibles para la descarga). 
+
+En adicion al centro de descarga se planea crear un instalador para cada una de las aplicaciones
+que se deben realizar pasos manuales para sus instalacion. Ejemplo claro: EL MIIT CAT.
+Con esto solo al ejecutar un setup la aplicacion queda instalada al 100%
+

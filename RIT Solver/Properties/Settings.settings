@@ -1,0 +1,180 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RIT_Solver.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EmailUsuarioIDC" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EmailPasswordIDC" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NoDeReporte" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Refacciones" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NombreIDC" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LocalidadIDC" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ProyectoIDC" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FotoIDCPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Cliente" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Direccion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CentroDeServicios" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EmailDestinoRefaccionesDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LiderDeProyecto" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RITFormPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RITFormPathDestiny" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FIRST_INITIALIZE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FirmaIDCPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UsuarioDeRedIDC" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SYS_VERSION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2.5.2.4</Value>
+    </Setting>
+    <Setting Name="SYS_ASSEMBLY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24012024gAMMA</Value>
+    </Setting>
+    <Setting Name="SYS_LAST_UPDATE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">G</Value>
+    </Setting>
+    <Setting Name="SERVER_ROUTE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.10.129.175</Value>
+    </Setting>
+    <Setting Name="SYSDATA_GUARDARRITENPDF" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EmailDistribuidorToner" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ferromex2@scgenesis.mx</Value>
+    </Setting>
+    <Setting Name="SYSDATA_UPDATES_ACTIVATE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SYSDATA_INVENTORY_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SYSDATA_FIRMA_HABILITADA" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SYSDATA_BETA_UPDATES" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SYSDATA_EXAMINAR_TONER_AUTOMATICO" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SYSDATA_TEMA_APLICADO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RIT Solver Theme (Default)</Value>
+    </Setting>
+    <Setting Name="SYS_CACHE_INVENTORY_LISTAUSUARIOS" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ActaResponsivaPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SYSDATA_GUARDARRESGUARDOPDF" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FIRST_INITIALIZE_INVENTORY" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SYSDATA_GUARDARSIEMRPEINVENTARIO" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SYSDATA_OPEN_INVENTORY_ALWAYS_MAXIMIZE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RITCounter" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">100100</Value>
+    </Setting>
+    <Setting Name="SYSDATA_DESCARGAR_E_INSTALAR_AUTOMATICAMENTE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SYSDATA_CREAR_PROYECTO_BLANCO_AL_INICIAR" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SYSDATA_RECORDAR_ULTIMA_SESION" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SYSDATA_LOCALIDADES" Type="System.Collections.Specialized.ListDictionary" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SYSDATA_LOCALIDAD_DEFAULT" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SYSDATA_URL_FORMS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://forms.office.com/Pages/ResponsePage.aspx?id=dNF36JwJkUSX2NZVp8az1BdNDZCBAPJHq77MIGUA38VUN0JXNUxNNkNSNVQxNlZHUDU3MkxHQUJQRS4u</Value>
+    </Setting>
+    <Setting Name="SYSDATA_URL_COMPUSOF" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://accounts.zoho.com/signin?servicename=SDPOnDemand&amp;hide_title=true&amp;hideyahoosignin=true&amp;hidefbconnect=true&amp;hide_secure=true&amp;serviceurl=https%3A%2F%2Fsd.compusofmexico.com%2Fapp%2Fitdesk%2FHomePage.do&amp;signupurl=https://sd.compusofmexico.com/AccountCreation.do&amp;portal_id=142098036&amp;hide_signup=true</Value>
+    </Setting>
+    <Setting Name="SYSDATA_URL_SERVICEDESK" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://gmxtsas.mx:8080/HomePage.do?view_type=my_view</Value>
+    </Setting>
+    <Setting Name="SYSDATA_URL_ENDPOINT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://endpointcentral.manageengine.com/webclient#/uems/home/smart-advisor</Value>
+    </Setting>
+    <Setting Name="THEME_BACKGROUND_COLOR" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="THEME_SECONDARY_COLOR" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="THEME_TERTIARY_COLOR" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="THEME_FOURSOME_COLOR" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="THEME_TEXT_PRIMARY" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="THEME_TEXT_SECONDARY" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CAN_CONTINUE_QUEST_INVENTORYPATH" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SYSDATA_AutoSelectRecentSincModel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SYSDATA_HabilitarMetodoDeImpresionSecundarioAutomaticamente" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SYSDATA_MetodoDeImpresionPorDefecto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WebView2</Value>
+    </Setting>
+    <Setting Name="SYSDATA_ArchivosRITRecientes" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SYSDATA_DataBasePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Publico\rit_solver_server\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
