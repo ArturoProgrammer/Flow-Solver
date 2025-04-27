@@ -11,7 +11,7 @@ using System.IO;
 using CustomMessageBox;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     internal class Beta_Updates
     {
@@ -46,7 +46,7 @@ namespace RIT_Solver
                     string path = $@"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\BETA_VERSION.txt";
 
                     WebClient wc = new WebClient();
-                    wc.DownloadFile(new Uri($@"\\{ServerRoute}\Publico\rit_solver_server\BETA_VERSION.txt"), path);
+                    wc.DownloadFile(new Uri($@"\\{ServerRoute}\Publico\Flow_Solver_server\BETA_VERSION.txt"), path);
 
                     StreamReader sr = new StreamReader(path);
                     ser_ver = File.ReadLines(path).Last();
@@ -159,7 +159,7 @@ namespace RIT_Solver
                     WebClient client = new WebClient ();
 
                     client.DownloadFileCompleted += client_DownloadFileCompleted;
-                    client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\rit_solver_server\SETUP_BETA_UPDATER.exe"), InstallerRoute);
+                    client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\Flow_Solver_server\SETUP_BETA_UPDATER.exe"), InstallerRoute);
                 
                 } catch (Exception ex)
                 {

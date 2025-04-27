@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class select_machine
     {
@@ -117,7 +117,7 @@
             // btnAceptar
             // 
             this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAceptar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnAceptar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAceptar.Location = new System.Drawing.Point(564, 239);
             this.btnAceptar.Name = "btnAceptar";
@@ -131,7 +131,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(654, 239);
             this.btnCancelar.Name = "btnCancelar";

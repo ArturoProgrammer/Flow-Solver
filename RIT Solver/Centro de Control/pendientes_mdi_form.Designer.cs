@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class pendientes_mdi_form
     {
@@ -111,7 +111,7 @@
             // 
             // guardarToolStripMenuItem
             // 
-            this.guardarToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.save2;
+            this.guardarToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.save2;
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
@@ -125,7 +125,7 @@
             // 
             // cerrarToolStripMenuItem
             // 
-            this.cerrarToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.cerrar;
+            this.cerrarToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.cerrar;
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
             this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
@@ -145,7 +145,7 @@
             // 
             // añadirPendienteToolStripMenuItem
             // 
-            this.añadirPendienteToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.add;
+            this.añadirPendienteToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.add;
             this.añadirPendienteToolStripMenuItem.Name = "añadirPendienteToolStripMenuItem";
             this.añadirPendienteToolStripMenuItem.Size = new System.Drawing.Size(324, 26);
             this.añadirPendienteToolStripMenuItem.Text = "Añadir nuevo pendiente";
@@ -153,7 +153,7 @@
             // 
             // eliminarElPendienteSelecciondoToolStripMenuItem
             // 
-            this.eliminarElPendienteSelecciondoToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.eliminate_64;
+            this.eliminarElPendienteSelecciondoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.eliminate_64;
             this.eliminarElPendienteSelecciondoToolStripMenuItem.Name = "eliminarElPendienteSelecciondoToolStripMenuItem";
             this.eliminarElPendienteSelecciondoToolStripMenuItem.Size = new System.Drawing.Size(324, 26);
             this.eliminarElPendienteSelecciondoToolStripMenuItem.Text = "Eliminar el pendiente seleccionado";
@@ -162,7 +162,7 @@
             // editarPendienteSeleccionadoToolStripMenuItem
             // 
             this.editarPendienteSeleccionadoToolStripMenuItem.Enabled = false;
-            this.editarPendienteSeleccionadoToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.edit3;
+            this.editarPendienteSeleccionadoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.edit3;
             this.editarPendienteSeleccionadoToolStripMenuItem.Name = "editarPendienteSeleccionadoToolStripMenuItem";
             this.editarPendienteSeleccionadoToolStripMenuItem.Size = new System.Drawing.Size(324, 26);
             this.editarPendienteSeleccionadoToolStripMenuItem.Text = "Editar pendiente seleccionado";
@@ -176,7 +176,7 @@
             // marcarPendienteTerminadoToolStripMenuItem
             // 
             this.marcarPendienteTerminadoToolStripMenuItem.Enabled = false;
-            this.marcarPendienteTerminadoToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.check;
+            this.marcarPendienteTerminadoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.check;
             this.marcarPendienteTerminadoToolStripMenuItem.Name = "marcarPendienteTerminadoToolStripMenuItem";
             this.marcarPendienteTerminadoToolStripMenuItem.Size = new System.Drawing.Size(324, 26);
             this.marcarPendienteTerminadoToolStripMenuItem.Text = "Marcar pendiente terminado";
@@ -207,7 +207,7 @@
             // 
             // toolStrpBtnGuardar
             // 
-            this.toolStrpBtnGuardar.Image = global::RIT_Solver.Properties.Resources.save2;
+            this.toolStrpBtnGuardar.Image = global::Flow_Solver.Properties.Resources.save2;
             this.toolStrpBtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnGuardar.Name = "toolStrpBtnGuardar";
             this.toolStrpBtnGuardar.Size = new System.Drawing.Size(66, 44);
@@ -223,7 +223,7 @@
             // nuevoPendiente
             // 
             this.nuevoPendiente.Enabled = false;
-            this.nuevoPendiente.Image = global::RIT_Solver.Properties.Resources.add;
+            this.nuevoPendiente.Image = global::Flow_Solver.Properties.Resources.add;
             this.nuevoPendiente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.nuevoPendiente.Name = "nuevoPendiente";
             this.nuevoPendiente.Size = new System.Drawing.Size(57, 44);
@@ -234,7 +234,7 @@
             // eliminarPendienteSeleccionado
             // 
             this.eliminarPendienteSeleccionado.Enabled = false;
-            this.eliminarPendienteSeleccionado.Image = global::RIT_Solver.Properties.Resources.eliminate_64;
+            this.eliminarPendienteSeleccionado.Image = global::Flow_Solver.Properties.Resources.eliminate_64;
             this.eliminarPendienteSeleccionado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.eliminarPendienteSeleccionado.Name = "eliminarPendienteSeleccionado";
             this.eliminarPendienteSeleccionado.Size = new System.Drawing.Size(67, 44);
@@ -250,7 +250,7 @@
             // toolStripButton6
             // 
             this.toolStripButton6.Enabled = false;
-            this.toolStripButton6.Image = global::RIT_Solver.Properties.Resources.check;
+            this.toolStripButton6.Image = global::Flow_Solver.Properties.Resources.check;
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Size = new System.Drawing.Size(44, 44);
@@ -269,7 +269,7 @@
             this.exportarComoExcelToolStripMenuItem,
             this.exporarComoPDFToolStripMenuItem});
             this.toolStripSplitButton1.Enabled = false;
-            this.toolStripSplitButton1.Image = global::RIT_Solver.Properties.Resources.exportar_16;
+            this.toolStripSplitButton1.Image = global::Flow_Solver.Properties.Resources.exportar_16;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
             this.toolStripSplitButton1.Size = new System.Drawing.Size(79, 44);
@@ -279,14 +279,14 @@
             // exportarComoExcelToolStripMenuItem
             // 
             this.exportarComoExcelToolStripMenuItem.Enabled = false;
-            this.exportarComoExcelToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.xls_file_16;
+            this.exportarComoExcelToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.xls_file_16;
             this.exportarComoExcelToolStripMenuItem.Name = "exportarComoExcelToolStripMenuItem";
             this.exportarComoExcelToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.exportarComoExcelToolStripMenuItem.Text = "Exportar como Excel";
             // 
             // exporarComoPDFToolStripMenuItem
             // 
-            this.exporarComoPDFToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.pdf_16;
+            this.exporarComoPDFToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.pdf_16;
             this.exporarComoPDFToolStripMenuItem.Name = "exporarComoPDFToolStripMenuItem";
             this.exporarComoPDFToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
             this.exporarComoPDFToolStripMenuItem.Text = "Exporar como PDF";
@@ -482,7 +482,7 @@
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Image = global::RIT_Solver.Properties.Resources.close1_32;
+            this.toolStripButton1.Image = global::Flow_Solver.Properties.Resources.close1_32;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(53, 44);
@@ -497,7 +497,7 @@
             // 
             // toolMinimizarReporte
             // 
-            this.toolMinimizarReporte.Image = global::RIT_Solver.Properties.Resources.minimize_window_32;
+            this.toolMinimizarReporte.Image = global::Flow_Solver.Properties.Resources.minimize_window_32;
             this.toolMinimizarReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolMinimizarReporte.Name = "toolMinimizarReporte";
             this.toolMinimizarReporte.Size = new System.Drawing.Size(79, 44);

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 using CustomMessageBox;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class TaskLoadingForm : Form
     {

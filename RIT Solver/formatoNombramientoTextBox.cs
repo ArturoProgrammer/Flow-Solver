@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class formatoNombramientoTextBox : UserControl
     {

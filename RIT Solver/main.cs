@@ -1,5 +1,4 @@
-﻿using CefSharp;                     // LIBRERIA ENCARGADA DE NAVEGADORES CHROMIUM
-using CustomMessageBox;
+﻿using CustomMessageBox;
 using DocumentFormat.OpenXml.Drawing.Diagrams;
 using iTextSharp.text.pdf.codec;
 
@@ -7,7 +6,7 @@ using iTextSharp.text.pdf.codec;
 //using DocumentFormat.OpenXml.Wordprocessing;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json.Linq;
-using RIT_Solver.Centro_de_Control;
+using Flow_Solver.Centro_de_Control;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,10 +17,9 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using Windows.Security.EnterpriseData;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class main : Form
     {
@@ -663,67 +661,6 @@ namespace RIT_Solver
             // Lanzamos pantalla inicial para inciar la carga
             //this.backgroundWorker_StartScreen.RunWorkerAsync();
 
-            #region CONFIGURACION DE LA CACHE Y AJUSTES DE CEFSHARP
-            string cache_dir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\CEF";
-            CEF_CACHE_PATH = cache_dir;
-
-            // PROCESO DE PURGA DE COOKIES Y CACHE - FUERA DE SERVICIO
-            //if (WebCEFSharp_Config.Default.CEFDATA_BORRAR_DATOS_AUTOMATICAMENTE)
-            //{
-            //    CommonMethodsLibrary.DeleteCacheAndCookies();
-            //}
-            //RJMessageBox.Show(cache_dir);
-            Cef.Initialize(new CefSharp.WinForms.CefSettings
-            {
-                WindowlessRenderingEnabled = true,
-                CachePath = cache_dir,
-                PersistSessionCookies = true,
-                LocalesDirPath = Application.StartupPath + @"\locales",
-                Locale = WebCEFSharp_Config.Default.CEFDATA_DEFAULT_LANGUAGE,
-            });
-
-            CefSharp.WinForms.CefSettings settings = new CefSharp.WinForms.CefSettings();
-            settings.CachePath = cache_dir;
-            //settings.CefCommandLineArgs.Add("persist_session_cookies", "1");
-
-            settings.PackLoadingDisabled = true;
-
-
-            /** Configuracion del lenguaje **/
-            settings.LocalesDirPath = Application.StartupPath + @"\locales";
-            settings.Locale = "es"; //WebCEFSharp_Config.Default.CEFDATA_DEFAULT_LANGUAGE;
-                                    //settings.AcceptLanguageList = "es";
-                                    //settings.CefCommandLineArgs.Add("lang", "es");
-
-            //settings.LogFile = Application.StartupPath + "CEFSHARP_LOG_DEBUG.log";
-
-
-            /*
-            var chrome = new CefSharp.WinForms.ChromiumWebBrowser();
-            chrome.Name = "chromiumWebBrowserRITForms";
-            this.tabPage6.Controls.Add(chrome);
-            chrome.Dock = DockStyle.Fill;
-            chrome.LoadUrl(URL_FORMS);
-            */
-
-            /*
-            if (!Cef.IsInitialized)
-            {
-                var settings = new CefSharp.WinForms.CefSettings();
-
-                Cef.Initialize(new CefSharp.WinForms.CefSettings
-                {
-                    CachePath = cache_dir,
-                    PersistSessionCookies = true,
-                });
-
-                settings.CefCommandLineArgs.Add("disable-extensions");
-                settings.CefCommandLineArgs.Add("disable-gpu");
-                settings.CefCommandLineArgs.Add("persist_session_cookies", "1");
-                settings.CachePath = cache_dir;
-                //Cef.Initialize(settings);
-            }*/
-            #endregion
 
             this.TopMost = true;
             this.Focus();
@@ -750,17 +687,9 @@ namespace RIT_Solver
             this.webView_CompusofForms.EnsureCoreWebView2Async(null);
             this.URL_RIT_Forms_Label.Text = URL_FORMS_ACTUAL;
 
-            // SAS FXE
-            chromiumWebBrowserSASGMXT.LoadUrl(URL_GMXT_SAS_ACTUAL);
-            this.URL_GMXT_SAS_Label.Text = URL_GMXT_SAS_ACTUAL;
-
             // SAS COMPUSOF
             this.webView_ServiceDeskCompusof.EnsureCoreWebView2Async(null);
             this.URL_SDP_Compusof_Label.Text = URL_COMPUSOF_SAS_ACTUAL;
-
-            // MANAGE ENGINE ENDPOINT
-            chromiumWebBrowserEndPointCentral.LoadUrl(URL_ENDPOINT_ACTUAL);
-            this.URL_EndPoint_Central_Label.Text = URL_ENDPOINT_ACTUAL;
 
             /*
             Cef.Initialize(new cef);
@@ -951,7 +880,6 @@ namespace RIT_Solver
             {
                 /*  EN CASO DE QUE SE ESTE TRABAJANDO EN LA TABPAGE4 (MESA DE GMXT)*/
                 /* CREAR MACRO PARA ACCESO AUTOMATICO A SAS GMXT */
-                chromiumWebBrowserSASGMXT.Focus();
                 SAS_Methods.EnterAccessSAS();
             }
             else if (tabControl_Pages.SelectedTab == tabControl_Pages.TabPages["tabServiceDeskCompusof"])
@@ -1296,7 +1224,6 @@ namespace RIT_Solver
                 // CONTEXTO: IMPORTAR DATOS DEL FORM AL SAS
 
                 #region CREAR REPORTE EN SAS CON DATOS DE FORM PRINCIPAL = F/ND
-                chromiumWebBrowserSASGMXT.Focus();
 
                 project_selector_form frm = new project_selector_form(this, project_selector_form.ProjectSelectorSenders.MAKE_TICKET);
                 frm.ShowDialog();
@@ -1399,12 +1326,7 @@ namespace RIT_Solver
         private void recargarSASToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            if (chromiumWebBrowserSASGMXT.IsBrowserInitialized == true)
-            {
-                CommonMethodsLibrary.OutMessage("out", this.Name, $"SE RECARGO LA URL '{URL_GMXT_SAS_ACTUAL}' DE 'chromiumWebBrowserSASGMXT'", "OKA");
-
-                chromiumWebBrowserSASGMXT.Reload();
-            }
+            
         }
 
         private void recargarFormsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1420,12 +1342,7 @@ namespace RIT_Solver
         // SE RENOMBRO EL CONTROL DEL EVENTO DE SERVICEDESK COMPUSOF => ENDPOINTCENTRAL
         private void recargarManageDeskCompusofToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (chromiumWebBrowserEndPointCentral.IsBrowserInitialized == true)
-            {
-                CommonMethodsLibrary.OutMessage("out", this.Name, $"SE RECARGO LA URL '{URL_ENDPOINT_ACTUAL}' DE 'chromiumWebBrowserCompusofServiceDesk'", "OKA");
-
-                chromiumWebBrowserEndPointCentral.Reload();
-            }
+            
         }
 
         // SE RENOMBRO EL CONTROL DEL EVENTO DE ENDPOINTCENTRAL => SERVICEDESK COMPUSOF
@@ -2012,24 +1929,6 @@ namespace RIT_Solver
             this.URL_RIT_Forms_Label.Text = e.Uri;
         }
 
-        private void chromiumWebBrowserSASGMXT_AddressChanged(object sender, AddressChangedEventArgs e)
-        {
-            try
-            {
-                this.URL_GMXT_SAS_Label.Text = e.Address.ToString();
-            }
-            catch { }
-        }
-
-        private void chromiumWebBrowserCompusofServiceDesk_AddressChanged(object sender, AddressChangedEventArgs e)
-        {
-            try
-            {
-                this.URL_EndPoint_Central_Label.Text = e.Address.ToString();
-            }
-            catch { }
-        }
-
         private void webView_ManageEngineEndpointCentral_NavigationStarting(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs e)
         {
             this.URL_SDP_Compusof_Label.Text = e.Uri;
@@ -2137,16 +2036,7 @@ namespace RIT_Solver
 
         private void btnLimpiarCampos_Click(object sender, EventArgs e)
         {
-            if (tabControl_Pages.SelectedTab == tabControl_Pages.TabPages["tabServiceDeskGMXT"])
-            {
-                // En caso de estar en la pestaña del SDP GMXT
-                #region CODIGO - RESOLUCION AUTOMATICA DE REPORTE
-                chromiumWebBrowserSASGMXT.Focus();
-
-                project_selector_form frm = new project_selector_form(this, project_selector_form.ProjectSelectorSenders.SOLVE_SAS_TICKET);
-                frm.ShowDialog();
-                #endregion
-            }
+            
         }
 
         void _LaunchPushNotification()

@@ -14,7 +14,7 @@ using System.Data;
 using Org.BouncyCastle.Asn1.X509;
 using System.Runtime.InteropServices;
 
-namespace RIT_Solver.Centro_de_Control
+namespace Flow_Solver.Centro_de_Control
 {
     internal class InformesActividades
     {

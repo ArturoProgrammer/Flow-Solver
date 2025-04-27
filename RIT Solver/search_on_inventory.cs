@@ -12,10 +12,10 @@ using System.IO;
 using SpreadsheetLight;
 
 using CustomMessageBox;
-using RIT_Solver.Centro_de_Control;
+using Flow_Solver.Centro_de_Control;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class search_on_inventory : Form
     {

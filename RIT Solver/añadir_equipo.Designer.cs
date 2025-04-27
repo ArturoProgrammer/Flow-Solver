@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class añadir_equipo
     {
@@ -151,7 +151,7 @@
             // 
             // btnSeleccionarModeloVinculado
             // 
-            this.btnSeleccionarModeloVinculado.BackgroundImage = global::RIT_Solver.Properties.Resources.selection;
+            this.btnSeleccionarModeloVinculado.BackgroundImage = global::Flow_Solver.Properties.Resources.selection;
             this.btnSeleccionarModeloVinculado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSeleccionarModeloVinculado.Location = new System.Drawing.Point(248, 169);
             this.btnSeleccionarModeloVinculado.Margin = new System.Windows.Forms.Padding(4);
@@ -163,7 +163,7 @@
             // 
             // btnVincularModelo
             // 
-            this.btnVincularModelo.Image = global::RIT_Solver.Properties.Resources.database_16;
+            this.btnVincularModelo.Image = global::Flow_Solver.Properties.Resources.database_16;
             this.btnVincularModelo.Location = new System.Drawing.Point(204, 169);
             this.btnVincularModelo.Margin = new System.Windows.Forms.Padding(4);
             this.btnVincularModelo.Name = "btnVincularModelo";
@@ -232,7 +232,7 @@
             // 
             // btnNuevoUsuario
             // 
-            this.btnNuevoUsuario.Image = global::RIT_Solver.Properties.Resources.plus_16;
+            this.btnNuevoUsuario.Image = global::Flow_Solver.Properties.Resources.plus_16;
             this.btnNuevoUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoUsuario.Location = new System.Drawing.Point(12, 71);
             this.btnNuevoUsuario.Margin = new System.Windows.Forms.Padding(4);
@@ -246,7 +246,7 @@
             // 
             // btnRecargarInventario
             // 
-            this.btnRecargarInventario.Image = global::RIT_Solver.Properties.Resources.reload_16;
+            this.btnRecargarInventario.Image = global::Flow_Solver.Properties.Resources.reload_16;
             this.btnRecargarInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRecargarInventario.Location = new System.Drawing.Point(169, 71);
             this.btnRecargarInventario.Margin = new System.Windows.Forms.Padding(4);
@@ -260,7 +260,7 @@
             // 
             // btnGenerarResguardo
             // 
-            this.btnGenerarResguardo.Image = global::RIT_Solver.Properties.Resources.pencil_16;
+            this.btnGenerarResguardo.Image = global::Flow_Solver.Properties.Resources.pencil_16;
             this.btnGenerarResguardo.Location = new System.Drawing.Point(296, 416);
             this.btnGenerarResguardo.Margin = new System.Windows.Forms.Padding(4);
             this.btnGenerarResguardo.Name = "btnGenerarResguardo";
@@ -722,7 +722,7 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
             this.errorProvider1.SetIconAlignment(this.btnGuardar, System.Windows.Forms.ErrorIconAlignment.BottomLeft);
-            this.btnGuardar.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnGuardar.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnGuardar.Location = new System.Drawing.Point(485, 470);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
@@ -747,7 +747,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(312, 470);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
@@ -761,7 +761,7 @@
             // 
             // btnCargarDesdeArchivo
             // 
-            this.btnCargarDesdeArchivo.Image = global::RIT_Solver.Properties.Resources.importar_16;
+            this.btnCargarDesdeArchivo.Image = global::Flow_Solver.Properties.Resources.importar_16;
             this.btnCargarDesdeArchivo.Location = new System.Drawing.Point(476, 14);
             this.btnCargarDesdeArchivo.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargarDesdeArchivo.Name = "btnCargarDesdeArchivo";
@@ -775,7 +775,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.computer;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.computer;
             this.pictureBox1.Location = new System.Drawing.Point(16, 14);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";

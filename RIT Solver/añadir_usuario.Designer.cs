@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class añadir_usuario
     {
@@ -232,7 +232,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(146, 304);
             this.btnCancelar.Name = "btnCancelar";
@@ -245,7 +245,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnGuardar.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.Location = new System.Drawing.Point(252, 304);
             this.btnGuardar.Name = "btnGuardar";
@@ -258,7 +258,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.businessman;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.businessman;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 110);

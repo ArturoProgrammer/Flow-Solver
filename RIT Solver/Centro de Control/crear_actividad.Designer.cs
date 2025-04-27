@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class crear_actividad
     {
@@ -142,7 +142,7 @@
             // 
             // btnExaminarPath
             // 
-            this.btnExaminarPath.Image = global::RIT_Solver.Properties.Resources.buscar_16;
+            this.btnExaminarPath.Image = global::Flow_Solver.Properties.Resources.buscar_16;
             this.btnExaminarPath.Location = new System.Drawing.Point(531, 17);
             this.btnExaminarPath.Margin = new System.Windows.Forms.Padding(2);
             this.btnExaminarPath.Name = "btnExaminarPath";
@@ -496,7 +496,7 @@
             // 
             // btnAñadirEquipoManualmente
             // 
-            this.btnAñadirEquipoManualmente.Image = global::RIT_Solver.Properties.Resources.plus_16;
+            this.btnAñadirEquipoManualmente.Image = global::Flow_Solver.Properties.Resources.plus_16;
             this.btnAñadirEquipoManualmente.Location = new System.Drawing.Point(6, 138);
             this.btnAñadirEquipoManualmente.Name = "btnAñadirEquipoManualmente";
             this.btnAñadirEquipoManualmente.Size = new System.Drawing.Size(177, 33);
@@ -652,7 +652,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.lista_de_verificacion;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.lista_de_verificacion;
             this.pictureBox1.Location = new System.Drawing.Point(13, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(126, 108);
@@ -696,7 +696,7 @@
             // 
             // btnCrear
             // 
-            this.btnCrear.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnCrear.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnCrear.Location = new System.Drawing.Point(526, 3);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(115, 26);
@@ -709,7 +709,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(648, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(115, 26);

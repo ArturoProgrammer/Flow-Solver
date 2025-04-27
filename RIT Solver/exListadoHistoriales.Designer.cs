@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class exListadoHistoriales
     {
@@ -115,7 +115,7 @@
             // btnCrearHistorial
             // 
             this.btnCrearHistorial.Enabled = false;
-            this.btnCrearHistorial.Image = global::RIT_Solver.Properties.Resources.add_64;
+            this.btnCrearHistorial.Image = global::Flow_Solver.Properties.Resources.add_64;
             this.btnCrearHistorial.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCrearHistorial.Name = "btnCrearHistorial";
             this.btnCrearHistorial.Size = new System.Drawing.Size(48, 44);
@@ -125,7 +125,7 @@
             // 
             // btnVerHistorial
             // 
-            this.btnVerHistorial.Image = global::RIT_Solver.Properties.Resources.check1_16;
+            this.btnVerHistorial.Image = global::Flow_Solver.Properties.Resources.check1_16;
             this.btnVerHistorial.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnVerHistorial.Name = "btnVerHistorial";
             this.btnVerHistorial.Size = new System.Drawing.Size(34, 44);
@@ -137,7 +137,7 @@
             // btnEditarHistorial
             // 
             this.btnEditarHistorial.Enabled = false;
-            this.btnEditarHistorial.Image = global::RIT_Solver.Properties.Resources.edit1_64;
+            this.btnEditarHistorial.Image = global::Flow_Solver.Properties.Resources.edit1_64;
             this.btnEditarHistorial.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditarHistorial.Name = "btnEditarHistorial";
             this.btnEditarHistorial.Size = new System.Drawing.Size(52, 44);
@@ -147,7 +147,7 @@
             // 
             // btnEliminarHistorial
             // 
-            this.btnEliminarHistorial.Image = global::RIT_Solver.Properties.Resources.eliminate_64;
+            this.btnEliminarHistorial.Image = global::Flow_Solver.Properties.Resources.eliminate_64;
             this.btnEliminarHistorial.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEliminarHistorial.Name = "btnEliminarHistorial";
             this.btnEliminarHistorial.Size = new System.Drawing.Size(67, 44);
@@ -163,7 +163,7 @@
             // 
             // btnExportarHistorial
             // 
-            this.btnExportarHistorial.Image = global::RIT_Solver.Properties.Resources.exportar_16;
+            this.btnExportarHistorial.Image = global::Flow_Solver.Properties.Resources.exportar_16;
             this.btnExportarHistorial.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExportarHistorial.Name = "btnExportarHistorial";
             this.btnExportarHistorial.Size = new System.Drawing.Size(69, 44);
@@ -174,7 +174,7 @@
             // 
             // btnFusionarHistoriales
             // 
-            this.btnFusionarHistoriales.Image = global::RIT_Solver.Properties.Resources.merger_16;
+            this.btnFusionarHistoriales.Image = global::Flow_Solver.Properties.Resources.merger_16;
             this.btnFusionarHistoriales.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnFusionarHistoriales.Name = "btnFusionarHistoriales";
             this.btnFusionarHistoriales.Size = new System.Drawing.Size(68, 44);
@@ -189,7 +189,7 @@
             // 
             // toolStripButton2
             // 
-            this.toolStripButton2.Image = global::RIT_Solver.Properties.Resources.help_64;
+            this.toolStripButton2.Image = global::Flow_Solver.Properties.Resources.help_64;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(55, 44);

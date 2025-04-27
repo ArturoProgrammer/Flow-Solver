@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class datos_equipo
     {
@@ -974,7 +974,7 @@
             // 
             // btnGuardarDatosDeAccesorios
             // 
-            this.btnGuardarDatosDeAccesorios.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnGuardarDatosDeAccesorios.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnGuardarDatosDeAccesorios.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardarDatosDeAccesorios.Location = new System.Drawing.Point(257, 9);
             this.btnGuardarDatosDeAccesorios.Name = "btnGuardarDatosDeAccesorios";
@@ -989,7 +989,7 @@
             // 
             // button1
             // 
-            this.button1.Image = global::RIT_Solver.Properties.Resources.pdf_16;
+            this.button1.Image = global::Flow_Solver.Properties.Resources.pdf_16;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(409, 9);
             this.button1.Name = "button1";

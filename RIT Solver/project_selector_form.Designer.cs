@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class project_selector_form
     {
@@ -76,7 +76,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnAceptar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAceptar.Location = new System.Drawing.Point(226, 141);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -91,7 +91,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(334, 141);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);

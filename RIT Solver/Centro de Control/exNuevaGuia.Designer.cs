@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class exNuevaGuia
     {
@@ -63,7 +63,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(443, 163);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
@@ -77,7 +77,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnGuardar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnGuardar.Location = new System.Drawing.Point(443, 128);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";

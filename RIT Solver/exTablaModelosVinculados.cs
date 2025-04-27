@@ -1,5 +1,4 @@
-﻿using CefSharp.DevTools.Network;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class exTablaModelosVinculados : Form
     {

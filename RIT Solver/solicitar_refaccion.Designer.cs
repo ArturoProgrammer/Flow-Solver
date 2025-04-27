@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class solicitar_refaccion
     {
@@ -148,7 +148,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCerrar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.Location = new System.Drawing.Point(595, 414);
             this.btnCerrar.Name = "btnCerrar";
@@ -464,7 +464,7 @@
             // 
             // btnEnviarEmail
             // 
-            this.btnEnviarEmail.Image = global::RIT_Solver.Properties.Resources.send_mail_16;
+            this.btnEnviarEmail.Image = global::Flow_Solver.Properties.Resources.send_mail_16;
             this.btnEnviarEmail.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEnviarEmail.Location = new System.Drawing.Point(676, 414);
             this.btnEnviarEmail.Name = "btnEnviarEmail";

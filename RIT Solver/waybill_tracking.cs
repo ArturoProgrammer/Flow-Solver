@@ -9,11 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-using CefSharp;
 using Microsoft.VisualBasic;
-using RIT_Solver.Centro_de_Control;
+using Flow_Solver.Centro_de_Control;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class waybill_tracking : Form
     {
@@ -74,17 +73,17 @@ namespace RIT_Solver
             {
                 case Paqueteria.DHL:
                     string URL_D = $@"https://www.dhl.com/mx-es/home/tracking/tracking-express.html?submit=1&tracking-id={WaybillNumber}";
-                    webTrackingSystem.LoadUrl((URL_D));
+                    //webTrackingSystem.LoadUrl((URL_D));
                     this.toolWebLink.Text = URL_D;
                     break;
                 case Paqueteria.PAQUETEXPRESS:
                     string URL_P = $@"https://www.paquetexpress.com.mx/en/rastreo/{WaybillNumber}";
-                    webTrackingSystem.LoadUrl((URL_P));
+                    //webTrackingSystem.LoadUrl((URL_P));
                     this.toolWebLink.Text = URL_P;
                     break;
                 case Paqueteria.FEDEX:
                     string URL_F = $@"https://www.fedex.com/fedextrack/?trknbr={WaybillNumber}";
-                    webTrackingSystem.LoadUrl((URL_F));
+                    //webTrackingSystem.LoadUrl((URL_F));
                     this.toolWebLink.Text = URL_F;
                     break;
             }
@@ -97,13 +96,15 @@ namespace RIT_Solver
 
         private void toolWebReload_Click(object sender, EventArgs e)
         {
+            /*
             if (webTrackingSystem.IsBrowserInitialized == true)
             {
                 CommonMethodsLibrary.OutMessage("out", this.Name, $"SE RECARGO LA URL DE 'webTrackingSystem'", "OKA");
 
                 // Arreglar
-                this.webTrackingSystem.Reload();
+                //this.webTrackingSystem.Reload();
             }
+            */
         }
 
         private void waybill_tracking_FormClosed(object sender, FormClosedEventArgs e)

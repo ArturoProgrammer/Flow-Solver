@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class tabla_seguimiento_guias_mdi_form
     {
@@ -150,7 +150,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Image = global::RIT_Solver.Properties.Resources.close1_32;
+            this.btnCerrar.Image = global::Flow_Solver.Properties.Resources.close1_32;
             this.btnCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(53, 46);
@@ -166,7 +166,7 @@
             // btnVisualizar
             // 
             this.btnVisualizar.Enabled = false;
-            this.btnVisualizar.Image = global::RIT_Solver.Properties.Resources.check1_64;
+            this.btnVisualizar.Image = global::Flow_Solver.Properties.Resources.check1_64;
             this.btnVisualizar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnVisualizar.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.btnVisualizar.Name = "btnVisualizar";
@@ -178,7 +178,7 @@
             // btnEditarModeloVinculado
             // 
             this.btnEditarModeloVinculado.Enabled = false;
-            this.btnEditarModeloVinculado.Image = global::RIT_Solver.Properties.Resources.edit1_64;
+            this.btnEditarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.edit1_64;
             this.btnEditarModeloVinculado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditarModeloVinculado.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.btnEditarModeloVinculado.Name = "btnEditarModeloVinculado";
@@ -188,7 +188,7 @@
             // 
             // btnAñadirModeloVinculado
             // 
-            this.btnAñadirModeloVinculado.Image = global::RIT_Solver.Properties.Resources.add_64;
+            this.btnAñadirModeloVinculado.Image = global::Flow_Solver.Properties.Resources.add_64;
             this.btnAñadirModeloVinculado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAñadirModeloVinculado.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.btnAñadirModeloVinculado.Name = "btnAñadirModeloVinculado";
@@ -200,7 +200,7 @@
             // btnEliminarModeloVinculado
             // 
             this.btnEliminarModeloVinculado.Enabled = false;
-            this.btnEliminarModeloVinculado.Image = global::RIT_Solver.Properties.Resources.delete2;
+            this.btnEliminarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.delete2;
             this.btnEliminarModeloVinculado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEliminarModeloVinculado.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.btnEliminarModeloVinculado.Name = "btnEliminarModeloVinculado";
@@ -217,7 +217,7 @@
             // 
             // toolStrpBtnActualizarArchivo
             // 
-            this.toolStrpBtnActualizarArchivo.Image = global::RIT_Solver.Properties.Resources.save2;
+            this.toolStrpBtnActualizarArchivo.Image = global::Flow_Solver.Properties.Resources.save2;
             this.toolStrpBtnActualizarArchivo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnActualizarArchivo.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.toolStrpBtnActualizarArchivo.Name = "toolStrpBtnActualizarArchivo";
@@ -235,7 +235,7 @@
             // toolStrpBtnCerrarVisor
             // 
             this.toolStrpBtnCerrarVisor.Enabled = false;
-            this.toolStrpBtnCerrarVisor.Image = global::RIT_Solver.Properties.Resources.close1_32;
+            this.toolStrpBtnCerrarVisor.Image = global::Flow_Solver.Properties.Resources.close1_32;
             this.toolStrpBtnCerrarVisor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnCerrarVisor.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.toolStrpBtnCerrarVisor.Name = "toolStrpBtnCerrarVisor";
@@ -247,7 +247,7 @@
             // toolStrpBtnMarcarGuiaActualComoRecibida
             // 
             this.toolStrpBtnMarcarGuiaActualComoRecibida.Enabled = false;
-            this.toolStrpBtnMarcarGuiaActualComoRecibida.Image = global::RIT_Solver.Properties.Resources.check_64;
+            this.toolStrpBtnMarcarGuiaActualComoRecibida.Image = global::Flow_Solver.Properties.Resources.check_64;
             this.toolStrpBtnMarcarGuiaActualComoRecibida.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnMarcarGuiaActualComoRecibida.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.toolStrpBtnMarcarGuiaActualComoRecibida.Name = "toolStrpBtnMarcarGuiaActualComoRecibida";
@@ -259,7 +259,7 @@
             // toolStrpBtnVerMasInformacion
             // 
             this.toolStrpBtnVerMasInformacion.Enabled = false;
-            this.toolStrpBtnVerMasInformacion.Image = global::RIT_Solver.Properties.Resources.more_64;
+            this.toolStrpBtnVerMasInformacion.Image = global::Flow_Solver.Properties.Resources.more_64;
             this.toolStrpBtnVerMasInformacion.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnVerMasInformacion.Margin = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.toolStrpBtnVerMasInformacion.Name = "toolStrpBtnVerMasInformacion";
@@ -280,7 +280,7 @@
             // 
             // toolMinimizar
             // 
-            this.toolMinimizar.Image = global::RIT_Solver.Properties.Resources.minimize_window_32;
+            this.toolMinimizar.Image = global::Flow_Solver.Properties.Resources.minimize_window_32;
             this.toolMinimizar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolMinimizar.Name = "toolMinimizar";
             this.toolMinimizar.Size = new System.Drawing.Size(79, 46);

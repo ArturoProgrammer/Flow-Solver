@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class exAbrirSoloSegun
     {
@@ -109,7 +109,7 @@
             // toolStrpBtn_Examinar
             // 
             this.toolStrpBtn_Examinar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrpBtn_Examinar.Image = global::RIT_Solver.Properties.Resources.buscar_16;
+            this.toolStrpBtn_Examinar.Image = global::Flow_Solver.Properties.Resources.buscar_16;
             this.toolStrpBtn_Examinar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtn_Examinar.Name = "toolStrpBtn_Examinar";
             this.toolStrpBtn_Examinar.Size = new System.Drawing.Size(29, 44);
@@ -120,7 +120,7 @@
             // 
             this.toolStrpBtn_AbrirUbicacionDelArchivo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStrpBtn_AbrirUbicacionDelArchivo.Enabled = false;
-            this.toolStrpBtn_AbrirUbicacionDelArchivo.Image = global::RIT_Solver.Properties.Resources.open;
+            this.toolStrpBtn_AbrirUbicacionDelArchivo.Image = global::Flow_Solver.Properties.Resources.open;
             this.toolStrpBtn_AbrirUbicacionDelArchivo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtn_AbrirUbicacionDelArchivo.Name = "toolStrpBtn_AbrirUbicacionDelArchivo";
             this.toolStrpBtn_AbrirUbicacionDelArchivo.Size = new System.Drawing.Size(29, 44);
@@ -135,7 +135,7 @@
             // 
             this.toogle_VerTodos.CheckOnClick = true;
             this.toogle_VerTodos.Enabled = false;
-            this.toogle_VerTodos.Image = global::RIT_Solver.Properties.Resources.project;
+            this.toogle_VerTodos.Image = global::Flow_Solver.Properties.Resources.project;
             this.toogle_VerTodos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toogle_VerTodos.Name = "toogle_VerTodos";
             this.toogle_VerTodos.Size = new System.Drawing.Size(53, 44);
@@ -148,7 +148,7 @@
             // 
             this.toogle_VerGeneradosEnSAS.CheckOnClick = true;
             this.toogle_VerGeneradosEnSAS.Enabled = false;
-            this.toogle_VerGeneradosEnSAS.Image = global::RIT_Solver.Properties.Resources.project;
+            this.toogle_VerGeneradosEnSAS.Image = global::Flow_Solver.Properties.Resources.project;
             this.toogle_VerGeneradosEnSAS.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toogle_VerGeneradosEnSAS.Name = "toogle_VerGeneradosEnSAS";
             this.toogle_VerGeneradosEnSAS.Size = new System.Drawing.Size(84, 44);
@@ -162,7 +162,7 @@
             // 
             this.toogle_VerImpresos.CheckOnClick = true;
             this.toogle_VerImpresos.Enabled = false;
-            this.toogle_VerImpresos.Image = global::RIT_Solver.Properties.Resources.project_printed;
+            this.toogle_VerImpresos.Image = global::Flow_Solver.Properties.Resources.project_printed;
             this.toogle_VerImpresos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toogle_VerImpresos.Name = "toogle_VerImpresos";
             this.toogle_VerImpresos.Size = new System.Drawing.Size(73, 44);
@@ -175,7 +175,7 @@
             // 
             this.toogle_VerFirmados.CheckOnClick = true;
             this.toogle_VerFirmados.Enabled = false;
-            this.toogle_VerFirmados.Image = global::RIT_Solver.Properties.Resources.project_signed;
+            this.toogle_VerFirmados.Image = global::Flow_Solver.Properties.Resources.project_signed;
             this.toogle_VerFirmados.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toogle_VerFirmados.Name = "toogle_VerFirmados";
             this.toogle_VerFirmados.Size = new System.Drawing.Size(74, 44);
@@ -190,7 +190,7 @@
             this.toogle_VerComprobados.CheckOnClick = true;
             this.toogle_VerComprobados.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toogle_VerComprobados.Enabled = false;
-            this.toogle_VerComprobados.Image = global::RIT_Solver.Properties.Resources.project_comprobado;
+            this.toogle_VerComprobados.Image = global::Flow_Solver.Properties.Resources.project_comprobado;
             this.toogle_VerComprobados.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toogle_VerComprobados.Name = "toogle_VerComprobados";
             this.toogle_VerComprobados.Size = new System.Drawing.Size(79, 44);
@@ -282,7 +282,7 @@
             // 
             this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAceptar.Enabled = false;
-            this.btnAceptar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnAceptar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAceptar.Location = new System.Drawing.Point(792, 386);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
@@ -297,7 +297,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(904, 386);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";

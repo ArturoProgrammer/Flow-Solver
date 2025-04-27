@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class configuracion_inicial
     {
@@ -184,7 +184,7 @@
             // 
             // btnExaminarInventario
             // 
-            this.btnExaminarInventario.Image = global::RIT_Solver.Properties.Resources.buscar_16;
+            this.btnExaminarInventario.Image = global::Flow_Solver.Properties.Resources.buscar_16;
             this.btnExaminarInventario.Location = new System.Drawing.Point(805, 453);
             this.btnExaminarInventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExaminarInventario.Name = "btnExaminarInventario";
@@ -443,7 +443,7 @@
             // 
             // btnVer
             // 
-            this.btnVer.Image = global::RIT_Solver.Properties.Resources.view;
+            this.btnVer.Image = global::Flow_Solver.Properties.Resources.view;
             this.btnVer.Location = new System.Drawing.Point(387, 348);
             this.btnVer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVer.Name = "btnVer";
@@ -596,7 +596,7 @@
             // 
             // btnContinuar
             // 
-            this.btnContinuar.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnContinuar.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnContinuar.Location = new System.Drawing.Point(799, 559);
             this.btnContinuar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnContinuar.Name = "btnContinuar";
@@ -610,7 +610,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(684, 559);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";

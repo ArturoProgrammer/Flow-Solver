@@ -11,7 +11,7 @@ using System.IO;
 
 using CustomMessageBox;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class pdf_viewer : Form
     {

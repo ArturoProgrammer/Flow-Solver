@@ -19,10 +19,9 @@ using CustomMessageBox;
 using System.Runtime.CompilerServices;
 using Microsoft.Web.WebView2.WinForms;
 using System.DirectoryServices.ActiveDirectory;
-using CefSharp.DevTools.Page;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     internal class CommonMethodsLibrary
     {
@@ -182,7 +181,7 @@ namespace RIT_Solver
 
             bool CONNECT_STATUS = false;
             
-            string Manifest_Path = $@"\\{aServerIp}\Publico\rit_solver_server\credentials\ServerCredentialsManifest.pfx";
+            string Manifest_Path = $@"\\{aServerIp}\Publico\Flow_Solver_server\credentials\ServerCredentialsManifest.pfx";
 
             OutMessage("out", "CommonMethodsLibrary.cs", $"TESTEANDO CONEXION CON SERVIDOR '{aServerIp}'...", "inf");
 

@@ -15,9 +15,8 @@ using System.Text.Json.Serialization;
 using Newtonsoft;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using CefSharp.DevTools.Debugger;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class tabla_vinculacion : Form
     {

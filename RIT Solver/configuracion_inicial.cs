@@ -16,7 +16,7 @@ using System.Text.Json.Serialization;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class configuracion_inicial : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class exEditarEquipoSeleccionado
     {
@@ -51,7 +51,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.computer;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.computer;
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";

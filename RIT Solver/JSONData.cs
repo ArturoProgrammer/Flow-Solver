@@ -12,7 +12,7 @@ using System.Text.Json.Serialization;
 
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
 
     class Manipulation

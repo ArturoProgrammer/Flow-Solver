@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class actualizador
     {
@@ -118,9 +118,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::RIT_Solver.Properties.Resources.right_arrow;
+            this.pictureBox2.BackgroundImage = global::Flow_Solver.Properties.Resources.right_arrow;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::RIT_Solver.Properties.Resources.right_arrow;
+            this.pictureBox2.Image = global::Flow_Solver.Properties.Resources.right_arrow;
             this.pictureBox2.Location = new System.Drawing.Point(741, 129);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";

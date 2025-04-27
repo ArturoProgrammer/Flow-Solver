@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class equipo_completado
     {
@@ -85,7 +85,7 @@
             // 
             // btnExaminarRIT
             // 
-            this.btnExaminarRIT.Image = global::RIT_Solver.Properties.Resources.buscar_16;
+            this.btnExaminarRIT.Image = global::Flow_Solver.Properties.Resources.buscar_16;
             this.btnExaminarRIT.Location = new System.Drawing.Point(297, 74);
             this.btnExaminarRIT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExaminarRIT.Name = "btnExaminarRIT";
@@ -96,7 +96,7 @@
             // 
             // btnCompletar
             // 
-            this.btnCompletar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnCompletar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnCompletar.Location = new System.Drawing.Point(202, 160);
             this.btnCompletar.Name = "btnCompletar";
             this.btnCompletar.Size = new System.Drawing.Size(86, 27);
@@ -110,7 +110,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(294, 160);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(86, 27);
@@ -171,7 +171,7 @@
             // 
             // btnExaminarEvidncia
             // 
-            this.btnExaminarEvidncia.Image = global::RIT_Solver.Properties.Resources.buscar_16;
+            this.btnExaminarEvidncia.Image = global::Flow_Solver.Properties.Resources.buscar_16;
             this.btnExaminarEvidncia.Location = new System.Drawing.Point(297, 115);
             this.btnExaminarEvidncia.Margin = new System.Windows.Forms.Padding(2);
             this.btnExaminarEvidncia.Name = "btnExaminarEvidncia";

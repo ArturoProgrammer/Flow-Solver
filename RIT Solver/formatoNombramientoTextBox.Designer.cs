@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class formatoNombramientoTextBox
     {
@@ -54,7 +54,7 @@
             // 
             // btnSeleccionarTag
             // 
-            this.btnSeleccionarTag.BackgroundImage = global::RIT_Solver.Properties.Resources.selection;
+            this.btnSeleccionarTag.BackgroundImage = global::Flow_Solver.Properties.Resources.selection;
             this.btnSeleccionarTag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSeleccionarTag.Location = new System.Drawing.Point(302, 3);
             this.btnSeleccionarTag.Name = "btnSeleccionarTag";
@@ -67,7 +67,7 @@
             // 
             this.btnVincularModelo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVincularModelo.Enabled = false;
-            this.btnVincularModelo.Image = global::RIT_Solver.Properties.Resources.database_16;
+            this.btnVincularModelo.Image = global::Flow_Solver.Properties.Resources.database_16;
             this.btnVincularModelo.Location = new System.Drawing.Point(266, 3);
             this.btnVincularModelo.Name = "btnVincularModelo";
             this.btnVincularModelo.Size = new System.Drawing.Size(30, 22);

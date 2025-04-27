@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class waybill_tracking
     {
@@ -32,7 +32,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolWebReload = new System.Windows.Forms.ToolStripButton();
             this.toolWebLink = new System.Windows.Forms.ToolStripStatusLabel();
-            this.webTrackingSystem = new CefSharp.WinForms.ChromiumWebBrowser();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +48,7 @@
             // 
             // toolWebReload
             // 
-            this.toolWebReload.Image = global::RIT_Solver.Properties.Resources.refresh;
+            this.toolWebReload.Image = global::Flow_Solver.Properties.Resources.refresh;
             this.toolWebReload.Name = "toolWebReload";
             this.toolWebReload.Size = new System.Drawing.Size(73, 20);
             this.toolWebReload.Text = "Recargar";
@@ -61,21 +60,11 @@
             this.toolWebLink.Size = new System.Drawing.Size(118, 17);
             this.toolWebLink.Text = "toolStripStatusLabel1";
             // 
-            // webTrackingSystem
-            // 
-            this.webTrackingSystem.ActivateBrowserOnCreation = false;
-            this.webTrackingSystem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webTrackingSystem.Location = new System.Drawing.Point(0, 0);
-            this.webTrackingSystem.Name = "webTrackingSystem";
-            this.webTrackingSystem.Size = new System.Drawing.Size(800, 428);
-            this.webTrackingSystem.TabIndex = 1;
-            // 
             // waybill_tracking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.webTrackingSystem);
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "waybill_tracking";
@@ -94,6 +83,5 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolWebLink;
         private System.Windows.Forms.ToolStripButton toolWebReload;
-        public CefSharp.WinForms.ChromiumWebBrowser webTrackingSystem;
     }
 }

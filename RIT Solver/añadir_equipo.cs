@@ -23,7 +23,7 @@ using DocumentFormat.OpenXml;
 using CustomMessageBox;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class añadir_equipo : Form
     {

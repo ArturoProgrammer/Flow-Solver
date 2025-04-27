@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Timers;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class splash_screen : Form
     {

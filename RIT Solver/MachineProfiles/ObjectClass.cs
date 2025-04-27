@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RIT_Solver.MachineProfiles
+namespace Flow_Solver.MachineProfiles
 {
     public class MachineProfile
     {

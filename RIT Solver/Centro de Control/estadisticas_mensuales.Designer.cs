@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class estadisticas_mensuales
     {
@@ -181,7 +181,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.estadisticas_anteriores;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.estadisticas_anteriores;
             this.pictureBox1.Location = new System.Drawing.Point(48, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
@@ -711,7 +711,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Image = global::RIT_Solver.Properties.Resources.close1_32;
+            this.btnCerrar.Image = global::Flow_Solver.Properties.Resources.close1_32;
             this.btnCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(53, 44);
@@ -727,7 +727,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Enabled = false;
-            this.btnGuardar.Image = global::RIT_Solver.Properties.Resources.save2;
+            this.btnGuardar.Image = global::Flow_Solver.Properties.Resources.save2;
             this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(66, 44);
@@ -741,7 +741,7 @@
             // 
             // btnRecargarOrigenDeDatos
             // 
-            this.btnRecargarOrigenDeDatos.Image = global::RIT_Solver.Properties.Resources.refresh;
+            this.btnRecargarOrigenDeDatos.Image = global::Flow_Solver.Properties.Resources.refresh;
             this.btnRecargarOrigenDeDatos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRecargarOrigenDeDatos.Name = "btnRecargarOrigenDeDatos";
             this.btnRecargarOrigenDeDatos.Size = new System.Drawing.Size(72, 44);
@@ -761,7 +761,7 @@
             this.btnExportarComoExcel,
             this.btnExportarComoPdf});
             this.toolStripSplitButton1.Enabled = false;
-            this.toolStripSplitButton1.Image = global::RIT_Solver.Properties.Resources.exportar_16;
+            this.toolStripSplitButton1.Image = global::Flow_Solver.Properties.Resources.exportar_16;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
             this.toolStripSplitButton1.Size = new System.Drawing.Size(88, 44);
@@ -770,7 +770,7 @@
             // 
             // btnExportarComoExcel
             // 
-            this.btnExportarComoExcel.Image = global::RIT_Solver.Properties.Resources.xls_file_16;
+            this.btnExportarComoExcel.Image = global::Flow_Solver.Properties.Resources.xls_file_16;
             this.btnExportarComoExcel.Name = "btnExportarComoExcel";
             this.btnExportarComoExcel.Size = new System.Drawing.Size(228, 26);
             this.btnExportarComoExcel.Text = "Exportar como Excel";
@@ -778,7 +778,7 @@
             // btnExportarComoPdf
             // 
             this.btnExportarComoPdf.Enabled = false;
-            this.btnExportarComoPdf.Image = global::RIT_Solver.Properties.Resources.pdf_16;
+            this.btnExportarComoPdf.Image = global::Flow_Solver.Properties.Resources.pdf_16;
             this.btnExportarComoPdf.Name = "btnExportarComoPdf";
             this.btnExportarComoPdf.Size = new System.Drawing.Size(228, 26);
             this.btnExportarComoPdf.Text = "Exporar como PDF";
@@ -786,7 +786,7 @@
             // btnEnviarDataPorCorreo
             // 
             this.btnEnviarDataPorCorreo.Enabled = false;
-            this.btnEnviarDataPorCorreo.Image = global::RIT_Solver.Properties.Resources.correo_electronico;
+            this.btnEnviarDataPorCorreo.Image = global::Flow_Solver.Properties.Resources.correo_electronico;
             this.btnEnviarDataPorCorreo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEnviarDataPorCorreo.Name = "btnEnviarDataPorCorreo";
             this.btnEnviarDataPorCorreo.Size = new System.Drawing.Size(53, 44);
@@ -801,7 +801,7 @@
             // btnImprimirInforme
             // 
             this.btnImprimirInforme.Enabled = false;
-            this.btnImprimirInforme.Image = global::RIT_Solver.Properties.Resources.printer_24;
+            this.btnImprimirInforme.Image = global::Flow_Solver.Properties.Resources.printer_24;
             this.btnImprimirInforme.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImprimirInforme.Name = "btnImprimirInforme";
             this.btnImprimirInforme.Size = new System.Drawing.Size(65, 44);

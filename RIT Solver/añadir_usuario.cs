@@ -12,7 +12,7 @@ using CustomMessageBox;
 using System.IO;
 using Newtonsoft.Json.Linq;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class añadir_usuario : Form
     {

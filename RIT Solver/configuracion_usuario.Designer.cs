@@ -1,6 +1,6 @@
 ﻿using FlowControls;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     partial class configuracion_usuario
     {
@@ -387,7 +387,7 @@ namespace RIT_Solver
             // btnAceptar
             // 
             this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAceptar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnAceptar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAceptar.Location = new System.Drawing.Point(322, 461);
             this.btnAceptar.Name = "btnAceptar";
@@ -690,7 +690,7 @@ namespace RIT_Solver
             // 
             // btnEliminarLocalidad
             // 
-            this.btnEliminarLocalidad.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarLocalidad.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarLocalidad.Location = new System.Drawing.Point(398, 19);
             this.btnEliminarLocalidad.Name = "btnEliminarLocalidad";
             this.btnEliminarLocalidad.Size = new System.Drawing.Size(101, 25);
@@ -719,7 +719,7 @@ namespace RIT_Solver
             // 
             // btnEditarLocalidad
             // 
-            this.btnEditarLocalidad.Image = global::RIT_Solver.Properties.Resources.pencil_16;
+            this.btnEditarLocalidad.Image = global::Flow_Solver.Properties.Resources.pencil_16;
             this.btnEditarLocalidad.Location = new System.Drawing.Point(291, 19);
             this.btnEditarLocalidad.Name = "btnEditarLocalidad";
             this.btnEditarLocalidad.Size = new System.Drawing.Size(101, 25);
@@ -808,7 +808,7 @@ namespace RIT_Solver
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::RIT_Solver.Properties.Resources.translate_16;
+            this.pictureBox2.Image = global::Flow_Solver.Properties.Resources.translate_16;
             this.pictureBox2.Location = new System.Drawing.Point(207, 36);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(21, 21);
@@ -817,7 +817,7 @@ namespace RIT_Solver
             // 
             // btnUnlockWebViewPanel
             // 
-            this.btnUnlockWebViewPanel.Image = global::RIT_Solver.Properties.Resources.lock_16;
+            this.btnUnlockWebViewPanel.Image = global::Flow_Solver.Properties.Resources.lock_16;
             this.btnUnlockWebViewPanel.Location = new System.Drawing.Point(590, 93);
             this.btnUnlockWebViewPanel.Name = "btnUnlockWebViewPanel";
             this.btnUnlockWebViewPanel.Size = new System.Drawing.Size(28, 27);
@@ -956,7 +956,7 @@ namespace RIT_Solver
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.translate_16;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.translate_16;
             this.pictureBox1.Location = new System.Drawing.Point(207, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 25);
@@ -965,7 +965,7 @@ namespace RIT_Solver
             // 
             // btnUnblockCefSharpPanel
             // 
-            this.btnUnblockCefSharpPanel.Image = global::RIT_Solver.Properties.Resources.lock_16;
+            this.btnUnblockCefSharpPanel.Image = global::Flow_Solver.Properties.Resources.lock_16;
             this.btnUnblockCefSharpPanel.Location = new System.Drawing.Point(590, 97);
             this.btnUnblockCefSharpPanel.Name = "btnUnblockCefSharpPanel";
             this.btnUnblockCefSharpPanel.Size = new System.Drawing.Size(28, 27);
@@ -1088,7 +1088,7 @@ namespace RIT_Solver
             // 
             // btnEliminarCookies_WebView2
             // 
-            this.btnEliminarCookies_WebView2.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarCookies_WebView2.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarCookies_WebView2.Location = new System.Drawing.Point(487, 62);
             this.btnEliminarCookies_WebView2.Name = "btnEliminarCookies_WebView2";
             this.btnEliminarCookies_WebView2.Size = new System.Drawing.Size(126, 42);
@@ -1109,7 +1109,7 @@ namespace RIT_Solver
             // 
             // btnEliminarCookies_CefSharp
             // 
-            this.btnEliminarCookies_CefSharp.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarCookies_CefSharp.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarCookies_CefSharp.Location = new System.Drawing.Point(487, 14);
             this.btnEliminarCookies_CefSharp.Name = "btnEliminarCookies_CefSharp";
             this.btnEliminarCookies_CefSharp.Size = new System.Drawing.Size(126, 42);
@@ -1236,7 +1236,7 @@ namespace RIT_Solver
             // 
             // btnBuscarActualizaciones
             // 
-            this.btnBuscarActualizaciones.Image = global::RIT_Solver.Properties.Resources.internet_16;
+            this.btnBuscarActualizaciones.Image = global::Flow_Solver.Properties.Resources.internet_16;
             this.btnBuscarActualizaciones.Location = new System.Drawing.Point(159, 55);
             this.btnBuscarActualizaciones.Name = "btnBuscarActualizaciones";
             this.btnBuscarActualizaciones.Size = new System.Drawing.Size(279, 43);
@@ -1275,7 +1275,7 @@ namespace RIT_Solver
             // btnImportarBackup
             // 
             this.btnImportarBackup.Enabled = false;
-            this.btnImportarBackup.Image = global::RIT_Solver.Properties.Resources.importar_16;
+            this.btnImportarBackup.Image = global::Flow_Solver.Properties.Resources.importar_16;
             this.btnImportarBackup.Location = new System.Drawing.Point(202, 125);
             this.btnImportarBackup.Name = "btnImportarBackup";
             this.btnImportarBackup.Size = new System.Drawing.Size(221, 44);
@@ -1288,7 +1288,7 @@ namespace RIT_Solver
             // btnExportarBackup
             // 
             this.btnExportarBackup.Enabled = false;
-            this.btnExportarBackup.Image = global::RIT_Solver.Properties.Resources.exportar_16;
+            this.btnExportarBackup.Image = global::Flow_Solver.Properties.Resources.exportar_16;
             this.btnExportarBackup.Location = new System.Drawing.Point(202, 45);
             this.btnExportarBackup.Name = "btnExportarBackup";
             this.btnExportarBackup.Size = new System.Drawing.Size(221, 43);
@@ -1405,7 +1405,7 @@ namespace RIT_Solver
             // 
             // btnExaminarRutaInventario
             // 
-            this.btnExaminarRutaInventario.Image = global::RIT_Solver.Properties.Resources.buscar_16;
+            this.btnExaminarRutaInventario.Image = global::Flow_Solver.Properties.Resources.buscar_16;
             this.btnExaminarRutaInventario.Location = new System.Drawing.Point(569, 52);
             this.btnExaminarRutaInventario.Name = "btnExaminarRutaInventario";
             this.btnExaminarRutaInventario.Size = new System.Drawing.Size(40, 26);
@@ -1779,7 +1779,7 @@ namespace RIT_Solver
             // 
             // btnTESTConexion
             // 
-            this.btnTESTConexion.Image = global::RIT_Solver.Properties.Resources.test_de_velocidad_16;
+            this.btnTESTConexion.Image = global::Flow_Solver.Properties.Resources.test_de_velocidad_16;
             this.btnTESTConexion.Location = new System.Drawing.Point(268, 48);
             this.btnTESTConexion.Name = "btnTESTConexion";
             this.btnTESTConexion.Size = new System.Drawing.Size(110, 32);
@@ -1820,7 +1820,7 @@ namespace RIT_Solver
             // 
             // btnBorrarDatos
             // 
-            this.btnBorrarDatos.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnBorrarDatos.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnBorrarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBorrarDatos.Location = new System.Drawing.Point(167, 66);
             this.btnBorrarDatos.Name = "btnBorrarDatos";
@@ -1847,7 +1847,7 @@ namespace RIT_Solver
             // 
             // btnVerContraseña
             // 
-            this.btnVerContraseña.Image = global::RIT_Solver.Properties.Resources.view;
+            this.btnVerContraseña.Image = global::Flow_Solver.Properties.Resources.view;
             this.btnVerContraseña.Location = new System.Drawing.Point(502, 45);
             this.btnVerContraseña.Name = "btnVerContraseña";
             this.btnVerContraseña.Size = new System.Drawing.Size(33, 26);
@@ -1913,7 +1913,7 @@ namespace RIT_Solver
             // 
             // btnBloquearNombreDeLocalidad
             // 
-            this.btnBloquearNombreDeLocalidad.Image = global::RIT_Solver.Properties.Resources.lock_16;
+            this.btnBloquearNombreDeLocalidad.Image = global::Flow_Solver.Properties.Resources.lock_16;
             this.btnBloquearNombreDeLocalidad.Location = new System.Drawing.Point(291, 159);
             this.btnBloquearNombreDeLocalidad.Name = "btnBloquearNombreDeLocalidad";
             this.btnBloquearNombreDeLocalidad.Size = new System.Drawing.Size(28, 27);
@@ -1939,7 +1939,7 @@ namespace RIT_Solver
             // 
             // btnCargarImagen
             // 
-            this.btnCargarImagen.Image = global::RIT_Solver.Properties.Resources.buscar_16;
+            this.btnCargarImagen.Image = global::Flow_Solver.Properties.Resources.buscar_16;
             this.btnCargarImagen.Location = new System.Drawing.Point(407, 210);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Size = new System.Drawing.Size(184, 48);
@@ -2209,7 +2209,7 @@ namespace RIT_Solver
             // 
             // btnAbrirLbretaDeDirecciones
             // 
-            this.btnAbrirLbretaDeDirecciones.Image = global::RIT_Solver.Properties.Resources.contacts_16;
+            this.btnAbrirLbretaDeDirecciones.Image = global::Flow_Solver.Properties.Resources.contacts_16;
             this.btnAbrirLbretaDeDirecciones.Location = new System.Drawing.Point(392, 29);
             this.btnAbrirLbretaDeDirecciones.Margin = new System.Windows.Forms.Padding(2);
             this.btnAbrirLbretaDeDirecciones.Name = "btnAbrirLbretaDeDirecciones";
@@ -2286,7 +2286,7 @@ namespace RIT_Solver
             // 
             // btnEliminarModeloVinculado
             // 
-            this.btnEliminarModeloVinculado.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarModeloVinculado.Location = new System.Drawing.Point(531, 153);
             this.btnEliminarModeloVinculado.Name = "btnEliminarModeloVinculado";
             this.btnEliminarModeloVinculado.Size = new System.Drawing.Size(87, 38);
@@ -2299,7 +2299,7 @@ namespace RIT_Solver
             // 
             // btnAñadirNuevoModeloVinculado
             // 
-            this.btnAñadirNuevoModeloVinculado.Image = global::RIT_Solver.Properties.Resources.add_16;
+            this.btnAñadirNuevoModeloVinculado.Image = global::Flow_Solver.Properties.Resources.add_16;
             this.btnAñadirNuevoModeloVinculado.Location = new System.Drawing.Point(531, 109);
             this.btnAñadirNuevoModeloVinculado.Name = "btnAñadirNuevoModeloVinculado";
             this.btnAñadirNuevoModeloVinculado.Size = new System.Drawing.Size(87, 38);
@@ -2312,7 +2312,7 @@ namespace RIT_Solver
             // 
             // btnEditarModeloVinculado
             // 
-            this.btnEditarModeloVinculado.Image = global::RIT_Solver.Properties.Resources.edit1_16;
+            this.btnEditarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.edit1_16;
             this.btnEditarModeloVinculado.Location = new System.Drawing.Point(531, 65);
             this.btnEditarModeloVinculado.Name = "btnEditarModeloVinculado";
             this.btnEditarModeloVinculado.Size = new System.Drawing.Size(87, 38);
@@ -2326,7 +2326,7 @@ namespace RIT_Solver
             // btnVerModeloVinculado
             // 
             this.btnVerModeloVinculado.Enabled = false;
-            this.btnVerModeloVinculado.Image = global::RIT_Solver.Properties.Resources.check1_16;
+            this.btnVerModeloVinculado.Image = global::Flow_Solver.Properties.Resources.check1_16;
             this.btnVerModeloVinculado.Location = new System.Drawing.Point(531, 21);
             this.btnVerModeloVinculado.Name = "btnVerModeloVinculado";
             this.btnVerModeloVinculado.Size = new System.Drawing.Size(87, 38);
@@ -2465,7 +2465,7 @@ namespace RIT_Solver
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(441, 461);
             this.btnCancelar.Name = "btnCancelar";
@@ -2478,7 +2478,7 @@ namespace RIT_Solver
             // 
             // btnAplicar
             // 
-            this.btnAplicar.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnAplicar.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnAplicar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAplicar.Location = new System.Drawing.Point(562, 461);
             this.btnAplicar.Name = "btnAplicar";

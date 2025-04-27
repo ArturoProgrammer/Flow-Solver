@@ -3,7 +3,7 @@ using FileProjectManager;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Org.BouncyCastle.Crypto.IO;
-using RIT_Solver.Centro_de_Control;
+using Flow_Solver.Centro_de_Control;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +12,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Messaging;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +19,7 @@ using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class actividades_mdi_form : Form
     {
@@ -803,14 +802,7 @@ namespace RIT_Solver
                 }
                 else if (columna.Name == "TicketID")
                 {
-                    /*
-                     * Accedemos al ticket desde manageengine usando la API de su URL
-                     */
-                    string _ticketID = this.dgvPreviewSelection.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
 
-                    string url = $@"https://gmxtsas.mx:8080/WorkOrder.do?woMode=viewWO&woID={_ticketID}";
-                    externalCefSharp_WebViewer frm = new externalCefSharp_WebViewer($"Reporte en ServiceDesk - Visualizacion de ##{_ticketID}##", url);
-                    frm.Show();
                 }
                 else if (columna.Name == "Evidencia")
                 {

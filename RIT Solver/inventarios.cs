@@ -20,11 +20,11 @@ using Newtonsoft.Json.Linq;
 
 using CustomMessageBox;
 using Microsoft.VisualBasic;
-using RIT_Solver.Centro_de_Control;
+using Flow_Solver.Centro_de_Control;
 using Org.BouncyCastle.Asn1.X509;
-using RIT_Solver.MachineProfiles;
+using Flow_Solver.MachineProfiles;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class inventarios : Form
     {

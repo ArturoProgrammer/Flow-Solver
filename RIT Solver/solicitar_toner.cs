@@ -11,7 +11,7 @@ using System.Diagnostics;
 using System.Net;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class solicitar_toner : Form
     {

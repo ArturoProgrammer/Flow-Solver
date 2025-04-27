@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace RIT_Solver.Controls
+namespace Flow_Solver.Controls
 {
     public partial class TagListForm : Form
     {

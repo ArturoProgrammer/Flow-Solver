@@ -169,7 +169,7 @@ namespace CustomMessageBox.Private
             // pictureBoxIcon
             // 
             this.pictureBoxIcon.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBoxIcon.Image = global::RIT_Solver.Properties.Resources.msh_chat;
+            this.pictureBoxIcon.Image = global::Flow_Solver.Properties.Resources.msh_chat;
             this.pictureBoxIcon.Location = new System.Drawing.Point(10, 10);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.Size = new System.Drawing.Size(40, 41);

@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.Centro_de_Control
+﻿namespace Flow_Solver.Centro_de_Control
 {
     partial class mdi_nuevo_pendiente
     {
@@ -44,7 +44,7 @@
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnGenerar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnGenerar.Location = new System.Drawing.Point(273, 426);
             this.btnGenerar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGenerar.Name = "btnGenerar";
@@ -58,7 +58,7 @@
             // 
             // btnAtras
             // 
-            this.btnAtras.BackgroundImage = global::RIT_Solver.Properties.Resources.back_64;
+            this.btnAtras.BackgroundImage = global::Flow_Solver.Properties.Resources.back_64;
             this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAtras.Location = new System.Drawing.Point(16, 15);

@@ -8,7 +8,7 @@ using System.IO;
 using System.Windows;
 using Newtonsoft.Json.Linq;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     /// <summary>
     /// Objeto de una localidad

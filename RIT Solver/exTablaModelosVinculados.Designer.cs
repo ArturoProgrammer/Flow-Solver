@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class exTablaModelosVinculados
     {
@@ -87,7 +87,7 @@
             // btnVerModeloVinculado
             // 
             this.btnVerModeloVinculado.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnVerModeloVinculado.Image = global::RIT_Solver.Properties.Resources.check1_16;
+            this.btnVerModeloVinculado.Image = global::Flow_Solver.Properties.Resources.check1_16;
             this.btnVerModeloVinculado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnVerModeloVinculado.Name = "btnVerModeloVinculado";
             this.btnVerModeloVinculado.Size = new System.Drawing.Size(27, 20);
@@ -97,7 +97,7 @@
             // btnEditarModeloVinculado
             // 
             this.btnEditarModeloVinculado.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnEditarModeloVinculado.Image = global::RIT_Solver.Properties.Resources.edit1_16;
+            this.btnEditarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.edit1_16;
             this.btnEditarModeloVinculado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditarModeloVinculado.Name = "btnEditarModeloVinculado";
             this.btnEditarModeloVinculado.Size = new System.Drawing.Size(27, 20);
@@ -107,7 +107,7 @@
             // btnAñadirModeloVinculado
             // 
             this.btnAñadirModeloVinculado.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAñadirModeloVinculado.Image = global::RIT_Solver.Properties.Resources.add_16;
+            this.btnAñadirModeloVinculado.Image = global::Flow_Solver.Properties.Resources.add_16;
             this.btnAñadirModeloVinculado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAñadirModeloVinculado.Name = "btnAñadirModeloVinculado";
             this.btnAñadirModeloVinculado.Size = new System.Drawing.Size(27, 20);
@@ -117,7 +117,7 @@
             // btnEliminarModeloVinculado
             // 
             this.btnEliminarModeloVinculado.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnEliminarModeloVinculado.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarModeloVinculado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEliminarModeloVinculado.Name = "btnEliminarModeloVinculado";
             this.btnEliminarModeloVinculado.Size = new System.Drawing.Size(27, 20);
@@ -132,7 +132,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.toolStripButton1.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(27, 20);
@@ -246,7 +246,7 @@
             // toolStrpBtn_AbrirUbicacionDelArchivo
             // 
             this.toolStrpBtn_AbrirUbicacionDelArchivo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrpBtn_AbrirUbicacionDelArchivo.Image = global::RIT_Solver.Properties.Resources.open;
+            this.toolStrpBtn_AbrirUbicacionDelArchivo.Image = global::Flow_Solver.Properties.Resources.open;
             this.toolStrpBtn_AbrirUbicacionDelArchivo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtn_AbrirUbicacionDelArchivo.Name = "toolStrpBtn_AbrirUbicacionDelArchivo";
             this.toolStrpBtn_AbrirUbicacionDelArchivo.Size = new System.Drawing.Size(29, 24);
@@ -256,7 +256,7 @@
             // btnAceptar
             // 
             this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAceptar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnAceptar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAceptar.Location = new System.Drawing.Point(573, 377);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -271,7 +271,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(685, 377);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);

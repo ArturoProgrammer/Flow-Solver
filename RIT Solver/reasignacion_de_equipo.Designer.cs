@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class reasignacion_de_equipo
     {
@@ -116,7 +116,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(404, 209);
             this.btnCancelar.Name = "btnCancelar";
@@ -128,7 +128,7 @@
             // 
             // btnReasignar
             // 
-            this.btnReasignar.Image = global::RIT_Solver.Properties.Resources.check_3_16;
+            this.btnReasignar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
             this.btnReasignar.Location = new System.Drawing.Point(517, 209);
             this.btnReasignar.Name = "btnReasignar";
             this.btnReasignar.Size = new System.Drawing.Size(107, 27);
@@ -643,7 +643,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.reasigned;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.reasigned;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 110);

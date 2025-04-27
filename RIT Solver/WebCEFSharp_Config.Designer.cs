@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RIT_Solver {
+namespace Flow_Solver {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.10.0.0")]
     internal sealed partial class WebCEFSharp_Config : global::System.Configuration.ApplicationSettingsBase {
         
         private static WebCEFSharp_Config defaultInstance = ((WebCEFSharp_Config)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new WebCEFSharp_Config())));

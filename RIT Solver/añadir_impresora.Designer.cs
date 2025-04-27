@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class añadir_impresora
     {
@@ -202,7 +202,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(251, 361);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
@@ -216,7 +216,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnGuardar.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.Location = new System.Drawing.Point(392, 361);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -230,7 +230,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.printer;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.printer;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";

@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-using CefSharp;                     // LIBRERIA ENCARGADA DE NAVEGADORES CHROMIUM
-
 using iTextSharp.text.pdf;          // LIBRERIA ENCARGADA DE ESCRITURA EN FORMULARIOS PDF
 using iTextSharp.text;              // LIBRERIA ENCARGADA DE ESCRITURA EN FORMULARIOS PDF
 
@@ -30,14 +28,12 @@ using FuzzyString;
 using System.Net;
 using System.Runtime.InteropServices;
 using DocumentFormat.OpenXml.Drawing.Charts;
-using System.Messaging;
 using System.Linq.Expressions;
-using Windows.Networking;
 using DocumentFormat.OpenXml.Drawing.Diagrams;
 //using DocumentFormat.OpenXml.Spreadsheet;
 //using DocumentFormat.OpenXml.Wordprocessing;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class rit_mdi_form : Form
     {
@@ -1343,141 +1339,7 @@ namespace RIT_Solver
         /* CARGA LOS DATOS DE UN REPORTE ABIERTO EN SAS */
         async void importarDatosDeReporteDeSASAFormularioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /* FUNCION DE BOTON EN FORM */
-            // CONTEXTO: TRAER DATOS DE UN REPORTE ABIERTO EN SAS AL FORM
-
-            string EMPLEADO = "";
-
-            #region IMPORTA DATOS DEL SAS AL FORM PRINCIPAL = F/T
-            try
-            {
-                string NOMBRE_DEL_REPORTE = "";
-
-                const string ascript = "document.getElementById('req_subject').innerHTML";
-                JavascriptResponse arespuesta = await main.chromiumWebBrowserSASGMXT.EvaluateScriptAsync(ascript);
-
-                if (arespuesta.Result != null)
-                {
-                    if (!string.IsNullOrEmpty(arespuesta.Result.ToString()))
-                    {
-                        NOMBRE_DEL_REPORTE = arespuesta.Result.ToString();
-                    }
-                }
-
-                if (string.IsNullOrEmpty(NOMBRE_DEL_REPORTE))
-                {
-                    RJMessageBox.Show("¡Ningun reporte se ha seleccionado en la pagina de SAS! por favor, entra a un reporte para poder importar sus datos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    if (RJMessageBox.Show($"¿Desea importar los datos del reporte < {NOMBRE_DEL_REPORTE} > abierto en SAS al formulario?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                    {
-                        #region NUEVO METODO PARA OBTENCION
-                        // NUMERO DE REPORTE
-                        try
-                        {
-                            if (this.txtNoDeReporteDelCliente.Text == string.Empty)
-                            {
-                                const string script = "document.getElementById('request-id').innerHTML";
-                                JavascriptResponse respuesta = await main.chromiumWebBrowserSASGMXT.EvaluateScriptAsync(script); if (respuesta.Result != null) { this.txtNoDeReporteDelCliente.Text = respuesta.Result.ToString(); }
-                            }
-                        }
-                        catch (Exception ex) { RJMessageBox.Show(ex.ToString()); }
-
-                        // FALLA REPORTADA
-                        try
-                        {
-                            if (this.txtFallaReportada.Text == string.Empty)
-                            {
-                                const string script = "document.getElementById('req_subject').innerHTML";
-                                JavascriptResponse respuesta = await main.chromiumWebBrowserSASGMXT.EvaluateScriptAsync(script); if (respuesta.Result != null) { this.txtFallaReportada.Text = respuesta.Result.ToString(); }
-                            }
-                        }
-                        catch (Exception ex) { RJMessageBox.Show(ex.ToString()); }
-
-                        // DEPARTAMENTO DEL USUARIO
-                        try
-                        {
-                            if (this.txtDepartamento.Text == string.Empty)
-                            {
-                                const string script = "document.getElementsByClassName('spot-static-content').item(1).textContent";
-                                JavascriptResponse respuesta = await main.chromiumWebBrowserSASGMXT.EvaluateScriptAsync(script); if (respuesta.Result != null) { this.txtDepartamento.Text = respuesta.Result.ToString(); }
-                            }
-                        }
-                        catch (Exception ex) { RJMessageBox.Show(ex.ToString()); }
-
-                        // TELFONO DEL USUARIO
-                        try
-                        {
-                            if (this.txtTelefono.Text == string.Empty)
-                            {
-                                const string script = "document.getElementsByClassName('spot-static-content').item(2).textContent";
-                                JavascriptResponse respuesta = await main.chromiumWebBrowserSASGMXT.EvaluateScriptAsync(script); if (respuesta.Result != null) { this.txtTelefono.Text = respuesta.Result.ToString(); }
-                            }
-                        }
-                        catch (Exception ex) { RJMessageBox.Show(ex.ToString()); }
-
-                        // NUMERO DE EMPLEADO
-                        try
-                        {
-                            if (this.txtNoDeEmpleado.Text == string.Empty)
-                            {
-                                const string script = "document.getElementsByClassName('spot-static-content').item(5).textContent";
-                                JavascriptResponse respuesta = await main.chromiumWebBrowserSASGMXT.EvaluateScriptAsync(script); if (respuesta.Result != null) { this.txtNoDeEmpleado.Text = respuesta.Result.ToString(); }
-                            }
-                        }
-                        catch (Exception ex) { RJMessageBox.Show(ex.ToString()); }
-
-
-                        // NOMBRE DEL USUARIO
-                        try
-                        {
-                            if (this.cboxUsuariofinal.Text == string.Empty)
-                            {
-                                try
-                                {
-                                    const string script = "document.getElementById('userName').innerHTML";
-                                    JavascriptResponse respuesta = await main.chromiumWebBrowserSASGMXT.EvaluateScriptAsync(script);
-
-                                    if (!string.IsNullOrEmpty(respuesta.Result.ToString()))
-                                    {
-                                        this.cboxUsuariofinal.Text = respuesta.Result.ToString();
-                                        EMPLEADO = this.cboxUsuariofinal.Text;
-                                    }
-                                }
-                                catch (Exception ex) { RJMessageBox.Show(ex.ToString()); }
-                            }
-                        }
-                        catch (Exception ex) { RJMessageBox.Show(ex.ToString()); }
-
-                        #endregion
-                    }
-                }
-
-            }
-            catch (Exception ex) { RJMessageBox.Show("La pagina de SAS aun no esta cargada, ingrese a SAS y vuelva a intentarlo. " + Environment.NewLine + Environment.NewLine + "El programa indica:" + Environment.NewLine + ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-            #endregion
-
-            /**
-            // Cargamos los datos del usuario que tengamos guardados de forma local
-            Tuple<bool, Usuario, bool, InventarioViewModel> reportUserData = FindReportUser(this.cboxUsuariofinal.Text.Trim());
-
-            // Cargamos en caso de tener los valores de usuario
-            if (reportUserData.Item1)
-            {
-                Usuario obj = reportUserData.Item2;
-                this.cboxUsuariofinal.Text = obj.Nombre;
-                this.txtTelefono.Text = obj.Extension;
-                this.txtNoDeEmpleado.Text = obj.NoEmpleado;
-            }
-
-            // Cargamos en caso de tener los valores del equipo del usuario
-            if (reportUserData.Item3)
-            {
-                InventarioViewModel obj = reportUserData.Item4;
-
-            }
-            **/
+            
         }
 
 
@@ -2912,14 +2774,7 @@ namespace RIT_Solver
 
         private void btnVisualizarReporte_Click(object sender, EventArgs e)
         {
-            /*
-             * Accedemos al ticket desde manageengine usando la API de su URL
-             */
-            string _ticketID = this.txtNoDeReporteDelCliente.Text;
-
-            string url = $@"https://gmxtsas.mx:8080/WorkOrder.do?woMode=viewWO&woID={_ticketID}";
-            externalCefSharp_WebViewer frm = new externalCefSharp_WebViewer($"Reporte en ServiceDesk - Visualizacion de ##{_ticketID}##", url);
-            frm.Show();
+            
         }
 
         private void linklblTicketGeneradoEnSAS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

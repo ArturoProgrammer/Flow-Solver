@@ -14,7 +14,7 @@ using System.IO;
 
 using CustomMessageBox;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class actualizador : Form
     {
@@ -59,7 +59,7 @@ namespace RIT_Solver
 
                 CommonMethodsLibrary.OutMessage("out", this.Name, $"COMIENZA LA DESCARGA DE LA VERSION: '{UpdaterManager.Update.NewVersion}'", "inf");
                 //WebClient client = new WebClient();
-                client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\rit_solver_server\SETUP_UPDATER.exe"), ruta);
+                client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\Flow_Solver_server\SETUP_UPDATER.exe"), ruta);
             } catch (Exception ex)
             {
                 CommonMethodsLibrary.OutMessage("out", this.Name, $"ERROR INESPERADO EN EL PROCESO DE DESCARGA. EL PROGRAMA DICE: '{ex.ToString()}'", "EXC");

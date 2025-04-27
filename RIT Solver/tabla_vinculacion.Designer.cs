@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class tabla_vinculacion
     {
@@ -193,7 +193,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnGuardar.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.Location = new System.Drawing.Point(478, 195);
             this.btnGuardar.Name = "btnGuardar";
@@ -223,7 +223,7 @@
             // 
             // btnAñadirLocalidad
             // 
-            this.btnAñadirLocalidad.Image = global::RIT_Solver.Properties.Resources.plus_16;
+            this.btnAñadirLocalidad.Image = global::Flow_Solver.Properties.Resources.plus_16;
             this.btnAñadirLocalidad.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAñadirLocalidad.Location = new System.Drawing.Point(12, 193);
             this.btnAñadirLocalidad.Name = "btnAñadirLocalidad";
@@ -237,7 +237,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.businessman;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.businessman;
             this.pictureBox1.Location = new System.Drawing.Point(12, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(106, 85);

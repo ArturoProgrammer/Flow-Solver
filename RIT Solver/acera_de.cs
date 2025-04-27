@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     partial class acera_de : Form
     {

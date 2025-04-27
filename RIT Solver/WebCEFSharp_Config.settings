@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RIT_Solver" GeneratedClassName="WebCEFSharp_Config">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Flow_Solver" GeneratedClassName="WebCEFSharp_Config">
   <Profiles />
   <Settings>
     <Setting Name="CEFDATA_BORRAR_DATOS_AUTOMATICAMENTE" Type="System.Boolean" Scope="User">

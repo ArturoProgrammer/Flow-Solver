@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class exHistorialDeCambios
     {
@@ -99,7 +99,7 @@
             // btnEliminarHistorial
             // 
             this.btnEliminarHistorial.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnEliminarHistorial.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarHistorial.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarHistorial.Location = new System.Drawing.Point(9, 93);
             this.btnEliminarHistorial.Name = "btnEliminarHistorial";
             this.btnEliminarHistorial.Size = new System.Drawing.Size(228, 31);
@@ -112,7 +112,7 @@
             // btnExportarHistorial
             // 
             this.btnExportarHistorial.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExportarHistorial.Image = global::RIT_Solver.Properties.Resources.exportar_16;
+            this.btnExportarHistorial.Image = global::Flow_Solver.Properties.Resources.exportar_16;
             this.btnExportarHistorial.Location = new System.Drawing.Point(9, 56);
             this.btnExportarHistorial.Name = "btnExportarHistorial";
             this.btnExportarHistorial.Size = new System.Drawing.Size(228, 31);
@@ -125,7 +125,7 @@
             // btnFusionarHistoriales
             // 
             this.btnFusionarHistoriales.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnFusionarHistoriales.Image = global::RIT_Solver.Properties.Resources.merger_16;
+            this.btnFusionarHistoriales.Image = global::Flow_Solver.Properties.Resources.merger_16;
             this.btnFusionarHistoriales.Location = new System.Drawing.Point(9, 19);
             this.btnFusionarHistoriales.Name = "btnFusionarHistoriales";
             this.btnFusionarHistoriales.Size = new System.Drawing.Size(228, 31);
@@ -226,7 +226,7 @@
             // btnCerrar
             // 
             this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCerrar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCerrar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCerrar.Location = new System.Drawing.Point(378, 420);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(97, 30);
@@ -249,7 +249,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.computer_historial;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.computer_historial;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 80);

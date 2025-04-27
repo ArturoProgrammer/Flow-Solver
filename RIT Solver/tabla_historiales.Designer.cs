@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class tabla_historiales
     {
@@ -104,7 +104,7 @@
             // toolStrpBtnVisualizar
             // 
             this.toolStrpBtnVisualizar.Enabled = false;
-            this.toolStrpBtnVisualizar.Image = global::RIT_Solver.Properties.Resources.check1_64;
+            this.toolStrpBtnVisualizar.Image = global::Flow_Solver.Properties.Resources.check1_64;
             this.toolStrpBtnVisualizar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnVisualizar.Name = "toolStrpBtnVisualizar";
             this.toolStrpBtnVisualizar.Size = new System.Drawing.Size(76, 44);
@@ -114,7 +114,7 @@
             // toolStrpBtnEliminar
             // 
             this.toolStrpBtnEliminar.Enabled = false;
-            this.toolStrpBtnEliminar.Image = global::RIT_Solver.Properties.Resources.delete2;
+            this.toolStrpBtnEliminar.Image = global::Flow_Solver.Properties.Resources.delete2;
             this.toolStrpBtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnEliminar.Name = "toolStrpBtnEliminar";
             this.toolStrpBtnEliminar.Size = new System.Drawing.Size(67, 44);
@@ -123,7 +123,7 @@
             // 
             // toolStrpBtnRecargar
             // 
-            this.toolStrpBtnRecargar.Image = global::RIT_Solver.Properties.Resources.refresh;
+            this.toolStrpBtnRecargar.Image = global::Flow_Solver.Properties.Resources.refresh;
             this.toolStrpBtnRecargar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnRecargar.Name = "toolStrpBtnRecargar";
             this.toolStrpBtnRecargar.Size = new System.Drawing.Size(72, 44);

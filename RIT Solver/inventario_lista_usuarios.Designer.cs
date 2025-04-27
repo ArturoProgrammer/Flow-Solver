@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class inventario_lista_usuarios
     {
@@ -78,7 +78,7 @@
             // 
             // btnEliminarUsuario
             // 
-            this.btnEliminarUsuario.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarUsuario.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminarUsuario.Location = new System.Drawing.Point(104, 366);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
@@ -91,7 +91,7 @@
             // 
             // button1
             // 
-            this.button1.Image = global::RIT_Solver.Properties.Resources.reload_16;
+            this.button1.Image = global::Flow_Solver.Properties.Resources.reload_16;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(14, 366);
             this.button1.Name = "button1";
@@ -182,7 +182,7 @@
             // 
             this.btnGuardarModificaciones.BackColor = System.Drawing.Color.Transparent;
             this.btnGuardarModificaciones.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.btnGuardarModificaciones.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnGuardarModificaciones.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnGuardarModificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardarModificaciones.Location = new System.Drawing.Point(190, 266);
             this.btnGuardarModificaciones.Name = "btnGuardarModificaciones";
@@ -195,7 +195,7 @@
             // 
             // btnCrearUsuario
             // 
-            this.btnCrearUsuario.Image = global::RIT_Solver.Properties.Resources.plus_16;
+            this.btnCrearUsuario.Image = global::Flow_Solver.Properties.Resources.plus_16;
             this.btnCrearUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCrearUsuario.Location = new System.Drawing.Point(188, 306);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
@@ -363,7 +363,7 @@
             // btnImportarUsuario
             // 
             this.btnImportarUsuario.Enabled = false;
-            this.btnImportarUsuario.Image = global::RIT_Solver.Properties.Resources.importar_16;
+            this.btnImportarUsuario.Image = global::Flow_Solver.Properties.Resources.importar_16;
             this.btnImportarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImportarUsuario.Location = new System.Drawing.Point(304, 306);
             this.btnImportarUsuario.Name = "btnImportarUsuario";
@@ -377,7 +377,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(324, 366);
             this.btnCancelar.Name = "btnCancelar";

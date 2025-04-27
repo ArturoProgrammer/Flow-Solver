@@ -11,7 +11,7 @@ using SpreadsheetLight;
 using CustomMessageBox;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public class ExcelMake
     {

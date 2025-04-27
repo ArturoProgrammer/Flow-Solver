@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class libreta_direcciones_emails
     {
@@ -53,7 +53,7 @@
             // 
             // btnNuevaDireccion
             // 
-            this.btnNuevaDireccion.Image = global::RIT_Solver.Properties.Resources.add_16;
+            this.btnNuevaDireccion.Image = global::Flow_Solver.Properties.Resources.add_16;
             this.btnNuevaDireccion.Location = new System.Drawing.Point(16, 367);
             this.btnNuevaDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevaDireccion.Name = "btnNuevaDireccion";
@@ -67,7 +67,7 @@
             // 
             // btnEliminarDireccion
             // 
-            this.btnEliminarDireccion.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnEliminarDireccion.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnEliminarDireccion.Location = new System.Drawing.Point(16, 402);
             this.btnEliminarDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarDireccion.Name = "btnEliminarDireccion";
@@ -93,7 +93,7 @@
             // 
             // btnAñadirDireccion
             // 
-            this.btnAñadirDireccion.Image = global::RIT_Solver.Properties.Resources.exportar_16;
+            this.btnAñadirDireccion.Image = global::Flow_Solver.Properties.Resources.exportar_16;
             this.btnAñadirDireccion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAñadirDireccion.Location = new System.Drawing.Point(244, 367);
             this.btnAñadirDireccion.Margin = new System.Windows.Forms.Padding(4);

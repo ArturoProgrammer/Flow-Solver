@@ -4,9 +4,8 @@ using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Windows.Forms;
-using Windows.ApplicationModel;
 
-namespace RIT_Solver.Centro_de_Control
+namespace Flow_Solver.Centro_de_Control
 {
     public partial class pendientes_mdi_form : Form
     {

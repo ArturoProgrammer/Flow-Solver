@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class search_on_inventory
     {
@@ -147,7 +147,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(426, 50);
             this.btnCancelar.Name = "btnCancelar";
@@ -169,7 +169,7 @@
             // 
             // btnBuscarInfo
             // 
-            this.btnBuscarInfo.Image = global::RIT_Solver.Properties.Resources.search_16;
+            this.btnBuscarInfo.Image = global::Flow_Solver.Properties.Resources.search_16;
             this.btnBuscarInfo.Location = new System.Drawing.Point(426, 21);
             this.btnBuscarInfo.Name = "btnBuscarInfo";
             this.btnBuscarInfo.Size = new System.Drawing.Size(75, 23);

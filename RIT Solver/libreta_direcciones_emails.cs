@@ -19,7 +19,7 @@ using Microsoft.VisualBasic;
 using CustomMessageBox;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class libreta_direcciones_emails : Form
     {

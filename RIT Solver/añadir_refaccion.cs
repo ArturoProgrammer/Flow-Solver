@@ -14,7 +14,7 @@ using SpreadsheetLight;
 using CustomMessageBox;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class añadir_refaccion : Form
     {

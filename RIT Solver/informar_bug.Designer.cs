@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class informar_bug
     {
@@ -151,7 +151,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCerrar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.Location = new System.Drawing.Point(384, 287);
             this.btnCerrar.Name = "btnCerrar";
@@ -174,7 +174,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Image = global::RIT_Solver.Properties.Resources.send_mail_16;
+            this.btnEnviar.Image = global::Flow_Solver.Properties.Resources.send_mail_16;
             this.btnEnviar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEnviar.Location = new System.Drawing.Point(465, 287);
             this.btnEnviar.Name = "btnEnviar";
@@ -187,7 +187,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.bug_report;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.bug_report;
             this.pictureBox1.Location = new System.Drawing.Point(12, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 66);

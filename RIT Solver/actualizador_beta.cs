@@ -13,7 +13,7 @@ using System.Diagnostics;
 using CustomMessageBox;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class actualizador_beta : Form
     {
@@ -41,7 +41,7 @@ namespace RIT_Solver
             // Comprobamos la conexion con el servidor
             if (Beta_Updates.connectivity() == true)
             {
-                CommonMethodsLibrary.OutMessage("out", this.Name, $"NO SE ENCONTRO CONECTIVIDAD PARA REALIZAR LA DESCARGA DE '{$@"\\{ServerRoute}\Publico\rit_solver_server\SETUP_UPDATER.exe"}'", "error");
+                CommonMethodsLibrary.OutMessage("out", this.Name, $"NO SE ENCONTRO CONECTIVIDAD PARA REALIZAR LA DESCARGA DE '{$@"\\{ServerRoute}\Publico\Flow_Solver_server\SETUP_UPDATER.exe"}'", "error");
 
                 /* Descargamos el instalador */
                 try
@@ -51,7 +51,7 @@ namespace RIT_Solver
 
                     CommonMethodsLibrary.OutMessage("out", this.Name, $"COMIENZA LA DESCARGA DE LA VERSION: '{UpdaterManager.Update.NewVersion}'", "inf");
 
-                    client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\rit_solver_server\SETUP_UPDATER.exe"), InstallerRoute);
+                    client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\Flow_Solver_server\SETUP_UPDATER.exe"), InstallerRoute);
                 }
                 catch (Exception ex)
                 {
@@ -61,7 +61,7 @@ namespace RIT_Solver
                 }
             } else
             {
-                CommonMethodsLibrary.OutMessage("out", this.Name, $"NO SE ENCONTRO CONECTIVIDAD PARA REALIZAR LA DESCARGA DE '{$@"\\{ServerRoute}\Publico\rit_solver_server\SETUP_UPDATER.exe"}'", "err");
+                CommonMethodsLibrary.OutMessage("out", this.Name, $"NO SE ENCONTRO CONECTIVIDAD PARA REALIZAR LA DESCARGA DE '{$@"\\{ServerRoute}\Publico\Flow_Solver_server\SETUP_UPDATER.exe"}'", "err");
             }
         }
 

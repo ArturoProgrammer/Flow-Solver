@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver.MachineProfiles
+﻿namespace Flow_Solver.MachineProfiles
 {
     partial class machine_profile
     {
@@ -121,7 +121,7 @@
             // 
             // toolStrpBtnActualizarPerfil
             // 
-            this.toolStrpBtnActualizarPerfil.Image = global::RIT_Solver.Properties.Resources.refresh;
+            this.toolStrpBtnActualizarPerfil.Image = global::Flow_Solver.Properties.Resources.refresh;
             this.toolStrpBtnActualizarPerfil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnActualizarPerfil.Name = "toolStrpBtnActualizarPerfil";
             this.toolStrpBtnActualizarPerfil.Size = new System.Drawing.Size(79, 44);
@@ -144,7 +144,7 @@
             // lblStatus
             // 
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblStatus.Image = global::RIT_Solver.Properties.Resources.check;
+            this.lblStatus.Image = global::Flow_Solver.Properties.Resources.check;
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(60, 20);
             this.lblStatus.Text = "Listo";
@@ -212,7 +212,7 @@
             // btnCambiarFoto
             // 
             this.btnCambiarFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCambiarFoto.Image = global::RIT_Solver.Properties.Resources.add_161;
+            this.btnCambiarFoto.Image = global::Flow_Solver.Properties.Resources.add_161;
             this.btnCambiarFoto.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCambiarFoto.Location = new System.Drawing.Point(256, 246);
             this.btnCambiarFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -557,7 +557,7 @@
             // 
             // pboxImageModel
             // 
-            this.pboxImageModel.BackgroundImage = global::RIT_Solver.Properties.Resources.error_file;
+            this.pboxImageModel.BackgroundImage = global::Flow_Solver.Properties.Resources.error_file;
             this.pboxImageModel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pboxImageModel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pboxImageModel.Cursor = System.Windows.Forms.Cursors.Default;

@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class respaldo_de_programa
     {
@@ -283,7 +283,7 @@
             // 
             // btnExportarBackup
             // 
-            this.btnExportarBackup.Image = global::RIT_Solver.Properties.Resources.exportar_16;
+            this.btnExportarBackup.Image = global::Flow_Solver.Properties.Resources.exportar_16;
             this.btnExportarBackup.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExportarBackup.Location = new System.Drawing.Point(377, 225);
             this.btnExportarBackup.Name = "btnExportarBackup";
@@ -297,7 +297,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.Location = new System.Drawing.Point(516, 225);
             this.btnCancelar.Name = "btnCancelar";
@@ -379,7 +379,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.data_recovery;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.data_recovery;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 110);

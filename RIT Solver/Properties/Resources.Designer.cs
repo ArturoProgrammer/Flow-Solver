@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RIT_Solver.Properties {
+namespace Flow_Solver.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace RIT_Solver.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RIT_Solver.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Flow_Solver.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -1593,9 +1593,9 @@ namespace RIT_Solver.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
-        internal static System.Drawing.Icon RIT_Solver {
+        internal static System.Drawing.Icon Flow_Solver {
             get {
-                object obj = ResourceManager.GetObject("RIT_Solver", resourceCulture);
+                object obj = ResourceManager.GetObject("Flow_Solver", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

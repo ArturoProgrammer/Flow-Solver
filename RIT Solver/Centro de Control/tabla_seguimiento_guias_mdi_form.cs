@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RIT_Solver.Centro_de_Control
+namespace Flow_Solver.Centro_de_Control
 {
     public partial class tabla_seguimiento_guias_mdi_form : Form
     {

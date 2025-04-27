@@ -254,24 +254,24 @@ public partial class FormMessageBox : Form
         switch (icon)
         {
             case MessageBoxIcon.Error: //Error
-                this.pictureBoxIcon.Image = RIT_Solver.Properties.Resources.msg_error;
+                this.pictureBoxIcon.Image = Flow_Solver.Properties.Resources.msg_error;
                 PrimaryColor = Color.FromArgb(224, 79, 95);
                 this.btnClose.FlatAppearance.MouseOverBackColor = Color.Crimson;
                 break;
             case MessageBoxIcon.Information: //Information
-                this.pictureBoxIcon.Image = RIT_Solver.Properties.Resources.msg_information;
+                this.pictureBoxIcon.Image = Flow_Solver.Properties.Resources.msg_information;
                 PrimaryColor = Color.FromArgb(10, 119, 232);
                 break;
             case MessageBoxIcon.Question://Question
-                this.pictureBoxIcon.Image = RIT_Solver.Properties.Resources.msg_question;
+                this.pictureBoxIcon.Image = Flow_Solver.Properties.Resources.msg_question;
                 PrimaryColor = Color.FromArgb(10, 119, 232);
                 break;
             case MessageBoxIcon.Exclamation://Exclamation
-                this.pictureBoxIcon.Image = RIT_Solver.Properties.Resources.msg_warning;
+                this.pictureBoxIcon.Image = Flow_Solver.Properties.Resources.msg_warning;
                 PrimaryColor = Color.FromArgb(255, 140, 0);
                 break;
             case MessageBoxIcon.None: //None
-                this.pictureBoxIcon.Image = RIT_Solver.Properties.Resources.msh_chat;
+                this.pictureBoxIcon.Image = Flow_Solver.Properties.Resources.msh_chat;
                 PrimaryColor = Color.CornflowerBlue;
                 break;
         }

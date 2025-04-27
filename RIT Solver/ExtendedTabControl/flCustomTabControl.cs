@@ -16,8 +16,6 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System;
 using System.Collections.Generic;
-using Windows.Media.Protection.PlayReady;
-using CefSharp.Internals;
 
 namespace FlowControls
 {

@@ -14,10 +14,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 using CustomMessageBox;
-using Windows.Media.Core;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class lista_usuarios : Form
     {

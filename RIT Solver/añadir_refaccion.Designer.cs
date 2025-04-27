@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class añadir_refaccion
     {
@@ -185,7 +185,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RIT_Solver.Properties.Resources.spare_parts;
+            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.spare_parts;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 110);
@@ -195,7 +195,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Image = global::RIT_Solver.Properties.Resources.cancel_16;
+            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
             this.btnCancelar.Location = new System.Drawing.Point(175, 237);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 39);
@@ -208,7 +208,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Image = global::RIT_Solver.Properties.Resources.save_16;
+            this.btnGuardar.Image = global::Flow_Solver.Properties.Resources.save_16;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.Location = new System.Drawing.Point(281, 237);
             this.btnGuardar.Name = "btnGuardar";

@@ -1,4 +1,4 @@
-﻿namespace RIT_Solver
+﻿namespace Flow_Solver
 {
     partial class rit_mdi_form
     {
@@ -308,7 +308,7 @@
             // 
             // abrirTicketToolStripMenuItem
             // 
-            this.abrirTicketToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.documentos;
+            this.abrirTicketToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.documentos;
             this.abrirTicketToolStripMenuItem.Name = "abrirTicketToolStripMenuItem";
             this.abrirTicketToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.abrirTicketToolStripMenuItem.Text = "Abrir proyecto de ticket";
@@ -316,7 +316,7 @@
             // 
             // guardarTicketToolStripMenuItem
             // 
-            this.guardarTicketToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.save2;
+            this.guardarTicketToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.save2;
             this.guardarTicketToolStripMenuItem.Name = "guardarTicketToolStripMenuItem";
             this.guardarTicketToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.guardarTicketToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
@@ -339,7 +339,7 @@
             // 
             // minimizarReporteToolStripMenuItem
             // 
-            this.minimizarReporteToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.minimize_window_32;
+            this.minimizarReporteToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.minimize_window_32;
             this.minimizarReporteToolStripMenuItem.Name = "minimizarReporteToolStripMenuItem";
             this.minimizarReporteToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.minimizarReporteToolStripMenuItem.Text = "Minimizar reporte";
@@ -347,7 +347,7 @@
             // 
             // salirToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.cerrar;
+            this.salirToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.cerrar;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.salirToolStripMenuItem.Text = "Cerrar";
@@ -370,7 +370,7 @@
             // 
             // sistemaDeInventariosToolStripMenuItem
             // 
-            this.sistemaDeInventariosToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.inventory;
+            this.sistemaDeInventariosToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.inventory;
             this.sistemaDeInventariosToolStripMenuItem.Name = "sistemaDeInventariosToolStripMenuItem";
             this.sistemaDeInventariosToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.sistemaDeInventariosToolStripMenuItem.Text = "Sistema de Inventarios";
@@ -378,7 +378,7 @@
             // 
             // limpiarCamposToolStripMenuItem
             // 
-            this.limpiarCamposToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.limpiar;
+            this.limpiarCamposToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.limpiar;
             this.limpiarCamposToolStripMenuItem.Name = "limpiarCamposToolStripMenuItem";
             this.limpiarCamposToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.limpiarCamposToolStripMenuItem.Text = "Limpiar campos";
@@ -386,7 +386,7 @@
             // 
             // importarDatosDeReporteDeSASAFormularioToolStripMenuItem
             // 
-            this.importarDatosDeReporteDeSASAFormularioToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.exportar;
+            this.importarDatosDeReporteDeSASAFormularioToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.exportar;
             this.importarDatosDeReporteDeSASAFormularioToolStripMenuItem.Name = "importarDatosDeReporteDeSASAFormularioToolStripMenuItem";
             this.importarDatosDeReporteDeSASAFormularioToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.importarDatosDeReporteDeSASAFormularioToolStripMenuItem.Text = "Importar datos de SAS a Formulario";
@@ -394,7 +394,7 @@
             // 
             // seleccionarUsuarioToolStripMenuItem
             // 
-            this.seleccionarUsuarioToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.businessman;
+            this.seleccionarUsuarioToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.businessman;
             this.seleccionarUsuarioToolStripMenuItem.Name = "seleccionarUsuarioToolStripMenuItem";
             this.seleccionarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.seleccionarUsuarioToolStripMenuItem.Text = "Seleccionar usuario";
@@ -407,7 +407,7 @@
             // 
             // imprimirRITToolStripMenuItem
             // 
-            this.imprimirRITToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.printer;
+            this.imprimirRITToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.printer;
             this.imprimirRITToolStripMenuItem.Name = "imprimirRITToolStripMenuItem";
             this.imprimirRITToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.P)));
@@ -417,7 +417,7 @@
             // 
             // guardarRITPDFToolStripMenuItem
             // 
-            this.guardarRITPDFToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.pdf;
+            this.guardarRITPDFToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.pdf;
             this.guardarRITPDFToolStripMenuItem.Name = "guardarRITPDFToolStripMenuItem";
             this.guardarRITPDFToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.G)));
@@ -427,7 +427,7 @@
             // 
             // guardarEImprimirRITToolStripMenuItem
             // 
-            this.guardarEImprimirRITToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.printer_pdf;
+            this.guardarEImprimirRITToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.printer_pdf;
             this.guardarEImprimirRITToolStripMenuItem.Name = "guardarEImprimirRITToolStripMenuItem";
             this.guardarEImprimirRITToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.guardarEImprimirRITToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
@@ -445,7 +445,7 @@
             // 
             // solicitarRefaccionesToolStripMenuItem
             // 
-            this.solicitarRefaccionesToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.spare_parts;
+            this.solicitarRefaccionesToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.spare_parts;
             this.solicitarRefaccionesToolStripMenuItem.Name = "solicitarRefaccionesToolStripMenuItem";
             this.solicitarRefaccionesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.solicitarRefaccionesToolStripMenuItem.Text = "Solicitar refacciones";
@@ -453,7 +453,7 @@
             // 
             // solicitarTonerToolStripMenuItem
             // 
-            this.solicitarTonerToolStripMenuItem.Image = global::RIT_Solver.Properties.Resources.toner;
+            this.solicitarTonerToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.toner;
             this.solicitarTonerToolStripMenuItem.Name = "solicitarTonerToolStripMenuItem";
             this.solicitarTonerToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.solicitarTonerToolStripMenuItem.Text = "Solicitar toner";
@@ -517,7 +517,7 @@
             // btnAtras
             // 
             this.btnAtras.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAtras.Image = global::RIT_Solver.Properties.Resources.back_64;
+            this.btnAtras.Image = global::Flow_Solver.Properties.Resources.back_64;
             this.btnAtras.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(24, 39);
@@ -527,7 +527,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnSiguiente.Image = global::RIT_Solver.Properties.Resources.next_64;
+            this.btnSiguiente.Image = global::Flow_Solver.Properties.Resources.next_64;
             this.btnSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(24, 39);
@@ -542,7 +542,7 @@
             // 
             // toolMinimizarReporte
             // 
-            this.toolMinimizarReporte.Image = global::RIT_Solver.Properties.Resources.minimize_window_32;
+            this.toolMinimizarReporte.Image = global::Flow_Solver.Properties.Resources.minimize_window_32;
             this.toolMinimizarReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolMinimizarReporte.Name = "toolMinimizarReporte";
             this.toolMinimizarReporte.Size = new System.Drawing.Size(64, 39);
@@ -552,7 +552,7 @@
             // 
             // toolStrpBtnCerrarProyecto
             // 
-            this.toolStrpBtnCerrarProyecto.Image = global::RIT_Solver.Properties.Resources.close1_32;
+            this.toolStrpBtnCerrarProyecto.Image = global::Flow_Solver.Properties.Resources.close1_32;
             this.toolStrpBtnCerrarProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStrpBtnCerrarProyecto.Name = "toolStrpBtnCerrarProyecto";
             this.toolStrpBtnCerrarProyecto.Size = new System.Drawing.Size(43, 39);
@@ -567,7 +567,7 @@
             // 
             // toolAbrirProyecto
             // 
-            this.toolAbrirProyecto.Image = global::RIT_Solver.Properties.Resources.project_open;
+            this.toolAbrirProyecto.Image = global::Flow_Solver.Properties.Resources.project_open;
             this.toolAbrirProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolAbrirProyecto.Name = "toolAbrirProyecto";
             this.toolAbrirProyecto.Size = new System.Drawing.Size(37, 39);
@@ -578,7 +578,7 @@
             // 
             // toolGuardarProyecto
             // 
-            this.toolGuardarProyecto.Image = global::RIT_Solver.Properties.Resources.save2;
+            this.toolGuardarProyecto.Image = global::Flow_Solver.Properties.Resources.save2;
             this.toolGuardarProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolGuardarProyecto.Name = "toolGuardarProyecto";
             this.toolGuardarProyecto.Size = new System.Drawing.Size(53, 39);
@@ -594,7 +594,7 @@
             // 
             // toolLimbiarFormulario
             // 
-            this.toolLimbiarFormulario.Image = global::RIT_Solver.Properties.Resources.limpiar;
+            this.toolLimbiarFormulario.Image = global::Flow_Solver.Properties.Resources.limpiar;
             this.toolLimbiarFormulario.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolLimbiarFormulario.Name = "toolLimbiarFormulario";
             this.toolLimbiarFormulario.Size = new System.Drawing.Size(51, 39);
@@ -605,7 +605,7 @@
             // 
             // toolImportarReporteSAS
             // 
-            this.toolImportarReporteSAS.Image = global::RIT_Solver.Properties.Resources.exportar;
+            this.toolImportarReporteSAS.Image = global::Flow_Solver.Properties.Resources.exportar;
             this.toolImportarReporteSAS.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolImportarReporteSAS.Name = "toolImportarReporteSAS";
             this.toolImportarReporteSAS.Size = new System.Drawing.Size(57, 39);
@@ -616,7 +616,7 @@
             // 
             // toolAbrirInventario
             // 
-            this.toolAbrirInventario.Image = global::RIT_Solver.Properties.Resources.inventory;
+            this.toolAbrirInventario.Image = global::Flow_Solver.Properties.Resources.inventory;
             this.toolAbrirInventario.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolAbrirInventario.Name = "toolAbrirInventario";
             this.toolAbrirInventario.Size = new System.Drawing.Size(64, 39);
@@ -627,7 +627,7 @@
             // 
             // toolSeleccionarUsuario
             // 
-            this.toolSeleccionarUsuario.Image = global::RIT_Solver.Properties.Resources.businessman;
+            this.toolSeleccionarUsuario.Image = global::Flow_Solver.Properties.Resources.businessman;
             this.toolSeleccionarUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolSeleccionarUsuario.Name = "toolSeleccionarUsuario";
             this.toolSeleccionarUsuario.Size = new System.Drawing.Size(71, 39);
@@ -644,7 +644,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::RIT_Solver.Properties.Resources.record;
+            this.toolStripButton1.Image = global::Flow_Solver.Properties.Resources.record;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(24, 39);
@@ -661,7 +661,7 @@
             // btnCargarPerfil
             // 
             this.btnCargarPerfil.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnCargarPerfil.Image = global::RIT_Solver.Properties.Resources.check2;
+            this.btnCargarPerfil.Image = global::Flow_Solver.Properties.Resources.check2;
             this.btnCargarPerfil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCargarPerfil.Name = "btnCargarPerfil";
             this.btnCargarPerfil.Size = new System.Drawing.Size(24, 39);
@@ -671,7 +671,7 @@
             // btnBorrarPerfil
             // 
             this.btnBorrarPerfil.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnBorrarPerfil.Image = global::RIT_Solver.Properties.Resources.delete_16;
+            this.btnBorrarPerfil.Image = global::Flow_Solver.Properties.Resources.delete_16;
             this.btnBorrarPerfil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBorrarPerfil.Name = "btnBorrarPerfil";
             this.btnBorrarPerfil.Size = new System.Drawing.Size(24, 39);
@@ -686,7 +686,7 @@
             // toolImprimirRIT
             // 
             this.toolImprimirRIT.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolImprimirRIT.Image = global::RIT_Solver.Properties.Resources.printer;
+            this.toolImprimirRIT.Image = global::Flow_Solver.Properties.Resources.printer;
             this.toolImprimirRIT.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolImprimirRIT.Name = "toolImprimirRIT";
             this.toolImprimirRIT.Size = new System.Drawing.Size(24, 39);
@@ -696,7 +696,7 @@
             // toolImprimirYGuardarRIT
             // 
             this.toolImprimirYGuardarRIT.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolImprimirYGuardarRIT.Image = global::RIT_Solver.Properties.Resources.printer_pdf;
+            this.toolImprimirYGuardarRIT.Image = global::Flow_Solver.Properties.Resources.printer_pdf;
             this.toolImprimirYGuardarRIT.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolImprimirYGuardarRIT.Name = "toolImprimirYGuardarRIT";
             this.toolImprimirYGuardarRIT.Size = new System.Drawing.Size(24, 39);
@@ -706,7 +706,7 @@
             // toolGuardarPDF
             // 
             this.toolGuardarPDF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolGuardarPDF.Image = global::RIT_Solver.Properties.Resources.pdf;
+            this.toolGuardarPDF.Image = global::Flow_Solver.Properties.Resources.pdf;
             this.toolGuardarPDF.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolGuardarPDF.Name = "toolGuardarPDF";
             this.toolGuardarPDF.Size = new System.Drawing.Size(24, 39);
@@ -720,7 +720,7 @@
             // 
             // toolAbrirPDF
             // 
-            this.toolAbrirPDF.Image = global::RIT_Solver.Properties.Resources.open;
+            this.toolAbrirPDF.Image = global::Flow_Solver.Properties.Resources.open;
             this.toolAbrirPDF.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolAbrirPDF.Name = "toolAbrirPDF";
             this.toolAbrirPDF.Size = new System.Drawing.Size(61, 39);
@@ -759,7 +759,7 @@
             // btnGenerarEnSAS
             // 
             this.btnGenerarEnSAS.Enabled = false;
-            this.btnGenerarEnSAS.Image = global::RIT_Solver.Properties.Resources.exportar2_24;
+            this.btnGenerarEnSAS.Image = global::Flow_Solver.Properties.Resources.exportar2_24;
             this.btnGenerarEnSAS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenerarEnSAS.Location = new System.Drawing.Point(3, 159);
             this.btnGenerarEnSAS.Name = "btnGenerarEnSAS";
@@ -774,7 +774,7 @@
             // btnGenerarReporteEnSASVia911
             // 
             this.btnGenerarReporteEnSASVia911.Enabled = false;
-            this.btnGenerarReporteEnSASVia911.Image = global::RIT_Solver.Properties.Resources.call_16;
+            this.btnGenerarReporteEnSASVia911.Image = global::Flow_Solver.Properties.Resources.call_16;
             this.btnGenerarReporteEnSASVia911.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenerarReporteEnSASVia911.Location = new System.Drawing.Point(3, 200);
             this.btnGenerarReporteEnSASVia911.Name = "btnGenerarReporteEnSASVia911";
@@ -791,7 +791,7 @@
             this.btnCargarEquipo.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnCargarEquipo.Enabled = false;
             this.btnCargarEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarEquipo.Image = global::RIT_Solver.Properties.Resources.check;
+            this.btnCargarEquipo.Image = global::Flow_Solver.Properties.Resources.check;
             this.btnCargarEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCargarEquipo.Location = new System.Drawing.Point(895, 210);
             this.btnCargarEquipo.Margin = new System.Windows.Forms.Padding(0);
@@ -807,7 +807,7 @@
             this.btnVisualizarReporte.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnVisualizarReporte.Enabled = false;
             this.btnVisualizarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisualizarReporte.Image = global::RIT_Solver.Properties.Resources.check;
+            this.btnVisualizarReporte.Image = global::Flow_Solver.Properties.Resources.check;
             this.btnVisualizarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVisualizarReporte.Location = new System.Drawing.Point(123, 23);
             this.btnVisualizarReporte.Margin = new System.Windows.Forms.Padding(0);
@@ -823,7 +823,7 @@
             this.btnVerTarjetaDeUsuarioActual.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnVerTarjetaDeUsuarioActual.Enabled = false;
             this.btnVerTarjetaDeUsuarioActual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerTarjetaDeUsuarioActual.Image = global::RIT_Solver.Properties.Resources.check;
+            this.btnVerTarjetaDeUsuarioActual.Image = global::Flow_Solver.Properties.Resources.check;
             this.btnVerTarjetaDeUsuarioActual.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVerTarjetaDeUsuarioActual.Location = new System.Drawing.Point(666, 172);
             this.btnVerTarjetaDeUsuarioActual.Margin = new System.Windows.Forms.Padding(0);
@@ -839,7 +839,7 @@
             this.btnVerHistorialDeEquipo.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnVerHistorialDeEquipo.Enabled = false;
             this.btnVerHistorialDeEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerHistorialDeEquipo.Image = global::RIT_Solver.Properties.Resources.computer_historial_16;
+            this.btnVerHistorialDeEquipo.Image = global::Flow_Solver.Properties.Resources.computer_historial_16;
             this.btnVerHistorialDeEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVerHistorialDeEquipo.Location = new System.Drawing.Point(726, 210);
             this.btnVerHistorialDeEquipo.Margin = new System.Windows.Forms.Padding(0);
@@ -879,7 +879,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackgroundImage = global::RIT_Solver.Properties.Resources.compusof_transp_logo;
+            this.panel6.BackgroundImage = global::Flow_Solver.Properties.Resources.compusof_transp_logo;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel6.Location = new System.Drawing.Point(334, 8);
             this.panel6.Name = "panel6";
@@ -888,7 +888,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackgroundImage = global::RIT_Solver.Properties.Resources.gmxt_logo;
+            this.panel5.BackgroundImage = global::Flow_Solver.Properties.Resources.gmxt_logo;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel5.Location = new System.Drawing.Point(6, 8);
             this.panel5.Name = "panel5";
@@ -1387,7 +1387,7 @@
             // btnReducirRefaccion
             // 
             this.btnReducirRefaccion.Enabled = false;
-            this.btnReducirRefaccion.Image = global::RIT_Solver.Properties.Resources.spare_parts2_24;
+            this.btnReducirRefaccion.Image = global::Flow_Solver.Properties.Resources.spare_parts2_24;
             this.btnReducirRefaccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReducirRefaccion.Location = new System.Drawing.Point(147, 44);
             this.btnReducirRefaccion.Name = "btnReducirRefaccion";
@@ -1402,7 +1402,7 @@
             // btnReducirToner
             // 
             this.btnReducirToner.Enabled = false;
-            this.btnReducirToner.Image = global::RIT_Solver.Properties.Resources.toners_24;
+            this.btnReducirToner.Image = global::Flow_Solver.Properties.Resources.toners_24;
             this.btnReducirToner.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReducirToner.Location = new System.Drawing.Point(147, 8);
             this.btnReducirToner.Name = "btnReducirToner";
@@ -1416,7 +1416,7 @@
             // 
             // btnCerrarRit
             // 
-            this.btnCerrarRit.Image = global::RIT_Solver.Properties.Resources.cerrar2_24;
+            this.btnCerrarRit.Image = global::Flow_Solver.Properties.Resources.cerrar2_24;
             this.btnCerrarRit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCerrarRit.Location = new System.Drawing.Point(147, 82);
             this.btnCerrarRit.Name = "btnCerrarRit";
@@ -1430,7 +1430,7 @@
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Image = global::RIT_Solver.Properties.Resources.clean_24;
+            this.btnLimpiarCampos.Image = global::Flow_Solver.Properties.Resources.clean_24;
             this.btnLimpiarCampos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpiarCampos.Location = new System.Drawing.Point(3, 240);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
@@ -1443,7 +1443,7 @@
             // 
             // btnImportarDeSAS
             // 
-            this.btnImportarDeSAS.Image = global::RIT_Solver.Properties.Resources.importar2_24;
+            this.btnImportarDeSAS.Image = global::Flow_Solver.Properties.Resources.importar2_24;
             this.btnImportarDeSAS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnImportarDeSAS.Location = new System.Drawing.Point(3, 121);
             this.btnImportarDeSAS.Name = "btnImportarDeSAS";
@@ -1456,7 +1456,7 @@
             // 
             // btnGuardarPDFeImprimir
             // 
-            this.btnGuardarPDFeImprimir.Image = global::RIT_Solver.Properties.Resources.printer_pdf2_24;
+            this.btnGuardarPDFeImprimir.Image = global::Flow_Solver.Properties.Resources.printer_pdf2_24;
             this.btnGuardarPDFeImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarPDFeImprimir.Location = new System.Drawing.Point(3, 82);
             this.btnGuardarPDFeImprimir.Name = "btnGuardarPDFeImprimir";
@@ -1469,7 +1469,7 @@
             // 
             // btnGuardarPDF
             // 
-            this.btnGuardarPDF.Image = global::RIT_Solver.Properties.Resources.pdf_24;
+            this.btnGuardarPDF.Image = global::Flow_Solver.Properties.Resources.pdf_24;
             this.btnGuardarPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarPDF.Location = new System.Drawing.Point(3, 44);
             this.btnGuardarPDF.Name = "btnGuardarPDF";
@@ -1482,7 +1482,7 @@
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Image = global::RIT_Solver.Properties.Resources.printer_24;
+            this.btnImprimir.Image = global::Flow_Solver.Properties.Resources.printer_24;
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnImprimir.Location = new System.Drawing.Point(3, 8);
             this.btnImprimir.Name = "btnImprimir";
@@ -1542,7 +1542,7 @@
             // 
             // btnSolicitarToner
             // 
-            this.btnSolicitarToner.Image = global::RIT_Solver.Properties.Resources.toners_16;
+            this.btnSolicitarToner.Image = global::Flow_Solver.Properties.Resources.toners_16;
             this.btnSolicitarToner.Location = new System.Drawing.Point(135, 47);
             this.btnSolicitarToner.Name = "btnSolicitarToner";
             this.btnSolicitarToner.Size = new System.Drawing.Size(122, 22);
@@ -1588,7 +1588,7 @@
             // 
             // btnSolicitarRefaccion
             // 
-            this.btnSolicitarRefaccion.Image = global::RIT_Solver.Properties.Resources.spare_parts2_16;
+            this.btnSolicitarRefaccion.Image = global::Flow_Solver.Properties.Resources.spare_parts2_16;
             this.btnSolicitarRefaccion.Location = new System.Drawing.Point(7, 47);
             this.btnSolicitarRefaccion.Name = "btnSolicitarRefaccion";
             this.btnSolicitarRefaccion.Size = new System.Drawing.Size(122, 22);
@@ -2256,7 +2256,7 @@
             // 
             // toolJobStatus
             // 
-            this.toolJobStatus.Image = global::RIT_Solver.Properties.Resources.check;
+            this.toolJobStatus.Image = global::Flow_Solver.Properties.Resources.check;
             this.toolJobStatus.Name = "toolJobStatus";
             this.toolJobStatus.Size = new System.Drawing.Size(84, 20);
             this.toolJobStatus.Text = "Todo Listo!";

@@ -1,7 +1,7 @@
 ﻿using DocumentFormat.OpenXml.Presentation;
 using Microsoft.Vbe.Interop;
 using Newtonsoft.Json;
-using RIT_Solver;
+using Flow_Solver;
 using SpreadsheetLight;
 using System;
 using System.Collections.Generic;
@@ -15,14 +15,12 @@ using System.Windows.Forms;
 using System.IO.Packaging;
 using iTextSharp.text.pdf.codec;
 using DocumentFormat.OpenXml.Drawing.Diagrams;
-using System.Xml.Serialization.Configuration;
 using Newtonsoft.Json.Linq;
 using DocumentFormat.OpenXml.Spreadsheet;
 using iTextSharp.text.pdf;
 using System.Runtime.InteropServices.ComTypes;
 using Org.BouncyCastle.Bcpg.OpenPgp;
 using System.Windows.Media.Converters;
-using CefSharp.DevTools.IO;
 
 namespace FileProjectManager
 {
@@ -226,19 +224,19 @@ namespace FileProjectManager
                     Marca = "",
                     Modelo = "",
                     NoSerie = "",   // LO INGRESA EL USUARIO
-                    Cliente = RIT_Solver.Properties.Settings.Default.Cliente,
+                    Cliente = Flow_Solver.Properties.Settings.Default.Cliente,
                     HoraReporte = "",
                     MinutoReporte = "",
                     Sucursal = "",
                     NoSucursal = "",
-                    Direccion = RIT_Solver.Properties.Settings.Default.Direccion,
-                    Poblacion = RIT_Solver.Properties.Settings.Default.LocalidadIDC,
+                    Direccion = Flow_Solver.Properties.Settings.Default.Direccion,
+                    Poblacion = Flow_Solver.Properties.Settings.Default.LocalidadIDC,
                     UsuarioFinal = "",  // LO INGRESA EL USUARIO
                     Departamento = "",  // LO INGRESA EL USUARIO
                     NoEmpleado = "",    // LO INGRESA EL USUARIO
                     Telefono = "",      // LO INGRESA EL USUARIO
-                    CentroServicios = RIT_Solver.Properties.Settings.Default.CentroDeServicios,
-                    Tecnico = RIT_Solver.Properties.Settings.Default.NombreIDC,
+                    CentroServicios = Flow_Solver.Properties.Settings.Default.CentroDeServicios,
+                    Tecnico = Flow_Solver.Properties.Settings.Default.NombreIDC,
                     FechaDeGeneracionReporte = DateTime.Now,
 
                     UsaronRefacciones = false,

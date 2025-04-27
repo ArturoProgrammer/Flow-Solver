@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using System.Messaging;
 using System.Windows.Forms;
 using System.Windows.Controls;
 using System.Management.Automation;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public class PowershellModuleInstaller
     {
@@ -191,10 +190,10 @@ namespace RIT_Solver
                     }
                     break;
                 case RegIcon.MainApp_IconFile:
-                    string path_logo = $@"{Application.StartupPath}\RIT_Solver.ico";
+                    string path_logo = $@"{Application.StartupPath}\Flow_Solver.ico";
                     if (true)
                     {
-                        System.Drawing.Icon icon = Properties.Resources.RIT_Solver;
+                        System.Drawing.Icon icon = Properties.Resources.Flow_Solver;
                         using (FileStream fs = new FileStream(path_logo, FileMode.Create, FileAccess.Write))
                         {
                             icon.Save(fs);
@@ -236,7 +235,7 @@ namespace RIT_Solver
 ""VersionMajor""=dword:00000001
 ""VersionMinor""=dword:00000001
 ""EstimatedSize""=dword:0058000
-""DisplayIcon""=""{Application.StartupPath}\RIT_Solver.ico""
+""DisplayIcon""=""{Application.StartupPath}\Flow_Solver.ico""
 ""InstallationPath""=""{Application.StartupPath}""
 ";
                 File.WriteAllText(REG_PATH, content);

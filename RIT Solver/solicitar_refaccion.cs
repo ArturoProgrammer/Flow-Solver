@@ -15,7 +15,7 @@ using System.Net;
 using System.Web;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class solicitar_refaccion : Form
     {

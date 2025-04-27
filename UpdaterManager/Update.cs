@@ -27,7 +27,7 @@ namespace UpdaterManager
                 ruta_instalador = ruta;
 
                 //WebClient client = new WebClient();
-                client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\rit_solver_server\SETUP_UPDATER.exe"), ruta);
+                client.DownloadFileAsync(new Uri($@"\\{ServerRoute}\Publico\Flow_Solver_server\SETUP_UPDATER.exe"), ruta);
 
             }
         }
@@ -44,7 +44,7 @@ namespace UpdaterManager
             ruta_instalador = ruta;
 
             //WebClient client = new WebClient();
-            client.DownloadFile(new Uri($@"\\{ServerRoute}\Publico\rit_solver_server\SETUP_UPDATER.exe"), ruta);
+            client.DownloadFile(new Uri($@"\\{ServerRoute}\Publico\Flow_Solver_server\SETUP_UPDATER.exe"), ruta);
 
         }
 
@@ -75,7 +75,7 @@ namespace UpdaterManager
             string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\VERSION.txt";
 
             //WebClient client = new WebClient();
-            client.DownloadFile(new Uri($@"\\{ServerRoute}\Publico\rit_solver_server\VERSION.txt"), path);
+            client.DownloadFile(new Uri($@"\\{ServerRoute}\Publico\Flow_Solver_server\VERSION.txt"), path);
 
             StreamReader sr = new StreamReader(path);
             ser_ver = File.ReadLines(path).Last();

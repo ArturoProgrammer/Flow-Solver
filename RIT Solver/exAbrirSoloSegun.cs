@@ -12,10 +12,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Converters;
-using Windows.ApplicationModel.VoiceCommands;
-using Windows.Media.Audio;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class exAbrirSoloSegun : Form
     {

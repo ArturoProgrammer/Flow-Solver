@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Threading;
 using DocumentFormat.OpenXml.Wordprocessing;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class PrinterForm : Form
     {

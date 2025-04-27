@@ -13,9 +13,7 @@ using System.Security.RightsManagement;
 using FileProjectManager;
 using System.Windows.Diagnostics;
 using DocumentFormat.OpenXml.Bibliography;
-using CefSharp.DevTools.Database;
 using System.Web;
-using System.Web.UI;
 using DocumentFormat.OpenXml.Spreadsheet;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Office2013.Excel;
@@ -25,11 +23,10 @@ using System.Runtime.CompilerServices;
 using System.Linq.Expressions;
 using System.Web.Caching;
 using SpreadsheetLight;
-using Windows.ApplicationModel.Email.DataProvider;
 using System.Data.OleDb;
 using Org.BouncyCastle.Asn1.X509;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     /// <summary>
     /// Tarjeta de direccion email registrada del sistema
@@ -618,80 +615,6 @@ namespace RIT_Solver
 
     }
 
-
-    public class AccessSqlConnection
-    {
-        private const string _dbName = "rit_server.accdb";
-
-        /// <summary>
-        /// Cadena de conexion a la base de datos
-        /// </summary>
-        public string ConnectionString { get; }
-        /// <summary>
-        /// Ruta del archivo de base de datos en el servidor
-        /// </summary>
-        public string DataBasePath { get; private set; } = $@"\\{Properties.Settings.Default.SERVER_ROUTE}\{Properties.Settings.Default.SYSDATA_DataBasePath}";
-        public (string Name, string Table) DataBaseI { get; }
-
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="db">Nombre del archivo de la base de datos</param>
-        /// <param name="table">Tabla de los datos a leer</param>
-        public AccessSqlConnection(string table, string db=_dbName)
-        {
-            DataBaseI = (db, table);
-            ConnectionString = $"Provider=Microsoft.ACE.OLEDB.12.0; Data Source={DataBasePath}; Persist Security Info=False;";
-        }
-
-        /// <summary>
-        /// Lee los datos de la base de datos
-        /// </summary>
-        /// <param name="_Columns">Columnas de los datos a obtener</param>
-        /// <param name="_SearchParams">Parametros de busqueda</param>
-        /// <returns></returns>
-        public OleDbDataReader Read (string[] _Columns, string _SearchParams)
-        {
-            using (OleDbConnection connection = new OleDbConnection(ConnectionString))
-            {
-                try
-                {
-                    string query = $"SELECT {string.Join(",", _Columns)} FROM {DataBaseI.Table} {_SearchParams};";
-
-                    OleDbCommand command = new OleDbCommand(query, connection);
-                    OleDbDataReader reader = command.ExecuteReader();
-                
-                    return reader;
-                } catch (Exception ex)
-                {
-
-                    return null;
-                }
-            }
-        }
-
-
-        public bool Write(string[] _Columns, string[] _Values, string _Params)
-        {
-            using (OleDbConnection connection = new OleDbConnection(ConnectionString))
-            {
-                try
-                {
-                    string query = $"INSERT INTO {DataBaseI.Table} ({string.Join(",", _Columns)}) VALUES ({string.Join(",", _Values)}) {_Params};";
-
-                    OleDbCommand command = new OleDbCommand(query, connection);
-                    command.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    CommonMethodsLibrary.OutMessage("IN", "InventarioViewModel.cs", $"OCURRIO UN ERROR INESPERADO DURANTE LA ESCRITURA DE DATOS EN LA BASE DE DATOS: {ex.Message}\n{ex}", "ERR");
-                }
-            }
-
-            return true;
-        }
-    }
 
 
     /// <summary>

@@ -13,7 +13,7 @@ using System.IO;
 using CustomMessageBox;
 using SpreadsheetLight;
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class reasignacion_de_equipo : Form
     {

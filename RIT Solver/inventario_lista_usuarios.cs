@@ -19,7 +19,7 @@ using CustomMessageBox;
 
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class inventario_lista_usuarios : Form
     {

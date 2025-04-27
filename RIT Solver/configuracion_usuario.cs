@@ -21,7 +21,7 @@ using DocumentFormat.OpenXml.Wordprocessing;
 using System.Threading;
 
 
-namespace RIT_Solver
+namespace Flow_Solver
 {
     public partial class configuracion_usuario : Form
     {
