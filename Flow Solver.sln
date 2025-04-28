@@ -8,9 +8,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flow Solver", "RIT Solver\F
 		{58581F86-735B-4A48-8F82-D81434A35CEE} = {58581F86-735B-4A48-8F82-D81434A35CEE}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdaterManager", "UpdaterManager\UpdaterManager.csproj", "{58581F86-735B-4A48-8F82-D81434A35CEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdaterManager", "UpdaterManager\UpdaterManager.csproj", "{58581F86-735B-4A48-8F82-D81434A35CEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCInfoExtractor", "PCInfoExtractor\PCInfoExtractor.csproj", "{B3C93797-97F6-4C85-A119-F15436A43296}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCInfoExtractor", "PCInfoExtractor\PCInfoExtractor.csproj", "{B3C93797-97F6-4C85-A119-F15436A43296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow Solver Server", "Flow Solver Server\Flow Solver Server.csproj", "{DFA4267F-F3EA-432E-A2AE-8908377F48DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 		{B3C93797-97F6-4C85-A119-F15436A43296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3C93797-97F6-4C85-A119-F15436A43296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3C93797-97F6-4C85-A119-F15436A43296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA4267F-F3EA-432E-A2AE-8908377F48DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA4267F-F3EA-432E-A2AE-8908377F48DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA4267F-F3EA-432E-A2AE-8908377F48DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA4267F-F3EA-432E-A2AE-8908377F48DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
