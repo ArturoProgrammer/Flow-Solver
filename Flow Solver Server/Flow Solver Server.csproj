@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Flow Common Workcore">
       <HintPath>..\..\Luz Paulina´s ManageEngine\Flow-ERP\Flow Common Workcore\bin\Debug\net6.0-windows\Flow Common Workcore.dll</HintPath>
     </Reference>

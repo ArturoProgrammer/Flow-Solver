@@ -29,9 +29,9 @@ namespace Flow_Solver_Server
             /// </summary>
             CLOSE_CONFIRMATION,
             /// <summary>
-            /// Confirma la creacion de una base de datos por defecto del sistema en el servidor
+            /// Indica que no existe la base de datos por defecto del sistema y por lo tanto se creara
             /// </summary>
-            DATABASE_CREATE_CONFIRMATION,
+            DEFAULT_SCHEMA_NOT_EXISTS,
         }
 
         public enum CommonTitles
@@ -114,7 +114,9 @@ namespace Flow_Solver_Server
                     case MultiLanguageManager.CommonMessages.CLOSE_CONFIRMATION:
                         F_R_MSG = "¿Está seguro de que desea cerrar la ventana?";
                         break;
-                    case MultiLanguageManager.CommonMessages.
+                    case MultiLanguageManager.CommonMessages.DEFAULT_SCHEMA_NOT_EXISTS:
+                        F_R_MSG = "La base de datos por defecto del sistema no existe! se creara un nuevo esquema por defecto para continuar. ¿Confirmas la creacion de un nuevo esquema por defecto?";
+                        break;
                 }
             }
 

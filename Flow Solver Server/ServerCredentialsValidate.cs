@@ -114,7 +114,11 @@ namespace Flow_Solver_Server
                 /* 
                  * Creamos el repositorio en caso de requerirlo
                  * */
-                if (MessageBox.Show() == DialogResult.Yes)
+                if (MessageBox.Show(MultiLanguageManager.CommonMessages.DEFAULT_SCHEMA_NOT_EXISTS.GetText(), MultiLanguageManager.CommonTitles.CONFIRMATION.GetText(), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    sql
+                } 
+                else
                 {
 
                 }
