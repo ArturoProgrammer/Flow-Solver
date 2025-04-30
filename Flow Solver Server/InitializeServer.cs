@@ -7,32 +7,22 @@ using FlowCommonWorkcore;
 
 namespace Flow_Solver_Server
 {
-    public class InitializeServer
+    public partial class ServerMethods
     {
         /// <summary>
-        /// Crea todo lo correspondiente en el servidor; la base de datos, los repositorios de archivos, las tablas en las bases de datos, etc.
+        /// Crea todas las tablas de la base de datos
         /// </summary>
-        public static void Initialize()
-        {
-            // Initialize the server
-            LogSystem.Add(EventIO.OUT, EventType.INFORMATION, Modules.InitializeServer.GetText(), "InitializeServer.cs", "Inicializando el servidor...");
-
-            // Create the database if it doesn't exist
-            CreateDatabase();
-
-            // Load configuration
-            LoadDefaultConfiguration();
-
-            // Create repository files
-            CreateRepoFiles();
-
-            LogSystem.Add(EventIO.OUT, EventType.OKAY, Modules.InitializeServer.GetText(), "InitializeServer.cs", "Servidor incializado con exito!");
-        }
-
         private static void CreateDatabase()
         {
-            // Create the database if it doesn't exist
-            Console.WriteLine("Creating database...");
+            LogSystem.Add(EventIO.OUT, EventType.INFORMATION, Modules.InitializeServer.GetText(), "InitializeServer.cs", $"Iniciando la creacion de las tablas por defecto en las bases de datos...");
+            LogSystem.Add(EventIO.OUT, EventType.INFORMATION, Modules.InitializeServer.GetText(), "InitializeServer.cs", $"Creando tabla de usuarios...");
+
+            #region TABLA DE USUARIOS
+            string defaultUsername = "Root";
+            string defaultPassword = "1111";
+
+            // creamos la tabla
+            #endregion
         }
 
         private static void LoadDefaultConfiguration()

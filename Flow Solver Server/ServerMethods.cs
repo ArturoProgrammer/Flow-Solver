@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Flow_Solver_Server
 {
-    public class ServerMethods
+    public partial class ServerMethods
     {
         public class ConnectionsData
         {
@@ -283,7 +283,7 @@ namespace Flow_Solver_Server
             /// </summary>
             /// <param name="_SchemaName">Nombre de esquema a crear</param>
             /// <returns></returns>
-            public static (bool OperationResult, string OperationMessage) MakeSchema (string _SchemaName, string _ServerHostname, string _ServerUsername, string _ServerPassword)
+            public static (bool OperationResult, string OperationMessage) CreateSchema (string _SchemaName, string _ServerHostname, string _ServerUsername, string _ServerPassword)
             {
                 bool RESP_STATUS = false;
                 string RESP_MSG = "";
@@ -303,6 +303,9 @@ namespace Flow_Solver_Server
                             command.ExecuteNonQuery();
                         }
                     }
+
+                    // Realizamos la creacion del resto de las tablas correspondientes al esquema
+                    CreateDatabase();
                 }
                 catch (Exception ex)
                 {

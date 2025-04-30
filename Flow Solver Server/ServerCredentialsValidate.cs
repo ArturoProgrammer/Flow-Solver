@@ -116,7 +116,20 @@ namespace Flow_Solver_Server
                  * */
                 if (MessageBox.Show(MultiLanguageManager.CommonMessages.DEFAULT_SCHEMA_NOT_EXISTS.GetText(), MultiLanguageManager.CommonTitles.CONFIRMATION.GetText(), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    sql
+                    var _rsp = ServerMethods.SqlWriteConnection.CreateSchema(
+                                    AppDesignPatron.ServerDataBase,
+                                    AppDesignPatron.ServerHostname,
+                                    AppDesignPatron.ServerUsername,
+                                    AppDesignPatron.ServerPassword
+                                );
+
+                    if (_rsp.OperationResult)
+                    {
+
+                    } else
+                    {
+
+                    }
                 } 
                 else
                 {
