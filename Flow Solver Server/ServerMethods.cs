@@ -302,17 +302,49 @@ namespace Flow_Solver_Server
                         {
                             command.ExecuteNonQuery();
                         }
-                    }
 
-                    // Realizamos la creacion del resto de las tablas correspondientes al esquema
-                    CreateDatabase();
+                        // Realizamos la creacion del resto de las tablas correspondientes al esquema
+                        CreateDatabase();
+                    }
                 }
                 catch (Exception ex)
                 {
-                    LogSystem.Add(EventIO.OUT, EventType.EXCEPTION, Modules.ServerObjectController.GetText(), "ServerMethods.cs", $"{}");
+                    LogSystem.Add(EventIO.OUT, EventType.EXCEPTION, Modules.ServerObjectController.GetText(), "ServerMethods.cs", $"Ocurrio un error inesperado! {ex.Message}\n{ex}");
                 }
 
                 return (RESP_STATUS, RESP_MSG);
+            }
+
+            /// <summary>
+            /// Crea una nueva base de datos en el servidor
+            /// </summary>
+            /// <param name="_SqlTemplate">Plantilla SQL de la tabla correspondiente.</param>
+            /// <returns></returns>
+            /// <exception cref="ArgumentException"></exception>
+            public async Task CreateTable(string _SqlTemplate)
+            {
+                if (string.IsNullOrWhiteSpace(_SqlTemplate))
+                    throw new ArgumentException("El script de creación de tabla no puede estar vacío.", nameof(_SqlTemplate));
+
+                try
+                {
+                    using var connection = DataBaseConnection;
+                    await connection.OpenAsync();
+
+                    using var command = new MySqlCommand(_SqlTemplate, connection);
+                    await command.ExecuteNonQueryAsync();
+
+                    Console.WriteLine("✅ Tabla creada exitosamente.");
+                }
+                catch (MySqlException sqlEx)
+                {
+                    Console.WriteLine($"⚠️ Error de MySQL: {sqlEx.Message}");
+                    // Aquí podrías analizar sqlEx.Number para respuestas más específicas.
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"🚨 Error general: {ex.Message}");
+                }
             }
 
             /// <summary>
