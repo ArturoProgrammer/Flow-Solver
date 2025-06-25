@@ -30,2566 +30,2529 @@ namespace Flow_Solver
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(configuracion_usuario));
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Laptops Vinculadas", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("PCs de Escritorio Vinculados", System.Windows.Forms.HorizontalAlignment.Left);
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.txtRutaInventario = new System.Windows.Forms.TextBox();
-            this.txtRITPath = new System.Windows.Forms.TextBox();
-            this.txtPathDesino = new System.Windows.Forms.TextBox();
-            this.txtOrigenActaResponsiva = new System.Windows.Forms.TextBox();
-            this.txtServidor = new System.Windows.Forms.MaskedTextBox();
-            this.txtLocalidadIDC = new System.Windows.Forms.TextBox();
-            this.chckboxGuardarReguardoEnPDF = new System.Windows.Forms.CheckBox();
-            this.chckboxGuardarRitEnPDF = new System.Windows.Forms.CheckBox();
-            this.btnReestablecerDireccionDefault = new System.Windows.Forms.Button();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.tabPageDireccionesFisicas = new System.Windows.Forms.TabPage();
-            this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.btnImportarArchivo = new System.Windows.Forms.Button();
-            this.btnEliminarArea = new System.Windows.Forms.Button();
-            this.label63 = new System.Windows.Forms.Label();
-            this.txtNombreNuevaArea = new System.Windows.Forms.TextBox();
-            this.btnExportarArchivoJson = new System.Windows.Forms.Button();
-            this.btnAñadirArea = new System.Windows.Forms.Button();
-            this.lboxAreasRegistradas = new System.Windows.Forms.ListBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.lblCentroDeServiciosLocalidad = new System.Windows.Forms.Label();
-            this.lblPoblacionLocalidad = new System.Windows.Forms.Label();
-            this.lblNoDeSucursalLocalidad = new System.Windows.Forms.Label();
-            this.lblSucursalLocalidad = new System.Windows.Forms.Label();
-            this.lblDireccionLocalidad = new System.Windows.Forms.Label();
-            this.lblNombreLocalidad = new System.Windows.Forms.Label();
-            this.btnEliminarLocalidad = new System.Windows.Forms.Button();
-            this.txtActualLocalidadDefault = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.btnEditarLocalidad = new System.Windows.Forms.Button();
-            this.btnTablaDeVinculacion = new System.Windows.Forms.Button();
-            this.btnAñadirNuevaLocalidad = new System.Windows.Forms.Button();
-            this.cboxListaDeLocalidades = new System.Windows.Forms.ComboBox();
-            this.tabPageNavegadorWeb = new System.Windows.Forms.TabPage();
-            this.label53 = new System.Windows.Forms.Label();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnUnlockWebViewPanel = new System.Windows.Forms.Button();
-            this.groupBoxReestablecerEnlaces_WebView2 = new System.Windows.Forms.GroupBox();
-            this.btnReestablecer_Forms = new System.Windows.Forms.Button();
-            this.btnReestablecer_EndpointCentral = new System.Windows.Forms.Button();
-            this.txtURL_EndpointCentral = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.txtURL_Forms = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.cboxLenguajeSeleccionado_WebView2 = new System.Windows.Forms.ComboBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnUnblockCefSharpPanel = new System.Windows.Forms.Button();
-            this.groupBoxReestablecerEnlaces_CefSharp = new System.Windows.Forms.GroupBox();
-            this.btnReestablecer_ServiceDeskGMXT = new System.Windows.Forms.Button();
-            this.btnReestablecer_ServiceDeskCompusof = new System.Windows.Forms.Button();
-            this.txtURL_ServiceDeskCompusof = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtURL_ServiceDeskGMXT = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.cboxLenguajeSeleccionado_CefSharp = new System.Windows.Forms.ComboBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.btnEliminarCookies_WebView2 = new System.Windows.Forms.Button();
-            this.label45 = new System.Windows.Forms.Label();
-            this.btnEliminarCookies_CefSharp = new System.Windows.Forms.Button();
-            this.label21 = new System.Windows.Forms.Label();
-            this.tabPageAvanzado = new System.Windows.Forms.TabPage();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.cboxMetodoDeImpresionPorDefecto = new System.Windows.Forms.ComboBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.chckboxHabilitarMetodoDeImpresionSecundarioAuto = new System.Windows.Forms.CheckBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.chckboxDescargarEInstalarAutomaticamente = new System.Windows.Forms.CheckBox();
-            this.chckboxCanalBeta = new System.Windows.Forms.CheckBox();
-            this.btnBuscarActualizaciones = new System.Windows.Forms.Button();
-            this.chckboxVerificarActualizaciones = new System.Windows.Forms.CheckBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.btnImportarBackup = new System.Windows.Forms.Button();
-            this.btnExportarBackup = new System.Windows.Forms.Button();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.chckBoxAbrirUltimaSesion = new System.Windows.Forms.CheckBox();
-            this.chckBoxCrearProyectoEnBlanco = new System.Windows.Forms.CheckBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.chckboxAbrirInventarioSiemprePantallaCompleta = new System.Windows.Forms.CheckBox();
-            this.chckboxGuardarSiempreCambiosDeInventario = new System.Windows.Forms.CheckBox();
-            this.chckboxAlertasDeToner = new System.Windows.Forms.CheckBox();
-            this.btnExaminarRutaInventario = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.tabPageFormulario = new System.Windows.Forms.TabPage();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.numericContadorRit = new System.Windows.Forms.NumericUpDown();
-            this.cboxCliente = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtLider = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtEmailDestinoDefault = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtCentroDeServicios = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnExaminarActaResponsiva = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.btnPathDestino = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btnExaminar = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tabPageUsuario = new System.Windows.Forms.TabPage();
-            this.panelUsuario = new System.Windows.Forms.Panel();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btnTESTConexion = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.btnBorrarDatos = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnVerContraseña = new System.Windows.Forms.Button();
-            this.txtContraseñaIDC = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtEmailIDC = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBloquearNombreDeLocalidad = new System.Windows.Forms.Button();
-            this.txtUsuarioDeRed = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btnCargarImagen = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtProyectoIDC = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.picboxFotoIDC = new System.Windows.Forms.PictureBox();
-            this.txtNombreIDC = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabControlConfiguraciones = new FlowControls.flCustomTabControl();
-            this.tabPageInterfazGrafica = new System.Windows.Forms.TabPage();
-            this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.txtFallaReportada = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.cboxPerfilesDeReportes = new System.Windows.Forms.ComboBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.cboxTemas = new System.Windows.Forms.ComboBox();
-            this.tabPageDireccionesEmail = new System.Windows.Forms.TabPage();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.btnAbrirLbretaDeDirecciones = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.tabPageModelosVinculados = new System.Windows.Forms.TabPage();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente = new System.Windows.Forms.CheckBox();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.btnEliminarModeloVinculado = new System.Windows.Forms.Button();
-            this.btnAñadirNuevoModeloVinculado = new System.Windows.Forms.Button();
-            this.btnEditarModeloVinculado = new System.Windows.Forms.Button();
-            this.btnVerModeloVinculado = new System.Windows.Forms.Button();
-            this.lviewTablaDeModelosVinculados = new System.Windows.Forms.ListView();
-            this.colNombreComercial = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colNombreClave = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colMarca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colTipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.contextMenuStrip_TablaModeloVinculados = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.verModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.añadirNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarModeloSeleccionadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.imageList_MachinesIcons = new System.Windows.Forms.ImageList(this.components);
-            this.label56 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.imageList_TabIcons = new System.Windows.Forms.ImageList(this.components);
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnAplicar = new System.Windows.Forms.Button();
-            this.panelFondo = new System.Windows.Forms.Panel();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.tabPageDireccionesFisicas.SuspendLayout();
-            this.groupBox23.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            this.tabPageNavegadorWeb.SuspendLayout();
-            this.groupBox18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.groupBoxReestablecerEnlaces_WebView2.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBoxReestablecerEnlaces_CefSharp.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.tabPageAvanzado.SuspendLayout();
-            this.groupBox21.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.tabPageFormulario.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericContadorRit)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            this.tabPageUsuario.SuspendLayout();
-            this.panelUsuario.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxFotoIDC)).BeginInit();
-            this.tabControlConfiguraciones.SuspendLayout();
-            this.tabPageInterfazGrafica.SuspendLayout();
-            this.groupBox22.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.tabPageDireccionesEmail.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.tabPageModelosVinculados.SuspendLayout();
-            this.groupBox20.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.contextMenuStrip_TablaModeloVinculados.SuspendLayout();
-            this.panelFondo.SuspendLayout();
-            this.SuspendLayout();
+            openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            toolTip1 = new System.Windows.Forms.ToolTip(components);
+            txtRutaInventario = new System.Windows.Forms.TextBox();
+            txtRITPath = new System.Windows.Forms.TextBox();
+            txtPathDesino = new System.Windows.Forms.TextBox();
+            txtOrigenActaResponsiva = new System.Windows.Forms.TextBox();
+            txtServidor = new System.Windows.Forms.MaskedTextBox();
+            txtLocalidadIDC = new System.Windows.Forms.TextBox();
+            chckboxGuardarReguardoEnPDF = new System.Windows.Forms.CheckBox();
+            chckboxGuardarRitEnPDF = new System.Windows.Forms.CheckBox();
+            btnReestablecerDireccionDefault = new System.Windows.Forms.Button();
+            btnAceptar = new System.Windows.Forms.Button();
+            tabPageDireccionesFisicas = new System.Windows.Forms.TabPage();
+            groupBox23 = new System.Windows.Forms.GroupBox();
+            btnImportarArchivo = new System.Windows.Forms.Button();
+            btnEliminarArea = new System.Windows.Forms.Button();
+            label63 = new System.Windows.Forms.Label();
+            txtNombreNuevaArea = new System.Windows.Forms.TextBox();
+            btnExportarArchivoJson = new System.Windows.Forms.Button();
+            btnAñadirArea = new System.Windows.Forms.Button();
+            lboxAreasRegistradas = new System.Windows.Forms.ListBox();
+            label54 = new System.Windows.Forms.Label();
+            label57 = new System.Windows.Forms.Label();
+            groupBox15 = new System.Windows.Forms.GroupBox();
+            label60 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label30 = new System.Windows.Forms.Label();
+            label31 = new System.Windows.Forms.Label();
+            label32 = new System.Windows.Forms.Label();
+            label33 = new System.Windows.Forms.Label();
+            label34 = new System.Windows.Forms.Label();
+            lblCentroDeServiciosLocalidad = new System.Windows.Forms.Label();
+            lblPoblacionLocalidad = new System.Windows.Forms.Label();
+            lblNoDeSucursalLocalidad = new System.Windows.Forms.Label();
+            lblSucursalLocalidad = new System.Windows.Forms.Label();
+            lblDireccionLocalidad = new System.Windows.Forms.Label();
+            lblNombreLocalidad = new System.Windows.Forms.Label();
+            btnEliminarLocalidad = new System.Windows.Forms.Button();
+            txtActualLocalidadDefault = new System.Windows.Forms.TextBox();
+            label29 = new System.Windows.Forms.Label();
+            btnEditarLocalidad = new System.Windows.Forms.Button();
+            btnTablaDeVinculacion = new System.Windows.Forms.Button();
+            btnAñadirNuevaLocalidad = new System.Windows.Forms.Button();
+            cboxListaDeLocalidades = new System.Windows.Forms.ComboBox();
+            tabPageNavegadorWeb = new System.Windows.Forms.TabPage();
+            label53 = new System.Windows.Forms.Label();
+            groupBox18 = new System.Windows.Forms.GroupBox();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
+            btnUnlockWebViewPanel = new System.Windows.Forms.Button();
+            groupBoxReestablecerEnlaces_WebView2 = new System.Windows.Forms.GroupBox();
+            btnReestablecer_Forms = new System.Windows.Forms.Button();
+            btnReestablecer_EndpointCentral = new System.Windows.Forms.Button();
+            txtURL_EndpointCentral = new System.Windows.Forms.TextBox();
+            label38 = new System.Windows.Forms.Label();
+            txtURL_Forms = new System.Windows.Forms.TextBox();
+            label49 = new System.Windows.Forms.Label();
+            label50 = new System.Windows.Forms.Label();
+            label51 = new System.Windows.Forms.Label();
+            cboxLenguajeSeleccionado_WebView2 = new System.Windows.Forms.ComboBox();
+            label46 = new System.Windows.Forms.Label();
+            groupBox12 = new System.Windows.Forms.GroupBox();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            btnUnblockCefSharpPanel = new System.Windows.Forms.Button();
+            groupBoxReestablecerEnlaces_CefSharp = new System.Windows.Forms.GroupBox();
+            btnReestablecer_ServiceDeskGMXT = new System.Windows.Forms.Button();
+            btnReestablecer_ServiceDeskCompusof = new System.Windows.Forms.Button();
+            txtURL_ServiceDeskCompusof = new System.Windows.Forms.TextBox();
+            label27 = new System.Windows.Forms.Label();
+            txtURL_ServiceDeskGMXT = new System.Windows.Forms.TextBox();
+            label26 = new System.Windows.Forms.Label();
+            label24 = new System.Windows.Forms.Label();
+            label23 = new System.Windows.Forms.Label();
+            cboxLenguajeSeleccionado_CefSharp = new System.Windows.Forms.ComboBox();
+            groupBox11 = new System.Windows.Forms.GroupBox();
+            btnEliminarCookies_WebView2 = new System.Windows.Forms.Button();
+            label45 = new System.Windows.Forms.Label();
+            btnEliminarCookies_CefSharp = new System.Windows.Forms.Button();
+            label21 = new System.Windows.Forms.Label();
+            tabPageAvanzado = new System.Windows.Forms.TabPage();
+            groupBox21 = new System.Windows.Forms.GroupBox();
+            cboxMetodoDeImpresionPorDefecto = new System.Windows.Forms.ComboBox();
+            label58 = new System.Windows.Forms.Label();
+            chckboxHabilitarMetodoDeImpresionSecundarioAuto = new System.Windows.Forms.CheckBox();
+            label52 = new System.Windows.Forms.Label();
+            groupBox8 = new System.Windows.Forms.GroupBox();
+            chckboxDescargarEInstalarAutomaticamente = new System.Windows.Forms.CheckBox();
+            chckboxCanalBeta = new System.Windows.Forms.CheckBox();
+            btnBuscarActualizaciones = new System.Windows.Forms.Button();
+            chckboxVerificarActualizaciones = new System.Windows.Forms.CheckBox();
+            groupBox14 = new System.Windows.Forms.GroupBox();
+            btnImportarBackup = new System.Windows.Forms.Button();
+            btnExportarBackup = new System.Windows.Forms.Button();
+            label41 = new System.Windows.Forms.Label();
+            label40 = new System.Windows.Forms.Label();
+            label35 = new System.Windows.Forms.Label();
+            groupBox13 = new System.Windows.Forms.GroupBox();
+            chckBoxAbrirUltimaSesion = new System.Windows.Forms.CheckBox();
+            chckBoxCrearProyectoEnBlanco = new System.Windows.Forms.CheckBox();
+            groupBox10 = new System.Windows.Forms.GroupBox();
+            chckboxAbrirInventarioSiemprePantallaCompleta = new System.Windows.Forms.CheckBox();
+            chckboxGuardarSiempreCambiosDeInventario = new System.Windows.Forms.CheckBox();
+            chckboxAlertasDeToner = new System.Windows.Forms.CheckBox();
+            btnExaminarRutaInventario = new System.Windows.Forms.Button();
+            label19 = new System.Windows.Forms.Label();
+            groupBox7 = new System.Windows.Forms.GroupBox();
+            tabPageFormulario = new System.Windows.Forms.TabPage();
+            groupBox16 = new System.Windows.Forms.GroupBox();
+            label59 = new System.Windows.Forms.Label();
+            label39 = new System.Windows.Forms.Label();
+            groupBox3 = new System.Windows.Forms.GroupBox();
+            label22 = new System.Windows.Forms.Label();
+            numericContadorRit = new System.Windows.Forms.NumericUpDown();
+            cboxCliente = new System.Windows.Forms.ComboBox();
+            label12 = new System.Windows.Forms.Label();
+            txtLider = new System.Windows.Forms.TextBox();
+            label11 = new System.Windows.Forms.Label();
+            txtEmailDestinoDefault = new System.Windows.Forms.TextBox();
+            label10 = new System.Windows.Forms.Label();
+            label9 = new System.Windows.Forms.Label();
+            txtCentroDeServicios = new System.Windows.Forms.TextBox();
+            label8 = new System.Windows.Forms.Label();
+            txtDireccion = new System.Windows.Forms.TextBox();
+            label7 = new System.Windows.Forms.Label();
+            label28 = new System.Windows.Forms.Label();
+            label37 = new System.Windows.Forms.Label();
+            groupBox4 = new System.Windows.Forms.GroupBox();
+            btnExaminarActaResponsiva = new System.Windows.Forms.Button();
+            label20 = new System.Windows.Forms.Label();
+            btnPathDestino = new System.Windows.Forms.Button();
+            label14 = new System.Windows.Forms.Label();
+            btnExaminar = new System.Windows.Forms.Button();
+            label13 = new System.Windows.Forms.Label();
+            tabPageUsuario = new System.Windows.Forms.TabPage();
+            panelUsuario = new System.Windows.Forms.Panel();
+            label47 = new System.Windows.Forms.Label();
+            label36 = new System.Windows.Forms.Label();
+            groupBox6 = new System.Windows.Forms.GroupBox();
+            btnTESTConexion = new System.Windows.Forms.Button();
+            label17 = new System.Windows.Forms.Label();
+            groupBox5 = new System.Windows.Forms.GroupBox();
+            label15 = new System.Windows.Forms.Label();
+            btnBorrarDatos = new System.Windows.Forms.Button();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            btnVerContraseña = new System.Windows.Forms.Button();
+            txtContraseñaIDC = new System.Windows.Forms.TextBox();
+            label5 = new System.Windows.Forms.Label();
+            txtEmailIDC = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            btnBloquearNombreDeLocalidad = new System.Windows.Forms.Button();
+            txtUsuarioDeRed = new System.Windows.Forms.TextBox();
+            label16 = new System.Windows.Forms.Label();
+            btnCargarImagen = new System.Windows.Forms.Button();
+            label3 = new System.Windows.Forms.Label();
+            txtProyectoIDC = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            picboxFotoIDC = new System.Windows.Forms.PictureBox();
+            txtNombreIDC = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            tabControlConfiguraciones = new flCustomTabControl();
+            tabPageInterfazGrafica = new System.Windows.Forms.TabPage();
+            groupBox22 = new System.Windows.Forms.GroupBox();
+            txtFallaReportada = new System.Windows.Forms.TextBox();
+            label62 = new System.Windows.Forms.Label();
+            cboxPerfilesDeReportes = new System.Windows.Forms.ComboBox();
+            label61 = new System.Windows.Forms.Label();
+            label48 = new System.Windows.Forms.Label();
+            label42 = new System.Windows.Forms.Label();
+            groupBox9 = new System.Windows.Forms.GroupBox();
+            label18 = new System.Windows.Forms.Label();
+            cboxTemas = new System.Windows.Forms.ComboBox();
+            tabPageDireccionesEmail = new System.Windows.Forms.TabPage();
+            label55 = new System.Windows.Forms.Label();
+            label43 = new System.Windows.Forms.Label();
+            groupBox17 = new System.Windows.Forms.GroupBox();
+            btnAbrirLbretaDeDirecciones = new System.Windows.Forms.Button();
+            label25 = new System.Windows.Forms.Label();
+            tabPageModelosVinculados = new System.Windows.Forms.TabPage();
+            groupBox20 = new System.Windows.Forms.GroupBox();
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente = new System.Windows.Forms.CheckBox();
+            groupBox19 = new System.Windows.Forms.GroupBox();
+            btnEliminarModeloVinculado = new System.Windows.Forms.Button();
+            btnAñadirNuevoModeloVinculado = new System.Windows.Forms.Button();
+            btnEditarModeloVinculado = new System.Windows.Forms.Button();
+            btnVerModeloVinculado = new System.Windows.Forms.Button();
+            lviewTablaDeModelosVinculados = new System.Windows.Forms.ListView();
+            colNombreComercial = new System.Windows.Forms.ColumnHeader();
+            colNombreClave = new System.Windows.Forms.ColumnHeader();
+            colMarca = new System.Windows.Forms.ColumnHeader();
+            colTipo = new System.Windows.Forms.ColumnHeader();
+            contextMenuStrip_TablaModeloVinculados = new System.Windows.Forms.ContextMenuStrip(components);
+            verModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            añadirNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            eliminarModeloSeleccionadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            imageList_MachinesIcons = new System.Windows.Forms.ImageList(components);
+            label56 = new System.Windows.Forms.Label();
+            label44 = new System.Windows.Forms.Label();
+            imageList_TabIcons = new System.Windows.Forms.ImageList(components);
+            fontDialog1 = new System.Windows.Forms.FontDialog();
+            colorDialog1 = new System.Windows.Forms.ColorDialog();
+            btnCancelar = new System.Windows.Forms.Button();
+            btnAplicar = new System.Windows.Forms.Button();
+            panelFondo = new System.Windows.Forms.Panel();
+            saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            tabPageDireccionesFisicas.SuspendLayout();
+            groupBox23.SuspendLayout();
+            groupBox15.SuspendLayout();
+            tabPageNavegadorWeb.SuspendLayout();
+            groupBox18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            groupBoxReestablecerEnlaces_WebView2.SuspendLayout();
+            groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBoxReestablecerEnlaces_CefSharp.SuspendLayout();
+            groupBox11.SuspendLayout();
+            tabPageAvanzado.SuspendLayout();
+            groupBox21.SuspendLayout();
+            groupBox8.SuspendLayout();
+            groupBox14.SuspendLayout();
+            groupBox13.SuspendLayout();
+            groupBox10.SuspendLayout();
+            groupBox7.SuspendLayout();
+            tabPageFormulario.SuspendLayout();
+            groupBox16.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericContadorRit).BeginInit();
+            groupBox4.SuspendLayout();
+            tabPageUsuario.SuspendLayout();
+            panelUsuario.SuspendLayout();
+            groupBox6.SuspendLayout();
+            groupBox5.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picboxFotoIDC).BeginInit();
+            tabControlConfiguraciones.SuspendLayout();
+            tabPageInterfazGrafica.SuspendLayout();
+            groupBox22.SuspendLayout();
+            groupBox9.SuspendLayout();
+            tabPageDireccionesEmail.SuspendLayout();
+            groupBox17.SuspendLayout();
+            tabPageModelosVinculados.SuspendLayout();
+            groupBox20.SuspendLayout();
+            groupBox19.SuspendLayout();
+            contextMenuStrip_TablaModeloVinculados.SuspendLayout();
+            panelFondo.SuspendLayout();
+            SuspendLayout();
             // 
             // toolTip1
             // 
-            this.toolTip1.AutomaticDelay = 250;
-            this.toolTip1.IsBalloon = true;
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
-            this.toolTip1.ToolTipTitle = "Advertencia";
+            toolTip1.AutomaticDelay = 250;
+            toolTip1.IsBalloon = true;
+            toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            toolTip1.ToolTipTitle = "Advertencia";
             // 
             // txtRutaInventario
             // 
-            this.txtRutaInventario.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtRutaInventario.Location = new System.Drawing.Point(6, 52);
-            this.txtRutaInventario.Name = "txtRutaInventario";
-            this.txtRutaInventario.Size = new System.Drawing.Size(557, 20);
-            this.txtRutaInventario.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.txtRutaInventario, "En caso de que no exista un inventario generado por el mismo programa, este sera " +
-        "el inventario que usara para crearlo.");
+            txtRutaInventario.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtRutaInventario.Location = new System.Drawing.Point(6, 52);
+            txtRutaInventario.Name = "txtRutaInventario";
+            txtRutaInventario.Size = new System.Drawing.Size(557, 20);
+            txtRutaInventario.TabIndex = 4;
+            toolTip1.SetToolTip(txtRutaInventario, "En caso de que no exista un inventario generado por el mismo programa, este sera el inventario que usara para crearlo.");
             // 
             // txtRITPath
             // 
-            this.txtRITPath.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtRITPath.Location = new System.Drawing.Point(9, 45);
-            this.txtRITPath.Name = "txtRITPath";
-            this.txtRITPath.Size = new System.Drawing.Size(525, 20);
-            this.txtRITPath.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.txtRITPath, "Ruta de la plantilla PDF que usa el programa para crear los RIT");
+            txtRITPath.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtRITPath.Location = new System.Drawing.Point(9, 45);
+            txtRITPath.Name = "txtRITPath";
+            txtRITPath.Size = new System.Drawing.Size(525, 20);
+            txtRITPath.TabIndex = 1;
+            toolTip1.SetToolTip(txtRITPath, "Ruta de la plantilla PDF que usa el programa para crear los RIT");
             // 
             // txtPathDesino
             // 
-            this.txtPathDesino.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtPathDesino.Location = new System.Drawing.Point(10, 103);
-            this.txtPathDesino.Name = "txtPathDesino";
-            this.txtPathDesino.Size = new System.Drawing.Size(525, 20);
-            this.txtPathDesino.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.txtPathDesino, "Directorio destino en donde se creara la Carpeta \"RITs\" que contendra los RITs y " +
-        "Cartas de Resguardo en PDF, generado por el usuario");
+            txtPathDesino.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtPathDesino.Location = new System.Drawing.Point(10, 103);
+            txtPathDesino.Name = "txtPathDesino";
+            txtPathDesino.Size = new System.Drawing.Size(525, 20);
+            txtPathDesino.TabIndex = 4;
+            toolTip1.SetToolTip(txtPathDesino, "Directorio destino en donde se creara la Carpeta \"RITs\" que contendra los RITs y Cartas de Resguardo en PDF, generado por el usuario");
             // 
             // txtOrigenActaResponsiva
             // 
-            this.txtOrigenActaResponsiva.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtOrigenActaResponsiva.Location = new System.Drawing.Point(10, 161);
-            this.txtOrigenActaResponsiva.Name = "txtOrigenActaResponsiva";
-            this.txtOrigenActaResponsiva.Size = new System.Drawing.Size(525, 20);
-            this.txtOrigenActaResponsiva.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.txtOrigenActaResponsiva, "Ruta de la plantilla PDF que usa el programa para crear las Cartas de Resguardo\r\n" +
-        "");
+            txtOrigenActaResponsiva.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtOrigenActaResponsiva.Location = new System.Drawing.Point(10, 161);
+            txtOrigenActaResponsiva.Name = "txtOrigenActaResponsiva";
+            txtOrigenActaResponsiva.Size = new System.Drawing.Size(525, 20);
+            txtOrigenActaResponsiva.TabIndex = 7;
+            toolTip1.SetToolTip(txtOrigenActaResponsiva, "Ruta de la plantilla PDF que usa el programa para crear las Cartas de Resguardo\r\n");
             // 
             // txtServidor
             // 
-            this.txtServidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtServidor.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtServidor.Location = new System.Drawing.Point(13, 50);
-            this.txtServidor.Mask = "  00  .  00  .  000  .  000  ";
-            this.txtServidor.Name = "txtServidor";
-            this.txtServidor.Size = new System.Drawing.Size(249, 24);
-            this.txtServidor.TabIndex = 14;
-            this.toolTip1.SetToolTip(this.txtServidor, "Direccion IP del servidor de la aplicacion.");
-            this.txtServidor.Enter += new System.EventHandler(this.txtServidor_Enter_1);
+            txtServidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtServidor.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtServidor.Location = new System.Drawing.Point(13, 50);
+            txtServidor.Mask = "  00  .  00  .  000  .  000  ";
+            txtServidor.Name = "txtServidor";
+            txtServidor.Size = new System.Drawing.Size(249, 24);
+            txtServidor.TabIndex = 14;
+            toolTip1.SetToolTip(txtServidor, "Direccion IP del servidor de la aplicacion.");
+            txtServidor.Enter += txtServidor_Enter_1;
             // 
             // txtLocalidadIDC
             // 
-            this.txtLocalidadIDC.Enabled = false;
-            this.txtLocalidadIDC.Location = new System.Drawing.Point(6, 159);
-            this.txtLocalidadIDC.Name = "txtLocalidadIDC";
-            this.txtLocalidadIDC.Size = new System.Drawing.Size(279, 20);
-            this.txtLocalidadIDC.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.txtLocalidadIDC, resources.GetString("txtLocalidadIDC.ToolTip"));
+            txtLocalidadIDC.Enabled = false;
+            txtLocalidadIDC.Location = new System.Drawing.Point(6, 159);
+            txtLocalidadIDC.Name = "txtLocalidadIDC";
+            txtLocalidadIDC.Size = new System.Drawing.Size(279, 20);
+            txtLocalidadIDC.TabIndex = 6;
+            toolTip1.SetToolTip(txtLocalidadIDC, resources.GetString("txtLocalidadIDC.ToolTip"));
             // 
             // chckboxGuardarReguardoEnPDF
             // 
-            this.chckboxGuardarReguardoEnPDF.AutoSize = true;
-            this.chckboxGuardarReguardoEnPDF.Location = new System.Drawing.Point(7, 55);
-            this.chckboxGuardarReguardoEnPDF.Name = "chckboxGuardarReguardoEnPDF";
-            this.chckboxGuardarReguardoEnPDF.Size = new System.Drawing.Size(239, 17);
-            this.chckboxGuardarReguardoEnPDF.TabIndex = 1;
-            this.chckboxGuardarReguardoEnPDF.Text = "Guardar Cartas de Reguardo en formato PDF";
-            this.toolTip1.SetToolTip(this.chckboxGuardarReguardoEnPDF, "Si esta opcion esta deshabilitada, se borrara el PDF del Resguardo una vez sea im" +
-        "preso");
-            this.chckboxGuardarReguardoEnPDF.UseVisualStyleBackColor = true;
+            chckboxGuardarReguardoEnPDF.AutoSize = true;
+            chckboxGuardarReguardoEnPDF.Location = new System.Drawing.Point(7, 55);
+            chckboxGuardarReguardoEnPDF.Name = "chckboxGuardarReguardoEnPDF";
+            chckboxGuardarReguardoEnPDF.Size = new System.Drawing.Size(239, 17);
+            chckboxGuardarReguardoEnPDF.TabIndex = 1;
+            chckboxGuardarReguardoEnPDF.Text = "Guardar Cartas de Reguardo en formato PDF";
+            toolTip1.SetToolTip(chckboxGuardarReguardoEnPDF, "Si esta opcion esta deshabilitada, se borrara el PDF del Resguardo una vez sea impreso");
+            chckboxGuardarReguardoEnPDF.UseVisualStyleBackColor = true;
             // 
             // chckboxGuardarRitEnPDF
             // 
-            this.chckboxGuardarRitEnPDF.AutoSize = true;
-            this.chckboxGuardarRitEnPDF.Location = new System.Drawing.Point(7, 25);
-            this.chckboxGuardarRitEnPDF.Name = "chckboxGuardarRitEnPDF";
-            this.chckboxGuardarRitEnPDF.Size = new System.Drawing.Size(167, 17);
-            this.chckboxGuardarRitEnPDF.TabIndex = 0;
-            this.chckboxGuardarRitEnPDF.Text = "Guardar RITs en formato PDF";
-            this.toolTip1.SetToolTip(this.chckboxGuardarRitEnPDF, "Si esta opcion esta deshabilitada, se borrara el PDF del RIT una vez sea impreso");
-            this.chckboxGuardarRitEnPDF.UseVisualStyleBackColor = true;
+            chckboxGuardarRitEnPDF.AutoSize = true;
+            chckboxGuardarRitEnPDF.Location = new System.Drawing.Point(7, 25);
+            chckboxGuardarRitEnPDF.Name = "chckboxGuardarRitEnPDF";
+            chckboxGuardarRitEnPDF.Size = new System.Drawing.Size(167, 17);
+            chckboxGuardarRitEnPDF.TabIndex = 0;
+            chckboxGuardarRitEnPDF.Text = "Guardar RITs en formato PDF";
+            toolTip1.SetToolTip(chckboxGuardarRitEnPDF, "Si esta opcion esta deshabilitada, se borrara el PDF del RIT una vez sea impreso");
+            chckboxGuardarRitEnPDF.UseVisualStyleBackColor = true;
             // 
             // btnReestablecerDireccionDefault
             // 
-            this.btnReestablecerDireccionDefault.Location = new System.Drawing.Point(386, 234);
-            this.btnReestablecerDireccionDefault.Name = "btnReestablecerDireccionDefault";
-            this.btnReestablecerDireccionDefault.Size = new System.Drawing.Size(184, 37);
-            this.btnReestablecerDireccionDefault.TabIndex = 7;
-            this.btnReestablecerDireccionDefault.Text = "Reestablecer Localidad Default";
-            this.toolTip1.SetToolTip(this.btnReestablecerDireccionDefault, "Reasigna la localidad Default del sistema como localidad por defecto");
-            this.btnReestablecerDireccionDefault.UseVisualStyleBackColor = true;
-            this.btnReestablecerDireccionDefault.Click += new System.EventHandler(this.btnReestablecerDireccionDefault_Click);
+            btnReestablecerDireccionDefault.Location = new System.Drawing.Point(386, 234);
+            btnReestablecerDireccionDefault.Name = "btnReestablecerDireccionDefault";
+            btnReestablecerDireccionDefault.Size = new System.Drawing.Size(184, 37);
+            btnReestablecerDireccionDefault.TabIndex = 7;
+            btnReestablecerDireccionDefault.Text = "Reestablecer Localidad Default";
+            toolTip1.SetToolTip(btnReestablecerDireccionDefault, "Reasigna la localidad Default del sistema como localidad por defecto");
+            btnReestablecerDireccionDefault.UseVisualStyleBackColor = true;
+            btnReestablecerDireccionDefault.Click += btnReestablecerDireccionDefault_Click;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAceptar.Image = global::Flow_Solver.Properties.Resources.check_3_16;
-            this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAceptar.Location = new System.Drawing.Point(322, 461);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(113, 29);
-            this.btnAceptar.TabIndex = 5;
-            this.btnAceptar.Text = " Aceptar";
-            this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.button5_Click);
+            btnAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            btnAceptar.Image = Properties.Resources.check_3_16;
+            btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnAceptar.Location = new System.Drawing.Point(322, 461);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new System.Drawing.Size(113, 29);
+            btnAceptar.TabIndex = 5;
+            btnAceptar.Text = " Aceptar";
+            btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += button5_Click;
             // 
             // tabPageDireccionesFisicas
             // 
-            this.tabPageDireccionesFisicas.AutoScroll = true;
-            this.tabPageDireccionesFisicas.Controls.Add(this.groupBox23);
-            this.tabPageDireccionesFisicas.Controls.Add(this.label54);
-            this.tabPageDireccionesFisicas.Controls.Add(this.label57);
-            this.tabPageDireccionesFisicas.Controls.Add(this.groupBox15);
-            this.tabPageDireccionesFisicas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageDireccionesFisicas.ImageIndex = 5;
-            this.tabPageDireccionesFisicas.Location = new System.Drawing.Point(4, 245);
-            this.tabPageDireccionesFisicas.Name = "tabPageDireccionesFisicas";
-            this.tabPageDireccionesFisicas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDireccionesFisicas.Size = new System.Drawing.Size(192, 0);
-            this.tabPageDireccionesFisicas.TabIndex = 4;
-            this.tabPageDireccionesFisicas.Text = "Direcciones Fisicas";
-            this.tabPageDireccionesFisicas.UseVisualStyleBackColor = true;
+            tabPageDireccionesFisicas.AutoScroll = true;
+            tabPageDireccionesFisicas.Controls.Add(groupBox23);
+            tabPageDireccionesFisicas.Controls.Add(label54);
+            tabPageDireccionesFisicas.Controls.Add(label57);
+            tabPageDireccionesFisicas.Controls.Add(groupBox15);
+            tabPageDireccionesFisicas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            tabPageDireccionesFisicas.ImageIndex = 5;
+            tabPageDireccionesFisicas.Location = new System.Drawing.Point(4, 245);
+            tabPageDireccionesFisicas.Name = "tabPageDireccionesFisicas";
+            tabPageDireccionesFisicas.Padding = new System.Windows.Forms.Padding(3);
+            tabPageDireccionesFisicas.Size = new System.Drawing.Size(192, 0);
+            tabPageDireccionesFisicas.TabIndex = 4;
+            tabPageDireccionesFisicas.Text = "Direcciones Fisicas";
+            tabPageDireccionesFisicas.UseVisualStyleBackColor = true;
             // 
             // groupBox23
             // 
-            this.groupBox23.Controls.Add(this.btnImportarArchivo);
-            this.groupBox23.Controls.Add(this.btnEliminarArea);
-            this.groupBox23.Controls.Add(this.label63);
-            this.groupBox23.Controls.Add(this.txtNombreNuevaArea);
-            this.groupBox23.Controls.Add(this.btnExportarArchivoJson);
-            this.groupBox23.Controls.Add(this.btnAñadirArea);
-            this.groupBox23.Controls.Add(this.lboxAreasRegistradas);
-            this.groupBox23.Location = new System.Drawing.Point(6, 350);
-            this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(621, 265);
-            this.groupBox23.TabIndex = 12;
-            this.groupBox23.TabStop = false;
-            this.groupBox23.Text = "Areas";
+            groupBox23.Controls.Add(btnImportarArchivo);
+            groupBox23.Controls.Add(btnEliminarArea);
+            groupBox23.Controls.Add(label63);
+            groupBox23.Controls.Add(txtNombreNuevaArea);
+            groupBox23.Controls.Add(btnExportarArchivoJson);
+            groupBox23.Controls.Add(btnAñadirArea);
+            groupBox23.Controls.Add(lboxAreasRegistradas);
+            groupBox23.Location = new System.Drawing.Point(6, 350);
+            groupBox23.Name = "groupBox23";
+            groupBox23.Size = new System.Drawing.Size(621, 265);
+            groupBox23.TabIndex = 12;
+            groupBox23.TabStop = false;
+            groupBox23.Text = "Areas";
             // 
             // btnImportarArchivo
             // 
-            this.btnImportarArchivo.Location = new System.Drawing.Point(458, 119);
-            this.btnImportarArchivo.Name = "btnImportarArchivo";
-            this.btnImportarArchivo.Size = new System.Drawing.Size(140, 32);
-            this.btnImportarArchivo.TabIndex = 25;
-            this.btnImportarArchivo.Text = " Importar archivo JSON";
-            this.btnImportarArchivo.UseVisualStyleBackColor = true;
-            this.btnImportarArchivo.Click += new System.EventHandler(this.btnImportarArchivo_Click);
+            btnImportarArchivo.Location = new System.Drawing.Point(458, 119);
+            btnImportarArchivo.Name = "btnImportarArchivo";
+            btnImportarArchivo.Size = new System.Drawing.Size(140, 32);
+            btnImportarArchivo.TabIndex = 25;
+            btnImportarArchivo.Text = " Importar archivo JSON";
+            btnImportarArchivo.UseVisualStyleBackColor = true;
+            btnImportarArchivo.Click += btnImportarArchivo_Click;
             // 
             // btnEliminarArea
             // 
-            this.btnEliminarArea.Enabled = false;
-            this.btnEliminarArea.Location = new System.Drawing.Point(312, 119);
-            this.btnEliminarArea.Name = "btnEliminarArea";
-            this.btnEliminarArea.Size = new System.Drawing.Size(140, 32);
-            this.btnEliminarArea.TabIndex = 24;
-            this.btnEliminarArea.Text = " Eliminar Area";
-            this.btnEliminarArea.UseVisualStyleBackColor = true;
-            this.btnEliminarArea.Click += new System.EventHandler(this.btnEliminarArea_Click);
+            btnEliminarArea.Enabled = false;
+            btnEliminarArea.Location = new System.Drawing.Point(312, 119);
+            btnEliminarArea.Name = "btnEliminarArea";
+            btnEliminarArea.Size = new System.Drawing.Size(140, 32);
+            btnEliminarArea.TabIndex = 24;
+            btnEliminarArea.Text = " Eliminar Area";
+            btnEliminarArea.UseVisualStyleBackColor = true;
+            btnEliminarArea.Click += btnEliminarArea_Click;
             // 
             // label63
             // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(309, 27);
-            this.label63.Margin = new System.Windows.Forms.Padding(5);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(130, 13);
-            this.label63.TabIndex = 23;
-            this.label63.Text = "Nombre de la nueva area:";
+            label63.AutoSize = true;
+            label63.Location = new System.Drawing.Point(309, 27);
+            label63.Margin = new System.Windows.Forms.Padding(5);
+            label63.Name = "label63";
+            label63.Size = new System.Drawing.Size(130, 13);
+            label63.TabIndex = 23;
+            label63.Text = "Nombre de la nueva area:";
             // 
             // txtNombreNuevaArea
             // 
-            this.txtNombreNuevaArea.Location = new System.Drawing.Point(312, 48);
-            this.txtNombreNuevaArea.Name = "txtNombreNuevaArea";
-            this.txtNombreNuevaArea.Size = new System.Drawing.Size(286, 20);
-            this.txtNombreNuevaArea.TabIndex = 10;
-            this.txtNombreNuevaArea.TextChanged += new System.EventHandler(this.txtNombreNuevaArea_TextChanged);
+            txtNombreNuevaArea.Location = new System.Drawing.Point(312, 48);
+            txtNombreNuevaArea.Name = "txtNombreNuevaArea";
+            txtNombreNuevaArea.Size = new System.Drawing.Size(286, 20);
+            txtNombreNuevaArea.TabIndex = 10;
+            txtNombreNuevaArea.TextChanged += txtNombreNuevaArea_TextChanged;
             // 
             // btnExportarArchivoJson
             // 
-            this.btnExportarArchivoJson.Location = new System.Drawing.Point(458, 81);
-            this.btnExportarArchivoJson.Name = "btnExportarArchivoJson";
-            this.btnExportarArchivoJson.Size = new System.Drawing.Size(140, 32);
-            this.btnExportarArchivoJson.TabIndex = 7;
-            this.btnExportarArchivoJson.Text = " Exportar archivo JSON";
-            this.btnExportarArchivoJson.UseVisualStyleBackColor = true;
-            this.btnExportarArchivoJson.Click += new System.EventHandler(this.btnExportarArchivoJson_Click);
+            btnExportarArchivoJson.Location = new System.Drawing.Point(458, 81);
+            btnExportarArchivoJson.Name = "btnExportarArchivoJson";
+            btnExportarArchivoJson.Size = new System.Drawing.Size(140, 32);
+            btnExportarArchivoJson.TabIndex = 7;
+            btnExportarArchivoJson.Text = " Exportar archivo JSON";
+            btnExportarArchivoJson.UseVisualStyleBackColor = true;
+            btnExportarArchivoJson.Click += btnExportarArchivoJson_Click;
             // 
             // btnAñadirArea
             // 
-            this.btnAñadirArea.Enabled = false;
-            this.btnAñadirArea.Location = new System.Drawing.Point(312, 81);
-            this.btnAñadirArea.Name = "btnAñadirArea";
-            this.btnAñadirArea.Size = new System.Drawing.Size(140, 32);
-            this.btnAñadirArea.TabIndex = 6;
-            this.btnAñadirArea.Text = " Añadir Area";
-            this.btnAñadirArea.UseVisualStyleBackColor = true;
-            this.btnAñadirArea.Click += new System.EventHandler(this.btnAñadirArea_Click);
+            btnAñadirArea.Enabled = false;
+            btnAñadirArea.Location = new System.Drawing.Point(312, 81);
+            btnAñadirArea.Name = "btnAñadirArea";
+            btnAñadirArea.Size = new System.Drawing.Size(140, 32);
+            btnAñadirArea.TabIndex = 6;
+            btnAñadirArea.Text = " Añadir Area";
+            btnAñadirArea.UseVisualStyleBackColor = true;
+            btnAñadirArea.Click += btnAñadirArea_Click;
             // 
             // lboxAreasRegistradas
             // 
-            this.lboxAreasRegistradas.FormattingEnabled = true;
-            this.lboxAreasRegistradas.Location = new System.Drawing.Point(11, 19);
-            this.lboxAreasRegistradas.Name = "lboxAreasRegistradas";
-            this.lboxAreasRegistradas.Size = new System.Drawing.Size(295, 225);
-            this.lboxAreasRegistradas.TabIndex = 0;
-            this.lboxAreasRegistradas.SelectedIndexChanged += new System.EventHandler(this.lboxAreasRegistradas_SelectedIndexChanged);
+            lboxAreasRegistradas.FormattingEnabled = true;
+            lboxAreasRegistradas.Location = new System.Drawing.Point(11, 19);
+            lboxAreasRegistradas.Name = "lboxAreasRegistradas";
+            lboxAreasRegistradas.Size = new System.Drawing.Size(295, 225);
+            lboxAreasRegistradas.TabIndex = 0;
+            lboxAreasRegistradas.SelectedIndexChanged += lboxAreasRegistradas_SelectedIndexChanged;
             // 
             // label54
             // 
-            this.label54.AutoSize = true;
-            this.label54.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label54.Location = new System.Drawing.Point(3, 612);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(10, 13);
-            this.label54.TabIndex = 11;
-            this.label54.Text = " ";
+            label54.AutoSize = true;
+            label54.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label54.Location = new System.Drawing.Point(3, 612);
+            label54.Name = "label54";
+            label54.Size = new System.Drawing.Size(10, 13);
+            label54.TabIndex = 11;
+            label54.Text = " ";
             // 
             // label57
             // 
-            this.label57.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label57.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(3, 625);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(624, 15);
-            this.label57.TabIndex = 10;
-            this.label57.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label57.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label57.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label57.Location = new System.Drawing.Point(3, 625);
+            label57.Name = "label57";
+            label57.Size = new System.Drawing.Size(624, 15);
+            label57.TabIndex = 10;
+            label57.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label57.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.label60);
-            this.groupBox15.Controls.Add(this.label6);
-            this.groupBox15.Controls.Add(this.label30);
-            this.groupBox15.Controls.Add(this.label31);
-            this.groupBox15.Controls.Add(this.label32);
-            this.groupBox15.Controls.Add(this.label33);
-            this.groupBox15.Controls.Add(this.label34);
-            this.groupBox15.Controls.Add(this.lblCentroDeServiciosLocalidad);
-            this.groupBox15.Controls.Add(this.lblPoblacionLocalidad);
-            this.groupBox15.Controls.Add(this.lblNoDeSucursalLocalidad);
-            this.groupBox15.Controls.Add(this.lblSucursalLocalidad);
-            this.groupBox15.Controls.Add(this.lblDireccionLocalidad);
-            this.groupBox15.Controls.Add(this.lblNombreLocalidad);
-            this.groupBox15.Controls.Add(this.btnEliminarLocalidad);
-            this.groupBox15.Controls.Add(this.txtActualLocalidadDefault);
-            this.groupBox15.Controls.Add(this.label29);
-            this.groupBox15.Controls.Add(this.btnReestablecerDireccionDefault);
-            this.groupBox15.Controls.Add(this.btnEditarLocalidad);
-            this.groupBox15.Controls.Add(this.btnTablaDeVinculacion);
-            this.groupBox15.Controls.Add(this.btnAñadirNuevaLocalidad);
-            this.groupBox15.Controls.Add(this.cboxListaDeLocalidades);
-            this.groupBox15.Location = new System.Drawing.Point(6, 6);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(624, 338);
-            this.groupBox15.TabIndex = 1;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Localidades guardadas";
+            groupBox15.Controls.Add(label60);
+            groupBox15.Controls.Add(label6);
+            groupBox15.Controls.Add(label30);
+            groupBox15.Controls.Add(label31);
+            groupBox15.Controls.Add(label32);
+            groupBox15.Controls.Add(label33);
+            groupBox15.Controls.Add(label34);
+            groupBox15.Controls.Add(lblCentroDeServiciosLocalidad);
+            groupBox15.Controls.Add(lblPoblacionLocalidad);
+            groupBox15.Controls.Add(lblNoDeSucursalLocalidad);
+            groupBox15.Controls.Add(lblSucursalLocalidad);
+            groupBox15.Controls.Add(lblDireccionLocalidad);
+            groupBox15.Controls.Add(lblNombreLocalidad);
+            groupBox15.Controls.Add(btnEliminarLocalidad);
+            groupBox15.Controls.Add(txtActualLocalidadDefault);
+            groupBox15.Controls.Add(label29);
+            groupBox15.Controls.Add(btnReestablecerDireccionDefault);
+            groupBox15.Controls.Add(btnEditarLocalidad);
+            groupBox15.Controls.Add(btnTablaDeVinculacion);
+            groupBox15.Controls.Add(btnAñadirNuevaLocalidad);
+            groupBox15.Controls.Add(cboxListaDeLocalidades);
+            groupBox15.Location = new System.Drawing.Point(6, 6);
+            groupBox15.Name = "groupBox15";
+            groupBox15.Size = new System.Drawing.Size(624, 338);
+            groupBox15.TabIndex = 1;
+            groupBox15.TabStop = false;
+            groupBox15.Text = "Localidades guardadas";
             // 
             // label60
             // 
-            this.label60.ForeColor = System.Drawing.Color.DarkRed;
-            this.label60.Location = new System.Drawing.Point(8, 51);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(491, 30);
-            this.label60.TabIndex = 23;
-            this.label60.Text = "** NOTA: en este listado no saldra la direccion default establecida del sistema d" +
-    "ebido a que sus valores se generan y editan desde la pestaña Usuario del Panel d" +
-    "e Configuracion.";
+            label60.ForeColor = System.Drawing.Color.DarkRed;
+            label60.Location = new System.Drawing.Point(8, 51);
+            label60.Name = "label60";
+            label60.Size = new System.Drawing.Size(491, 30);
+            label60.TabIndex = 23;
+            label60.Text = "** NOTA: en este listado no saldra la direccion default establecida del sistema debido a que sus valores se generan y editan desde la pestaña Usuario del Panel de Configuracion.";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(5);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 13);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Centro de Servicios:";
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(8, 205);
+            label6.Margin = new System.Windows.Forms.Padding(5);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(102, 13);
+            label6.TabIndex = 22;
+            label6.Text = "Centro de Servicios:";
             // 
             // label30
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(8, 180);
-            this.label30.Margin = new System.Windows.Forms.Padding(5);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(57, 13);
-            this.label30.TabIndex = 21;
-            this.label30.Text = "Poblacion:";
+            label30.AutoSize = true;
+            label30.Location = new System.Drawing.Point(8, 180);
+            label30.Margin = new System.Windows.Forms.Padding(5);
+            label30.Name = "label30";
+            label30.Size = new System.Drawing.Size(57, 13);
+            label30.TabIndex = 21;
+            label30.Text = "Poblacion:";
             // 
             // label31
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(8, 157);
-            this.label31.Margin = new System.Windows.Forms.Padding(5);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(89, 13);
-            this.label31.TabIndex = 20;
-            this.label31.Text = "No. de Sucursal: ";
+            label31.AutoSize = true;
+            label31.Location = new System.Drawing.Point(8, 157);
+            label31.Margin = new System.Windows.Forms.Padding(5);
+            label31.Name = "label31";
+            label31.Size = new System.Drawing.Size(89, 13);
+            label31.TabIndex = 20;
+            label31.Text = "No. de Sucursal: ";
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(8, 134);
-            this.label32.Margin = new System.Windows.Forms.Padding(5);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(54, 13);
-            this.label32.TabIndex = 19;
-            this.label32.Text = "Sucursal: ";
+            label32.AutoSize = true;
+            label32.Location = new System.Drawing.Point(8, 134);
+            label32.Margin = new System.Windows.Forms.Padding(5);
+            label32.Name = "label32";
+            label32.Size = new System.Drawing.Size(54, 13);
+            label32.TabIndex = 19;
+            label32.Text = "Sucursal: ";
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(8, 111);
-            this.label33.Margin = new System.Windows.Forms.Padding(5);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(55, 13);
-            this.label33.TabIndex = 18;
-            this.label33.Text = "Direccion:";
+            label33.AutoSize = true;
+            label33.Location = new System.Drawing.Point(8, 111);
+            label33.Margin = new System.Windows.Forms.Padding(5);
+            label33.Name = "label33";
+            label33.Size = new System.Drawing.Size(55, 13);
+            label33.TabIndex = 18;
+            label33.Text = "Direccion:";
             // 
             // label34
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(8, 88);
-            this.label34.Margin = new System.Windows.Forms.Padding(5);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(50, 13);
-            this.label34.TabIndex = 17;
-            this.label34.Text = "Nombre: ";
+            label34.AutoSize = true;
+            label34.Location = new System.Drawing.Point(8, 88);
+            label34.Margin = new System.Windows.Forms.Padding(5);
+            label34.Name = "label34";
+            label34.Size = new System.Drawing.Size(50, 13);
+            label34.TabIndex = 17;
+            label34.Text = "Nombre: ";
             // 
             // lblCentroDeServiciosLocalidad
             // 
-            this.lblCentroDeServiciosLocalidad.AutoSize = true;
-            this.lblCentroDeServiciosLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblCentroDeServiciosLocalidad.Location = new System.Drawing.Point(148, 205);
-            this.lblCentroDeServiciosLocalidad.Margin = new System.Windows.Forms.Padding(5);
-            this.lblCentroDeServiciosLocalidad.Name = "lblCentroDeServiciosLocalidad";
-            this.lblCentroDeServiciosLocalidad.Size = new System.Drawing.Size(13, 13);
-            this.lblCentroDeServiciosLocalidad.TabIndex = 16;
-            this.lblCentroDeServiciosLocalidad.Text = " -";
+            lblCentroDeServiciosLocalidad.AutoSize = true;
+            lblCentroDeServiciosLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
+            lblCentroDeServiciosLocalidad.Location = new System.Drawing.Point(148, 205);
+            lblCentroDeServiciosLocalidad.Margin = new System.Windows.Forms.Padding(5);
+            lblCentroDeServiciosLocalidad.Name = "lblCentroDeServiciosLocalidad";
+            lblCentroDeServiciosLocalidad.Size = new System.Drawing.Size(13, 13);
+            lblCentroDeServiciosLocalidad.TabIndex = 16;
+            lblCentroDeServiciosLocalidad.Text = " -";
             // 
             // lblPoblacionLocalidad
             // 
-            this.lblPoblacionLocalidad.AutoSize = true;
-            this.lblPoblacionLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblPoblacionLocalidad.Location = new System.Drawing.Point(148, 182);
-            this.lblPoblacionLocalidad.Margin = new System.Windows.Forms.Padding(5);
-            this.lblPoblacionLocalidad.Name = "lblPoblacionLocalidad";
-            this.lblPoblacionLocalidad.Size = new System.Drawing.Size(13, 13);
-            this.lblPoblacionLocalidad.TabIndex = 15;
-            this.lblPoblacionLocalidad.Text = " -";
+            lblPoblacionLocalidad.AutoSize = true;
+            lblPoblacionLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
+            lblPoblacionLocalidad.Location = new System.Drawing.Point(148, 182);
+            lblPoblacionLocalidad.Margin = new System.Windows.Forms.Padding(5);
+            lblPoblacionLocalidad.Name = "lblPoblacionLocalidad";
+            lblPoblacionLocalidad.Size = new System.Drawing.Size(13, 13);
+            lblPoblacionLocalidad.TabIndex = 15;
+            lblPoblacionLocalidad.Text = " -";
             // 
             // lblNoDeSucursalLocalidad
             // 
-            this.lblNoDeSucursalLocalidad.AutoSize = true;
-            this.lblNoDeSucursalLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblNoDeSucursalLocalidad.Location = new System.Drawing.Point(148, 159);
-            this.lblNoDeSucursalLocalidad.Margin = new System.Windows.Forms.Padding(5);
-            this.lblNoDeSucursalLocalidad.Name = "lblNoDeSucursalLocalidad";
-            this.lblNoDeSucursalLocalidad.Size = new System.Drawing.Size(13, 13);
-            this.lblNoDeSucursalLocalidad.TabIndex = 14;
-            this.lblNoDeSucursalLocalidad.Text = " -";
+            lblNoDeSucursalLocalidad.AutoSize = true;
+            lblNoDeSucursalLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
+            lblNoDeSucursalLocalidad.Location = new System.Drawing.Point(148, 159);
+            lblNoDeSucursalLocalidad.Margin = new System.Windows.Forms.Padding(5);
+            lblNoDeSucursalLocalidad.Name = "lblNoDeSucursalLocalidad";
+            lblNoDeSucursalLocalidad.Size = new System.Drawing.Size(13, 13);
+            lblNoDeSucursalLocalidad.TabIndex = 14;
+            lblNoDeSucursalLocalidad.Text = " -";
             // 
             // lblSucursalLocalidad
             // 
-            this.lblSucursalLocalidad.AutoSize = true;
-            this.lblSucursalLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblSucursalLocalidad.Location = new System.Drawing.Point(148, 136);
-            this.lblSucursalLocalidad.Margin = new System.Windows.Forms.Padding(5);
-            this.lblSucursalLocalidad.Name = "lblSucursalLocalidad";
-            this.lblSucursalLocalidad.Size = new System.Drawing.Size(13, 13);
-            this.lblSucursalLocalidad.TabIndex = 13;
-            this.lblSucursalLocalidad.Text = " -";
+            lblSucursalLocalidad.AutoSize = true;
+            lblSucursalLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
+            lblSucursalLocalidad.Location = new System.Drawing.Point(148, 136);
+            lblSucursalLocalidad.Margin = new System.Windows.Forms.Padding(5);
+            lblSucursalLocalidad.Name = "lblSucursalLocalidad";
+            lblSucursalLocalidad.Size = new System.Drawing.Size(13, 13);
+            lblSucursalLocalidad.TabIndex = 13;
+            lblSucursalLocalidad.Text = " -";
             // 
             // lblDireccionLocalidad
             // 
-            this.lblDireccionLocalidad.AutoSize = true;
-            this.lblDireccionLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblDireccionLocalidad.Location = new System.Drawing.Point(148, 113);
-            this.lblDireccionLocalidad.Margin = new System.Windows.Forms.Padding(5);
-            this.lblDireccionLocalidad.Name = "lblDireccionLocalidad";
-            this.lblDireccionLocalidad.Size = new System.Drawing.Size(13, 13);
-            this.lblDireccionLocalidad.TabIndex = 12;
-            this.lblDireccionLocalidad.Text = " -";
+            lblDireccionLocalidad.AutoSize = true;
+            lblDireccionLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
+            lblDireccionLocalidad.Location = new System.Drawing.Point(148, 113);
+            lblDireccionLocalidad.Margin = new System.Windows.Forms.Padding(5);
+            lblDireccionLocalidad.Name = "lblDireccionLocalidad";
+            lblDireccionLocalidad.Size = new System.Drawing.Size(13, 13);
+            lblDireccionLocalidad.TabIndex = 12;
+            lblDireccionLocalidad.Text = " -";
             // 
             // lblNombreLocalidad
             // 
-            this.lblNombreLocalidad.AutoSize = true;
-            this.lblNombreLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblNombreLocalidad.Location = new System.Drawing.Point(148, 90);
-            this.lblNombreLocalidad.Margin = new System.Windows.Forms.Padding(5);
-            this.lblNombreLocalidad.Name = "lblNombreLocalidad";
-            this.lblNombreLocalidad.Size = new System.Drawing.Size(13, 13);
-            this.lblNombreLocalidad.TabIndex = 11;
-            this.lblNombreLocalidad.Text = " -";
+            lblNombreLocalidad.AutoSize = true;
+            lblNombreLocalidad.ForeColor = System.Drawing.SystemColors.Highlight;
+            lblNombreLocalidad.Location = new System.Drawing.Point(148, 90);
+            lblNombreLocalidad.Margin = new System.Windows.Forms.Padding(5);
+            lblNombreLocalidad.Name = "lblNombreLocalidad";
+            lblNombreLocalidad.Size = new System.Drawing.Size(13, 13);
+            lblNombreLocalidad.TabIndex = 11;
+            lblNombreLocalidad.Text = " -";
             // 
             // btnEliminarLocalidad
             // 
-            this.btnEliminarLocalidad.Image = global::Flow_Solver.Properties.Resources.delete_16;
-            this.btnEliminarLocalidad.Location = new System.Drawing.Point(398, 19);
-            this.btnEliminarLocalidad.Name = "btnEliminarLocalidad";
-            this.btnEliminarLocalidad.Size = new System.Drawing.Size(101, 25);
-            this.btnEliminarLocalidad.TabIndex = 10;
-            this.btnEliminarLocalidad.Text = " Eliminar";
-            this.btnEliminarLocalidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminarLocalidad.UseVisualStyleBackColor = true;
-            this.btnEliminarLocalidad.Click += new System.EventHandler(this.btnEliminarLocalidad_Click);
+            btnEliminarLocalidad.Image = Properties.Resources.delete_16;
+            btnEliminarLocalidad.Location = new System.Drawing.Point(398, 19);
+            btnEliminarLocalidad.Name = "btnEliminarLocalidad";
+            btnEliminarLocalidad.Size = new System.Drawing.Size(101, 25);
+            btnEliminarLocalidad.TabIndex = 10;
+            btnEliminarLocalidad.Text = " Eliminar";
+            btnEliminarLocalidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnEliminarLocalidad.UseVisualStyleBackColor = true;
+            btnEliminarLocalidad.Click += btnEliminarLocalidad_Click;
             // 
             // txtActualLocalidadDefault
             // 
-            this.txtActualLocalidadDefault.Location = new System.Drawing.Point(6, 304);
-            this.txtActualLocalidadDefault.Name = "txtActualLocalidadDefault";
-            this.txtActualLocalidadDefault.ReadOnly = true;
-            this.txtActualLocalidadDefault.Size = new System.Drawing.Size(244, 20);
-            this.txtActualLocalidadDefault.TabIndex = 9;
+            txtActualLocalidadDefault.Location = new System.Drawing.Point(6, 304);
+            txtActualLocalidadDefault.Name = "txtActualLocalidadDefault";
+            txtActualLocalidadDefault.ReadOnly = true;
+            txtActualLocalidadDefault.Size = new System.Drawing.Size(244, 20);
+            txtActualLocalidadDefault.TabIndex = 9;
             // 
             // label29
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(8, 284);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(184, 13);
-            this.label29.TabIndex = 8;
-            this.label29.Text = "Actual Localidad Default Establecida:";
+            label29.AutoSize = true;
+            label29.Location = new System.Drawing.Point(8, 284);
+            label29.Name = "label29";
+            label29.Size = new System.Drawing.Size(184, 13);
+            label29.TabIndex = 8;
+            label29.Text = "Actual Localidad Default Establecida:";
             // 
             // btnEditarLocalidad
             // 
-            this.btnEditarLocalidad.Image = global::Flow_Solver.Properties.Resources.pencil_16;
-            this.btnEditarLocalidad.Location = new System.Drawing.Point(291, 19);
-            this.btnEditarLocalidad.Name = "btnEditarLocalidad";
-            this.btnEditarLocalidad.Size = new System.Drawing.Size(101, 25);
-            this.btnEditarLocalidad.TabIndex = 6;
-            this.btnEditarLocalidad.Text = " Editar";
-            this.btnEditarLocalidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditarLocalidad.UseVisualStyleBackColor = true;
-            this.btnEditarLocalidad.Click += new System.EventHandler(this.btnEditarLocalidad_Click);
+            btnEditarLocalidad.Image = Properties.Resources.pencil_16;
+            btnEditarLocalidad.Location = new System.Drawing.Point(291, 19);
+            btnEditarLocalidad.Name = "btnEditarLocalidad";
+            btnEditarLocalidad.Size = new System.Drawing.Size(101, 25);
+            btnEditarLocalidad.TabIndex = 6;
+            btnEditarLocalidad.Text = " Editar";
+            btnEditarLocalidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnEditarLocalidad.UseVisualStyleBackColor = true;
+            btnEditarLocalidad.Click += btnEditarLocalidad_Click;
             // 
             // btnTablaDeVinculacion
             // 
-            this.btnTablaDeVinculacion.Location = new System.Drawing.Point(6, 234);
-            this.btnTablaDeVinculacion.Name = "btnTablaDeVinculacion";
-            this.btnTablaDeVinculacion.Size = new System.Drawing.Size(184, 37);
-            this.btnTablaDeVinculacion.TabIndex = 5;
-            this.btnTablaDeVinculacion.Text = "Tabla de Vinculacion";
-            this.btnTablaDeVinculacion.UseVisualStyleBackColor = true;
-            this.btnTablaDeVinculacion.Click += new System.EventHandler(this.button7_Click);
+            btnTablaDeVinculacion.Location = new System.Drawing.Point(6, 234);
+            btnTablaDeVinculacion.Name = "btnTablaDeVinculacion";
+            btnTablaDeVinculacion.Size = new System.Drawing.Size(184, 37);
+            btnTablaDeVinculacion.TabIndex = 5;
+            btnTablaDeVinculacion.Text = "Tabla de Vinculacion";
+            btnTablaDeVinculacion.UseVisualStyleBackColor = true;
+            btnTablaDeVinculacion.Click += button7_Click;
             // 
             // btnAñadirNuevaLocalidad
             // 
-            this.btnAñadirNuevaLocalidad.Location = new System.Drawing.Point(196, 234);
-            this.btnAñadirNuevaLocalidad.Name = "btnAñadirNuevaLocalidad";
-            this.btnAñadirNuevaLocalidad.Size = new System.Drawing.Size(184, 37);
-            this.btnAñadirNuevaLocalidad.TabIndex = 4;
-            this.btnAñadirNuevaLocalidad.Text = "Añadir nueva localidad";
-            this.btnAñadirNuevaLocalidad.UseVisualStyleBackColor = true;
-            this.btnAñadirNuevaLocalidad.Click += new System.EventHandler(this.button6_Click);
+            btnAñadirNuevaLocalidad.Location = new System.Drawing.Point(196, 234);
+            btnAñadirNuevaLocalidad.Name = "btnAñadirNuevaLocalidad";
+            btnAñadirNuevaLocalidad.Size = new System.Drawing.Size(184, 37);
+            btnAñadirNuevaLocalidad.TabIndex = 4;
+            btnAñadirNuevaLocalidad.Text = "Añadir nueva localidad";
+            btnAñadirNuevaLocalidad.UseVisualStyleBackColor = true;
+            btnAñadirNuevaLocalidad.Click += button6_Click;
             // 
             // cboxListaDeLocalidades
             // 
-            this.cboxListaDeLocalidades.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxListaDeLocalidades.FormattingEnabled = true;
-            this.cboxListaDeLocalidades.Location = new System.Drawing.Point(11, 22);
-            this.cboxListaDeLocalidades.Name = "cboxListaDeLocalidades";
-            this.cboxListaDeLocalidades.Size = new System.Drawing.Size(244, 21);
-            this.cboxListaDeLocalidades.TabIndex = 0;
-            this.cboxListaDeLocalidades.SelectedIndexChanged += new System.EventHandler(this.cboxListaDeLocalidades_SelectedIndexChanged);
+            cboxListaDeLocalidades.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboxListaDeLocalidades.FormattingEnabled = true;
+            cboxListaDeLocalidades.Location = new System.Drawing.Point(11, 22);
+            cboxListaDeLocalidades.Name = "cboxListaDeLocalidades";
+            cboxListaDeLocalidades.Size = new System.Drawing.Size(244, 21);
+            cboxListaDeLocalidades.TabIndex = 0;
+            cboxListaDeLocalidades.SelectedIndexChanged += cboxListaDeLocalidades_SelectedIndexChanged;
             // 
             // tabPageNavegadorWeb
             // 
-            this.tabPageNavegadorWeb.AutoScroll = true;
-            this.tabPageNavegadorWeb.Controls.Add(this.label53);
-            this.tabPageNavegadorWeb.Controls.Add(this.groupBox18);
-            this.tabPageNavegadorWeb.Controls.Add(this.label46);
-            this.tabPageNavegadorWeb.Controls.Add(this.groupBox12);
-            this.tabPageNavegadorWeb.Controls.Add(this.groupBox11);
-            this.tabPageNavegadorWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageNavegadorWeb.ImageIndex = 4;
-            this.tabPageNavegadorWeb.Location = new System.Drawing.Point(4, 205);
-            this.tabPageNavegadorWeb.Name = "tabPageNavegadorWeb";
-            this.tabPageNavegadorWeb.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageNavegadorWeb.Size = new System.Drawing.Size(192, 0);
-            this.tabPageNavegadorWeb.TabIndex = 3;
-            this.tabPageNavegadorWeb.Text = "Navegador Web";
-            this.tabPageNavegadorWeb.UseVisualStyleBackColor = true;
+            tabPageNavegadorWeb.AutoScroll = true;
+            tabPageNavegadorWeb.Controls.Add(label53);
+            tabPageNavegadorWeb.Controls.Add(groupBox18);
+            tabPageNavegadorWeb.Controls.Add(label46);
+            tabPageNavegadorWeb.Controls.Add(groupBox12);
+            tabPageNavegadorWeb.Controls.Add(groupBox11);
+            tabPageNavegadorWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            tabPageNavegadorWeb.ImageIndex = 4;
+            tabPageNavegadorWeb.Location = new System.Drawing.Point(4, 205);
+            tabPageNavegadorWeb.Name = "tabPageNavegadorWeb";
+            tabPageNavegadorWeb.Padding = new System.Windows.Forms.Padding(3);
+            tabPageNavegadorWeb.Size = new System.Drawing.Size(192, 0);
+            tabPageNavegadorWeb.TabIndex = 3;
+            tabPageNavegadorWeb.Text = "Navegador Web";
+            tabPageNavegadorWeb.UseVisualStyleBackColor = true;
             // 
             // label53
             // 
-            this.label53.AutoSize = true;
-            this.label53.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label53.Location = new System.Drawing.Point(3, 613);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(10, 13);
-            this.label53.TabIndex = 10;
-            this.label53.Text = " ";
+            label53.AutoSize = true;
+            label53.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label53.Location = new System.Drawing.Point(3, 613);
+            label53.Name = "label53";
+            label53.Size = new System.Drawing.Size(10, 13);
+            label53.TabIndex = 10;
+            label53.Text = " ";
             // 
             // groupBox18
             // 
-            this.groupBox18.Controls.Add(this.pictureBox2);
-            this.groupBox18.Controls.Add(this.btnUnlockWebViewPanel);
-            this.groupBox18.Controls.Add(this.groupBoxReestablecerEnlaces_WebView2);
-            this.groupBox18.Controls.Add(this.txtURL_EndpointCentral);
-            this.groupBox18.Controls.Add(this.label38);
-            this.groupBox18.Controls.Add(this.txtURL_Forms);
-            this.groupBox18.Controls.Add(this.label49);
-            this.groupBox18.Controls.Add(this.label50);
-            this.groupBox18.Controls.Add(this.label51);
-            this.groupBox18.Controls.Add(this.cboxLenguajeSeleccionado_WebView2);
-            this.groupBox18.Location = new System.Drawing.Point(3, 372);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(624, 244);
-            this.groupBox18.TabIndex = 9;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Configuracion de WebView2";
+            groupBox18.Controls.Add(pictureBox2);
+            groupBox18.Controls.Add(btnUnlockWebViewPanel);
+            groupBox18.Controls.Add(groupBoxReestablecerEnlaces_WebView2);
+            groupBox18.Controls.Add(txtURL_EndpointCentral);
+            groupBox18.Controls.Add(label38);
+            groupBox18.Controls.Add(txtURL_Forms);
+            groupBox18.Controls.Add(label49);
+            groupBox18.Controls.Add(label50);
+            groupBox18.Controls.Add(label51);
+            groupBox18.Controls.Add(cboxLenguajeSeleccionado_WebView2);
+            groupBox18.Location = new System.Drawing.Point(3, 372);
+            groupBox18.Name = "groupBox18";
+            groupBox18.Size = new System.Drawing.Size(624, 244);
+            groupBox18.TabIndex = 9;
+            groupBox18.TabStop = false;
+            groupBox18.Text = "Configuracion de WebView2";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Flow_Solver.Properties.Resources.translate_16;
-            this.pictureBox2.Location = new System.Drawing.Point(207, 36);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(21, 21);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = Properties.Resources.translate_16;
+            pictureBox2.Location = new System.Drawing.Point(207, 36);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(21, 21);
+            pictureBox2.TabIndex = 15;
+            pictureBox2.TabStop = false;
             // 
             // btnUnlockWebViewPanel
             // 
-            this.btnUnlockWebViewPanel.Image = global::Flow_Solver.Properties.Resources.lock_16;
-            this.btnUnlockWebViewPanel.Location = new System.Drawing.Point(590, 93);
-            this.btnUnlockWebViewPanel.Name = "btnUnlockWebViewPanel";
-            this.btnUnlockWebViewPanel.Size = new System.Drawing.Size(28, 27);
-            this.btnUnlockWebViewPanel.TabIndex = 14;
-            this.btnUnlockWebViewPanel.UseVisualStyleBackColor = true;
-            this.btnUnlockWebViewPanel.Click += new System.EventHandler(this.btnUnlockWebViewPanel_Click);
+            btnUnlockWebViewPanel.Image = Properties.Resources.lock_16;
+            btnUnlockWebViewPanel.Location = new System.Drawing.Point(590, 93);
+            btnUnlockWebViewPanel.Name = "btnUnlockWebViewPanel";
+            btnUnlockWebViewPanel.Size = new System.Drawing.Size(28, 27);
+            btnUnlockWebViewPanel.TabIndex = 14;
+            btnUnlockWebViewPanel.UseVisualStyleBackColor = true;
+            btnUnlockWebViewPanel.Click += btnUnlockWebViewPanel_Click;
             // 
             // groupBoxReestablecerEnlaces_WebView2
             // 
-            this.groupBoxReestablecerEnlaces_WebView2.Controls.Add(this.btnReestablecer_Forms);
-            this.groupBoxReestablecerEnlaces_WebView2.Controls.Add(this.btnReestablecer_EndpointCentral);
-            this.groupBoxReestablecerEnlaces_WebView2.Location = new System.Drawing.Point(426, 126);
-            this.groupBoxReestablecerEnlaces_WebView2.Name = "groupBoxReestablecerEnlaces_WebView2";
-            this.groupBoxReestablecerEnlaces_WebView2.Size = new System.Drawing.Size(192, 109);
-            this.groupBoxReestablecerEnlaces_WebView2.TabIndex = 2;
-            this.groupBoxReestablecerEnlaces_WebView2.TabStop = false;
+            groupBoxReestablecerEnlaces_WebView2.Controls.Add(btnReestablecer_Forms);
+            groupBoxReestablecerEnlaces_WebView2.Controls.Add(btnReestablecer_EndpointCentral);
+            groupBoxReestablecerEnlaces_WebView2.Location = new System.Drawing.Point(426, 126);
+            groupBoxReestablecerEnlaces_WebView2.Name = "groupBoxReestablecerEnlaces_WebView2";
+            groupBoxReestablecerEnlaces_WebView2.Size = new System.Drawing.Size(192, 109);
+            groupBoxReestablecerEnlaces_WebView2.TabIndex = 2;
+            groupBoxReestablecerEnlaces_WebView2.TabStop = false;
             // 
             // btnReestablecer_Forms
             // 
-            this.btnReestablecer_Forms.Location = new System.Drawing.Point(6, 19);
-            this.btnReestablecer_Forms.Name = "btnReestablecer_Forms";
-            this.btnReestablecer_Forms.Size = new System.Drawing.Size(172, 32);
-            this.btnReestablecer_Forms.TabIndex = 5;
-            this.btnReestablecer_Forms.Text = "Reestablecer Enlace";
-            this.btnReestablecer_Forms.UseVisualStyleBackColor = true;
-            this.btnReestablecer_Forms.Click += new System.EventHandler(this.btnReestablecer_Forms_Click);
+            btnReestablecer_Forms.Location = new System.Drawing.Point(6, 19);
+            btnReestablecer_Forms.Name = "btnReestablecer_Forms";
+            btnReestablecer_Forms.Size = new System.Drawing.Size(172, 32);
+            btnReestablecer_Forms.TabIndex = 5;
+            btnReestablecer_Forms.Text = "Reestablecer Enlace";
+            btnReestablecer_Forms.UseVisualStyleBackColor = true;
+            btnReestablecer_Forms.Click += btnReestablecer_Forms_Click;
             // 
             // btnReestablecer_EndpointCentral
             // 
-            this.btnReestablecer_EndpointCentral.Location = new System.Drawing.Point(6, 65);
-            this.btnReestablecer_EndpointCentral.Name = "btnReestablecer_EndpointCentral";
-            this.btnReestablecer_EndpointCentral.Size = new System.Drawing.Size(172, 32);
-            this.btnReestablecer_EndpointCentral.TabIndex = 14;
-            this.btnReestablecer_EndpointCentral.Text = "Reestablecer Enlace";
-            this.btnReestablecer_EndpointCentral.UseVisualStyleBackColor = true;
-            this.btnReestablecer_EndpointCentral.Click += new System.EventHandler(this.btnReestablecer_EndpointCentral_Click);
+            btnReestablecer_EndpointCentral.Location = new System.Drawing.Point(6, 65);
+            btnReestablecer_EndpointCentral.Name = "btnReestablecer_EndpointCentral";
+            btnReestablecer_EndpointCentral.Size = new System.Drawing.Size(172, 32);
+            btnReestablecer_EndpointCentral.TabIndex = 14;
+            btnReestablecer_EndpointCentral.Text = "Reestablecer Enlace";
+            btnReestablecer_EndpointCentral.UseVisualStyleBackColor = true;
+            btnReestablecer_EndpointCentral.Click += btnReestablecer_EndpointCentral_Click;
             // 
             // txtURL_EndpointCentral
             // 
-            this.txtURL_EndpointCentral.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtURL_EndpointCentral.Location = new System.Drawing.Point(9, 196);
-            this.txtURL_EndpointCentral.Name = "txtURL_EndpointCentral";
-            this.txtURL_EndpointCentral.Size = new System.Drawing.Size(411, 20);
-            this.txtURL_EndpointCentral.TabIndex = 13;
+            txtURL_EndpointCentral.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtURL_EndpointCentral.Location = new System.Drawing.Point(9, 196);
+            txtURL_EndpointCentral.Name = "txtURL_EndpointCentral";
+            txtURL_EndpointCentral.Size = new System.Drawing.Size(411, 20);
+            txtURL_EndpointCentral.TabIndex = 13;
             // 
             // label38
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 176);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(136, 13);
-            this.label38.TabIndex = 12;
-            this.label38.Text = "Enlace de Endpoint Central";
+            label38.AutoSize = true;
+            label38.Location = new System.Drawing.Point(6, 176);
+            label38.Name = "label38";
+            label38.Size = new System.Drawing.Size(136, 13);
+            label38.TabIndex = 12;
+            label38.Text = "Enlace de Endpoint Central";
             // 
             // txtURL_Forms
             // 
-            this.txtURL_Forms.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtURL_Forms.Location = new System.Drawing.Point(9, 150);
-            this.txtURL_Forms.Name = "txtURL_Forms";
-            this.txtURL_Forms.Size = new System.Drawing.Size(411, 20);
-            this.txtURL_Forms.TabIndex = 4;
+            txtURL_Forms.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtURL_Forms.Location = new System.Drawing.Point(9, 150);
+            txtURL_Forms.Name = "txtURL_Forms";
+            txtURL_Forms.Size = new System.Drawing.Size(411, 20);
+            txtURL_Forms.TabIndex = 4;
             // 
             // label49
             // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(9, 123);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(86, 13);
-            this.label49.TabIndex = 3;
-            this.label49.Text = "Enlace de Forms";
+            label49.AutoSize = true;
+            label49.Location = new System.Drawing.Point(9, 123);
+            label49.Name = "label49";
+            label49.Size = new System.Drawing.Size(86, 13);
+            label49.TabIndex = 3;
+            label49.Text = "Enlace de Forms";
             // 
             // label50
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(6, 71);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(406, 13);
-            this.label50.TabIndex = 2;
-            this.label50.Text = "** NOTA: El cambio de lenguaje se reflejara la proxima vez que reinicies la aplic" +
-    "acion";
+            label50.AutoSize = true;
+            label50.Location = new System.Drawing.Point(6, 71);
+            label50.Name = "label50";
+            label50.Size = new System.Drawing.Size(406, 13);
+            label50.TabIndex = 2;
+            label50.Text = "** NOTA: El cambio de lenguaje se reflejara la proxima vez que reinicies la aplicacion";
             // 
             // label51
             // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(9, 16);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(108, 13);
-            this.label51.TabIndex = 1;
-            this.label51.Text = "Lenguaje por defecto";
+            label51.AutoSize = true;
+            label51.Location = new System.Drawing.Point(9, 16);
+            label51.Name = "label51";
+            label51.Size = new System.Drawing.Size(108, 13);
+            label51.TabIndex = 1;
+            label51.Text = "Lenguaje por defecto";
             // 
             // cboxLenguajeSeleccionado_WebView2
             // 
-            this.cboxLenguajeSeleccionado_WebView2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cboxLenguajeSeleccionado_WebView2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboxLenguajeSeleccionado_WebView2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxLenguajeSeleccionado_WebView2.FormattingEnabled = true;
-            this.cboxLenguajeSeleccionado_WebView2.Items.AddRange(new object[] {
-            "Ingles EE.UU (en-US)",
-            "Español Latinoamericano (es-ES)",
-            "Frances (fr-FR)"});
-            this.cboxLenguajeSeleccionado_WebView2.Location = new System.Drawing.Point(9, 36);
-            this.cboxLenguajeSeleccionado_WebView2.Name = "cboxLenguajeSeleccionado_WebView2";
-            this.cboxLenguajeSeleccionado_WebView2.Size = new System.Drawing.Size(192, 21);
-            this.cboxLenguajeSeleccionado_WebView2.TabIndex = 0;
+            cboxLenguajeSeleccionado_WebView2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            cboxLenguajeSeleccionado_WebView2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            cboxLenguajeSeleccionado_WebView2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboxLenguajeSeleccionado_WebView2.FormattingEnabled = true;
+            cboxLenguajeSeleccionado_WebView2.Items.AddRange(new object[] { "Ingles EE.UU (en-US)", "Español Latinoamericano (es-ES)", "Frances (fr-FR)" });
+            cboxLenguajeSeleccionado_WebView2.Location = new System.Drawing.Point(9, 36);
+            cboxLenguajeSeleccionado_WebView2.Name = "cboxLenguajeSeleccionado_WebView2";
+            cboxLenguajeSeleccionado_WebView2.Size = new System.Drawing.Size(192, 21);
+            cboxLenguajeSeleccionado_WebView2.TabIndex = 0;
             // 
             // label46
             // 
-            this.label46.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label46.Location = new System.Drawing.Point(3, 626);
-            this.label46.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(621, 16);
-            this.label46.TabIndex = 8;
-            this.label46.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label46.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            label46.Location = new System.Drawing.Point(3, 626);
+            label46.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            label46.Name = "label46";
+            label46.Size = new System.Drawing.Size(621, 16);
+            label46.TabIndex = 8;
+            label46.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label46.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.pictureBox1);
-            this.groupBox12.Controls.Add(this.btnUnblockCefSharpPanel);
-            this.groupBox12.Controls.Add(this.groupBoxReestablecerEnlaces_CefSharp);
-            this.groupBox12.Controls.Add(this.txtURL_ServiceDeskCompusof);
-            this.groupBox12.Controls.Add(this.label27);
-            this.groupBox12.Controls.Add(this.txtURL_ServiceDeskGMXT);
-            this.groupBox12.Controls.Add(this.label26);
-            this.groupBox12.Controls.Add(this.label24);
-            this.groupBox12.Controls.Add(this.label23);
-            this.groupBox12.Controls.Add(this.cboxLenguajeSeleccionado_CefSharp);
-            this.groupBox12.Location = new System.Drawing.Point(3, 125);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(624, 242);
-            this.groupBox12.TabIndex = 1;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Configuracion de CefSharp";
+            groupBox12.Controls.Add(pictureBox1);
+            groupBox12.Controls.Add(btnUnblockCefSharpPanel);
+            groupBox12.Controls.Add(groupBoxReestablecerEnlaces_CefSharp);
+            groupBox12.Controls.Add(txtURL_ServiceDeskCompusof);
+            groupBox12.Controls.Add(label27);
+            groupBox12.Controls.Add(txtURL_ServiceDeskGMXT);
+            groupBox12.Controls.Add(label26);
+            groupBox12.Controls.Add(label24);
+            groupBox12.Controls.Add(label23);
+            groupBox12.Controls.Add(cboxLenguajeSeleccionado_CefSharp);
+            groupBox12.Location = new System.Drawing.Point(3, 125);
+            groupBox12.Name = "groupBox12";
+            groupBox12.Size = new System.Drawing.Size(624, 242);
+            groupBox12.TabIndex = 1;
+            groupBox12.TabStop = false;
+            groupBox12.Text = "Configuracion de CefSharp";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Flow_Solver.Properties.Resources.translate_16;
-            this.pictureBox1.Location = new System.Drawing.Point(207, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 25);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.translate_16;
+            pictureBox1.Location = new System.Drawing.Point(207, 42);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(23, 25);
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
             // 
             // btnUnblockCefSharpPanel
             // 
-            this.btnUnblockCefSharpPanel.Image = global::Flow_Solver.Properties.Resources.lock_16;
-            this.btnUnblockCefSharpPanel.Location = new System.Drawing.Point(590, 97);
-            this.btnUnblockCefSharpPanel.Name = "btnUnblockCefSharpPanel";
-            this.btnUnblockCefSharpPanel.Size = new System.Drawing.Size(28, 27);
-            this.btnUnblockCefSharpPanel.TabIndex = 14;
-            this.btnUnblockCefSharpPanel.UseVisualStyleBackColor = true;
-            this.btnUnblockCefSharpPanel.Click += new System.EventHandler(this.button8_Click);
+            btnUnblockCefSharpPanel.Image = Properties.Resources.lock_16;
+            btnUnblockCefSharpPanel.Location = new System.Drawing.Point(590, 97);
+            btnUnblockCefSharpPanel.Name = "btnUnblockCefSharpPanel";
+            btnUnblockCefSharpPanel.Size = new System.Drawing.Size(28, 27);
+            btnUnblockCefSharpPanel.TabIndex = 14;
+            btnUnblockCefSharpPanel.UseVisualStyleBackColor = true;
+            btnUnblockCefSharpPanel.Click += button8_Click;
             // 
             // groupBoxReestablecerEnlaces_CefSharp
             // 
-            this.groupBoxReestablecerEnlaces_CefSharp.Controls.Add(this.btnReestablecer_ServiceDeskGMXT);
-            this.groupBoxReestablecerEnlaces_CefSharp.Controls.Add(this.btnReestablecer_ServiceDeskCompusof);
-            this.groupBoxReestablecerEnlaces_CefSharp.Location = new System.Drawing.Point(426, 130);
-            this.groupBoxReestablecerEnlaces_CefSharp.Name = "groupBoxReestablecerEnlaces_CefSharp";
-            this.groupBoxReestablecerEnlaces_CefSharp.Size = new System.Drawing.Size(192, 105);
-            this.groupBoxReestablecerEnlaces_CefSharp.TabIndex = 2;
-            this.groupBoxReestablecerEnlaces_CefSharp.TabStop = false;
+            groupBoxReestablecerEnlaces_CefSharp.Controls.Add(btnReestablecer_ServiceDeskGMXT);
+            groupBoxReestablecerEnlaces_CefSharp.Controls.Add(btnReestablecer_ServiceDeskCompusof);
+            groupBoxReestablecerEnlaces_CefSharp.Location = new System.Drawing.Point(426, 130);
+            groupBoxReestablecerEnlaces_CefSharp.Name = "groupBoxReestablecerEnlaces_CefSharp";
+            groupBoxReestablecerEnlaces_CefSharp.Size = new System.Drawing.Size(192, 105);
+            groupBoxReestablecerEnlaces_CefSharp.TabIndex = 2;
+            groupBoxReestablecerEnlaces_CefSharp.TabStop = false;
             // 
             // btnReestablecer_ServiceDeskGMXT
             // 
-            this.btnReestablecer_ServiceDeskGMXT.Location = new System.Drawing.Point(6, 15);
-            this.btnReestablecer_ServiceDeskGMXT.Name = "btnReestablecer_ServiceDeskGMXT";
-            this.btnReestablecer_ServiceDeskGMXT.Size = new System.Drawing.Size(172, 32);
-            this.btnReestablecer_ServiceDeskGMXT.TabIndex = 8;
-            this.btnReestablecer_ServiceDeskGMXT.Text = "Reestablecer Enlace";
-            this.btnReestablecer_ServiceDeskGMXT.UseVisualStyleBackColor = true;
-            this.btnReestablecer_ServiceDeskGMXT.Click += new System.EventHandler(this.btnReestablecer_ServiceDeskGMXT_Click);
+            btnReestablecer_ServiceDeskGMXT.Location = new System.Drawing.Point(6, 15);
+            btnReestablecer_ServiceDeskGMXT.Name = "btnReestablecer_ServiceDeskGMXT";
+            btnReestablecer_ServiceDeskGMXT.Size = new System.Drawing.Size(172, 32);
+            btnReestablecer_ServiceDeskGMXT.TabIndex = 8;
+            btnReestablecer_ServiceDeskGMXT.Text = "Reestablecer Enlace";
+            btnReestablecer_ServiceDeskGMXT.UseVisualStyleBackColor = true;
+            btnReestablecer_ServiceDeskGMXT.Click += btnReestablecer_ServiceDeskGMXT_Click;
             // 
             // btnReestablecer_ServiceDeskCompusof
             // 
-            this.btnReestablecer_ServiceDeskCompusof.Location = new System.Drawing.Point(6, 61);
-            this.btnReestablecer_ServiceDeskCompusof.Name = "btnReestablecer_ServiceDeskCompusof";
-            this.btnReestablecer_ServiceDeskCompusof.Size = new System.Drawing.Size(172, 32);
-            this.btnReestablecer_ServiceDeskCompusof.TabIndex = 11;
-            this.btnReestablecer_ServiceDeskCompusof.Text = "Reestablecer Enlace";
-            this.btnReestablecer_ServiceDeskCompusof.UseVisualStyleBackColor = true;
-            this.btnReestablecer_ServiceDeskCompusof.Click += new System.EventHandler(this.btnReestablecer_ServiceDeskCompusof_Click);
+            btnReestablecer_ServiceDeskCompusof.Location = new System.Drawing.Point(6, 61);
+            btnReestablecer_ServiceDeskCompusof.Name = "btnReestablecer_ServiceDeskCompusof";
+            btnReestablecer_ServiceDeskCompusof.Size = new System.Drawing.Size(172, 32);
+            btnReestablecer_ServiceDeskCompusof.TabIndex = 11;
+            btnReestablecer_ServiceDeskCompusof.Text = "Reestablecer Enlace";
+            btnReestablecer_ServiceDeskCompusof.UseVisualStyleBackColor = true;
+            btnReestablecer_ServiceDeskCompusof.Click += btnReestablecer_ServiceDeskCompusof_Click;
             // 
             // txtURL_ServiceDeskCompusof
             // 
-            this.txtURL_ServiceDeskCompusof.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtURL_ServiceDeskCompusof.Location = new System.Drawing.Point(9, 193);
-            this.txtURL_ServiceDeskCompusof.Name = "txtURL_ServiceDeskCompusof";
-            this.txtURL_ServiceDeskCompusof.Size = new System.Drawing.Size(411, 20);
-            this.txtURL_ServiceDeskCompusof.TabIndex = 10;
+            txtURL_ServiceDeskCompusof.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtURL_ServiceDeskCompusof.Location = new System.Drawing.Point(9, 193);
+            txtURL_ServiceDeskCompusof.Name = "txtURL_ServiceDeskCompusof";
+            txtURL_ServiceDeskCompusof.Size = new System.Drawing.Size(411, 20);
+            txtURL_ServiceDeskCompusof.TabIndex = 10;
             // 
             // label27
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(9, 173);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(169, 13);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "Enlace de ServiceDesk Compusof";
+            label27.AutoSize = true;
+            label27.Location = new System.Drawing.Point(9, 173);
+            label27.Name = "label27";
+            label27.Size = new System.Drawing.Size(169, 13);
+            label27.TabIndex = 9;
+            label27.Text = "Enlace de ServiceDesk Compusof";
             // 
             // txtURL_ServiceDeskGMXT
             // 
-            this.txtURL_ServiceDeskGMXT.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtURL_ServiceDeskGMXT.Location = new System.Drawing.Point(9, 147);
-            this.txtURL_ServiceDeskGMXT.Name = "txtURL_ServiceDeskGMXT";
-            this.txtURL_ServiceDeskGMXT.Size = new System.Drawing.Size(411, 20);
-            this.txtURL_ServiceDeskGMXT.TabIndex = 7;
+            txtURL_ServiceDeskGMXT.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtURL_ServiceDeskGMXT.Location = new System.Drawing.Point(9, 147);
+            txtURL_ServiceDeskGMXT.Name = "txtURL_ServiceDeskGMXT";
+            txtURL_ServiceDeskGMXT.Size = new System.Drawing.Size(411, 20);
+            txtURL_ServiceDeskGMXT.TabIndex = 7;
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(9, 127);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(153, 13);
-            this.label26.TabIndex = 6;
-            this.label26.Text = "Enlace de ServiceDesk GMXT";
+            label26.AutoSize = true;
+            label26.Location = new System.Drawing.Point(9, 127);
+            label26.Name = "label26";
+            label26.Size = new System.Drawing.Size(153, 13);
+            label26.TabIndex = 6;
+            label26.Text = "Enlace de ServiceDesk GMXT";
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(9, 76);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(406, 13);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "** NOTA: El cambio de lenguaje se reflejara la proxima vez que reinicies la aplic" +
-    "acion";
+            label24.AutoSize = true;
+            label24.Location = new System.Drawing.Point(9, 76);
+            label24.Name = "label24";
+            label24.Size = new System.Drawing.Size(406, 13);
+            label24.TabIndex = 2;
+            label24.Text = "** NOTA: El cambio de lenguaje se reflejara la proxima vez que reinicies la aplicacion";
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(9, 22);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(108, 13);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Lenguaje por defecto";
+            label23.AutoSize = true;
+            label23.Location = new System.Drawing.Point(9, 22);
+            label23.Name = "label23";
+            label23.Size = new System.Drawing.Size(108, 13);
+            label23.TabIndex = 1;
+            label23.Text = "Lenguaje por defecto";
             // 
             // cboxLenguajeSeleccionado_CefSharp
             // 
-            this.cboxLenguajeSeleccionado_CefSharp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cboxLenguajeSeleccionado_CefSharp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboxLenguajeSeleccionado_CefSharp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxLenguajeSeleccionado_CefSharp.FormattingEnabled = true;
-            this.cboxLenguajeSeleccionado_CefSharp.Items.AddRange(new object[] {
-            "Ingles Gran Bretaña (en-GB)",
-            "Ingles EE.UU (en-US)",
-            "Español Latinoamerica (es)",
-            "Español Auxiliar (es-419)"});
-            this.cboxLenguajeSeleccionado_CefSharp.Location = new System.Drawing.Point(9, 42);
-            this.cboxLenguajeSeleccionado_CefSharp.Name = "cboxLenguajeSeleccionado_CefSharp";
-            this.cboxLenguajeSeleccionado_CefSharp.Size = new System.Drawing.Size(192, 21);
-            this.cboxLenguajeSeleccionado_CefSharp.TabIndex = 0;
-            this.cboxLenguajeSeleccionado_CefSharp.SelectedIndexChanged += new System.EventHandler(this.cboxLenguajeSeleccionado_SelectedIndexChanged);
+            cboxLenguajeSeleccionado_CefSharp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            cboxLenguajeSeleccionado_CefSharp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            cboxLenguajeSeleccionado_CefSharp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboxLenguajeSeleccionado_CefSharp.FormattingEnabled = true;
+            cboxLenguajeSeleccionado_CefSharp.Items.AddRange(new object[] { "Ingles Gran Bretaña (en-GB)", "Ingles EE.UU (en-US)", "Español Latinoamerica (es)", "Español Auxiliar (es-419)" });
+            cboxLenguajeSeleccionado_CefSharp.Location = new System.Drawing.Point(9, 42);
+            cboxLenguajeSeleccionado_CefSharp.Name = "cboxLenguajeSeleccionado_CefSharp";
+            cboxLenguajeSeleccionado_CefSharp.Size = new System.Drawing.Size(192, 21);
+            cboxLenguajeSeleccionado_CefSharp.TabIndex = 0;
+            cboxLenguajeSeleccionado_CefSharp.SelectedIndexChanged += cboxLenguajeSeleccionado_SelectedIndexChanged;
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.btnEliminarCookies_WebView2);
-            this.groupBox11.Controls.Add(this.label45);
-            this.groupBox11.Controls.Add(this.btnEliminarCookies_CefSharp);
-            this.groupBox11.Controls.Add(this.label21);
-            this.groupBox11.Location = new System.Drawing.Point(3, 6);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(624, 113);
-            this.groupBox11.TabIndex = 0;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Herramientas";
+            groupBox11.Controls.Add(btnEliminarCookies_WebView2);
+            groupBox11.Controls.Add(label45);
+            groupBox11.Controls.Add(btnEliminarCookies_CefSharp);
+            groupBox11.Controls.Add(label21);
+            groupBox11.Location = new System.Drawing.Point(3, 6);
+            groupBox11.Name = "groupBox11";
+            groupBox11.Size = new System.Drawing.Size(624, 113);
+            groupBox11.TabIndex = 0;
+            groupBox11.TabStop = false;
+            groupBox11.Text = "Herramientas";
             // 
             // btnEliminarCookies_WebView2
             // 
-            this.btnEliminarCookies_WebView2.Image = global::Flow_Solver.Properties.Resources.delete_16;
-            this.btnEliminarCookies_WebView2.Location = new System.Drawing.Point(487, 62);
-            this.btnEliminarCookies_WebView2.Name = "btnEliminarCookies_WebView2";
-            this.btnEliminarCookies_WebView2.Size = new System.Drawing.Size(126, 42);
-            this.btnEliminarCookies_WebView2.TabIndex = 4;
-            this.btnEliminarCookies_WebView2.Text = " Eliminar";
-            this.btnEliminarCookies_WebView2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminarCookies_WebView2.UseVisualStyleBackColor = true;
-            this.btnEliminarCookies_WebView2.Click += new System.EventHandler(this.btnEliminarCookies_WebView2_Click);
+            btnEliminarCookies_WebView2.Image = Properties.Resources.delete_16;
+            btnEliminarCookies_WebView2.Location = new System.Drawing.Point(487, 62);
+            btnEliminarCookies_WebView2.Name = "btnEliminarCookies_WebView2";
+            btnEliminarCookies_WebView2.Size = new System.Drawing.Size(126, 42);
+            btnEliminarCookies_WebView2.TabIndex = 4;
+            btnEliminarCookies_WebView2.Text = " Eliminar";
+            btnEliminarCookies_WebView2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnEliminarCookies_WebView2.UseVisualStyleBackColor = true;
+            btnEliminarCookies_WebView2.Click += btnEliminarCookies_WebView2_Click;
             // 
             // label45
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(6, 75);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(252, 13);
-            this.label45.TabIndex = 3;
-            this.label45.Text = "Eliminar Cookies y Cache del navegador WebView2";
+            label45.AutoSize = true;
+            label45.Location = new System.Drawing.Point(6, 75);
+            label45.Name = "label45";
+            label45.Size = new System.Drawing.Size(252, 13);
+            label45.TabIndex = 3;
+            label45.Text = "Eliminar Cookies y Cache del navegador WebView2";
             // 
             // btnEliminarCookies_CefSharp
             // 
-            this.btnEliminarCookies_CefSharp.Image = global::Flow_Solver.Properties.Resources.delete_16;
-            this.btnEliminarCookies_CefSharp.Location = new System.Drawing.Point(487, 14);
-            this.btnEliminarCookies_CefSharp.Name = "btnEliminarCookies_CefSharp";
-            this.btnEliminarCookies_CefSharp.Size = new System.Drawing.Size(126, 42);
-            this.btnEliminarCookies_CefSharp.TabIndex = 2;
-            this.btnEliminarCookies_CefSharp.Text = " Eliminar";
-            this.btnEliminarCookies_CefSharp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminarCookies_CefSharp.UseVisualStyleBackColor = true;
-            this.btnEliminarCookies_CefSharp.Click += new System.EventHandler(this.btnEliminarCookies_Click);
+            btnEliminarCookies_CefSharp.Image = Properties.Resources.delete_16;
+            btnEliminarCookies_CefSharp.Location = new System.Drawing.Point(487, 14);
+            btnEliminarCookies_CefSharp.Name = "btnEliminarCookies_CefSharp";
+            btnEliminarCookies_CefSharp.Size = new System.Drawing.Size(126, 42);
+            btnEliminarCookies_CefSharp.TabIndex = 2;
+            btnEliminarCookies_CefSharp.Text = " Eliminar";
+            btnEliminarCookies_CefSharp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnEliminarCookies_CefSharp.UseVisualStyleBackColor = true;
+            btnEliminarCookies_CefSharp.Click += btnEliminarCookies_Click;
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 27);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(244, 13);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "Eliminar Cookies y Cache del navegador CefSharp";
+            label21.AutoSize = true;
+            label21.Location = new System.Drawing.Point(6, 27);
+            label21.Name = "label21";
+            label21.Size = new System.Drawing.Size(244, 13);
+            label21.TabIndex = 1;
+            label21.Text = "Eliminar Cookies y Cache del navegador CefSharp";
             // 
             // tabPageAvanzado
             // 
-            this.tabPageAvanzado.AutoScroll = true;
-            this.tabPageAvanzado.Controls.Add(this.groupBox21);
-            this.tabPageAvanzado.Controls.Add(this.label52);
-            this.tabPageAvanzado.Controls.Add(this.groupBox8);
-            this.tabPageAvanzado.Controls.Add(this.groupBox14);
-            this.tabPageAvanzado.Controls.Add(this.label35);
-            this.tabPageAvanzado.Controls.Add(this.groupBox13);
-            this.tabPageAvanzado.Controls.Add(this.groupBox10);
-            this.tabPageAvanzado.Controls.Add(this.groupBox7);
-            this.tabPageAvanzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageAvanzado.ImageIndex = 3;
-            this.tabPageAvanzado.Location = new System.Drawing.Point(4, 165);
-            this.tabPageAvanzado.Name = "tabPageAvanzado";
-            this.tabPageAvanzado.Size = new System.Drawing.Size(192, 0);
-            this.tabPageAvanzado.TabIndex = 2;
-            this.tabPageAvanzado.Text = "Avanzado";
-            this.tabPageAvanzado.UseVisualStyleBackColor = true;
+            tabPageAvanzado.AutoScroll = true;
+            tabPageAvanzado.Controls.Add(groupBox21);
+            tabPageAvanzado.Controls.Add(label52);
+            tabPageAvanzado.Controls.Add(groupBox8);
+            tabPageAvanzado.Controls.Add(groupBox14);
+            tabPageAvanzado.Controls.Add(label35);
+            tabPageAvanzado.Controls.Add(groupBox13);
+            tabPageAvanzado.Controls.Add(groupBox10);
+            tabPageAvanzado.Controls.Add(groupBox7);
+            tabPageAvanzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            tabPageAvanzado.ImageIndex = 3;
+            tabPageAvanzado.Location = new System.Drawing.Point(4, 165);
+            tabPageAvanzado.Name = "tabPageAvanzado";
+            tabPageAvanzado.Size = new System.Drawing.Size(192, 0);
+            tabPageAvanzado.TabIndex = 2;
+            tabPageAvanzado.Text = "Avanzado";
+            tabPageAvanzado.UseVisualStyleBackColor = true;
             // 
             // groupBox21
             // 
-            this.groupBox21.Controls.Add(this.cboxMetodoDeImpresionPorDefecto);
-            this.groupBox21.Controls.Add(this.label58);
-            this.groupBox21.Controls.Add(this.chckboxHabilitarMetodoDeImpresionSecundarioAuto);
-            this.groupBox21.Location = new System.Drawing.Point(3, 288);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(616, 151);
-            this.groupBox21.TabIndex = 10;
-            this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Propiedades de Impresion";
+            groupBox21.Controls.Add(cboxMetodoDeImpresionPorDefecto);
+            groupBox21.Controls.Add(label58);
+            groupBox21.Controls.Add(chckboxHabilitarMetodoDeImpresionSecundarioAuto);
+            groupBox21.Location = new System.Drawing.Point(3, 288);
+            groupBox21.Name = "groupBox21";
+            groupBox21.Size = new System.Drawing.Size(616, 151);
+            groupBox21.TabIndex = 10;
+            groupBox21.TabStop = false;
+            groupBox21.Text = "Propiedades de Impresion";
             // 
             // cboxMetodoDeImpresionPorDefecto
             // 
-            this.cboxMetodoDeImpresionPorDefecto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxMetodoDeImpresionPorDefecto.FormattingEnabled = true;
-            this.cboxMetodoDeImpresionPorDefecto.Items.AddRange(new object[] {
-            "WebView2",
-            "Impresion de Windows"});
-            this.cboxMetodoDeImpresionPorDefecto.Location = new System.Drawing.Point(10, 54);
-            this.cboxMetodoDeImpresionPorDefecto.Name = "cboxMetodoDeImpresionPorDefecto";
-            this.cboxMetodoDeImpresionPorDefecto.Size = new System.Drawing.Size(290, 21);
-            this.cboxMetodoDeImpresionPorDefecto.TabIndex = 7;
+            cboxMetodoDeImpresionPorDefecto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboxMetodoDeImpresionPorDefecto.FormattingEnabled = true;
+            cboxMetodoDeImpresionPorDefecto.Items.AddRange(new object[] { "WebView2", "Impresion de Windows" });
+            cboxMetodoDeImpresionPorDefecto.Location = new System.Drawing.Point(10, 54);
+            cboxMetodoDeImpresionPorDefecto.Name = "cboxMetodoDeImpresionPorDefecto";
+            cboxMetodoDeImpresionPorDefecto.Size = new System.Drawing.Size(290, 21);
+            cboxMetodoDeImpresionPorDefecto.TabIndex = 7;
             // 
             // label58
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(6, 31);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(162, 13);
-            this.label58.TabIndex = 6;
-            this.label58.Text = "Metodo de impresion por defecto";
+            label58.AutoSize = true;
+            label58.Location = new System.Drawing.Point(6, 31);
+            label58.Name = "label58";
+            label58.Size = new System.Drawing.Size(162, 13);
+            label58.TabIndex = 6;
+            label58.Text = "Metodo de impresion por defecto";
             // 
             // chckboxHabilitarMetodoDeImpresionSecundarioAuto
             // 
-            this.chckboxHabilitarMetodoDeImpresionSecundarioAuto.Location = new System.Drawing.Point(10, 88);
-            this.chckboxHabilitarMetodoDeImpresionSecundarioAuto.Name = "chckboxHabilitarMetodoDeImpresionSecundarioAuto";
-            this.chckboxHabilitarMetodoDeImpresionSecundarioAuto.Size = new System.Drawing.Size(592, 55);
-            this.chckboxHabilitarMetodoDeImpresionSecundarioAuto.TabIndex = 5;
-            this.chckboxHabilitarMetodoDeImpresionSecundarioAuto.Text = "Habilitar metodo de impresio secundario automatico en caso de fallo con WebView2";
-            this.chckboxHabilitarMetodoDeImpresionSecundarioAuto.UseVisualStyleBackColor = true;
+            chckboxHabilitarMetodoDeImpresionSecundarioAuto.Location = new System.Drawing.Point(10, 88);
+            chckboxHabilitarMetodoDeImpresionSecundarioAuto.Name = "chckboxHabilitarMetodoDeImpresionSecundarioAuto";
+            chckboxHabilitarMetodoDeImpresionSecundarioAuto.Size = new System.Drawing.Size(592, 55);
+            chckboxHabilitarMetodoDeImpresionSecundarioAuto.TabIndex = 5;
+            chckboxHabilitarMetodoDeImpresionSecundarioAuto.Text = "Habilitar metodo de impresio secundario automatico en caso de fallo con WebView2";
+            chckboxHabilitarMetodoDeImpresionSecundarioAuto.UseVisualStyleBackColor = true;
             // 
             // label52
             // 
-            this.label52.AutoSize = true;
-            this.label52.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label52.Location = new System.Drawing.Point(0, 918);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(10, 13);
-            this.label52.TabIndex = 9;
-            this.label52.Text = " ";
+            label52.AutoSize = true;
+            label52.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label52.Location = new System.Drawing.Point(0, 918);
+            label52.Name = "label52";
+            label52.Size = new System.Drawing.Size(10, 13);
+            label52.TabIndex = 9;
+            label52.Text = " ";
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.chckboxDescargarEInstalarAutomaticamente);
-            this.groupBox8.Controls.Add(this.chckboxCanalBeta);
-            this.groupBox8.Controls.Add(this.btnBuscarActualizaciones);
-            this.groupBox8.Controls.Add(this.chckboxVerificarActualizaciones);
-            this.groupBox8.Location = new System.Drawing.Point(4, 109);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(615, 173);
-            this.groupBox8.TabIndex = 1;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Actualizaciones";
+            groupBox8.Controls.Add(chckboxDescargarEInstalarAutomaticamente);
+            groupBox8.Controls.Add(chckboxCanalBeta);
+            groupBox8.Controls.Add(btnBuscarActualizaciones);
+            groupBox8.Controls.Add(chckboxVerificarActualizaciones);
+            groupBox8.Location = new System.Drawing.Point(4, 109);
+            groupBox8.Name = "groupBox8";
+            groupBox8.Size = new System.Drawing.Size(615, 173);
+            groupBox8.TabIndex = 1;
+            groupBox8.TabStop = false;
+            groupBox8.Text = "Actualizaciones";
             // 
             // chckboxDescargarEInstalarAutomaticamente
             // 
-            this.chckboxDescargarEInstalarAutomaticamente.AutoSize = true;
-            this.chckboxDescargarEInstalarAutomaticamente.Location = new System.Drawing.Point(6, 134);
-            this.chckboxDescargarEInstalarAutomaticamente.Name = "chckboxDescargarEInstalarAutomaticamente";
-            this.chckboxDescargarEInstalarAutomaticamente.Size = new System.Drawing.Size(207, 17);
-            this.chckboxDescargarEInstalarAutomaticamente.TabIndex = 4;
-            this.chckboxDescargarEInstalarAutomaticamente.Text = "Descargar e instalar automaticamente ";
-            this.chckboxDescargarEInstalarAutomaticamente.UseVisualStyleBackColor = true;
+            chckboxDescargarEInstalarAutomaticamente.AutoSize = true;
+            chckboxDescargarEInstalarAutomaticamente.Location = new System.Drawing.Point(6, 134);
+            chckboxDescargarEInstalarAutomaticamente.Name = "chckboxDescargarEInstalarAutomaticamente";
+            chckboxDescargarEInstalarAutomaticamente.Size = new System.Drawing.Size(207, 17);
+            chckboxDescargarEInstalarAutomaticamente.TabIndex = 4;
+            chckboxDescargarEInstalarAutomaticamente.Text = "Descargar e instalar automaticamente ";
+            chckboxDescargarEInstalarAutomaticamente.UseVisualStyleBackColor = true;
             // 
             // chckboxCanalBeta
             // 
-            this.chckboxCanalBeta.AutoSize = true;
-            this.chckboxCanalBeta.Location = new System.Drawing.Point(6, 104);
-            this.chckboxCanalBeta.Name = "chckboxCanalBeta";
-            this.chckboxCanalBeta.Size = new System.Drawing.Size(209, 17);
-            this.chckboxCanalBeta.TabIndex = 3;
-            this.chckboxCanalBeta.Text = "Habilitar canal Beta de actualizaciones";
-            this.chckboxCanalBeta.UseVisualStyleBackColor = true;
-            this.chckboxCanalBeta.CheckedChanged += new System.EventHandler(this.chckboxCanalBeta_CheckedChanged);
+            chckboxCanalBeta.AutoSize = true;
+            chckboxCanalBeta.Location = new System.Drawing.Point(6, 104);
+            chckboxCanalBeta.Name = "chckboxCanalBeta";
+            chckboxCanalBeta.Size = new System.Drawing.Size(209, 17);
+            chckboxCanalBeta.TabIndex = 3;
+            chckboxCanalBeta.Text = "Habilitar canal Beta de actualizaciones";
+            chckboxCanalBeta.UseVisualStyleBackColor = true;
+            chckboxCanalBeta.CheckedChanged += chckboxCanalBeta_CheckedChanged;
             // 
             // btnBuscarActualizaciones
             // 
-            this.btnBuscarActualizaciones.Image = global::Flow_Solver.Properties.Resources.internet_16;
-            this.btnBuscarActualizaciones.Location = new System.Drawing.Point(159, 55);
-            this.btnBuscarActualizaciones.Name = "btnBuscarActualizaciones";
-            this.btnBuscarActualizaciones.Size = new System.Drawing.Size(279, 43);
-            this.btnBuscarActualizaciones.TabIndex = 2;
-            this.btnBuscarActualizaciones.Text = "Buscar actualizaciones";
-            this.btnBuscarActualizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscarActualizaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscarActualizaciones.UseVisualStyleBackColor = true;
-            this.btnBuscarActualizaciones.Click += new System.EventHandler(this.btnBuscarActualizaciones_Click);
+            btnBuscarActualizaciones.Image = Properties.Resources.internet_16;
+            btnBuscarActualizaciones.Location = new System.Drawing.Point(159, 55);
+            btnBuscarActualizaciones.Name = "btnBuscarActualizaciones";
+            btnBuscarActualizaciones.Size = new System.Drawing.Size(279, 43);
+            btnBuscarActualizaciones.TabIndex = 2;
+            btnBuscarActualizaciones.Text = "Buscar actualizaciones";
+            btnBuscarActualizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnBuscarActualizaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnBuscarActualizaciones.UseVisualStyleBackColor = true;
+            btnBuscarActualizaciones.Click += btnBuscarActualizaciones_Click;
             // 
             // chckboxVerificarActualizaciones
             // 
-            this.chckboxVerificarActualizaciones.AutoSize = true;
-            this.chckboxVerificarActualizaciones.Location = new System.Drawing.Point(6, 25);
-            this.chckboxVerificarActualizaciones.Name = "chckboxVerificarActualizaciones";
-            this.chckboxVerificarActualizaciones.Size = new System.Drawing.Size(294, 17);
-            this.chckboxVerificarActualizaciones.TabIndex = 1;
-            this.chckboxVerificarActualizaciones.Text = "Verificar actualizaciones disponibles al iniciar el programa";
-            this.chckboxVerificarActualizaciones.UseVisualStyleBackColor = true;
-            this.chckboxVerificarActualizaciones.CheckedChanged += new System.EventHandler(this.chckboxVerificarActualizaciones_CheckedChanged);
+            chckboxVerificarActualizaciones.AutoSize = true;
+            chckboxVerificarActualizaciones.Location = new System.Drawing.Point(6, 25);
+            chckboxVerificarActualizaciones.Name = "chckboxVerificarActualizaciones";
+            chckboxVerificarActualizaciones.Size = new System.Drawing.Size(294, 17);
+            chckboxVerificarActualizaciones.TabIndex = 1;
+            chckboxVerificarActualizaciones.Text = "Verificar actualizaciones disponibles al iniciar el programa";
+            chckboxVerificarActualizaciones.UseVisualStyleBackColor = true;
+            chckboxVerificarActualizaciones.CheckedChanged += chckboxVerificarActualizaciones_CheckedChanged;
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.btnImportarBackup);
-            this.groupBox14.Controls.Add(this.btnExportarBackup);
-            this.groupBox14.Controls.Add(this.label41);
-            this.groupBox14.Controls.Add(this.label40);
-            this.groupBox14.Enabled = false;
-            this.groupBox14.Location = new System.Drawing.Point(3, 739);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(616, 179);
-            this.groupBox14.TabIndex = 6;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "BackUp del sistema";
+            groupBox14.Controls.Add(btnImportarBackup);
+            groupBox14.Controls.Add(btnExportarBackup);
+            groupBox14.Controls.Add(label41);
+            groupBox14.Controls.Add(label40);
+            groupBox14.Enabled = false;
+            groupBox14.Location = new System.Drawing.Point(3, 739);
+            groupBox14.Name = "groupBox14";
+            groupBox14.Size = new System.Drawing.Size(616, 179);
+            groupBox14.TabIndex = 6;
+            groupBox14.TabStop = false;
+            groupBox14.Text = "BackUp del sistema";
             // 
             // btnImportarBackup
             // 
-            this.btnImportarBackup.Enabled = false;
-            this.btnImportarBackup.Image = global::Flow_Solver.Properties.Resources.importar_16;
-            this.btnImportarBackup.Location = new System.Drawing.Point(202, 125);
-            this.btnImportarBackup.Name = "btnImportarBackup";
-            this.btnImportarBackup.Size = new System.Drawing.Size(221, 44);
-            this.btnImportarBackup.TabIndex = 3;
-            this.btnImportarBackup.Text = " Importar";
-            this.btnImportarBackup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImportarBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnImportarBackup.UseVisualStyleBackColor = true;
+            btnImportarBackup.Enabled = false;
+            btnImportarBackup.Image = Properties.Resources.importar_16;
+            btnImportarBackup.Location = new System.Drawing.Point(202, 125);
+            btnImportarBackup.Name = "btnImportarBackup";
+            btnImportarBackup.Size = new System.Drawing.Size(221, 44);
+            btnImportarBackup.TabIndex = 3;
+            btnImportarBackup.Text = " Importar";
+            btnImportarBackup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnImportarBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnImportarBackup.UseVisualStyleBackColor = true;
             // 
             // btnExportarBackup
             // 
-            this.btnExportarBackup.Enabled = false;
-            this.btnExportarBackup.Image = global::Flow_Solver.Properties.Resources.exportar_16;
-            this.btnExportarBackup.Location = new System.Drawing.Point(202, 45);
-            this.btnExportarBackup.Name = "btnExportarBackup";
-            this.btnExportarBackup.Size = new System.Drawing.Size(221, 43);
-            this.btnExportarBackup.TabIndex = 2;
-            this.btnExportarBackup.Text = " Crear Backup";
-            this.btnExportarBackup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExportarBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExportarBackup.UseVisualStyleBackColor = true;
-            this.btnExportarBackup.Click += new System.EventHandler(this.btnExportarBackup_Click);
+            btnExportarBackup.Enabled = false;
+            btnExportarBackup.Image = Properties.Resources.exportar_16;
+            btnExportarBackup.Location = new System.Drawing.Point(202, 45);
+            btnExportarBackup.Name = "btnExportarBackup";
+            btnExportarBackup.Size = new System.Drawing.Size(221, 43);
+            btnExportarBackup.TabIndex = 2;
+            btnExportarBackup.Text = " Crear Backup";
+            btnExportarBackup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnExportarBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnExportarBackup.UseVisualStyleBackColor = true;
+            btnExportarBackup.Click += btnExportarBackup_Click;
             // 
             // label41
             // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(7, 97);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(372, 13);
-            this.label41.TabIndex = 1;
-            this.label41.Text = "Importar la configuracion de un backup existente y lo aplica a la sesion actual";
+            label41.AutoSize = true;
+            label41.Location = new System.Drawing.Point(7, 97);
+            label41.Name = "label41";
+            label41.Size = new System.Drawing.Size(372, 13);
+            label41.TabIndex = 1;
+            label41.Text = "Importar la configuracion de un backup existente y lo aplica a la sesion actual";
             // 
             // label40
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(7, 18);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(371, 13);
-            this.label40.TabIndex = 0;
-            this.label40.Text = "Crear y exportar backup del sistema para usarlo posteriormente en otra sesion";
+            label40.AutoSize = true;
+            label40.Location = new System.Drawing.Point(7, 18);
+            label40.Name = "label40";
+            label40.Size = new System.Drawing.Size(371, 13);
+            label40.TabIndex = 0;
+            label40.Text = "Crear y exportar backup del sistema para usarlo posteriormente en otra sesion";
             // 
             // label35
             // 
-            this.label35.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label35.Location = new System.Drawing.Point(0, 931);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(619, 23);
-            this.label35.TabIndex = 5;
-            this.label35.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label35.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label35.Location = new System.Drawing.Point(0, 931);
+            label35.Name = "label35";
+            label35.Size = new System.Drawing.Size(619, 23);
+            label35.TabIndex = 5;
+            label35.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.chckBoxAbrirUltimaSesion);
-            this.groupBox13.Controls.Add(this.chckBoxCrearProyectoEnBlanco);
-            this.groupBox13.Location = new System.Drawing.Point(4, 642);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(615, 91);
-            this.groupBox13.TabIndex = 4;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Al abrir la aplicacion";
+            groupBox13.Controls.Add(chckBoxAbrirUltimaSesion);
+            groupBox13.Controls.Add(chckBoxCrearProyectoEnBlanco);
+            groupBox13.Location = new System.Drawing.Point(4, 642);
+            groupBox13.Name = "groupBox13";
+            groupBox13.Size = new System.Drawing.Size(615, 91);
+            groupBox13.TabIndex = 4;
+            groupBox13.TabStop = false;
+            groupBox13.Text = "Al abrir la aplicacion";
             // 
             // chckBoxAbrirUltimaSesion
             // 
-            this.chckBoxAbrirUltimaSesion.AutoSize = true;
-            this.chckBoxAbrirUltimaSesion.Location = new System.Drawing.Point(6, 55);
-            this.chckBoxAbrirUltimaSesion.Name = "chckBoxAbrirUltimaSesion";
-            this.chckBoxAbrirUltimaSesion.Size = new System.Drawing.Size(239, 17);
-            this.chckBoxAbrirUltimaSesion.TabIndex = 1;
-            this.chckBoxAbrirUltimaSesion.Text = "Recordar y abrir la ultima sesion del programa";
-            this.chckBoxAbrirUltimaSesion.UseVisualStyleBackColor = true;
+            chckBoxAbrirUltimaSesion.AutoSize = true;
+            chckBoxAbrirUltimaSesion.Location = new System.Drawing.Point(6, 55);
+            chckBoxAbrirUltimaSesion.Name = "chckBoxAbrirUltimaSesion";
+            chckBoxAbrirUltimaSesion.Size = new System.Drawing.Size(239, 17);
+            chckBoxAbrirUltimaSesion.TabIndex = 1;
+            chckBoxAbrirUltimaSesion.Text = "Recordar y abrir la ultima sesion del programa";
+            chckBoxAbrirUltimaSesion.UseVisualStyleBackColor = true;
             // 
             // chckBoxCrearProyectoEnBlanco
             // 
-            this.chckBoxCrearProyectoEnBlanco.AutoSize = true;
-            this.chckBoxCrearProyectoEnBlanco.Location = new System.Drawing.Point(6, 25);
-            this.chckBoxCrearProyectoEnBlanco.Name = "chckBoxCrearProyectoEnBlanco";
-            this.chckBoxCrearProyectoEnBlanco.Size = new System.Drawing.Size(196, 17);
-            this.chckBoxCrearProyectoEnBlanco.TabIndex = 0;
-            this.chckBoxCrearProyectoEnBlanco.Text = "Crear un proyecto de RIT en blanco";
-            this.chckBoxCrearProyectoEnBlanco.UseVisualStyleBackColor = true;
+            chckBoxCrearProyectoEnBlanco.AutoSize = true;
+            chckBoxCrearProyectoEnBlanco.Location = new System.Drawing.Point(6, 25);
+            chckBoxCrearProyectoEnBlanco.Name = "chckBoxCrearProyectoEnBlanco";
+            chckBoxCrearProyectoEnBlanco.Size = new System.Drawing.Size(196, 17);
+            chckBoxCrearProyectoEnBlanco.TabIndex = 0;
+            chckBoxCrearProyectoEnBlanco.Text = "Crear un proyecto de RIT en blanco";
+            chckBoxCrearProyectoEnBlanco.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.chckboxAbrirInventarioSiemprePantallaCompleta);
-            this.groupBox10.Controls.Add(this.chckboxGuardarSiempreCambiosDeInventario);
-            this.groupBox10.Controls.Add(this.chckboxAlertasDeToner);
-            this.groupBox10.Controls.Add(this.btnExaminarRutaInventario);
-            this.groupBox10.Controls.Add(this.txtRutaInventario);
-            this.groupBox10.Controls.Add(this.label19);
-            this.groupBox10.Location = new System.Drawing.Point(4, 445);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(615, 191);
-            this.groupBox10.TabIndex = 2;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Inventarios";
+            groupBox10.Controls.Add(chckboxAbrirInventarioSiemprePantallaCompleta);
+            groupBox10.Controls.Add(chckboxGuardarSiempreCambiosDeInventario);
+            groupBox10.Controls.Add(chckboxAlertasDeToner);
+            groupBox10.Controls.Add(btnExaminarRutaInventario);
+            groupBox10.Controls.Add(txtRutaInventario);
+            groupBox10.Controls.Add(label19);
+            groupBox10.Location = new System.Drawing.Point(4, 445);
+            groupBox10.Name = "groupBox10";
+            groupBox10.Size = new System.Drawing.Size(615, 191);
+            groupBox10.TabIndex = 2;
+            groupBox10.TabStop = false;
+            groupBox10.Text = "Inventarios";
             // 
             // chckboxAbrirInventarioSiemprePantallaCompleta
             // 
-            this.chckboxAbrirInventarioSiemprePantallaCompleta.AutoSize = true;
-            this.chckboxAbrirInventarioSiemprePantallaCompleta.Location = new System.Drawing.Point(6, 150);
-            this.chckboxAbrirInventarioSiemprePantallaCompleta.Name = "chckboxAbrirInventarioSiemprePantallaCompleta";
-            this.chckboxAbrirInventarioSiemprePantallaCompleta.Size = new System.Drawing.Size(236, 17);
-            this.chckboxAbrirInventarioSiemprePantallaCompleta.TabIndex = 8;
-            this.chckboxAbrirInventarioSiemprePantallaCompleta.Text = "Abrir inventario siempre en pantalla completa";
-            this.chckboxAbrirInventarioSiemprePantallaCompleta.UseVisualStyleBackColor = true;
+            chckboxAbrirInventarioSiemprePantallaCompleta.AutoSize = true;
+            chckboxAbrirInventarioSiemprePantallaCompleta.Location = new System.Drawing.Point(6, 150);
+            chckboxAbrirInventarioSiemprePantallaCompleta.Name = "chckboxAbrirInventarioSiemprePantallaCompleta";
+            chckboxAbrirInventarioSiemprePantallaCompleta.Size = new System.Drawing.Size(236, 17);
+            chckboxAbrirInventarioSiemprePantallaCompleta.TabIndex = 8;
+            chckboxAbrirInventarioSiemprePantallaCompleta.Text = "Abrir inventario siempre en pantalla completa";
+            chckboxAbrirInventarioSiemprePantallaCompleta.UseVisualStyleBackColor = true;
             // 
             // chckboxGuardarSiempreCambiosDeInventario
             // 
-            this.chckboxGuardarSiempreCambiosDeInventario.AutoSize = true;
-            this.chckboxGuardarSiempreCambiosDeInventario.Location = new System.Drawing.Point(6, 120);
-            this.chckboxGuardarSiempreCambiosDeInventario.Name = "chckboxGuardarSiempreCambiosDeInventario";
-            this.chckboxGuardarSiempreCambiosDeInventario.Size = new System.Drawing.Size(275, 17);
-            this.chckboxGuardarSiempreCambiosDeInventario.TabIndex = 7;
-            this.chckboxGuardarSiempreCambiosDeInventario.Text = "Guardar siempre cambios del inventario sin preguntar";
-            this.chckboxGuardarSiempreCambiosDeInventario.UseVisualStyleBackColor = true;
+            chckboxGuardarSiempreCambiosDeInventario.AutoSize = true;
+            chckboxGuardarSiempreCambiosDeInventario.Location = new System.Drawing.Point(6, 120);
+            chckboxGuardarSiempreCambiosDeInventario.Name = "chckboxGuardarSiempreCambiosDeInventario";
+            chckboxGuardarSiempreCambiosDeInventario.Size = new System.Drawing.Size(275, 17);
+            chckboxGuardarSiempreCambiosDeInventario.TabIndex = 7;
+            chckboxGuardarSiempreCambiosDeInventario.Text = "Guardar siempre cambios del inventario sin preguntar";
+            chckboxGuardarSiempreCambiosDeInventario.UseVisualStyleBackColor = true;
             // 
             // chckboxAlertasDeToner
             // 
-            this.chckboxAlertasDeToner.AutoSize = true;
-            this.chckboxAlertasDeToner.Location = new System.Drawing.Point(6, 90);
-            this.chckboxAlertasDeToner.Name = "chckboxAlertasDeToner";
-            this.chckboxAlertasDeToner.Size = new System.Drawing.Size(246, 17);
-            this.chckboxAlertasDeToner.TabIndex = 6;
-            this.chckboxAlertasDeToner.Text = "Mostrar alertas cuando este por agotarse toner";
-            this.chckboxAlertasDeToner.UseVisualStyleBackColor = true;
+            chckboxAlertasDeToner.AutoSize = true;
+            chckboxAlertasDeToner.Location = new System.Drawing.Point(6, 90);
+            chckboxAlertasDeToner.Name = "chckboxAlertasDeToner";
+            chckboxAlertasDeToner.Size = new System.Drawing.Size(246, 17);
+            chckboxAlertasDeToner.TabIndex = 6;
+            chckboxAlertasDeToner.Text = "Mostrar alertas cuando este por agotarse toner";
+            chckboxAlertasDeToner.UseVisualStyleBackColor = true;
             // 
             // btnExaminarRutaInventario
             // 
-            this.btnExaminarRutaInventario.Image = global::Flow_Solver.Properties.Resources.buscar_16;
-            this.btnExaminarRutaInventario.Location = new System.Drawing.Point(569, 52);
-            this.btnExaminarRutaInventario.Name = "btnExaminarRutaInventario";
-            this.btnExaminarRutaInventario.Size = new System.Drawing.Size(40, 26);
-            this.btnExaminarRutaInventario.TabIndex = 5;
-            this.btnExaminarRutaInventario.UseVisualStyleBackColor = true;
-            this.btnExaminarRutaInventario.Click += new System.EventHandler(this.btnExaminarRutaInventario_Click);
+            btnExaminarRutaInventario.Image = Properties.Resources.buscar_16;
+            btnExaminarRutaInventario.Location = new System.Drawing.Point(569, 52);
+            btnExaminarRutaInventario.Name = "btnExaminarRutaInventario";
+            btnExaminarRutaInventario.Size = new System.Drawing.Size(40, 26);
+            btnExaminarRutaInventario.TabIndex = 5;
+            btnExaminarRutaInventario.UseVisualStyleBackColor = true;
+            btnExaminarRutaInventario.Click += btnExaminarRutaInventario_Click;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 29);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(225, 13);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "Ruta de inventario inicial (Molde de inventario)";
+            label19.AutoSize = true;
+            label19.Location = new System.Drawing.Point(6, 29);
+            label19.Name = "label19";
+            label19.Size = new System.Drawing.Size(225, 13);
+            label19.TabIndex = 3;
+            label19.Text = "Ruta de inventario inicial (Molde de inventario)";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.chckboxGuardarReguardoEnPDF);
-            this.groupBox7.Controls.Add(this.chckboxGuardarRitEnPDF);
-            this.groupBox7.Location = new System.Drawing.Point(3, 3);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(616, 100);
-            this.groupBox7.TabIndex = 0;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Guardado de PDF\'s";
+            groupBox7.Controls.Add(chckboxGuardarReguardoEnPDF);
+            groupBox7.Controls.Add(chckboxGuardarRitEnPDF);
+            groupBox7.Location = new System.Drawing.Point(3, 3);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Size = new System.Drawing.Size(616, 100);
+            groupBox7.TabIndex = 0;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Guardado de PDF's";
             // 
             // tabPageFormulario
             // 
-            this.tabPageFormulario.AutoScroll = true;
-            this.tabPageFormulario.Controls.Add(this.groupBox16);
-            this.tabPageFormulario.Controls.Add(this.groupBox3);
-            this.tabPageFormulario.Controls.Add(this.label28);
-            this.tabPageFormulario.Controls.Add(this.label37);
-            this.tabPageFormulario.Controls.Add(this.groupBox4);
-            this.tabPageFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageFormulario.ImageIndex = 1;
-            this.tabPageFormulario.Location = new System.Drawing.Point(4, 85);
-            this.tabPageFormulario.Name = "tabPageFormulario";
-            this.tabPageFormulario.Size = new System.Drawing.Size(192, 11);
-            this.tabPageFormulario.TabIndex = 1;
-            this.tabPageFormulario.Text = "Formulario";
-            this.tabPageFormulario.UseVisualStyleBackColor = true;
+            tabPageFormulario.AutoScroll = true;
+            tabPageFormulario.Controls.Add(groupBox16);
+            tabPageFormulario.Controls.Add(groupBox3);
+            tabPageFormulario.Controls.Add(label28);
+            tabPageFormulario.Controls.Add(label37);
+            tabPageFormulario.Controls.Add(groupBox4);
+            tabPageFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            tabPageFormulario.ImageIndex = 1;
+            tabPageFormulario.Location = new System.Drawing.Point(4, 85);
+            tabPageFormulario.Name = "tabPageFormulario";
+            tabPageFormulario.Size = new System.Drawing.Size(192, 11);
+            tabPageFormulario.TabIndex = 1;
+            tabPageFormulario.Text = "Formulario";
+            tabPageFormulario.UseVisualStyleBackColor = true;
             // 
             // groupBox16
             // 
-            this.groupBox16.Controls.Add(this.label59);
-            this.groupBox16.Controls.Add(this.label39);
-            this.groupBox16.Location = new System.Drawing.Point(4, 616);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(596, 120);
-            this.groupBox16.TabIndex = 18;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Formatos de Nombramientos para Proyectos RITs";
+            groupBox16.Controls.Add(label59);
+            groupBox16.Controls.Add(label39);
+            groupBox16.Location = new System.Drawing.Point(4, 616);
+            groupBox16.Name = "groupBox16";
+            groupBox16.Size = new System.Drawing.Size(596, 120);
+            groupBox16.TabIndex = 18;
+            groupBox16.TabStop = false;
+            groupBox16.Text = "Formatos de Nombramientos para Proyectos RITs";
             // 
             // label59
             // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(7, 66);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(166, 13);
-            this.label59.TabIndex = 14;
-            this.label59.Text = "Nombramiento para archivos PDF";
+            label59.AutoSize = true;
+            label59.Location = new System.Drawing.Point(7, 66);
+            label59.Name = "label59";
+            label59.Size = new System.Drawing.Size(166, 13);
+            label59.TabIndex = 14;
+            label59.Text = "Nombramiento para archivos PDF";
             // 
             // label39
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(7, 20);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(196, 13);
-            this.label39.TabIndex = 12;
-            this.label39.Text = "Nombramiento para archivo de proyecto";
+            label39.AutoSize = true;
+            label39.Location = new System.Drawing.Point(7, 20);
+            label39.Name = "label39";
+            label39.Size = new System.Drawing.Size(196, 13);
+            label39.TabIndex = 12;
+            label39.Text = "Nombramiento para archivo de proyecto";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.numericContadorRit);
-            this.groupBox3.Controls.Add(this.cboxCliente);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.txtLider);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.txtEmailDestinoDefault);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.txtCentroDeServicios);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.txtDireccion);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Location = new System.Drawing.Point(3, 3);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(597, 398);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Valores por defecto";
+            groupBox3.Controls.Add(label22);
+            groupBox3.Controls.Add(numericContadorRit);
+            groupBox3.Controls.Add(cboxCliente);
+            groupBox3.Controls.Add(label12);
+            groupBox3.Controls.Add(txtLider);
+            groupBox3.Controls.Add(label11);
+            groupBox3.Controls.Add(txtEmailDestinoDefault);
+            groupBox3.Controls.Add(label10);
+            groupBox3.Controls.Add(label9);
+            groupBox3.Controls.Add(txtCentroDeServicios);
+            groupBox3.Controls.Add(label8);
+            groupBox3.Controls.Add(txtDireccion);
+            groupBox3.Controls.Add(label7);
+            groupBox3.Location = new System.Drawing.Point(3, 3);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new System.Drawing.Size(597, 398);
+            groupBox3.TabIndex = 0;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Valores por defecto";
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(404, 20);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(114, 13);
-            this.label22.TabIndex = 17;
-            this.label22.Text = "Contador de Folio RIT:";
+            label22.AutoSize = true;
+            label22.Location = new System.Drawing.Point(404, 20);
+            label22.Name = "label22";
+            label22.Size = new System.Drawing.Size(114, 13);
+            label22.TabIndex = 17;
+            label22.Text = "Contador de Folio RIT:";
             // 
             // numericContadorRit
             // 
-            this.numericContadorRit.Location = new System.Drawing.Point(440, 45);
-            this.numericContadorRit.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.numericContadorRit.Name = "numericContadorRit";
-            this.numericContadorRit.Size = new System.Drawing.Size(89, 20);
-            this.numericContadorRit.TabIndex = 16;
-            this.numericContadorRit.Value = new decimal(new int[] {
-            100100,
-            0,
-            0,
-            0});
+            numericContadorRit.Location = new System.Drawing.Point(440, 45);
+            numericContadorRit.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            numericContadorRit.Name = "numericContadorRit";
+            numericContadorRit.Size = new System.Drawing.Size(89, 20);
+            numericContadorRit.TabIndex = 16;
+            numericContadorRit.Value = new decimal(new int[] { 100100, 0, 0, 0 });
             // 
             // cboxCliente
             // 
-            this.cboxCliente.FormattingEnabled = true;
-            this.cboxCliente.Items.AddRange(new object[] {
-            "Ferromex (FXE)",
-            "Ferrosur (FSRR)"});
-            this.cboxCliente.Location = new System.Drawing.Point(10, 189);
-            this.cboxCliente.Name = "cboxCliente";
-            this.cboxCliente.Size = new System.Drawing.Size(359, 21);
-            this.cboxCliente.TabIndex = 14;
+            cboxCliente.FormattingEnabled = true;
+            cboxCliente.Items.AddRange(new object[] { "Ferromex (FXE)", "Ferrosur (FSRR)" });
+            cboxCliente.Location = new System.Drawing.Point(10, 189);
+            cboxCliente.Name = "cboxCliente";
+            cboxCliente.Size = new System.Drawing.Size(359, 21);
+            cboxCliente.TabIndex = 14;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 370);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(323, 13);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "** NOTA: Algunos atributos se toman directo de la pestaña usuario.";
+            label12.AutoSize = true;
+            label12.Location = new System.Drawing.Point(7, 370);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(323, 13);
+            label12.TabIndex = 12;
+            label12.Text = "** NOTA: Algunos atributos se toman directo de la pestaña usuario.";
             // 
             // txtLider
             // 
-            this.txtLider.Location = new System.Drawing.Point(11, 307);
-            this.txtLider.Name = "txtLider";
-            this.txtLider.Size = new System.Drawing.Size(355, 20);
-            this.txtLider.TabIndex = 11;
+            txtLider.Location = new System.Drawing.Point(11, 307);
+            txtLider.Name = "txtLider";
+            txtLider.Size = new System.Drawing.Size(355, 20);
+            txtLider.TabIndex = 11;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 284);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 13);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Lider de proyecto";
+            label11.AutoSize = true;
+            label11.Location = new System.Drawing.Point(7, 284);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(89, 13);
+            label11.TabIndex = 10;
+            label11.Text = "Lider de proyecto";
             // 
             // txtEmailDestinoDefault
             // 
-            this.txtEmailDestinoDefault.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtEmailDestinoDefault.Location = new System.Drawing.Point(11, 249);
-            this.txtEmailDestinoDefault.Name = "txtEmailDestinoDefault";
-            this.txtEmailDestinoDefault.Size = new System.Drawing.Size(355, 20);
-            this.txtEmailDestinoDefault.TabIndex = 9;
+            txtEmailDestinoDefault.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtEmailDestinoDefault.Location = new System.Drawing.Point(11, 249);
+            txtEmailDestinoDefault.Name = "txtEmailDestinoDefault";
+            txtEmailDestinoDefault.Size = new System.Drawing.Size(355, 20);
+            txtEmailDestinoDefault.TabIndex = 9;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 226);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(192, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Email destino para refacciones (default)";
+            label10.AutoSize = true;
+            label10.Location = new System.Drawing.Point(7, 226);
+            label10.Name = "label10";
+            label10.Size = new System.Drawing.Size(192, 13);
+            label10.TabIndex = 8;
+            label10.Text = "Email destino para refacciones (default)";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 166);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 13);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Cliente";
+            label9.AutoSize = true;
+            label9.Location = new System.Drawing.Point(7, 166);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(39, 13);
+            label9.TabIndex = 6;
+            label9.Text = "Cliente";
             // 
             // txtCentroDeServicios
             // 
-            this.txtCentroDeServicios.Location = new System.Drawing.Point(7, 132);
-            this.txtCentroDeServicios.Name = "txtCentroDeServicios";
-            this.txtCentroDeServicios.Size = new System.Drawing.Size(359, 20);
-            this.txtCentroDeServicios.TabIndex = 5;
+            txtCentroDeServicios.Location = new System.Drawing.Point(7, 132);
+            txtCentroDeServicios.Name = "txtCentroDeServicios";
+            txtCentroDeServicios.Size = new System.Drawing.Size(359, 20);
+            txtCentroDeServicios.TabIndex = 5;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 109);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Centro de servicios";
+            label8.AutoSize = true;
+            label8.Location = new System.Drawing.Point(7, 109);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(97, 13);
+            label8.TabIndex = 4;
+            label8.Text = "Centro de servicios";
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(10, 45);
-            this.txtDireccion.Multiline = true;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(359, 55);
-            this.txtDireccion.TabIndex = 2;
+            txtDireccion.Location = new System.Drawing.Point(10, 45);
+            txtDireccion.Multiline = true;
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new System.Drawing.Size(359, 55);
+            txtDireccion.TabIndex = 2;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(199, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Direccion (Estacion/Localidad asignada)";
+            label7.AutoSize = true;
+            label7.Location = new System.Drawing.Point(7, 20);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(199, 13);
+            label7.TabIndex = 1;
+            label7.Text = "Direccion (Estacion/Localidad asignada)";
             // 
             // label28
             // 
-            this.label28.AutoSize = true;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label28.Location = new System.Drawing.Point(0, 736);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(10, 13);
-            this.label28.TabIndex = 8;
-            this.label28.Text = " ";
+            label28.AutoSize = true;
+            label28.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label28.Location = new System.Drawing.Point(0, 736);
+            label28.Name = "label28";
+            label28.Size = new System.Drawing.Size(10, 13);
+            label28.TabIndex = 8;
+            label28.Text = " ";
             // 
             // label37
             // 
-            this.label37.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label37.Location = new System.Drawing.Point(0, 749);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(600, 41);
-            this.label37.TabIndex = 7;
-            this.label37.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            label37.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label37.Location = new System.Drawing.Point(0, 749);
+            label37.Name = "label37";
+            label37.Size = new System.Drawing.Size(600, 41);
+            label37.TabIndex = 7;
+            label37.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label37.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.btnExaminarActaResponsiva);
-            this.groupBox4.Controls.Add(this.txtOrigenActaResponsiva);
-            this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.btnPathDestino);
-            this.groupBox4.Controls.Add(this.txtPathDesino);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.btnExaminar);
-            this.groupBox4.Controls.Add(this.txtRITPath);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Location = new System.Drawing.Point(4, 401);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(596, 209);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Ruta";
+            groupBox4.Controls.Add(btnExaminarActaResponsiva);
+            groupBox4.Controls.Add(txtOrigenActaResponsiva);
+            groupBox4.Controls.Add(label20);
+            groupBox4.Controls.Add(btnPathDestino);
+            groupBox4.Controls.Add(txtPathDesino);
+            groupBox4.Controls.Add(label14);
+            groupBox4.Controls.Add(btnExaminar);
+            groupBox4.Controls.Add(txtRITPath);
+            groupBox4.Controls.Add(label13);
+            groupBox4.Location = new System.Drawing.Point(4, 401);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new System.Drawing.Size(596, 209);
+            groupBox4.TabIndex = 1;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Ruta";
             // 
             // btnExaminarActaResponsiva
             // 
-            this.btnExaminarActaResponsiva.Image = ((System.Drawing.Image)(resources.GetObject("btnExaminarActaResponsiva.Image")));
-            this.btnExaminarActaResponsiva.Location = new System.Drawing.Point(541, 158);
-            this.btnExaminarActaResponsiva.Name = "btnExaminarActaResponsiva";
-            this.btnExaminarActaResponsiva.Size = new System.Drawing.Size(40, 27);
-            this.btnExaminarActaResponsiva.TabIndex = 8;
-            this.btnExaminarActaResponsiva.UseVisualStyleBackColor = true;
-            this.btnExaminarActaResponsiva.Click += new System.EventHandler(this.btnExaminarActaResponsiva_Click);
+            btnExaminarActaResponsiva.Image = (System.Drawing.Image)resources.GetObject("btnExaminarActaResponsiva.Image");
+            btnExaminarActaResponsiva.Location = new System.Drawing.Point(541, 158);
+            btnExaminarActaResponsiva.Name = "btnExaminarActaResponsiva";
+            btnExaminarActaResponsiva.Size = new System.Drawing.Size(40, 27);
+            btnExaminarActaResponsiva.TabIndex = 8;
+            btnExaminarActaResponsiva.UseVisualStyleBackColor = true;
+            btnExaminarActaResponsiva.Click += btnExaminarActaResponsiva_Click;
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 138);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(137, 13);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Origen de Acta Responsiva";
+            label20.AutoSize = true;
+            label20.Location = new System.Drawing.Point(6, 138);
+            label20.Name = "label20";
+            label20.Size = new System.Drawing.Size(137, 13);
+            label20.TabIndex = 6;
+            label20.Text = "Origen de Acta Responsiva";
             // 
             // btnPathDestino
             // 
-            this.btnPathDestino.Image = ((System.Drawing.Image)(resources.GetObject("btnPathDestino.Image")));
-            this.btnPathDestino.Location = new System.Drawing.Point(541, 100);
-            this.btnPathDestino.Name = "btnPathDestino";
-            this.btnPathDestino.Size = new System.Drawing.Size(40, 28);
-            this.btnPathDestino.TabIndex = 5;
-            this.btnPathDestino.UseVisualStyleBackColor = true;
-            this.btnPathDestino.Click += new System.EventHandler(this.btnPathDestino_Click);
+            btnPathDestino.Image = (System.Drawing.Image)resources.GetObject("btnPathDestino.Image");
+            btnPathDestino.Location = new System.Drawing.Point(541, 100);
+            btnPathDestino.Name = "btnPathDestino";
+            btnPathDestino.Size = new System.Drawing.Size(40, 28);
+            btnPathDestino.TabIndex = 5;
+            btnPathDestino.UseVisualStyleBackColor = true;
+            btnPathDestino.Click += btnPathDestino_Click;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 80);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(84, 13);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Destino de RITs";
+            label14.AutoSize = true;
+            label14.Location = new System.Drawing.Point(6, 80);
+            label14.Name = "label14";
+            label14.Size = new System.Drawing.Size(84, 13);
+            label14.TabIndex = 3;
+            label14.Text = "Destino de RITs";
             // 
             // btnExaminar
             // 
-            this.btnExaminar.Image = ((System.Drawing.Image)(resources.GetObject("btnExaminar.Image")));
-            this.btnExaminar.Location = new System.Drawing.Point(540, 42);
-            this.btnExaminar.Name = "btnExaminar";
-            this.btnExaminar.Size = new System.Drawing.Size(40, 28);
-            this.btnExaminar.TabIndex = 2;
-            this.btnExaminar.UseVisualStyleBackColor = true;
-            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
+            btnExaminar.Image = (System.Drawing.Image)resources.GetObject("btnExaminar.Image");
+            btnExaminar.Location = new System.Drawing.Point(540, 42);
+            btnExaminar.Name = "btnExaminar";
+            btnExaminar.Size = new System.Drawing.Size(40, 28);
+            btnExaminar.TabIndex = 2;
+            btnExaminar.UseVisualStyleBackColor = true;
+            btnExaminar.Click += btnExaminar_Click;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 22);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Origen de RITs";
+            label13.AutoSize = true;
+            label13.Location = new System.Drawing.Point(5, 22);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(79, 13);
+            label13.TabIndex = 0;
+            label13.Text = "Origen de RITs";
             // 
             // tabPageUsuario
             // 
-            this.tabPageUsuario.Controls.Add(this.panelUsuario);
-            this.tabPageUsuario.ImageIndex = 0;
-            this.tabPageUsuario.Location = new System.Drawing.Point(4, 85);
-            this.tabPageUsuario.Name = "tabPageUsuario";
-            this.tabPageUsuario.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUsuario.Size = new System.Drawing.Size(654, 486);
-            this.tabPageUsuario.TabIndex = 0;
-            this.tabPageUsuario.Text = "Usuario";
-            this.tabPageUsuario.UseVisualStyleBackColor = true;
+            tabPageUsuario.Controls.Add(panelUsuario);
+            tabPageUsuario.ImageIndex = 0;
+            tabPageUsuario.Location = new System.Drawing.Point(4, 85);
+            tabPageUsuario.Name = "tabPageUsuario";
+            tabPageUsuario.Padding = new System.Windows.Forms.Padding(3);
+            tabPageUsuario.Size = new System.Drawing.Size(654, 486);
+            tabPageUsuario.TabIndex = 0;
+            tabPageUsuario.Text = "Usuario";
+            tabPageUsuario.UseVisualStyleBackColor = true;
             // 
             // panelUsuario
             // 
-            this.panelUsuario.AutoScroll = true;
-            this.panelUsuario.Controls.Add(this.label47);
-            this.panelUsuario.Controls.Add(this.label36);
-            this.panelUsuario.Controls.Add(this.groupBox6);
-            this.panelUsuario.Controls.Add(this.groupBox5);
-            this.panelUsuario.Controls.Add(this.groupBox2);
-            this.panelUsuario.Controls.Add(this.groupBox1);
-            this.panelUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelUsuario.Location = new System.Drawing.Point(3, 3);
-            this.panelUsuario.Name = "panelUsuario";
-            this.panelUsuario.Size = new System.Drawing.Size(648, 480);
-            this.panelUsuario.TabIndex = 2;
+            panelUsuario.AutoScroll = true;
+            panelUsuario.Controls.Add(label47);
+            panelUsuario.Controls.Add(label36);
+            panelUsuario.Controls.Add(groupBox6);
+            panelUsuario.Controls.Add(groupBox5);
+            panelUsuario.Controls.Add(groupBox2);
+            panelUsuario.Controls.Add(groupBox1);
+            panelUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            panelUsuario.Location = new System.Drawing.Point(3, 3);
+            panelUsuario.Name = "panelUsuario";
+            panelUsuario.Size = new System.Drawing.Size(648, 480);
+            panelUsuario.TabIndex = 2;
             // 
             // label47
             // 
-            this.label47.AutoSize = true;
-            this.label47.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label47.Location = new System.Drawing.Point(0, 627);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(10, 13);
-            this.label47.TabIndex = 9;
-            this.label47.Text = " ";
+            label47.AutoSize = true;
+            label47.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label47.Location = new System.Drawing.Point(0, 627);
+            label47.Name = "label47";
+            label47.Size = new System.Drawing.Size(10, 13);
+            label47.TabIndex = 9;
+            label47.Text = " ";
             // 
             // label36
             // 
-            this.label36.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label36.Location = new System.Drawing.Point(0, 640);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(631, 41);
-            this.label36.TabIndex = 6;
-            this.label36.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            label36.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label36.Location = new System.Drawing.Point(0, 640);
+            label36.Name = "label36";
+            label36.Size = new System.Drawing.Size(631, 41);
+            label36.TabIndex = 6;
+            label36.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label36.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.btnTESTConexion);
-            this.groupBox6.Controls.Add(this.txtServidor);
-            this.groupBox6.Controls.Add(this.label17);
-            this.groupBox6.Location = new System.Drawing.Point(4, 519);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(596, 108);
-            this.groupBox6.TabIndex = 5;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Conexion";
+            groupBox6.Controls.Add(btnTESTConexion);
+            groupBox6.Controls.Add(txtServidor);
+            groupBox6.Controls.Add(label17);
+            groupBox6.Location = new System.Drawing.Point(4, 519);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new System.Drawing.Size(596, 108);
+            groupBox6.TabIndex = 5;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Conexion";
             // 
             // btnTESTConexion
             // 
-            this.btnTESTConexion.Image = global::Flow_Solver.Properties.Resources.test_de_velocidad_16;
-            this.btnTESTConexion.Location = new System.Drawing.Point(268, 48);
-            this.btnTESTConexion.Name = "btnTESTConexion";
-            this.btnTESTConexion.Size = new System.Drawing.Size(110, 32);
-            this.btnTESTConexion.TabIndex = 15;
-            this.btnTESTConexion.Text = " TEST";
-            this.btnTESTConexion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTESTConexion.UseVisualStyleBackColor = true;
-            this.btnTESTConexion.Click += new System.EventHandler(this.btnTESTConexion_Click);
+            btnTESTConexion.Image = Properties.Resources.test_de_velocidad_16;
+            btnTESTConexion.Location = new System.Drawing.Point(268, 48);
+            btnTESTConexion.Name = "btnTESTConexion";
+            btnTESTConexion.Size = new System.Drawing.Size(110, 32);
+            btnTESTConexion.TabIndex = 15;
+            btnTESTConexion.Text = " TEST";
+            btnTESTConexion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnTESTConexion.UseVisualStyleBackColor = true;
+            btnTESTConexion.Click += btnTESTConexion_Click;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(11, 27);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 13);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Servidor";
+            label17.AutoSize = true;
+            label17.Location = new System.Drawing.Point(11, 27);
+            label17.Name = "label17";
+            label17.Size = new System.Drawing.Size(46, 13);
+            label17.TabIndex = 12;
+            label17.Text = "Servidor";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Controls.Add(this.btnBorrarDatos);
-            this.groupBox5.Location = new System.Drawing.Point(4, 403);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(596, 110);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Restaurar Software";
+            groupBox5.Controls.Add(label15);
+            groupBox5.Controls.Add(btnBorrarDatos);
+            groupBox5.Location = new System.Drawing.Point(4, 403);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new System.Drawing.Size(596, 110);
+            groupBox5.TabIndex = 4;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Restaurar Software";
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(9, 34);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(318, 13);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "** ADVERTENCIA: Borrara y restaurara la app a estado de fabrica";
+            label15.AutoSize = true;
+            label15.Location = new System.Drawing.Point(9, 34);
+            label15.Name = "label15";
+            label15.Size = new System.Drawing.Size(318, 13);
+            label15.TabIndex = 4;
+            label15.Text = "** ADVERTENCIA: Borrara y restaurara la app a estado de fabrica";
             // 
             // btnBorrarDatos
             // 
-            this.btnBorrarDatos.Image = global::Flow_Solver.Properties.Resources.delete_16;
-            this.btnBorrarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBorrarDatos.Location = new System.Drawing.Point(167, 66);
-            this.btnBorrarDatos.Name = "btnBorrarDatos";
-            this.btnBorrarDatos.Size = new System.Drawing.Size(277, 35);
-            this.btnBorrarDatos.TabIndex = 3;
-            this.btnBorrarDatos.Text = " Borrar datos";
-            this.btnBorrarDatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBorrarDatos.UseVisualStyleBackColor = true;
-            this.btnBorrarDatos.Click += new System.EventHandler(this.btnBorrarDatos_Click);
+            btnBorrarDatos.Image = Properties.Resources.delete_16;
+            btnBorrarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnBorrarDatos.Location = new System.Drawing.Point(167, 66);
+            btnBorrarDatos.Name = "btnBorrarDatos";
+            btnBorrarDatos.Size = new System.Drawing.Size(277, 35);
+            btnBorrarDatos.TabIndex = 3;
+            btnBorrarDatos.Text = " Borrar datos";
+            btnBorrarDatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnBorrarDatos.UseVisualStyleBackColor = true;
+            btnBorrarDatos.Click += btnBorrarDatos_Click;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnVerContraseña);
-            this.groupBox2.Controls.Add(this.txtContraseñaIDC);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.txtEmailIDC);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(4, 285);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(596, 96);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Credenciales de Correo";
+            groupBox2.Controls.Add(btnVerContraseña);
+            groupBox2.Controls.Add(txtContraseñaIDC);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(txtEmailIDC);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Location = new System.Drawing.Point(4, 285);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(596, 96);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Credenciales de Correo";
             // 
             // btnVerContraseña
             // 
-            this.btnVerContraseña.Image = global::Flow_Solver.Properties.Resources.view;
-            this.btnVerContraseña.Location = new System.Drawing.Point(502, 45);
-            this.btnVerContraseña.Name = "btnVerContraseña";
-            this.btnVerContraseña.Size = new System.Drawing.Size(33, 26);
-            this.btnVerContraseña.TabIndex = 11;
-            this.btnVerContraseña.UseVisualStyleBackColor = true;
-            this.btnVerContraseña.Click += new System.EventHandler(this.button1_Click_1);
+            btnVerContraseña.Image = Properties.Resources.view;
+            btnVerContraseña.Location = new System.Drawing.Point(502, 45);
+            btnVerContraseña.Name = "btnVerContraseña";
+            btnVerContraseña.Size = new System.Drawing.Size(33, 26);
+            btnVerContraseña.TabIndex = 11;
+            btnVerContraseña.UseVisualStyleBackColor = true;
+            btnVerContraseña.Click += button1_Click_1;
             // 
             // txtContraseñaIDC
             // 
-            this.txtContraseñaIDC.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtContraseñaIDC.Location = new System.Drawing.Point(331, 45);
-            this.txtContraseñaIDC.Name = "txtContraseñaIDC";
-            this.txtContraseñaIDC.Size = new System.Drawing.Size(165, 20);
-            this.txtContraseñaIDC.TabIndex = 10;
-            this.txtContraseñaIDC.UseSystemPasswordChar = true;
+            txtContraseñaIDC.ForeColor = System.Drawing.SystemColors.HotTrack;
+            txtContraseñaIDC.Location = new System.Drawing.Point(331, 45);
+            txtContraseñaIDC.Name = "txtContraseñaIDC";
+            txtContraseñaIDC.Size = new System.Drawing.Size(165, 20);
+            txtContraseñaIDC.TabIndex = 10;
+            txtContraseñaIDC.UseSystemPasswordChar = true;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(327, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Contraseña";
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(327, 22);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(61, 13);
+            label5.TabIndex = 9;
+            label5.Text = "Contraseña";
             // 
             // txtEmailIDC
             // 
-            this.txtEmailIDC.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtEmailIDC.Location = new System.Drawing.Point(10, 45);
-            this.txtEmailIDC.Name = "txtEmailIDC";
-            this.txtEmailIDC.Size = new System.Drawing.Size(283, 20);
-            this.txtEmailIDC.TabIndex = 8;
+            txtEmailIDC.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            txtEmailIDC.Location = new System.Drawing.Point(10, 45);
+            txtEmailIDC.Name = "txtEmailIDC";
+            txtEmailIDC.Size = new System.Drawing.Size(283, 20);
+            txtEmailIDC.TabIndex = 8;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Correo electronico por default";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(6, 22);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(146, 13);
+            label4.TabIndex = 7;
+            label4.Text = "Correo electronico por default";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnBloquearNombreDeLocalidad);
-            this.groupBox1.Controls.Add(this.txtUsuarioDeRed);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.btnCargarImagen);
-            this.groupBox1.Controls.Add(this.txtLocalidadIDC);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtProyectoIDC);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.picboxFotoIDC);
-            this.groupBox1.Controls.Add(this.txtNombreIDC);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(597, 276);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos de IDC";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            groupBox1.Controls.Add(btnBloquearNombreDeLocalidad);
+            groupBox1.Controls.Add(txtUsuarioDeRed);
+            groupBox1.Controls.Add(label16);
+            groupBox1.Controls.Add(btnCargarImagen);
+            groupBox1.Controls.Add(txtLocalidadIDC);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(txtProyectoIDC);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(picboxFotoIDC);
+            groupBox1.Controls.Add(txtNombreIDC);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new System.Drawing.Point(3, 3);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(597, 276);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Datos de IDC";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // btnBloquearNombreDeLocalidad
             // 
-            this.btnBloquearNombreDeLocalidad.Image = global::Flow_Solver.Properties.Resources.lock_16;
-            this.btnBloquearNombreDeLocalidad.Location = new System.Drawing.Point(291, 159);
-            this.btnBloquearNombreDeLocalidad.Name = "btnBloquearNombreDeLocalidad";
-            this.btnBloquearNombreDeLocalidad.Size = new System.Drawing.Size(28, 27);
-            this.btnBloquearNombreDeLocalidad.TabIndex = 15;
-            this.btnBloquearNombreDeLocalidad.UseVisualStyleBackColor = true;
-            this.btnBloquearNombreDeLocalidad.Click += new System.EventHandler(this.btnBloquearNombreDeLocalidad_Click);
+            btnBloquearNombreDeLocalidad.Image = Properties.Resources.lock_16;
+            btnBloquearNombreDeLocalidad.Location = new System.Drawing.Point(291, 159);
+            btnBloquearNombreDeLocalidad.Name = "btnBloquearNombreDeLocalidad";
+            btnBloquearNombreDeLocalidad.Size = new System.Drawing.Size(28, 27);
+            btnBloquearNombreDeLocalidad.TabIndex = 15;
+            btnBloquearNombreDeLocalidad.UseVisualStyleBackColor = true;
+            btnBloquearNombreDeLocalidad.Click += btnBloquearNombreDeLocalidad_Click;
             // 
             // txtUsuarioDeRed
             // 
-            this.txtUsuarioDeRed.Location = new System.Drawing.Point(6, 217);
-            this.txtUsuarioDeRed.Name = "txtUsuarioDeRed";
-            this.txtUsuarioDeRed.Size = new System.Drawing.Size(313, 20);
-            this.txtUsuarioDeRed.TabIndex = 9;
+            txtUsuarioDeRed.Location = new System.Drawing.Point(6, 217);
+            txtUsuarioDeRed.Name = "txtUsuarioDeRed";
+            txtUsuarioDeRed.Size = new System.Drawing.Size(313, 20);
+            txtUsuarioDeRed.TabIndex = 9;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(7, 194);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 13);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Usuario de red";
+            label16.AutoSize = true;
+            label16.Location = new System.Drawing.Point(7, 194);
+            label16.Name = "label16";
+            label16.Size = new System.Drawing.Size(76, 13);
+            label16.TabIndex = 8;
+            label16.Text = "Usuario de red";
             // 
             // btnCargarImagen
             // 
-            this.btnCargarImagen.Image = global::Flow_Solver.Properties.Resources.buscar_16;
-            this.btnCargarImagen.Location = new System.Drawing.Point(407, 210);
-            this.btnCargarImagen.Name = "btnCargarImagen";
-            this.btnCargarImagen.Size = new System.Drawing.Size(184, 48);
-            this.btnCargarImagen.TabIndex = 7;
-            this.btnCargarImagen.Text = " Cargar imagen";
-            this.btnCargarImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarImagen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCargarImagen.UseVisualStyleBackColor = true;
-            this.btnCargarImagen.Click += new System.EventHandler(this.button2_Click_1);
+            btnCargarImagen.Image = Properties.Resources.buscar_16;
+            btnCargarImagen.Location = new System.Drawing.Point(407, 210);
+            btnCargarImagen.Name = "btnCargarImagen";
+            btnCargarImagen.Size = new System.Drawing.Size(184, 48);
+            btnCargarImagen.TabIndex = 7;
+            btnCargarImagen.Text = " Cargar imagen";
+            btnCargarImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnCargarImagen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnCargarImagen.UseVisualStyleBackColor = true;
+            btnCargarImagen.Click += button2_Click_1;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Localidad";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(7, 136);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(53, 13);
+            label3.TabIndex = 5;
+            label3.Text = "Localidad";
             // 
             // txtProyectoIDC
             // 
-            this.txtProyectoIDC.Location = new System.Drawing.Point(6, 101);
-            this.txtProyectoIDC.Name = "txtProyectoIDC";
-            this.txtProyectoIDC.Size = new System.Drawing.Size(313, 20);
-            this.txtProyectoIDC.TabIndex = 4;
+            txtProyectoIDC.Location = new System.Drawing.Point(6, 101);
+            txtProyectoIDC.Name = "txtProyectoIDC";
+            txtProyectoIDC.Size = new System.Drawing.Size(313, 20);
+            txtProyectoIDC.TabIndex = 4;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Proyecto";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(7, 78);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(49, 13);
+            label2.TabIndex = 3;
+            label2.Text = "Proyecto";
             // 
             // picboxFotoIDC
             // 
-            this.picboxFotoIDC.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.picboxFotoIDC.Location = new System.Drawing.Point(407, 16);
-            this.picboxFotoIDC.Name = "picboxFotoIDC";
-            this.picboxFotoIDC.Size = new System.Drawing.Size(184, 188);
-            this.picboxFotoIDC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxFotoIDC.TabIndex = 2;
-            this.picboxFotoIDC.TabStop = false;
+            picboxFotoIDC.BackColor = System.Drawing.Color.WhiteSmoke;
+            picboxFotoIDC.Location = new System.Drawing.Point(407, 16);
+            picboxFotoIDC.Name = "picboxFotoIDC";
+            picboxFotoIDC.Size = new System.Drawing.Size(184, 188);
+            picboxFotoIDC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            picboxFotoIDC.TabIndex = 2;
+            picboxFotoIDC.TabStop = false;
             // 
             // txtNombreIDC
             // 
-            this.txtNombreIDC.Location = new System.Drawing.Point(11, 43);
-            this.txtNombreIDC.Name = "txtNombreIDC";
-            this.txtNombreIDC.Size = new System.Drawing.Size(308, 20);
-            this.txtNombreIDC.TabIndex = 1;
+            txtNombreIDC.Location = new System.Drawing.Point(11, 43);
+            txtNombreIDC.Name = "txtNombreIDC";
+            txtNombreIDC.Size = new System.Drawing.Size(308, 20);
+            txtNombreIDC.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(7, 20);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(44, 13);
+            label1.TabIndex = 0;
+            label1.Text = "Nombre";
             // 
             // tabControlConfiguraciones
             // 
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageUsuario);
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageFormulario);
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageInterfazGrafica);
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageAvanzado);
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageNavegadorWeb);
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageDireccionesFisicas);
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageDireccionesEmail);
-            this.tabControlConfiguraciones.Controls.Add(this.tabPageModelosVinculados);
+            tabControlConfiguraciones.Controls.Add(tabPageUsuario);
+            tabControlConfiguraciones.Controls.Add(tabPageFormulario);
+            tabControlConfiguraciones.Controls.Add(tabPageInterfazGrafica);
+            tabControlConfiguraciones.Controls.Add(tabPageAvanzado);
+            tabControlConfiguraciones.Controls.Add(tabPageNavegadorWeb);
+            tabControlConfiguraciones.Controls.Add(tabPageDireccionesFisicas);
+            tabControlConfiguraciones.Controls.Add(tabPageDireccionesEmail);
+            tabControlConfiguraciones.Controls.Add(tabPageModelosVinculados);
             // 
             // 
             // 
-            this.tabControlConfiguraciones.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.tabControlConfiguraciones.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
-            this.tabControlConfiguraciones.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
-            this.tabControlConfiguraciones.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
-            this.tabControlConfiguraciones.DisplayStyleProvider.FocusTrack = false;
-            this.tabControlConfiguraciones.DisplayStyleProvider.HotTrack = true;
-            this.tabControlConfiguraciones.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tabControlConfiguraciones.DisplayStyleProvider.Opacity = 1F;
-            this.tabControlConfiguraciones.DisplayStyleProvider.Overlap = 7;
-            this.tabControlConfiguraciones.DisplayStyleProvider.Padding = new System.Drawing.Point(10, 3);
-            this.tabControlConfiguraciones.DisplayStyleProvider.Radius = 10;
-            this.tabControlConfiguraciones.DisplayStyleProvider.ShowTabCloser = false;
-            this.tabControlConfiguraciones.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
-            this.tabControlConfiguraciones.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
-            this.tabControlConfiguraciones.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
-            this.tabControlConfiguraciones.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Bold);
-            this.tabControlConfiguraciones.HotTrack = true;
-            this.tabControlConfiguraciones.ImageList = this.imageList_TabIcons;
-            this.tabControlConfiguraciones.ItemSize = new System.Drawing.Size(48, 40);
-            this.tabControlConfiguraciones.Location = new System.Drawing.Point(19, 12);
-            this.tabControlConfiguraciones.Multiline = true;
-            this.tabControlConfiguraciones.Name = "tabControlConfiguraciones";
-            this.tabControlConfiguraciones.SelectedIndex = 0;
-            this.tabControlConfiguraciones.Size = new System.Drawing.Size(662, 575);
-            this.tabControlConfiguraciones.TabIndex = 2;
+            tabControlConfiguraciones.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
+            tabControlConfiguraciones.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
+            tabControlConfiguraciones.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(127, 157, 185);
+            tabControlConfiguraciones.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
+            tabControlConfiguraciones.DisplayStyleProvider.FocusTrack = false;
+            tabControlConfiguraciones.DisplayStyleProvider.HotTrack = true;
+            tabControlConfiguraciones.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            tabControlConfiguraciones.DisplayStyleProvider.Opacity = 1F;
+            tabControlConfiguraciones.DisplayStyleProvider.Overlap = 7;
+            tabControlConfiguraciones.DisplayStyleProvider.Padding = new System.Drawing.Point(10, 3);
+            tabControlConfiguraciones.DisplayStyleProvider.Radius = 10;
+            tabControlConfiguraciones.DisplayStyleProvider.ShowTabCloser = false;
+            tabControlConfiguraciones.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
+            tabControlConfiguraciones.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
+            tabControlConfiguraciones.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
+            tabControlConfiguraciones.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Bold);
+            tabControlConfiguraciones.HotTrack = true;
+            tabControlConfiguraciones.ImageList = imageList_TabIcons;
+            tabControlConfiguraciones.ItemSize = new System.Drawing.Size(48, 40);
+            tabControlConfiguraciones.Location = new System.Drawing.Point(19, 12);
+            tabControlConfiguraciones.Multiline = true;
+            tabControlConfiguraciones.Name = "tabControlConfiguraciones";
+            tabControlConfiguraciones.SelectedIndex = 0;
+            tabControlConfiguraciones.Size = new System.Drawing.Size(662, 575);
+            tabControlConfiguraciones.TabIndex = 2;
             // 
             // tabPageInterfazGrafica
             // 
-            this.tabPageInterfazGrafica.AutoScroll = true;
-            this.tabPageInterfazGrafica.Controls.Add(this.groupBox22);
-            this.tabPageInterfazGrafica.Controls.Add(this.label48);
-            this.tabPageInterfazGrafica.Controls.Add(this.label42);
-            this.tabPageInterfazGrafica.Controls.Add(this.groupBox9);
-            this.tabPageInterfazGrafica.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageInterfazGrafica.ImageIndex = 2;
-            this.tabPageInterfazGrafica.Location = new System.Drawing.Point(4, 125);
-            this.tabPageInterfazGrafica.Name = "tabPageInterfazGrafica";
-            this.tabPageInterfazGrafica.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageInterfazGrafica.Size = new System.Drawing.Size(192, 0);
-            this.tabPageInterfazGrafica.TabIndex = 5;
-            this.tabPageInterfazGrafica.Text = "Miscelaneo";
-            this.tabPageInterfazGrafica.UseVisualStyleBackColor = true;
+            tabPageInterfazGrafica.AutoScroll = true;
+            tabPageInterfazGrafica.Controls.Add(groupBox22);
+            tabPageInterfazGrafica.Controls.Add(label48);
+            tabPageInterfazGrafica.Controls.Add(label42);
+            tabPageInterfazGrafica.Controls.Add(groupBox9);
+            tabPageInterfazGrafica.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            tabPageInterfazGrafica.ImageIndex = 2;
+            tabPageInterfazGrafica.Location = new System.Drawing.Point(4, 125);
+            tabPageInterfazGrafica.Name = "tabPageInterfazGrafica";
+            tabPageInterfazGrafica.Padding = new System.Windows.Forms.Padding(3);
+            tabPageInterfazGrafica.Size = new System.Drawing.Size(192, 0);
+            tabPageInterfazGrafica.TabIndex = 5;
+            tabPageInterfazGrafica.Text = "Miscelaneo";
+            tabPageInterfazGrafica.UseVisualStyleBackColor = true;
             // 
             // groupBox22
             // 
-            this.groupBox22.Controls.Add(this.txtFallaReportada);
-            this.groupBox22.Controls.Add(this.label62);
-            this.groupBox22.Controls.Add(this.cboxPerfilesDeReportes);
-            this.groupBox22.Controls.Add(this.label61);
-            this.groupBox22.Location = new System.Drawing.Point(6, 123);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(621, 445);
-            this.groupBox22.TabIndex = 10;
-            this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "Perfiles de Reportes";
+            groupBox22.Controls.Add(txtFallaReportada);
+            groupBox22.Controls.Add(label62);
+            groupBox22.Controls.Add(cboxPerfilesDeReportes);
+            groupBox22.Controls.Add(label61);
+            groupBox22.Location = new System.Drawing.Point(6, 123);
+            groupBox22.Name = "groupBox22";
+            groupBox22.Size = new System.Drawing.Size(621, 445);
+            groupBox22.TabIndex = 10;
+            groupBox22.TabStop = false;
+            groupBox22.Text = "Perfiles de Reportes";
             // 
             // txtFallaReportada
             // 
-            this.txtFallaReportada.Location = new System.Drawing.Point(10, 110);
-            this.txtFallaReportada.Name = "txtFallaReportada";
-            this.txtFallaReportada.Size = new System.Drawing.Size(550, 22);
-            this.txtFallaReportada.TabIndex = 3;
+            txtFallaReportada.Location = new System.Drawing.Point(10, 110);
+            txtFallaReportada.Name = "txtFallaReportada";
+            txtFallaReportada.Size = new System.Drawing.Size(550, 22);
+            txtFallaReportada.TabIndex = 3;
             // 
             // label62
             // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(6, 88);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(189, 15);
-            this.label62.TabIndex = 2;
-            this.label62.Text = "Falla reportada / Trabajo solicitado:";
+            label62.AutoSize = true;
+            label62.Location = new System.Drawing.Point(6, 88);
+            label62.Name = "label62";
+            label62.Size = new System.Drawing.Size(189, 15);
+            label62.TabIndex = 2;
+            label62.Text = "Falla reportada / Trabajo solicitado:";
             // 
             // cboxPerfilesDeReportes
             // 
-            this.cboxPerfilesDeReportes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxPerfilesDeReportes.FormattingEnabled = true;
-            this.cboxPerfilesDeReportes.Location = new System.Drawing.Point(10, 43);
-            this.cboxPerfilesDeReportes.Name = "cboxPerfilesDeReportes";
-            this.cboxPerfilesDeReportes.Size = new System.Drawing.Size(291, 23);
-            this.cboxPerfilesDeReportes.TabIndex = 1;
+            cboxPerfilesDeReportes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboxPerfilesDeReportes.FormattingEnabled = true;
+            cboxPerfilesDeReportes.Location = new System.Drawing.Point(10, 43);
+            cboxPerfilesDeReportes.Name = "cboxPerfilesDeReportes";
+            cboxPerfilesDeReportes.Size = new System.Drawing.Size(291, 23);
+            cboxPerfilesDeReportes.TabIndex = 1;
             // 
             // label61
             // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(5, 21);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(103, 15);
-            this.label61.TabIndex = 0;
-            this.label61.Text = "Listado de Perfiles:";
+            label61.AutoSize = true;
+            label61.Location = new System.Drawing.Point(5, 21);
+            label61.Name = "label61";
+            label61.Size = new System.Drawing.Size(103, 15);
+            label61.TabIndex = 0;
+            label61.Text = "Listado de Perfiles:";
             // 
             // label48
             // 
-            this.label48.AutoSize = true;
-            this.label48.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label48.Location = new System.Drawing.Point(3, 565);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(10, 15);
-            this.label48.TabIndex = 9;
-            this.label48.Text = " ";
+            label48.AutoSize = true;
+            label48.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label48.Location = new System.Drawing.Point(3, 565);
+            label48.Name = "label48";
+            label48.Size = new System.Drawing.Size(10, 15);
+            label48.TabIndex = 9;
+            label48.Text = " ";
             // 
             // label42
             // 
-            this.label42.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label42.Location = new System.Drawing.Point(3, 580);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(621, 22);
-            this.label42.TabIndex = 6;
-            this.label42.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            label42.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            label42.Location = new System.Drawing.Point(3, 580);
+            label42.Name = "label42";
+            label42.Size = new System.Drawing.Size(621, 22);
+            label42.TabIndex = 6;
+            label42.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label42.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // groupBox9
             // 
-            this.groupBox9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox9.Controls.Add(this.label18);
-            this.groupBox9.Controls.Add(this.cboxTemas);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.groupBox9.Location = new System.Drawing.Point(6, 6);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(621, 111);
-            this.groupBox9.TabIndex = 4;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Tema";
+            groupBox9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            groupBox9.Controls.Add(label18);
+            groupBox9.Controls.Add(cboxTemas);
+            groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            groupBox9.Location = new System.Drawing.Point(6, 6);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new System.Drawing.Size(621, 111);
+            groupBox9.TabIndex = 4;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Tema";
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 13);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Aplicado:";
+            label18.AutoSize = true;
+            label18.Location = new System.Drawing.Point(6, 22);
+            label18.Name = "label18";
+            label18.Size = new System.Drawing.Size(51, 13);
+            label18.TabIndex = 1;
+            label18.Text = "Aplicado:";
             // 
             // cboxTemas
             // 
-            this.cboxTemas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxTemas.FormattingEnabled = true;
-            this.cboxTemas.Location = new System.Drawing.Point(10, 48);
-            this.cboxTemas.Name = "cboxTemas";
-            this.cboxTemas.Size = new System.Drawing.Size(291, 21);
-            this.cboxTemas.TabIndex = 0;
+            cboxTemas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboxTemas.FormattingEnabled = true;
+            cboxTemas.Location = new System.Drawing.Point(10, 48);
+            cboxTemas.Name = "cboxTemas";
+            cboxTemas.Size = new System.Drawing.Size(291, 21);
+            cboxTemas.TabIndex = 0;
             // 
             // tabPageDireccionesEmail
             // 
-            this.tabPageDireccionesEmail.AutoScroll = true;
-            this.tabPageDireccionesEmail.Controls.Add(this.label55);
-            this.tabPageDireccionesEmail.Controls.Add(this.label43);
-            this.tabPageDireccionesEmail.Controls.Add(this.groupBox17);
-            this.tabPageDireccionesEmail.ImageIndex = 6;
-            this.tabPageDireccionesEmail.Location = new System.Drawing.Point(4, 285);
-            this.tabPageDireccionesEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPageDireccionesEmail.Name = "tabPageDireccionesEmail";
-            this.tabPageDireccionesEmail.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageDireccionesEmail.Size = new System.Drawing.Size(192, 0);
-            this.tabPageDireccionesEmail.TabIndex = 6;
-            this.tabPageDireccionesEmail.Text = "Direcciones Email";
-            this.tabPageDireccionesEmail.UseVisualStyleBackColor = true;
+            tabPageDireccionesEmail.AutoScroll = true;
+            tabPageDireccionesEmail.Controls.Add(label55);
+            tabPageDireccionesEmail.Controls.Add(label43);
+            tabPageDireccionesEmail.Controls.Add(groupBox17);
+            tabPageDireccionesEmail.ImageIndex = 6;
+            tabPageDireccionesEmail.Location = new System.Drawing.Point(4, 285);
+            tabPageDireccionesEmail.Margin = new System.Windows.Forms.Padding(2);
+            tabPageDireccionesEmail.Name = "tabPageDireccionesEmail";
+            tabPageDireccionesEmail.Padding = new System.Windows.Forms.Padding(2);
+            tabPageDireccionesEmail.Size = new System.Drawing.Size(192, 0);
+            tabPageDireccionesEmail.TabIndex = 6;
+            tabPageDireccionesEmail.Text = "Direcciones Email";
+            tabPageDireccionesEmail.UseVisualStyleBackColor = true;
             // 
             // label55
             // 
-            this.label55.AutoSize = true;
-            this.label55.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label55.Location = new System.Drawing.Point(2, 157);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(10, 13);
-            this.label55.TabIndex = 9;
-            this.label55.Text = " ";
+            label55.AutoSize = true;
+            label55.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label55.Location = new System.Drawing.Point(2, 157);
+            label55.Name = "label55";
+            label55.Size = new System.Drawing.Size(10, 15);
+            label55.TabIndex = 9;
+            label55.Text = " ";
             // 
             // label43
             // 
-            this.label43.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label43.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(2, 170);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(646, 36);
-            this.label43.TabIndex = 6;
-            this.label43.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            label43.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label43.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label43.Location = new System.Drawing.Point(2, 172);
+            label43.Name = "label43";
+            label43.Size = new System.Drawing.Size(646, 36);
+            label43.TabIndex = 6;
+            label43.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label43.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // groupBox17
             // 
-            this.groupBox17.Controls.Add(this.btnAbrirLbretaDeDirecciones);
-            this.groupBox17.Controls.Add(this.label25);
-            this.groupBox17.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox17.Location = new System.Drawing.Point(4, 5);
-            this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox17.Size = new System.Drawing.Size(646, 154);
-            this.groupBox17.TabIndex = 1;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "Direcciones Emails Registradas";
+            groupBox17.Controls.Add(btnAbrirLbretaDeDirecciones);
+            groupBox17.Controls.Add(label25);
+            groupBox17.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            groupBox17.Location = new System.Drawing.Point(4, 5);
+            groupBox17.Margin = new System.Windows.Forms.Padding(2);
+            groupBox17.Name = "groupBox17";
+            groupBox17.Padding = new System.Windows.Forms.Padding(2);
+            groupBox17.Size = new System.Drawing.Size(646, 154);
+            groupBox17.TabIndex = 1;
+            groupBox17.TabStop = false;
+            groupBox17.Text = "Direcciones Emails Registradas";
             // 
             // btnAbrirLbretaDeDirecciones
             // 
-            this.btnAbrirLbretaDeDirecciones.Image = global::Flow_Solver.Properties.Resources.contacts_16;
-            this.btnAbrirLbretaDeDirecciones.Location = new System.Drawing.Point(392, 29);
-            this.btnAbrirLbretaDeDirecciones.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAbrirLbretaDeDirecciones.Name = "btnAbrirLbretaDeDirecciones";
-            this.btnAbrirLbretaDeDirecciones.Size = new System.Drawing.Size(240, 56);
-            this.btnAbrirLbretaDeDirecciones.TabIndex = 1;
-            this.btnAbrirLbretaDeDirecciones.Text = " Abrir libreta de direcciones";
-            this.btnAbrirLbretaDeDirecciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAbrirLbretaDeDirecciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAbrirLbretaDeDirecciones.UseVisualStyleBackColor = true;
-            this.btnAbrirLbretaDeDirecciones.Click += new System.EventHandler(this.btnAbrirLbretaDeDirecciones_Click);
+            btnAbrirLbretaDeDirecciones.Image = Properties.Resources.contacts_16;
+            btnAbrirLbretaDeDirecciones.Location = new System.Drawing.Point(392, 29);
+            btnAbrirLbretaDeDirecciones.Margin = new System.Windows.Forms.Padding(2);
+            btnAbrirLbretaDeDirecciones.Name = "btnAbrirLbretaDeDirecciones";
+            btnAbrirLbretaDeDirecciones.Size = new System.Drawing.Size(240, 56);
+            btnAbrirLbretaDeDirecciones.TabIndex = 1;
+            btnAbrirLbretaDeDirecciones.Text = " Abrir libreta de direcciones";
+            btnAbrirLbretaDeDirecciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnAbrirLbretaDeDirecciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnAbrirLbretaDeDirecciones.UseVisualStyleBackColor = true;
+            btnAbrirLbretaDeDirecciones.Click += btnAbrirLbretaDeDirecciones_Click;
             // 
             // label25
             // 
-            this.label25.Location = new System.Drawing.Point(4, 29);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(394, 56);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Abrir panel de configuracione de las direcciones email registradas en el sistema." +
-    "";
+            label25.Location = new System.Drawing.Point(4, 29);
+            label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label25.Name = "label25";
+            label25.Size = new System.Drawing.Size(394, 56);
+            label25.TabIndex = 0;
+            label25.Text = "Abrir panel de configuracione de las direcciones email registradas en el sistema.";
             // 
             // tabPageModelosVinculados
             // 
-            this.tabPageModelosVinculados.AutoScroll = true;
-            this.tabPageModelosVinculados.Controls.Add(this.groupBox20);
-            this.tabPageModelosVinculados.Controls.Add(this.groupBox19);
-            this.tabPageModelosVinculados.Controls.Add(this.label56);
-            this.tabPageModelosVinculados.Controls.Add(this.label44);
-            this.tabPageModelosVinculados.ImageIndex = 7;
-            this.tabPageModelosVinculados.Location = new System.Drawing.Point(4, 325);
-            this.tabPageModelosVinculados.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPageModelosVinculados.Name = "tabPageModelosVinculados";
-            this.tabPageModelosVinculados.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageModelosVinculados.Size = new System.Drawing.Size(192, 0);
-            this.tabPageModelosVinculados.TabIndex = 7;
-            this.tabPageModelosVinculados.Text = "Modelos Vinculados";
-            this.tabPageModelosVinculados.UseVisualStyleBackColor = true;
+            tabPageModelosVinculados.AutoScroll = true;
+            tabPageModelosVinculados.Controls.Add(groupBox20);
+            tabPageModelosVinculados.Controls.Add(groupBox19);
+            tabPageModelosVinculados.Controls.Add(label56);
+            tabPageModelosVinculados.Controls.Add(label44);
+            tabPageModelosVinculados.ImageIndex = 7;
+            tabPageModelosVinculados.Location = new System.Drawing.Point(4, 325);
+            tabPageModelosVinculados.Margin = new System.Windows.Forms.Padding(2);
+            tabPageModelosVinculados.Name = "tabPageModelosVinculados";
+            tabPageModelosVinculados.Padding = new System.Windows.Forms.Padding(2);
+            tabPageModelosVinculados.Size = new System.Drawing.Size(192, 0);
+            tabPageModelosVinculados.TabIndex = 7;
+            tabPageModelosVinculados.Text = "Modelos Vinculados";
+            tabPageModelosVinculados.UseVisualStyleBackColor = true;
             // 
             // groupBox20
             // 
-            this.groupBox20.Controls.Add(this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente);
-            this.groupBox20.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F);
-            this.groupBox20.Location = new System.Drawing.Point(5, 349);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(624, 64);
-            this.groupBox20.TabIndex = 11;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Miscelaneo";
+            groupBox20.Controls.Add(chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente);
+            groupBox20.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F);
+            groupBox20.Location = new System.Drawing.Point(5, 349);
+            groupBox20.Name = "groupBox20";
+            groupBox20.Size = new System.Drawing.Size(624, 64);
+            groupBox20.TabIndex = 11;
+            groupBox20.TabStop = false;
+            groupBox20.Text = "Miscelaneo";
             // 
             // chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente
             // 
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.AutoSize = true;
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Location = new System.Drawing.Point(6, 24);
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Name = "chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente";
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Size = new System.Drawing.Size(397, 19);
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.TabIndex = 0;
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Text = "Seleccionar automaticamente el modelo vinculado creado recientemente";
-            this.chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.UseVisualStyleBackColor = true;
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.AutoSize = true;
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Location = new System.Drawing.Point(6, 24);
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Name = "chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente";
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Size = new System.Drawing.Size(397, 19);
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.TabIndex = 0;
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.Text = "Seleccionar automaticamente el modelo vinculado creado recientemente";
+            chckboxSeleccionarAutomaticamenteElModeloCreadoRecientemente.UseVisualStyleBackColor = true;
             // 
             // groupBox19
             // 
-            this.groupBox19.Controls.Add(this.btnEliminarModeloVinculado);
-            this.groupBox19.Controls.Add(this.btnAñadirNuevoModeloVinculado);
-            this.groupBox19.Controls.Add(this.btnEditarModeloVinculado);
-            this.groupBox19.Controls.Add(this.btnVerModeloVinculado);
-            this.groupBox19.Controls.Add(this.lviewTablaDeModelosVinculados);
-            this.groupBox19.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F);
-            this.groupBox19.Location = new System.Drawing.Point(5, 5);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(624, 338);
-            this.groupBox19.TabIndex = 10;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Tabla de modelos vinculados";
+            groupBox19.Controls.Add(btnEliminarModeloVinculado);
+            groupBox19.Controls.Add(btnAñadirNuevoModeloVinculado);
+            groupBox19.Controls.Add(btnEditarModeloVinculado);
+            groupBox19.Controls.Add(btnVerModeloVinculado);
+            groupBox19.Controls.Add(lviewTablaDeModelosVinculados);
+            groupBox19.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F);
+            groupBox19.Location = new System.Drawing.Point(5, 5);
+            groupBox19.Name = "groupBox19";
+            groupBox19.Size = new System.Drawing.Size(624, 338);
+            groupBox19.TabIndex = 10;
+            groupBox19.TabStop = false;
+            groupBox19.Text = "Tabla de modelos vinculados";
             // 
             // btnEliminarModeloVinculado
             // 
-            this.btnEliminarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.delete_16;
-            this.btnEliminarModeloVinculado.Location = new System.Drawing.Point(531, 153);
-            this.btnEliminarModeloVinculado.Name = "btnEliminarModeloVinculado";
-            this.btnEliminarModeloVinculado.Size = new System.Drawing.Size(87, 38);
-            this.btnEliminarModeloVinculado.TabIndex = 14;
-            this.btnEliminarModeloVinculado.Text = " Eliminar";
-            this.btnEliminarModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminarModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminarModeloVinculado.UseVisualStyleBackColor = true;
-            this.btnEliminarModeloVinculado.Click += new System.EventHandler(this.btnEliminarModeloVinculado_Click);
+            btnEliminarModeloVinculado.Image = Properties.Resources.delete_16;
+            btnEliminarModeloVinculado.Location = new System.Drawing.Point(531, 153);
+            btnEliminarModeloVinculado.Name = "btnEliminarModeloVinculado";
+            btnEliminarModeloVinculado.Size = new System.Drawing.Size(87, 38);
+            btnEliminarModeloVinculado.TabIndex = 14;
+            btnEliminarModeloVinculado.Text = " Eliminar";
+            btnEliminarModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnEliminarModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnEliminarModeloVinculado.UseVisualStyleBackColor = true;
+            btnEliminarModeloVinculado.Click += btnEliminarModeloVinculado_Click;
             // 
             // btnAñadirNuevoModeloVinculado
             // 
-            this.btnAñadirNuevoModeloVinculado.Image = global::Flow_Solver.Properties.Resources.add_16;
-            this.btnAñadirNuevoModeloVinculado.Location = new System.Drawing.Point(531, 109);
-            this.btnAñadirNuevoModeloVinculado.Name = "btnAñadirNuevoModeloVinculado";
-            this.btnAñadirNuevoModeloVinculado.Size = new System.Drawing.Size(87, 38);
-            this.btnAñadirNuevoModeloVinculado.TabIndex = 13;
-            this.btnAñadirNuevoModeloVinculado.Text = " Añadir";
-            this.btnAñadirNuevoModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAñadirNuevoModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAñadirNuevoModeloVinculado.UseVisualStyleBackColor = true;
-            this.btnAñadirNuevoModeloVinculado.Click += new System.EventHandler(this.btnAñadirNuevoModeloVinculado_Click);
+            btnAñadirNuevoModeloVinculado.Image = Properties.Resources.add_16;
+            btnAñadirNuevoModeloVinculado.Location = new System.Drawing.Point(531, 109);
+            btnAñadirNuevoModeloVinculado.Name = "btnAñadirNuevoModeloVinculado";
+            btnAñadirNuevoModeloVinculado.Size = new System.Drawing.Size(87, 38);
+            btnAñadirNuevoModeloVinculado.TabIndex = 13;
+            btnAñadirNuevoModeloVinculado.Text = " Añadir";
+            btnAñadirNuevoModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnAñadirNuevoModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnAñadirNuevoModeloVinculado.UseVisualStyleBackColor = true;
+            btnAñadirNuevoModeloVinculado.Click += btnAñadirNuevoModeloVinculado_Click;
             // 
             // btnEditarModeloVinculado
             // 
-            this.btnEditarModeloVinculado.Image = global::Flow_Solver.Properties.Resources.edit1_16;
-            this.btnEditarModeloVinculado.Location = new System.Drawing.Point(531, 65);
-            this.btnEditarModeloVinculado.Name = "btnEditarModeloVinculado";
-            this.btnEditarModeloVinculado.Size = new System.Drawing.Size(87, 38);
-            this.btnEditarModeloVinculado.TabIndex = 12;
-            this.btnEditarModeloVinculado.Text = " Editar";
-            this.btnEditarModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditarModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditarModeloVinculado.UseVisualStyleBackColor = true;
-            this.btnEditarModeloVinculado.Click += new System.EventHandler(this.btnEditarModeloVinculado_Click);
+            btnEditarModeloVinculado.Image = Properties.Resources.edit1_16;
+            btnEditarModeloVinculado.Location = new System.Drawing.Point(531, 65);
+            btnEditarModeloVinculado.Name = "btnEditarModeloVinculado";
+            btnEditarModeloVinculado.Size = new System.Drawing.Size(87, 38);
+            btnEditarModeloVinculado.TabIndex = 12;
+            btnEditarModeloVinculado.Text = " Editar";
+            btnEditarModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnEditarModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnEditarModeloVinculado.UseVisualStyleBackColor = true;
+            btnEditarModeloVinculado.Click += btnEditarModeloVinculado_Click;
             // 
             // btnVerModeloVinculado
             // 
-            this.btnVerModeloVinculado.Enabled = false;
-            this.btnVerModeloVinculado.Image = global::Flow_Solver.Properties.Resources.check1_16;
-            this.btnVerModeloVinculado.Location = new System.Drawing.Point(531, 21);
-            this.btnVerModeloVinculado.Name = "btnVerModeloVinculado";
-            this.btnVerModeloVinculado.Size = new System.Drawing.Size(87, 38);
-            this.btnVerModeloVinculado.TabIndex = 11;
-            this.btnVerModeloVinculado.Text = " Ver";
-            this.btnVerModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVerModeloVinculado.UseVisualStyleBackColor = true;
-            this.btnVerModeloVinculado.Click += new System.EventHandler(this.btnVerModeloVinculado_Click);
+            btnVerModeloVinculado.Enabled = false;
+            btnVerModeloVinculado.Image = Properties.Resources.check1_16;
+            btnVerModeloVinculado.Location = new System.Drawing.Point(531, 21);
+            btnVerModeloVinculado.Name = "btnVerModeloVinculado";
+            btnVerModeloVinculado.Size = new System.Drawing.Size(87, 38);
+            btnVerModeloVinculado.TabIndex = 11;
+            btnVerModeloVinculado.Text = " Ver";
+            btnVerModeloVinculado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnVerModeloVinculado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnVerModeloVinculado.UseVisualStyleBackColor = true;
+            btnVerModeloVinculado.Click += btnVerModeloVinculado_Click;
             // 
             // lviewTablaDeModelosVinculados
             // 
-            this.lviewTablaDeModelosVinculados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colNombreComercial,
-            this.colNombreClave,
-            this.colMarca,
-            this.colTipo});
-            this.lviewTablaDeModelosVinculados.ContextMenuStrip = this.contextMenuStrip_TablaModeloVinculados;
+            lviewTablaDeModelosVinculados.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { colNombreComercial, colNombreClave, colMarca, colTipo });
+            lviewTablaDeModelosVinculados.ContextMenuStrip = contextMenuStrip_TablaModeloVinculados;
             listViewGroup1.Header = "Laptops Vinculadas";
             listViewGroup1.Name = "lvgroupLaptops";
             listViewGroup2.Header = "PCs de Escritorio Vinculados";
             listViewGroup2.Name = "lviewDesktopPCs";
-            this.lviewTablaDeModelosVinculados.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2});
-            this.lviewTablaDeModelosVinculados.HideSelection = false;
-            this.lviewTablaDeModelosVinculados.LargeImageList = this.imageList_MachinesIcons;
-            this.lviewTablaDeModelosVinculados.Location = new System.Drawing.Point(6, 21);
-            this.lviewTablaDeModelosVinculados.Name = "lviewTablaDeModelosVinculados";
-            this.lviewTablaDeModelosVinculados.Size = new System.Drawing.Size(519, 309);
-            this.lviewTablaDeModelosVinculados.SmallImageList = this.imageList_MachinesIcons;
-            this.lviewTablaDeModelosVinculados.TabIndex = 0;
-            this.lviewTablaDeModelosVinculados.UseCompatibleStateImageBehavior = false;
-            this.lviewTablaDeModelosVinculados.View = System.Windows.Forms.View.Tile;
-            this.lviewTablaDeModelosVinculados.SelectedIndexChanged += new System.EventHandler(this.lviewTablaDeModelosVinculados_SelectedIndexChanged);
-            this.lviewTablaDeModelosVinculados.DoubleClick += new System.EventHandler(this.lviewTablaDeModelosVinculados_DoubleClick);
+            lviewTablaDeModelosVinculados.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] { listViewGroup1, listViewGroup2 });
+            lviewTablaDeModelosVinculados.LargeImageList = imageList_MachinesIcons;
+            lviewTablaDeModelosVinculados.Location = new System.Drawing.Point(6, 21);
+            lviewTablaDeModelosVinculados.Name = "lviewTablaDeModelosVinculados";
+            lviewTablaDeModelosVinculados.Size = new System.Drawing.Size(519, 309);
+            lviewTablaDeModelosVinculados.SmallImageList = imageList_MachinesIcons;
+            lviewTablaDeModelosVinculados.TabIndex = 0;
+            lviewTablaDeModelosVinculados.UseCompatibleStateImageBehavior = false;
+            lviewTablaDeModelosVinculados.View = System.Windows.Forms.View.Tile;
+            lviewTablaDeModelosVinculados.SelectedIndexChanged += lviewTablaDeModelosVinculados_SelectedIndexChanged;
+            lviewTablaDeModelosVinculados.DoubleClick += lviewTablaDeModelosVinculados_DoubleClick;
             // 
             // colNombreComercial
             // 
-            this.colNombreComercial.Text = "Nombre Comercial";
-            this.colNombreComercial.Width = 150;
+            colNombreComercial.Text = "Nombre Comercial";
+            colNombreComercial.Width = 150;
             // 
             // colNombreClave
             // 
-            this.colNombreClave.Text = "Nombre Clave";
-            this.colNombreClave.Width = 150;
+            colNombreClave.Text = "Nombre Clave";
+            colNombreClave.Width = 150;
             // 
             // colMarca
             // 
-            this.colMarca.Text = "Marca";
+            colMarca.Text = "Marca";
             // 
             // colTipo
             // 
-            this.colTipo.Text = "Tipo";
+            colTipo.Text = "Tipo";
             // 
             // contextMenuStrip_TablaModeloVinculados
             // 
-            this.contextMenuStrip_TablaModeloVinculados.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip_TablaModeloVinculados.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verModeloToolStripMenuItem,
-            this.editarToolStripMenuItem,
-            this.añadirNuevoToolStripMenuItem,
-            this.eliminarModeloSeleccionadoToolStripMenuItem});
-            this.contextMenuStrip_TablaModeloVinculados.Name = "contextMenuStrip_TablaModeloVinculados";
-            this.contextMenuStrip_TablaModeloVinculados.Size = new System.Drawing.Size(234, 92);
+            contextMenuStrip_TablaModeloVinculados.ImageScalingSize = new System.Drawing.Size(20, 20);
+            contextMenuStrip_TablaModeloVinculados.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { verModeloToolStripMenuItem, editarToolStripMenuItem, añadirNuevoToolStripMenuItem, eliminarModeloSeleccionadoToolStripMenuItem });
+            contextMenuStrip_TablaModeloVinculados.Name = "contextMenuStrip_TablaModeloVinculados";
+            contextMenuStrip_TablaModeloVinculados.Size = new System.Drawing.Size(234, 92);
             // 
             // verModeloToolStripMenuItem
             // 
-            this.verModeloToolStripMenuItem.Name = "verModeloToolStripMenuItem";
-            this.verModeloToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
-            this.verModeloToolStripMenuItem.Text = "Ver modelo";
-            this.verModeloToolStripMenuItem.Click += new System.EventHandler(this.btnVerModeloVinculado_Click);
+            verModeloToolStripMenuItem.Name = "verModeloToolStripMenuItem";
+            verModeloToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            verModeloToolStripMenuItem.Text = "Ver modelo";
+            verModeloToolStripMenuItem.Click += btnVerModeloVinculado_Click;
             // 
             // editarToolStripMenuItem
             // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
-            this.editarToolStripMenuItem.Text = "Editar...";
-            this.editarToolStripMenuItem.Click += new System.EventHandler(this.btnEditarModeloVinculado_Click);
+            editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            editarToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            editarToolStripMenuItem.Text = "Editar...";
+            editarToolStripMenuItem.Click += btnEditarModeloVinculado_Click;
             // 
             // añadirNuevoToolStripMenuItem
             // 
-            this.añadirNuevoToolStripMenuItem.Name = "añadirNuevoToolStripMenuItem";
-            this.añadirNuevoToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
-            this.añadirNuevoToolStripMenuItem.Text = "Añadir nuevo";
-            this.añadirNuevoToolStripMenuItem.Click += new System.EventHandler(this.btnAñadirNuevoModeloVinculado_Click);
+            añadirNuevoToolStripMenuItem.Name = "añadirNuevoToolStripMenuItem";
+            añadirNuevoToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            añadirNuevoToolStripMenuItem.Text = "Añadir nuevo";
+            añadirNuevoToolStripMenuItem.Click += btnAñadirNuevoModeloVinculado_Click;
             // 
             // eliminarModeloSeleccionadoToolStripMenuItem
             // 
-            this.eliminarModeloSeleccionadoToolStripMenuItem.Name = "eliminarModeloSeleccionadoToolStripMenuItem";
-            this.eliminarModeloSeleccionadoToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
-            this.eliminarModeloSeleccionadoToolStripMenuItem.Text = "Eliminar modelo seleccionado";
-            this.eliminarModeloSeleccionadoToolStripMenuItem.Click += new System.EventHandler(this.btnEliminarModeloVinculado_Click);
+            eliminarModeloSeleccionadoToolStripMenuItem.Name = "eliminarModeloSeleccionadoToolStripMenuItem";
+            eliminarModeloSeleccionadoToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            eliminarModeloSeleccionadoToolStripMenuItem.Text = "Eliminar modelo seleccionado";
+            eliminarModeloSeleccionadoToolStripMenuItem.Click += btnEliminarModeloVinculado_Click;
             // 
             // imageList_MachinesIcons
             // 
-            this.imageList_MachinesIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList_MachinesIcons.ImageStream")));
-            this.imageList_MachinesIcons.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList_MachinesIcons.Images.SetKeyName(0, "laptop-64.png");
-            this.imageList_MachinesIcons.Images.SetKeyName(1, "desktop-pc-64.png");
+            imageList_MachinesIcons.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
+            imageList_MachinesIcons.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("imageList_MachinesIcons.ImageStream");
+            imageList_MachinesIcons.TransparentColor = System.Drawing.Color.Transparent;
+            imageList_MachinesIcons.Images.SetKeyName(0, "laptop-64.png");
+            imageList_MachinesIcons.Images.SetKeyName(1, "desktop-pc-64.png");
             // 
             // label56
             // 
-            this.label56.AutoSize = true;
-            this.label56.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label56.Location = new System.Drawing.Point(2, 411);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(10, 13);
-            this.label56.TabIndex = 9;
-            this.label56.Text = " ";
+            label56.AutoSize = true;
+            label56.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label56.Location = new System.Drawing.Point(2, 411);
+            label56.Name = "label56";
+            label56.Size = new System.Drawing.Size(10, 15);
+            label56.TabIndex = 9;
+            label56.Text = " ";
             // 
             // label44
             // 
-            this.label44.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label44.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(2, 424);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(625, 19);
-            this.label44.TabIndex = 7;
-            this.label44.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label44.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label44.Font = new System.Drawing.Font("Microsoft New Tai Lue", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label44.Location = new System.Drawing.Point(2, 426);
+            label44.Name = "label44";
+            label44.Size = new System.Drawing.Size(625, 19);
+            label44.TabIndex = 7;
+            label44.Text = "RIT Solver for IDC (c) Arturo Venegas IDC  2024";
+            label44.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // imageList_TabIcons
             // 
-            this.imageList_TabIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList_TabIcons.ImageStream")));
-            this.imageList_TabIcons.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList_TabIcons.Images.SetKeyName(0, "user-32.png");
-            this.imageList_TabIcons.Images.SetKeyName(1, "invoice.png");
-            this.imageList_TabIcons.Images.SetKeyName(2, "software.png");
-            this.imageList_TabIcons.Images.SetKeyName(3, "component.png");
-            this.imageList_TabIcons.Images.SetKeyName(4, "web-32.png");
-            this.imageList_TabIcons.Images.SetKeyName(5, "tracking-64.png");
-            this.imageList_TabIcons.Images.SetKeyName(6, "contacts.png");
-            this.imageList_TabIcons.Images.SetKeyName(7, "computer.png");
+            imageList_TabIcons.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            imageList_TabIcons.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("imageList_TabIcons.ImageStream");
+            imageList_TabIcons.TransparentColor = System.Drawing.Color.Transparent;
+            imageList_TabIcons.Images.SetKeyName(0, "user-32.png");
+            imageList_TabIcons.Images.SetKeyName(1, "invoice.png");
+            imageList_TabIcons.Images.SetKeyName(2, "software.png");
+            imageList_TabIcons.Images.SetKeyName(3, "component.png");
+            imageList_TabIcons.Images.SetKeyName(4, "web-32.png");
+            imageList_TabIcons.Images.SetKeyName(5, "tracking-64.png");
+            imageList_TabIcons.Images.SetKeyName(6, "contacts.png");
+            imageList_TabIcons.Images.SetKeyName(7, "computer.png");
             // 
             // btnCancelar
             // 
-            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Image = global::Flow_Solver.Properties.Resources.cancel_16;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.Location = new System.Drawing.Point(441, 461);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(115, 31);
-            this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = " Cancelar";
-            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.button4_Click);
+            btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            btnCancelar.Image = Properties.Resources.cancel_16;
+            btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnCancelar.Location = new System.Drawing.Point(441, 461);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new System.Drawing.Size(115, 31);
+            btnCancelar.TabIndex = 4;
+            btnCancelar.Text = " Cancelar";
+            btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += button4_Click;
             // 
             // btnAplicar
             // 
-            this.btnAplicar.Image = global::Flow_Solver.Properties.Resources.save_16;
-            this.btnAplicar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAplicar.Location = new System.Drawing.Point(562, 461);
-            this.btnAplicar.Name = "btnAplicar";
-            this.btnAplicar.Size = new System.Drawing.Size(115, 31);
-            this.btnAplicar.TabIndex = 3;
-            this.btnAplicar.Text = " Aplicar";
-            this.btnAplicar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAplicar.UseVisualStyleBackColor = true;
-            this.btnAplicar.Click += new System.EventHandler(this.button3_Click);
+            btnAplicar.Image = Properties.Resources.save_16;
+            btnAplicar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnAplicar.Location = new System.Drawing.Point(562, 461);
+            btnAplicar.Name = "btnAplicar";
+            btnAplicar.Size = new System.Drawing.Size(115, 31);
+            btnAplicar.TabIndex = 3;
+            btnAplicar.Text = " Aplicar";
+            btnAplicar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            btnAplicar.UseVisualStyleBackColor = true;
+            btnAplicar.Click += button3_Click;
             // 
             // panelFondo
             // 
-            this.panelFondo.BackColor = System.Drawing.SystemColors.Control;
-            this.panelFondo.Controls.Add(this.btnAceptar);
-            this.panelFondo.Controls.Add(this.btnAplicar);
-            this.panelFondo.Controls.Add(this.btnCancelar);
-            this.panelFondo.Location = new System.Drawing.Point(-2, 143);
-            this.panelFondo.Margin = new System.Windows.Forms.Padding(0);
-            this.panelFondo.Name = "panelFondo";
-            this.panelFondo.Size = new System.Drawing.Size(699, 509);
-            this.panelFondo.TabIndex = 6;
+            panelFondo.BackColor = System.Drawing.SystemColors.Control;
+            panelFondo.Controls.Add(btnAceptar);
+            panelFondo.Controls.Add(btnAplicar);
+            panelFondo.Controls.Add(btnCancelar);
+            panelFondo.Location = new System.Drawing.Point(-2, 143);
+            panelFondo.Margin = new System.Windows.Forms.Padding(0);
+            panelFondo.Name = "panelFondo";
+            panelFondo.Size = new System.Drawing.Size(699, 509);
+            panelFondo.TabIndex = 6;
             // 
             // configuracion_usuario
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(690, 647);
-            this.Controls.Add(this.tabControlConfiguraciones);
-            this.Controls.Add(this.panelFondo);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "configuracion_usuario";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Panel de configuracion";
-            this.Load += new System.EventHandler(this.configuracion_usuario_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.configuracion_usuario_KeyDown);
-            this.tabPageDireccionesFisicas.ResumeLayout(false);
-            this.tabPageDireccionesFisicas.PerformLayout();
-            this.groupBox23.ResumeLayout(false);
-            this.groupBox23.PerformLayout();
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
-            this.tabPageNavegadorWeb.ResumeLayout(false);
-            this.tabPageNavegadorWeb.PerformLayout();
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.groupBoxReestablecerEnlaces_WebView2.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBoxReestablecerEnlaces_CefSharp.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.tabPageAvanzado.ResumeLayout(false);
-            this.tabPageAvanzado.PerformLayout();
-            this.groupBox21.ResumeLayout(false);
-            this.groupBox21.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.tabPageFormulario.ResumeLayout(false);
-            this.tabPageFormulario.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericContadorRit)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.tabPageUsuario.ResumeLayout(false);
-            this.panelUsuario.ResumeLayout(false);
-            this.panelUsuario.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxFotoIDC)).EndInit();
-            this.tabControlConfiguraciones.ResumeLayout(false);
-            this.tabPageInterfazGrafica.ResumeLayout(false);
-            this.tabPageInterfazGrafica.PerformLayout();
-            this.groupBox22.ResumeLayout(false);
-            this.groupBox22.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.tabPageDireccionesEmail.ResumeLayout(false);
-            this.tabPageDireccionesEmail.PerformLayout();
-            this.groupBox17.ResumeLayout(false);
-            this.tabPageModelosVinculados.ResumeLayout(false);
-            this.tabPageModelosVinculados.PerformLayout();
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
-            this.groupBox19.ResumeLayout(false);
-            this.contextMenuStrip_TablaModeloVinculados.ResumeLayout(false);
-            this.panelFondo.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            BackColor = System.Drawing.SystemColors.ActiveCaption;
+            CancelButton = btnCancelar;
+            ClientSize = new System.Drawing.Size(690, 647);
+            Controls.Add(tabControlConfiguraciones);
+            Controls.Add(panelFondo);
+            ForeColor = System.Drawing.SystemColors.ControlText;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "configuracion_usuario";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Panel de configuracion";
+            Load += configuracion_usuario_Load;
+            KeyDown += configuracion_usuario_KeyDown;
+            tabPageDireccionesFisicas.ResumeLayout(false);
+            tabPageDireccionesFisicas.PerformLayout();
+            groupBox23.ResumeLayout(false);
+            groupBox23.PerformLayout();
+            groupBox15.ResumeLayout(false);
+            groupBox15.PerformLayout();
+            tabPageNavegadorWeb.ResumeLayout(false);
+            tabPageNavegadorWeb.PerformLayout();
+            groupBox18.ResumeLayout(false);
+            groupBox18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            groupBoxReestablecerEnlaces_WebView2.ResumeLayout(false);
+            groupBox12.ResumeLayout(false);
+            groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBoxReestablecerEnlaces_CefSharp.ResumeLayout(false);
+            groupBox11.ResumeLayout(false);
+            groupBox11.PerformLayout();
+            tabPageAvanzado.ResumeLayout(false);
+            tabPageAvanzado.PerformLayout();
+            groupBox21.ResumeLayout(false);
+            groupBox21.PerformLayout();
+            groupBox8.ResumeLayout(false);
+            groupBox8.PerformLayout();
+            groupBox14.ResumeLayout(false);
+            groupBox14.PerformLayout();
+            groupBox13.ResumeLayout(false);
+            groupBox13.PerformLayout();
+            groupBox10.ResumeLayout(false);
+            groupBox10.PerformLayout();
+            groupBox7.ResumeLayout(false);
+            groupBox7.PerformLayout();
+            tabPageFormulario.ResumeLayout(false);
+            tabPageFormulario.PerformLayout();
+            groupBox16.ResumeLayout(false);
+            groupBox16.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericContadorRit).EndInit();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            tabPageUsuario.ResumeLayout(false);
+            panelUsuario.ResumeLayout(false);
+            panelUsuario.PerformLayout();
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picboxFotoIDC).EndInit();
+            tabControlConfiguraciones.ResumeLayout(false);
+            tabPageInterfazGrafica.ResumeLayout(false);
+            tabPageInterfazGrafica.PerformLayout();
+            groupBox22.ResumeLayout(false);
+            groupBox22.PerformLayout();
+            groupBox9.ResumeLayout(false);
+            groupBox9.PerformLayout();
+            tabPageDireccionesEmail.ResumeLayout(false);
+            tabPageDireccionesEmail.PerformLayout();
+            groupBox17.ResumeLayout(false);
+            tabPageModelosVinculados.ResumeLayout(false);
+            tabPageModelosVinculados.PerformLayout();
+            groupBox20.ResumeLayout(false);
+            groupBox20.PerformLayout();
+            groupBox19.ResumeLayout(false);
+            contextMenuStrip_TablaModeloVinculados.ResumeLayout(false);
+            panelFondo.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

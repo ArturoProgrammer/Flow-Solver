@@ -1,0 +1,21 @@
+﻿CREATE TABLE `empleados` (
+  `HASH` int NOT NULL,
+  `Nombres` varchar(185) NOT NULL,
+  `Apellidos` varchar(185) NOT NULL,
+  `Edad` int NOT NULL,
+  `FechaIngreso` date NOT NULL COMMENT 'Fecha en la que comenzo a trabajar en la empresa',
+  `FechaSalida` date DEFAULT NULL COMMENT 'Fecha de salida (baja) en caso de que el empleado ya no se encuentre trabajando.',
+  `EstatusActual` enum('Activo','Inactivo','Suspendido') NOT NULL DEFAULT 'Activo' COMMENT 'Activo, inactivo, suspendido',
+  `FechaDeNacimiento` date NOT NULL,
+  `Puesto` varchar(185) NOT NULL,
+  `Departamento` varchar(185) NOT NULL,
+  `Salario` decimal(10,0) NOT NULL,
+  `Email` varchar(150) NOT NULL,
+  `Telefono` varchar(20) NOT NULL,
+  `Domicilio` text NOT NULL,
+  PRIMARY KEY (`HASH`),
+  UNIQUE KEY `Email_UNIQUE` (`Email`),
+  UNIQUE KEY `Nombres_UNIQUE` (`Nombres`),
+  UNIQUE KEY `Apellidos_UNIQUE` (`Apellidos`),
+  UNIQUE KEY `Telefono_UNIQUE` (`Telefono`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

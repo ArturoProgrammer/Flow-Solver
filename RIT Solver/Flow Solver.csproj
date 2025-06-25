@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Flow_Solver</RootNamespace>
     <AssemblyName>Flow Solver</AssemblyName>
@@ -39,6 +39,9 @@
   <ItemGroup>
     <Reference Include="DataManager">
       <HintPath>..\DataManager\bin\Debug\DataManager.dll</HintPath>
+    </Reference>
+    <Reference Include="FlowControls">
+      <HintPath>..\..\Luz Paulina´s ManageEngine\Flow-ERP\FlowControls\bin\Debug\net6.0-windows\FlowControls.dll</HintPath>
     </Reference>
     <Reference Include="FunFunctions">
       <HintPath>..\FunFunctions\bin\Debug\FunFunctions.dll</HintPath>
@@ -159,6 +162,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Luz Paulina´s ManageEngine\Flow-ERP\FlowControls\FlowControls.csproj" />
     <ProjectReference Include="..\UpdaterManager\UpdaterManager.csproj" />
   </ItemGroup>
   <ItemGroup>

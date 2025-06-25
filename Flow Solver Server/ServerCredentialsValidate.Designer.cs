@@ -58,13 +58,13 @@
             panel1.Location = new Point(29, 31);
             panel1.Margin = new Padding(20, 21, 20, 21);
             panel1.Name = "panel1";
-            panel1.Size = new Size(414, 183);
+            panel1.Size = new Size(458, 202);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.cloud_server_64;
-            pictureBox1.Location = new Point(326, 12);
+            pictureBox1.Location = new Point(380, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(64, 64);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -76,9 +76,9 @@
             txtHostname.BackColor = Color.FromArgb(75, 155, 219);
             txtHostname.BorderStyle = BorderStyle.FixedSingle;
             txtHostname.Font = new Font("Consolas", 10F);
-            txtHostname.Location = new Point(21, 143);
+            txtHostname.Location = new Point(21, 148);
             txtHostname.Name = "txtHostname";
-            txtHostname.Size = new Size(232, 23);
+            txtHostname.Size = new Size(314, 27);
             txtHostname.TabIndex = 7;
             // 
             // label3
@@ -87,7 +87,7 @@
             label3.ForeColor = SystemColors.GradientInactiveCaption;
             label3.Location = new Point(21, 123);
             label3.Name = "label3";
-            label3.Size = new Size(75, 17);
+            label3.Size = new Size(91, 21);
             label3.TabIndex = 6;
             label3.Text = "Hostname:";
             // 
@@ -99,9 +99,9 @@
             btnVer.Font = new Font("Tahoma", 10F);
             btnVer.ForeColor = SystemColors.GradientInactiveCaption;
             btnVer.Image = Properties.Resources.view_16;
-            btnVer.Location = new Point(206, 87);
+            btnVer.Location = new Point(288, 93);
             btnVer.Name = "btnVer";
-            btnVer.Size = new Size(47, 23);
+            btnVer.Size = new Size(49, 23);
             btnVer.TabIndex = 5;
             btnVer.TextAlign = ContentAlignment.MiddleRight;
             btnVer.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -113,10 +113,10 @@
             txtPassword.BackColor = Color.FromArgb(75, 155, 219);
             txtPassword.BorderStyle = BorderStyle.FixedSingle;
             txtPassword.Font = new Font("Consolas", 10F);
-            txtPassword.Location = new Point(21, 87);
+            txtPassword.Location = new Point(21, 92);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(179, 23);
+            txtPassword.Size = new Size(261, 27);
             txtPassword.TabIndex = 3;
             // 
             // label2
@@ -125,7 +125,7 @@
             label2.ForeColor = SystemColors.GradientInactiveCaption;
             label2.Location = new Point(21, 67);
             label2.Name = "label2";
-            label2.Size = new Size(83, 17);
+            label2.Size = new Size(100, 21);
             label2.TabIndex = 2;
             label2.Text = "Contraseña:";
             // 
@@ -134,9 +134,9 @@
             txtUsername.BackColor = Color.FromArgb(75, 155, 219);
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
             txtUsername.Font = new Font("Consolas", 10F);
-            txtUsername.Location = new Point(21, 32);
+            txtUsername.Location = new Point(21, 37);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(232, 23);
+            txtUsername.Size = new Size(314, 27);
             txtUsername.TabIndex = 1;
             // 
             // label1
@@ -145,7 +145,7 @@
             label1.ForeColor = SystemColors.GradientInactiveCaption;
             label1.Location = new Point(21, 12);
             label1.Name = "label1";
-            label1.Size = new Size(130, 17);
+            label1.Size = new Size(158, 21);
             label1.TabIndex = 0;
             label1.Text = "Nombre de Usuario:";
             // 
@@ -157,9 +157,9 @@
             btnAceptar.Font = new Font("Tahoma", 10F);
             btnAceptar.ForeColor = SystemColors.GradientInactiveCaption;
             btnAceptar.Image = Properties.Resources.test_connection_16;
-            btnAceptar.Location = new Point(246, 226);
+            btnAceptar.Location = new Point(225, 257);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(104, 29);
+            btnAceptar.Size = new Size(128, 30);
             btnAceptar.TabIndex = 4;
             btnAceptar.Text = " Validar";
             btnAceptar.TextAlign = ContentAlignment.MiddleRight;
@@ -174,9 +174,9 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.ForeColor = SystemColors.GradientInactiveCaption;
             btnCancelar.Image = Properties.Resources.close_16;
-            btnCancelar.Location = new Point(356, 226);
+            btnCancelar.Location = new Point(359, 257);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(104, 29);
+            btnCancelar.Size = new Size(128, 30);
             btnCancelar.TabIndex = 3;
             btnCancelar.Text = " Cancelar";
             btnCancelar.TextAlign = ContentAlignment.MiddleRight;
@@ -187,10 +187,10 @@
             // ServerCredentialsValidate
             // 
             AcceptButton = btnAceptar;
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(66, 136, 192);
-            ClientSize = new Size(472, 267);
+            ClientSize = new Size(517, 299);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
             Controls.Add(panel1);

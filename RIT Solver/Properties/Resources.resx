@@ -133,6 +133,9 @@
   <data name="limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="warning1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warning1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -223,9 +226,6 @@
   <data name="unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unchecked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Flow_Solver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RIT Solver.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="to-do-open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\to-do-open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -279,6 +279,9 @@
   </data>
   <data name="paisaje-urbano" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paisaje-urbano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database2-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database2-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="contacts-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\contacts-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,6 +403,9 @@
   <data name="right-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\right-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Flow_Solver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RIT Solver.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="activity-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\activity-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -423,6 +429,9 @@
   </data>
   <data name="fxe logg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fxe logg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="project-comprobado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\project-comprobado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -459,9 +468,6 @@
   </data>
   <data name="eliminate-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eliminate-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trackwaybillfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trackwaybillfile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="record" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\record.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -634,8 +640,8 @@
   <data name="msg_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\msg-warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="warning1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warning1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trackwaybillfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trackwaybillfile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tour" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -697,7 +703,7 @@
   <data name="exportar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exportar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="error-file" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\error-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
