@@ -53,7 +53,6 @@
             txtDomicilio = new FlowControls.flTextBoxLabelJoint();
             txtTelefono = new FlowControls.flTextBoxLabelJoint();
             txtEmail = new FlowControls.flTextBoxLabelJoint();
-            txtSalarioPorPeriodo = new FlowControls.flTextBoxLabelJoint();
             cboxDepartamentoOrganizacional = new FlowControls.flComboBoxLabelJoint();
             txtPuestoOrganizacional = new FlowControls.flComboBoxLabelJoint();
             flTextBoxLabelJoint4 = new FlowControls.flTextBoxLabelJoint();
@@ -72,6 +71,7 @@
             panel2 = new System.Windows.Forms.Panel();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             label2 = new System.Windows.Forms.Label();
+            econSalario = new FlowControls.flEconomicalTextBoxLabelJoint();
             label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)warningProvider).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
@@ -97,32 +97,34 @@
             // 
             // btnContinuar
             // 
+            btnContinuar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             btnContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnContinuar.Image = Properties.Resources.save_16;
-            btnContinuar.Location = new System.Drawing.Point(788, 509);
+            btnContinuar.Location = new System.Drawing.Point(769, 509);
             btnContinuar.Margin = new System.Windows.Forms.Padding(4);
             btnContinuar.Name = "btnContinuar";
-            btnContinuar.Size = new System.Drawing.Size(94, 35);
+            btnContinuar.Size = new System.Drawing.Size(113, 35);
             btnContinuar.TabIndex = 1;
             btnContinuar.Text = " Continuar";
             btnContinuar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             btnContinuar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnContinuar.UseVisualStyleBackColor = true;
+            btnContinuar.UseVisualStyleBackColor = false;
             btnContinuar.Click += button1_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnCancelar.Image = Properties.Resources.cancel_16;
-            btnCancelar.Location = new System.Drawing.Point(687, 509);
+            btnCancelar.Location = new System.Drawing.Point(648, 509);
             btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new System.Drawing.Size(94, 35);
+            btnCancelar.Size = new System.Drawing.Size(113, 35);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = " Cerrar";
             btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // warningProvider
@@ -176,6 +178,7 @@
             // 
             // tabPage_Servidor
             // 
+            tabPage_Servidor.BackColor = System.Drawing.SystemColors.InactiveBorder;
             tabPage_Servidor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tabPage_Servidor.Controls.Add(flTextBoxLabelJoint3);
             tabPage_Servidor.Controls.Add(flTextBoxLabelJoint2);
@@ -192,17 +195,15 @@
             tabPage_Servidor.Size = new System.Drawing.Size(712, 378);
             tabPage_Servidor.TabIndex = 3;
             tabPage_Servidor.Text = "Servidor";
-            tabPage_Servidor.UseVisualStyleBackColor = true;
             // 
             // flTextBoxLabelJoint3
             // 
             flTextBoxLabelJoint3.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
-            flTextBoxLabelJoint3.InputContentType = FlowControls.InputMode.GENERAL;
+            flTextBoxLabelJoint3.InputContentType = FlowControls.InputMode.NUMBERS;
             flTextBoxLabelJoint3.Label = "* Puerto:";
             flTextBoxLabelJoint3.Location = new System.Drawing.Point(456, 121);
             flTextBoxLabelJoint3.MinimumSize = new System.Drawing.Size(100, 30);
             flTextBoxLabelJoint3.Name = "flTextBoxLabelJoint3";
-            flTextBoxLabelJoint3.PasswordChar = '●';
             flTextBoxLabelJoint3.Placeholder = "";
             flTextBoxLabelJoint3.RootLineColor = System.Drawing.Color.Gray;
             flTextBoxLabelJoint3.Size = new System.Drawing.Size(185, 30);
@@ -214,12 +215,11 @@
             // flTextBoxLabelJoint2
             // 
             flTextBoxLabelJoint2.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
-            flTextBoxLabelJoint2.InputContentType = FlowControls.InputMode.GENERAL;
+            flTextBoxLabelJoint2.InputContentType = FlowControls.InputMode.PASSWORD;
             flTextBoxLabelJoint2.Label = "* Contraseña:";
             flTextBoxLabelJoint2.Location = new System.Drawing.Point(23, 193);
             flTextBoxLabelJoint2.MinimumSize = new System.Drawing.Size(100, 30);
             flTextBoxLabelJoint2.Name = "flTextBoxLabelJoint2";
-            flTextBoxLabelJoint2.PasswordChar = '●';
             flTextBoxLabelJoint2.Placeholder = "Contraseña del usuario del servidor";
             flTextBoxLabelJoint2.RootLineColor = System.Drawing.Color.Gray;
             flTextBoxLabelJoint2.Size = new System.Drawing.Size(427, 30);
@@ -230,6 +230,7 @@
             // 
             // btnProbarConexion
             // 
+            btnProbarConexion.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             btnProbarConexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnProbarConexion.Image = Properties.Resources.save_16;
             btnProbarConexion.Location = new System.Drawing.Point(532, 334);
@@ -240,7 +241,7 @@
             btnProbarConexion.Text = " Probar Conexion";
             btnProbarConexion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             btnProbarConexion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnProbarConexion.UseVisualStyleBackColor = true;
+            btnProbarConexion.UseVisualStyleBackColor = false;
             // 
             // txtUsuarioServidor
             // 
@@ -250,7 +251,6 @@
             txtUsuarioServidor.Location = new System.Drawing.Point(24, 157);
             txtUsuarioServidor.MinimumSize = new System.Drawing.Size(100, 30);
             txtUsuarioServidor.Name = "txtUsuarioServidor";
-            txtUsuarioServidor.PasswordChar = '●';
             txtUsuarioServidor.Placeholder = "Usuario del servidor";
             txtUsuarioServidor.RootLineColor = System.Drawing.Color.Gray;
             txtUsuarioServidor.Size = new System.Drawing.Size(426, 30);
@@ -277,7 +277,7 @@
             // 
             // flSeparatorLine2
             // 
-            flSeparatorLine2.BackColor = System.Drawing.Color.White;
+            flSeparatorLine2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             flSeparatorLine2.LineColor = System.Drawing.Color.Gray;
             flSeparatorLine2.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
             flSeparatorLine2.LineThickness = 1;
@@ -292,7 +292,7 @@
             // flCustomLabel1
             // 
             flCustomLabel1.AutoSize = true;
-            flCustomLabel1.BackColor = System.Drawing.Color.White;
+            flCustomLabel1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             flCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 18F);
             flCustomLabel1.ImagePadding = 5;
             flCustomLabel1.LeftImage = Properties.Resources.database2_32;
@@ -310,7 +310,6 @@
             txtDireccionDelServidor.Location = new System.Drawing.Point(23, 121);
             txtDireccionDelServidor.MinimumSize = new System.Drawing.Size(100, 30);
             txtDireccionDelServidor.Name = "txtDireccionDelServidor";
-            txtDireccionDelServidor.PasswordChar = '●';
             txtDireccionDelServidor.Placeholder = "";
             txtDireccionDelServidor.RootLineColor = System.Drawing.Color.Gray;
             txtDireccionDelServidor.Size = new System.Drawing.Size(427, 30);
@@ -321,11 +320,12 @@
             // 
             // tabPage_Usuario
             // 
+            tabPage_Usuario.BackColor = System.Drawing.SystemColors.InactiveBorder;
             tabPage_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage_Usuario.Controls.Add(econSalario);
             tabPage_Usuario.Controls.Add(txtDomicilio);
             tabPage_Usuario.Controls.Add(txtTelefono);
             tabPage_Usuario.Controls.Add(txtEmail);
-            tabPage_Usuario.Controls.Add(txtSalarioPorPeriodo);
             tabPage_Usuario.Controls.Add(cboxDepartamentoOrganizacional);
             tabPage_Usuario.Controls.Add(txtPuestoOrganizacional);
             tabPage_Usuario.Controls.Add(flTextBoxLabelJoint4);
@@ -343,17 +343,15 @@
             tabPage_Usuario.Size = new System.Drawing.Size(712, 378);
             tabPage_Usuario.TabIndex = 1;
             tabPage_Usuario.Text = "Usuario";
-            tabPage_Usuario.UseVisualStyleBackColor = true;
             // 
             // txtDomicilio
             // 
             txtDomicilio.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             txtDomicilio.InputContentType = FlowControls.InputMode.GENERAL;
             txtDomicilio.Label = "* Domicilio:";
-            txtDomicilio.Location = new System.Drawing.Point(399, 280);
+            txtDomicilio.Location = new System.Drawing.Point(400, 271);
             txtDomicilio.MinimumSize = new System.Drawing.Size(100, 30);
             txtDomicilio.Name = "txtDomicilio";
-            txtDomicilio.PasswordChar = '●';
             txtDomicilio.Placeholder = "Domicilio particular";
             txtDomicilio.RootLineColor = System.Drawing.Color.Gray;
             txtDomicilio.Size = new System.Drawing.Size(288, 30);
@@ -367,10 +365,9 @@
             txtTelefono.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             txtTelefono.InputContentType = FlowControls.InputMode.NUMBERS;
             txtTelefono.Label = "* Telefono:";
-            txtTelefono.Location = new System.Drawing.Point(399, 244);
+            txtTelefono.Location = new System.Drawing.Point(400, 235);
             txtTelefono.MinimumSize = new System.Drawing.Size(100, 30);
             txtTelefono.Name = "txtTelefono";
-            txtTelefono.PasswordChar = '●';
             txtTelefono.Placeholder = "Telefono de contacto";
             txtTelefono.RootLineColor = System.Drawing.Color.Gray;
             txtTelefono.Size = new System.Drawing.Size(288, 30);
@@ -384,10 +381,9 @@
             txtEmail.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             txtEmail.InputContentType = FlowControls.InputMode.ALPHABETIC;
             txtEmail.Label = "* Email:";
-            txtEmail.Location = new System.Drawing.Point(399, 208);
+            txtEmail.Location = new System.Drawing.Point(400, 199);
             txtEmail.MinimumSize = new System.Drawing.Size(100, 30);
             txtEmail.Name = "txtEmail";
-            txtEmail.PasswordChar = '●';
             txtEmail.Placeholder = "Correo electronico";
             txtEmail.RootLineColor = System.Drawing.Color.Gray;
             txtEmail.Size = new System.Drawing.Size(288, 30);
@@ -395,23 +391,6 @@
             txtEmail.TextBoxBackColor = System.Drawing.SystemColors.Window;
             txtEmail.TextBoxWidth = 200;
             txtEmail.Value = "";
-            // 
-            // txtSalarioPorPeriodo
-            // 
-            txtSalarioPorPeriodo.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
-            txtSalarioPorPeriodo.InputContentType = FlowControls.InputMode.GENERAL;
-            txtSalarioPorPeriodo.Label = "* Salario:";
-            txtSalarioPorPeriodo.Location = new System.Drawing.Point(399, 172);
-            txtSalarioPorPeriodo.MinimumSize = new System.Drawing.Size(100, 30);
-            txtSalarioPorPeriodo.Name = "txtSalarioPorPeriodo";
-            txtSalarioPorPeriodo.PasswordChar = '●';
-            txtSalarioPorPeriodo.Placeholder = "Salario por periodo";
-            txtSalarioPorPeriodo.RootLineColor = System.Drawing.Color.Gray;
-            txtSalarioPorPeriodo.Size = new System.Drawing.Size(288, 30);
-            txtSalarioPorPeriodo.TabIndex = 80;
-            txtSalarioPorPeriodo.TextBoxBackColor = System.Drawing.SystemColors.Window;
-            txtSalarioPorPeriodo.TextBoxWidth = 200;
-            txtSalarioPorPeriodo.Value = "";
             // 
             // cboxDepartamentoOrganizacional
             // 
@@ -421,11 +400,11 @@
             cboxDepartamentoOrganizacional.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             cboxDepartamentoOrganizacional.Items.AddRange(new object[] { "(Seleccione un elemento...)" });
             cboxDepartamentoOrganizacional.Label = "* Dpto.:";
-            cboxDepartamentoOrganizacional.Location = new System.Drawing.Point(399, 127);
+            cboxDepartamentoOrganizacional.Location = new System.Drawing.Point(400, 127);
             cboxDepartamentoOrganizacional.MinimumSize = new System.Drawing.Size(150, 30);
             cboxDepartamentoOrganizacional.Name = "cboxDepartamentoOrganizacional";
             cboxDepartamentoOrganizacional.RootLineColor = System.Drawing.Color.Gray;
-            cboxDepartamentoOrganizacional.Size = new System.Drawing.Size(288, 30);
+            cboxDepartamentoOrganizacional.Size = new System.Drawing.Size(287, 30);
             cboxDepartamentoOrganizacional.TabIndex = 79;
             cboxDepartamentoOrganizacional.Value = "(Seleccione un elemento...)";
             // 
@@ -437,7 +416,7 @@
             txtPuestoOrganizacional.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             txtPuestoOrganizacional.Items.AddRange(new object[] { "(Seleccione un elemento...)" });
             txtPuestoOrganizacional.Label = "* Puesto:";
-            txtPuestoOrganizacional.Location = new System.Drawing.Point(24, 316);
+            txtPuestoOrganizacional.Location = new System.Drawing.Point(25, 307);
             txtPuestoOrganizacional.MinimumSize = new System.Drawing.Size(150, 30);
             txtPuestoOrganizacional.Name = "txtPuestoOrganizacional";
             txtPuestoOrganizacional.RootLineColor = System.Drawing.Color.Gray;
@@ -450,10 +429,9 @@
             flTextBoxLabelJoint4.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             flTextBoxLabelJoint4.InputContentType = FlowControls.InputMode.GENERAL;
             flTextBoxLabelJoint4.Label = "* Fecha de Nacimiento:";
-            flTextBoxLabelJoint4.Location = new System.Drawing.Point(23, 280);
+            flTextBoxLabelJoint4.Location = new System.Drawing.Point(24, 271);
             flTextBoxLabelJoint4.MinimumSize = new System.Drawing.Size(100, 30);
             flTextBoxLabelJoint4.Name = "flTextBoxLabelJoint4";
-            flTextBoxLabelJoint4.PasswordChar = '●';
             flTextBoxLabelJoint4.Placeholder = "Fecha de nacimiento";
             flTextBoxLabelJoint4.RootLineColor = System.Drawing.Color.Gray;
             flTextBoxLabelJoint4.Size = new System.Drawing.Size(370, 30);
@@ -467,10 +445,9 @@
             txtFechaIngreso.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             txtFechaIngreso.InputContentType = FlowControls.InputMode.GENERAL;
             txtFechaIngreso.Label = "* Fecha de Ingreso:";
-            txtFechaIngreso.Location = new System.Drawing.Point(24, 244);
+            txtFechaIngreso.Location = new System.Drawing.Point(25, 235);
             txtFechaIngreso.MinimumSize = new System.Drawing.Size(100, 30);
             txtFechaIngreso.Name = "txtFechaIngreso";
-            txtFechaIngreso.PasswordChar = '●';
             txtFechaIngreso.Placeholder = "Fecha de ingreso";
             txtFechaIngreso.RootLineColor = System.Drawing.Color.Gray;
             txtFechaIngreso.Size = new System.Drawing.Size(370, 30);
@@ -484,10 +461,9 @@
             txtEdad.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             txtEdad.InputContentType = FlowControls.InputMode.GENERAL;
             txtEdad.Label = "* Edad:";
-            txtEdad.Location = new System.Drawing.Point(23, 208);
+            txtEdad.Location = new System.Drawing.Point(24, 199);
             txtEdad.MinimumSize = new System.Drawing.Size(100, 30);
             txtEdad.Name = "txtEdad";
-            txtEdad.PasswordChar = '●';
             txtEdad.Placeholder = "Edad";
             txtEdad.RootLineColor = System.Drawing.Color.Gray;
             txtEdad.Size = new System.Drawing.Size(370, 30);
@@ -498,7 +474,7 @@
             // 
             // flSeparatorLine1
             // 
-            flSeparatorLine1.BackColor = System.Drawing.Color.White;
+            flSeparatorLine1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             flSeparatorLine1.LineColor = System.Drawing.Color.Gray;
             flSeparatorLine1.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
             flSeparatorLine1.LineThickness = 1;
@@ -513,7 +489,7 @@
             // flCustomLabel2
             // 
             flCustomLabel2.AutoSize = true;
-            flCustomLabel2.BackColor = System.Drawing.Color.White;
+            flCustomLabel2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             flCustomLabel2.Font = new System.Drawing.Font("Segoe UI", 18F);
             flCustomLabel2.ImagePadding = 5;
             flCustomLabel2.LeftImage = Properties.Resources.user_32;
@@ -531,7 +507,6 @@
             flTextBoxLabelJoint1.Location = new System.Drawing.Point(298, 79);
             flTextBoxLabelJoint1.MinimumSize = new System.Drawing.Size(100, 30);
             flTextBoxLabelJoint1.Name = "flTextBoxLabelJoint1";
-            flTextBoxLabelJoint1.PasswordChar = '●';
             flTextBoxLabelJoint1.Placeholder = "En caso de contar con un usuario...";
             flTextBoxLabelJoint1.RootLineColor = System.Drawing.Color.Gray;
             flTextBoxLabelJoint1.Size = new System.Drawing.Size(335, 30);
@@ -545,10 +520,9 @@
             txtApellidos.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
             txtApellidos.InputContentType = FlowControls.InputMode.GENERAL;
             txtApellidos.Label = "* Apellidos:";
-            txtApellidos.Location = new System.Drawing.Point(23, 172);
+            txtApellidos.Location = new System.Drawing.Point(24, 163);
             txtApellidos.MinimumSize = new System.Drawing.Size(100, 30);
             txtApellidos.Name = "txtApellidos";
-            txtApellidos.PasswordChar = '●';
             txtApellidos.Placeholder = "Apellidos del empleado";
             txtApellidos.RootLineColor = System.Drawing.Color.Gray;
             txtApellidos.Size = new System.Drawing.Size(370, 30);
@@ -565,7 +539,6 @@
             txtNombre.Location = new System.Drawing.Point(23, 127);
             txtNombre.MinimumSize = new System.Drawing.Size(100, 30);
             txtNombre.Name = "txtNombre";
-            txtNombre.PasswordChar = '●';
             txtNombre.Placeholder = "Nombres del empleado";
             txtNombre.RootLineColor = System.Drawing.Color.Gray;
             txtNombre.Size = new System.Drawing.Size(370, 30);
@@ -576,6 +549,7 @@
             // 
             // tabPage_General
             // 
+            tabPage_General.BackColor = System.Drawing.SystemColors.InactiveBorder;
             tabPage_General.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tabPage_General.Controls.Add(flSeparatorLine3);
             tabPage_General.Controls.Add(flCustomLabel3);
@@ -585,11 +559,10 @@
             tabPage_General.Size = new System.Drawing.Size(712, 378);
             tabPage_General.TabIndex = 0;
             tabPage_General.Text = "General";
-            tabPage_General.UseVisualStyleBackColor = true;
             // 
             // flSeparatorLine3
             // 
-            flSeparatorLine3.BackColor = System.Drawing.Color.White;
+            flSeparatorLine3.BackColor = System.Drawing.SystemColors.InactiveBorder;
             flSeparatorLine3.LineColor = System.Drawing.Color.Gray;
             flSeparatorLine3.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
             flSeparatorLine3.LineThickness = 1;
@@ -604,7 +577,7 @@
             // flCustomLabel3
             // 
             flCustomLabel3.AutoSize = true;
-            flCustomLabel3.BackColor = System.Drawing.Color.White;
+            flCustomLabel3.BackColor = System.Drawing.SystemColors.InactiveBorder;
             flCustomLabel3.Font = new System.Drawing.Font("Segoe UI", 18F);
             flCustomLabel3.ImagePadding = 5;
             flCustomLabel3.LeftImage = Properties.Resources.user_32;
@@ -616,6 +589,7 @@
             // 
             // tabPage_Plantillas
             // 
+            tabPage_Plantillas.BackColor = System.Drawing.SystemColors.InactiveBorder;
             tabPage_Plantillas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             tabPage_Plantillas.Location = new System.Drawing.Point(4, 4);
             tabPage_Plantillas.Name = "tabPage_Plantillas";
@@ -623,7 +597,6 @@
             tabPage_Plantillas.Size = new System.Drawing.Size(712, 378);
             tabPage_Plantillas.TabIndex = 2;
             tabPage_Plantillas.Text = "Plantillas";
-            tabPage_Plantillas.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -668,6 +641,19 @@
             label2.TabIndex = 1;
             label2.Text = "Debemos preprar la configuracion antes de iniciar el programa";
             // 
+            // econSalario
+            // 
+            econSalario.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            econSalario.Label = "* Salario:";
+            econSalario.Location = new System.Drawing.Point(400, 163);
+            econSalario.MinimumSize = new System.Drawing.Size(100, 30);
+            econSalario.Name = "econSalario";
+            econSalario.RootLineColor = System.Drawing.Color.Gray;
+            econSalario.Size = new System.Drawing.Size(287, 30);
+            econSalario.TabIndex = 84;
+            econSalario.TextBoxBackColor = System.Drawing.SystemColors.InactiveBorder;
+            econSalario.Value = new decimal(new int[] { 0, 0, 0, 0 });
+            // 
             // configuracion_inicial
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -702,7 +688,6 @@
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-
         }
 
         #endregion
@@ -740,12 +725,12 @@
         private FlowControls.flComboBoxLabelJoint txtPuestoOrganizacional;
         private FlowControls.flTextBoxLabelJoint flTextBoxLabelJoint4;
         private FlowControls.flComboBoxLabelJoint cboxDepartamentoOrganizacional;
-        private FlowControls.flTextBoxLabelJoint txtSalarioPorPeriodo;
         private FlowControls.flTextBoxLabelJoint txtEmail;
         private FlowControls.flTextBoxLabelJoint txtTelefono;
         private FlowControls.flTextBoxLabelJoint txtDomicilio;
         private System.Windows.Forms.ImageList imageList1;
         private FlowControls.flSeparatorLine flSeparatorLine3;
         private FlowControls.flCustomLabel flCustomLabel3;
+        private FlowControls.flEconomicalTextBoxLabelJoint econSalario;
     }
 }

@@ -265,7 +265,8 @@ namespace Flow_Solver
                 this.txtContraseñaIDC.UseSystemPasswordChar = false;
                 char_password_flag = true;
                 this.btnVerContraseña.Image = Properties.Resources.hidden;
-            } else
+            }
+            else
             {
                 this.txtContraseñaIDC.UseSystemPasswordChar = true;
                 char_password_flag = false;
@@ -303,7 +304,7 @@ namespace Flow_Solver
                 item.Tag = m;
 
                 this.lviewTablaDeModelosVinculados.Items.Add(item);
-            }  
+            }
         }
 
         /// <summary>
@@ -439,7 +440,7 @@ namespace Flow_Solver
         }
 
 
-        private void UpdateDireccionDefault ()
+        private void UpdateDireccionDefault()
         {
             /* Actualiza los datos de la 'Direccion_default' */
 
@@ -450,7 +451,7 @@ namespace Flow_Solver
                 if (Directory.Exists(LOCALS_PATH))
                 {
                     string DEF_PATH = $@"{LOCALS_PATH}\Direccion_default.json";
-                    
+
                     if (File.Exists(DEF_PATH))
                     {
                         JObject old_json = JObject.Parse(File.ReadAllText(DEF_PATH));
@@ -470,7 +471,8 @@ namespace Flow_Solver
                         File.WriteAllText($@"{DEF_PATH}", finaljson);
                     }
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 RJMessageBox.Show(ex.Message + Environment.NewLine + Environment.NewLine + ex.ToString());
             }
@@ -611,7 +613,8 @@ namespace Flow_Solver
                         actualizador frm_actualizador = new actualizador();
                         frm_actualizador.ShowDialog();
                     }
-                } else
+                }
+                else
                 {
                     RJMessageBox.Show("¡No se han encontrado nuevas actualizaciones disponibles! ya cuentas con la ultima version disponible", "Gestor de actualizaciones", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
@@ -683,7 +686,7 @@ namespace Flow_Solver
                 this.Close();
             }
         }
-        
+
 
         private void btnEliminarCookies_Click(object sender, EventArgs e)
         {
@@ -719,7 +722,8 @@ namespace Flow_Solver
             {
                 tabla_vinculacion frm = new tabla_vinculacion(this);
                 frm.ShowDialog();
-            } else
+            }
+            else
             {
                 RJMessageBox.Show("No hay usuarios que cargar! primero creer un usuario para poder vincularlo a una localidad");
             }
@@ -1026,7 +1030,8 @@ namespace Flow_Solver
             {
                 this.txtLocalidadIDC.Enabled = true;
                 this.btnBloquearNombreDeLocalidad.Image = Properties.Resources.unlock_16;
-            } else
+            }
+            else
             {
                 this.txtLocalidadIDC.Enabled = false;
                 this.btnBloquearNombreDeLocalidad.Image = Properties.Resources.lock_16;
@@ -1227,12 +1232,14 @@ namespace Flow_Solver
                 {
                     this.btnEditarModeloVinculado.Enabled = true;
                     this.btnEliminarModeloVinculado.Enabled = true;
-                } else
+                }
+                else
                 {
                     this.btnEditarModeloVinculado.Enabled = false;
                     this.btnEliminarModeloVinculado.Enabled = false;
                 }
-            } catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show($"Error inesperado! {ex.Message}\n\n{ex}", "Error de seleccion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -1298,12 +1305,13 @@ namespace Flow_Solver
                 this.saveFileDialog1.Title = "Selecciona la ruta de guardado del arcvhivo...";
                 this.saveFileDialog1.Filter = "Archivo JSON (*.json)| *.json";
                 this.saveFileDialog1.FileName = "Organization Areas Copy";
-                
+
                 if (this.saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    new Departamentos().SaveJsonCopy(path:saveFileDialog1.FileName);
+                    new Departamentos().SaveJsonCopy(path: saveFileDialog1.FileName);
                 }
-            } catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -1349,10 +1357,16 @@ namespace Flow_Solver
                     new Departamentos().ImportConfig(this.openFileDialog1.FileName);
                     LoadAreas();
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnTESTConexion_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

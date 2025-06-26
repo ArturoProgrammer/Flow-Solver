@@ -176,39 +176,6 @@ namespace Flow_Solver
             this.Close();
         }
 
-        private void btnVer_Click(object sender, EventArgs e)
-        {
-            if (this.txtContraseña.UseSystemPasswordChar == true)
-            {
-                this.txtContraseña.UseSystemPasswordChar = false;
-                this.btnVer.Image = Properties.Resources.hidden;
-            } else if (this.txtContraseña.UseSystemPasswordChar == false)
-            {
-                this.txtContraseña.UseSystemPasswordChar = true;
-                this.btnVer.Image = Properties.Resources.view;
-            }
-        }
-
-        private void btnExaminarRit_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                openFileDialog1.Title = "Cargar RIT...";
-                openFileDialog1.Filter = "Archivos PDF (*.pdf) |*.pdf";
-
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    string path = openFileDialog1.FileName;
-
-                    this.txtRutaDeRIT.Text = path;
-                }
-            }
-            catch (Exception ex)
-            {
-                RJMessageBox.Show("Error inesperado!" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void btnExaminarFolder_Click_1(object sender, EventArgs e)
         {
             try
