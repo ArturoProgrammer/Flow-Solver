@@ -18,7 +18,11 @@ namespace Flow_Solver
         public login_form()
         {
             InitializeComponent();
-            loadedUsers = SysUser.GetAll().Object;
+
+            var a = SysUser.GetAll();
+
+            loadedUsers = a.Object;
+            MessageBox.Show(a.GetBuildedLog());
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -35,8 +39,9 @@ namespace Flow_Solver
         {
             this.DialogResult = DialogResult.None;
 
-            SysUser? TARGET_USER = loadedUsers.Cast<SysUser?>()
-                .FirstOrDefault(user => user.Username.Equals(this.txtUsuario.Value, StringComparison.OrdinalIgnoreCase));
+            SysUser? TARGET_USER = loadedUsers.Cast<SysUser>()
+                                                .Where(t => t.Username.Trim().ToLower() == this.txtUsuario.Value.Trim().ToLower())
+                                                .FirstOrDefault();
 
             if (TARGET_USER != null)
             {

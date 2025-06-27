@@ -39,7 +39,7 @@ namespace Flow_Solver
         /// </summary>
         /// <remarks>This value represents the connection endpoint for the database server. Ensure that
         /// the server is accessible and properly configured for connections.</remarks>
-        public string DB_SERVER { get; } = "129.0.0.1"; // Servidor de base de datos
+        public string DB_SERVER { get; } = "AAVL250402TP"; // Servidor de base de datos
         /// <summary>
         /// Nombre de la base de datos
         /// </summary>

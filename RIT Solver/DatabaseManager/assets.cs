@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace Flow_Solver.DatabaseManager
 {
@@ -201,6 +202,9 @@ namespace Flow_Solver.DatabaseManager
     /// </summary>
     public class SqlWriteConnection : ConnectionsData
     {
+        private bool _disposed = false;
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -344,7 +348,35 @@ namespace Flow_Solver.DatabaseManager
             DataBaseConnection.Close();
         }
 
+        public void Dispose ()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this); // Para que no intente llamar al finalizador
+        }
 
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    // Libera recursos administrados
+                    if (DataBaseConnection != null)
+                    {
+                        if (DataBaseConnection.State == System.Data.ConnectionState.Open)
+                            DataBaseConnection.Close();
+                        DataBaseConnection.Dispose();
+                    }
+                }
+                // Aquí liberarías recursos no administrados si tuvieras
+                _disposed = true;
+            }
+        }
+
+        ~SqlWriteConnection()
+        {
+            Dispose(false); // En caso de que olviden llamar a Dispose
+        }
 
         /// <summary>
         /// Crea la cadena de consulta para la insercion de un objeto en la base de datos

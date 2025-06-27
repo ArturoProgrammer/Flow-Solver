@@ -1,4 +1,5 @@
 ﻿using FlowCommonWorkcore;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,8 +65,49 @@ namespace Flow_Solver.ObjectsModels
 
         public static Response<Empleado[]> GetAll()
         {
-            // Implementar la lógica para obtener todos los objetos Empleado desde la base de datos
-            throw new NotImplementedException("Metodo GetAllObjects no implementado.");
+            #region CODIGO
+            AppDesignPatron appPatron = new AppDesignPatron();
+            List<Empleado> emps = new List<Empleado>();
+            Response<Empleado[]> _rsp = new Response<Empleado[]>(false, "Iniciando proceso de obtendion de datos...", emps.ToArray());
+
+            using (SqlReadConnection _connection = new SqlReadConnection(DataBaseName, TableName))
+            {
+                MySqlDataReader reader = _connection.MakeQuery("*");
+
+                try
+                {
+                    while (reader.Read())
+                    {
+                        SysUser user = new SysUser()
+                        {
+                            HASH = reader.GetString(ColumnSqlName.GetValue<SysUser>("HASH")),
+                            Username = reader.GetString(ColumnSqlName.GetValue<SysUser>("Username")),
+                            Empleado = Empleado.GetCompleteObject(reader.GetString(ColumnSqlName.GetValue<SysUser>("Empleado"))).Object,
+                            Password = reader.GetString(ColumnSqlName.GetValue<SysUser>("Password")),
+                            CreationDate = reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("CreationDate")),
+                            LastAccess = reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("LastAccess")),
+                            LastAccessAttemp = reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("LastAccessAttemp")),
+                            Privilegies = reader.GetString(ColumnSqlName.GetValue<SysUser>("Privilegies")),
+                        };
+
+                        users.Add(user);
+                    }
+
+                    _rsp.Success = true;
+                    _rsp.Message = "Usuarios obtenidos correctamente.";
+                    _rsp.Object = users.ToArray();
+                }
+                catch (Exception ex)
+                {
+                    _rsp.Success = false;
+                    _rsp.Message = "Error al obtener el usuario: " + ex.Message;
+                    _rsp.Object = null;
+                    _rsp.Log.Add(ex.ToString());
+                }
+            }
+
+            return _rsp;
+            #endregion
         }
 
         public Response Save()

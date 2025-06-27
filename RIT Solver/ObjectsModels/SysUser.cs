@@ -19,7 +19,7 @@ namespace Flow_Solver.ObjectsModels
     /// </summary>
     public class SysUser
     {
-        public static readonly string TableName = "serv_users";
+        public static readonly string TableName = "server_users";
         public static readonly string ObjectName = "SystemUser";
         public static readonly string ObjectTitle = "Usuario del sistema";
         public static readonly string DataBaseName = "flow_solver";
@@ -189,6 +189,7 @@ namespace Flow_Solver.ObjectsModels
             #region CODIGO
             Response _rsp = new Response(false, "Iniciando proceso de guardado...");
 
+            SqlWriteConnection _connection = new SqlWriteConnection(DataBaseName, TableName);
             try
             {
                 (string, object)[] parameters = new (string, object)[]
@@ -216,8 +217,7 @@ UPDATE {DataBaseName}.{TableName} SET
     Privilegies=@Privilegies
 WHERE HASH=@HASH;";
                 string INSERT_QUERY = SqlWriteConnection.BuildInsertQuery<SysUser>(this, DataBaseName, TableName);
-                SqlWriteConnection _connection = new SqlWriteConnection(DataBaseName, TableName);
-                
+
                 var SERV_RESP = _connection.MakeQuery("HASH", HASH, INSERT_QUERY, UPDATE_QUERY, parameters);
 
                 if (SERV_RESP.Success)
@@ -231,13 +231,17 @@ WHERE HASH=@HASH;";
                 }
 
                 _rsp.Success = SERV_RESP.Success;
-            } 
+            }
             catch (Exception ex)
             {
                 _rsp.Success = false;
                 _rsp.Message = $"Error al guardar el usuario: {ex.Message}";
                 //LogSystem.Add(EventIO.IN, EventType.EXCEPTION, ModuleMandator.Models, $"Models.cs", $"Se ha producido una excepcion inesperado!! {ex.Message}\n{ex}\n{_rsp.GetBuildedLog()}");
                 MessageBox.Show($"{ex.Message}\n\nEl programa indica:\n{ex.ToString()}", "Error inesperado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                _connection.CloseConnection();  // Cerramos la conexion a la base de datos
             }
             #endregion
 
