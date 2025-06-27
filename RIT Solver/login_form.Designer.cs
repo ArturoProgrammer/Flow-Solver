@@ -32,8 +32,8 @@
             label2 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             flCustomLabel1 = new FlowControls.flCustomLabel();
-            flTextBoxLabelJoint1 = new FlowControls.flTextBoxLabelJoint();
-            flTextBoxLabelJoint2 = new FlowControls.flTextBoxLabelJoint();
+            txtUsuario = new FlowControls.flTextBoxLabelJoint();
+            txtContraseña = new FlowControls.flTextBoxLabelJoint();
             btnIngresar = new FlowControls.flCustomButton();
             btnSalir = new FlowControls.flCustomButton();
             panel1.SuspendLayout();
@@ -82,37 +82,37 @@
             flCustomLabel1.Text = "Flow Solver";
             flCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flTextBoxLabelJoint1
+            // txtUsuario
             // 
-            flTextBoxLabelJoint1.EntryFont = new System.Drawing.Font("Consolas", 9F);
-            flTextBoxLabelJoint1.InputContentType = FlowControls.InputMode.GENERAL;
-            flTextBoxLabelJoint1.Label = "Usuario:";
-            flTextBoxLabelJoint1.Location = new System.Drawing.Point(55, 119);
-            flTextBoxLabelJoint1.MinimumSize = new System.Drawing.Size(100, 30);
-            flTextBoxLabelJoint1.Name = "flTextBoxLabelJoint1";
-            flTextBoxLabelJoint1.Placeholder = "<Ingresa el usuario existente>";
-            flTextBoxLabelJoint1.RootLineColor = System.Drawing.Color.Gray;
-            flTextBoxLabelJoint1.Size = new System.Drawing.Size(345, 30);
-            flTextBoxLabelJoint1.TabIndex = 1;
-            flTextBoxLabelJoint1.TextBoxBackColor = System.Drawing.SystemColors.Window;
-            flTextBoxLabelJoint1.TextBoxWidth = 200;
-            flTextBoxLabelJoint1.Value = "";
+            txtUsuario.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtUsuario.InputContentType = FlowControls.InputMode.GENERAL;
+            txtUsuario.Label = "Usuario:";
+            txtUsuario.Location = new System.Drawing.Point(55, 119);
+            txtUsuario.MinimumSize = new System.Drawing.Size(100, 30);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Placeholder = "<Ingresa el usuario existente>";
+            txtUsuario.RootLineColor = System.Drawing.Color.Gray;
+            txtUsuario.Size = new System.Drawing.Size(345, 30);
+            txtUsuario.TabIndex = 1;
+            txtUsuario.TextBoxBackColor = System.Drawing.SystemColors.Window;
+            txtUsuario.TextBoxWidth = 200;
+            txtUsuario.Value = "";
             // 
-            // flTextBoxLabelJoint2
+            // txtContraseña
             // 
-            flTextBoxLabelJoint2.EntryFont = new System.Drawing.Font("Consolas", 9F);
-            flTextBoxLabelJoint2.InputContentType = FlowControls.InputMode.PASSWORD;
-            flTextBoxLabelJoint2.Label = "Contraseña:";
-            flTextBoxLabelJoint2.Location = new System.Drawing.Point(55, 155);
-            flTextBoxLabelJoint2.MinimumSize = new System.Drawing.Size(100, 30);
-            flTextBoxLabelJoint2.Name = "flTextBoxLabelJoint2";
-            flTextBoxLabelJoint2.Placeholder = "<Ingresa la contraseña del usuario>";
-            flTextBoxLabelJoint2.RootLineColor = System.Drawing.Color.Gray;
-            flTextBoxLabelJoint2.Size = new System.Drawing.Size(345, 30);
-            flTextBoxLabelJoint2.TabIndex = 2;
-            flTextBoxLabelJoint2.TextBoxBackColor = System.Drawing.SystemColors.Window;
-            flTextBoxLabelJoint2.TextBoxWidth = 200;
-            flTextBoxLabelJoint2.Value = "";
+            txtContraseña.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtContraseña.InputContentType = FlowControls.InputMode.PASSWORD;
+            txtContraseña.Label = "Contraseña:";
+            txtContraseña.Location = new System.Drawing.Point(55, 155);
+            txtContraseña.MinimumSize = new System.Drawing.Size(100, 30);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Placeholder = "<Ingresa la contraseña del usuario>";
+            txtContraseña.RootLineColor = System.Drawing.Color.Gray;
+            txtContraseña.Size = new System.Drawing.Size(345, 30);
+            txtContraseña.TabIndex = 2;
+            txtContraseña.TextBoxBackColor = System.Drawing.SystemColors.Window;
+            txtContraseña.TextBoxWidth = 200;
+            txtContraseña.Value = "";
             // 
             // btnIngresar
             // 
@@ -155,8 +155,8 @@
             ClientSize = new System.Drawing.Size(468, 291);
             Controls.Add(btnSalir);
             Controls.Add(btnIngresar);
-            Controls.Add(flTextBoxLabelJoint2);
-            Controls.Add(flTextBoxLabelJoint1);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtUsuario);
             Controls.Add(panel1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -172,8 +172,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private FlowControls.flCustomLabel flCustomLabel1;
-        private FlowControls.flTextBoxLabelJoint flTextBoxLabelJoint1;
-        private FlowControls.flTextBoxLabelJoint flTextBoxLabelJoint2;
+        private FlowControls.flTextBoxLabelJoint txtUsuario;
+        private FlowControls.flTextBoxLabelJoint txtContraseña;
         private System.Windows.Forms.Label label1;
         private FlowControls.flCustomButton btnIngresar;
         private System.Windows.Forms.Label label2;

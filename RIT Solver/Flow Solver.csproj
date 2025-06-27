@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Flow_Solver</RootNamespace>
     <AssemblyName>Flow Solver</AssemblyName>
@@ -39,6 +39,9 @@
   <ItemGroup>
     <Reference Include="DataManager">
       <HintPath>..\DataManager\bin\Debug\DataManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Flow Common Workcore">
+      <HintPath>..\..\Luz Paulina´s ManageEngine\Flow-ERP\Flow Common Workcore\bin\Debug\net6.0-windows\Flow Common Workcore.dll</HintPath>
     </Reference>
     <Reference Include="FlowControls">
       <HintPath>..\..\Luz Paulina´s ManageEngine\Flow-ERP\FlowControls\bin\Debug\net6.0-windows\FlowControls.dll</HintPath>
@@ -198,6 +201,7 @@
     <PackageReference Include="Microsoft.Web.WebView2">
       <Version>1.0.3179.45</Version>
     </PackageReference>
+    <PackageReference Include="MySql.Data" Version="8.0.32" />
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.3</Version>
     </PackageReference>

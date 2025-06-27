@@ -25,9 +25,36 @@ using System.Web.Caching;
 using SpreadsheetLight;
 using System.Data.OleDb;
 using Org.BouncyCastle.Asn1.X509;
+using FlowCommonWorkcore;
 
 namespace Flow_Solver
 {
+    public class AppDesignPatron
+    {
+        public const string AppName = "RIT Solver";
+
+        #region VALORES DE CONEXION CON EL SERVIDOR DE BASE DE DATOS
+        /// <summary>
+        /// The IP address or hostname of the database server.
+        /// </summary>
+        /// <remarks>This value represents the connection endpoint for the database server. Ensure that
+        /// the server is accessible and properly configured for connections.</remarks>
+        public string DB_SERVER { get; } = "129.0.0.1"; // Servidor de base de datos
+        /// <summary>
+        /// Nombre de la base de datos
+        /// </summary>
+        public string DB_NAME { get; } = "flow_solver"; // Nombre de la base de datos
+        /// <summary>
+        /// Usuario del servidor de base de datos
+        /// </summary>
+        public string DB_USER { get; } = "rmt_access"; // Usuario de la base de datos
+        /// <summary>
+        /// Contraseña del usuario del servidor de base de datos
+        /// </summary>
+        public string DB_PASSWORD { get; } = "Hermosillo00"; // Contraseña de la base de datos
+        #endregion
+    }
+
     /// <summary>
     /// Tarjeta de direccion email registrada del sistema
     /// </summary>

@@ -24,7 +24,7 @@ namespace Flow_Solver
 
         private void login_form_Load(object sender, EventArgs e)
         {
-
+            this.txtUsuario.Select();
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
