@@ -1,12 +1,16 @@
-﻿using Flow_Solver.DatabaseManager;
+﻿using CustomMessageBox;
+using Flow_Solver.DatabaseManager;
 using FlowCommonWorkcore;
 using iTextSharp.text.io;
+using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Crypto.Generators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Flow_Solver.ObjectsModels
 {
@@ -22,13 +26,21 @@ namespace Flow_Solver.ObjectsModels
         public static readonly string ObjectDescription = "Usuario del sistema, empleado de la empresa, con privilegios de acceso al sistema y a los datos de la empresa.";
 
 
-
+        /// <summary>
+        /// Identificador único del usuario en el sistema
+        /// </summary>
         [ParamSqlKey("@HASH")]
         [ColumnSqlName("HASH")]
         public string HASH { get; set; }
+        /// <summary>
+        /// Nombre de usuario del sistema, utilizado para iniciar sesión
+        /// </summary>
         [ParamSqlKey("@Username")]
         [ColumnSqlName("Username")]
         public string Username { get; set; }
+        /// <summary>
+        /// HASH del empleado al que pertenece este usuario
+        /// </summary>
         [ParamSqlKey("@Empleado")]
         [ColumnSqlName("Employee")]
         public Empleado Empleado { get; set; }
@@ -38,15 +50,27 @@ namespace Flow_Solver.ObjectsModels
         [ParamSqlKey("@Password")]
         [ColumnSqlName("Password")]
         public string Password { get; set; }
+        /// <summary>
+        /// Fecha de creacion del usuario
+        /// </summary>
         [ParamSqlKey("@CreationDate")]
         [ColumnSqlName("CreationDate")]
         public DateTime CreationDate { get; set; }
+        /// <summary>
+        /// Ultimo eso al sistema usando este usuario
+        /// </summary>
         [ParamSqlKey("@LastAccess")]
         [ColumnSqlName("LastAccess")]
         public DateTime LastAccess { get; set; }
+        /// <summary>
+        /// Intentos de acceso sin exito al sistema usando este usuario
+        /// </summary>
         [ParamSqlKey("@LastAccessAttemp")]
         [ColumnSqlName("LastAccessAttemp")]
         public DateTime LastAccessAttemp { get; set; }
+        /// <summary>
+        /// Privilegios del usuario en el sistema
+        /// </summary>
         [ParamSqlKey("@Privilegies")]
         [ColumnSqlName("Privilegies")]
         public string Privilegies { get; set; } = "USER"; // USER, ADMIN, SUPERADMIN
@@ -147,6 +171,129 @@ namespace Flow_Solver.ObjectsModels
                     _rsp.Object = null;
                     _rsp.Log.Add(ex.ToString());
                 }
+            }
+
+            return _rsp;
+            #endregion
+        }
+
+
+        /// <summary>
+        /// Guarda el objeto en la base de datos
+        /// </summary>
+        /// <param name="RenewPassword">Indica si se requiere cambiar la contraseña</param>
+        /// <param name="NewPassword">Nueva contraseña a ingresar en texto plano</param>
+        /// <returns></returns>
+        public Response Save(bool RenewPassword = false, string NewPassword = "")
+        {
+            #region CODIGO
+            Response _rsp = new Response(false, "Iniciando proceso de guardado...");
+
+            try
+            {
+                (string, object)[] parameters = new (string, object)[]
+                {
+                    ("@HASH", HASH),
+                    ("@Username", Username),
+                    ("@Empleado", Empleado.HASH),
+                    ("@Password", HashearPassword(Password)),
+                    ("@CreationDate", CreationDate.ToString("yyyy-MM-dd")),
+                    ("@LastAccess", LastAccess.ToString("yyyy-MM-dd")),
+                    ("@LastAccessAttemp", LastAccessAttemp.ToString("yyyy-MM-dd")),
+                    ("@Privilegies", Privilegies),
+                };
+
+                string EXTRA_SET_PASSWORD = RenewPassword ? "Password=@Password," : "";
+
+                string UPDATE_QUERY = $@"
+UPDATE {DataBaseName}.{TableName} SET
+    Username=@Username,
+    Empleado=@Empleado,
+    {EXTRA_SET_PASSWORD}
+    CreationDate=@CreationDate,
+    LastAccess=@LastAccess,
+    LastAccessAttemp=@LastAccessAttemp,
+    Privilegies=@Privilegies
+WHERE HASH=@HASH;";
+                string INSERT_QUERY = SqlWriteConnection.BuildInsertQuery<SysUser>(this, DataBaseName, TableName);
+                SqlWriteConnection _connection = new SqlWriteConnection(DataBaseName, TableName);
+                
+                var SERV_RESP = _connection.MakeQuery("HASH", HASH, INSERT_QUERY, UPDATE_QUERY, parameters);
+
+                if (SERV_RESP.Success)
+                {
+                    _rsp.Message = $"Usuario ({HASH}) generado/actualizado con exito!";
+                }
+                else
+                {
+                    _rsp.Message = $"Si se completo la ejecucion del metodo, pero ocurrio un error en el guardado del usuario ({HASH}) generado/actualizado!";
+                    _rsp.Log.Add($"{SERV_RESP.GetBuildedLog()}");
+                }
+
+                _rsp.Success = SERV_RESP.Success;
+            } 
+            catch (Exception ex)
+            {
+                _rsp.Success = false;
+                _rsp.Message = $"Error al guardar el usuario: {ex.Message}";
+                //LogSystem.Add(EventIO.IN, EventType.EXCEPTION, ModuleMandator.Models, $"Models.cs", $"Se ha producido una excepcion inesperado!! {ex.Message}\n{ex}\n{_rsp.GetBuildedLog()}");
+                MessageBox.Show($"{ex.Message}\n\nEl programa indica:\n{ex.ToString()}", "Error inesperado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            #endregion
+
+            return _rsp;
+        }
+
+        /// <summary>
+        /// Hashea la contraseña correspondiente ingresada en texto plano
+        /// </summary>
+        /// <param name="_password"></param>
+        /// <returns>Contraseña Hasheada</returns>
+        private static string HashearPassword(string _password)
+        {
+            return BCrypt.Net.BCrypt.HashPassword(_password);
+        }
+
+        /// <summary>
+        /// Valida que la contraseña ingresada sea correcta
+        /// </summary>
+        /// <param name="_password">contraseña en texto plano ingresada</param>
+        /// <returns></returns>
+        public Response ValidateUserPassword(string _password)
+        {
+            #region CODIGO
+            Response _rsp = new Response(false, "Iniciando proceso de validacion...");
+
+            SqlReadConnection _connection = new SqlReadConnection(DataBaseName, TableName);
+            MySqlDataReader reader = _connection.MakeQuery("Password", "WHERE (HASH=@U_HASH)", new (string, object)[] { ("@U_HASH", HASH) });
+
+            try
+            {
+                while (reader.Read())
+                {
+
+                    if (BCrypt.Net.BCrypt.Verify(_password, reader.GetString("Password")))
+                    {
+                        _rsp.Success = true;
+                    }
+                    else
+                    {
+                        _rsp.Success = false;
+                    }
+                }
+
+                _rsp.Message = $"Contraseña de usuario ({HASH}) validada correctamente!";
+            }
+            catch (MySqlException ex)
+            {
+                _rsp.Success = false;
+                _rsp.Message = $"No se pudo validar correctamente que la contraseña ({HASH}) sea valida!";
+                //LogSystem.Add(EventIO.IN, EventType.EXCEPTION, ModuleMandator.Models, $"Models.cs", $"Se ha producido una excepcion inesperado!! {ex.Message}\n{ex}\n{_rsp.GetBuildedLog()}");
+                MessageBox.Show($"{ex.Message}\n\nEl programa indica:\n{ex.ToString()}", "Error inesperado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                _connection.CloseConnection();
             }
 
             return _rsp;

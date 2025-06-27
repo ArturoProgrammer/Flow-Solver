@@ -1,4 +1,6 @@
-﻿namespace Flow_Solver.Centro_de_Control
+﻿using System.Windows.Forms;
+
+namespace Flow_Solver.Centro_de_Control
 {
     partial class crear_actividad
     {
@@ -82,7 +84,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.fatherDataGridViewEmulate = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.folderBrowserDialogEx1 = new FolderBrowserDialogEx();
+            this.folderBrowserDialogEx1 = new FolderBrowserDialog();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblStatusJob = new System.Windows.Forms.Label();
             this.btnCrear = new System.Windows.Forms.Button();
@@ -663,13 +665,8 @@
             // folderBrowserDialogEx1
             // 
             this.folderBrowserDialogEx1.Description = "";
-            this.folderBrowserDialogEx1.DontIncludeNetworkFoldersBelowDomainLevel = false;
-            this.folderBrowserDialogEx1.NewStyle = true;
             this.folderBrowserDialogEx1.RootFolder = System.Environment.SpecialFolder.MyDocuments;
             this.folderBrowserDialogEx1.SelectedPath = "";
-            this.folderBrowserDialogEx1.ShowBothFilesAndFolders = false;
-            this.folderBrowserDialogEx1.ShowEditBox = true;
-            this.folderBrowserDialogEx1.ShowFullPathInEditBox = true;
             this.folderBrowserDialogEx1.ShowNewFolderButton = true;
             // 
             // panel2
@@ -805,7 +802,7 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button btnExaminarPath;
         private System.Windows.Forms.TextBox txtRutaDeGuardado;
-        private FolderBrowserDialogEx folderBrowserDialogEx1;
+        private FolderBrowserDialog folderBrowserDialogEx1;
         public System.Windows.Forms.TextBox txtLinea7;
         public System.Windows.Forms.TextBox txtLinea6;
         public System.Windows.Forms.TextBox txtLinea5;

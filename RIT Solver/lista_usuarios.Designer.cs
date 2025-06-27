@@ -1,4 +1,6 @@
-﻿namespace Flow_Solver
+﻿using System.Windows.Forms;
+
+namespace Flow_Solver
 {
     partial class lista_usuarios
     {
@@ -70,7 +72,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.guardaModifiacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundWorker_WaitScreen = new System.ComponentModel.BackgroundWorker();
-            this.folderBrowserDialogEx1 = new FolderBrowserDialogEx();
+            this.folderBrowserDialogEx1 = new FolderBrowserDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -493,13 +495,8 @@
             // folderBrowserDialogEx1
             // 
             this.folderBrowserDialogEx1.Description = "";
-            this.folderBrowserDialogEx1.DontIncludeNetworkFoldersBelowDomainLevel = false;
-            this.folderBrowserDialogEx1.NewStyle = true;
             this.folderBrowserDialogEx1.RootFolder = System.Environment.SpecialFolder.Desktop;
             this.folderBrowserDialogEx1.SelectedPath = "";
-            this.folderBrowserDialogEx1.ShowBothFilesAndFolders = false;
-            this.folderBrowserDialogEx1.ShowEditBox = true;
-            this.folderBrowserDialogEx1.ShowFullPathInEditBox = true;
             this.folderBrowserDialogEx1.ShowNewFolderButton = true;
             // 
             // lista_usuarios
@@ -582,7 +579,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem guardaModifiacionesToolStripMenuItem;
         private System.ComponentModel.BackgroundWorker backgroundWorker_WaitScreen;
-        private FolderBrowserDialogEx folderBrowserDialogEx1;
+        private FolderBrowserDialog folderBrowserDialogEx1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }

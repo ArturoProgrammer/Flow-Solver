@@ -27,11 +27,6 @@ namespace Flow_Solver
     {
         bool char_password_flag = false;
 
-        string URL_FORMS_DEFAULT = "https://forms.office.com/Pages/ResponsePage.aspx?id=dNF36JwJkUSX2NZVp8az1BdNDZCBAPJHq77MIGUA38VUN0JXNUxNNkNSNVQxNlZHUDU3MkxHQUJQRS4u";
-        string URL_GMXT_SAS_DEFAULT = "https://gmxtsas.mx:8080/HomePage.do?view_type=my_view";
-        string URL_COMPUSOF_SAS_DEFAULT = "https://accounts.zoho.com/signin?servicename=SDPOnDemand&hide_title=true&hideyahoosignin=true&hidefbconnect=true&hide_secure=true&serviceurl=https%3A%2F%2Fsd.compusofmexico.com%2Fapp%2Fitdesk%2FHomePage.do&signupurl=https://sd.compusofmexico.com/AccountCreation.do&portal_id=142098036&hide_signup=true";
-        string URL_ENDPOINT_DEFAULT = "https://endpointcentral.manageengine.com/webclient#/uems/home/smart-advisor";
-
         main LegacyForm;
         private MachinesModelsSync modelsVinculated = MachinesModelsSync.Load();
 
@@ -808,57 +803,6 @@ namespace Flow_Solver
                 }
             }
             #endregion
-        }
-
-        private void btnReestablecer_Forms_Click(object sender, EventArgs e)
-        {
-            this.txtURL_Forms.Text = URL_FORMS_DEFAULT;
-        }
-
-        private void btnReestablecer_ServiceDeskGMXT_Click(object sender, EventArgs e)
-        {
-            this.txtURL_ServiceDeskGMXT.Text = URL_GMXT_SAS_DEFAULT;
-        }
-
-        private void btnReestablecer_ServiceDeskCompusof_Click(object sender, EventArgs e)
-        {
-            this.txtURL_ServiceDeskCompusof.Text = URL_COMPUSOF_SAS_DEFAULT;
-        }
-
-        private void btnReestablecer_EndpointCentral_Click(object sender, EventArgs e)
-        {
-            this.txtURL_EndpointCentral.Text = URL_ENDPOINT_DEFAULT;
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            LOCK_REESTABLECER_ENLACES = !LOCK_REESTABLECER_ENLACES;
-
-            if (LOCK_REESTABLECER_ENLACES)
-            {
-                //this.btnBloqDbloq.Text = "Bloq";
-                this.btnUnblockCefSharpPanel.Image = Properties.Resources.unlock_16;
-
-                this.txtURL_ServiceDeskCompusof.Enabled = true;
-                this.txtURL_ServiceDeskGMXT.Enabled = true;
-
-                this.label26.Enabled = true;
-                this.label27.Enabled = true;
-
-            }
-            else
-            {
-                //this.btnBloqDbloq.Text = "Dbloq";
-                this.btnUnblockCefSharpPanel.Image = Properties.Resources.lock_16;
-
-                this.txtURL_ServiceDeskCompusof.Enabled = false;
-                this.txtURL_ServiceDeskGMXT.Enabled = false;
-
-                this.label26.Enabled = false;
-                this.label27.Enabled = false;
-
-            }
-            this.groupBoxReestablecerEnlaces_CefSharp.Enabled = LOCK_REESTABLECER_ENLACES;
         }
 
         private void btnReestablecerDireccionDefault_Click(object sender, EventArgs e)

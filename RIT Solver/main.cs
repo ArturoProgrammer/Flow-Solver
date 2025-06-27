@@ -620,13 +620,32 @@ namespace Flow_Solver
             #endregion
 
             //CheckForIllegalCrossThreadCalls = false;
+            bool CAN_CONT = false;
 
             if (Properties.Settings.Default.FIRST_INITIALIZE == true)
             {
                 configuracion_inicial frm = new configuracion_inicial();
-                //frm.TopMost = true;
-                //frm.TopLevel = true;
                 frm.ShowDialog();   // Tiene que establecerse por defecto como ShowDialog, de lo contrario no abre
+
+                if (frm.DialogResult == DialogResult.OK)
+                {
+                    CAN_CONT = true;
+                    MainThreadHaveToClose = false;
+                }
+                else
+                {
+                    MainThreadHaveToClose = true;
+                }
+            } else
+            {
+                CAN_CONT = true;
+            }
+
+            if (CAN_CONT)
+            {
+                // Antes de que se inicialicen los componentes, mostramos el login de la aplicacion
+                login_form frm = new login_form();
+                frm.ShowDialog();
 
                 if (frm.DialogResult == DialogResult.OK)
                 {
@@ -634,16 +653,13 @@ namespace Flow_Solver
                     InitializeComponent();
                     MainThreadHaveToClose = false;
                 }
-                else if (frm.DialogResult == DialogResult.Cancel)
+                else
                 {
+                    /* 
+                     * Cerramos la aplicacion si el usuario no se loguea
+                     * */
                     MainThreadHaveToClose = true;
                 }
-            }
-            else
-            {
-                // Cuando se inicializa la app hacer...
-                InitializeComponent();
-                MainThreadHaveToClose = false;
             }
 
             Instance = this;
