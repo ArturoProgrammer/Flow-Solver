@@ -32,12 +32,12 @@ namespace Flow_Solver
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Mis Proyectos");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Actividades");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Pendientes por hacer");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Historico de Estadisticas Mensuales", 3, 3);
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Seguimiento de Guias", 4, 4);
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Solicitudes de Viaticos");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Mis Proyectos");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Actividades");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Pendientes por hacer");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Historico de Estadisticas Mensuales", 3, 3);
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Seguimiento de Guias", 4, 4);
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Solicitudes de Viaticos");
             contextMenuStripNodos = new System.Windows.Forms.ContextMenuStrip(components);
             toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,18 +52,14 @@ namespace Flow_Solver
             tableLayoutPanelFondoGeneral = new System.Windows.Forms.TableLayoutPanel();
             tabControl_Pages = new flExtendedTabControl();
             tabProyectos = new System.Windows.Forms.TabPage();
-            tableLayoutPanelProyectos = new System.Windows.Forms.TableLayoutPanel();
-            MDI_RIT_Panel = new System.Windows.Forms.Panel();
-            pgrssbarAbrirFormularios = new System.Windows.Forms.ProgressBar();
-            lblProyectos_Text = new System.Windows.Forms.Label();
-            tableLayoutPanelProyectos_Nodos = new System.Windows.Forms.TableLayoutPanel();
+            splitContainer_TabPageBack = new System.Windows.Forms.SplitContainer();
+            splitContainer_HeaderTreeViewProyectos = new System.Windows.Forms.SplitContainer();
+            lblNodoDeProyectosSeleccionado = new System.Windows.Forms.Label();
+            splitContainer_ProyectosInformacion = new System.Windows.Forms.SplitContainer();
             treeViewProyectos = new System.Windows.Forms.TreeView();
             imageList_RIT = new System.Windows.Forms.ImageList(components);
-            panel6 = new System.Windows.Forms.Panel();
-            lblNombreDeNodoSeleccionado = new System.Windows.Forms.RichTextBox();
-            panel4 = new System.Windows.Forms.Panel();
-            lblNodoDeProyectosSeleccionado = new System.Windows.Forms.Label();
-            toolStrip2 = new System.Windows.Forms.ToolStrip();
+            MDI_RIT_Panel = new System.Windows.Forms.Panel();
+            toolStrip_Proyectos = new flCustomToolStrip();
             toolNuevoProyecto = new System.Windows.Forms.ToolStripButton();
             toolAbrirProyectoExistente = new System.Windows.Forms.ToolStripButton();
             toolEliminarProyecto = new System.Windows.Forms.ToolStripButton();
@@ -83,6 +79,7 @@ namespace Flow_Solver
             statusStripForms = new System.Windows.Forms.StatusStrip();
             toolBtnRecargarForms = new System.Windows.Forms.ToolStripButton();
             URL_RIT_Forms_Label = new System.Windows.Forms.ToolStripLabel();
+            tabServiceDeskGMXT = new System.Windows.Forms.TabPage();
             tabServiceDeskCompusof = new System.Windows.Forms.TabPage();
             statusStripEndPointcentral = new System.Windows.Forms.StatusStrip();
             toolBtnRecargarSDPCompusof = new System.Windows.Forms.ToolStripButton();
@@ -100,7 +97,7 @@ namespace Flow_Solver
             imageList_Actividades = new System.Windows.Forms.ImageList(components);
             panel3 = new System.Windows.Forms.Panel();
             lblDescripcionDeNodo = new System.Windows.Forms.Label();
-            lblNombreNodoSeleccionado = new System.Windows.Forms.Label();
+            lblNombreNodoSeleccionado = new flCustomLabel();
             panel1 = new System.Windows.Forms.Panel();
             lblNombreSeccion = new System.Windows.Forms.Label();
             toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -229,18 +226,25 @@ namespace Flow_Solver
             miniToolStrip = new System.Windows.Forms.StatusStrip();
             toolBtnRecargarSAS = new System.Windows.Forms.ToolStripButton();
             URL_GMXT_SAS_Label = new System.Windows.Forms.ToolStripLabel();
-            tabServiceDeskGMXT = new System.Windows.Forms.TabPage();
             statusStripSDPGMXT = new System.Windows.Forms.StatusStrip();
+            propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             contextMenuStripNodos.SuspendLayout();
             tableLayoutPanelFondoGeneral.SuspendLayout();
             tabControl_Pages.SuspendLayout();
             tabProyectos.SuspendLayout();
-            tableLayoutPanelProyectos.SuspendLayout();
-            MDI_RIT_Panel.SuspendLayout();
-            tableLayoutPanelProyectos_Nodos.SuspendLayout();
-            panel6.SuspendLayout();
-            panel4.SuspendLayout();
-            toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer_TabPageBack).BeginInit();
+            splitContainer_TabPageBack.Panel1.SuspendLayout();
+            splitContainer_TabPageBack.Panel2.SuspendLayout();
+            splitContainer_TabPageBack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer_HeaderTreeViewProyectos).BeginInit();
+            splitContainer_HeaderTreeViewProyectos.Panel1.SuspendLayout();
+            splitContainer_HeaderTreeViewProyectos.Panel2.SuspendLayout();
+            splitContainer_HeaderTreeViewProyectos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer_ProyectosInformacion).BeginInit();
+            splitContainer_ProyectosInformacion.Panel1.SuspendLayout();
+            splitContainer_ProyectosInformacion.Panel2.SuspendLayout();
+            splitContainer_ProyectosInformacion.SuspendLayout();
+            toolStrip_Proyectos.SuspendLayout();
             tabFormCompusof.SuspendLayout();
             statusStripForms.SuspendLayout();
             tabServiceDeskCompusof.SuspendLayout();
@@ -352,7 +356,7 @@ namespace Flow_Solver
             // 
             tabControl_Pages.CanCloseTabs = false;
             tabControl_Pages.CloseButtonHoverColor = System.Drawing.Color.Red;
-            tabControl_Pages.ControlBackColor = System.Drawing.Color.Transparent;
+            tabControl_Pages.ControlBackColor = System.Drawing.SystemColors.ActiveCaption;
             tabControl_Pages.Controls.Add(tabProyectos);
             tabControl_Pages.Controls.Add(tabFormCompusof);
             tabControl_Pages.Controls.Add(tabServiceDeskGMXT);
@@ -380,9 +384,9 @@ namespace Flow_Solver
             // 
             // tabProyectos
             // 
-            tabProyectos.BackColor = System.Drawing.Color.DimGray;
-            tabProyectos.Controls.Add(tableLayoutPanelProyectos);
-            tabProyectos.Controls.Add(toolStrip2);
+            tabProyectos.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            tabProyectos.Controls.Add(splitContainer_TabPageBack);
+            tabProyectos.Controls.Add(toolStrip_Proyectos);
             tabProyectos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             tabProyectos.Location = new System.Drawing.Point(4, 39);
             tabProyectos.Margin = new System.Windows.Forms.Padding(0);
@@ -391,95 +395,99 @@ namespace Flow_Solver
             tabProyectos.TabIndex = 5;
             tabProyectos.Text = "Proyectos";
             // 
-            // tableLayoutPanelProyectos
+            // splitContainer_TabPageBack
             // 
-            tableLayoutPanelProyectos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            tableLayoutPanelProyectos.ColumnCount = 2;
-            tableLayoutPanelProyectos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.47059F));
-            tableLayoutPanelProyectos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.52941F));
-            tableLayoutPanelProyectos.Controls.Add(MDI_RIT_Panel, 0, 0);
-            tableLayoutPanelProyectos.Controls.Add(tableLayoutPanelProyectos_Nodos, 0, 0);
-            tableLayoutPanelProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
-            tableLayoutPanelProyectos.Location = new System.Drawing.Point(0, 27);
-            tableLayoutPanelProyectos.Margin = new System.Windows.Forms.Padding(0);
-            tableLayoutPanelProyectos.Name = "tableLayoutPanelProyectos";
-            tableLayoutPanelProyectos.RowCount = 1;
-            tableLayoutPanelProyectos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanelProyectos.Size = new System.Drawing.Size(1164, 504);
-            tableLayoutPanelProyectos.TabIndex = 1;
+            splitContainer_TabPageBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer_TabPageBack.Location = new System.Drawing.Point(0, 42);
+            splitContainer_TabPageBack.Margin = new System.Windows.Forms.Padding(6);
+            splitContainer_TabPageBack.Name = "splitContainer_TabPageBack";
             // 
-            // MDI_RIT_Panel
+            // splitContainer_TabPageBack.Panel1
             // 
-            MDI_RIT_Panel.BackColor = System.Drawing.Color.DarkGray;
-            MDI_RIT_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            MDI_RIT_Panel.Controls.Add(pgrssbarAbrirFormularios);
-            MDI_RIT_Panel.Controls.Add(lblProyectos_Text);
-            MDI_RIT_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            MDI_RIT_Panel.Location = new System.Drawing.Point(196, 3);
-            MDI_RIT_Panel.Margin = new System.Windows.Forms.Padding(0);
-            MDI_RIT_Panel.Name = "MDI_RIT_Panel";
-            MDI_RIT_Panel.Size = new System.Drawing.Size(965, 498);
-            MDI_RIT_Panel.TabIndex = 1;
-            MDI_RIT_Panel.ControlAdded += MDI_RIT_Panel_ControlAdded;
-            MDI_RIT_Panel.ControlRemoved += MDI_RIT_Panel_ControlRemoved;
+            splitContainer_TabPageBack.Panel1.Controls.Add(splitContainer_HeaderTreeViewProyectos);
             // 
-            // pgrssbarAbrirFormularios
+            // splitContainer_TabPageBack.Panel2
             // 
-            pgrssbarAbrirFormularios.Dock = System.Windows.Forms.DockStyle.Bottom;
-            pgrssbarAbrirFormularios.Location = new System.Drawing.Point(0, 489);
-            pgrssbarAbrirFormularios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            pgrssbarAbrirFormularios.Name = "pgrssbarAbrirFormularios";
-            pgrssbarAbrirFormularios.Size = new System.Drawing.Size(961, 5);
-            pgrssbarAbrirFormularios.TabIndex = 3;
+            splitContainer_TabPageBack.Panel2.Controls.Add(MDI_RIT_Panel);
+            splitContainer_TabPageBack.Size = new System.Drawing.Size(1164, 489);
+            splitContainer_TabPageBack.SplitterDistance = 265;
+            splitContainer_TabPageBack.SplitterWidth = 6;
+            splitContainer_TabPageBack.TabIndex = 2;
             // 
-            // lblProyectos_Text
+            // splitContainer_HeaderTreeViewProyectos
             // 
-            lblProyectos_Text.Dock = System.Windows.Forms.DockStyle.Fill;
-            lblProyectos_Text.Font = new System.Drawing.Font("Microsoft New Tai Lue", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lblProyectos_Text.Location = new System.Drawing.Point(0, 0);
-            lblProyectos_Text.Name = "lblProyectos_Text";
-            lblProyectos_Text.Size = new System.Drawing.Size(961, 494);
-            lblProyectos_Text.TabIndex = 2;
-            lblProyectos_Text.Text = "Bienvenido a RIT Solver!";
-            lblProyectos_Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            splitContainer_HeaderTreeViewProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer_HeaderTreeViewProyectos.Location = new System.Drawing.Point(0, 0);
+            splitContainer_HeaderTreeViewProyectos.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer_HeaderTreeViewProyectos.Name = "splitContainer_HeaderTreeViewProyectos";
+            splitContainer_HeaderTreeViewProyectos.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // tableLayoutPanelProyectos_Nodos
+            // splitContainer_HeaderTreeViewProyectos.Panel1
             // 
-            tableLayoutPanelProyectos_Nodos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            tableLayoutPanelProyectos_Nodos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            tableLayoutPanelProyectos_Nodos.ColumnCount = 1;
-            tableLayoutPanelProyectos_Nodos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            tableLayoutPanelProyectos_Nodos.Controls.Add(treeViewProyectos, 0, 1);
-            tableLayoutPanelProyectos_Nodos.Controls.Add(panel6, 0, 2);
-            tableLayoutPanelProyectos_Nodos.Controls.Add(panel4, 0, 0);
-            tableLayoutPanelProyectos_Nodos.Location = new System.Drawing.Point(3, 3);
-            tableLayoutPanelProyectos_Nodos.Margin = new System.Windows.Forms.Padding(0);
-            tableLayoutPanelProyectos_Nodos.Name = "tableLayoutPanelProyectos_Nodos";
-            tableLayoutPanelProyectos_Nodos.RowCount = 3;
-            tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32F));
-            tableLayoutPanelProyectos_Nodos.Size = new System.Drawing.Size(190, 498);
-            tableLayoutPanelProyectos_Nodos.TabIndex = 0;
+            splitContainer_HeaderTreeViewProyectos.Panel1.Controls.Add(lblNodoDeProyectosSeleccionado);
+            // 
+            // splitContainer_HeaderTreeViewProyectos.Panel2
+            // 
+            splitContainer_HeaderTreeViewProyectos.Panel2.Controls.Add(splitContainer_ProyectosInformacion);
+            splitContainer_HeaderTreeViewProyectos.Size = new System.Drawing.Size(265, 489);
+            splitContainer_HeaderTreeViewProyectos.SplitterDistance = 39;
+            splitContainer_HeaderTreeViewProyectos.SplitterWidth = 6;
+            splitContainer_HeaderTreeViewProyectos.TabIndex = 0;
+            // 
+            // lblNodoDeProyectosSeleccionado
+            // 
+            lblNodoDeProyectosSeleccionado.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            lblNodoDeProyectosSeleccionado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            lblNodoDeProyectosSeleccionado.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblNodoDeProyectosSeleccionado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
+            lblNodoDeProyectosSeleccionado.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            lblNodoDeProyectosSeleccionado.Location = new System.Drawing.Point(0, 0);
+            lblNodoDeProyectosSeleccionado.Margin = new System.Windows.Forms.Padding(0);
+            lblNodoDeProyectosSeleccionado.Name = "lblNodoDeProyectosSeleccionado";
+            lblNodoDeProyectosSeleccionado.Size = new System.Drawing.Size(265, 39);
+            lblNodoDeProyectosSeleccionado.TabIndex = 2;
+            lblNodoDeProyectosSeleccionado.Text = "Mis proyectos (0)";
+            lblNodoDeProyectosSeleccionado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // splitContainer_ProyectosInformacion
+            // 
+            splitContainer_ProyectosInformacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer_ProyectosInformacion.Location = new System.Drawing.Point(0, 0);
+            splitContainer_ProyectosInformacion.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer_ProyectosInformacion.Name = "splitContainer_ProyectosInformacion";
+            splitContainer_ProyectosInformacion.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer_ProyectosInformacion.Panel1
+            // 
+            splitContainer_ProyectosInformacion.Panel1.Controls.Add(treeViewProyectos);
+            // 
+            // splitContainer_ProyectosInformacion.Panel2
+            // 
+            splitContainer_ProyectosInformacion.Panel2.Controls.Add(propertyGrid1);
+            splitContainer_ProyectosInformacion.Size = new System.Drawing.Size(265, 444);
+            splitContainer_ProyectosInformacion.SplitterDistance = 328;
+            splitContainer_ProyectosInformacion.SplitterWidth = 6;
+            splitContainer_ProyectosInformacion.TabIndex = 0;
             // 
             // treeViewProyectos
             // 
+            treeViewProyectos.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            treeViewProyectos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             treeViewProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
             treeViewProyectos.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold);
+            treeViewProyectos.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
             treeViewProyectos.ImageIndex = 0;
             treeViewProyectos.ImageList = imageList_RIT;
             treeViewProyectos.ItemHeight = 32;
-            treeViewProyectos.Location = new System.Drawing.Point(3, 44);
+            treeViewProyectos.Location = new System.Drawing.Point(0, 0);
             treeViewProyectos.Margin = new System.Windows.Forms.Padding(0);
             treeViewProyectos.Name = "treeViewProyectos";
-            treeNode1.Name = "nodeMisProyectos";
-            treeNode1.Text = "Mis Proyectos";
-            treeViewProyectos.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { treeNode1 });
+            treeNode7.Name = "nodeMisProyectos";
+            treeNode7.Text = "Mis Proyectos";
+            treeViewProyectos.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { treeNode7 });
             treeViewProyectos.SelectedImageIndex = 0;
-            treeViewProyectos.Size = new System.Drawing.Size(190, 291);
-            treeViewProyectos.TabIndex = 0;
-            treeViewProyectos.AfterSelect += treeViewProyectos_AfterSelect;
-            treeViewProyectos.NodeMouseDoubleClick += treeViewProyectos_NodeMouseDoubleClick;
+            treeViewProyectos.Size = new System.Drawing.Size(265, 328);
+            treeViewProyectos.TabIndex = 1;
             // 
             // imageList_RIT
             // 
@@ -492,194 +500,157 @@ namespace Flow_Solver
             imageList_RIT.Images.SetKeyName(3, "project-printed.png");
             imageList_RIT.Images.SetKeyName(4, "project-signed.png");
             // 
-            // panel6
+            // MDI_RIT_Panel
             // 
-            panel6.BackColor = System.Drawing.Color.Gray;
-            panel6.Controls.Add(lblNombreDeNodoSeleccionado);
-            panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel6.Location = new System.Drawing.Point(3, 338);
-            panel6.Margin = new System.Windows.Forms.Padding(0);
-            panel6.Name = "panel6";
-            panel6.Size = new System.Drawing.Size(190, 157);
-            panel6.TabIndex = 2;
+            MDI_RIT_Panel.BackColor = System.Drawing.Color.DarkGray;
+            MDI_RIT_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            MDI_RIT_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            MDI_RIT_Panel.Location = new System.Drawing.Point(0, 0);
+            MDI_RIT_Panel.Margin = new System.Windows.Forms.Padding(0);
+            MDI_RIT_Panel.Name = "MDI_RIT_Panel";
+            MDI_RIT_Panel.Size = new System.Drawing.Size(893, 489);
+            MDI_RIT_Panel.TabIndex = 2;
             // 
-            // lblNombreDeNodoSeleccionado
+            // toolStrip_Proyectos
             // 
-            lblNombreDeNodoSeleccionado.BackColor = System.Drawing.Color.Gray;
-            lblNombreDeNodoSeleccionado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            lblNombreDeNodoSeleccionado.Dock = System.Windows.Forms.DockStyle.Fill;
-            lblNombreDeNodoSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
-            lblNombreDeNodoSeleccionado.Location = new System.Drawing.Point(0, 0);
-            lblNombreDeNodoSeleccionado.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            lblNombreDeNodoSeleccionado.Name = "lblNombreDeNodoSeleccionado";
-            lblNombreDeNodoSeleccionado.Size = new System.Drawing.Size(190, 157);
-            lblNombreDeNodoSeleccionado.TabIndex = 3;
-            lblNombreDeNodoSeleccionado.Text = "";
-            // 
-            // panel4
-            // 
-            panel4.AllowDrop = true;
-            panel4.BackColor = System.Drawing.Color.Gray;
-            panel4.Controls.Add(lblNodoDeProyectosSeleccionado);
-            panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel4.Location = new System.Drawing.Point(3, 3);
-            panel4.Margin = new System.Windows.Forms.Padding(0);
-            panel4.Name = "panel4";
-            panel4.Size = new System.Drawing.Size(190, 38);
-            panel4.TabIndex = 0;
-            // 
-            // lblNodoDeProyectosSeleccionado
-            // 
-            lblNodoDeProyectosSeleccionado.Dock = System.Windows.Forms.DockStyle.Fill;
-            lblNodoDeProyectosSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
-            lblNodoDeProyectosSeleccionado.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            lblNodoDeProyectosSeleccionado.Location = new System.Drawing.Point(0, 0);
-            lblNodoDeProyectosSeleccionado.Margin = new System.Windows.Forms.Padding(0);
-            lblNodoDeProyectosSeleccionado.Name = "lblNodoDeProyectosSeleccionado";
-            lblNodoDeProyectosSeleccionado.Size = new System.Drawing.Size(190, 38);
-            lblNodoDeProyectosSeleccionado.TabIndex = 1;
-            lblNodoDeProyectosSeleccionado.Text = "Ejemplo de seccion de";
-            lblNodoDeProyectosSeleccionado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toolStrip2
-            // 
-            toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolNuevoProyecto, toolAbrirProyectoExistente, toolEliminarProyecto, toolStrpBtnCerrarProyectoActual, toolStripSeparator16, toolStrpBtn_AbrirSegun, toolStripSeparator8, toolStrpBtnGuardarTodosLosProyectosActuales, toolMinimizarTodosLosReportes, toolStrpBtnCerrarTodosLosRitsAbiertos, toolStripSeparator18, toolGeneracionRapidaDeReporte, toolStripLabel4, toolStripLabel3, toolLblActualMDIReporteName });
-            toolStrip2.Location = new System.Drawing.Point(0, 0);
-            toolStrip2.Name = "toolStrip2";
-            toolStrip2.Size = new System.Drawing.Size(1164, 27);
-            toolStrip2.TabIndex = 0;
-            toolStrip2.Text = "toolStrip2";
+            toolStrip_Proyectos.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            toolStrip_Proyectos.ImageScalingSize = new System.Drawing.Size(20, 20);
+            toolStrip_Proyectos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolNuevoProyecto, toolAbrirProyectoExistente, toolEliminarProyecto, toolStrpBtnCerrarProyectoActual, toolStripSeparator16, toolStrpBtn_AbrirSegun, toolStripSeparator8, toolStrpBtnGuardarTodosLosProyectosActuales, toolMinimizarTodosLosReportes, toolStrpBtnCerrarTodosLosRitsAbiertos, toolStripSeparator18, toolGeneracionRapidaDeReporte, toolStripLabel4, toolStripLabel3, toolLblActualMDIReporteName });
+            toolStrip_Proyectos.Location = new System.Drawing.Point(0, 0);
+            toolStrip_Proyectos.Name = "toolStrip_Proyectos";
+            toolStrip_Proyectos.Size = new System.Drawing.Size(1164, 42);
+            toolStrip_Proyectos.TabIndex = 0;
+            toolStrip_Proyectos.Text = "toolStrip2";
             // 
             // toolNuevoProyecto
             // 
-            toolNuevoProyecto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolNuevoProyecto.Image = Properties.Resources.project;
             toolNuevoProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolNuevoProyecto.Name = "toolNuevoProyecto";
-            toolNuevoProyecto.Size = new System.Drawing.Size(24, 24);
-            toolNuevoProyecto.Text = "Crear un nuevo proyecto RIT";
+            toolNuevoProyecto.Size = new System.Drawing.Size(46, 39);
+            toolNuevoProyecto.Text = "Nuevo";
+            toolNuevoProyecto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolNuevoProyecto.Click += nuevoProyectoToolStripMenuItem_Click;
             // 
             // toolAbrirProyectoExistente
             // 
-            toolAbrirProyectoExistente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolAbrirProyectoExistente.Image = Properties.Resources.project_open;
             toolAbrirProyectoExistente.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolAbrirProyectoExistente.Name = "toolAbrirProyectoExistente";
-            toolAbrirProyectoExistente.Size = new System.Drawing.Size(24, 24);
-            toolAbrirProyectoExistente.Text = "Abrir proyecto existente";
+            toolAbrirProyectoExistente.Size = new System.Drawing.Size(37, 39);
+            toolAbrirProyectoExistente.Text = "Abrir";
+            toolAbrirProyectoExistente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolAbrirProyectoExistente.Click += abrirTicketToolStripMenuItem_Click;
             // 
             // toolEliminarProyecto
             // 
-            toolEliminarProyecto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolEliminarProyecto.Enabled = false;
             toolEliminarProyecto.Image = Properties.Resources.project_delete;
             toolEliminarProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolEliminarProyecto.Name = "toolEliminarProyecto";
-            toolEliminarProyecto.Size = new System.Drawing.Size(24, 24);
-            toolEliminarProyecto.Text = "Eliminar este proyecto";
+            toolEliminarProyecto.Size = new System.Drawing.Size(54, 39);
+            toolEliminarProyecto.Text = "Eliminar";
+            toolEliminarProyecto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolEliminarProyecto.Click += toolEliminarProyecto_Click;
             // 
             // toolStrpBtnCerrarProyectoActual
             // 
-            toolStrpBtnCerrarProyectoActual.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolStrpBtnCerrarProyectoActual.Enabled = false;
             toolStrpBtnCerrarProyectoActual.Image = Properties.Resources.close1_32;
             toolStrpBtnCerrarProyectoActual.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolStrpBtnCerrarProyectoActual.Name = "toolStrpBtnCerrarProyectoActual";
-            toolStrpBtnCerrarProyectoActual.Size = new System.Drawing.Size(24, 24);
-            toolStrpBtnCerrarProyectoActual.Text = "Cerrar proyecto actual...";
+            toolStrpBtnCerrarProyectoActual.Size = new System.Drawing.Size(43, 39);
+            toolStrpBtnCerrarProyectoActual.Text = "Cerrar";
+            toolStrpBtnCerrarProyectoActual.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolStrpBtnCerrarProyectoActual.Click += toolStrpBtnCerrarProyectoActual_Click;
             // 
             // toolStripSeparator16
             // 
             toolStripSeparator16.Name = "toolStripSeparator16";
-            toolStripSeparator16.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator16.Size = new System.Drawing.Size(6, 42);
             // 
             // toolStrpBtn_AbrirSegun
             // 
-            toolStrpBtn_AbrirSegun.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolStrpBtn_AbrirSegun.Image = Properties.Resources.selection_items_32;
             toolStrpBtn_AbrirSegun.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolStrpBtn_AbrirSegun.Name = "toolStrpBtn_AbrirSegun";
-            toolStrpBtn_AbrirSegun.Size = new System.Drawing.Size(24, 24);
-            toolStrpBtn_AbrirSegun.Text = "Abrir solo segun...";
+            toolStrpBtn_AbrirSegun.Size = new System.Drawing.Size(46, 39);
+            toolStrpBtn_AbrirSegun.Text = "Abrir...";
+            toolStrpBtn_AbrirSegun.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolStrpBtn_AbrirSegun.Click += toolStrpBtn_AbrirSegun_Click;
             // 
             // toolStripSeparator8
             // 
             toolStripSeparator8.Name = "toolStripSeparator8";
-            toolStripSeparator8.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator8.Size = new System.Drawing.Size(6, 42);
             // 
             // toolStrpBtnGuardarTodosLosProyectosActuales
             // 
-            toolStrpBtnGuardarTodosLosProyectosActuales.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolStrpBtnGuardarTodosLosProyectosActuales.Enabled = false;
             toolStrpBtnGuardarTodosLosProyectosActuales.Image = Properties.Resources.save_all2;
             toolStrpBtnGuardarTodosLosProyectosActuales.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolStrpBtnGuardarTodosLosProyectosActuales.Name = "toolStrpBtnGuardarTodosLosProyectosActuales";
-            toolStrpBtnGuardarTodosLosProyectosActuales.Size = new System.Drawing.Size(24, 24);
-            toolStrpBtnGuardarTodosLosProyectosActuales.Text = "Guardar todos los proyectos abiertos";
+            toolStrpBtnGuardarTodosLosProyectosActuales.Size = new System.Drawing.Size(81, 39);
+            toolStrpBtnGuardarTodosLosProyectosActuales.Text = "Guardar todo";
+            toolStrpBtnGuardarTodosLosProyectosActuales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolStrpBtnGuardarTodosLosProyectosActuales.Click += toolStrpBtnGuardarTodosLosProyectosActuales_Click;
             // 
             // toolMinimizarTodosLosReportes
             // 
-            toolMinimizarTodosLosReportes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolMinimizarTodosLosReportes.Enabled = false;
             toolMinimizarTodosLosReportes.Image = Properties.Resources.minimize_all_windows;
             toolMinimizarTodosLosReportes.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolMinimizarTodosLosReportes.Name = "toolMinimizarTodosLosReportes";
-            toolMinimizarTodosLosReportes.Size = new System.Drawing.Size(24, 24);
-            toolMinimizarTodosLosReportes.Text = "Minimizar todos los proyectos abiertos";
+            toolMinimizarTodosLosReportes.Size = new System.Drawing.Size(92, 39);
+            toolMinimizarTodosLosReportes.Text = "Minimizar todo";
+            toolMinimizarTodosLosReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolMinimizarTodosLosReportes.Click += toolMinimizarTodosLosReportes_Click;
             // 
             // toolStrpBtnCerrarTodosLosRitsAbiertos
             // 
-            toolStrpBtnCerrarTodosLosRitsAbiertos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolStrpBtnCerrarTodosLosRitsAbiertos.Enabled = false;
             toolStrpBtnCerrarTodosLosRitsAbiertos.Image = Properties.Resources.close_all_38;
             toolStrpBtnCerrarTodosLosRitsAbiertos.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolStrpBtnCerrarTodosLosRitsAbiertos.Name = "toolStrpBtnCerrarTodosLosRitsAbiertos";
-            toolStrpBtnCerrarTodosLosRitsAbiertos.Size = new System.Drawing.Size(24, 24);
-            toolStrpBtnCerrarTodosLosRitsAbiertos.Text = "Cerrar todos los proyectos abiertos...";
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Size = new System.Drawing.Size(71, 39);
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Text = "Cerrar todo";
+            toolStrpBtnCerrarTodosLosRitsAbiertos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolStrpBtnCerrarTodosLosRitsAbiertos.Click += toolStrpBtnCerrarTodosLosRitsAbiertos_Click;
             // 
             // toolStripSeparator18
             // 
             toolStripSeparator18.Name = "toolStripSeparator18";
-            toolStripSeparator18.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator18.Size = new System.Drawing.Size(6, 42);
             // 
             // toolGeneracionRapidaDeReporte
             // 
-            toolGeneracionRapidaDeReporte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             toolGeneracionRapidaDeReporte.Enabled = false;
             toolGeneracionRapidaDeReporte.Image = Properties.Resources.fast_64;
             toolGeneracionRapidaDeReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolGeneracionRapidaDeReporte.Name = "toolGeneracionRapidaDeReporte";
-            toolGeneracionRapidaDeReporte.Size = new System.Drawing.Size(24, 24);
-            toolGeneracionRapidaDeReporte.Text = "Generacion rapida de RIT";
+            toolGeneracionRapidaDeReporte.Size = new System.Drawing.Size(58, 39);
+            toolGeneracionRapidaDeReporte.Text = "Gen. rap.";
+            toolGeneracionRapidaDeReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolGeneracionRapidaDeReporte.Click += toolGeneracionRapidaDeReporte_Click;
             // 
             // toolStripLabel4
             // 
             toolStripLabel4.Name = "toolStripLabel4";
-            toolStripLabel4.Size = new System.Drawing.Size(28, 24);
-            toolStripLabel4.Text = "       ";
+            toolStripLabel4.Size = new System.Drawing.Size(10, 39);
+            toolStripLabel4.Text = " ";
             // 
             // toolStripLabel3
             // 
             toolStripLabel3.Name = "toolStripLabel3";
-            toolStripLabel3.Size = new System.Drawing.Size(69, 24);
+            toolStripLabel3.Size = new System.Drawing.Size(69, 15);
             toolStripLabel3.Text = "Actual MDI:";
             // 
             // toolLblActualMDIReporteName
             // 
             toolLblActualMDIReporteName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
-            toolLblActualMDIReporteName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            toolLblActualMDIReporteName.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
             toolLblActualMDIReporteName.Name = "toolLblActualMDIReporteName";
-            toolLblActualMDIReporteName.Size = new System.Drawing.Size(12, 24);
+            toolLblActualMDIReporteName.Size = new System.Drawing.Size(12, 15);
             toolLblActualMDIReporteName.Text = "-";
             // 
             // tabFormCompusof
@@ -717,6 +688,18 @@ namespace Flow_Solver
             URL_RIT_Forms_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
             URL_RIT_Forms_Label.Name = "URL_RIT_Forms_Label";
             URL_RIT_Forms_Label.Size = new System.Drawing.Size(0, 24);
+            // 
+            // tabServiceDeskGMXT
+            // 
+            tabServiceDeskGMXT.AutoScroll = true;
+            tabServiceDeskGMXT.Location = new System.Drawing.Point(4, 39);
+            tabServiceDeskGMXT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabServiceDeskGMXT.Name = "tabServiceDeskGMXT";
+            tabServiceDeskGMXT.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabServiceDeskGMXT.Size = new System.Drawing.Size(1164, 531);
+            tabServiceDeskGMXT.TabIndex = 1;
+            tabServiceDeskGMXT.Text = "ServiceDesk GMXT";
+            tabServiceDeskGMXT.UseVisualStyleBackColor = true;
             // 
             // tabServiceDeskCompusof
             // 
@@ -874,24 +857,24 @@ namespace Flow_Solver
             treeViewCentroDeControl.Location = new System.Drawing.Point(7, 41);
             treeViewCentroDeControl.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             treeViewCentroDeControl.Name = "treeViewCentroDeControl";
-            treeNode2.Name = "nodeActividades";
-            treeNode2.Text = "Actividades";
-            treeNode2.ToolTipText = "Gestion de actividades programadas";
-            treeNode3.Name = "nodePendientesPorHacer";
-            treeNode3.Text = "Pendientes por hacer";
-            treeNode3.ToolTipText = "Seccion de Pendientes por Realizar";
-            treeNode4.ImageIndex = 3;
-            treeNode4.Name = "nodeEstadisticasMensualesAnteriores";
-            treeNode4.SelectedImageIndex = 3;
-            treeNode4.Text = "Historico de Estadisticas Mensuales";
-            treeNode5.ImageIndex = 4;
-            treeNode5.Name = "nodeSeguimientoDeGuias";
-            treeNode5.SelectedImageIndex = 4;
-            treeNode5.Text = "Seguimiento de Guias";
-            treeNode5.ToolTipText = "Da seguimiento a guias trackeaas en el sistema para saber con mayor efectividad y facilidad su ubicacion actual";
-            treeNode6.Name = "nodeSolicitudesDeViaticos";
-            treeNode6.Text = "Solicitudes de Viaticos";
-            treeViewCentroDeControl.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { treeNode2, treeNode3, treeNode4, treeNode5, treeNode6 });
+            treeNode1.Name = "nodeActividades";
+            treeNode1.Text = "Actividades";
+            treeNode1.ToolTipText = "Gestion de actividades programadas";
+            treeNode8.Name = "nodePendientesPorHacer";
+            treeNode8.Text = "Pendientes por hacer";
+            treeNode8.ToolTipText = "Seccion de Pendientes por Realizar";
+            treeNode9.ImageIndex = 3;
+            treeNode9.Name = "nodeEstadisticasMensualesAnteriores";
+            treeNode9.SelectedImageIndex = 3;
+            treeNode9.Text = "Historico de Estadisticas Mensuales";
+            treeNode10.ImageIndex = 4;
+            treeNode10.Name = "nodeSeguimientoDeGuias";
+            treeNode10.SelectedImageIndex = 4;
+            treeNode10.Text = "Seguimiento de Guias";
+            treeNode10.ToolTipText = "Da seguimiento a guias trackeaas en el sistema para saber con mayor efectividad y facilidad su ubicacion actual";
+            treeNode11.Name = "nodeSolicitudesDeViaticos";
+            treeNode11.Text = "Solicitudes de Viaticos";
+            treeViewCentroDeControl.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { treeNode1, treeNode8, treeNode9, treeNode10, treeNode11 });
             treeViewCentroDeControl.SelectedImageIndex = 0;
             treeViewCentroDeControl.Size = new System.Drawing.Size(180, 301);
             treeViewCentroDeControl.TabIndex = 0;
@@ -936,12 +919,15 @@ namespace Flow_Solver
             // 
             // lblNombreNodoSeleccionado
             // 
+            lblNombreNodoSeleccionado.AutoSize = true;
             lblNombreNodoSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Bold);
             lblNombreNodoSeleccionado.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            lblNombreNodoSeleccionado.ImagePadding = 5;
+            lblNombreNodoSeleccionado.LeftImage = null;
             lblNombreNodoSeleccionado.Location = new System.Drawing.Point(4, 6);
             lblNombreNodoSeleccionado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             lblNombreNodoSeleccionado.Name = "lblNombreNodoSeleccionado";
-            lblNombreNodoSeleccionado.Size = new System.Drawing.Size(178, 44);
+            lblNombreNodoSeleccionado.Size = new System.Drawing.Size(378, 17);
             lblNombreNodoSeleccionado.TabIndex = 1;
             lblNombreNodoSeleccionado.Text = "Ejemplo de titulo de un nodo para  secciones del programa ";
             // 
@@ -1439,7 +1425,7 @@ namespace Flow_Solver
             // 
             // menuOpcionesDeProyectos
             // 
-            menuOpcionesDeProyectos.BackColor = System.Drawing.Color.FromArgb(255, 59, 63);
+            menuOpcionesDeProyectos.BackColor = System.Drawing.SystemColors.ActiveCaption;
             menuOpcionesDeProyectos.ImageScalingSize = new System.Drawing.Size(20, 20);
             menuOpcionesDeProyectos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { archivoToolStripMenuItem, herramientasToolStripMenuItem, webToolStripMenuItem, solicitudesToolStripMenuItem, utilidadesToolStripMenuItem });
             menuOpcionesDeProyectos.Location = new System.Drawing.Point(0, 0);
@@ -1956,18 +1942,6 @@ namespace Flow_Solver
             URL_GMXT_SAS_Label.Name = "URL_GMXT_SAS_Label";
             URL_GMXT_SAS_Label.Size = new System.Drawing.Size(0, 24);
             // 
-            // tabServiceDeskGMXT
-            // 
-            tabServiceDeskGMXT.AutoScroll = true;
-            tabServiceDeskGMXT.Location = new System.Drawing.Point(4, 39);
-            tabServiceDeskGMXT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            tabServiceDeskGMXT.Name = "tabServiceDeskGMXT";
-            tabServiceDeskGMXT.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            tabServiceDeskGMXT.Size = new System.Drawing.Size(1164, 531);
-            tabServiceDeskGMXT.TabIndex = 1;
-            tabServiceDeskGMXT.Text = "ServiceDesk GMXT";
-            tabServiceDeskGMXT.UseVisualStyleBackColor = true;
-            // 
             // statusStripSDPGMXT
             // 
             statusStripSDPGMXT.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -1978,11 +1952,22 @@ namespace Flow_Solver
             statusStripSDPGMXT.Size = new System.Drawing.Size(1158, 26);
             statusStripSDPGMXT.TabIndex = 0;
             // 
+            // propertyGrid1
+            // 
+            propertyGrid1.CommandsVisibleIfAvailable = false;
+            propertyGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            propertyGrid1.HelpVisible = false;
+            propertyGrid1.Location = new System.Drawing.Point(0, 0);
+            propertyGrid1.Name = "propertyGrid1";
+            propertyGrid1.Size = new System.Drawing.Size(265, 110);
+            propertyGrid1.TabIndex = 0;
+            propertyGrid1.ViewBackColor = System.Drawing.SystemColors.InactiveCaption;
+            // 
             // main
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.SystemColors.Control;
+            BackColor = System.Drawing.SystemColors.ActiveCaption;
             ClientSize = new System.Drawing.Size(1172, 646);
             Controls.Add(tableLayoutPanelFondoGeneral);
             Controls.Add(tableLayoutPanelBarraMultifuncion);
@@ -2006,13 +1991,20 @@ namespace Flow_Solver
             tabControl_Pages.ResumeLayout(false);
             tabProyectos.ResumeLayout(false);
             tabProyectos.PerformLayout();
-            tableLayoutPanelProyectos.ResumeLayout(false);
-            MDI_RIT_Panel.ResumeLayout(false);
-            tableLayoutPanelProyectos_Nodos.ResumeLayout(false);
-            panel6.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            toolStrip2.ResumeLayout(false);
-            toolStrip2.PerformLayout();
+            splitContainer_TabPageBack.Panel1.ResumeLayout(false);
+            splitContainer_TabPageBack.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer_TabPageBack).EndInit();
+            splitContainer_TabPageBack.ResumeLayout(false);
+            splitContainer_HeaderTreeViewProyectos.Panel1.ResumeLayout(false);
+            splitContainer_HeaderTreeViewProyectos.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer_HeaderTreeViewProyectos).EndInit();
+            splitContainer_HeaderTreeViewProyectos.ResumeLayout(false);
+            splitContainer_ProyectosInformacion.Panel1.ResumeLayout(false);
+            splitContainer_ProyectosInformacion.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer_ProyectosInformacion).EndInit();
+            splitContainer_ProyectosInformacion.ResumeLayout(false);
+            toolStrip_Proyectos.ResumeLayout(false);
+            toolStrip_Proyectos.PerformLayout();
             tabFormCompusof.ResumeLayout(false);
             tabFormCompusof.PerformLayout();
             statusStripForms.ResumeLayout(false);
@@ -2031,6 +2023,7 @@ namespace Flow_Solver
             MDI_ACT_Panel.ResumeLayout(false);
             tableLayoutPanelCentroDeControl_Nodos.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel1.ResumeLayout(false);
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
@@ -2078,17 +2071,15 @@ namespace Flow_Solver
         private System.Windows.Forms.ToolStripButton toolAbrirActividad;
         private System.Windows.Forms.ToolStripButton toolEliminarActividad;
         private System.Windows.Forms.ToolStripButton toolCerrarActividad;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelProyectos;
-        private System.Windows.Forms.ToolStrip toolStrip2;
+        private flCustomToolStrip toolStrip_Proyectos;
         private System.Windows.Forms.ToolStripButton toolNuevoProyecto;
         private System.Windows.Forms.ToolStripButton toolAbrirProyectoExistente;
-        private System.Windows.Forms.Panel MDI_RIT_Panel;
         private System.Windows.Forms.ToolStripButton toolEliminarProyecto;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolImportarActividad;
         private System.Windows.Forms.ToolStripButton toolExportarActividad;
         private System.Windows.Forms.Label lblNombreSeccion;
-        private System.Windows.Forms.Label lblNombreNodoSeleccionado;
+        private flCustomLabel lblNombreNodoSeleccionado;
         private System.Windows.Forms.ToolStripButton toolNuevaSeccion;
         private System.Windows.Forms.Label lblDescripcionDeNodo;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
@@ -2195,7 +2186,6 @@ namespace Flow_Solver
         private System.Windows.Forms.ToolStripMenuItem gtrabrToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuOpcionesDeProyectos;
         private System.Windows.Forms.Panel panel7;
-        public System.Windows.Forms.Label lblProyectos_Text;
         private System.ComponentModel.BackgroundWorker backgroundWorker_StartScreen;
         public System.ComponentModel.BackgroundWorker backgroundWorker_WaitScreen;
         private System.Windows.Forms.ToolStripButton toolGeneracionRapidaDeReporte;
@@ -2212,13 +2202,6 @@ namespace Flow_Solver
         private System.Windows.Forms.ToolStripMenuItem ejecutarMacroFuncionWeb3ToolStripMenuItem;
         private System.Windows.Forms.Label lblCentroControl_Text;
         private System.ComponentModel.BackgroundWorker bgworkerMDIsFormsLoader;
-        private System.Windows.Forms.ProgressBar pgrssbarAbrirFormularios;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelProyectos_Nodos;
-        public System.Windows.Forms.TreeView treeViewProyectos;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.RichTextBox lblNombreDeNodoSeleccionado;
-        private System.Windows.Forms.Panel panel4;
-        public System.Windows.Forms.Label lblNodoDeProyectosSeleccionado;
         private System.Windows.Forms.ToolStripButton toolMinimizarTodosLosReportes;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
@@ -2247,5 +2230,12 @@ namespace Flow_Solver
         private System.Windows.Forms.ToolStripButton toolBtnRecargarSAS;
         private System.Windows.Forms.ToolStripLabel URL_GMXT_SAS_Label;
         private System.Windows.Forms.StatusStrip statusStripSDPGMXT;
+        private System.Windows.Forms.SplitContainer splitContainer_TabPageBack;
+        private System.Windows.Forms.SplitContainer splitContainer_HeaderTreeViewProyectos;
+        private System.Windows.Forms.SplitContainer splitContainer_ProyectosInformacion;
+        public System.Windows.Forms.Label lblNodoDeProyectosSeleccionado;
+        public System.Windows.Forms.TreeView treeViewProyectos;
+        private System.Windows.Forms.Panel MDI_RIT_Panel;
+        private System.Windows.Forms.PropertyGrid propertyGrid1;
     }
 }
