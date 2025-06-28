@@ -161,6 +161,7 @@
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "login_form";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             Text = "Flow Solver - Login";
             Load += login_form_Load;
             panel1.ResumeLayout(false);

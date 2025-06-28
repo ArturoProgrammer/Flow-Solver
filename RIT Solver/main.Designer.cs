@@ -30,7 +30,7 @@ namespace Flow_Solver
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Mis Proyectos");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Actividades");
@@ -38,944 +38,842 @@ namespace Flow_Solver
             System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Historico de Estadisticas Mensuales", 3, 3);
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Seguimiento de Guias", 4, 4);
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Solicitudes de Viaticos");
-            this.contextMenuStripNodos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
-            this.minimizarProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.tableLayoutPanelFondoGeneral = new System.Windows.Forms.TableLayoutPanel();
-            this.tabControl_Pages = new flCustomTabControl();
-            this.tabProyectos = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanelProyectos = new System.Windows.Forms.TableLayoutPanel();
-            this.MDI_RIT_Panel = new System.Windows.Forms.Panel();
-            this.pgrssbarAbrirFormularios = new System.Windows.Forms.ProgressBar();
-            this.lblProyectos_Text = new System.Windows.Forms.Label();
-            this.tableLayoutPanelProyectos_Nodos = new System.Windows.Forms.TableLayoutPanel();
-            this.treeViewProyectos = new System.Windows.Forms.TreeView();
-            this.imageList_RIT = new System.Windows.Forms.ImageList(this.components);
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lblNombreDeNodoSeleccionado = new System.Windows.Forms.RichTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblNodoDeProyectosSeleccionado = new System.Windows.Forms.Label();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolNuevoProyecto = new System.Windows.Forms.ToolStripButton();
-            this.toolAbrirProyectoExistente = new System.Windows.Forms.ToolStripButton();
-            this.toolEliminarProyecto = new System.Windows.Forms.ToolStripButton();
-            this.toolStrpBtnCerrarProyectoActual = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStrpBtn_AbrirSegun = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStrpBtnGuardarTodosLosProyectosActuales = new System.Windows.Forms.ToolStripButton();
-            this.toolMinimizarTodosLosReportes = new System.Windows.Forms.ToolStripButton();
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolGeneracionRapidaDeReporte = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.toolLblActualMDIReporteName = new System.Windows.Forms.ToolStripLabel();
-            this.tabFormCompusof = new System.Windows.Forms.TabPage();
-            this.webView_CompusofForms = new Microsoft.Web.WebView2.WinForms.WebView2();
-            this.statusStripForms = new System.Windows.Forms.StatusStrip();
-            this.toolBtnRecargarForms = new System.Windows.Forms.ToolStripButton();
-            this.URL_RIT_Forms_Label = new System.Windows.Forms.ToolStripLabel();
-            this.tabServiceDeskGMXT = new System.Windows.Forms.TabPage();
-            this.statusStripSDPGMXT = new System.Windows.Forms.StatusStrip();
-            this.toolBtnRecargarSAS = new System.Windows.Forms.ToolStripButton();
-            this.URL_GMXT_SAS_Label = new System.Windows.Forms.ToolStripLabel();
-            this.tabServiceDeskCompusof = new System.Windows.Forms.TabPage();
-            this.webView_ServiceDeskCompusof = new Microsoft.Web.WebView2.WinForms.WebView2();
-            this.statusStripEndPointcentral = new System.Windows.Forms.StatusStrip();
-            this.toolBtnRecargarSDPCompusof = new System.Windows.Forms.ToolStripButton();
-            this.URL_SDP_Compusof_Label = new System.Windows.Forms.ToolStripLabel();
-            this.tabEndpointCentral = new System.Windows.Forms.TabPage();
-            this.statusStripSDPCompusof = new System.Windows.Forms.StatusStrip();
-            this.toolBtnRecargarServiceDeskCompusof = new System.Windows.Forms.ToolStripButton();
-            this.URL_EndPoint_Central_Label = new System.Windows.Forms.ToolStripLabel();
-            this.tabCentroDeControl = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanelCentroDeControl = new System.Windows.Forms.TableLayoutPanel();
-            this.MDI_ACT_Panel = new System.Windows.Forms.Panel();
-            this.lblCentroControl_Text = new System.Windows.Forms.Label();
-            this.tableLayoutPanelCentroDeControl_Nodos = new System.Windows.Forms.TableLayoutPanel();
-            this.treeViewCentroDeControl = new System.Windows.Forms.TreeView();
-            this.imageList_Actividades = new System.Windows.Forms.ImageList(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblDescripcionDeNodo = new System.Windows.Forms.Label();
-            this.lblNombreNodoSeleccionado = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblNombreSeccion = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolCrearActividad = new System.Windows.Forms.ToolStripButton();
-            this.toolAbrirActividad = new System.Windows.Forms.ToolStripButton();
-            this.toolEliminarActividad = new System.Windows.Forms.ToolStripButton();
-            this.toolCerrarActividad = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolImportarActividad = new System.Windows.Forms.ToolStripButton();
-            this.toolExportarActividad = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolNuevoPendientePorHacer = new System.Windows.Forms.ToolStripButton();
-            this.toolImportarListaDePendientes = new System.Windows.Forms.ToolStripButton();
-            this.toolEliminarListaDePendientesPorHacer = new System.Windows.Forms.ToolStripButton();
-            this.toolCerrarListaDePendientes = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolNuevaSeccion = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStrpBtnMinimizarTodasLasVentanas = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
-            this.toolLblActualMDIActividadName = new System.Windows.Forms.ToolStripLabel();
-            this.webBrowser4 = new System.Windows.Forms.WebBrowser();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.menuOpcionesActividades = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.crearActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.maximizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.minimizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.enviarAvanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarPermanentementeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuOpcionesAnuncios = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.crearAnuncioStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirAnuncioStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.maximizarStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.minizarStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarDeLaVistaStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.borrarPermanentementeStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-            this.cerrarStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda = new System.Windows.Forms.TableLayoutPanel();
-            this.btnFuncion2 = new System.Windows.Forms.Button();
-            this.btnFuncion1 = new System.Windows.Forms.Button();
-            this.lblContactoFallos = new System.Windows.Forms.LinkLabel();
-            this.btnFuncion3 = new System.Windows.Forms.Button();
-            this.tableLayoutPanelBarraMultifuncion = new System.Windows.Forms.TableLayoutPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.menuOpcionesDeProyectos = new System.Windows.Forms.MenuStrip();
-            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.archivosRecientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.nuevaActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importarActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarActividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoAnuncioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.buscarActualizacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarActualizacionesBETAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.sistemaDeInventariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seleccionarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoDeHistorialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seguimientoDeGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dHLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paqueteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fedexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.imprimirRITEnBlancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.herramientaDeReparacionAvanzadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportarFallaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.webToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recargarSASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recargarFormsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recargarManageDeskCompusofToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recargarEndpointCentralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.funcionesWebMacroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarMacroFuncionWeb1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarMacroFuncionWeb2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarMacroFuncionWeb3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.solicitarRefaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.solicitarTonerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.utilidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.escaladoDeReportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.organigramaDeContactoCompusofToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.herramientasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pCIETToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grabarEnCarpetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.grabarEnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.grabarEnCarpetaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.crystalDiskInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gtrabrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.backgroundWorker_StartScreen = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker_WaitScreen = new System.ComponentModel.BackgroundWorker();
-            this.bgworker_RitSolverUpdater = new System.ComponentModel.BackgroundWorker();
-            this.bgworkerMDIsFormsLoader = new System.ComponentModel.BackgroundWorker();
-            this.contextMenuStripNodos.SuspendLayout();
-            this.tableLayoutPanelFondoGeneral.SuspendLayout();
-            this.tabControl_Pages.SuspendLayout();
-            this.tabProyectos.SuspendLayout();
-            this.tableLayoutPanelProyectos.SuspendLayout();
-            this.MDI_RIT_Panel.SuspendLayout();
-            this.tableLayoutPanelProyectos_Nodos.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.toolStrip2.SuspendLayout();
-            this.tabFormCompusof.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.webView_CompusofForms)).BeginInit();
-            this.statusStripForms.SuspendLayout();
-            this.tabServiceDeskGMXT.SuspendLayout();
-            this.statusStripSDPGMXT.SuspendLayout();
-            this.tabServiceDeskCompusof.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.webView_ServiceDeskCompusof)).BeginInit();
-            this.statusStripEndPointcentral.SuspendLayout();
-            this.tabEndpointCentral.SuspendLayout();
-            this.statusStripSDPCompusof.SuspendLayout();
-            this.tabCentroDeControl.SuspendLayout();
-            this.tableLayoutPanelCentroDeControl.SuspendLayout();
-            this.MDI_ACT_Panel.SuspendLayout();
-            this.tableLayoutPanelCentroDeControl_Nodos.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.menuOpcionesActividades.SuspendLayout();
-            this.menuOpcionesAnuncios.SuspendLayout();
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.SuspendLayout();
-            this.tableLayoutPanelBarraMultifuncion.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.menuOpcionesDeProyectos.SuspendLayout();
-            this.SuspendLayout();
+            contextMenuStripNodos = new System.Windows.Forms.ContextMenuStrip(components);
+            toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            cerrarProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
+            minimizarProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
+            printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            printDialog1 = new System.Windows.Forms.PrintDialog();
+            tableLayoutPanelFondoGeneral = new System.Windows.Forms.TableLayoutPanel();
+            tabControl_Pages = new flExtendedTabControl();
+            tabProyectos = new System.Windows.Forms.TabPage();
+            tableLayoutPanelProyectos = new System.Windows.Forms.TableLayoutPanel();
+            MDI_RIT_Panel = new System.Windows.Forms.Panel();
+            pgrssbarAbrirFormularios = new System.Windows.Forms.ProgressBar();
+            lblProyectos_Text = new System.Windows.Forms.Label();
+            tableLayoutPanelProyectos_Nodos = new System.Windows.Forms.TableLayoutPanel();
+            treeViewProyectos = new System.Windows.Forms.TreeView();
+            imageList_RIT = new System.Windows.Forms.ImageList(components);
+            panel6 = new System.Windows.Forms.Panel();
+            lblNombreDeNodoSeleccionado = new System.Windows.Forms.RichTextBox();
+            panel4 = new System.Windows.Forms.Panel();
+            lblNodoDeProyectosSeleccionado = new System.Windows.Forms.Label();
+            toolStrip2 = new System.Windows.Forms.ToolStrip();
+            toolNuevoProyecto = new System.Windows.Forms.ToolStripButton();
+            toolAbrirProyectoExistente = new System.Windows.Forms.ToolStripButton();
+            toolEliminarProyecto = new System.Windows.Forms.ToolStripButton();
+            toolStrpBtnCerrarProyectoActual = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            toolStrpBtn_AbrirSegun = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            toolStrpBtnGuardarTodosLosProyectosActuales = new System.Windows.Forms.ToolStripButton();
+            toolMinimizarTodosLosReportes = new System.Windows.Forms.ToolStripButton();
+            toolStrpBtnCerrarTodosLosRitsAbiertos = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
+            toolGeneracionRapidaDeReporte = new System.Windows.Forms.ToolStripButton();
+            toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            toolLblActualMDIReporteName = new System.Windows.Forms.ToolStripLabel();
+            tabFormCompusof = new System.Windows.Forms.TabPage();
+            statusStripForms = new System.Windows.Forms.StatusStrip();
+            toolBtnRecargarForms = new System.Windows.Forms.ToolStripButton();
+            URL_RIT_Forms_Label = new System.Windows.Forms.ToolStripLabel();
+            tabServiceDeskCompusof = new System.Windows.Forms.TabPage();
+            statusStripEndPointcentral = new System.Windows.Forms.StatusStrip();
+            toolBtnRecargarSDPCompusof = new System.Windows.Forms.ToolStripButton();
+            URL_SDP_Compusof_Label = new System.Windows.Forms.ToolStripLabel();
+            tabEndpointCentral = new System.Windows.Forms.TabPage();
+            statusStripSDPCompusof = new System.Windows.Forms.StatusStrip();
+            toolBtnRecargarServiceDeskCompusof = new System.Windows.Forms.ToolStripButton();
+            URL_EndPoint_Central_Label = new System.Windows.Forms.ToolStripLabel();
+            tabCentroDeControl = new System.Windows.Forms.TabPage();
+            tableLayoutPanelCentroDeControl = new System.Windows.Forms.TableLayoutPanel();
+            MDI_ACT_Panel = new System.Windows.Forms.Panel();
+            lblCentroControl_Text = new System.Windows.Forms.Label();
+            tableLayoutPanelCentroDeControl_Nodos = new System.Windows.Forms.TableLayoutPanel();
+            treeViewCentroDeControl = new System.Windows.Forms.TreeView();
+            imageList_Actividades = new System.Windows.Forms.ImageList(components);
+            panel3 = new System.Windows.Forms.Panel();
+            lblDescripcionDeNodo = new System.Windows.Forms.Label();
+            lblNombreNodoSeleccionado = new System.Windows.Forms.Label();
+            panel1 = new System.Windows.Forms.Panel();
+            lblNombreSeccion = new System.Windows.Forms.Label();
+            toolStrip1 = new System.Windows.Forms.ToolStrip();
+            toolCrearActividad = new System.Windows.Forms.ToolStripButton();
+            toolAbrirActividad = new System.Windows.Forms.ToolStripButton();
+            toolEliminarActividad = new System.Windows.Forms.ToolStripButton();
+            toolCerrarActividad = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            toolImportarActividad = new System.Windows.Forms.ToolStripButton();
+            toolExportarActividad = new System.Windows.Forms.ToolStripButton();
+            toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            toolNuevoPendientePorHacer = new System.Windows.Forms.ToolStripButton();
+            toolImportarListaDePendientes = new System.Windows.Forms.ToolStripButton();
+            toolEliminarListaDePendientesPorHacer = new System.Windows.Forms.ToolStripButton();
+            toolCerrarListaDePendientes = new System.Windows.Forms.ToolStripButton();
+            toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            toolNuevaSeccion = new System.Windows.Forms.ToolStripButton();
+            toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            toolStrpBtnMinimizarTodasLasVentanas = new System.Windows.Forms.ToolStripButton();
+            toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
+            toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
+            toolLblActualMDIActividadName = new System.Windows.Forms.ToolStripLabel();
+            webBrowser4 = new System.Windows.Forms.WebBrowser();
+            saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            notifyIcon1 = new System.Windows.Forms.NotifyIcon(components);
+            tabControl1 = new System.Windows.Forms.TabControl();
+            tabPage1 = new System.Windows.Forms.TabPage();
+            tabPage2 = new System.Windows.Forms.TabPage();
+            menuOpcionesActividades = new System.Windows.Forms.ContextMenuStrip(components);
+            crearActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            abrirActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            maximizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            minimizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            enviarAvanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            importarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            borrarPermanentementeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            menuOpcionesAnuncios = new System.Windows.Forms.ContextMenuStrip(components);
+            crearAnuncioStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            abrirAnuncioStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            maximizarStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            minizarStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            eliminarDeLaVistaStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
+            borrarPermanentementeStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            cerrarStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            linkLabel1 = new System.Windows.Forms.LinkLabel();
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda = new System.Windows.Forms.TableLayoutPanel();
+            btnFuncion2 = new System.Windows.Forms.Button();
+            btnFuncion1 = new System.Windows.Forms.Button();
+            lblContactoFallos = new System.Windows.Forms.LinkLabel();
+            btnFuncion3 = new System.Windows.Forms.Button();
+            tableLayoutPanelBarraMultifuncion = new System.Windows.Forms.TableLayoutPanel();
+            panel7 = new System.Windows.Forms.Panel();
+            menuOpcionesDeProyectos = new System.Windows.Forms.MenuStrip();
+            archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            nuevoProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            abrirTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            archivosRecientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            nuevaActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            importarActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            exportarActividadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            nuevoAnuncioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            buscarActualizacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            buscarActualizacionesBETAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            sistemaDeInventariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            seleccionarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            listadoDeHistorialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            seguimientoDeGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            dHLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            paqueteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            fedexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            imprimirRITEnBlancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            herramientaDeReparacionAvanzadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            reportarFallaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            webToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            recargarSASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            recargarFormsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            recargarManageDeskCompusofToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            recargarEndpointCentralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            funcionesWebMacroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ejecutarMacroFuncionWeb1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ejecutarMacroFuncionWeb2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ejecutarMacroFuncionWeb3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            solicitarRefaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            solicitarTonerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            utilidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            escaladoDeReportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            organigramaDeContactoCompusofToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            herramientasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            pCIETToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ejecutarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            grabarEnCarpetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            omisorDeComprobacionesDeOracleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ejecutarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            grabarEnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ejecutarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            grabarEnCarpetaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            crystalDiskInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ejecutarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            gtrabrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            backgroundWorker_StartScreen = new System.ComponentModel.BackgroundWorker();
+            backgroundWorker_WaitScreen = new System.ComponentModel.BackgroundWorker();
+            bgworker_RitSolverUpdater = new System.ComponentModel.BackgroundWorker();
+            bgworkerMDIsFormsLoader = new System.ComponentModel.BackgroundWorker();
+            miniToolStrip = new System.Windows.Forms.StatusStrip();
+            toolBtnRecargarSAS = new System.Windows.Forms.ToolStripButton();
+            URL_GMXT_SAS_Label = new System.Windows.Forms.ToolStripLabel();
+            tabServiceDeskGMXT = new System.Windows.Forms.TabPage();
+            statusStripSDPGMXT = new System.Windows.Forms.StatusStrip();
+            contextMenuStripNodos.SuspendLayout();
+            tableLayoutPanelFondoGeneral.SuspendLayout();
+            tabControl_Pages.SuspendLayout();
+            tabProyectos.SuspendLayout();
+            tableLayoutPanelProyectos.SuspendLayout();
+            MDI_RIT_Panel.SuspendLayout();
+            tableLayoutPanelProyectos_Nodos.SuspendLayout();
+            panel6.SuspendLayout();
+            panel4.SuspendLayout();
+            toolStrip2.SuspendLayout();
+            tabFormCompusof.SuspendLayout();
+            statusStripForms.SuspendLayout();
+            tabServiceDeskCompusof.SuspendLayout();
+            statusStripEndPointcentral.SuspendLayout();
+            tabEndpointCentral.SuspendLayout();
+            statusStripSDPCompusof.SuspendLayout();
+            tabCentroDeControl.SuspendLayout();
+            tableLayoutPanelCentroDeControl.SuspendLayout();
+            MDI_ACT_Panel.SuspendLayout();
+            tableLayoutPanelCentroDeControl_Nodos.SuspendLayout();
+            panel3.SuspendLayout();
+            panel1.SuspendLayout();
+            toolStrip1.SuspendLayout();
+            menuOpcionesActividades.SuspendLayout();
+            menuOpcionesAnuncios.SuspendLayout();
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.SuspendLayout();
+            tableLayoutPanelBarraMultifuncion.SuspendLayout();
+            panel7.SuspendLayout();
+            menuOpcionesDeProyectos.SuspendLayout();
+            statusStripSDPGMXT.SuspendLayout();
+            SuspendLayout();
             // 
             // contextMenuStripNodos
             // 
-            this.contextMenuStripNodos.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStripNodos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem1,
-            this.cerrarProyectoToolStripMenuItem,
-            this.toolStripMenuItem3,
-            this.toolStripSeparator19,
-            this.minimizarProyectoToolStripMenuItem});
-            this.contextMenuStripNodos.Name = "contextMenuStripNodos";
-            this.contextMenuStripNodos.Size = new System.Drawing.Size(291, 140);
+            contextMenuStripNodos.ImageScalingSize = new System.Drawing.Size(20, 20);
+            contextMenuStripNodos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem2, toolStripMenuItem1, cerrarProyectoToolStripMenuItem, toolStripMenuItem3, toolStripSeparator19, minimizarProyectoToolStripMenuItem });
+            contextMenuStripNodos.Name = "contextMenuStripNodos";
+            contextMenuStripNodos.Size = new System.Drawing.Size(244, 140);
             // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.Image = global::Flow_Solver.Properties.Resources.project;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(290, 26);
-            this.toolStripMenuItem2.Text = "Nuevo proyecto";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.nuevoProyectoToolStripMenuItem_Click);
+            toolStripMenuItem2.Image = Properties.Resources.project;
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new System.Drawing.Size(243, 26);
+            toolStripMenuItem2.Text = "Nuevo proyecto";
+            toolStripMenuItem2.Click += nuevoProyectoToolStripMenuItem_Click;
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Image = global::Flow_Solver.Properties.Resources.project_delete;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(290, 26);
-            this.toolStripMenuItem1.Text = "Eliminar proyecto seleccionado";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolEliminarProyecto_Click);
+            toolStripMenuItem1.Image = Properties.Resources.project_delete;
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new System.Drawing.Size(243, 26);
+            toolStripMenuItem1.Text = "Eliminar proyecto seleccionado";
+            toolStripMenuItem1.Click += toolEliminarProyecto_Click;
             // 
             // cerrarProyectoToolStripMenuItem
             // 
-            this.cerrarProyectoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.close1_32;
-            this.cerrarProyectoToolStripMenuItem.Name = "cerrarProyectoToolStripMenuItem";
-            this.cerrarProyectoToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
-            this.cerrarProyectoToolStripMenuItem.Text = "Cerrar proyecto";
-            this.cerrarProyectoToolStripMenuItem.Click += new System.EventHandler(this.cerrarProyectoToolStripMenuItem_Click);
+            cerrarProyectoToolStripMenuItem.Image = Properties.Resources.close1_32;
+            cerrarProyectoToolStripMenuItem.Name = "cerrarProyectoToolStripMenuItem";
+            cerrarProyectoToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            cerrarProyectoToolStripMenuItem.Text = "Cerrar proyecto";
+            cerrarProyectoToolStripMenuItem.Click += cerrarProyectoToolStripMenuItem_Click;
             // 
             // toolStripMenuItem3
             // 
-            this.toolStripMenuItem3.Enabled = false;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(290, 26);
-            this.toolStripMenuItem3.Text = "Enviar por correo";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            toolStripMenuItem3.Enabled = false;
+            toolStripMenuItem3.Name = "toolStripMenuItem3";
+            toolStripMenuItem3.Size = new System.Drawing.Size(243, 26);
+            toolStripMenuItem3.Text = "Enviar por correo";
+            toolStripMenuItem3.Click += toolStripMenuItem3_Click;
             // 
             // toolStripSeparator19
             // 
-            this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(287, 6);
+            toolStripSeparator19.Name = "toolStripSeparator19";
+            toolStripSeparator19.Size = new System.Drawing.Size(240, 6);
             // 
             // minimizarProyectoToolStripMenuItem
             // 
-            this.minimizarProyectoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.minimize_window_32;
-            this.minimizarProyectoToolStripMenuItem.Name = "minimizarProyectoToolStripMenuItem";
-            this.minimizarProyectoToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
-            this.minimizarProyectoToolStripMenuItem.Text = "Minimizar proyecto";
-            this.minimizarProyectoToolStripMenuItem.Click += new System.EventHandler(this.minimizarProyectoToolStripMenuItem_Click);
+            minimizarProyectoToolStripMenuItem.Image = Properties.Resources.minimize_window_32;
+            minimizarProyectoToolStripMenuItem.Name = "minimizarProyectoToolStripMenuItem";
+            minimizarProyectoToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            minimizarProyectoToolStripMenuItem.Text = "Minimizar proyecto";
+            minimizarProyectoToolStripMenuItem.Click += minimizarProyectoToolStripMenuItem_Click;
             // 
             // printPreviewDialog1
             // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Document = this.printDocument1;
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
+            printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.Enabled = true;
+            printPreviewDialog1.Icon = (System.Drawing.Icon)resources.GetObject("printPreviewDialog1.Icon");
+            printPreviewDialog1.Name = "printPreviewDialog1";
+            printPreviewDialog1.Visible = false;
             // 
             // printDialog1
             // 
-            this.printDialog1.AllowSomePages = true;
-            this.printDialog1.UseEXDialog = true;
+            printDialog1.AllowSomePages = true;
+            printDialog1.UseEXDialog = true;
             // 
             // tableLayoutPanelFondoGeneral
             // 
-            this.tableLayoutPanelFondoGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanelFondoGeneral.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tableLayoutPanelFondoGeneral.ColumnCount = 1;
-            this.tableLayoutPanelFondoGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanelFondoGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelFondoGeneral.Controls.Add(this.tabControl_Pages, 0, 1);
-            this.tableLayoutPanelFondoGeneral.Location = new System.Drawing.Point(0, 30);
-            this.tableLayoutPanelFondoGeneral.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelFondoGeneral.Name = "tableLayoutPanelFondoGeneral";
-            this.tableLayoutPanelFondoGeneral.RowCount = 2;
-            this.tableLayoutPanelFondoGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5020914F));
-            this.tableLayoutPanelFondoGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.91939F));
-            this.tableLayoutPanelFondoGeneral.Size = new System.Drawing.Size(1339, 614);
-            this.tableLayoutPanelFondoGeneral.TabIndex = 2;
+            tableLayoutPanelFondoGeneral.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tableLayoutPanelFondoGeneral.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            tableLayoutPanelFondoGeneral.ColumnCount = 1;
+            tableLayoutPanelFondoGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            tableLayoutPanelFondoGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            tableLayoutPanelFondoGeneral.Controls.Add(tabControl_Pages, 0, 1);
+            tableLayoutPanelFondoGeneral.Location = new System.Drawing.Point(0, 28);
+            tableLayoutPanelFondoGeneral.Margin = new System.Windows.Forms.Padding(0);
+            tableLayoutPanelFondoGeneral.Name = "tableLayoutPanelFondoGeneral";
+            tableLayoutPanelFondoGeneral.RowCount = 2;
+            tableLayoutPanelFondoGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5020914F));
+            tableLayoutPanelFondoGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.91939F));
+            tableLayoutPanelFondoGeneral.Size = new System.Drawing.Size(1172, 576);
+            tableLayoutPanelFondoGeneral.TabIndex = 2;
             // 
             // tabControl_Pages
             // 
-            this.tabControl_Pages.Controls.Add(this.tabProyectos);
-            this.tabControl_Pages.Controls.Add(this.tabFormCompusof);
-            this.tabControl_Pages.Controls.Add(this.tabServiceDeskGMXT);
-            this.tabControl_Pages.Controls.Add(this.tabServiceDeskCompusof);
-            this.tabControl_Pages.Controls.Add(this.tabEndpointCentral);
-            this.tabControl_Pages.Controls.Add(this.tabCentroDeControl);
-            this.tabControl_Pages.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl_Pages.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl_Pages.HotTrack = true;
-            this.tabControl_Pages.ItemSize = new System.Drawing.Size(200, 35);
-            this.tabControl_Pages.Location = new System.Drawing.Point(0, 3);
-            this.tabControl_Pages.Margin = new System.Windows.Forms.Padding(0);
-            this.tabControl_Pages.Name = "tabControl_Pages";
-            this.tabControl_Pages.SelectedIndex = 0;
-            this.tabControl_Pages.Size = new System.Drawing.Size(1339, 611);
-            this.tabControl_Pages.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl_Pages.TabIndex = 3;
-            this.tabControl_Pages.SelectedIndexChanged += new System.EventHandler(this.tabControl2_SelectedIndexChanged);
+            tabControl_Pages.CanCloseTabs = false;
+            tabControl_Pages.CloseButtonHoverColor = System.Drawing.Color.Red;
+            tabControl_Pages.ControlBackColor = System.Drawing.Color.Transparent;
+            tabControl_Pages.Controls.Add(tabProyectos);
+            tabControl_Pages.Controls.Add(tabFormCompusof);
+            tabControl_Pages.Controls.Add(tabServiceDeskGMXT);
+            tabControl_Pages.Controls.Add(tabServiceDeskCompusof);
+            tabControl_Pages.Controls.Add(tabEndpointCentral);
+            tabControl_Pages.Controls.Add(tabCentroDeControl);
+            tabControl_Pages.Dock = System.Windows.Forms.DockStyle.Fill;
+            tabControl_Pages.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            tabControl_Pages.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            tabControl_Pages.ForeSelectionColor = System.Drawing.Color.White;
+            tabControl_Pages.ForeUnselectedColor = System.Drawing.Color.DimGray;
+            tabControl_Pages.HotTrack = true;
+            tabControl_Pages.HoverColor = System.Drawing.Color.FromArgb(50, 200, 200, 200);
+            tabControl_Pages.ItemSize = new System.Drawing.Size(200, 35);
+            tabControl_Pages.Location = new System.Drawing.Point(0, 2);
+            tabControl_Pages.Margin = new System.Windows.Forms.Padding(0);
+            tabControl_Pages.Name = "tabControl_Pages";
+            tabControl_Pages.SelectedIndex = 0;
+            tabControl_Pages.SelectionColor = System.Drawing.Color.DeepSkyBlue;
+            tabControl_Pages.Size = new System.Drawing.Size(1172, 574);
+            tabControl_Pages.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            tabControl_Pages.TabIndex = 3;
+            tabControl_Pages.UnselectionColor = System.Drawing.Color.LightGray;
+            tabControl_Pages.SelectedIndexChanged += tabControl2_SelectedIndexChanged;
             // 
             // tabProyectos
             // 
-            this.tabProyectos.BackColor = System.Drawing.Color.DimGray;
-            this.tabProyectos.Controls.Add(this.tableLayoutPanelProyectos);
-            this.tabProyectos.Controls.Add(this.toolStrip2);
-            this.tabProyectos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabProyectos.Location = new System.Drawing.Point(4, 39);
-            this.tabProyectos.Margin = new System.Windows.Forms.Padding(0);
-            this.tabProyectos.Name = "tabProyectos";
-            this.tabProyectos.Size = new System.Drawing.Size(1331, 568);
-            this.tabProyectos.TabIndex = 5;
-            this.tabProyectos.Text = "Proyectos";
+            tabProyectos.BackColor = System.Drawing.Color.DimGray;
+            tabProyectos.Controls.Add(tableLayoutPanelProyectos);
+            tabProyectos.Controls.Add(toolStrip2);
+            tabProyectos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            tabProyectos.Location = new System.Drawing.Point(4, 39);
+            tabProyectos.Margin = new System.Windows.Forms.Padding(0);
+            tabProyectos.Name = "tabProyectos";
+            tabProyectos.Size = new System.Drawing.Size(1164, 531);
+            tabProyectos.TabIndex = 5;
+            tabProyectos.Text = "Proyectos";
             // 
             // tableLayoutPanelProyectos
             // 
-            this.tableLayoutPanelProyectos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            this.tableLayoutPanelProyectos.ColumnCount = 2;
-            this.tableLayoutPanelProyectos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.47059F));
-            this.tableLayoutPanelProyectos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.52941F));
-            this.tableLayoutPanelProyectos.Controls.Add(this.MDI_RIT_Panel, 0, 0);
-            this.tableLayoutPanelProyectos.Controls.Add(this.tableLayoutPanelProyectos_Nodos, 0, 0);
-            this.tableLayoutPanelProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelProyectos.Location = new System.Drawing.Point(0, 27);
-            this.tableLayoutPanelProyectos.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelProyectos.Name = "tableLayoutPanelProyectos";
-            this.tableLayoutPanelProyectos.RowCount = 1;
-            this.tableLayoutPanelProyectos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelProyectos.Size = new System.Drawing.Size(1331, 541);
-            this.tableLayoutPanelProyectos.TabIndex = 1;
+            tableLayoutPanelProyectos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
+            tableLayoutPanelProyectos.ColumnCount = 2;
+            tableLayoutPanelProyectos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.47059F));
+            tableLayoutPanelProyectos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.52941F));
+            tableLayoutPanelProyectos.Controls.Add(MDI_RIT_Panel, 0, 0);
+            tableLayoutPanelProyectos.Controls.Add(tableLayoutPanelProyectos_Nodos, 0, 0);
+            tableLayoutPanelProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanelProyectos.Location = new System.Drawing.Point(0, 27);
+            tableLayoutPanelProyectos.Margin = new System.Windows.Forms.Padding(0);
+            tableLayoutPanelProyectos.Name = "tableLayoutPanelProyectos";
+            tableLayoutPanelProyectos.RowCount = 1;
+            tableLayoutPanelProyectos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanelProyectos.Size = new System.Drawing.Size(1164, 504);
+            tableLayoutPanelProyectos.TabIndex = 1;
             // 
             // MDI_RIT_Panel
             // 
-            this.MDI_RIT_Panel.BackColor = System.Drawing.Color.DarkGray;
-            this.MDI_RIT_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MDI_RIT_Panel.Controls.Add(this.pgrssbarAbrirFormularios);
-            this.MDI_RIT_Panel.Controls.Add(this.lblProyectos_Text);
-            this.MDI_RIT_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MDI_RIT_Panel.Location = new System.Drawing.Point(223, 3);
-            this.MDI_RIT_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.MDI_RIT_Panel.Name = "MDI_RIT_Panel";
-            this.MDI_RIT_Panel.Size = new System.Drawing.Size(1105, 535);
-            this.MDI_RIT_Panel.TabIndex = 1;
-            this.MDI_RIT_Panel.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.MDI_RIT_Panel_ControlAdded);
-            this.MDI_RIT_Panel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.MDI_RIT_Panel_ControlRemoved);
+            MDI_RIT_Panel.BackColor = System.Drawing.Color.DarkGray;
+            MDI_RIT_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            MDI_RIT_Panel.Controls.Add(pgrssbarAbrirFormularios);
+            MDI_RIT_Panel.Controls.Add(lblProyectos_Text);
+            MDI_RIT_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            MDI_RIT_Panel.Location = new System.Drawing.Point(196, 3);
+            MDI_RIT_Panel.Margin = new System.Windows.Forms.Padding(0);
+            MDI_RIT_Panel.Name = "MDI_RIT_Panel";
+            MDI_RIT_Panel.Size = new System.Drawing.Size(965, 498);
+            MDI_RIT_Panel.TabIndex = 1;
+            MDI_RIT_Panel.ControlAdded += MDI_RIT_Panel_ControlAdded;
+            MDI_RIT_Panel.ControlRemoved += MDI_RIT_Panel_ControlRemoved;
             // 
             // pgrssbarAbrirFormularios
             // 
-            this.pgrssbarAbrirFormularios.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pgrssbarAbrirFormularios.Location = new System.Drawing.Point(0, 526);
-            this.pgrssbarAbrirFormularios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pgrssbarAbrirFormularios.Name = "pgrssbarAbrirFormularios";
-            this.pgrssbarAbrirFormularios.Size = new System.Drawing.Size(1101, 5);
-            this.pgrssbarAbrirFormularios.TabIndex = 3;
+            pgrssbarAbrirFormularios.Dock = System.Windows.Forms.DockStyle.Bottom;
+            pgrssbarAbrirFormularios.Location = new System.Drawing.Point(0, 489);
+            pgrssbarAbrirFormularios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            pgrssbarAbrirFormularios.Name = "pgrssbarAbrirFormularios";
+            pgrssbarAbrirFormularios.Size = new System.Drawing.Size(961, 5);
+            pgrssbarAbrirFormularios.TabIndex = 3;
             // 
             // lblProyectos_Text
             // 
-            this.lblProyectos_Text.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblProyectos_Text.Font = new System.Drawing.Font("Microsoft New Tai Lue", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProyectos_Text.Location = new System.Drawing.Point(0, 0);
-            this.lblProyectos_Text.Name = "lblProyectos_Text";
-            this.lblProyectos_Text.Size = new System.Drawing.Size(1101, 531);
-            this.lblProyectos_Text.TabIndex = 2;
-            this.lblProyectos_Text.Text = "Bienvenido a RIT Solver!";
-            this.lblProyectos_Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblProyectos_Text.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblProyectos_Text.Font = new System.Drawing.Font("Microsoft New Tai Lue", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lblProyectos_Text.Location = new System.Drawing.Point(0, 0);
+            lblProyectos_Text.Name = "lblProyectos_Text";
+            lblProyectos_Text.Size = new System.Drawing.Size(961, 494);
+            lblProyectos_Text.TabIndex = 2;
+            lblProyectos_Text.Text = "Bienvenido a RIT Solver!";
+            lblProyectos_Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanelProyectos_Nodos
             // 
-            this.tableLayoutPanelProyectos_Nodos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanelProyectos_Nodos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            this.tableLayoutPanelProyectos_Nodos.ColumnCount = 1;
-            this.tableLayoutPanelProyectos_Nodos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanelProyectos_Nodos.Controls.Add(this.treeViewProyectos, 0, 1);
-            this.tableLayoutPanelProyectos_Nodos.Controls.Add(this.panel6, 0, 2);
-            this.tableLayoutPanelProyectos_Nodos.Controls.Add(this.panel4, 0, 0);
-            this.tableLayoutPanelProyectos_Nodos.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanelProyectos_Nodos.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelProyectos_Nodos.Name = "tableLayoutPanelProyectos_Nodos";
-            this.tableLayoutPanelProyectos_Nodos.RowCount = 3;
-            this.tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32F));
-            this.tableLayoutPanelProyectos_Nodos.Size = new System.Drawing.Size(217, 535);
-            this.tableLayoutPanelProyectos_Nodos.TabIndex = 0;
+            tableLayoutPanelProyectos_Nodos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tableLayoutPanelProyectos_Nodos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
+            tableLayoutPanelProyectos_Nodos.ColumnCount = 1;
+            tableLayoutPanelProyectos_Nodos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            tableLayoutPanelProyectos_Nodos.Controls.Add(treeViewProyectos, 0, 1);
+            tableLayoutPanelProyectos_Nodos.Controls.Add(panel6, 0, 2);
+            tableLayoutPanelProyectos_Nodos.Controls.Add(panel4, 0, 0);
+            tableLayoutPanelProyectos_Nodos.Location = new System.Drawing.Point(3, 3);
+            tableLayoutPanelProyectos_Nodos.Margin = new System.Windows.Forms.Padding(0);
+            tableLayoutPanelProyectos_Nodos.Name = "tableLayoutPanelProyectos_Nodos";
+            tableLayoutPanelProyectos_Nodos.RowCount = 3;
+            tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            tableLayoutPanelProyectos_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32F));
+            tableLayoutPanelProyectos_Nodos.Size = new System.Drawing.Size(190, 498);
+            tableLayoutPanelProyectos_Nodos.TabIndex = 0;
             // 
             // treeViewProyectos
             // 
-            this.treeViewProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeViewProyectos.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold);
-            this.treeViewProyectos.ImageIndex = 0;
-            this.treeViewProyectos.ImageList = this.imageList_RIT;
-            this.treeViewProyectos.ItemHeight = 32;
-            this.treeViewProyectos.Location = new System.Drawing.Point(3, 47);
-            this.treeViewProyectos.Margin = new System.Windows.Forms.Padding(0);
-            this.treeViewProyectos.Name = "treeViewProyectos";
+            treeViewProyectos.Dock = System.Windows.Forms.DockStyle.Fill;
+            treeViewProyectos.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold);
+            treeViewProyectos.ImageIndex = 0;
+            treeViewProyectos.ImageList = imageList_RIT;
+            treeViewProyectos.ItemHeight = 32;
+            treeViewProyectos.Location = new System.Drawing.Point(3, 44);
+            treeViewProyectos.Margin = new System.Windows.Forms.Padding(0);
+            treeViewProyectos.Name = "treeViewProyectos";
             treeNode1.Name = "nodeMisProyectos";
             treeNode1.Text = "Mis Proyectos";
-            this.treeViewProyectos.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1});
-            this.treeViewProyectos.SelectedImageIndex = 0;
-            this.treeViewProyectos.Size = new System.Drawing.Size(216, 313);
-            this.treeViewProyectos.TabIndex = 0;
-            this.treeViewProyectos.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewProyectos_AfterSelect);
-            this.treeViewProyectos.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeViewProyectos_NodeMouseDoubleClick);
+            treeViewProyectos.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { treeNode1 });
+            treeViewProyectos.SelectedImageIndex = 0;
+            treeViewProyectos.Size = new System.Drawing.Size(190, 291);
+            treeViewProyectos.TabIndex = 0;
+            treeViewProyectos.AfterSelect += treeViewProyectos_AfterSelect;
+            treeViewProyectos.NodeMouseDoubleClick += treeViewProyectos_NodeMouseDoubleClick;
             // 
             // imageList_RIT
             // 
-            this.imageList_RIT.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList_RIT.ImageStream")));
-            this.imageList_RIT.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList_RIT.Images.SetKeyName(0, "open-folder.png");
-            this.imageList_RIT.Images.SetKeyName(1, "project-128.png");
-            this.imageList_RIT.Images.SetKeyName(2, "project-comprobado.png");
-            this.imageList_RIT.Images.SetKeyName(3, "project-printed.png");
-            this.imageList_RIT.Images.SetKeyName(4, "project-signed.png");
+            imageList_RIT.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            imageList_RIT.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("imageList_RIT.ImageStream");
+            imageList_RIT.TransparentColor = System.Drawing.Color.Transparent;
+            imageList_RIT.Images.SetKeyName(0, "open-folder.png");
+            imageList_RIT.Images.SetKeyName(1, "project-128.png");
+            imageList_RIT.Images.SetKeyName(2, "project-comprobado.png");
+            imageList_RIT.Images.SetKeyName(3, "project-printed.png");
+            imageList_RIT.Images.SetKeyName(4, "project-signed.png");
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Controls.Add(this.lblNombreDeNodoSeleccionado);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 363);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(216, 169);
-            this.panel6.TabIndex = 2;
+            panel6.BackColor = System.Drawing.Color.Gray;
+            panel6.Controls.Add(lblNombreDeNodoSeleccionado);
+            panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel6.Location = new System.Drawing.Point(3, 338);
+            panel6.Margin = new System.Windows.Forms.Padding(0);
+            panel6.Name = "panel6";
+            panel6.Size = new System.Drawing.Size(190, 157);
+            panel6.TabIndex = 2;
             // 
             // lblNombreDeNodoSeleccionado
             // 
-            this.lblNombreDeNodoSeleccionado.BackColor = System.Drawing.Color.Gray;
-            this.lblNombreDeNodoSeleccionado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblNombreDeNodoSeleccionado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNombreDeNodoSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblNombreDeNodoSeleccionado.Location = new System.Drawing.Point(0, 0);
-            this.lblNombreDeNodoSeleccionado.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.lblNombreDeNodoSeleccionado.Name = "lblNombreDeNodoSeleccionado";
-            this.lblNombreDeNodoSeleccionado.Size = new System.Drawing.Size(216, 169);
-            this.lblNombreDeNodoSeleccionado.TabIndex = 3;
-            this.lblNombreDeNodoSeleccionado.Text = "";
+            lblNombreDeNodoSeleccionado.BackColor = System.Drawing.Color.Gray;
+            lblNombreDeNodoSeleccionado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            lblNombreDeNodoSeleccionado.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblNombreDeNodoSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
+            lblNombreDeNodoSeleccionado.Location = new System.Drawing.Point(0, 0);
+            lblNombreDeNodoSeleccionado.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            lblNombreDeNodoSeleccionado.Name = "lblNombreDeNodoSeleccionado";
+            lblNombreDeNodoSeleccionado.Size = new System.Drawing.Size(190, 157);
+            lblNombreDeNodoSeleccionado.TabIndex = 3;
+            lblNombreDeNodoSeleccionado.Text = "";
             // 
             // panel4
             // 
-            this.panel4.AllowDrop = true;
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.Controls.Add(this.lblNodoDeProyectosSeleccionado);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(216, 41);
-            this.panel4.TabIndex = 0;
+            panel4.AllowDrop = true;
+            panel4.BackColor = System.Drawing.Color.Gray;
+            panel4.Controls.Add(lblNodoDeProyectosSeleccionado);
+            panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel4.Location = new System.Drawing.Point(3, 3);
+            panel4.Margin = new System.Windows.Forms.Padding(0);
+            panel4.Name = "panel4";
+            panel4.Size = new System.Drawing.Size(190, 38);
+            panel4.TabIndex = 0;
             // 
             // lblNodoDeProyectosSeleccionado
             // 
-            this.lblNodoDeProyectosSeleccionado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNodoDeProyectosSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblNodoDeProyectosSeleccionado.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNodoDeProyectosSeleccionado.Location = new System.Drawing.Point(0, 0);
-            this.lblNodoDeProyectosSeleccionado.Margin = new System.Windows.Forms.Padding(0);
-            this.lblNodoDeProyectosSeleccionado.Name = "lblNodoDeProyectosSeleccionado";
-            this.lblNodoDeProyectosSeleccionado.Size = new System.Drawing.Size(216, 41);
-            this.lblNodoDeProyectosSeleccionado.TabIndex = 1;
-            this.lblNodoDeProyectosSeleccionado.Text = "Ejemplo de seccion de";
-            this.lblNodoDeProyectosSeleccionado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblNodoDeProyectosSeleccionado.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblNodoDeProyectosSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
+            lblNodoDeProyectosSeleccionado.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            lblNodoDeProyectosSeleccionado.Location = new System.Drawing.Point(0, 0);
+            lblNodoDeProyectosSeleccionado.Margin = new System.Windows.Forms.Padding(0);
+            lblNodoDeProyectosSeleccionado.Name = "lblNodoDeProyectosSeleccionado";
+            lblNodoDeProyectosSeleccionado.Size = new System.Drawing.Size(190, 38);
+            lblNodoDeProyectosSeleccionado.TabIndex = 1;
+            lblNodoDeProyectosSeleccionado.Text = "Ejemplo de seccion de";
+            lblNodoDeProyectosSeleccionado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStrip2
             // 
-            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolNuevoProyecto,
-            this.toolAbrirProyectoExistente,
-            this.toolEliminarProyecto,
-            this.toolStrpBtnCerrarProyectoActual,
-            this.toolStripSeparator16,
-            this.toolStrpBtn_AbrirSegun,
-            this.toolStripSeparator8,
-            this.toolStrpBtnGuardarTodosLosProyectosActuales,
-            this.toolMinimizarTodosLosReportes,
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos,
-            this.toolStripSeparator18,
-            this.toolGeneracionRapidaDeReporte,
-            this.toolStripLabel4,
-            this.toolStripLabel3,
-            this.toolLblActualMDIReporteName});
-            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(1331, 27);
-            this.toolStrip2.TabIndex = 0;
-            this.toolStrip2.Text = "toolStrip2";
+            toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolNuevoProyecto, toolAbrirProyectoExistente, toolEliminarProyecto, toolStrpBtnCerrarProyectoActual, toolStripSeparator16, toolStrpBtn_AbrirSegun, toolStripSeparator8, toolStrpBtnGuardarTodosLosProyectosActuales, toolMinimizarTodosLosReportes, toolStrpBtnCerrarTodosLosRitsAbiertos, toolStripSeparator18, toolGeneracionRapidaDeReporte, toolStripLabel4, toolStripLabel3, toolLblActualMDIReporteName });
+            toolStrip2.Location = new System.Drawing.Point(0, 0);
+            toolStrip2.Name = "toolStrip2";
+            toolStrip2.Size = new System.Drawing.Size(1164, 27);
+            toolStrip2.TabIndex = 0;
+            toolStrip2.Text = "toolStrip2";
             // 
             // toolNuevoProyecto
             // 
-            this.toolNuevoProyecto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolNuevoProyecto.Image = global::Flow_Solver.Properties.Resources.project;
-            this.toolNuevoProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolNuevoProyecto.Name = "toolNuevoProyecto";
-            this.toolNuevoProyecto.Size = new System.Drawing.Size(29, 24);
-            this.toolNuevoProyecto.Text = "Crear un nuevo proyecto RIT";
-            this.toolNuevoProyecto.Click += new System.EventHandler(this.nuevoProyectoToolStripMenuItem_Click);
+            toolNuevoProyecto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolNuevoProyecto.Image = Properties.Resources.project;
+            toolNuevoProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolNuevoProyecto.Name = "toolNuevoProyecto";
+            toolNuevoProyecto.Size = new System.Drawing.Size(24, 24);
+            toolNuevoProyecto.Text = "Crear un nuevo proyecto RIT";
+            toolNuevoProyecto.Click += nuevoProyectoToolStripMenuItem_Click;
             // 
             // toolAbrirProyectoExistente
             // 
-            this.toolAbrirProyectoExistente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolAbrirProyectoExistente.Image = global::Flow_Solver.Properties.Resources.project_open;
-            this.toolAbrirProyectoExistente.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolAbrirProyectoExistente.Name = "toolAbrirProyectoExistente";
-            this.toolAbrirProyectoExistente.Size = new System.Drawing.Size(29, 24);
-            this.toolAbrirProyectoExistente.Text = "Abrir proyecto existente";
-            this.toolAbrirProyectoExistente.Click += new System.EventHandler(this.abrirTicketToolStripMenuItem_Click);
+            toolAbrirProyectoExistente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolAbrirProyectoExistente.Image = Properties.Resources.project_open;
+            toolAbrirProyectoExistente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolAbrirProyectoExistente.Name = "toolAbrirProyectoExistente";
+            toolAbrirProyectoExistente.Size = new System.Drawing.Size(24, 24);
+            toolAbrirProyectoExistente.Text = "Abrir proyecto existente";
+            toolAbrirProyectoExistente.Click += abrirTicketToolStripMenuItem_Click;
             // 
             // toolEliminarProyecto
             // 
-            this.toolEliminarProyecto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolEliminarProyecto.Enabled = false;
-            this.toolEliminarProyecto.Image = global::Flow_Solver.Properties.Resources.project_delete;
-            this.toolEliminarProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolEliminarProyecto.Name = "toolEliminarProyecto";
-            this.toolEliminarProyecto.Size = new System.Drawing.Size(29, 24);
-            this.toolEliminarProyecto.Text = "Eliminar este proyecto";
-            this.toolEliminarProyecto.Click += new System.EventHandler(this.toolEliminarProyecto_Click);
+            toolEliminarProyecto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolEliminarProyecto.Enabled = false;
+            toolEliminarProyecto.Image = Properties.Resources.project_delete;
+            toolEliminarProyecto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolEliminarProyecto.Name = "toolEliminarProyecto";
+            toolEliminarProyecto.Size = new System.Drawing.Size(24, 24);
+            toolEliminarProyecto.Text = "Eliminar este proyecto";
+            toolEliminarProyecto.Click += toolEliminarProyecto_Click;
             // 
             // toolStrpBtnCerrarProyectoActual
             // 
-            this.toolStrpBtnCerrarProyectoActual.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrpBtnCerrarProyectoActual.Enabled = false;
-            this.toolStrpBtnCerrarProyectoActual.Image = global::Flow_Solver.Properties.Resources.close1_32;
-            this.toolStrpBtnCerrarProyectoActual.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStrpBtnCerrarProyectoActual.Name = "toolStrpBtnCerrarProyectoActual";
-            this.toolStrpBtnCerrarProyectoActual.Size = new System.Drawing.Size(29, 24);
-            this.toolStrpBtnCerrarProyectoActual.Text = "Cerrar proyecto actual...";
-            this.toolStrpBtnCerrarProyectoActual.Click += new System.EventHandler(this.toolStrpBtnCerrarProyectoActual_Click);
+            toolStrpBtnCerrarProyectoActual.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolStrpBtnCerrarProyectoActual.Enabled = false;
+            toolStrpBtnCerrarProyectoActual.Image = Properties.Resources.close1_32;
+            toolStrpBtnCerrarProyectoActual.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolStrpBtnCerrarProyectoActual.Name = "toolStrpBtnCerrarProyectoActual";
+            toolStrpBtnCerrarProyectoActual.Size = new System.Drawing.Size(24, 24);
+            toolStrpBtnCerrarProyectoActual.Text = "Cerrar proyecto actual...";
+            toolStrpBtnCerrarProyectoActual.Click += toolStrpBtnCerrarProyectoActual_Click;
             // 
             // toolStripSeparator16
             // 
-            this.toolStripSeparator16.Name = "toolStripSeparator16";
-            this.toolStripSeparator16.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator16.Name = "toolStripSeparator16";
+            toolStripSeparator16.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStrpBtn_AbrirSegun
             // 
-            this.toolStrpBtn_AbrirSegun.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrpBtn_AbrirSegun.Image = global::Flow_Solver.Properties.Resources.selection_items_32;
-            this.toolStrpBtn_AbrirSegun.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStrpBtn_AbrirSegun.Name = "toolStrpBtn_AbrirSegun";
-            this.toolStrpBtn_AbrirSegun.Size = new System.Drawing.Size(29, 24);
-            this.toolStrpBtn_AbrirSegun.Text = "Abrir solo segun...";
-            this.toolStrpBtn_AbrirSegun.Click += new System.EventHandler(this.toolStrpBtn_AbrirSegun_Click);
+            toolStrpBtn_AbrirSegun.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolStrpBtn_AbrirSegun.Image = Properties.Resources.selection_items_32;
+            toolStrpBtn_AbrirSegun.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolStrpBtn_AbrirSegun.Name = "toolStrpBtn_AbrirSegun";
+            toolStrpBtn_AbrirSegun.Size = new System.Drawing.Size(24, 24);
+            toolStrpBtn_AbrirSegun.Text = "Abrir solo segun...";
+            toolStrpBtn_AbrirSegun.Click += toolStrpBtn_AbrirSegun_Click;
             // 
             // toolStripSeparator8
             // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator8.Name = "toolStripSeparator8";
+            toolStripSeparator8.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStrpBtnGuardarTodosLosProyectosActuales
             // 
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.Enabled = false;
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.Image = global::Flow_Solver.Properties.Resources.save_all2;
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.Name = "toolStrpBtnGuardarTodosLosProyectosActuales";
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.Size = new System.Drawing.Size(29, 24);
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.Text = "Guardar todos los proyectos abiertos";
-            this.toolStrpBtnGuardarTodosLosProyectosActuales.Click += new System.EventHandler(this.toolStrpBtnGuardarTodosLosProyectosActuales_Click);
+            toolStrpBtnGuardarTodosLosProyectosActuales.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolStrpBtnGuardarTodosLosProyectosActuales.Enabled = false;
+            toolStrpBtnGuardarTodosLosProyectosActuales.Image = Properties.Resources.save_all2;
+            toolStrpBtnGuardarTodosLosProyectosActuales.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolStrpBtnGuardarTodosLosProyectosActuales.Name = "toolStrpBtnGuardarTodosLosProyectosActuales";
+            toolStrpBtnGuardarTodosLosProyectosActuales.Size = new System.Drawing.Size(24, 24);
+            toolStrpBtnGuardarTodosLosProyectosActuales.Text = "Guardar todos los proyectos abiertos";
+            toolStrpBtnGuardarTodosLosProyectosActuales.Click += toolStrpBtnGuardarTodosLosProyectosActuales_Click;
             // 
             // toolMinimizarTodosLosReportes
             // 
-            this.toolMinimizarTodosLosReportes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolMinimizarTodosLosReportes.Enabled = false;
-            this.toolMinimizarTodosLosReportes.Image = global::Flow_Solver.Properties.Resources.minimize_all_windows;
-            this.toolMinimizarTodosLosReportes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolMinimizarTodosLosReportes.Name = "toolMinimizarTodosLosReportes";
-            this.toolMinimizarTodosLosReportes.Size = new System.Drawing.Size(29, 24);
-            this.toolMinimizarTodosLosReportes.Text = "Minimizar todos los proyectos abiertos";
-            this.toolMinimizarTodosLosReportes.Click += new System.EventHandler(this.toolMinimizarTodosLosReportes_Click);
+            toolMinimizarTodosLosReportes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolMinimizarTodosLosReportes.Enabled = false;
+            toolMinimizarTodosLosReportes.Image = Properties.Resources.minimize_all_windows;
+            toolMinimizarTodosLosReportes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolMinimizarTodosLosReportes.Name = "toolMinimizarTodosLosReportes";
+            toolMinimizarTodosLosReportes.Size = new System.Drawing.Size(24, 24);
+            toolMinimizarTodosLosReportes.Text = "Minimizar todos los proyectos abiertos";
+            toolMinimizarTodosLosReportes.Click += toolMinimizarTodosLosReportes_Click;
             // 
             // toolStrpBtnCerrarTodosLosRitsAbiertos
             // 
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.Enabled = false;
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.Image = global::Flow_Solver.Properties.Resources.close_all_38;
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.Name = "toolStrpBtnCerrarTodosLosRitsAbiertos";
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.Size = new System.Drawing.Size(29, 24);
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.Text = "Cerrar todos los proyectos abiertos...";
-            this.toolStrpBtnCerrarTodosLosRitsAbiertos.Click += new System.EventHandler(this.toolStrpBtnCerrarTodosLosRitsAbiertos_Click);
+            toolStrpBtnCerrarTodosLosRitsAbiertos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Enabled = false;
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Image = Properties.Resources.close_all_38;
+            toolStrpBtnCerrarTodosLosRitsAbiertos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Name = "toolStrpBtnCerrarTodosLosRitsAbiertos";
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Size = new System.Drawing.Size(24, 24);
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Text = "Cerrar todos los proyectos abiertos...";
+            toolStrpBtnCerrarTodosLosRitsAbiertos.Click += toolStrpBtnCerrarTodosLosRitsAbiertos_Click;
             // 
             // toolStripSeparator18
             // 
-            this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator18.Name = "toolStripSeparator18";
+            toolStripSeparator18.Size = new System.Drawing.Size(6, 27);
             // 
             // toolGeneracionRapidaDeReporte
             // 
-            this.toolGeneracionRapidaDeReporte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolGeneracionRapidaDeReporte.Enabled = false;
-            this.toolGeneracionRapidaDeReporte.Image = global::Flow_Solver.Properties.Resources.fast_64;
-            this.toolGeneracionRapidaDeReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolGeneracionRapidaDeReporte.Name = "toolGeneracionRapidaDeReporte";
-            this.toolGeneracionRapidaDeReporte.Size = new System.Drawing.Size(29, 24);
-            this.toolGeneracionRapidaDeReporte.Text = "Generacion rapida de RIT";
-            this.toolGeneracionRapidaDeReporte.Click += new System.EventHandler(this.toolGeneracionRapidaDeReporte_Click);
+            toolGeneracionRapidaDeReporte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolGeneracionRapidaDeReporte.Enabled = false;
+            toolGeneracionRapidaDeReporte.Image = Properties.Resources.fast_64;
+            toolGeneracionRapidaDeReporte.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolGeneracionRapidaDeReporte.Name = "toolGeneracionRapidaDeReporte";
+            toolGeneracionRapidaDeReporte.Size = new System.Drawing.Size(24, 24);
+            toolGeneracionRapidaDeReporte.Text = "Generacion rapida de RIT";
+            toolGeneracionRapidaDeReporte.Click += toolGeneracionRapidaDeReporte_Click;
             // 
             // toolStripLabel4
             // 
-            this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(37, 24);
-            this.toolStripLabel4.Text = "       ";
+            toolStripLabel4.Name = "toolStripLabel4";
+            toolStripLabel4.Size = new System.Drawing.Size(28, 24);
+            toolStripLabel4.Text = "       ";
             // 
             // toolStripLabel3
             // 
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(86, 24);
-            this.toolStripLabel3.Text = "Actual MDI:";
+            toolStripLabel3.Name = "toolStripLabel3";
+            toolStripLabel3.Size = new System.Drawing.Size(69, 24);
+            toolStripLabel3.Text = "Actual MDI:";
             // 
             // toolLblActualMDIReporteName
             // 
-            this.toolLblActualMDIReporteName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolLblActualMDIReporteName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.toolLblActualMDIReporteName.Name = "toolLblActualMDIReporteName";
-            this.toolLblActualMDIReporteName.Size = new System.Drawing.Size(15, 24);
-            this.toolLblActualMDIReporteName.Text = "-";
+            toolLblActualMDIReporteName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
+            toolLblActualMDIReporteName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            toolLblActualMDIReporteName.Name = "toolLblActualMDIReporteName";
+            toolLblActualMDIReporteName.Size = new System.Drawing.Size(12, 24);
+            toolLblActualMDIReporteName.Text = "-";
             // 
             // tabFormCompusof
             // 
-            this.tabFormCompusof.Controls.Add(this.webView_CompusofForms);
-            this.tabFormCompusof.Controls.Add(this.statusStripForms);
-            this.tabFormCompusof.Location = new System.Drawing.Point(4, 39);
-            this.tabFormCompusof.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabFormCompusof.Name = "tabFormCompusof";
-            this.tabFormCompusof.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabFormCompusof.Size = new System.Drawing.Size(1331, 568);
-            this.tabFormCompusof.TabIndex = 3;
-            this.tabFormCompusof.Text = "Compusof Forms";
-            this.tabFormCompusof.UseVisualStyleBackColor = true;
-            // 
-            // webView_CompusofForms
-            // 
-            this.webView_CompusofForms.AllowExternalDrop = true;
-            this.webView_CompusofForms.CreationProperties = null;
-            this.webView_CompusofForms.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView_CompusofForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webView_CompusofForms.Location = new System.Drawing.Point(3, 2);
-            this.webView_CompusofForms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.webView_CompusofForms.Name = "webView_CompusofForms";
-            this.webView_CompusofForms.Size = new System.Drawing.Size(1325, 538);
-            this.webView_CompusofForms.TabIndex = 1;
-            this.webView_CompusofForms.ZoomFactor = 1D;
-            this.webView_CompusofForms.CoreWebView2InitializationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs>(this.webView_CompusofForms_CoreWebView2InitializationCompleted);
-            this.webView_CompusofForms.NavigationStarting += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs>(this.webView_CompusofForms_NavigationStarting);
+            tabFormCompusof.Controls.Add(statusStripForms);
+            tabFormCompusof.Location = new System.Drawing.Point(4, 39);
+            tabFormCompusof.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabFormCompusof.Name = "tabFormCompusof";
+            tabFormCompusof.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabFormCompusof.Size = new System.Drawing.Size(1164, 531);
+            tabFormCompusof.TabIndex = 3;
+            tabFormCompusof.Text = "Compusof Forms";
+            tabFormCompusof.UseVisualStyleBackColor = true;
             // 
             // statusStripForms
             // 
-            this.statusStripForms.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStripForms.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolBtnRecargarForms,
-            this.URL_RIT_Forms_Label});
-            this.statusStripForms.Location = new System.Drawing.Point(3, 540);
-            this.statusStripForms.Name = "statusStripForms";
-            this.statusStripForms.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStripForms.Size = new System.Drawing.Size(1325, 26);
-            this.statusStripForms.TabIndex = 0;
+            statusStripForms.ImageScalingSize = new System.Drawing.Size(20, 20);
+            statusStripForms.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolBtnRecargarForms, URL_RIT_Forms_Label });
+            statusStripForms.Location = new System.Drawing.Point(3, 503);
+            statusStripForms.Name = "statusStripForms";
+            statusStripForms.Padding = new System.Windows.Forms.Padding(1, 0, 11, 0);
+            statusStripForms.Size = new System.Drawing.Size(1158, 26);
+            statusStripForms.TabIndex = 0;
             // 
             // toolBtnRecargarForms
             // 
-            this.toolBtnRecargarForms.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.toolBtnRecargarForms.Name = "toolBtnRecargarForms";
-            this.toolBtnRecargarForms.Size = new System.Drawing.Size(92, 24);
-            this.toolBtnRecargarForms.Text = "Recargar";
-            this.toolBtnRecargarForms.Click += new System.EventHandler(this.recargarFormsToolStripMenuItem_Click);
+            toolBtnRecargarForms.Image = Properties.Resources.refresh;
+            toolBtnRecargarForms.Name = "toolBtnRecargarForms";
+            toolBtnRecargarForms.Size = new System.Drawing.Size(77, 24);
+            toolBtnRecargarForms.Text = "Recargar";
+            toolBtnRecargarForms.Click += recargarFormsToolStripMenuItem_Click;
             // 
             // URL_RIT_Forms_Label
             // 
-            this.URL_RIT_Forms_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.URL_RIT_Forms_Label.Name = "URL_RIT_Forms_Label";
-            this.URL_RIT_Forms_Label.Size = new System.Drawing.Size(0, 24);
-            // 
-            // tabServiceDeskGMXT
-            // 
-            this.tabServiceDeskGMXT.AutoScroll = true;
-            this.tabServiceDeskGMXT.Controls.Add(this.statusStripSDPGMXT);
-            this.tabServiceDeskGMXT.Location = new System.Drawing.Point(4, 39);
-            this.tabServiceDeskGMXT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabServiceDeskGMXT.Name = "tabServiceDeskGMXT";
-            this.tabServiceDeskGMXT.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabServiceDeskGMXT.Size = new System.Drawing.Size(1331, 568);
-            this.tabServiceDeskGMXT.TabIndex = 1;
-            this.tabServiceDeskGMXT.Text = "ServiceDesk GMXT";
-            this.tabServiceDeskGMXT.UseVisualStyleBackColor = true;
-            // 
-            // statusStripSDPGMXT
-            // 
-            this.statusStripSDPGMXT.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStripSDPGMXT.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolBtnRecargarSAS,
-            this.URL_GMXT_SAS_Label});
-            this.statusStripSDPGMXT.Location = new System.Drawing.Point(3, 540);
-            this.statusStripSDPGMXT.Name = "statusStripSDPGMXT";
-            this.statusStripSDPGMXT.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStripSDPGMXT.Size = new System.Drawing.Size(1325, 26);
-            this.statusStripSDPGMXT.TabIndex = 0;
-            // 
-            // toolBtnRecargarSAS
-            // 
-            this.toolBtnRecargarSAS.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.toolBtnRecargarSAS.Name = "toolBtnRecargarSAS";
-            this.toolBtnRecargarSAS.Size = new System.Drawing.Size(92, 24);
-            this.toolBtnRecargarSAS.Text = "Recargar";
-            this.toolBtnRecargarSAS.Click += new System.EventHandler(this.recargarSASToolStripMenuItem_Click);
-            // 
-            // URL_GMXT_SAS_Label
-            // 
-            this.URL_GMXT_SAS_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.URL_GMXT_SAS_Label.Name = "URL_GMXT_SAS_Label";
-            this.URL_GMXT_SAS_Label.Size = new System.Drawing.Size(0, 24);
+            URL_RIT_Forms_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            URL_RIT_Forms_Label.Name = "URL_RIT_Forms_Label";
+            URL_RIT_Forms_Label.Size = new System.Drawing.Size(0, 24);
             // 
             // tabServiceDeskCompusof
             // 
-            this.tabServiceDeskCompusof.Controls.Add(this.webView_ServiceDeskCompusof);
-            this.tabServiceDeskCompusof.Controls.Add(this.statusStripEndPointcentral);
-            this.tabServiceDeskCompusof.Location = new System.Drawing.Point(4, 39);
-            this.tabServiceDeskCompusof.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabServiceDeskCompusof.Name = "tabServiceDeskCompusof";
-            this.tabServiceDeskCompusof.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabServiceDeskCompusof.Size = new System.Drawing.Size(1331, 568);
-            this.tabServiceDeskCompusof.TabIndex = 4;
-            this.tabServiceDeskCompusof.Text = "ServiceDesk Compusof";
-            this.tabServiceDeskCompusof.UseVisualStyleBackColor = true;
-            // 
-            // webView_ServiceDeskCompusof
-            // 
-            this.webView_ServiceDeskCompusof.AllowExternalDrop = true;
-            this.webView_ServiceDeskCompusof.CreationProperties = null;
-            this.webView_ServiceDeskCompusof.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView_ServiceDeskCompusof.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webView_ServiceDeskCompusof.Location = new System.Drawing.Point(3, 2);
-            this.webView_ServiceDeskCompusof.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.webView_ServiceDeskCompusof.Name = "webView_ServiceDeskCompusof";
-            this.webView_ServiceDeskCompusof.Size = new System.Drawing.Size(1325, 538);
-            this.webView_ServiceDeskCompusof.TabIndex = 1;
-            this.webView_ServiceDeskCompusof.ZoomFactor = 1D;
-            this.webView_ServiceDeskCompusof.CoreWebView2InitializationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs>(this.webView_ManageEngineEndpointCentral_CoreWebView2InitializationCompleted);
-            this.webView_ServiceDeskCompusof.NavigationStarting += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs>(this.webView_ManageEngineEndpointCentral_NavigationStarting);
+            tabServiceDeskCompusof.Controls.Add(statusStripEndPointcentral);
+            tabServiceDeskCompusof.Location = new System.Drawing.Point(4, 39);
+            tabServiceDeskCompusof.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabServiceDeskCompusof.Name = "tabServiceDeskCompusof";
+            tabServiceDeskCompusof.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabServiceDeskCompusof.Size = new System.Drawing.Size(1164, 531);
+            tabServiceDeskCompusof.TabIndex = 4;
+            tabServiceDeskCompusof.Text = "ServiceDesk Compusof";
+            tabServiceDeskCompusof.UseVisualStyleBackColor = true;
             // 
             // statusStripEndPointcentral
             // 
-            this.statusStripEndPointcentral.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStripEndPointcentral.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolBtnRecargarSDPCompusof,
-            this.URL_SDP_Compusof_Label});
-            this.statusStripEndPointcentral.Location = new System.Drawing.Point(3, 540);
-            this.statusStripEndPointcentral.Name = "statusStripEndPointcentral";
-            this.statusStripEndPointcentral.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStripEndPointcentral.Size = new System.Drawing.Size(1325, 26);
-            this.statusStripEndPointcentral.TabIndex = 0;
+            statusStripEndPointcentral.ImageScalingSize = new System.Drawing.Size(20, 20);
+            statusStripEndPointcentral.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolBtnRecargarSDPCompusof, URL_SDP_Compusof_Label });
+            statusStripEndPointcentral.Location = new System.Drawing.Point(3, 503);
+            statusStripEndPointcentral.Name = "statusStripEndPointcentral";
+            statusStripEndPointcentral.Padding = new System.Windows.Forms.Padding(1, 0, 11, 0);
+            statusStripEndPointcentral.Size = new System.Drawing.Size(1158, 26);
+            statusStripEndPointcentral.TabIndex = 0;
             // 
             // toolBtnRecargarSDPCompusof
             // 
-            this.toolBtnRecargarSDPCompusof.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.toolBtnRecargarSDPCompusof.Name = "toolBtnRecargarSDPCompusof";
-            this.toolBtnRecargarSDPCompusof.Size = new System.Drawing.Size(92, 24);
-            this.toolBtnRecargarSDPCompusof.Text = "Recargar";
-            this.toolBtnRecargarSDPCompusof.Click += new System.EventHandler(this.recargarEndpointCentralToolStripMenuItem_Click);
+            toolBtnRecargarSDPCompusof.Image = Properties.Resources.refresh;
+            toolBtnRecargarSDPCompusof.Name = "toolBtnRecargarSDPCompusof";
+            toolBtnRecargarSDPCompusof.Size = new System.Drawing.Size(77, 24);
+            toolBtnRecargarSDPCompusof.Text = "Recargar";
+            toolBtnRecargarSDPCompusof.Click += recargarEndpointCentralToolStripMenuItem_Click;
             // 
             // URL_SDP_Compusof_Label
             // 
-            this.URL_SDP_Compusof_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.URL_SDP_Compusof_Label.Name = "URL_SDP_Compusof_Label";
-            this.URL_SDP_Compusof_Label.Size = new System.Drawing.Size(0, 24);
+            URL_SDP_Compusof_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            URL_SDP_Compusof_Label.Name = "URL_SDP_Compusof_Label";
+            URL_SDP_Compusof_Label.Size = new System.Drawing.Size(0, 24);
             // 
             // tabEndpointCentral
             // 
-            this.tabEndpointCentral.Controls.Add(this.statusStripSDPCompusof);
-            this.tabEndpointCentral.Location = new System.Drawing.Point(4, 39);
-            this.tabEndpointCentral.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabEndpointCentral.Name = "tabEndpointCentral";
-            this.tabEndpointCentral.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabEndpointCentral.Size = new System.Drawing.Size(1331, 568);
-            this.tabEndpointCentral.TabIndex = 2;
-            this.tabEndpointCentral.Text = "Endpoint Central";
-            this.tabEndpointCentral.UseVisualStyleBackColor = true;
+            tabEndpointCentral.Controls.Add(statusStripSDPCompusof);
+            tabEndpointCentral.Location = new System.Drawing.Point(4, 39);
+            tabEndpointCentral.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabEndpointCentral.Name = "tabEndpointCentral";
+            tabEndpointCentral.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabEndpointCentral.Size = new System.Drawing.Size(1164, 531);
+            tabEndpointCentral.TabIndex = 2;
+            tabEndpointCentral.Text = "Endpoint Central";
+            tabEndpointCentral.UseVisualStyleBackColor = true;
             // 
             // statusStripSDPCompusof
             // 
-            this.statusStripSDPCompusof.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStripSDPCompusof.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolBtnRecargarServiceDeskCompusof,
-            this.URL_EndPoint_Central_Label});
-            this.statusStripSDPCompusof.Location = new System.Drawing.Point(3, 540);
-            this.statusStripSDPCompusof.Name = "statusStripSDPCompusof";
-            this.statusStripSDPCompusof.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStripSDPCompusof.Size = new System.Drawing.Size(1325, 26);
-            this.statusStripSDPCompusof.TabIndex = 1;
+            statusStripSDPCompusof.ImageScalingSize = new System.Drawing.Size(20, 20);
+            statusStripSDPCompusof.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolBtnRecargarServiceDeskCompusof, URL_EndPoint_Central_Label });
+            statusStripSDPCompusof.Location = new System.Drawing.Point(3, 503);
+            statusStripSDPCompusof.Name = "statusStripSDPCompusof";
+            statusStripSDPCompusof.Padding = new System.Windows.Forms.Padding(1, 0, 11, 0);
+            statusStripSDPCompusof.Size = new System.Drawing.Size(1158, 26);
+            statusStripSDPCompusof.TabIndex = 1;
             // 
             // toolBtnRecargarServiceDeskCompusof
             // 
-            this.toolBtnRecargarServiceDeskCompusof.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.toolBtnRecargarServiceDeskCompusof.Name = "toolBtnRecargarServiceDeskCompusof";
-            this.toolBtnRecargarServiceDeskCompusof.Size = new System.Drawing.Size(92, 24);
-            this.toolBtnRecargarServiceDeskCompusof.Text = "Recargar";
-            this.toolBtnRecargarServiceDeskCompusof.Click += new System.EventHandler(this.recargarManageDeskCompusofToolStripMenuItem_Click);
+            toolBtnRecargarServiceDeskCompusof.Image = Properties.Resources.refresh;
+            toolBtnRecargarServiceDeskCompusof.Name = "toolBtnRecargarServiceDeskCompusof";
+            toolBtnRecargarServiceDeskCompusof.Size = new System.Drawing.Size(77, 24);
+            toolBtnRecargarServiceDeskCompusof.Text = "Recargar";
+            toolBtnRecargarServiceDeskCompusof.Click += recargarManageDeskCompusofToolStripMenuItem_Click;
             // 
             // URL_EndPoint_Central_Label
             // 
-            this.URL_EndPoint_Central_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.URL_EndPoint_Central_Label.Name = "URL_EndPoint_Central_Label";
-            this.URL_EndPoint_Central_Label.Size = new System.Drawing.Size(0, 24);
+            URL_EndPoint_Central_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            URL_EndPoint_Central_Label.Name = "URL_EndPoint_Central_Label";
+            URL_EndPoint_Central_Label.Size = new System.Drawing.Size(0, 24);
             // 
             // tabCentroDeControl
             // 
-            this.tabCentroDeControl.BackColor = System.Drawing.Color.DimGray;
-            this.tabCentroDeControl.Controls.Add(this.tableLayoutPanelCentroDeControl);
-            this.tabCentroDeControl.Controls.Add(this.toolStrip1);
-            this.tabCentroDeControl.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabCentroDeControl.Location = new System.Drawing.Point(4, 39);
-            this.tabCentroDeControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabCentroDeControl.Name = "tabCentroDeControl";
-            this.tabCentroDeControl.Size = new System.Drawing.Size(1331, 568);
-            this.tabCentroDeControl.TabIndex = 6;
-            this.tabCentroDeControl.Text = "Centro de Control";
+            tabCentroDeControl.BackColor = System.Drawing.Color.DimGray;
+            tabCentroDeControl.Controls.Add(tableLayoutPanelCentroDeControl);
+            tabCentroDeControl.Controls.Add(toolStrip1);
+            tabCentroDeControl.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            tabCentroDeControl.Location = new System.Drawing.Point(4, 39);
+            tabCentroDeControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabCentroDeControl.Name = "tabCentroDeControl";
+            tabCentroDeControl.Size = new System.Drawing.Size(1164, 531);
+            tabCentroDeControl.TabIndex = 6;
+            tabCentroDeControl.Text = "Centro de Control";
             // 
             // tableLayoutPanelCentroDeControl
             // 
-            this.tableLayoutPanelCentroDeControl.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            this.tableLayoutPanelCentroDeControl.ColumnCount = 2;
-            this.tableLayoutPanelCentroDeControl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.86275F));
-            this.tableLayoutPanelCentroDeControl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.13725F));
-            this.tableLayoutPanelCentroDeControl.Controls.Add(this.MDI_ACT_Panel, 1, 0);
-            this.tableLayoutPanelCentroDeControl.Controls.Add(this.tableLayoutPanelCentroDeControl_Nodos, 0, 0);
-            this.tableLayoutPanelCentroDeControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelCentroDeControl.Location = new System.Drawing.Point(0, 27);
-            this.tableLayoutPanelCentroDeControl.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelCentroDeControl.Name = "tableLayoutPanelCentroDeControl";
-            this.tableLayoutPanelCentroDeControl.RowCount = 1;
-            this.tableLayoutPanelCentroDeControl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.04655F));
-            this.tableLayoutPanelCentroDeControl.Size = new System.Drawing.Size(1331, 541);
-            this.tableLayoutPanelCentroDeControl.TabIndex = 1;
+            tableLayoutPanelCentroDeControl.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
+            tableLayoutPanelCentroDeControl.ColumnCount = 2;
+            tableLayoutPanelCentroDeControl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.86275F));
+            tableLayoutPanelCentroDeControl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.13725F));
+            tableLayoutPanelCentroDeControl.Controls.Add(MDI_ACT_Panel, 1, 0);
+            tableLayoutPanelCentroDeControl.Controls.Add(tableLayoutPanelCentroDeControl_Nodos, 0, 0);
+            tableLayoutPanelCentroDeControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanelCentroDeControl.Location = new System.Drawing.Point(0, 27);
+            tableLayoutPanelCentroDeControl.Margin = new System.Windows.Forms.Padding(0);
+            tableLayoutPanelCentroDeControl.Name = "tableLayoutPanelCentroDeControl";
+            tableLayoutPanelCentroDeControl.RowCount = 1;
+            tableLayoutPanelCentroDeControl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.04655F));
+            tableLayoutPanelCentroDeControl.Size = new System.Drawing.Size(1164, 504);
+            tableLayoutPanelCentroDeControl.TabIndex = 1;
             // 
             // MDI_ACT_Panel
             // 
-            this.MDI_ACT_Panel.BackColor = System.Drawing.Color.DarkGray;
-            this.MDI_ACT_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MDI_ACT_Panel.Controls.Add(this.lblCentroControl_Text);
-            this.MDI_ACT_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MDI_ACT_Panel.Location = new System.Drawing.Point(228, 3);
-            this.MDI_ACT_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.MDI_ACT_Panel.Name = "MDI_ACT_Panel";
-            this.MDI_ACT_Panel.Size = new System.Drawing.Size(1100, 535);
-            this.MDI_ACT_Panel.TabIndex = 0;
-            this.MDI_ACT_Panel.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.panelMDIContainerActividades_ControlAdded);
-            this.MDI_ACT_Panel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.panelMDIContainerActividades_ControlRemoved);
+            MDI_ACT_Panel.BackColor = System.Drawing.Color.DarkGray;
+            MDI_ACT_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            MDI_ACT_Panel.Controls.Add(lblCentroControl_Text);
+            MDI_ACT_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            MDI_ACT_Panel.Location = new System.Drawing.Point(200, 3);
+            MDI_ACT_Panel.Margin = new System.Windows.Forms.Padding(0);
+            MDI_ACT_Panel.Name = "MDI_ACT_Panel";
+            MDI_ACT_Panel.Size = new System.Drawing.Size(961, 498);
+            MDI_ACT_Panel.TabIndex = 0;
+            MDI_ACT_Panel.ControlAdded += panelMDIContainerActividades_ControlAdded;
+            MDI_ACT_Panel.ControlRemoved += panelMDIContainerActividades_ControlRemoved;
             // 
             // lblCentroControl_Text
             // 
-            this.lblCentroControl_Text.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCentroControl_Text.Font = new System.Drawing.Font("Microsoft New Tai Lue", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCentroControl_Text.Location = new System.Drawing.Point(0, 0);
-            this.lblCentroControl_Text.Name = "lblCentroControl_Text";
-            this.lblCentroControl_Text.Size = new System.Drawing.Size(1096, 531);
-            this.lblCentroControl_Text.TabIndex = 1;
-            this.lblCentroControl_Text.Text = "Bienvenido a RIT Solver!";
-            this.lblCentroControl_Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblCentroControl_Text.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblCentroControl_Text.Font = new System.Drawing.Font("Microsoft New Tai Lue", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lblCentroControl_Text.Location = new System.Drawing.Point(0, 0);
+            lblCentroControl_Text.Name = "lblCentroControl_Text";
+            lblCentroControl_Text.Size = new System.Drawing.Size(957, 494);
+            lblCentroControl_Text.TabIndex = 1;
+            lblCentroControl_Text.Text = "Bienvenido a RIT Solver!";
+            lblCentroControl_Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanelCentroDeControl_Nodos
             // 
-            this.tableLayoutPanelCentroDeControl_Nodos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanelCentroDeControl_Nodos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            this.tableLayoutPanelCentroDeControl_Nodos.ColumnCount = 1;
-            this.tableLayoutPanelCentroDeControl_Nodos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelCentroDeControl_Nodos.Controls.Add(this.treeViewCentroDeControl, 0, 1);
-            this.tableLayoutPanelCentroDeControl_Nodos.Controls.Add(this.panel3, 0, 2);
-            this.tableLayoutPanelCentroDeControl_Nodos.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanelCentroDeControl_Nodos.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanelCentroDeControl_Nodos.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelCentroDeControl_Nodos.Name = "tableLayoutPanelCentroDeControl_Nodos";
-            this.tableLayoutPanelCentroDeControl_Nodos.RowCount = 3;
-            this.tableLayoutPanelCentroDeControl_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.59375F));
-            this.tableLayoutPanelCentroDeControl_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.40625F));
-            this.tableLayoutPanelCentroDeControl_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 153F));
-            this.tableLayoutPanelCentroDeControl_Nodos.Size = new System.Drawing.Size(222, 535);
-            this.tableLayoutPanelCentroDeControl_Nodos.TabIndex = 1;
+            tableLayoutPanelCentroDeControl_Nodos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tableLayoutPanelCentroDeControl_Nodos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
+            tableLayoutPanelCentroDeControl_Nodos.ColumnCount = 1;
+            tableLayoutPanelCentroDeControl_Nodos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanelCentroDeControl_Nodos.Controls.Add(treeViewCentroDeControl, 0, 1);
+            tableLayoutPanelCentroDeControl_Nodos.Controls.Add(panel3, 0, 2);
+            tableLayoutPanelCentroDeControl_Nodos.Controls.Add(panel1, 0, 0);
+            tableLayoutPanelCentroDeControl_Nodos.Location = new System.Drawing.Point(3, 3);
+            tableLayoutPanelCentroDeControl_Nodos.Margin = new System.Windows.Forms.Padding(0);
+            tableLayoutPanelCentroDeControl_Nodos.Name = "tableLayoutPanelCentroDeControl_Nodos";
+            tableLayoutPanelCentroDeControl_Nodos.RowCount = 3;
+            tableLayoutPanelCentroDeControl_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.59375F));
+            tableLayoutPanelCentroDeControl_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.40625F));
+            tableLayoutPanelCentroDeControl_Nodos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 143F));
+            tableLayoutPanelCentroDeControl_Nodos.Size = new System.Drawing.Size(194, 498);
+            tableLayoutPanelCentroDeControl_Nodos.TabIndex = 1;
             // 
             // treeViewCentroDeControl
             // 
-            this.treeViewCentroDeControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.treeViewCentroDeControl.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeViewCentroDeControl.ImageIndex = 0;
-            this.treeViewCentroDeControl.ImageList = this.imageList_Actividades;
-            this.treeViewCentroDeControl.ItemHeight = 32;
-            this.treeViewCentroDeControl.Location = new System.Drawing.Point(8, 43);
-            this.treeViewCentroDeControl.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.treeViewCentroDeControl.Name = "treeViewCentroDeControl";
+            treeViewCentroDeControl.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            treeViewCentroDeControl.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            treeViewCentroDeControl.ImageIndex = 0;
+            treeViewCentroDeControl.ImageList = imageList_Actividades;
+            treeViewCentroDeControl.ItemHeight = 32;
+            treeViewCentroDeControl.Location = new System.Drawing.Point(7, 41);
+            treeViewCentroDeControl.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            treeViewCentroDeControl.Name = "treeViewCentroDeControl";
             treeNode2.Name = "nodeActividades";
             treeNode2.Text = "Actividades";
             treeNode2.ToolTipText = "Gestion de actividades programadas";
@@ -990,1238 +888,1164 @@ namespace Flow_Solver
             treeNode5.Name = "nodeSeguimientoDeGuias";
             treeNode5.SelectedImageIndex = 4;
             treeNode5.Text = "Seguimiento de Guias";
-            treeNode5.ToolTipText = "Da seguimiento a guias trackeaas en el sistema para saber con mayor efectividad y" +
-    " facilidad su ubicacion actual";
+            treeNode5.ToolTipText = "Da seguimiento a guias trackeaas en el sistema para saber con mayor efectividad y facilidad su ubicacion actual";
             treeNode6.Name = "nodeSolicitudesDeViaticos";
             treeNode6.Text = "Solicitudes de Viaticos";
-            this.treeViewCentroDeControl.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6});
-            this.treeViewCentroDeControl.SelectedImageIndex = 0;
-            this.treeViewCentroDeControl.Size = new System.Drawing.Size(206, 326);
-            this.treeViewCentroDeControl.TabIndex = 0;
-            this.treeViewCentroDeControl.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewCentroDeControl_AfterSelect);
-            this.treeViewCentroDeControl.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeViewCentroDeControl_NodeMouseDoubleClick);
+            treeViewCentroDeControl.Nodes.AddRange(new System.Windows.Forms.TreeNode[] { treeNode2, treeNode3, treeNode4, treeNode5, treeNode6 });
+            treeViewCentroDeControl.SelectedImageIndex = 0;
+            treeViewCentroDeControl.Size = new System.Drawing.Size(180, 301);
+            treeViewCentroDeControl.TabIndex = 0;
+            treeViewCentroDeControl.AfterSelect += treeViewCentroDeControl_AfterSelect;
+            treeViewCentroDeControl.NodeMouseDoubleClick += treeViewCentroDeControl_NodeMouseDoubleClick;
             // 
             // imageList_Actividades
             // 
-            this.imageList_Actividades.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList_Actividades.ImageStream")));
-            this.imageList_Actividades.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList_Actividades.Images.SetKeyName(0, "open-folder.png");
-            this.imageList_Actividades.Images.SetKeyName(1, "checklist-64.png");
-            this.imageList_Actividades.Images.SetKeyName(2, "estadisticas-64.png");
-            this.imageList_Actividades.Images.SetKeyName(3, "estadisticas-anteriores.png");
-            this.imageList_Actividades.Images.SetKeyName(4, "pack-list-track.png");
-            this.imageList_Actividades.Images.SetKeyName(5, "to-do-32.png");
+            imageList_Actividades.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            imageList_Actividades.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("imageList_Actividades.ImageStream");
+            imageList_Actividades.TransparentColor = System.Drawing.Color.Transparent;
+            imageList_Actividades.Images.SetKeyName(0, "open-folder.png");
+            imageList_Actividades.Images.SetKeyName(1, "checklist-64.png");
+            imageList_Actividades.Images.SetKeyName(2, "estadisticas-64.png");
+            imageList_Actividades.Images.SetKeyName(3, "estadisticas-anteriores.png");
+            imageList_Actividades.Images.SetKeyName(4, "pack-list-track.png");
+            imageList_Actividades.Images.SetKeyName(5, "to-do-32.png");
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.lblDescripcionDeNodo);
-            this.panel3.Controls.Add(this.lblNombreNodoSeleccionado);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 378);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Size = new System.Drawing.Size(216, 154);
-            this.panel3.TabIndex = 2;
+            panel3.BackColor = System.Drawing.Color.Gray;
+            panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            panel3.Controls.Add(lblDescripcionDeNodo);
+            panel3.Controls.Add(lblNombreNodoSeleccionado);
+            panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel3.Location = new System.Drawing.Point(3, 351);
+            panel3.Margin = new System.Windows.Forms.Padding(0);
+            panel3.Name = "panel3";
+            panel3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            panel3.Size = new System.Drawing.Size(188, 144);
+            panel3.TabIndex = 2;
             // 
             // lblDescripcionDeNodo
             // 
-            this.lblDescripcionDeNodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.lblDescripcionDeNodo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDescripcionDeNodo.Location = new System.Drawing.Point(5, 57);
-            this.lblDescripcionDeNodo.Name = "lblDescripcionDeNodo";
-            this.lblDescripcionDeNodo.Size = new System.Drawing.Size(203, 94);
-            this.lblDescripcionDeNodo.TabIndex = 2;
-            this.lblDescripcionDeNodo.Text = "Ejemplo de texto de descrpcion de un nodo de la actividad seleccionada.";
+            lblDescripcionDeNodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            lblDescripcionDeNodo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            lblDescripcionDeNodo.Location = new System.Drawing.Point(4, 53);
+            lblDescripcionDeNodo.Name = "lblDescripcionDeNodo";
+            lblDescripcionDeNodo.Size = new System.Drawing.Size(178, 88);
+            lblDescripcionDeNodo.TabIndex = 2;
+            lblDescripcionDeNodo.Text = "Ejemplo de texto de descrpcion de un nodo de la actividad seleccionada.";
             // 
             // lblNombreNodoSeleccionado
             // 
-            this.lblNombreNodoSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblNombreNodoSeleccionado.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNombreNodoSeleccionado.Location = new System.Drawing.Point(5, 6);
-            this.lblNombreNodoSeleccionado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblNombreNodoSeleccionado.Name = "lblNombreNodoSeleccionado";
-            this.lblNombreNodoSeleccionado.Size = new System.Drawing.Size(203, 47);
-            this.lblNombreNodoSeleccionado.TabIndex = 1;
-            this.lblNombreNodoSeleccionado.Text = "Ejemplo de titulo de un nodo para  secciones del programa ";
+            lblNombreNodoSeleccionado.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Bold);
+            lblNombreNodoSeleccionado.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            lblNombreNodoSeleccionado.Location = new System.Drawing.Point(4, 6);
+            lblNombreNodoSeleccionado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            lblNombreNodoSeleccionado.Name = "lblNombreNodoSeleccionado";
+            lblNombreNodoSeleccionado.Size = new System.Drawing.Size(178, 44);
+            lblNombreNodoSeleccionado.TabIndex = 1;
+            lblNombreNodoSeleccionado.Text = "Ejemplo de titulo de un nodo para  secciones del programa ";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.lblNombreSeccion);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 31);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = System.Drawing.Color.Gray;
+            panel1.Controls.Add(lblNombreSeccion);
+            panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel1.Location = new System.Drawing.Point(3, 3);
+            panel1.Margin = new System.Windows.Forms.Padding(0);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(188, 29);
+            panel1.TabIndex = 0;
             // 
             // lblNombreSeccion
             // 
-            this.lblNombreSeccion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNombreSeccion.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblNombreSeccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNombreSeccion.Location = new System.Drawing.Point(0, 0);
-            this.lblNombreSeccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblNombreSeccion.Name = "lblNombreSeccion";
-            this.lblNombreSeccion.Size = new System.Drawing.Size(216, 31);
-            this.lblNombreSeccion.TabIndex = 0;
-            this.lblNombreSeccion.Text = "Ejemplo de seccion de";
-            this.lblNombreSeccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblNombreSeccion.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblNombreSeccion.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
+            lblNombreSeccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            lblNombreSeccion.Location = new System.Drawing.Point(0, 0);
+            lblNombreSeccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            lblNombreSeccion.Name = "lblNombreSeccion";
+            lblNombreSeccion.Size = new System.Drawing.Size(188, 29);
+            lblNombreSeccion.TabIndex = 0;
+            lblNombreSeccion.Text = "Ejemplo de seccion de";
+            lblNombreSeccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStrip1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolCrearActividad,
-            this.toolAbrirActividad,
-            this.toolEliminarActividad,
-            this.toolCerrarActividad,
-            this.toolStripSeparator2,
-            this.toolImportarActividad,
-            this.toolExportarActividad,
-            this.toolStripLabel2,
-            this.toolNuevoPendientePorHacer,
-            this.toolImportarListaDePendientes,
-            this.toolEliminarListaDePendientesPorHacer,
-            this.toolCerrarListaDePendientes,
-            this.toolStripSeparator9,
-            this.toolNuevaSeccion,
-            this.toolStripLabel1,
-            this.toolStrpBtnMinimizarTodasLasVentanas,
-            this.toolStripLabel5,
-            this.toolStripLabel6,
-            this.toolLblActualMDIActividadName});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1331, 27);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolCrearActividad, toolAbrirActividad, toolEliminarActividad, toolCerrarActividad, toolStripSeparator2, toolImportarActividad, toolExportarActividad, toolStripLabel2, toolNuevoPendientePorHacer, toolImportarListaDePendientes, toolEliminarListaDePendientesPorHacer, toolCerrarListaDePendientes, toolStripSeparator9, toolNuevaSeccion, toolStripLabel1, toolStrpBtnMinimizarTodasLasVentanas, toolStripLabel5, toolStripLabel6, toolLblActualMDIActividadName });
+            toolStrip1.Location = new System.Drawing.Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new System.Drawing.Size(1164, 27);
+            toolStrip1.TabIndex = 0;
+            toolStrip1.Text = "toolStrip1";
             // 
             // toolCrearActividad
             // 
-            this.toolCrearActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolCrearActividad.Image = global::Flow_Solver.Properties.Resources.lista_de_verificacion1;
-            this.toolCrearActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolCrearActividad.Name = "toolCrearActividad";
-            this.toolCrearActividad.Size = new System.Drawing.Size(29, 24);
-            this.toolCrearActividad.Text = "Nueva actividad";
-            this.toolCrearActividad.Click += new System.EventHandler(this.toolCrearActividad_Click);
+            toolCrearActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolCrearActividad.Image = Properties.Resources.lista_de_verificacion1;
+            toolCrearActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolCrearActividad.Name = "toolCrearActividad";
+            toolCrearActividad.Size = new System.Drawing.Size(24, 24);
+            toolCrearActividad.Text = "Nueva actividad";
+            toolCrearActividad.Click += toolCrearActividad_Click;
             // 
             // toolAbrirActividad
             // 
-            this.toolAbrirActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolAbrirActividad.Image = global::Flow_Solver.Properties.Resources.activity_open;
-            this.toolAbrirActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolAbrirActividad.Name = "toolAbrirActividad";
-            this.toolAbrirActividad.Size = new System.Drawing.Size(29, 24);
-            this.toolAbrirActividad.Text = "Abrir actividad";
-            this.toolAbrirActividad.Click += new System.EventHandler(this.toolAbrirActividad_Click);
+            toolAbrirActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolAbrirActividad.Image = Properties.Resources.activity_open;
+            toolAbrirActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolAbrirActividad.Name = "toolAbrirActividad";
+            toolAbrirActividad.Size = new System.Drawing.Size(24, 24);
+            toolAbrirActividad.Text = "Abrir actividad";
+            toolAbrirActividad.Click += toolAbrirActividad_Click;
             // 
             // toolEliminarActividad
             // 
-            this.toolEliminarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolEliminarActividad.Image = global::Flow_Solver.Properties.Resources.activity_delete;
-            this.toolEliminarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolEliminarActividad.Name = "toolEliminarActividad";
-            this.toolEliminarActividad.Size = new System.Drawing.Size(29, 24);
-            this.toolEliminarActividad.Text = "Eliminar actividad";
-            this.toolEliminarActividad.Click += new System.EventHandler(this.toolEliminarActividad_Click);
+            toolEliminarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolEliminarActividad.Image = Properties.Resources.activity_delete;
+            toolEliminarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolEliminarActividad.Name = "toolEliminarActividad";
+            toolEliminarActividad.Size = new System.Drawing.Size(24, 24);
+            toolEliminarActividad.Text = "Eliminar actividad";
+            toolEliminarActividad.Click += toolEliminarActividad_Click;
             // 
             // toolCerrarActividad
             // 
-            this.toolCerrarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolCerrarActividad.Image = global::Flow_Solver.Properties.Resources.close1_32;
-            this.toolCerrarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolCerrarActividad.Name = "toolCerrarActividad";
-            this.toolCerrarActividad.Size = new System.Drawing.Size(29, 24);
-            this.toolCerrarActividad.Text = "Cerrar actividad actual";
-            this.toolCerrarActividad.Click += new System.EventHandler(this.toolCerrarActividad_Click);
+            toolCerrarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolCerrarActividad.Image = Properties.Resources.close1_32;
+            toolCerrarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolCerrarActividad.Name = "toolCerrarActividad";
+            toolCerrarActividad.Size = new System.Drawing.Size(24, 24);
+            toolCerrarActividad.Text = "Cerrar actividad actual";
+            toolCerrarActividad.Click += toolCerrarActividad_Click;
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // toolImportarActividad
             // 
-            this.toolImportarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolImportarActividad.Enabled = false;
-            this.toolImportarActividad.Image = global::Flow_Solver.Properties.Resources.importar_16;
-            this.toolImportarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolImportarActividad.Name = "toolImportarActividad";
-            this.toolImportarActividad.Size = new System.Drawing.Size(29, 24);
-            this.toolImportarActividad.Text = "Importar actividad";
-            this.toolImportarActividad.Click += new System.EventHandler(this.toolImportarActividad_Click);
+            toolImportarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolImportarActividad.Enabled = false;
+            toolImportarActividad.Image = Properties.Resources.importar_16;
+            toolImportarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolImportarActividad.Name = "toolImportarActividad";
+            toolImportarActividad.Size = new System.Drawing.Size(24, 24);
+            toolImportarActividad.Text = "Importar actividad";
+            toolImportarActividad.Click += toolImportarActividad_Click;
             // 
             // toolExportarActividad
             // 
-            this.toolExportarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolExportarActividad.Image = global::Flow_Solver.Properties.Resources.exportar_16;
-            this.toolExportarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolExportarActividad.Name = "toolExportarActividad";
-            this.toolExportarActividad.Size = new System.Drawing.Size(29, 24);
-            this.toolExportarActividad.Text = "Exportar actividad";
-            this.toolExportarActividad.Click += new System.EventHandler(this.toolExportarActividad_Click);
+            toolExportarActividad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolExportarActividad.Image = Properties.Resources.exportar_16;
+            toolExportarActividad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolExportarActividad.Name = "toolExportarActividad";
+            toolExportarActividad.Size = new System.Drawing.Size(24, 24);
+            toolExportarActividad.Text = "Exportar actividad";
+            toolExportarActividad.Click += toolExportarActividad_Click;
             // 
             // toolStripLabel2
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(37, 24);
-            this.toolStripLabel2.Text = "       ";
+            toolStripLabel2.Name = "toolStripLabel2";
+            toolStripLabel2.Size = new System.Drawing.Size(28, 24);
+            toolStripLabel2.Text = "       ";
             // 
             // toolNuevoPendientePorHacer
             // 
-            this.toolNuevoPendientePorHacer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolNuevoPendientePorHacer.Image = global::Flow_Solver.Properties.Resources.to_do_32;
-            this.toolNuevoPendientePorHacer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolNuevoPendientePorHacer.Name = "toolNuevoPendientePorHacer";
-            this.toolNuevoPendientePorHacer.Size = new System.Drawing.Size(29, 24);
-            this.toolNuevoPendientePorHacer.Text = "Nuevo pendiente por hacer";
-            this.toolNuevoPendientePorHacer.ToolTipText = "Nuevo pendiente por hacer";
-            this.toolNuevoPendientePorHacer.Click += new System.EventHandler(this.toolNuevoPendientePorHacer_Click);
+            toolNuevoPendientePorHacer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolNuevoPendientePorHacer.Image = Properties.Resources.to_do_32;
+            toolNuevoPendientePorHacer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolNuevoPendientePorHacer.Name = "toolNuevoPendientePorHacer";
+            toolNuevoPendientePorHacer.Size = new System.Drawing.Size(24, 24);
+            toolNuevoPendientePorHacer.Text = "Nuevo pendiente por hacer";
+            toolNuevoPendientePorHacer.ToolTipText = "Nuevo pendiente por hacer";
+            toolNuevoPendientePorHacer.Click += toolNuevoPendientePorHacer_Click;
             // 
             // toolImportarListaDePendientes
             // 
-            this.toolImportarListaDePendientes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolImportarListaDePendientes.Image = global::Flow_Solver.Properties.Resources.to_do_open;
-            this.toolImportarListaDePendientes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolImportarListaDePendientes.Name = "toolImportarListaDePendientes";
-            this.toolImportarListaDePendientes.Size = new System.Drawing.Size(29, 24);
-            this.toolImportarListaDePendientes.Text = "Importar una lista de pendientes...";
-            this.toolImportarListaDePendientes.Click += new System.EventHandler(this.toolImportarListaDePendientes_Click);
+            toolImportarListaDePendientes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolImportarListaDePendientes.Image = Properties.Resources.to_do_open;
+            toolImportarListaDePendientes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolImportarListaDePendientes.Name = "toolImportarListaDePendientes";
+            toolImportarListaDePendientes.Size = new System.Drawing.Size(24, 24);
+            toolImportarListaDePendientes.Text = "Importar una lista de pendientes...";
+            toolImportarListaDePendientes.Click += toolImportarListaDePendientes_Click;
             // 
             // toolEliminarListaDePendientesPorHacer
             // 
-            this.toolEliminarListaDePendientesPorHacer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolEliminarListaDePendientesPorHacer.Image = global::Flow_Solver.Properties.Resources.to_do_delete;
-            this.toolEliminarListaDePendientesPorHacer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolEliminarListaDePendientesPorHacer.Name = "toolEliminarListaDePendientesPorHacer";
-            this.toolEliminarListaDePendientesPorHacer.Size = new System.Drawing.Size(29, 24);
-            this.toolEliminarListaDePendientesPorHacer.Text = "Eliminar lista de pendientes";
-            this.toolEliminarListaDePendientesPorHacer.Click += new System.EventHandler(this.toolEliminarListaDePendientesPorHacer_Click);
+            toolEliminarListaDePendientesPorHacer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolEliminarListaDePendientesPorHacer.Image = Properties.Resources.to_do_delete;
+            toolEliminarListaDePendientesPorHacer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolEliminarListaDePendientesPorHacer.Name = "toolEliminarListaDePendientesPorHacer";
+            toolEliminarListaDePendientesPorHacer.Size = new System.Drawing.Size(24, 24);
+            toolEliminarListaDePendientesPorHacer.Text = "Eliminar lista de pendientes";
+            toolEliminarListaDePendientesPorHacer.Click += toolEliminarListaDePendientesPorHacer_Click;
             // 
             // toolCerrarListaDePendientes
             // 
-            this.toolCerrarListaDePendientes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolCerrarListaDePendientes.Image = global::Flow_Solver.Properties.Resources.close1_32;
-            this.toolCerrarListaDePendientes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolCerrarListaDePendientes.Name = "toolCerrarListaDePendientes";
-            this.toolCerrarListaDePendientes.Size = new System.Drawing.Size(29, 24);
-            this.toolCerrarListaDePendientes.Text = "Cerrar lista de pendientes";
-            this.toolCerrarListaDePendientes.Click += new System.EventHandler(this.toolCerrarListaDePendientes_Click);
+            toolCerrarListaDePendientes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolCerrarListaDePendientes.Image = Properties.Resources.close1_32;
+            toolCerrarListaDePendientes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolCerrarListaDePendientes.Name = "toolCerrarListaDePendientes";
+            toolCerrarListaDePendientes.Size = new System.Drawing.Size(24, 24);
+            toolCerrarListaDePendientes.Text = "Cerrar lista de pendientes";
+            toolCerrarListaDePendientes.Click += toolCerrarListaDePendientes_Click;
             // 
             // toolStripSeparator9
             // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 27);
+            toolStripSeparator9.Name = "toolStripSeparator9";
+            toolStripSeparator9.Size = new System.Drawing.Size(6, 27);
             // 
             // toolNuevaSeccion
             // 
-            this.toolNuevaSeccion.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolNuevaSeccion.Enabled = false;
-            this.toolNuevaSeccion.Image = global::Flow_Solver.Properties.Resources.new_section_32;
-            this.toolNuevaSeccion.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolNuevaSeccion.Name = "toolNuevaSeccion";
-            this.toolNuevaSeccion.Size = new System.Drawing.Size(29, 24);
-            this.toolNuevaSeccion.Text = "Nueva seccion";
+            toolNuevaSeccion.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolNuevaSeccion.Enabled = false;
+            toolNuevaSeccion.Image = Properties.Resources.new_section_32;
+            toolNuevaSeccion.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolNuevaSeccion.Name = "toolNuevaSeccion";
+            toolNuevaSeccion.Size = new System.Drawing.Size(24, 24);
+            toolNuevaSeccion.Text = "Nueva seccion";
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(37, 24);
-            this.toolStripLabel1.Text = "       ";
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new System.Drawing.Size(28, 24);
+            toolStripLabel1.Text = "       ";
             // 
             // toolStrpBtnMinimizarTodasLasVentanas
             // 
-            this.toolStrpBtnMinimizarTodasLasVentanas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStrpBtnMinimizarTodasLasVentanas.Image = global::Flow_Solver.Properties.Resources.minimize_all_windows;
-            this.toolStrpBtnMinimizarTodasLasVentanas.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStrpBtnMinimizarTodasLasVentanas.Name = "toolStrpBtnMinimizarTodasLasVentanas";
-            this.toolStrpBtnMinimizarTodasLasVentanas.Size = new System.Drawing.Size(29, 24);
-            this.toolStrpBtnMinimizarTodasLasVentanas.Text = "Minimizar todas las ventanas";
-            this.toolStrpBtnMinimizarTodasLasVentanas.Click += new System.EventHandler(this.toolStrpBtnMinimizarTodasLasVentanas_Click);
+            toolStrpBtnMinimizarTodasLasVentanas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            toolStrpBtnMinimizarTodasLasVentanas.Image = Properties.Resources.minimize_all_windows;
+            toolStrpBtnMinimizarTodasLasVentanas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            toolStrpBtnMinimizarTodasLasVentanas.Name = "toolStrpBtnMinimizarTodasLasVentanas";
+            toolStrpBtnMinimizarTodasLasVentanas.Size = new System.Drawing.Size(24, 24);
+            toolStrpBtnMinimizarTodasLasVentanas.Text = "Minimizar todas las ventanas";
+            toolStrpBtnMinimizarTodasLasVentanas.Click += toolStrpBtnMinimizarTodasLasVentanas_Click;
             // 
             // toolStripLabel5
             // 
-            this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(37, 24);
-            this.toolStripLabel5.Text = "       ";
+            toolStripLabel5.Name = "toolStripLabel5";
+            toolStripLabel5.Size = new System.Drawing.Size(28, 24);
+            toolStripLabel5.Text = "       ";
             // 
             // toolStripLabel6
             // 
-            this.toolStripLabel6.Name = "toolStripLabel6";
-            this.toolStripLabel6.Size = new System.Drawing.Size(86, 24);
-            this.toolStripLabel6.Text = "Actual MDI:";
+            toolStripLabel6.Name = "toolStripLabel6";
+            toolStripLabel6.Size = new System.Drawing.Size(69, 24);
+            toolStripLabel6.Text = "Actual MDI:";
             // 
             // toolLblActualMDIActividadName
             // 
-            this.toolLblActualMDIActividadName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolLblActualMDIActividadName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.toolLblActualMDIActividadName.Name = "toolLblActualMDIActividadName";
-            this.toolLblActualMDIActividadName.Size = new System.Drawing.Size(15, 24);
-            this.toolLblActualMDIActividadName.Text = "-";
+            toolLblActualMDIActividadName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
+            toolLblActualMDIActividadName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            toolLblActualMDIActividadName.Name = "toolLblActualMDIActividadName";
+            toolLblActualMDIActividadName.Size = new System.Drawing.Size(12, 24);
+            toolLblActualMDIActividadName.Text = "-";
             // 
             // webBrowser4
             // 
-            this.webBrowser4.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser4.Name = "webBrowser4";
-            this.webBrowser4.Size = new System.Drawing.Size(250, 250);
-            this.webBrowser4.TabIndex = 0;
+            webBrowser4.Location = new System.Drawing.Point(0, 0);
+            webBrowser4.Name = "webBrowser4";
+            webBrowser4.Size = new System.Drawing.Size(250, 250);
+            webBrowser4.TabIndex = 0;
             // 
             // notifyIcon1
             // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
+            notifyIcon1.Text = "notifyIcon1";
+            notifyIcon1.Visible = true;
             // 
             // tabControl1
             // 
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(200, 100);
-            this.tabControl1.TabIndex = 0;
+            tabControl1.Location = new System.Drawing.Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new System.Drawing.Size(200, 100);
+            tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1178, 491);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Location = new System.Drawing.Point(4, 22);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            tabPage1.Size = new System.Drawing.Size(1178, 491);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1178, 491);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Location = new System.Drawing.Point(4, 22);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            tabPage2.Size = new System.Drawing.Size(1178, 491);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // menuOpcionesActividades
             // 
-            this.menuOpcionesActividades.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuOpcionesActividades.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearActividadToolStripMenuItem,
-            this.abrirActividadToolStripMenuItem,
-            this.toolStripSeparator10,
-            this.maximizaToolStripMenuItem,
-            this.minimizarToolStripMenuItem,
-            this.eliminarToolStripMenuItem,
-            this.toolStripSeparator12,
-            this.enviarAvanceToolStripMenuItem,
-            this.importarToolStripMenuItem,
-            this.borrarPermanentementeToolStripMenuItem,
-            this.toolStripSeparator11,
-            this.cerrarToolStripMenuItem});
-            this.menuOpcionesActividades.Name = "menuOpcionesActividades";
-            this.menuOpcionesActividades.Size = new System.Drawing.Size(246, 238);
+            menuOpcionesActividades.ImageScalingSize = new System.Drawing.Size(20, 20);
+            menuOpcionesActividades.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { crearActividadToolStripMenuItem, abrirActividadToolStripMenuItem, toolStripSeparator10, maximizaToolStripMenuItem, minimizarToolStripMenuItem, eliminarToolStripMenuItem, toolStripSeparator12, enviarAvanceToolStripMenuItem, importarToolStripMenuItem, borrarPermanentementeToolStripMenuItem, toolStripSeparator11, cerrarToolStripMenuItem });
+            menuOpcionesActividades.Name = "menuOpcionesActividades";
+            menuOpcionesActividades.Size = new System.Drawing.Size(208, 220);
             // 
             // crearActividadToolStripMenuItem
             // 
-            this.crearActividadToolStripMenuItem.Name = "crearActividadToolStripMenuItem";
-            this.crearActividadToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.crearActividadToolStripMenuItem.Text = "Crear nueva actividad";
+            crearActividadToolStripMenuItem.Name = "crearActividadToolStripMenuItem";
+            crearActividadToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            crearActividadToolStripMenuItem.Text = "Crear nueva actividad";
             // 
             // abrirActividadToolStripMenuItem
             // 
-            this.abrirActividadToolStripMenuItem.Name = "abrirActividadToolStripMenuItem";
-            this.abrirActividadToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.abrirActividadToolStripMenuItem.Text = "Abrir actividad existente";
+            abrirActividadToolStripMenuItem.Name = "abrirActividadToolStripMenuItem";
+            abrirActividadToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            abrirActividadToolStripMenuItem.Text = "Abrir actividad existente";
             // 
             // toolStripSeparator10
             // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator10.Name = "toolStripSeparator10";
+            toolStripSeparator10.Size = new System.Drawing.Size(204, 6);
             // 
             // maximizaToolStripMenuItem
             // 
-            this.maximizaToolStripMenuItem.Name = "maximizaToolStripMenuItem";
-            this.maximizaToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.maximizaToolStripMenuItem.Text = "Maximizar";
+            maximizaToolStripMenuItem.Name = "maximizaToolStripMenuItem";
+            maximizaToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            maximizaToolStripMenuItem.Text = "Maximizar";
             // 
             // minimizarToolStripMenuItem
             // 
-            this.minimizarToolStripMenuItem.Name = "minimizarToolStripMenuItem";
-            this.minimizarToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.minimizarToolStripMenuItem.Text = "Minimizar";
-            this.minimizarToolStripMenuItem.Click += new System.EventHandler(this.minimizarToolStripMenuItem_Click);
+            minimizarToolStripMenuItem.Name = "minimizarToolStripMenuItem";
+            minimizarToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            minimizarToolStripMenuItem.Text = "Minimizar";
+            minimizarToolStripMenuItem.Click += minimizarToolStripMenuItem_Click;
             // 
             // eliminarToolStripMenuItem
             // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.eliminarToolStripMenuItem.Text = "Eliminar de la vista";
+            eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            eliminarToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            eliminarToolStripMenuItem.Text = "Eliminar de la vista";
             // 
             // toolStripSeparator12
             // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator12.Name = "toolStripSeparator12";
+            toolStripSeparator12.Size = new System.Drawing.Size(204, 6);
             // 
             // enviarAvanceToolStripMenuItem
             // 
-            this.enviarAvanceToolStripMenuItem.Name = "enviarAvanceToolStripMenuItem";
-            this.enviarAvanceToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.enviarAvanceToolStripMenuItem.Text = "Enviar avance";
+            enviarAvanceToolStripMenuItem.Name = "enviarAvanceToolStripMenuItem";
+            enviarAvanceToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            enviarAvanceToolStripMenuItem.Text = "Enviar avance";
             // 
             // importarToolStripMenuItem
             // 
-            this.importarToolStripMenuItem.Name = "importarToolStripMenuItem";
-            this.importarToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.importarToolStripMenuItem.Text = "Exportar actividad";
+            importarToolStripMenuItem.Name = "importarToolStripMenuItem";
+            importarToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            importarToolStripMenuItem.Text = "Exportar actividad";
             // 
             // borrarPermanentementeToolStripMenuItem
             // 
-            this.borrarPermanentementeToolStripMenuItem.Name = "borrarPermanentementeToolStripMenuItem";
-            this.borrarPermanentementeToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.borrarPermanentementeToolStripMenuItem.Text = "Borrar permanentemente";
+            borrarPermanentementeToolStripMenuItem.Name = "borrarPermanentementeToolStripMenuItem";
+            borrarPermanentementeToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            borrarPermanentementeToolStripMenuItem.Text = "Borrar permanentemente";
             // 
             // toolStripSeparator11
             // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator11.Name = "toolStripSeparator11";
+            toolStripSeparator11.Size = new System.Drawing.Size(204, 6);
             // 
             // cerrarToolStripMenuItem
             // 
-            this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.cerrarToolStripMenuItem.Text = "Cerrar";
+            cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
+            cerrarToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            cerrarToolStripMenuItem.Text = "Cerrar";
             // 
             // menuOpcionesAnuncios
             // 
-            this.menuOpcionesAnuncios.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuOpcionesAnuncios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearAnuncioStripMenuItem,
-            this.abrirAnuncioStripMenuItem,
-            this.toolStripSeparator13,
-            this.maximizarStripMenuItem,
-            this.minizarStripMenuItem,
-            this.eliminarDeLaVistaStripMenuItem,
-            this.toolStripSeparator14,
-            this.borrarPermanentementeStripMenuItem,
-            this.toolStripSeparator15,
-            this.cerrarStripMenuItem});
-            this.menuOpcionesAnuncios.Name = "menuOpcionesActividades";
-            this.menuOpcionesAnuncios.Size = new System.Drawing.Size(246, 190);
+            menuOpcionesAnuncios.ImageScalingSize = new System.Drawing.Size(20, 20);
+            menuOpcionesAnuncios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { crearAnuncioStripMenuItem, abrirAnuncioStripMenuItem, toolStripSeparator13, maximizarStripMenuItem, minizarStripMenuItem, eliminarDeLaVistaStripMenuItem, toolStripSeparator14, borrarPermanentementeStripMenuItem, toolStripSeparator15, cerrarStripMenuItem });
+            menuOpcionesAnuncios.Name = "menuOpcionesActividades";
+            menuOpcionesAnuncios.Size = new System.Drawing.Size(208, 176);
             // 
             // crearAnuncioStripMenuItem
             // 
-            this.crearAnuncioStripMenuItem.Name = "crearAnuncioStripMenuItem";
-            this.crearAnuncioStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.crearAnuncioStripMenuItem.Text = "Crear nuevo anuncio";
+            crearAnuncioStripMenuItem.Name = "crearAnuncioStripMenuItem";
+            crearAnuncioStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            crearAnuncioStripMenuItem.Text = "Crear nuevo anuncio";
             // 
             // abrirAnuncioStripMenuItem
             // 
-            this.abrirAnuncioStripMenuItem.Name = "abrirAnuncioStripMenuItem";
-            this.abrirAnuncioStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.abrirAnuncioStripMenuItem.Text = "Abrir anuncio existente";
+            abrirAnuncioStripMenuItem.Name = "abrirAnuncioStripMenuItem";
+            abrirAnuncioStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            abrirAnuncioStripMenuItem.Text = "Abrir anuncio existente";
             // 
             // toolStripSeparator13
             // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator13.Name = "toolStripSeparator13";
+            toolStripSeparator13.Size = new System.Drawing.Size(204, 6);
             // 
             // maximizarStripMenuItem
             // 
-            this.maximizarStripMenuItem.Name = "maximizarStripMenuItem";
-            this.maximizarStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.maximizarStripMenuItem.Text = "Maximizar";
+            maximizarStripMenuItem.Name = "maximizarStripMenuItem";
+            maximizarStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            maximizarStripMenuItem.Text = "Maximizar";
             // 
             // minizarStripMenuItem
             // 
-            this.minizarStripMenuItem.Name = "minizarStripMenuItem";
-            this.minizarStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.minizarStripMenuItem.Text = "Minimizar";
+            minizarStripMenuItem.Name = "minizarStripMenuItem";
+            minizarStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            minizarStripMenuItem.Text = "Minimizar";
             // 
             // eliminarDeLaVistaStripMenuItem
             // 
-            this.eliminarDeLaVistaStripMenuItem.Name = "eliminarDeLaVistaStripMenuItem";
-            this.eliminarDeLaVistaStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.eliminarDeLaVistaStripMenuItem.Text = "Eliminar de la vista";
+            eliminarDeLaVistaStripMenuItem.Name = "eliminarDeLaVistaStripMenuItem";
+            eliminarDeLaVistaStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            eliminarDeLaVistaStripMenuItem.Text = "Eliminar de la vista";
             // 
             // toolStripSeparator14
             // 
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator14.Name = "toolStripSeparator14";
+            toolStripSeparator14.Size = new System.Drawing.Size(204, 6);
             // 
             // borrarPermanentementeStripMenuItem
             // 
-            this.borrarPermanentementeStripMenuItem.Name = "borrarPermanentementeStripMenuItem";
-            this.borrarPermanentementeStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.borrarPermanentementeStripMenuItem.Text = "Borrar permanentemente";
+            borrarPermanentementeStripMenuItem.Name = "borrarPermanentementeStripMenuItem";
+            borrarPermanentementeStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            borrarPermanentementeStripMenuItem.Text = "Borrar permanentemente";
             // 
             // toolStripSeparator15
             // 
-            this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(242, 6);
+            toolStripSeparator15.Name = "toolStripSeparator15";
+            toolStripSeparator15.Size = new System.Drawing.Size(204, 6);
             // 
             // cerrarStripMenuItem
             // 
-            this.cerrarStripMenuItem.Name = "cerrarStripMenuItem";
-            this.cerrarStripMenuItem.Size = new System.Drawing.Size(245, 24);
-            this.cerrarStripMenuItem.Text = "Cerrar";
+            cerrarStripMenuItem.Name = "cerrarStripMenuItem";
+            cerrarStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            cerrarStripMenuItem.Text = "Cerrar";
             // 
             // linkLabel1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel1.Location = new System.Drawing.Point(604, 3);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(84, 40);
-            this.linkLabel1.TabIndex = 53;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "RIT Solver Info";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
+            linkLabel1.AutoSize = true;
+            linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            linkLabel1.Location = new System.Drawing.Point(529, 3);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new System.Drawing.Size(73, 37);
+            linkLabel1.TabIndex = 53;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "RIT Solver Info";
+            linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked_1;
             // 
             // tableLayoutPanelBarraMultifuncion_BotonesIzquierda
             // 
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ColumnCount = 2;
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Controls.Add(this.btnFuncion2, 0, 0);
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Controls.Add(this.btnFuncion1, 0, 0);
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Location = new System.Drawing.Point(226, 3);
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Name = "tableLayoutPanelBarraMultifuncion_BotonesIzquierda";
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.RowCount = 1;
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Size = new System.Drawing.Size(372, 40);
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.TabIndex = 11;
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ColumnCount = 2;
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Controls.Add(btnFuncion2, 0, 0);
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Controls.Add(btnFuncion1, 0, 0);
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Location = new System.Drawing.Point(198, 3);
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Margin = new System.Windows.Forms.Padding(0);
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Name = "tableLayoutPanelBarraMultifuncion_BotonesIzquierda";
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.RowCount = 1;
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.Size = new System.Drawing.Size(325, 37);
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.TabIndex = 11;
             // 
             // btnFuncion2
             // 
-            this.btnFuncion2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFuncion2.Location = new System.Drawing.Point(189, 2);
-            this.btnFuncion2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFuncion2.Name = "btnFuncion2";
-            this.btnFuncion2.Size = new System.Drawing.Size(180, 36);
-            this.btnFuncion2.TabIndex = 52;
-            this.btnFuncion2.Text = "Limpiar campos";
-            this.btnFuncion2.UseVisualStyleBackColor = true;
-            this.btnFuncion2.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
+            btnFuncion2.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnFuncion2.Location = new System.Drawing.Point(165, 2);
+            btnFuncion2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnFuncion2.Name = "btnFuncion2";
+            btnFuncion2.Size = new System.Drawing.Size(157, 33);
+            btnFuncion2.TabIndex = 52;
+            btnFuncion2.Text = "Limpiar campos";
+            btnFuncion2.UseVisualStyleBackColor = true;
+            btnFuncion2.Click += btnLimpiarCampos_Click;
             // 
             // btnFuncion1
             // 
-            this.btnFuncion1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFuncion1.Location = new System.Drawing.Point(3, 2);
-            this.btnFuncion1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFuncion1.Name = "btnFuncion1";
-            this.btnFuncion1.Size = new System.Drawing.Size(180, 36);
-            this.btnFuncion1.TabIndex = 51;
-            this.btnFuncion1.Text = "Cargar datos de SAS";
-            this.btnFuncion1.UseVisualStyleBackColor = true;
-            this.btnFuncion1.Click += new System.EventHandler(this.btnCargarDatosDeSAS_Click);
+            btnFuncion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnFuncion1.Location = new System.Drawing.Point(3, 2);
+            btnFuncion1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnFuncion1.Name = "btnFuncion1";
+            btnFuncion1.Size = new System.Drawing.Size(156, 33);
+            btnFuncion1.TabIndex = 51;
+            btnFuncion1.Text = "Cargar datos de SAS";
+            btnFuncion1.UseVisualStyleBackColor = true;
+            btnFuncion1.Click += btnCargarDatosDeSAS_Click;
             // 
             // lblContactoFallos
             // 
-            this.lblContactoFallos.AutoSize = true;
-            this.lblContactoFallos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblContactoFallos.Location = new System.Drawing.Point(697, 3);
-            this.lblContactoFallos.Name = "lblContactoFallos";
-            this.lblContactoFallos.Size = new System.Drawing.Size(256, 40);
-            this.lblContactoFallos.TabIndex = 54;
-            this.lblContactoFallos.TabStop = true;
-            this.lblContactoFallos.Text = "¿Presentas fallos con el programa? ¡Reportalos aqui!";
-            this.lblContactoFallos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblContactoFallos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblContactoFallos_LinkClicked);
+            lblContactoFallos.AutoSize = true;
+            lblContactoFallos.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblContactoFallos.Location = new System.Drawing.Point(611, 3);
+            lblContactoFallos.Name = "lblContactoFallos";
+            lblContactoFallos.Size = new System.Drawing.Size(222, 37);
+            lblContactoFallos.TabIndex = 54;
+            lblContactoFallos.TabStop = true;
+            lblContactoFallos.Text = "¿Presentas fallos con el programa? ¡Reportalos aqui!";
+            lblContactoFallos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblContactoFallos.LinkClicked += lblContactoFallos_LinkClicked;
             // 
             // btnFuncion3
             // 
-            this.btnFuncion3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFuncion3.Location = new System.Drawing.Point(0, 0);
-            this.btnFuncion3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btnFuncion3.Name = "btnFuncion3";
-            this.btnFuncion3.Size = new System.Drawing.Size(151, 36);
-            this.btnFuncion3.TabIndex = 55;
-            this.btnFuncion3.Text = "Guardar RIT";
-            this.btnFuncion3.UseVisualStyleBackColor = true;
-            this.btnFuncion3.Click += new System.EventHandler(this.btnGuardarDatos_Click_1);
+            btnFuncion3.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnFuncion3.Location = new System.Drawing.Point(0, 0);
+            btnFuncion3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            btnFuncion3.Name = "btnFuncion3";
+            btnFuncion3.Size = new System.Drawing.Size(131, 33);
+            btnFuncion3.TabIndex = 55;
+            btnFuncion3.Text = "Guardar RIT";
+            btnFuncion3.UseVisualStyleBackColor = true;
+            btnFuncion3.Click += btnGuardarDatos_Click_1;
             // 
             // tableLayoutPanelBarraMultifuncion
             // 
-            this.tableLayoutPanelBarraMultifuncion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanelBarraMultifuncion.BackColor = System.Drawing.SystemColors.Control;
-            this.tableLayoutPanelBarraMultifuncion.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            this.tableLayoutPanelBarraMultifuncion.ColumnCount = 6;
-            this.tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.73244F));
-            this.tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.25573F));
-            this.tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.866615F));
-            this.tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.8895F));
-            this.tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.91792F));
-            this.tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.33781F));
-            this.tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelBarraMultifuncion.Controls.Add(this.lblContactoFallos, 3, 0);
-            this.tableLayoutPanelBarraMultifuncion.Controls.Add(this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda, 1, 0);
-            this.tableLayoutPanelBarraMultifuncion.Controls.Add(this.linkLabel1, 2, 0);
-            this.tableLayoutPanelBarraMultifuncion.Controls.Add(this.panel7, 4, 0);
-            this.tableLayoutPanelBarraMultifuncion.Location = new System.Drawing.Point(0, 645);
-            this.tableLayoutPanelBarraMultifuncion.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelBarraMultifuncion.Name = "tableLayoutPanelBarraMultifuncion";
-            this.tableLayoutPanelBarraMultifuncion.RowCount = 1;
-            this.tableLayoutPanelBarraMultifuncion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelBarraMultifuncion.Size = new System.Drawing.Size(1339, 46);
-            this.tableLayoutPanelBarraMultifuncion.TabIndex = 2;
+            tableLayoutPanelBarraMultifuncion.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tableLayoutPanelBarraMultifuncion.BackColor = System.Drawing.SystemColors.Control;
+            tableLayoutPanelBarraMultifuncion.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
+            tableLayoutPanelBarraMultifuncion.ColumnCount = 6;
+            tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.73244F));
+            tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.25573F));
+            tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.866615F));
+            tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.8895F));
+            tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.91792F));
+            tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.33781F));
+            tableLayoutPanelBarraMultifuncion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            tableLayoutPanelBarraMultifuncion.Controls.Add(lblContactoFallos, 3, 0);
+            tableLayoutPanelBarraMultifuncion.Controls.Add(tableLayoutPanelBarraMultifuncion_BotonesIzquierda, 1, 0);
+            tableLayoutPanelBarraMultifuncion.Controls.Add(linkLabel1, 2, 0);
+            tableLayoutPanelBarraMultifuncion.Controls.Add(panel7, 4, 0);
+            tableLayoutPanelBarraMultifuncion.Location = new System.Drawing.Point(0, 605);
+            tableLayoutPanelBarraMultifuncion.Margin = new System.Windows.Forms.Padding(0);
+            tableLayoutPanelBarraMultifuncion.Name = "tableLayoutPanelBarraMultifuncion";
+            tableLayoutPanelBarraMultifuncion.RowCount = 1;
+            tableLayoutPanelBarraMultifuncion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanelBarraMultifuncion.Size = new System.Drawing.Size(1172, 43);
+            tableLayoutPanelBarraMultifuncion.TabIndex = 2;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.btnFuncion3);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(962, 5);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(151, 36);
-            this.panel7.TabIndex = 56;
+            panel7.Controls.Add(btnFuncion3);
+            panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel7.Location = new System.Drawing.Point(842, 5);
+            panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            panel7.Name = "panel7";
+            panel7.Size = new System.Drawing.Size(131, 33);
+            panel7.TabIndex = 56;
             // 
             // menuOpcionesDeProyectos
             // 
-            this.menuOpcionesDeProyectos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(59)))), ((int)(((byte)(63)))));
-            this.menuOpcionesDeProyectos.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuOpcionesDeProyectos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem,
-            this.herramientasToolStripMenuItem,
-            this.webToolStripMenuItem,
-            this.solicitudesToolStripMenuItem,
-            this.utilidadesToolStripMenuItem});
-            this.menuOpcionesDeProyectos.Location = new System.Drawing.Point(0, 0);
-            this.menuOpcionesDeProyectos.Name = "menuOpcionesDeProyectos";
-            this.menuOpcionesDeProyectos.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuOpcionesDeProyectos.Size = new System.Drawing.Size(1339, 28);
-            this.menuOpcionesDeProyectos.TabIndex = 1;
-            this.menuOpcionesDeProyectos.Text = "menuStrip1";
+            menuOpcionesDeProyectos.BackColor = System.Drawing.Color.FromArgb(255, 59, 63);
+            menuOpcionesDeProyectos.ImageScalingSize = new System.Drawing.Size(20, 20);
+            menuOpcionesDeProyectos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { archivoToolStripMenuItem, herramientasToolStripMenuItem, webToolStripMenuItem, solicitudesToolStripMenuItem, utilidadesToolStripMenuItem });
+            menuOpcionesDeProyectos.Location = new System.Drawing.Point(0, 0);
+            menuOpcionesDeProyectos.Name = "menuOpcionesDeProyectos";
+            menuOpcionesDeProyectos.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            menuOpcionesDeProyectos.Size = new System.Drawing.Size(1172, 28);
+            menuOpcionesDeProyectos.TabIndex = 1;
+            menuOpcionesDeProyectos.Text = "menuStrip1";
             // 
             // archivoToolStripMenuItem
             // 
-            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoProyectoToolStripMenuItem,
-            this.abrirTicketToolStripMenuItem,
-            this.archivosRecientesToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.nuevaActividadToolStripMenuItem,
-            this.importarActividadToolStripMenuItem,
-            this.exportarActividadesToolStripMenuItem,
-            this.nuevoAnuncioToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.salirToolStripMenuItem});
-            this.archivoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.buscar_archivo1;
-            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
-            this.archivoToolStripMenuItem.Text = "Archivo";
+            archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { nuevoProyectoToolStripMenuItem, abrirTicketToolStripMenuItem, archivosRecientesToolStripMenuItem, toolStripSeparator3, nuevaActividadToolStripMenuItem, importarActividadToolStripMenuItem, exportarActividadesToolStripMenuItem, nuevoAnuncioToolStripMenuItem, toolStripSeparator5, salirToolStripMenuItem });
+            archivoToolStripMenuItem.Image = Properties.Resources.buscar_archivo1;
+            archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            archivoToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            archivoToolStripMenuItem.Text = "Archivo";
             // 
             // nuevoProyectoToolStripMenuItem
             // 
-            this.nuevoProyectoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.project;
-            this.nuevoProyectoToolStripMenuItem.Name = "nuevoProyectoToolStripMenuItem";
-            this.nuevoProyectoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.nuevoProyectoToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.nuevoProyectoToolStripMenuItem.Text = "Nuevo proyecto de ticket";
-            this.nuevoProyectoToolStripMenuItem.Click += new System.EventHandler(this.nuevoProyectoToolStripMenuItem_Click);
+            nuevoProyectoToolStripMenuItem.Image = Properties.Resources.project;
+            nuevoProyectoToolStripMenuItem.Name = "nuevoProyectoToolStripMenuItem";
+            nuevoProyectoToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N;
+            nuevoProyectoToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            nuevoProyectoToolStripMenuItem.Text = "Nuevo proyecto de ticket";
+            nuevoProyectoToolStripMenuItem.Click += nuevoProyectoToolStripMenuItem_Click;
             // 
             // abrirTicketToolStripMenuItem
             // 
-            this.abrirTicketToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.project_open;
-            this.abrirTicketToolStripMenuItem.Name = "abrirTicketToolStripMenuItem";
-            this.abrirTicketToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.abrirTicketToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.abrirTicketToolStripMenuItem.Text = "Abrir proyecto de ticket";
-            this.abrirTicketToolStripMenuItem.Click += new System.EventHandler(this.abrirTicketToolStripMenuItem_Click);
+            abrirTicketToolStripMenuItem.Image = Properties.Resources.project_open;
+            abrirTicketToolStripMenuItem.Name = "abrirTicketToolStripMenuItem";
+            abrirTicketToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A;
+            abrirTicketToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            abrirTicketToolStripMenuItem.Text = "Abrir proyecto de ticket";
+            abrirTicketToolStripMenuItem.Click += abrirTicketToolStripMenuItem_Click;
             // 
             // archivosRecientesToolStripMenuItem
             // 
-            this.archivosRecientesToolStripMenuItem.Name = "archivosRecientesToolStripMenuItem";
-            this.archivosRecientesToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.archivosRecientesToolStripMenuItem.Text = "Archivos recientes";
+            archivosRecientesToolStripMenuItem.Name = "archivosRecientesToolStripMenuItem";
+            archivosRecientesToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            archivosRecientesToolStripMenuItem.Text = "Archivos recientes";
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(309, 6);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new System.Drawing.Size(247, 6);
             // 
             // nuevaActividadToolStripMenuItem
             // 
-            this.nuevaActividadToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.lista_de_verificacion1;
-            this.nuevaActividadToolStripMenuItem.Name = "nuevaActividadToolStripMenuItem";
-            this.nuevaActividadToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.nuevaActividadToolStripMenuItem.Text = "Nueva actividad";
-            this.nuevaActividadToolStripMenuItem.Click += new System.EventHandler(this.nuevaActividadToolStripMenuItem_Click);
+            nuevaActividadToolStripMenuItem.Image = Properties.Resources.lista_de_verificacion1;
+            nuevaActividadToolStripMenuItem.Name = "nuevaActividadToolStripMenuItem";
+            nuevaActividadToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            nuevaActividadToolStripMenuItem.Text = "Nueva actividad";
+            nuevaActividadToolStripMenuItem.Click += nuevaActividadToolStripMenuItem_Click;
             // 
             // importarActividadToolStripMenuItem
             // 
-            this.importarActividadToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.activity_open;
-            this.importarActividadToolStripMenuItem.Name = "importarActividadToolStripMenuItem";
-            this.importarActividadToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.importarActividadToolStripMenuItem.Text = "Abrir actividad";
-            this.importarActividadToolStripMenuItem.Click += new System.EventHandler(this.importarActividadToolStripMenuItem_Click);
+            importarActividadToolStripMenuItem.Image = Properties.Resources.activity_open;
+            importarActividadToolStripMenuItem.Name = "importarActividadToolStripMenuItem";
+            importarActividadToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            importarActividadToolStripMenuItem.Text = "Abrir actividad";
+            importarActividadToolStripMenuItem.Click += importarActividadToolStripMenuItem_Click;
             // 
             // exportarActividadesToolStripMenuItem
             // 
-            this.exportarActividadesToolStripMenuItem.Enabled = false;
-            this.exportarActividadesToolStripMenuItem.Name = "exportarActividadesToolStripMenuItem";
-            this.exportarActividadesToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.exportarActividadesToolStripMenuItem.Text = "Exportar actividades";
+            exportarActividadesToolStripMenuItem.Enabled = false;
+            exportarActividadesToolStripMenuItem.Name = "exportarActividadesToolStripMenuItem";
+            exportarActividadesToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            exportarActividadesToolStripMenuItem.Text = "Exportar actividades";
             // 
             // nuevoAnuncioToolStripMenuItem
             // 
-            this.nuevoAnuncioToolStripMenuItem.Enabled = false;
-            this.nuevoAnuncioToolStripMenuItem.Name = "nuevoAnuncioToolStripMenuItem";
-            this.nuevoAnuncioToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.nuevoAnuncioToolStripMenuItem.Text = "Nuevo anuncio";
+            nuevoAnuncioToolStripMenuItem.Enabled = false;
+            nuevoAnuncioToolStripMenuItem.Name = "nuevoAnuncioToolStripMenuItem";
+            nuevoAnuncioToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            nuevoAnuncioToolStripMenuItem.Text = "Nuevo anuncio";
             // 
             // toolStripSeparator5
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(309, 6);
+            toolStripSeparator5.Name = "toolStripSeparator5";
+            toolStripSeparator5.Size = new System.Drawing.Size(247, 6);
             // 
             // salirToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.cerrar;
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(312, 26);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            salirToolStripMenuItem.Image = Properties.Resources.cerrar;
+            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            salirToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4;
+            salirToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
+            salirToolStripMenuItem.Text = "Salir";
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // herramientasToolStripMenuItem
             // 
-            this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.configuracionToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.buscarActualizacionesToolStripMenuItem,
-            this.buscarActualizacionesBETAToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.sistemaDeInventariosToolStripMenuItem,
-            this.seleccionarUsuarioToolStripMenuItem,
-            this.listadoDeHistorialesToolStripMenuItem,
-            this.seguimientoDeGuiaToolStripMenuItem,
-            this.toolStripSeparator7,
-            this.imprimirRITEnBlancoToolStripMenuItem,
-            this.toolStripSeparator6,
-            this.herramientaDeReparacionAvanzadaToolStripMenuItem,
-            this.reportarFallaToolStripMenuItem});
-            this.herramientasToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.technical_support;
-            this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
-            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.herramientasToolStripMenuItem.Text = "Herramientas";
+            herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { configuracionToolStripMenuItem, toolStripSeparator1, buscarActualizacionesToolStripMenuItem, buscarActualizacionesBETAToolStripMenuItem, toolStripSeparator4, sistemaDeInventariosToolStripMenuItem, seleccionarUsuarioToolStripMenuItem, listadoDeHistorialesToolStripMenuItem, seguimientoDeGuiaToolStripMenuItem, toolStripSeparator7, imprimirRITEnBlancoToolStripMenuItem, toolStripSeparator6, herramientaDeReparacionAvanzadaToolStripMenuItem, reportarFallaToolStripMenuItem });
+            herramientasToolStripMenuItem.Image = Properties.Resources.technical_support;
+            herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
+            herramientasToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            herramientasToolStripMenuItem.Text = "Herramientas";
             // 
             // configuracionToolStripMenuItem
             // 
-            this.configuracionToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.configuraciones;
-            this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
-            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.configuracionToolStripMenuItem.Text = "Configuracion";
-            this.configuracionToolStripMenuItem.Click += new System.EventHandler(this.configuracionToolStripMenuItem_Click);
+            configuracionToolStripMenuItem.Image = Properties.Resources.configuraciones;
+            configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
+            configuracionToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            configuracionToolStripMenuItem.Text = "Configuracion";
+            configuracionToolStripMenuItem.Click += configuracionToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(335, 6);
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new System.Drawing.Size(264, 6);
             // 
             // buscarActualizacionesToolStripMenuItem
             // 
-            this.buscarActualizacionesToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.mantenimiento_web;
-            this.buscarActualizacionesToolStripMenuItem.Name = "buscarActualizacionesToolStripMenuItem";
-            this.buscarActualizacionesToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.buscarActualizacionesToolStripMenuItem.Text = "Buscar actualizaciones";
-            this.buscarActualizacionesToolStripMenuItem.Click += new System.EventHandler(this.buscarActualizacionesToolStripMenuItem_Click);
+            buscarActualizacionesToolStripMenuItem.Image = Properties.Resources.mantenimiento_web;
+            buscarActualizacionesToolStripMenuItem.Name = "buscarActualizacionesToolStripMenuItem";
+            buscarActualizacionesToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            buscarActualizacionesToolStripMenuItem.Text = "Buscar actualizaciones";
+            buscarActualizacionesToolStripMenuItem.Click += buscarActualizacionesToolStripMenuItem_Click;
             // 
             // buscarActualizacionesBETAToolStripMenuItem
             // 
-            this.buscarActualizacionesBETAToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.mantenimiento_web__1_;
-            this.buscarActualizacionesBETAToolStripMenuItem.Name = "buscarActualizacionesBETAToolStripMenuItem";
-            this.buscarActualizacionesBETAToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.buscarActualizacionesBETAToolStripMenuItem.Text = "Buscar actualizaciones BETA";
-            this.buscarActualizacionesBETAToolStripMenuItem.Click += new System.EventHandler(this.buscarActualizacionesBETAToolStripMenuItem_Click);
+            buscarActualizacionesBETAToolStripMenuItem.Image = Properties.Resources.mantenimiento_web__1_;
+            buscarActualizacionesBETAToolStripMenuItem.Name = "buscarActualizacionesBETAToolStripMenuItem";
+            buscarActualizacionesBETAToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            buscarActualizacionesBETAToolStripMenuItem.Text = "Buscar actualizaciones BETA";
+            buscarActualizacionesBETAToolStripMenuItem.Click += buscarActualizacionesBETAToolStripMenuItem_Click;
             // 
             // toolStripSeparator4
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(335, 6);
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new System.Drawing.Size(264, 6);
             // 
             // sistemaDeInventariosToolStripMenuItem
             // 
-            this.sistemaDeInventariosToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.inventory;
-            this.sistemaDeInventariosToolStripMenuItem.Name = "sistemaDeInventariosToolStripMenuItem";
-            this.sistemaDeInventariosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.I)));
-            this.sistemaDeInventariosToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.sistemaDeInventariosToolStripMenuItem.Text = "Sistema de Inventarios";
-            this.sistemaDeInventariosToolStripMenuItem.Click += new System.EventHandler(this.sistemaDeInventariosToolStripMenuItem_Click);
+            sistemaDeInventariosToolStripMenuItem.Image = Properties.Resources.inventory;
+            sistemaDeInventariosToolStripMenuItem.Name = "sistemaDeInventariosToolStripMenuItem";
+            sistemaDeInventariosToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.I;
+            sistemaDeInventariosToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            sistemaDeInventariosToolStripMenuItem.Text = "Sistema de Inventarios";
+            sistemaDeInventariosToolStripMenuItem.Click += sistemaDeInventariosToolStripMenuItem_Click;
             // 
             // seleccionarUsuarioToolStripMenuItem
             // 
-            this.seleccionarUsuarioToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.businessman;
-            this.seleccionarUsuarioToolStripMenuItem.Name = "seleccionarUsuarioToolStripMenuItem";
-            this.seleccionarUsuarioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.U)));
-            this.seleccionarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.seleccionarUsuarioToolStripMenuItem.Text = "Listado de Usuarios";
-            this.seleccionarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.seleccionarUsuarioToolStripMenuItem_Click);
+            seleccionarUsuarioToolStripMenuItem.Image = Properties.Resources.businessman;
+            seleccionarUsuarioToolStripMenuItem.Name = "seleccionarUsuarioToolStripMenuItem";
+            seleccionarUsuarioToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U;
+            seleccionarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            seleccionarUsuarioToolStripMenuItem.Text = "Listado de Usuarios";
+            seleccionarUsuarioToolStripMenuItem.Click += seleccionarUsuarioToolStripMenuItem_Click;
             // 
             // listadoDeHistorialesToolStripMenuItem
             // 
-            this.listadoDeHistorialesToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.computer_historial;
-            this.listadoDeHistorialesToolStripMenuItem.Name = "listadoDeHistorialesToolStripMenuItem";
-            this.listadoDeHistorialesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.H)));
-            this.listadoDeHistorialesToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.listadoDeHistorialesToolStripMenuItem.Text = "Listado de Historiales";
-            this.listadoDeHistorialesToolStripMenuItem.Click += new System.EventHandler(this.listadoDeHistorialesToolStripMenuItem_Click);
+            listadoDeHistorialesToolStripMenuItem.Image = Properties.Resources.computer_historial;
+            listadoDeHistorialesToolStripMenuItem.Name = "listadoDeHistorialesToolStripMenuItem";
+            listadoDeHistorialesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.H;
+            listadoDeHistorialesToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            listadoDeHistorialesToolStripMenuItem.Text = "Listado de Historiales";
+            listadoDeHistorialesToolStripMenuItem.Click += listadoDeHistorialesToolStripMenuItem_Click;
             // 
             // seguimientoDeGuiaToolStripMenuItem
             // 
-            this.seguimientoDeGuiaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dHLToolStripMenuItem,
-            this.paqueteToolStripMenuItem,
-            this.fedexToolStripMenuItem});
-            this.seguimientoDeGuiaToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.tour;
-            this.seguimientoDeGuiaToolStripMenuItem.Name = "seguimientoDeGuiaToolStripMenuItem";
-            this.seguimientoDeGuiaToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.seguimientoDeGuiaToolStripMenuItem.Text = "Seguimiento de Guia Rapida";
+            seguimientoDeGuiaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { dHLToolStripMenuItem, paqueteToolStripMenuItem, fedexToolStripMenuItem });
+            seguimientoDeGuiaToolStripMenuItem.Image = Properties.Resources.tour;
+            seguimientoDeGuiaToolStripMenuItem.Name = "seguimientoDeGuiaToolStripMenuItem";
+            seguimientoDeGuiaToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            seguimientoDeGuiaToolStripMenuItem.Text = "Seguimiento de Guia Rapida";
             // 
             // dHLToolStripMenuItem
             // 
-            this.dHLToolStripMenuItem.Name = "dHLToolStripMenuItem";
-            this.dHLToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
-            this.dHLToolStripMenuItem.Text = "DHL";
-            this.dHLToolStripMenuItem.Click += new System.EventHandler(this.dHLToolStripMenuItem_Click);
+            dHLToolStripMenuItem.Name = "dHLToolStripMenuItem";
+            dHLToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            dHLToolStripMenuItem.Text = "DHL";
+            dHLToolStripMenuItem.Click += dHLToolStripMenuItem_Click;
             // 
             // paqueteToolStripMenuItem
             // 
-            this.paqueteToolStripMenuItem.Name = "paqueteToolStripMenuItem";
-            this.paqueteToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
-            this.paqueteToolStripMenuItem.Text = "Paquetexpress";
-            this.paqueteToolStripMenuItem.Click += new System.EventHandler(this.paqueteToolStripMenuItem_Click);
+            paqueteToolStripMenuItem.Name = "paqueteToolStripMenuItem";
+            paqueteToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            paqueteToolStripMenuItem.Text = "Paquetexpress";
+            paqueteToolStripMenuItem.Click += paqueteToolStripMenuItem_Click;
             // 
             // fedexToolStripMenuItem
             // 
-            this.fedexToolStripMenuItem.Name = "fedexToolStripMenuItem";
-            this.fedexToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
-            this.fedexToolStripMenuItem.Text = "Fedex";
-            this.fedexToolStripMenuItem.Click += new System.EventHandler(this.fedexToolStripMenuItem_Click);
+            fedexToolStripMenuItem.Name = "fedexToolStripMenuItem";
+            fedexToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            fedexToolStripMenuItem.Text = "Fedex";
+            fedexToolStripMenuItem.Click += fedexToolStripMenuItem_Click;
             // 
             // toolStripSeparator7
             // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(335, 6);
+            toolStripSeparator7.Name = "toolStripSeparator7";
+            toolStripSeparator7.Size = new System.Drawing.Size(264, 6);
             // 
             // imprimirRITEnBlancoToolStripMenuItem
             // 
-            this.imprimirRITEnBlancoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.paper;
-            this.imprimirRITEnBlancoToolStripMenuItem.Name = "imprimirRITEnBlancoToolStripMenuItem";
-            this.imprimirRITEnBlancoToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.imprimirRITEnBlancoToolStripMenuItem.Text = "Imprimir RIT en blanco";
-            this.imprimirRITEnBlancoToolStripMenuItem.Click += new System.EventHandler(this.imprimirRITEnBlancoToolStripMenuItem_Click);
+            imprimirRITEnBlancoToolStripMenuItem.Image = Properties.Resources.paper;
+            imprimirRITEnBlancoToolStripMenuItem.Name = "imprimirRITEnBlancoToolStripMenuItem";
+            imprimirRITEnBlancoToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            imprimirRITEnBlancoToolStripMenuItem.Text = "Imprimir RIT en blanco";
+            imprimirRITEnBlancoToolStripMenuItem.Click += imprimirRITEnBlancoToolStripMenuItem_Click;
             // 
             // toolStripSeparator6
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(335, 6);
+            toolStripSeparator6.Name = "toolStripSeparator6";
+            toolStripSeparator6.Size = new System.Drawing.Size(264, 6);
             // 
             // herramientaDeReparacionAvanzadaToolStripMenuItem
             // 
-            this.herramientaDeReparacionAvanzadaToolStripMenuItem.Enabled = false;
-            this.herramientaDeReparacionAvanzadaToolStripMenuItem.Name = "herramientaDeReparacionAvanzadaToolStripMenuItem";
-            this.herramientaDeReparacionAvanzadaToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.herramientaDeReparacionAvanzadaToolStripMenuItem.Text = "Herramienta de reparacion avanzada";
+            herramientaDeReparacionAvanzadaToolStripMenuItem.Enabled = false;
+            herramientaDeReparacionAvanzadaToolStripMenuItem.Name = "herramientaDeReparacionAvanzadaToolStripMenuItem";
+            herramientaDeReparacionAvanzadaToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            herramientaDeReparacionAvanzadaToolStripMenuItem.Text = "Herramienta de reparacion avanzada";
             // 
             // reportarFallaToolStripMenuItem
             // 
-            this.reportarFallaToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.bug_report;
-            this.reportarFallaToolStripMenuItem.Name = "reportarFallaToolStripMenuItem";
-            this.reportarFallaToolStripMenuItem.Size = new System.Drawing.Size(338, 26);
-            this.reportarFallaToolStripMenuItem.Text = "Reportar falla";
-            this.reportarFallaToolStripMenuItem.Click += new System.EventHandler(this.reportarFallaToolStripMenuItem_Click);
+            reportarFallaToolStripMenuItem.Image = Properties.Resources.bug_report;
+            reportarFallaToolStripMenuItem.Name = "reportarFallaToolStripMenuItem";
+            reportarFallaToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
+            reportarFallaToolStripMenuItem.Text = "Reportar falla";
+            reportarFallaToolStripMenuItem.Click += reportarFallaToolStripMenuItem_Click;
             // 
             // webToolStripMenuItem
             // 
-            this.webToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.recargarSASToolStripMenuItem,
-            this.recargarFormsToolStripMenuItem,
-            this.recargarManageDeskCompusofToolStripMenuItem,
-            this.recargarEndpointCentralToolStripMenuItem,
-            this.toolStripSeparator17,
-            this.funcionesWebMacroToolStripMenuItem});
-            this.webToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.red_mundial;
-            this.webToolStripMenuItem.Name = "webToolStripMenuItem";
-            this.webToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
-            this.webToolStripMenuItem.Text = "Webs";
+            webToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { recargarSASToolStripMenuItem, recargarFormsToolStripMenuItem, recargarManageDeskCompusofToolStripMenuItem, recargarEndpointCentralToolStripMenuItem, toolStripSeparator17, funcionesWebMacroToolStripMenuItem });
+            webToolStripMenuItem.Image = Properties.Resources.red_mundial;
+            webToolStripMenuItem.Name = "webToolStripMenuItem";
+            webToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            webToolStripMenuItem.Text = "Webs";
             // 
             // recargarSASToolStripMenuItem
             // 
-            this.recargarSASToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.recargarSASToolStripMenuItem.Name = "recargarSASToolStripMenuItem";
-            this.recargarSASToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.D1)));
-            this.recargarSASToolStripMenuItem.Size = new System.Drawing.Size(422, 26);
-            this.recargarSASToolStripMenuItem.Text = "Recargar SAS";
-            this.recargarSASToolStripMenuItem.Click += new System.EventHandler(this.recargarSASToolStripMenuItem_Click);
+            recargarSASToolStripMenuItem.Image = Properties.Resources.refresh;
+            recargarSASToolStripMenuItem.Name = "recargarSASToolStripMenuItem";
+            recargarSASToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.D1;
+            recargarSASToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
+            recargarSASToolStripMenuItem.Text = "Recargar SAS";
+            recargarSASToolStripMenuItem.Click += recargarSASToolStripMenuItem_Click;
             // 
             // recargarFormsToolStripMenuItem
             // 
-            this.recargarFormsToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.recargarFormsToolStripMenuItem.Name = "recargarFormsToolStripMenuItem";
-            this.recargarFormsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.D2)));
-            this.recargarFormsToolStripMenuItem.Size = new System.Drawing.Size(422, 26);
-            this.recargarFormsToolStripMenuItem.Text = "Recargar Forms";
-            this.recargarFormsToolStripMenuItem.Click += new System.EventHandler(this.recargarFormsToolStripMenuItem_Click);
+            recargarFormsToolStripMenuItem.Image = Properties.Resources.refresh;
+            recargarFormsToolStripMenuItem.Name = "recargarFormsToolStripMenuItem";
+            recargarFormsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.D2;
+            recargarFormsToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
+            recargarFormsToolStripMenuItem.Text = "Recargar Forms";
+            recargarFormsToolStripMenuItem.Click += recargarFormsToolStripMenuItem_Click;
             // 
             // recargarManageDeskCompusofToolStripMenuItem
             // 
-            this.recargarManageDeskCompusofToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.recargarManageDeskCompusofToolStripMenuItem.Name = "recargarManageDeskCompusofToolStripMenuItem";
-            this.recargarManageDeskCompusofToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.D3)));
-            this.recargarManageDeskCompusofToolStripMenuItem.Size = new System.Drawing.Size(422, 26);
-            this.recargarManageDeskCompusofToolStripMenuItem.Text = "Recargar Manage Desk Compusof";
-            this.recargarManageDeskCompusofToolStripMenuItem.Click += new System.EventHandler(this.recargarManageDeskCompusofToolStripMenuItem_Click);
+            recargarManageDeskCompusofToolStripMenuItem.Image = Properties.Resources.refresh;
+            recargarManageDeskCompusofToolStripMenuItem.Name = "recargarManageDeskCompusofToolStripMenuItem";
+            recargarManageDeskCompusofToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.D3;
+            recargarManageDeskCompusofToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
+            recargarManageDeskCompusofToolStripMenuItem.Text = "Recargar Manage Desk Compusof";
+            recargarManageDeskCompusofToolStripMenuItem.Click += recargarManageDeskCompusofToolStripMenuItem_Click;
             // 
             // recargarEndpointCentralToolStripMenuItem
             // 
-            this.recargarEndpointCentralToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.refresh;
-            this.recargarEndpointCentralToolStripMenuItem.Name = "recargarEndpointCentralToolStripMenuItem";
-            this.recargarEndpointCentralToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.D4)));
-            this.recargarEndpointCentralToolStripMenuItem.Size = new System.Drawing.Size(422, 26);
-            this.recargarEndpointCentralToolStripMenuItem.Text = "Recargar Endpoint Central";
-            this.recargarEndpointCentralToolStripMenuItem.Click += new System.EventHandler(this.recargarEndpointCentralToolStripMenuItem_Click);
+            recargarEndpointCentralToolStripMenuItem.Image = Properties.Resources.refresh;
+            recargarEndpointCentralToolStripMenuItem.Name = "recargarEndpointCentralToolStripMenuItem";
+            recargarEndpointCentralToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.D4;
+            recargarEndpointCentralToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
+            recargarEndpointCentralToolStripMenuItem.Text = "Recargar Endpoint Central";
+            recargarEndpointCentralToolStripMenuItem.Click += recargarEndpointCentralToolStripMenuItem_Click;
             // 
             // toolStripSeparator17
             // 
-            this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(419, 6);
+            toolStripSeparator17.Name = "toolStripSeparator17";
+            toolStripSeparator17.Size = new System.Drawing.Size(360, 6);
             // 
             // funcionesWebMacroToolStripMenuItem
             // 
-            this.funcionesWebMacroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejecutarMacroFuncionWeb1ToolStripMenuItem,
-            this.ejecutarMacroFuncionWeb2ToolStripMenuItem,
-            this.ejecutarMacroFuncionWeb3ToolStripMenuItem});
-            this.funcionesWebMacroToolStripMenuItem.Name = "funcionesWebMacroToolStripMenuItem";
-            this.funcionesWebMacroToolStripMenuItem.Size = new System.Drawing.Size(422, 26);
-            this.funcionesWebMacroToolStripMenuItem.Text = "Macro Funciones Web";
+            funcionesWebMacroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { ejecutarMacroFuncionWeb1ToolStripMenuItem, ejecutarMacroFuncionWeb2ToolStripMenuItem, ejecutarMacroFuncionWeb3ToolStripMenuItem });
+            funcionesWebMacroToolStripMenuItem.Name = "funcionesWebMacroToolStripMenuItem";
+            funcionesWebMacroToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
+            funcionesWebMacroToolStripMenuItem.Text = "Macro Funciones Web";
             // 
             // ejecutarMacroFuncionWeb1ToolStripMenuItem
             // 
-            this.ejecutarMacroFuncionWeb1ToolStripMenuItem.Name = "ejecutarMacroFuncionWeb1ToolStripMenuItem";
-            this.ejecutarMacroFuncionWeb1ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.ejecutarMacroFuncionWeb1ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.ejecutarMacroFuncionWeb1ToolStripMenuItem.Text = "Ejecutar Macro Funcion Web 1";
-            this.ejecutarMacroFuncionWeb1ToolStripMenuItem.Click += new System.EventHandler(this.ejecutarMacroFuncionWeb1ToolStripMenuItem_Click);
+            ejecutarMacroFuncionWeb1ToolStripMenuItem.Name = "ejecutarMacroFuncionWeb1ToolStripMenuItem";
+            ejecutarMacroFuncionWeb1ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1;
+            ejecutarMacroFuncionWeb1ToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
+            ejecutarMacroFuncionWeb1ToolStripMenuItem.Text = "Ejecutar Macro Funcion Web 1";
+            ejecutarMacroFuncionWeb1ToolStripMenuItem.Click += ejecutarMacroFuncionWeb1ToolStripMenuItem_Click;
             // 
             // ejecutarMacroFuncionWeb2ToolStripMenuItem
             // 
-            this.ejecutarMacroFuncionWeb2ToolStripMenuItem.Name = "ejecutarMacroFuncionWeb2ToolStripMenuItem";
-            this.ejecutarMacroFuncionWeb2ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2)));
-            this.ejecutarMacroFuncionWeb2ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.ejecutarMacroFuncionWeb2ToolStripMenuItem.Text = "Ejecutar Macro Funcion Web 2";
-            this.ejecutarMacroFuncionWeb2ToolStripMenuItem.Click += new System.EventHandler(this.ejecutarMacroFuncionWeb2ToolStripMenuItem_Click);
+            ejecutarMacroFuncionWeb2ToolStripMenuItem.Name = "ejecutarMacroFuncionWeb2ToolStripMenuItem";
+            ejecutarMacroFuncionWeb2ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2;
+            ejecutarMacroFuncionWeb2ToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
+            ejecutarMacroFuncionWeb2ToolStripMenuItem.Text = "Ejecutar Macro Funcion Web 2";
+            ejecutarMacroFuncionWeb2ToolStripMenuItem.Click += ejecutarMacroFuncionWeb2ToolStripMenuItem_Click;
             // 
             // ejecutarMacroFuncionWeb3ToolStripMenuItem
             // 
-            this.ejecutarMacroFuncionWeb3ToolStripMenuItem.Name = "ejecutarMacroFuncionWeb3ToolStripMenuItem";
-            this.ejecutarMacroFuncionWeb3ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F3)));
-            this.ejecutarMacroFuncionWeb3ToolStripMenuItem.Size = new System.Drawing.Size(349, 26);
-            this.ejecutarMacroFuncionWeb3ToolStripMenuItem.Text = "Ejecutar Macro Funcion Web 3";
-            this.ejecutarMacroFuncionWeb3ToolStripMenuItem.Click += new System.EventHandler(this.ejecutarMacroFuncionWeb3ToolStripMenuItem_Click);
+            ejecutarMacroFuncionWeb3ToolStripMenuItem.Name = "ejecutarMacroFuncionWeb3ToolStripMenuItem";
+            ejecutarMacroFuncionWeb3ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F3;
+            ejecutarMacroFuncionWeb3ToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
+            ejecutarMacroFuncionWeb3ToolStripMenuItem.Text = "Ejecutar Macro Funcion Web 3";
+            ejecutarMacroFuncionWeb3ToolStripMenuItem.Click += ejecutarMacroFuncionWeb3ToolStripMenuItem_Click;
             // 
             // solicitudesToolStripMenuItem
             // 
-            this.solicitudesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.solicitarRefaccionesToolStripMenuItem,
-            this.solicitarTonerToolStripMenuItem});
-            this.solicitudesToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.solicitud;
-            this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
-            this.solicitudesToolStripMenuItem.Text = "Solicitudes";
+            solicitudesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { solicitarRefaccionesToolStripMenuItem, solicitarTonerToolStripMenuItem });
+            solicitudesToolStripMenuItem.Image = Properties.Resources.solicitud;
+            solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
+            solicitudesToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            solicitudesToolStripMenuItem.Text = "Solicitudes";
             // 
             // solicitarRefaccionesToolStripMenuItem
             // 
-            this.solicitarRefaccionesToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.spare_parts;
-            this.solicitarRefaccionesToolStripMenuItem.Name = "solicitarRefaccionesToolStripMenuItem";
-            this.solicitarRefaccionesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.R)));
-            this.solicitarRefaccionesToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
-            this.solicitarRefaccionesToolStripMenuItem.Text = "Solicitar refacciones";
-            this.solicitarRefaccionesToolStripMenuItem.Click += new System.EventHandler(this.solicitarRefaccionesToolStripMenuItem_Click);
+            solicitarRefaccionesToolStripMenuItem.Image = Properties.Resources.spare_parts;
+            solicitarRefaccionesToolStripMenuItem.Name = "solicitarRefaccionesToolStripMenuItem";
+            solicitarRefaccionesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R;
+            solicitarRefaccionesToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            solicitarRefaccionesToolStripMenuItem.Text = "Solicitar refacciones";
+            solicitarRefaccionesToolStripMenuItem.Click += solicitarRefaccionesToolStripMenuItem_Click;
             // 
             // solicitarTonerToolStripMenuItem
             // 
-            this.solicitarTonerToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.toner;
-            this.solicitarTonerToolStripMenuItem.Name = "solicitarTonerToolStripMenuItem";
-            this.solicitarTonerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.T)));
-            this.solicitarTonerToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
-            this.solicitarTonerToolStripMenuItem.Text = "Solicitar toner";
-            this.solicitarTonerToolStripMenuItem.Click += new System.EventHandler(this.solicitarTonerToolStripMenuItem_Click);
+            solicitarTonerToolStripMenuItem.Image = Properties.Resources.toner;
+            solicitarTonerToolStripMenuItem.Name = "solicitarTonerToolStripMenuItem";
+            solicitarTonerToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.T;
+            solicitarTonerToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            solicitarTonerToolStripMenuItem.Text = "Solicitar toner";
+            solicitarTonerToolStripMenuItem.Click += solicitarTonerToolStripMenuItem_Click;
             // 
             // utilidadesToolStripMenuItem
             // 
-            this.utilidadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.escaladoDeReportesToolStripMenuItem,
-            this.organigramaDeContactoCompusofToolStripMenuItem,
-            this.manualDeUsuarioToolStripMenuItem,
-            this.herramientasToolStripMenuItem1});
-            this.utilidadesToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.utilities;
-            this.utilidadesToolStripMenuItem.Name = "utilidadesToolStripMenuItem";
-            this.utilidadesToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
-            this.utilidadesToolStripMenuItem.Text = "Utilidades";
+            utilidadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { escaladoDeReportesToolStripMenuItem, organigramaDeContactoCompusofToolStripMenuItem, manualDeUsuarioToolStripMenuItem, herramientasToolStripMenuItem1 });
+            utilidadesToolStripMenuItem.Image = Properties.Resources.utilities;
+            utilidadesToolStripMenuItem.Name = "utilidadesToolStripMenuItem";
+            utilidadesToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            utilidadesToolStripMenuItem.Text = "Utilidades";
             // 
             // escaladoDeReportesToolStripMenuItem
             // 
-            this.escaladoDeReportesToolStripMenuItem.Enabled = false;
-            this.escaladoDeReportesToolStripMenuItem.Name = "escaladoDeReportesToolStripMenuItem";
-            this.escaladoDeReportesToolStripMenuItem.Size = new System.Drawing.Size(335, 26);
-            this.escaladoDeReportesToolStripMenuItem.Text = "Escalado de reportes";
-            this.escaladoDeReportesToolStripMenuItem.Click += new System.EventHandler(this.escaladoDeReportesToolStripMenuItem_Click);
+            escaladoDeReportesToolStripMenuItem.Enabled = false;
+            escaladoDeReportesToolStripMenuItem.Name = "escaladoDeReportesToolStripMenuItem";
+            escaladoDeReportesToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            escaladoDeReportesToolStripMenuItem.Text = "Escalado de reportes";
+            escaladoDeReportesToolStripMenuItem.Click += escaladoDeReportesToolStripMenuItem_Click;
             // 
             // organigramaDeContactoCompusofToolStripMenuItem
             // 
-            this.organigramaDeContactoCompusofToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.contacts;
-            this.organigramaDeContactoCompusofToolStripMenuItem.Name = "organigramaDeContactoCompusofToolStripMenuItem";
-            this.organigramaDeContactoCompusofToolStripMenuItem.Size = new System.Drawing.Size(335, 26);
-            this.organigramaDeContactoCompusofToolStripMenuItem.Text = "Organigrama de contacto Compusof";
-            this.organigramaDeContactoCompusofToolStripMenuItem.Click += new System.EventHandler(this.organigramaDeContactoCompusofToolStripMenuItem_Click);
+            organigramaDeContactoCompusofToolStripMenuItem.Image = Properties.Resources.contacts;
+            organigramaDeContactoCompusofToolStripMenuItem.Name = "organigramaDeContactoCompusofToolStripMenuItem";
+            organigramaDeContactoCompusofToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            organigramaDeContactoCompusofToolStripMenuItem.Text = "Organigrama de contacto Compusof";
+            organigramaDeContactoCompusofToolStripMenuItem.Click += organigramaDeContactoCompusofToolStripMenuItem_Click;
             // 
             // manualDeUsuarioToolStripMenuItem
             // 
-            this.manualDeUsuarioToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.user_guide;
-            this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
-            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(335, 26);
-            this.manualDeUsuarioToolStripMenuItem.Text = "Manual de usuario";
-            this.manualDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.manualDeUsuarioToolStripMenuItem_Click);
+            manualDeUsuarioToolStripMenuItem.Image = Properties.Resources.user_guide;
+            manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
+            manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            manualDeUsuarioToolStripMenuItem.Text = "Manual de usuario";
+            manualDeUsuarioToolStripMenuItem.Click += manualDeUsuarioToolStripMenuItem_Click;
             // 
             // herramientasToolStripMenuItem1
             // 
-            this.herramientasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pCIETToolStripMenuItem,
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem,
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem,
-            this.crystalDiskInfoToolStripMenuItem});
-            this.herramientasToolStripMenuItem1.Image = global::Flow_Solver.Properties.Resources.toolbox;
-            this.herramientasToolStripMenuItem1.Name = "herramientasToolStripMenuItem1";
-            this.herramientasToolStripMenuItem1.Size = new System.Drawing.Size(335, 26);
-            this.herramientasToolStripMenuItem1.Text = "Herramientas";
+            herramientasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pCIETToolStripMenuItem, omisorDeComprobacionesDeOracleToolStripMenuItem, instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem, crystalDiskInfoToolStripMenuItem });
+            herramientasToolStripMenuItem1.Image = Properties.Resources.toolbox;
+            herramientasToolStripMenuItem1.Name = "herramientasToolStripMenuItem1";
+            herramientasToolStripMenuItem1.Size = new System.Drawing.Size(269, 22);
+            herramientasToolStripMenuItem1.Text = "Herramientas";
             // 
             // pCIETToolStripMenuItem
             // 
-            this.pCIETToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejecutarToolStripMenuItem,
-            this.grabarEnCarpetaToolStripMenuItem});
-            this.pCIETToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.settings;
-            this.pCIETToolStripMenuItem.Name = "pCIETToolStripMenuItem";
-            this.pCIETToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
-            this.pCIETToolStripMenuItem.Text = "PCIET";
-            this.pCIETToolStripMenuItem.ToolTipText = "Extractor de informacion de un equipo para crear carta de resguardo en el program" +
-    "a.";
+            pCIETToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { ejecutarToolStripMenuItem, grabarEnCarpetaToolStripMenuItem });
+            pCIETToolStripMenuItem.Image = Properties.Resources.settings;
+            pCIETToolStripMenuItem.Name = "pCIETToolStripMenuItem";
+            pCIETToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            pCIETToolStripMenuItem.Text = "PCIET";
+            pCIETToolStripMenuItem.ToolTipText = "Extractor de informacion de un equipo para crear carta de resguardo en el programa.";
             // 
             // ejecutarToolStripMenuItem
             // 
-            this.ejecutarToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.play;
-            this.ejecutarToolStripMenuItem.Name = "ejecutarToolStripMenuItem";
-            this.ejecutarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.ejecutarToolStripMenuItem.Text = "Ejecutar";
-            this.ejecutarToolStripMenuItem.Click += new System.EventHandler(this.ejecutarToolStripMenuItem_Click);
+            ejecutarToolStripMenuItem.Image = Properties.Resources.play;
+            ejecutarToolStripMenuItem.Name = "ejecutarToolStripMenuItem";
+            ejecutarToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            ejecutarToolStripMenuItem.Text = "Ejecutar";
+            ejecutarToolStripMenuItem.Click += ejecutarToolStripMenuItem_Click;
             // 
             // grabarEnCarpetaToolStripMenuItem
             // 
-            this.grabarEnCarpetaToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.folder_move;
-            this.grabarEnCarpetaToolStripMenuItem.Name = "grabarEnCarpetaToolStripMenuItem";
-            this.grabarEnCarpetaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.grabarEnCarpetaToolStripMenuItem.Text = "Grabar en carpeta ...";
-            this.grabarEnCarpetaToolStripMenuItem.Click += new System.EventHandler(this.grabarEnCarpetaToolStripMenuItem_Click);
+            grabarEnCarpetaToolStripMenuItem.Image = Properties.Resources.folder_move;
+            grabarEnCarpetaToolStripMenuItem.Name = "grabarEnCarpetaToolStripMenuItem";
+            grabarEnCarpetaToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            grabarEnCarpetaToolStripMenuItem.Text = "Grabar en carpeta ...";
+            grabarEnCarpetaToolStripMenuItem.Click += grabarEnCarpetaToolStripMenuItem_Click;
             // 
             // omisorDeComprobacionesDeOracleToolStripMenuItem
             // 
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejecutarToolStripMenuItem1,
-            this.grabarEnToolStripMenuItem});
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.oracle;
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem.Name = "omisorDeComprobacionesDeOracleToolStripMenuItem";
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem.Text = "Omisor de Comprobaciones de Oracle";
-            this.omisorDeComprobacionesDeOracleToolStripMenuItem.ToolTipText = "Herramienta omisora de comprobaciones de instalacion de Oracle. Solo hay que ejec" +
-    "uta el archivo como administrador en la misma carpeta que se encuentra el instal" +
-    "ador de Oracle.";
+            omisorDeComprobacionesDeOracleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { ejecutarToolStripMenuItem1, grabarEnToolStripMenuItem });
+            omisorDeComprobacionesDeOracleToolStripMenuItem.Image = Properties.Resources.oracle;
+            omisorDeComprobacionesDeOracleToolStripMenuItem.Name = "omisorDeComprobacionesDeOracleToolStripMenuItem";
+            omisorDeComprobacionesDeOracleToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            omisorDeComprobacionesDeOracleToolStripMenuItem.Text = "Omisor de Comprobaciones de Oracle";
+            omisorDeComprobacionesDeOracleToolStripMenuItem.ToolTipText = "Herramienta omisora de comprobaciones de instalacion de Oracle. Solo hay que ejecuta el archivo como administrador en la misma carpeta que se encuentra el instalador de Oracle.";
             // 
             // ejecutarToolStripMenuItem1
             // 
-            this.ejecutarToolStripMenuItem1.Image = global::Flow_Solver.Properties.Resources.play;
-            this.ejecutarToolStripMenuItem1.Name = "ejecutarToolStripMenuItem1";
-            this.ejecutarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.ejecutarToolStripMenuItem1.Text = "Ejecutar";
-            this.ejecutarToolStripMenuItem1.Click += new System.EventHandler(this.ejecutarToolStripMenuItem1_Click);
+            ejecutarToolStripMenuItem1.Image = Properties.Resources.play;
+            ejecutarToolStripMenuItem1.Name = "ejecutarToolStripMenuItem1";
+            ejecutarToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
+            ejecutarToolStripMenuItem1.Text = "Ejecutar";
+            ejecutarToolStripMenuItem1.Click += ejecutarToolStripMenuItem1_Click;
             // 
             // grabarEnToolStripMenuItem
             // 
-            this.grabarEnToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.folder_move;
-            this.grabarEnToolStripMenuItem.Name = "grabarEnToolStripMenuItem";
-            this.grabarEnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.grabarEnToolStripMenuItem.Text = "Grabar en carpeta ...";
-            this.grabarEnToolStripMenuItem.Click += new System.EventHandler(this.grabarEnToolStripMenuItem_Click);
+            grabarEnToolStripMenuItem.Image = Properties.Resources.folder_move;
+            grabarEnToolStripMenuItem.Name = "grabarEnToolStripMenuItem";
+            grabarEnToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            grabarEnToolStripMenuItem.Text = "Grabar en carpeta ...";
+            grabarEnToolStripMenuItem.Click += grabarEnToolStripMenuItem_Click;
             // 
             // instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem
             // 
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.AutoSize = false;
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejecutarToolStripMenuItem2,
-            this.grabarEnCarpetaToolStripMenuItem1});
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.libros;
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Name = "instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem";
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Size = new System.Drawing.Size(309, 22);
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Text = "Instalador de Librerias y Registros de MIIT 7.0";
-            this.instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.ToolTipText = "Instalador de librerias y registros para MiitCat 7. Solo hay que planchar el arch" +
-    "ivo en la raiz de MiitCat y ejecutar como admin.";
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.AutoSize = false;
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { ejecutarToolStripMenuItem2, grabarEnCarpetaToolStripMenuItem1 });
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Image = Properties.Resources.libros;
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Name = "instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem";
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Size = new System.Drawing.Size(309, 22);
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.Text = "Instalador de Librerias y Registros de MIIT 7.0";
+            instaladorDeLibreriasYRegistrosDeMIIT70ToolStripMenuItem.ToolTipText = "Instalador de librerias y registros para MiitCat 7. Solo hay que planchar el archivo en la raiz de MiitCat y ejecutar como admin.";
             // 
             // ejecutarToolStripMenuItem2
             // 
-            this.ejecutarToolStripMenuItem2.Image = global::Flow_Solver.Properties.Resources.play;
-            this.ejecutarToolStripMenuItem2.Name = "ejecutarToolStripMenuItem2";
-            this.ejecutarToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.ejecutarToolStripMenuItem2.Text = "Ejecutar";
-            this.ejecutarToolStripMenuItem2.Click += new System.EventHandler(this.ejecutarToolStripMenuItem2_Click);
+            ejecutarToolStripMenuItem2.Image = Properties.Resources.play;
+            ejecutarToolStripMenuItem2.Name = "ejecutarToolStripMenuItem2";
+            ejecutarToolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
+            ejecutarToolStripMenuItem2.Text = "Ejecutar";
+            ejecutarToolStripMenuItem2.Click += ejecutarToolStripMenuItem2_Click;
             // 
             // grabarEnCarpetaToolStripMenuItem1
             // 
-            this.grabarEnCarpetaToolStripMenuItem1.Image = global::Flow_Solver.Properties.Resources.folder_move;
-            this.grabarEnCarpetaToolStripMenuItem1.Name = "grabarEnCarpetaToolStripMenuItem1";
-            this.grabarEnCarpetaToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.grabarEnCarpetaToolStripMenuItem1.Text = "Grabar en carpeta ...";
-            this.grabarEnCarpetaToolStripMenuItem1.Click += new System.EventHandler(this.grabarEnCarpetaToolStripMenuItem1_Click);
+            grabarEnCarpetaToolStripMenuItem1.Image = Properties.Resources.folder_move;
+            grabarEnCarpetaToolStripMenuItem1.Name = "grabarEnCarpetaToolStripMenuItem1";
+            grabarEnCarpetaToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
+            grabarEnCarpetaToolStripMenuItem1.Text = "Grabar en carpeta ...";
+            grabarEnCarpetaToolStripMenuItem1.Click += grabarEnCarpetaToolStripMenuItem1_Click;
             // 
             // crystalDiskInfoToolStripMenuItem
             // 
-            this.crystalDiskInfoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejecutarToolStripMenuItem3,
-            this.gtrabrToolStripMenuItem});
-            this.crystalDiskInfoToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.storage;
-            this.crystalDiskInfoToolStripMenuItem.Name = "crystalDiskInfoToolStripMenuItem";
-            this.crystalDiskInfoToolStripMenuItem.Size = new System.Drawing.Size(392, 26);
-            this.crystalDiskInfoToolStripMenuItem.Text = "CrystalDiskInfo 8";
-            this.crystalDiskInfoToolStripMenuItem.ToolTipText = "Herramienta para diagnosticar unidades de almacenamiento.";
+            crystalDiskInfoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { ejecutarToolStripMenuItem3, gtrabrToolStripMenuItem });
+            crystalDiskInfoToolStripMenuItem.Image = Properties.Resources.storage;
+            crystalDiskInfoToolStripMenuItem.Name = "crystalDiskInfoToolStripMenuItem";
+            crystalDiskInfoToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
+            crystalDiskInfoToolStripMenuItem.Text = "CrystalDiskInfo 8";
+            crystalDiskInfoToolStripMenuItem.ToolTipText = "Herramienta para diagnosticar unidades de almacenamiento.";
             // 
             // ejecutarToolStripMenuItem3
             // 
-            this.ejecutarToolStripMenuItem3.Image = global::Flow_Solver.Properties.Resources.play;
-            this.ejecutarToolStripMenuItem3.Name = "ejecutarToolStripMenuItem3";
-            this.ejecutarToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
-            this.ejecutarToolStripMenuItem3.Text = "Ejecutar";
-            this.ejecutarToolStripMenuItem3.Click += new System.EventHandler(this.ejecutarToolStripMenuItem3_Click);
+            ejecutarToolStripMenuItem3.Image = Properties.Resources.play;
+            ejecutarToolStripMenuItem3.Name = "ejecutarToolStripMenuItem3";
+            ejecutarToolStripMenuItem3.Size = new System.Drawing.Size(179, 22);
+            ejecutarToolStripMenuItem3.Text = "Ejecutar";
+            ejecutarToolStripMenuItem3.Click += ejecutarToolStripMenuItem3_Click;
             // 
             // gtrabrToolStripMenuItem
             // 
-            this.gtrabrToolStripMenuItem.Image = global::Flow_Solver.Properties.Resources.folder_move;
-            this.gtrabrToolStripMenuItem.Name = "gtrabrToolStripMenuItem";
-            this.gtrabrToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.gtrabrToolStripMenuItem.Text = "Grabar en carpeta ...";
-            this.gtrabrToolStripMenuItem.Click += new System.EventHandler(this.gtrabrToolStripMenuItem_Click);
+            gtrabrToolStripMenuItem.Image = Properties.Resources.folder_move;
+            gtrabrToolStripMenuItem.Name = "gtrabrToolStripMenuItem";
+            gtrabrToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            gtrabrToolStripMenuItem.Text = "Grabar en carpeta ...";
+            gtrabrToolStripMenuItem.Click += gtrabrToolStripMenuItem_Click;
             // 
             // backgroundWorker_StartScreen
             // 
-            this.backgroundWorker_StartScreen.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_StartScreen_DoWork);
+            backgroundWorker_StartScreen.DoWork += backgroundWorker_StartScreen_DoWork;
             // 
             // backgroundWorker_WaitScreen
             // 
-            this.backgroundWorker_WaitScreen.WorkerSupportsCancellation = true;
-            this.backgroundWorker_WaitScreen.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_WaitScreen_DoWork);
+            backgroundWorker_WaitScreen.WorkerSupportsCancellation = true;
+            backgroundWorker_WaitScreen.DoWork += backgroundWorker_WaitScreen_DoWork;
             // 
             // bgworker_RitSolverUpdater
             // 
-            this.bgworker_RitSolverUpdater.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgworker_RitSolverUpdater_DoWork);
-            this.bgworker_RitSolverUpdater.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgworker_RitSolverUpdater_RunWorkerCompleted);
+            bgworker_RitSolverUpdater.DoWork += bgworker_RitSolverUpdater_DoWork;
+            bgworker_RitSolverUpdater.RunWorkerCompleted += bgworker_RitSolverUpdater_RunWorkerCompleted;
             // 
             // bgworkerMDIsFormsLoader
             // 
-            this.bgworkerMDIsFormsLoader.WorkerReportsProgress = true;
-            this.bgworkerMDIsFormsLoader.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgworkerMDIsFormsLoader_DoWork);
-            this.bgworkerMDIsFormsLoader.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bgworkerMDIsFormsLoader_ProgressChanged);
-            this.bgworkerMDIsFormsLoader.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgworkerMDIsFormsLoader_RunWorkerCompleted);
+            bgworkerMDIsFormsLoader.WorkerReportsProgress = true;
+            bgworkerMDIsFormsLoader.DoWork += bgworkerMDIsFormsLoader_DoWork;
+            bgworkerMDIsFormsLoader.ProgressChanged += bgworkerMDIsFormsLoader_ProgressChanged;
+            bgworkerMDIsFormsLoader.RunWorkerCompleted += bgworkerMDIsFormsLoader_RunWorkerCompleted;
+            // 
+            // miniToolStrip
+            // 
+            miniToolStrip.AccessibleName = "Selección de nuevo elemento";
+            miniToolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonDropDown;
+            miniToolStrip.AutoSize = false;
+            miniToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            miniToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            miniToolStrip.Location = new System.Drawing.Point(68, 3);
+            miniToolStrip.Name = "miniToolStrip";
+            miniToolStrip.Padding = new System.Windows.Forms.Padding(1, 0, 11, 0);
+            miniToolStrip.Size = new System.Drawing.Size(1158, 26);
+            miniToolStrip.TabIndex = 0;
+            // 
+            // toolBtnRecargarSAS
+            // 
+            toolBtnRecargarSAS.Image = Properties.Resources.refresh;
+            toolBtnRecargarSAS.Name = "toolBtnRecargarSAS";
+            toolBtnRecargarSAS.Size = new System.Drawing.Size(77, 24);
+            toolBtnRecargarSAS.Text = "Recargar";
+            toolBtnRecargarSAS.Click += recargarSASToolStripMenuItem_Click;
+            // 
+            // URL_GMXT_SAS_Label
+            // 
+            URL_GMXT_SAS_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
+            URL_GMXT_SAS_Label.Name = "URL_GMXT_SAS_Label";
+            URL_GMXT_SAS_Label.Size = new System.Drawing.Size(0, 24);
+            // 
+            // tabServiceDeskGMXT
+            // 
+            tabServiceDeskGMXT.AutoScroll = true;
+            tabServiceDeskGMXT.Location = new System.Drawing.Point(4, 39);
+            tabServiceDeskGMXT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabServiceDeskGMXT.Name = "tabServiceDeskGMXT";
+            tabServiceDeskGMXT.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabServiceDeskGMXT.Size = new System.Drawing.Size(1164, 531);
+            tabServiceDeskGMXT.TabIndex = 1;
+            tabServiceDeskGMXT.Text = "ServiceDesk GMXT";
+            tabServiceDeskGMXT.UseVisualStyleBackColor = true;
+            // 
+            // statusStripSDPGMXT
+            // 
+            statusStripSDPGMXT.ImageScalingSize = new System.Drawing.Size(20, 20);
+            statusStripSDPGMXT.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolBtnRecargarSAS, URL_GMXT_SAS_Label });
+            statusStripSDPGMXT.Location = new System.Drawing.Point(3, 503);
+            statusStripSDPGMXT.Name = "statusStripSDPGMXT";
+            statusStripSDPGMXT.Padding = new System.Windows.Forms.Padding(1, 0, 11, 0);
+            statusStripSDPGMXT.Size = new System.Drawing.Size(1158, 26);
+            statusStripSDPGMXT.TabIndex = 0;
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1339, 689);
-            this.Controls.Add(this.tableLayoutPanelFondoGeneral);
-            this.Controls.Add(this.tableLayoutPanelBarraMultifuncion);
-            this.Controls.Add(this.menuOpcionesDeProyectos);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.HelpButton = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuOpcionesDeProyectos;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RIT Solver";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.main_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_FormClosed);
-            this.Load += new System.EventHandler(this.main_Load);
-            this.Shown += new System.EventHandler(this.main_Shown);
-            this.Resize += new System.EventHandler(this.main_Resize);
-            this.contextMenuStripNodos.ResumeLayout(false);
-            this.tableLayoutPanelFondoGeneral.ResumeLayout(false);
-            this.tabControl_Pages.ResumeLayout(false);
-            this.tabProyectos.ResumeLayout(false);
-            this.tabProyectos.PerformLayout();
-            this.tableLayoutPanelProyectos.ResumeLayout(false);
-            this.MDI_RIT_Panel.ResumeLayout(false);
-            this.tableLayoutPanelProyectos_Nodos.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
-            this.tabFormCompusof.ResumeLayout(false);
-            this.tabFormCompusof.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.webView_CompusofForms)).EndInit();
-            this.statusStripForms.ResumeLayout(false);
-            this.statusStripForms.PerformLayout();
-            this.tabServiceDeskGMXT.ResumeLayout(false);
-            this.tabServiceDeskGMXT.PerformLayout();
-            this.statusStripSDPGMXT.ResumeLayout(false);
-            this.statusStripSDPGMXT.PerformLayout();
-            this.tabServiceDeskCompusof.ResumeLayout(false);
-            this.tabServiceDeskCompusof.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.webView_ServiceDeskCompusof)).EndInit();
-            this.statusStripEndPointcentral.ResumeLayout(false);
-            this.statusStripEndPointcentral.PerformLayout();
-            this.tabEndpointCentral.ResumeLayout(false);
-            this.tabEndpointCentral.PerformLayout();
-            this.statusStripSDPCompusof.ResumeLayout(false);
-            this.statusStripSDPCompusof.PerformLayout();
-            this.tabCentroDeControl.ResumeLayout(false);
-            this.tabCentroDeControl.PerformLayout();
-            this.tableLayoutPanelCentroDeControl.ResumeLayout(false);
-            this.MDI_ACT_Panel.ResumeLayout(false);
-            this.tableLayoutPanelCentroDeControl_Nodos.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.menuOpcionesActividades.ResumeLayout(false);
-            this.menuOpcionesAnuncios.ResumeLayout(false);
-            this.tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ResumeLayout(false);
-            this.tableLayoutPanelBarraMultifuncion.ResumeLayout(false);
-            this.tableLayoutPanelBarraMultifuncion.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.menuOpcionesDeProyectos.ResumeLayout(false);
-            this.menuOpcionesDeProyectos.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.Control;
+            ClientSize = new System.Drawing.Size(1172, 646);
+            Controls.Add(tableLayoutPanelFondoGeneral);
+            Controls.Add(tableLayoutPanelBarraMultifuncion);
+            Controls.Add(menuOpcionesDeProyectos);
+            ForeColor = System.Drawing.SystemColors.ControlText;
+            HelpButton = true;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuOpcionesDeProyectos;
+            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Name = "main";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "RIT Solver";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            FormClosing += main_FormClosing;
+            FormClosed += main_FormClosed;
+            Load += main_Load;
+            Shown += main_Shown;
+            Resize += main_Resize;
+            contextMenuStripNodos.ResumeLayout(false);
+            tableLayoutPanelFondoGeneral.ResumeLayout(false);
+            tabControl_Pages.ResumeLayout(false);
+            tabProyectos.ResumeLayout(false);
+            tabProyectos.PerformLayout();
+            tableLayoutPanelProyectos.ResumeLayout(false);
+            MDI_RIT_Panel.ResumeLayout(false);
+            tableLayoutPanelProyectos_Nodos.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            toolStrip2.ResumeLayout(false);
+            toolStrip2.PerformLayout();
+            tabFormCompusof.ResumeLayout(false);
+            tabFormCompusof.PerformLayout();
+            statusStripForms.ResumeLayout(false);
+            statusStripForms.PerformLayout();
+            tabServiceDeskCompusof.ResumeLayout(false);
+            tabServiceDeskCompusof.PerformLayout();
+            statusStripEndPointcentral.ResumeLayout(false);
+            statusStripEndPointcentral.PerformLayout();
+            tabEndpointCentral.ResumeLayout(false);
+            tabEndpointCentral.PerformLayout();
+            statusStripSDPCompusof.ResumeLayout(false);
+            statusStripSDPCompusof.PerformLayout();
+            tabCentroDeControl.ResumeLayout(false);
+            tabCentroDeControl.PerformLayout();
+            tableLayoutPanelCentroDeControl.ResumeLayout(false);
+            MDI_ACT_Panel.ResumeLayout(false);
+            tableLayoutPanelCentroDeControl_Nodos.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            menuOpcionesActividades.ResumeLayout(false);
+            menuOpcionesAnuncios.ResumeLayout(false);
+            tableLayoutPanelBarraMultifuncion_BotonesIzquierda.ResumeLayout(false);
+            tableLayoutPanelBarraMultifuncion.ResumeLayout(false);
+            tableLayoutPanelBarraMultifuncion.PerformLayout();
+            panel7.ResumeLayout(false);
+            menuOpcionesDeProyectos.ResumeLayout(false);
+            menuOpcionesDeProyectos.PerformLayout();
+            statusStripSDPGMXT.ResumeLayout(false);
+            statusStripSDPGMXT.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -2232,15 +2056,13 @@ namespace Flow_Solver
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelFondoGeneral;
-        private flCustomTabControl tabControl_Pages;
+        private flExtendedTabControl tabControl_Pages;
         private System.Windows.Forms.TabPage tabFormCompusof;
         private System.Windows.Forms.WebBrowser webBrowser4;
-        private System.Windows.Forms.TabPage tabServiceDeskGMXT;
         private System.Windows.Forms.TabPage tabEndpointCentral;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.TabPage tabServiceDeskCompusof;
         private System.Windows.Forms.TabPage tabProyectos;
         private System.Windows.Forms.TabControl tabControl1;
@@ -2274,18 +2096,15 @@ namespace Flow_Solver
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem cerrarProyectoToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStripSDPCompusof;
-        private System.Windows.Forms.StatusStrip statusStripSDPGMXT;
         private System.Windows.Forms.StatusStrip statusStripForms;
         private System.Windows.Forms.StatusStrip statusStripEndPointcentral;
 
 
         private System.Windows.Forms.ToolStripLabel URL_EndPoint_Central_Label;         // Label Compusof
-        private System.Windows.Forms.ToolStripLabel URL_GMXT_SAS_Label;             // Label Ferromex   
         private System.Windows.Forms.ToolStripLabel URL_RIT_Forms_Label;            // Label RIT Forms
         private System.Windows.Forms.ToolStripLabel URL_SDP_Compusof_Label;     // Label EndPoint Central
 
         private System.Windows.Forms.ToolStripButton toolBtnRecargarForms;                  // Recargar RIT Forms
-        private System.Windows.Forms.ToolStripButton toolBtnRecargarSAS;                    // Recargar SAS Ferromex
         private System.Windows.Forms.ToolStripButton toolBtnRecargarServiceDeskCompusof;    // Recargar SDP Compusof
         private System.Windows.Forms.ToolStripButton toolBtnRecargarSDPCompusof;        // Recargar EndPoint Central
         private System.Windows.Forms.ToolStripButton toolNuevoPendientePorHacer;
@@ -2394,8 +2213,6 @@ namespace Flow_Solver
         private System.Windows.Forms.Label lblCentroControl_Text;
         private System.ComponentModel.BackgroundWorker bgworkerMDIsFormsLoader;
         private System.Windows.Forms.ProgressBar pgrssbarAbrirFormularios;
-        public Microsoft.Web.WebView2.WinForms.WebView2 webView_CompusofForms;
-        public Microsoft.Web.WebView2.WinForms.WebView2 webView_ServiceDeskCompusof;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelProyectos_Nodos;
         public System.Windows.Forms.TreeView treeViewProyectos;
         private System.Windows.Forms.Panel panel6;
@@ -2425,5 +2242,10 @@ namespace Flow_Solver
         private System.Windows.Forms.ToolStripButton toolStrpBtn_AbrirSegun;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
         private System.Windows.Forms.ToolStripMenuItem listadoDeHistorialesToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabServiceDeskGMXT;
+        private System.Windows.Forms.StatusStrip miniToolStrip;
+        private System.Windows.Forms.ToolStripButton toolBtnRecargarSAS;
+        private System.Windows.Forms.ToolStripLabel URL_GMXT_SAS_Label;
+        private System.Windows.Forms.StatusStrip statusStripSDPGMXT;
     }
 }

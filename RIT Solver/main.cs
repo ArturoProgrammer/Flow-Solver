@@ -575,7 +575,7 @@ namespace Flow_Solver
 
         void _CommonsAppertureMethods()
         {
-            #region Proceso de splash screen
+            #region Proceso de splash screen - DESHABILITADO POR EL MOMENTO
             // Metodo Experimental
             /*
             splashBackground.WorkerSupportsCancellation = true;
@@ -584,6 +584,7 @@ namespace Flow_Solver
             */
 
             // Metodo Estable Funcional
+            /*
             CheckForIllegalCrossThreadCalls = false;
             try
             {
@@ -593,6 +594,7 @@ namespace Flow_Solver
                 t.Abort();
             }
             catch (Exception ex) { }
+            */
             #endregion
 
             /* 

@@ -18,11 +18,8 @@ namespace Flow_Solver
         public login_form()
         {
             InitializeComponent();
-
-            var a = SysUser.GetAll();
-
-            loadedUsers = a.Object;
-            MessageBox.Show(a.GetBuildedLog());
+            loadedUsers = SysUser.GetAll().Object;
+            //Clipboard.SetText(SysUser.HashearPassword("Hermosillo00"));
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

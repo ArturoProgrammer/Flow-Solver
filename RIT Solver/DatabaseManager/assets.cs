@@ -200,7 +200,7 @@ namespace Flow_Solver.DatabaseManager
     /// <br></br>
     /// Falta terminar para poder funcionar e implementar correctamente
     /// </summary>
-    public class SqlWriteConnection : ConnectionsData
+    public class SqlWriteConnection : ConnectionsData, IDisposable
     {
         private bool _disposed = false;
 

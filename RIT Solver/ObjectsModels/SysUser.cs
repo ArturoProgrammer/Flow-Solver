@@ -61,13 +61,13 @@ namespace Flow_Solver.ObjectsModels
         /// </summary>
         [ParamSqlKey("@LastAccess")]
         [ColumnSqlName("LastAccess")]
-        public DateTime LastAccess { get; set; }
+        public DateTime? LastAccess { get; set; }
         /// <summary>
         /// Intentos de acceso sin exito al sistema usando este usuario
         /// </summary>
         [ParamSqlKey("@LastAccessAttemp")]
         [ColumnSqlName("LastAccessAttemp")]
-        public DateTime LastAccessAttemp { get; set; }
+        public DateTime? LastAccessAttemp { get; set; }
         /// <summary>
         /// Privilegios del usuario en el sistema
         /// </summary>
@@ -152,10 +152,11 @@ namespace Flow_Solver.ObjectsModels
                             Empleado = Empleado.GetCompleteObject(reader.GetString(ColumnSqlName.GetValue<SysUser>("Empleado"))).Object,
                             Password = reader.GetString(ColumnSqlName.GetValue<SysUser>("Password")),
                             CreationDate = reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("CreationDate")),
-                            LastAccess = reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("LastAccess")),
-                            LastAccessAttemp = reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("LastAccessAttemp")),
+                            LastAccess = reader[ColumnSqlName.GetValue<SysUser>("LastAccess")] != DBNull.Value ? reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("LastAccess")) : null,
+                            LastAccessAttemp = reader[ColumnSqlName.GetValue<SysUser>("LastAccessAttemp")] != DBNull.Value ? reader.GetDateTime(ColumnSqlName.GetValue<SysUser>("LastAccessAttemp")) : null,
                             Privilegies = reader.GetString(ColumnSqlName.GetValue<SysUser>("Privilegies")),
                         };
+                        _rsp.Log.Add($"Objeto ({user.HASH}) obtenido...");
 
                         users.Add(user);
                     }
@@ -199,8 +200,8 @@ namespace Flow_Solver.ObjectsModels
                     ("@Empleado", Empleado.HASH),
                     ("@Password", HashearPassword(Password)),
                     ("@CreationDate", CreationDate.ToString("yyyy-MM-dd")),
-                    ("@LastAccess", LastAccess.ToString("yyyy-MM-dd")),
-                    ("@LastAccessAttemp", LastAccessAttemp.ToString("yyyy-MM-dd")),
+                    ("@LastAccess", LastAccess.HasValue ? (object)LastAccess.Value.ToString("yyyy-MM-dd") : DBNull.Value),
+                    ("@LastAccessAttemp", LastAccessAttemp.HasValue ? (object)LastAccessAttemp.Value.ToString("yyyy-MM-dd") : DBNull.Value),
                     ("@Privilegies", Privilegies),
                 };
 
@@ -253,7 +254,7 @@ WHERE HASH=@HASH;";
         /// </summary>
         /// <param name="_password"></param>
         /// <returns>Contraseña Hasheada</returns>
-        private static string HashearPassword(string _password)
+        public static string HashearPassword(string _password)
         {
             return BCrypt.Net.BCrypt.HashPassword(_password);
         }
