@@ -1,4 +1,6 @@
-﻿namespace Flow_Solver
+﻿using FlowControls;
+
+namespace Flow_Solver
 {
     partial class rit_mdi_form
     {
@@ -29,6 +31,20 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            QuickAccessButton quickAccessButton1 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton2 = new QuickAccessButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            QuickAccessButton quickAccessButton3 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton4 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton5 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton6 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton7 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton8 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton9 = new QuickAccessButton();
+            QuickAccessButton quickAccessButton10 = new QuickAccessButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rit_mdi_form));
             menuStrip1 = new System.Windows.Forms.MenuStrip();
             archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +73,7 @@
             openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             errorProvider1 = new System.Windows.Forms.ErrorProvider(components);
-            toolStrip1 = new System.Windows.Forms.ToolStrip();
+            toolStrip_MainTools = new flCustomToolStrip();
             toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             btnAtras = new System.Windows.Forms.ToolStripButton();
             btnSiguiente = new System.Windows.Forms.ToolStripButton();
@@ -83,142 +99,70 @@
             toolGuardarPDF = new System.Windows.Forms.ToolStripButton();
             toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             toolAbrirPDF = new System.Windows.Forms.ToolStripButton();
-            toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            txtNombreDelProyecto = new System.Windows.Forms.ToolStripTextBox();
-            toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
-            btnGenerarEnSAS = new System.Windows.Forms.Button();
-            btnGenerarReporteEnSASVia911 = new System.Windows.Forms.Button();
-            btnCargarEquipo = new System.Windows.Forms.Button();
-            btnVisualizarReporte = new System.Windows.Forms.Button();
-            btnVerTarjetaDeUsuarioActual = new System.Windows.Forms.Button();
-            btnVerHistorialDeEquipo = new System.Windows.Forms.Button();
             backgroundWorker_WaitScreen = new System.ComponentModel.BackgroundWorker();
             toolStrip2 = new System.Windows.Forms.ToolStrip();
             panelFondoSuperior = new System.Windows.Forms.Panel();
-            panel6 = new System.Windows.Forms.Panel();
-            panel5 = new System.Windows.Forms.Panel();
-            groupBox3 = new System.Windows.Forms.GroupBox();
-            panel4 = new System.Windows.Forms.Panel();
-            txtDepartamento = new System.Windows.Forms.ComboBox();
-            txtNoDeReporteDelCliente = new System.Windows.Forms.MaskedTextBox();
-            txtHostname = new System.Windows.Forms.TextBox();
-            label22 = new System.Windows.Forms.Label();
-            cboxPoblacion = new System.Windows.Forms.ComboBox();
-            txtTelefono = new System.Windows.Forms.TextBox();
-            cboxUsuariofinal = new System.Windows.Forms.ComboBox();
-            lblFechaDeReporte = new System.Windows.Forms.Label();
-            txtTecnico = new System.Windows.Forms.TextBox();
-            label20 = new System.Windows.Forms.Label();
-            txtCentroDeServicios = new System.Windows.Forms.TextBox();
-            label2 = new System.Windows.Forms.Label();
-            label19 = new System.Windows.Forms.Label();
-            txtNoDeEmpleado = new System.Windows.Forms.TextBox();
-            label18 = new System.Windows.Forms.Label();
-            label17 = new System.Windows.Forms.Label();
-            label16 = new System.Windows.Forms.Label();
-            label15 = new System.Windows.Forms.Label();
-            txtDireccion = new System.Windows.Forms.TextBox();
-            label14 = new System.Windows.Forms.Label();
-            txtNoDeSucursal = new System.Windows.Forms.TextBox();
-            label13 = new System.Windows.Forms.Label();
-            txtSucursal = new System.Windows.Forms.TextBox();
-            label12 = new System.Windows.Forms.Label();
-            txtCliente = new System.Windows.Forms.TextBox();
-            label11 = new System.Windows.Forms.Label();
-            txtNoDeSerie = new System.Windows.Forms.TextBox();
-            label10 = new System.Windows.Forms.Label();
-            txtModelo = new System.Windows.Forms.TextBox();
-            label9 = new System.Windows.Forms.Label();
-            txtMarca = new System.Windows.Forms.TextBox();
-            label8 = new System.Windows.Forms.Label();
-            txtTipoDeEquipo = new System.Windows.Forms.TextBox();
-            txtMinuto = new System.Windows.Forms.TextBox();
-            label7 = new System.Windows.Forms.Label();
-            txtHora = new System.Windows.Forms.TextBox();
-            calendarFecha = new System.Windows.Forms.MonthCalendar();
-            label6 = new System.Windows.Forms.Label();
-            label5 = new System.Windows.Forms.Label();
-            label4 = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
-            groupBox4 = new System.Windows.Forms.GroupBox();
-            panel7 = new System.Windows.Forms.Panel();
-            btnReducirRefaccion = new System.Windows.Forms.Button();
-            btnReducirToner = new System.Windows.Forms.Button();
-            btnCerrarRit = new System.Windows.Forms.Button();
-            btnLimpiarCampos = new System.Windows.Forms.Button();
-            btnImportarDeSAS = new System.Windows.Forms.Button();
-            btnGuardarPDFeImprimir = new System.Windows.Forms.Button();
-            btnGuardarPDF = new System.Windows.Forms.Button();
-            btnImprimir = new System.Windows.Forms.Button();
-            panel2 = new System.Windows.Forms.Panel();
-            btnSolicitarToner = new System.Windows.Forms.Button();
-            panel1 = new System.Windows.Forms.Panel();
-            rbtnRefaccionesNo = new System.Windows.Forms.RadioButton();
-            rbtnRefaccionesSi = new System.Windows.Forms.RadioButton();
-            btnSolicitarRefaccion = new System.Windows.Forms.Button();
-            label21 = new System.Windows.Forms.Label();
-            lblFechaDeServicio = new System.Windows.Forms.Label();
-            calendarFechaDeServicio = new System.Windows.Forms.MonthCalendar();
-            label23 = new System.Windows.Forms.Label();
-            txtMinutoDeRetorno = new System.Windows.Forms.TextBox();
-            label24 = new System.Windows.Forms.Label();
-            txtHoraDeRetorno = new System.Windows.Forms.TextBox();
-            label25 = new System.Windows.Forms.Label();
-            txtMinutoDeEspera = new System.Windows.Forms.TextBox();
-            label26 = new System.Windows.Forms.Label();
-            txtHoraDeEspera = new System.Windows.Forms.TextBox();
-            label27 = new System.Windows.Forms.Label();
-            txtMinutoDeTermino = new System.Windows.Forms.TextBox();
-            label28 = new System.Windows.Forms.Label();
-            txtHoraDeTermino = new System.Windows.Forms.TextBox();
-            label29 = new System.Windows.Forms.Label();
-            txtMinutoDeComienzo = new System.Windows.Forms.TextBox();
-            label30 = new System.Windows.Forms.Label();
-            txtHoraDeComienzo = new System.Windows.Forms.TextBox();
-            label31 = new System.Windows.Forms.Label();
-            txtMinutoLlegada = new System.Windows.Forms.TextBox();
-            label32 = new System.Windows.Forms.Label();
-            txtHoraLlegada = new System.Windows.Forms.TextBox();
-            label33 = new System.Windows.Forms.Label();
-            txtMinutoInicioTraslado = new System.Windows.Forms.TextBox();
-            label34 = new System.Windows.Forms.Label();
-            txtHoraInicioTraslado = new System.Windows.Forms.TextBox();
-            label35 = new System.Windows.Forms.Label();
-            txtCausasDeNoCierre = new System.Windows.Forms.TextBox();
-            label36 = new System.Windows.Forms.Label();
-            rbtnReporteCerradoNo = new System.Windows.Forms.RadioButton();
-            rbtnReporteCerradoSi = new System.Windows.Forms.RadioButton();
-            txtRefaccionesUtilizadas = new System.Windows.Forms.TextBox();
-            label37 = new System.Windows.Forms.Label();
-            label38 = new System.Windows.Forms.Label();
-            tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            groupBox2 = new System.Windows.Forms.GroupBox();
-            richTextBoxContadorDeRIT = new System.Windows.Forms.MaskedTextBox();
-            groupBox1 = new System.Windows.Forms.GroupBox();
-            label1 = new System.Windows.Forms.Label();
-            txtFallaReportada = new System.Windows.Forms.TextBox();
+            panelClientCompany = new System.Windows.Forms.Panel();
+            panelHostCompany = new System.Windows.Forms.Panel();
             tableLayoutPanel_GeneralLayout = new System.Windows.Forms.TableLayoutPanel();
+            panel4 = new System.Windows.Forms.Panel();
+            flExtendedTabControl1 = new flExtendedTabControl();
+            tabPage_Cierre = new System.Windows.Forms.TabPage();
+            flTabMenuControl1 = new flTabMenuControl();
+            tabPage5 = new System.Windows.Forms.TabPage();
+            lblFechaDeAtencion = new flLabelJoint();
+            calendarFechaAtencion = new System.Windows.Forms.MonthCalendar();
+            tabPage6 = new System.Windows.Forms.TabPage();
+            flCustomLabel3 = new flCustomLabel();
+            txtMotivoDeNoCierre = new flTextBoxLabelJoint();
+            flSeparatorLine3 = new flSeparatorLine();
+            chckboxReporteCerrado = new flCheckBoxLabelJoint();
+            tabPage_FacturaServicio = new System.Windows.Forms.TabPage();
+            quickMenu_FuncionesFactura = new flQuickAccessPanel();
+            flTabMenuControl2 = new flTabMenuControl();
+            tabPage7 = new System.Windows.Forms.TabPage();
+            dgvAmortizacionDeCobro = new flExtendedDataGridView();
+            tabPage8 = new System.Windows.Forms.TabPage();
+            pageRegistroDeTrabajo = new System.Windows.Forms.TabPage();
+            tabPage_DatosDeConvenio = new System.Windows.Forms.TabPage();
+            flRichTextBoxLabelJoint1 = new flRichTextBoxLabelJoint();
+            flTextBoxLabelJoint1 = new flTextBoxLabelJoint();
+            lblHasta = new flLabelJoint();
+            lblConvenioInicio = new flLabelJoint();
+            chckboxConvenioEstablecido = new flCheckBoxLabelJoint();
+            tabPage_ValoresEnBruto = new System.Windows.Forms.TabPage();
+            flCustomLabel4 = new flCustomLabel();
+            flSeparatorLine4 = new flSeparatorLine();
+            label1 = new System.Windows.Forms.Label();
+            btnCargarHostname = new flCustomButton();
+            txtNoEmp = new flTextBoxLabelJoint();
+            txtTecnicoAsignado = new flTextBoxLabelJoint();
+            txtCentroServicio = new flTextBoxLabelJoint();
+            txtTelefono = new flTextBoxLabelJoint();
+            txtHostname = new flTextBoxLabelJoint();
+            txtDepartamento = new flTextBoxLabelJoint();
+            btnCargarUsuario = new flCustomButton();
+            txtSucursal = new flTextBoxLabelJoint();
+            txtPoblacion = new flTextBoxLabelJoint();
+            txtDireccion = new flTextBoxLabelJoint();
+            txtNoSucursal = new flTextBoxLabelJoint();
+            txtUsuarioFinal = new flTextBoxLabelJoint();
+            calendarFechaGeneracion = new System.Windows.Forms.MonthCalendar();
+            lblFechaDeGeneracion = new flLabelJoint();
+            txtCliente = new flTextBoxLabelJoint();
+            btnVerReporte = new flCustomButton();
+            txtNoSerie = new flTextBoxLabelJoint();
+            txtModeloEquipo = new flTextBoxLabelJoint();
+            txtMarcaEquipo = new flTextBoxLabelJoint();
+            txtTipoDeEquipo = new flTextBoxLabelJoint();
+            txtNoReporte = new flTextBoxLabelJoint();
+            flSeparatorLine1 = new flSeparatorLine();
+            flCustomLabel1 = new flCustomLabel();
+            flNumericUpDownLabelJoint1 = new flNumericUpDownLabelJoint();
+            quickMenu_UtilityFunctions = new flQuickAccessPanel();
+            txtFallaReportada = new flTextBoxLabelJoint();
             panel9 = new System.Windows.Forms.Panel();
-            panel3 = new System.Windows.Forms.Panel();
-            groupBox6 = new System.Windows.Forms.GroupBox();
-            linklblRitComprobado = new System.Windows.Forms.LinkLabel();
-            label42 = new System.Windows.Forms.Label();
-            linklblRitFirmado = new System.Windows.Forms.LinkLabel();
-            label41 = new System.Windows.Forms.Label();
-            linklblRitImpreso = new System.Windows.Forms.LinkLabel();
-            label40 = new System.Windows.Forms.Label();
-            linklblTicketGeneradoEnSAS = new System.Windows.Forms.LinkLabel();
-            label39 = new System.Windows.Forms.Label();
-            groupBox5 = new System.Windows.Forms.GroupBox();
-            dataGridViewInventarios = new System.Windows.Forms.DataGridView();
-            txtLinea7 = new System.Windows.Forms.TextBox();
-            txtLinea6 = new System.Windows.Forms.TextBox();
-            txtLinea5 = new System.Windows.Forms.TextBox();
-            txtLinea4 = new System.Windows.Forms.TextBox();
-            txtLinea3 = new System.Windows.Forms.TextBox();
-            txtLinea2 = new System.Windows.Forms.TextBox();
-            txtLinea1 = new System.Windows.Forms.TextBox();
             panel8 = new System.Windows.Forms.Panel();
             toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             toolJobStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -227,24 +171,34 @@
             toolMDI_ID = new System.Windows.Forms.ToolStripStatusLabel();
             toolJobMessage = new System.Windows.Forms.ToolStripStatusLabel();
             statusStrip1 = new System.Windows.Forms.StatusStrip();
+            flCustomLabel2 = new flCustomLabel();
+            flSeparatorLine2 = new flSeparatorLine();
+            flCustomLabel5 = new flCustomLabel();
+            flSeparatorLine5 = new flSeparatorLine();
+            hypertxtResolucion = new FlowControls.HyperTextLegacyViewer.flHyperTextLegacyViewer();
+            flCustomLabel6 = new flCustomLabel();
+            flSeparatorLine6 = new flSeparatorLine();
+            flCustomLabel7 = new flCustomLabel();
+            flSeparatorLine7 = new flSeparatorLine();
+            flTextBoxLabelJoint2 = new flTextBoxLabelJoint();
+            flTextBoxLabelJoint3 = new flTextBoxLabelJoint();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
-            toolStrip1.SuspendLayout();
+            toolStrip_MainTools.SuspendLayout();
             panelFondoSuperior.SuspendLayout();
-            groupBox3.SuspendLayout();
-            panel4.SuspendLayout();
-            groupBox4.SuspendLayout();
-            panel7.SuspendLayout();
-            panel2.SuspendLayout();
-            panel1.SuspendLayout();
-            tableLayoutPanel2.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
             tableLayoutPanel_GeneralLayout.SuspendLayout();
-            panel3.SuspendLayout();
-            groupBox6.SuspendLayout();
-            groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewInventarios).BeginInit();
+            panel4.SuspendLayout();
+            flExtendedTabControl1.SuspendLayout();
+            tabPage_Cierre.SuspendLayout();
+            flTabMenuControl1.SuspendLayout();
+            tabPage5.SuspendLayout();
+            tabPage6.SuspendLayout();
+            tabPage_FacturaServicio.SuspendLayout();
+            flTabMenuControl2.SuspendLayout();
+            tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvAmortizacionDeCobro).BeginInit();
+            tabPage_DatosDeConvenio.SuspendLayout();
+            tabPage_ValoresEnBruto.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -256,7 +210,7 @@
             menuStrip1.Location = new System.Drawing.Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            menuStrip1.Size = new System.Drawing.Size(1002, 24);
+            menuStrip1.Size = new System.Drawing.Size(1064, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             menuStrip1.ItemClicked += menuStrip1_ItemClicked;
@@ -439,20 +393,20 @@
             errorProvider1.ContainerControl = this;
             errorProvider1.Icon = (System.Drawing.Icon)resources.GetObject("errorProvider1.Icon");
             // 
-            // toolStrip1
+            // toolStrip_MainTools
             // 
-            toolStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripLabel4, btnAtras, btnSiguiente, toolStripLabel3, toolMinimizarReporte, toolStrpBtnCerrarProyecto, toolStripSeparator9, toolAbrirProyecto, toolGuardarProyecto, toolStripSeparator4, toolLimbiarFormulario, toolImportarReporteSAS, toolAbrirInventario, toolSeleccionarUsuario, toolStripSeparator5, toolStripButton1, cboxPerfiles, btnCargarPerfil, btnBorrarPerfil, toolStripSeparator6, toolImprimirRIT, toolImprimirYGuardarRIT, toolGuardarPDF, toolStripSeparator7, toolAbrirPDF, toolStripLabel2, txtNombreDelProyecto, toolStripLabel1 });
-            toolStrip1.Location = new System.Drawing.Point(0, 24);
-            toolStrip1.Name = "toolStrip1";
-            toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            toolStrip1.Size = new System.Drawing.Size(1002, 42);
-            toolStrip1.Stretch = true;
-            toolStrip1.TabIndex = 100;
-            toolStrip1.Text = "toolStrip1";
-            toolStrip1.ItemClicked += toolStrip1_ItemClicked;
+            toolStrip_MainTools.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            toolStrip_MainTools.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            toolStrip_MainTools.ImageScalingSize = new System.Drawing.Size(20, 20);
+            toolStrip_MainTools.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripLabel4, btnAtras, btnSiguiente, toolStripLabel3, toolMinimizarReporte, toolStrpBtnCerrarProyecto, toolStripSeparator9, toolAbrirProyecto, toolGuardarProyecto, toolStripSeparator4, toolLimbiarFormulario, toolImportarReporteSAS, toolAbrirInventario, toolSeleccionarUsuario, toolStripSeparator5, toolStripButton1, cboxPerfiles, btnCargarPerfil, btnBorrarPerfil, toolStripSeparator6, toolImprimirRIT, toolImprimirYGuardarRIT, toolGuardarPDF, toolStripSeparator7, toolAbrirPDF });
+            toolStrip_MainTools.Location = new System.Drawing.Point(0, 24);
+            toolStrip_MainTools.Name = "toolStrip_MainTools";
+            toolStrip_MainTools.Padding = new System.Windows.Forms.Padding(0);
+            toolStrip_MainTools.Size = new System.Drawing.Size(1064, 42);
+            toolStrip_MainTools.Stretch = true;
+            toolStrip_MainTools.TabIndex = 100;
+            toolStrip_MainTools.Text = "toolStrip1";
+            toolStrip_MainTools.ItemClicked += toolStrip1_ItemClicked;
             // 
             // toolStripLabel4
             // 
@@ -674,126 +628,9 @@
             toolAbrirPDF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             toolAbrirPDF.Click += toolAbrirPDF_Click;
             // 
-            // toolStripLabel2
-            // 
-            toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            toolStripLabel2.Name = "toolStripLabel2";
-            toolStripLabel2.Size = new System.Drawing.Size(19, 39);
-            toolStripLabel2.Text = "    ";
-            // 
-            // txtNombreDelProyecto
-            // 
-            txtNombreDelProyecto.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            txtNombreDelProyecto.Name = "txtNombreDelProyecto";
-            txtNombreDelProyecto.Size = new System.Drawing.Size(130, 23);
-            txtNombreDelProyecto.Enter += txtNombreDelProyecto_Enter;
-            txtNombreDelProyecto.Leave += txtNombreDelProyecto_Leave;
-            txtNombreDelProyecto.KeyDown += txtNombreDelProyecto_KeyDown;
-            // 
-            // toolStripLabel1
-            // 
-            toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new System.Drawing.Size(123, 15);
-            toolStripLabel1.Text = "Nombre del proyecto:";
-            // 
             // toolTip1
             // 
             toolTip1.IsBalloon = true;
-            // 
-            // btnGenerarEnSAS
-            // 
-            btnGenerarEnSAS.Enabled = false;
-            btnGenerarEnSAS.Image = Properties.Resources.exportar2_24;
-            btnGenerarEnSAS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnGenerarEnSAS.Location = new System.Drawing.Point(3, 159);
-            btnGenerarEnSAS.Name = "btnGenerarEnSAS";
-            btnGenerarEnSAS.Size = new System.Drawing.Size(138, 34);
-            btnGenerarEnSAS.TabIndex = 4;
-            btnGenerarEnSAS.Text = " Generar autoservicio en SAS";
-            btnGenerarEnSAS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            toolTip1.SetToolTip(btnGenerarEnSAS, "Proximamente!");
-            btnGenerarEnSAS.UseVisualStyleBackColor = true;
-            btnGenerarEnSAS.Click += btnGenerarEnSAS_Click;
-            // 
-            // btnGenerarReporteEnSASVia911
-            // 
-            btnGenerarReporteEnSASVia911.Enabled = false;
-            btnGenerarReporteEnSASVia911.Image = Properties.Resources.call_16;
-            btnGenerarReporteEnSASVia911.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnGenerarReporteEnSASVia911.Location = new System.Drawing.Point(3, 200);
-            btnGenerarReporteEnSASVia911.Name = "btnGenerarReporteEnSASVia911";
-            btnGenerarReporteEnSASVia911.Size = new System.Drawing.Size(138, 34);
-            btnGenerarReporteEnSASVia911.TabIndex = 7;
-            btnGenerarReporteEnSASVia911.Text = " Generar autoservicio en SAS via 911";
-            btnGenerarReporteEnSASVia911.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            toolTip1.SetToolTip(btnGenerarReporteEnSASVia911, "Proximamente!");
-            btnGenerarReporteEnSASVia911.UseVisualStyleBackColor = true;
-            btnGenerarReporteEnSASVia911.Click += btnGenerarReporteEnSASVia911_Click;
-            // 
-            // btnCargarEquipo
-            // 
-            btnCargarEquipo.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            btnCargarEquipo.Enabled = false;
-            btnCargarEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnCargarEquipo.Image = Properties.Resources.check;
-            btnCargarEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnCargarEquipo.Location = new System.Drawing.Point(895, 210);
-            btnCargarEquipo.Margin = new System.Windows.Forms.Padding(0);
-            btnCargarEquipo.Name = "btnCargarEquipo";
-            btnCargarEquipo.Size = new System.Drawing.Size(24, 19);
-            btnCargarEquipo.TabIndex = 53;
-            toolTip1.SetToolTip(btnCargarEquipo, "Cargar datos de equipo...");
-            btnCargarEquipo.UseVisualStyleBackColor = false;
-            btnCargarEquipo.Click += btnCargarEquipo_Click;
-            // 
-            // btnVisualizarReporte
-            // 
-            btnVisualizarReporte.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            btnVisualizarReporte.Enabled = false;
-            btnVisualizarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnVisualizarReporte.Image = Properties.Resources.check;
-            btnVisualizarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnVisualizarReporte.Location = new System.Drawing.Point(123, 23);
-            btnVisualizarReporte.Margin = new System.Windows.Forms.Padding(0);
-            btnVisualizarReporte.Name = "btnVisualizarReporte";
-            btnVisualizarReporte.Size = new System.Drawing.Size(24, 19);
-            btnVisualizarReporte.TabIndex = 55;
-            toolTip1.SetToolTip(btnVisualizarReporte, "Ver reporte en ServiceDesk...");
-            btnVisualizarReporte.UseVisualStyleBackColor = false;
-            btnVisualizarReporte.Click += btnVisualizarReporte_Click;
-            // 
-            // btnVerTarjetaDeUsuarioActual
-            // 
-            btnVerTarjetaDeUsuarioActual.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            btnVerTarjetaDeUsuarioActual.Enabled = false;
-            btnVerTarjetaDeUsuarioActual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnVerTarjetaDeUsuarioActual.Image = Properties.Resources.check;
-            btnVerTarjetaDeUsuarioActual.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnVerTarjetaDeUsuarioActual.Location = new System.Drawing.Point(666, 172);
-            btnVerTarjetaDeUsuarioActual.Margin = new System.Windows.Forms.Padding(0);
-            btnVerTarjetaDeUsuarioActual.Name = "btnVerTarjetaDeUsuarioActual";
-            btnVerTarjetaDeUsuarioActual.Size = new System.Drawing.Size(24, 21);
-            btnVerTarjetaDeUsuarioActual.TabIndex = 56;
-            toolTip1.SetToolTip(btnVerTarjetaDeUsuarioActual, "Ver tarjeta del usuario seleccionado...");
-            btnVerTarjetaDeUsuarioActual.UseVisualStyleBackColor = false;
-            btnVerTarjetaDeUsuarioActual.Click += btnVerTarjetaDeUsuarioActual_Click;
-            // 
-            // btnVerHistorialDeEquipo
-            // 
-            btnVerHistorialDeEquipo.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            btnVerHistorialDeEquipo.Enabled = false;
-            btnVerHistorialDeEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnVerHistorialDeEquipo.Image = Properties.Resources.computer_historial_16;
-            btnVerHistorialDeEquipo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnVerHistorialDeEquipo.Location = new System.Drawing.Point(726, 210);
-            btnVerHistorialDeEquipo.Margin = new System.Windows.Forms.Padding(0);
-            btnVerHistorialDeEquipo.Name = "btnVerHistorialDeEquipo";
-            btnVerHistorialDeEquipo.Size = new System.Drawing.Size(24, 19);
-            btnVerHistorialDeEquipo.TabIndex = 57;
-            toolTip1.SetToolTip(btnVerHistorialDeEquipo, "Visualizar historial del equipo...");
-            btnVerHistorialDeEquipo.UseVisualStyleBackColor = false;
-            btnVerHistorialDeEquipo.Click += btnVerHistorialDeEquipo_Click;
             // 
             // backgroundWorker_WaitScreen
             // 
@@ -806,1155 +643,1040 @@
             toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             toolStrip2.Location = new System.Drawing.Point(0, 66);
             toolStrip2.Name = "toolStrip2";
-            toolStrip2.Size = new System.Drawing.Size(1002, 0);
+            toolStrip2.Size = new System.Drawing.Size(1064, 0);
             toolStrip2.TabIndex = 101;
             toolStrip2.Text = "toolStrip2";
             // 
             // panelFondoSuperior
             // 
             panelFondoSuperior.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            panelFondoSuperior.Controls.Add(panel6);
-            panelFondoSuperior.Controls.Add(panel5);
+            panelFondoSuperior.Controls.Add(panelClientCompany);
+            panelFondoSuperior.Controls.Add(panelHostCompany);
             panelFondoSuperior.Dock = System.Windows.Forms.DockStyle.Fill;
-            panelFondoSuperior.Location = new System.Drawing.Point(-3, 0);
+            panelFondoSuperior.Location = new System.Drawing.Point(27, 0);
             panelFondoSuperior.Margin = new System.Windows.Forms.Padding(0);
             panelFondoSuperior.Name = "panelFondoSuperior";
             panelFondoSuperior.Size = new System.Drawing.Size(1009, 98);
             panelFondoSuperior.TabIndex = 92;
             // 
-            // panel6
-            // 
-            panel6.BackgroundImage = Properties.Resources.NOMBRE_Y_EMBLEMA__NEW_;
-            panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            panel6.Location = new System.Drawing.Point(334, 8);
-            panel6.Name = "panel6";
-            panel6.Size = new System.Drawing.Size(321, 84);
-            panel6.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            panel5.BackgroundImage = Properties.Resources.gmxt_logo;
-            panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            panel5.Location = new System.Drawing.Point(6, 8);
-            panel5.Name = "panel5";
-            panel5.Size = new System.Drawing.Size(321, 84);
-            panel5.TabIndex = 0;
-            // 
-            // groupBox3
-            // 
-            groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            groupBox3.Controls.Add(panel4);
-            groupBox3.Location = new System.Drawing.Point(0, 175);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new System.Drawing.Size(1003, 278);
-            groupBox3.TabIndex = 8;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Informacion del Reporte";
-            // 
-            // panel4
-            // 
-            panel4.AutoScroll = true;
-            panel4.Controls.Add(txtDepartamento);
-            panel4.Controls.Add(btnVerHistorialDeEquipo);
-            panel4.Controls.Add(btnVerTarjetaDeUsuarioActual);
-            panel4.Controls.Add(btnVisualizarReporte);
-            panel4.Controls.Add(txtNoDeReporteDelCliente);
-            panel4.Controls.Add(btnCargarEquipo);
-            panel4.Controls.Add(txtHostname);
-            panel4.Controls.Add(label22);
-            panel4.Controls.Add(cboxPoblacion);
-            panel4.Controls.Add(txtTelefono);
-            panel4.Controls.Add(cboxUsuariofinal);
-            panel4.Controls.Add(lblFechaDeReporte);
-            panel4.Controls.Add(txtTecnico);
-            panel4.Controls.Add(label20);
-            panel4.Controls.Add(txtCentroDeServicios);
-            panel4.Controls.Add(label2);
-            panel4.Controls.Add(label19);
-            panel4.Controls.Add(txtNoDeEmpleado);
-            panel4.Controls.Add(label18);
-            panel4.Controls.Add(label17);
-            panel4.Controls.Add(label16);
-            panel4.Controls.Add(label15);
-            panel4.Controls.Add(txtDireccion);
-            panel4.Controls.Add(label14);
-            panel4.Controls.Add(txtNoDeSucursal);
-            panel4.Controls.Add(label13);
-            panel4.Controls.Add(txtSucursal);
-            panel4.Controls.Add(label12);
-            panel4.Controls.Add(txtCliente);
-            panel4.Controls.Add(label11);
-            panel4.Controls.Add(txtNoDeSerie);
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(txtModelo);
-            panel4.Controls.Add(label9);
-            panel4.Controls.Add(txtMarca);
-            panel4.Controls.Add(label8);
-            panel4.Controls.Add(txtTipoDeEquipo);
-            panel4.Controls.Add(txtMinuto);
-            panel4.Controls.Add(label7);
-            panel4.Controls.Add(txtHora);
-            panel4.Controls.Add(calendarFecha);
-            panel4.Controls.Add(label6);
-            panel4.Controls.Add(label5);
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(label3);
-            panel4.Location = new System.Drawing.Point(4, 18);
-            panel4.Name = "panel4";
-            panel4.Size = new System.Drawing.Size(930, 254);
-            panel4.TabIndex = 9;
-            // 
-            // txtDepartamento
-            // 
-            txtDepartamento.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            txtDepartamento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            txtDepartamento.Location = new System.Drawing.Point(497, 210);
-            txtDepartamento.Name = "txtDepartamento";
-            txtDepartamento.Size = new System.Drawing.Size(193, 23);
-            txtDepartamento.TabIndex = 40;
-            // 
-            // txtNoDeReporteDelCliente
-            // 
-            txtNoDeReporteDelCliente.Location = new System.Drawing.Point(10, 22);
-            txtNoDeReporteDelCliente.Mask = "000000";
-            txtNoDeReporteDelCliente.Name = "txtNoDeReporteDelCliente";
-            txtNoDeReporteDelCliente.Size = new System.Drawing.Size(114, 23);
-            txtNoDeReporteDelCliente.TabIndex = 54;
-            txtNoDeReporteDelCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtNoDeReporteDelCliente.MaskInputRejected += txtNoDeReporteDelCliente_MaskInputRejected;
-            txtNoDeReporteDelCliente.TextChanged += txtNoDeReporteDelCliente_TextChanged;
-            // 
-            // txtHostname
-            // 
-            txtHostname.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            txtHostname.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
-            txtHostname.ForeColor = System.Drawing.Color.IndianRed;
-            txtHostname.Location = new System.Drawing.Point(749, 210);
-            txtHostname.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            txtHostname.Name = "txtHostname";
-            txtHostname.Size = new System.Drawing.Size(147, 19);
-            txtHostname.TabIndex = 52;
-            txtHostname.TextChanged += txtHostname_TextChanged;
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Location = new System.Drawing.Point(724, 194);
-            label22.Name = "label22";
-            label22.Size = new System.Drawing.Size(62, 15);
-            label22.TabIndex = 51;
-            label22.Text = "Hostname";
-            // 
-            // cboxPoblacion
-            // 
-            cboxPoblacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            cboxPoblacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            cboxPoblacion.Location = new System.Drawing.Point(497, 134);
-            cboxPoblacion.Name = "cboxPoblacion";
-            cboxPoblacion.Size = new System.Drawing.Size(193, 23);
-            cboxPoblacion.TabIndex = 36;
-            cboxPoblacion.SelectedIndexChanged += txtPoblacion_SelectedIndexChanged;
-            cboxPoblacion.TextChanged += txtPoblacion_SelectedIndexChanged;
-            cboxPoblacion.Enter += cboxPoblacion_Enter;
-            // 
-            // txtTelefono
-            // 
-            txtTelefono.Location = new System.Drawing.Point(726, 60);
-            txtTelefono.Name = "txtTelefono";
-            txtTelefono.Size = new System.Drawing.Size(193, 23);
-            txtTelefono.TabIndex = 50;
-            txtTelefono.Enter += txtTelefono_Enter;
-            // 
-            // cboxUsuariofinal
-            // 
-            cboxUsuariofinal.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            cboxUsuariofinal.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            cboxUsuariofinal.FormattingEnabled = true;
-            cboxUsuariofinal.Location = new System.Drawing.Point(497, 172);
-            cboxUsuariofinal.Name = "cboxUsuariofinal";
-            cboxUsuariofinal.Size = new System.Drawing.Size(170, 23);
-            cboxUsuariofinal.TabIndex = 38;
-            cboxUsuariofinal.SelectedIndexChanged += txtUsuariofinal_SelectedIndexChanged;
-            cboxUsuariofinal.TextChanged += cboxUsuariofinal_TextChanged;
-            cboxUsuariofinal.Enter += cboxUsuariofinal_Enter;
-            // 
-            // lblFechaDeReporte
-            // 
-            lblFechaDeReporte.AutoSize = true;
-            lblFechaDeReporte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            lblFechaDeReporte.Location = new System.Drawing.Point(389, 2);
-            lblFechaDeReporte.Name = "lblFechaDeReporte";
-            lblFechaDeReporte.Size = new System.Drawing.Size(79, 17);
-            lblFechaDeReporte.TabIndex = 23;
-            lblFechaDeReporte.Text = "00 / 00 / 0000";
-            // 
-            // txtTecnico
-            // 
-            txtTecnico.Location = new System.Drawing.Point(726, 135);
-            txtTecnico.Name = "txtTecnico";
-            txtTecnico.Size = new System.Drawing.Size(193, 23);
-            txtTecnico.TabIndex = 48;
-            txtTecnico.Enter += txtTecnico_Enter;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Location = new System.Drawing.Point(723, 119);
-            label20.Name = "label20";
-            label20.Size = new System.Drawing.Size(48, 15);
-            label20.TabIndex = 47;
-            label20.Text = "Tecnico";
-            // 
-            // txtCentroDeServicios
-            // 
-            txtCentroDeServicios.Location = new System.Drawing.Point(726, 99);
-            txtCentroDeServicios.Name = "txtCentroDeServicios";
-            txtCentroDeServicios.Size = new System.Drawing.Size(193, 23);
-            txtCentroDeServicios.TabIndex = 46;
-            txtCentroDeServicios.Enter += txtCentroDeServicios_Enter;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(723, 82);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(108, 15);
-            label2.TabIndex = 45;
-            label2.Text = "Centro de Servicios";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new System.Drawing.Point(723, 44);
-            label19.Name = "label19";
-            label19.Size = new System.Drawing.Size(53, 15);
-            label19.TabIndex = 43;
-            label19.Text = "Telefono";
-            // 
-            // txtNoDeEmpleado
-            // 
-            txtNoDeEmpleado.Location = new System.Drawing.Point(726, 22);
-            txtNoDeEmpleado.Name = "txtNoDeEmpleado";
-            txtNoDeEmpleado.Size = new System.Drawing.Size(193, 23);
-            txtNoDeEmpleado.TabIndex = 42;
-            txtNoDeEmpleado.Enter += txtNoDeEmpleado_Enter;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new System.Drawing.Point(723, 6);
-            label18.Name = "label18";
-            label18.Size = new System.Drawing.Size(104, 15);
-            label18.TabIndex = 41;
-            label18.Text = "No. Empl/Nomina";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new System.Drawing.Point(494, 194);
-            label17.Name = "label17";
-            label17.Size = new System.Drawing.Size(83, 15);
-            label17.TabIndex = 39;
-            label17.Text = "Departamento";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new System.Drawing.Point(494, 157);
-            label16.Name = "label16";
-            label16.Size = new System.Drawing.Size(75, 15);
-            label16.TabIndex = 37;
-            label16.Text = "Usuario Final";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new System.Drawing.Point(494, 119);
-            label15.Name = "label15";
-            label15.Size = new System.Drawing.Size(60, 15);
-            label15.TabIndex = 35;
-            label15.Text = "Poblacion";
-            // 
-            // txtDireccion
-            // 
-            txtDireccion.Location = new System.Drawing.Point(497, 98);
-            txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new System.Drawing.Size(193, 23);
-            txtDireccion.TabIndex = 34;
-            txtDireccion.Enter += txtDireccion_Enter;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new System.Drawing.Point(494, 82);
-            label14.Name = "label14";
-            label14.Size = new System.Drawing.Size(57, 15);
-            label14.TabIndex = 33;
-            label14.Text = "Direccion";
-            // 
-            // txtNoDeSucursal
-            // 
-            txtNoDeSucursal.Location = new System.Drawing.Point(497, 60);
-            txtNoDeSucursal.Name = "txtNoDeSucursal";
-            txtNoDeSucursal.Size = new System.Drawing.Size(193, 23);
-            txtNoDeSucursal.TabIndex = 32;
-            txtNoDeSucursal.Enter += txtNoDeSucursal_Enter;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new System.Drawing.Point(494, 44);
-            label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(89, 15);
-            label13.TabIndex = 31;
-            label13.Text = "No. de Sucursal";
-            // 
-            // txtSucursal
-            // 
-            txtSucursal.Location = new System.Drawing.Point(497, 22);
-            txtSucursal.Name = "txtSucursal";
-            txtSucursal.Size = new System.Drawing.Size(193, 23);
-            txtSucursal.TabIndex = 30;
-            txtSucursal.Enter += txtSucursal_Enter;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new System.Drawing.Point(494, 6);
-            label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(51, 15);
-            label12.TabIndex = 29;
-            label12.Text = "Sucursal";
-            // 
-            // txtCliente
-            // 
-            txtCliente.Location = new System.Drawing.Point(10, 210);
-            txtCliente.Name = "txtCliente";
-            txtCliente.Size = new System.Drawing.Size(193, 23);
-            txtCliente.TabIndex = 21;
-            txtCliente.Enter += txtCliente_Enter;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new System.Drawing.Point(7, 194);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(44, 15);
-            label11.TabIndex = 20;
-            label11.Text = "Cliente";
-            // 
-            // txtNoDeSerie
-            // 
-            txtNoDeSerie.Location = new System.Drawing.Point(10, 172);
-            txtNoDeSerie.Name = "txtNoDeSerie";
-            txtNoDeSerie.Size = new System.Drawing.Size(193, 23);
-            txtNoDeSerie.TabIndex = 19;
-            txtNoDeSerie.Enter += txtNoDeSerie_Enter;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new System.Drawing.Point(7, 157);
-            label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(70, 15);
-            label10.TabIndex = 18;
-            label10.Text = "No. de Serie";
-            // 
-            // txtModelo
-            // 
-            txtModelo.Location = new System.Drawing.Point(10, 135);
-            txtModelo.Name = "txtModelo";
-            txtModelo.Size = new System.Drawing.Size(193, 23);
-            txtModelo.TabIndex = 17;
-            txtModelo.Enter += txtModelo_Enter;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new System.Drawing.Point(7, 119);
-            label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(48, 15);
-            label9.TabIndex = 16;
-            label9.Text = "Modelo";
-            // 
-            // txtMarca
-            // 
-            txtMarca.AutoCompleteCustomSource.AddRange(new string[] { "LENOVO", "HP", "DELL", "TOSHIBA", "ASUS", "ACER", "APPLE", "MICROSOFT", "MSI" });
-            txtMarca.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            txtMarca.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            txtMarca.Location = new System.Drawing.Point(10, 98);
-            txtMarca.Name = "txtMarca";
-            txtMarca.Size = new System.Drawing.Size(193, 23);
-            txtMarca.TabIndex = 15;
-            txtMarca.Enter += txtMarca_Enter;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(7, 82);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(40, 15);
-            label8.TabIndex = 14;
-            label8.Text = "Marca";
-            // 
-            // txtTipoDeEquipo
-            // 
-            txtTipoDeEquipo.AutoCompleteCustomSource.AddRange(new string[] { "LAPTOP", "PC", "IMPRESORA", "MULTIFUNCIONAL", "MONITOR", "TELEFONO" });
-            txtTipoDeEquipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            txtTipoDeEquipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            txtTipoDeEquipo.Location = new System.Drawing.Point(10, 60);
-            txtTipoDeEquipo.Name = "txtTipoDeEquipo";
-            txtTipoDeEquipo.Size = new System.Drawing.Size(193, 23);
-            txtTipoDeEquipo.TabIndex = 13;
-            // 
-            // txtMinuto
-            // 
-            txtMinuto.Location = new System.Drawing.Point(275, 206);
-            txtMinuto.MaxLength = 2;
-            txtMinuto.Name = "txtMinuto";
-            txtMinuto.Size = new System.Drawing.Size(36, 23);
-            txtMinuto.TabIndex = 28;
-            txtMinuto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtMinuto.TextChanged += txtMinuto_TextChanged_1;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new System.Drawing.Point(260, 209);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(10, 15);
-            label7.TabIndex = 27;
-            label7.Text = ":";
-            // 
-            // txtHora
-            // 
-            txtHora.Location = new System.Drawing.Point(220, 206);
-            txtHora.MaxLength = 2;
-            txtHora.Name = "txtHora";
-            txtHora.Size = new System.Drawing.Size(36, 23);
-            txtHora.TabIndex = 26;
-            txtHora.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtHora.TextChanged += txtHora_TextChanged_1;
-            // 
-            // calendarFecha
-            // 
-            calendarFecha.Location = new System.Drawing.Point(220, 22);
-            calendarFecha.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            calendarFecha.MaxSelectionCount = 1;
-            calendarFecha.Name = "calendarFecha";
-            calendarFecha.TabIndex = 24;
-            calendarFecha.DateChanged += calendarFecha_DateChanged;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(217, 190);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(112, 15);
-            label6.TabIndex = 25;
-            label6.Text = "Hora de Generacion";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(7, 44);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(87, 15);
-            label5.TabIndex = 12;
-            label5.Text = "Tipo de Equipo";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(217, 2);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(38, 15);
-            label4.TabIndex = 22;
-            label4.Text = "Fecha";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(7, 6);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(129, 15);
-            label3.TabIndex = 10;
-            label3.Text = "No. Reporte del Cliente";
-            // 
-            // groupBox4
-            // 
-            groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            groupBox4.Controls.Add(panel7);
-            groupBox4.Controls.Add(panel2);
-            groupBox4.Location = new System.Drawing.Point(0, 459);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new System.Drawing.Size(1003, 304);
-            groupBox4.TabIndex = 49;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Informacion del Trabajo y Finalizacion";
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(btnReducirRefaccion);
-            panel7.Controls.Add(btnReducirToner);
-            panel7.Controls.Add(btnGenerarReporteEnSASVia911);
-            panel7.Controls.Add(btnCerrarRit);
-            panel7.Controls.Add(btnLimpiarCampos);
-            panel7.Controls.Add(btnGenerarEnSAS);
-            panel7.Controls.Add(btnImportarDeSAS);
-            panel7.Controls.Add(btnGuardarPDFeImprimir);
-            panel7.Controls.Add(btnGuardarPDF);
-            panel7.Controls.Add(btnImprimir);
-            panel7.Location = new System.Drawing.Point(649, 18);
-            panel7.Name = "panel7";
-            panel7.Size = new System.Drawing.Size(286, 280);
-            panel7.TabIndex = 51;
-            // 
-            // btnReducirRefaccion
-            // 
-            btnReducirRefaccion.Enabled = false;
-            btnReducirRefaccion.Image = Properties.Resources.spare_parts2_24;
-            btnReducirRefaccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnReducirRefaccion.Location = new System.Drawing.Point(147, 44);
-            btnReducirRefaccion.Name = "btnReducirRefaccion";
-            btnReducirRefaccion.Size = new System.Drawing.Size(138, 34);
-            btnReducirRefaccion.TabIndex = 9;
-            btnReducirRefaccion.Text = " Reducir Refaccion";
-            btnReducirRefaccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnReducirRefaccion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnReducirRefaccion.UseVisualStyleBackColor = true;
-            btnReducirRefaccion.Click += btnReducirRefaccion_Click;
-            // 
-            // btnReducirToner
-            // 
-            btnReducirToner.Enabled = false;
-            btnReducirToner.Image = Properties.Resources.toners_24;
-            btnReducirToner.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnReducirToner.Location = new System.Drawing.Point(147, 8);
-            btnReducirToner.Name = "btnReducirToner";
-            btnReducirToner.Size = new System.Drawing.Size(138, 34);
-            btnReducirToner.TabIndex = 8;
-            btnReducirToner.Text = " Reducir Toner";
-            btnReducirToner.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnReducirToner.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnReducirToner.UseVisualStyleBackColor = true;
-            btnReducirToner.Click += btnReducirToner_Click;
-            // 
-            // btnCerrarRit
-            // 
-            btnCerrarRit.Image = Properties.Resources.cerrar2_24;
-            btnCerrarRit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnCerrarRit.Location = new System.Drawing.Point(147, 82);
-            btnCerrarRit.Name = "btnCerrarRit";
-            btnCerrarRit.Size = new System.Drawing.Size(138, 34);
-            btnCerrarRit.TabIndex = 6;
-            btnCerrarRit.Text = " Cerrar";
-            btnCerrarRit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnCerrarRit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnCerrarRit.UseVisualStyleBackColor = true;
-            btnCerrarRit.Click += salirToolStripMenuItem_Click;
-            // 
-            // btnLimpiarCampos
-            // 
-            btnLimpiarCampos.Image = Properties.Resources.clean_24;
-            btnLimpiarCampos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnLimpiarCampos.Location = new System.Drawing.Point(3, 240);
-            btnLimpiarCampos.Name = "btnLimpiarCampos";
-            btnLimpiarCampos.Size = new System.Drawing.Size(138, 34);
-            btnLimpiarCampos.TabIndex = 5;
-            btnLimpiarCampos.Text = " Limpiar";
-            btnLimpiarCampos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnLimpiarCampos.UseVisualStyleBackColor = true;
-            btnLimpiarCampos.Click += limpiarCamposToolStripMenuItem_Click;
-            // 
-            // btnImportarDeSAS
-            // 
-            btnImportarDeSAS.Image = Properties.Resources.importar2_24;
-            btnImportarDeSAS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnImportarDeSAS.Location = new System.Drawing.Point(3, 121);
-            btnImportarDeSAS.Name = "btnImportarDeSAS";
-            btnImportarDeSAS.Size = new System.Drawing.Size(138, 34);
-            btnImportarDeSAS.TabIndex = 3;
-            btnImportarDeSAS.Text = " Importar reporte de SAS";
-            btnImportarDeSAS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnImportarDeSAS.UseVisualStyleBackColor = true;
-            btnImportarDeSAS.Click += importarDatosDeReporteDeSASAFormularioToolStripMenuItem_Click;
-            // 
-            // btnGuardarPDFeImprimir
-            // 
-            btnGuardarPDFeImprimir.Image = Properties.Resources.printer_pdf2_24;
-            btnGuardarPDFeImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnGuardarPDFeImprimir.Location = new System.Drawing.Point(3, 82);
-            btnGuardarPDFeImprimir.Name = "btnGuardarPDFeImprimir";
-            btnGuardarPDFeImprimir.Size = new System.Drawing.Size(138, 34);
-            btnGuardarPDFeImprimir.TabIndex = 2;
-            btnGuardarPDFeImprimir.Text = " Guardar e imprimir";
-            btnGuardarPDFeImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnGuardarPDFeImprimir.UseVisualStyleBackColor = true;
-            btnGuardarPDFeImprimir.Click += guardarEImpirmirRITToolStripMenuItem_Click;
-            // 
-            // btnGuardarPDF
-            // 
-            btnGuardarPDF.Image = Properties.Resources.pdf_24;
-            btnGuardarPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnGuardarPDF.Location = new System.Drawing.Point(3, 44);
-            btnGuardarPDF.Name = "btnGuardarPDF";
-            btnGuardarPDF.Size = new System.Drawing.Size(138, 34);
-            btnGuardarPDF.TabIndex = 1;
-            btnGuardarPDF.Text = " Guardar PDF";
-            btnGuardarPDF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnGuardarPDF.UseVisualStyleBackColor = true;
-            btnGuardarPDF.Click += guardarRITPDFToolStripMenuItem_Click;
-            // 
-            // btnImprimir
-            // 
-            btnImprimir.Image = Properties.Resources.printer_24;
-            btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnImprimir.Location = new System.Drawing.Point(3, 8);
-            btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new System.Drawing.Size(138, 34);
-            btnImprimir.TabIndex = 0;
-            btnImprimir.Text = " Imprimir";
-            btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnImprimir.UseVisualStyleBackColor = true;
-            btnImprimir.Click += imprimirRITToolStripMenuItem_Click;
-            // 
-            // panel2
-            // 
-            panel2.AutoScroll = true;
-            panel2.Controls.Add(btnSolicitarToner);
-            panel2.Controls.Add(panel1);
-            panel2.Controls.Add(btnSolicitarRefaccion);
-            panel2.Controls.Add(label21);
-            panel2.Controls.Add(lblFechaDeServicio);
-            panel2.Controls.Add(calendarFechaDeServicio);
-            panel2.Controls.Add(label23);
-            panel2.Controls.Add(txtMinutoDeRetorno);
-            panel2.Controls.Add(label24);
-            panel2.Controls.Add(txtHoraDeRetorno);
-            panel2.Controls.Add(label25);
-            panel2.Controls.Add(txtMinutoDeEspera);
-            panel2.Controls.Add(label26);
-            panel2.Controls.Add(txtHoraDeEspera);
-            panel2.Controls.Add(label27);
-            panel2.Controls.Add(txtMinutoDeTermino);
-            panel2.Controls.Add(label28);
-            panel2.Controls.Add(txtHoraDeTermino);
-            panel2.Controls.Add(label29);
-            panel2.Controls.Add(txtMinutoDeComienzo);
-            panel2.Controls.Add(label30);
-            panel2.Controls.Add(txtHoraDeComienzo);
-            panel2.Controls.Add(label31);
-            panel2.Controls.Add(txtMinutoLlegada);
-            panel2.Controls.Add(label32);
-            panel2.Controls.Add(txtHoraLlegada);
-            panel2.Controls.Add(label33);
-            panel2.Controls.Add(txtMinutoInicioTraslado);
-            panel2.Controls.Add(label34);
-            panel2.Controls.Add(txtHoraInicioTraslado);
-            panel2.Controls.Add(label35);
-            panel2.Controls.Add(txtCausasDeNoCierre);
-            panel2.Controls.Add(label36);
-            panel2.Controls.Add(rbtnReporteCerradoNo);
-            panel2.Controls.Add(rbtnReporteCerradoSi);
-            panel2.Controls.Add(txtRefaccionesUtilizadas);
-            panel2.Controls.Add(label37);
-            panel2.Controls.Add(label38);
-            panel2.Location = new System.Drawing.Point(6, 18);
-            panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(636, 280);
-            panel2.TabIndex = 50;
-            // 
-            // btnSolicitarToner
-            // 
-            btnSolicitarToner.Image = Properties.Resources.toners_16;
-            btnSolicitarToner.Location = new System.Drawing.Point(135, 47);
-            btnSolicitarToner.Name = "btnSolicitarToner";
-            btnSolicitarToner.Size = new System.Drawing.Size(122, 22);
-            btnSolicitarToner.TabIndex = 58;
-            btnSolicitarToner.Text = "Solicitar Toner";
-            btnSolicitarToner.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnSolicitarToner.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnSolicitarToner.UseVisualStyleBackColor = true;
-            btnSolicitarToner.Click += btnSolicitarToner_Click;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(rbtnRefaccionesNo);
-            panel1.Controls.Add(rbtnRefaccionesSi);
-            panel1.Location = new System.Drawing.Point(12, 22);
-            panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(87, 20);
-            panel1.TabIndex = 52;
-            // 
-            // rbtnRefaccionesNo
-            // 
-            rbtnRefaccionesNo.AutoSize = true;
-            rbtnRefaccionesNo.Location = new System.Drawing.Point(46, 2);
-            rbtnRefaccionesNo.Name = "rbtnRefaccionesNo";
-            rbtnRefaccionesNo.Size = new System.Drawing.Size(41, 19);
-            rbtnRefaccionesNo.TabIndex = 54;
-            rbtnRefaccionesNo.TabStop = true;
-            rbtnRefaccionesNo.Text = "No";
-            rbtnRefaccionesNo.UseVisualStyleBackColor = true;
-            rbtnRefaccionesNo.CheckedChanged += rbtnRefaccionesNo_CheckedChanged;
-            // 
-            // rbtnRefaccionesSi
-            // 
-            rbtnRefaccionesSi.AutoSize = true;
-            rbtnRefaccionesSi.Location = new System.Drawing.Point(3, 2);
-            rbtnRefaccionesSi.Name = "rbtnRefaccionesSi";
-            rbtnRefaccionesSi.Size = new System.Drawing.Size(34, 19);
-            rbtnRefaccionesSi.TabIndex = 53;
-            rbtnRefaccionesSi.TabStop = true;
-            rbtnRefaccionesSi.Text = "Si";
-            rbtnRefaccionesSi.UseVisualStyleBackColor = true;
-            rbtnRefaccionesSi.CheckedChanged += rbtnRefaccionesSi_CheckedChanged;
-            // 
-            // btnSolicitarRefaccion
-            // 
-            btnSolicitarRefaccion.Image = Properties.Resources.spare_parts2_16;
-            btnSolicitarRefaccion.Location = new System.Drawing.Point(7, 47);
-            btnSolicitarRefaccion.Name = "btnSolicitarRefaccion";
-            btnSolicitarRefaccion.Size = new System.Drawing.Size(122, 22);
-            btnSolicitarRefaccion.TabIndex = 57;
-            btnSolicitarRefaccion.Text = " Solicitar Refaccion";
-            btnSolicitarRefaccion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnSolicitarRefaccion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            btnSolicitarRefaccion.UseVisualStyleBackColor = true;
-            btnSolicitarRefaccion.Click += btnSolicitarRefaccion_Click;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Location = new System.Drawing.Point(4, 6);
-            label21.Name = "label21";
-            label21.Size = new System.Drawing.Size(144, 15);
-            label21.TabIndex = 51;
-            label21.Text = "¿Se utilizaron refacciones?";
-            // 
-            // lblFechaDeServicio
-            // 
-            lblFechaDeServicio.AutoSize = true;
-            lblFechaDeServicio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            lblFechaDeServicio.Location = new System.Drawing.Point(518, 47);
-            lblFechaDeServicio.Name = "lblFechaDeServicio";
-            lblFechaDeServicio.Size = new System.Drawing.Size(79, 17);
-            lblFechaDeServicio.TabIndex = 84;
-            lblFechaDeServicio.Text = "00 / 00 / 0000";
-            // 
-            // calendarFechaDeServicio
-            // 
-            calendarFechaDeServicio.Location = new System.Drawing.Point(349, 67);
-            calendarFechaDeServicio.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            calendarFechaDeServicio.MaxSelectionCount = 1;
-            calendarFechaDeServicio.Name = "calendarFechaDeServicio";
-            calendarFechaDeServicio.TabIndex = 85;
-            calendarFechaDeServicio.DateChanged += calendarFechaDeServicio_DateChanged;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new System.Drawing.Point(346, 47);
-            label23.Name = "label23";
-            label23.Size = new System.Drawing.Size(101, 15);
-            label23.TabIndex = 83;
-            label23.Text = "Fecha del Servicio";
-            // 
-            // txtMinutoDeRetorno
-            // 
-            txtMinutoDeRetorno.Location = new System.Drawing.Point(290, 132);
-            txtMinutoDeRetorno.MaxLength = 2;
-            txtMinutoDeRetorno.Name = "txtMinutoDeRetorno";
-            txtMinutoDeRetorno.Size = new System.Drawing.Size(36, 23);
-            txtMinutoDeRetorno.TabIndex = 82;
-            txtMinutoDeRetorno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtMinutoDeRetorno.TextChanged += txtMinutoDeRetorno_TextChanged;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Location = new System.Drawing.Point(275, 135);
-            label24.Name = "label24";
-            label24.Size = new System.Drawing.Size(10, 15);
-            label24.TabIndex = 81;
-            label24.Text = ":";
-            // 
-            // txtHoraDeRetorno
-            // 
-            txtHoraDeRetorno.Location = new System.Drawing.Point(234, 132);
-            txtHoraDeRetorno.MaxLength = 2;
-            txtHoraDeRetorno.Name = "txtHoraDeRetorno";
-            txtHoraDeRetorno.Size = new System.Drawing.Size(36, 23);
-            txtHoraDeRetorno.TabIndex = 80;
-            txtHoraDeRetorno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtHoraDeRetorno.TextChanged += txtHoraDeRetorno_TextChanged;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Location = new System.Drawing.Point(231, 116);
-            label25.Name = "label25";
-            label25.Size = new System.Drawing.Size(109, 15);
-            label25.TabIndex = 79;
-            label25.Text = "Tiempo de Retorno";
-            // 
-            // txtMinutoDeEspera
-            // 
-            txtMinutoDeEspera.Location = new System.Drawing.Point(289, 94);
-            txtMinutoDeEspera.MaxLength = 2;
-            txtMinutoDeEspera.Name = "txtMinutoDeEspera";
-            txtMinutoDeEspera.Size = new System.Drawing.Size(36, 23);
-            txtMinutoDeEspera.TabIndex = 78;
-            txtMinutoDeEspera.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtMinutoDeEspera.TextChanged += txtMinutoDeEspera_TextChanged;
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Location = new System.Drawing.Point(274, 97);
-            label26.Name = "label26";
-            label26.Size = new System.Drawing.Size(10, 15);
-            label26.TabIndex = 77;
-            label26.Text = ":";
-            // 
-            // txtHoraDeEspera
-            // 
-            txtHoraDeEspera.Location = new System.Drawing.Point(234, 94);
-            txtHoraDeEspera.MaxLength = 2;
-            txtHoraDeEspera.Name = "txtHoraDeEspera";
-            txtHoraDeEspera.Size = new System.Drawing.Size(36, 23);
-            txtHoraDeEspera.TabIndex = 76;
-            txtHoraDeEspera.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtHoraDeEspera.TextChanged += txtHoraDeEspera_TextChanged;
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Location = new System.Drawing.Point(230, 78);
-            label27.Name = "label27";
-            label27.Size = new System.Drawing.Size(101, 15);
-            label27.TabIndex = 75;
-            label27.Text = "Tiempo de Espera";
-            // 
-            // txtMinutoDeTermino
-            // 
-            txtMinutoDeTermino.Location = new System.Drawing.Point(175, 132);
-            txtMinutoDeTermino.MaxLength = 2;
-            txtMinutoDeTermino.Name = "txtMinutoDeTermino";
-            txtMinutoDeTermino.Size = new System.Drawing.Size(36, 23);
-            txtMinutoDeTermino.TabIndex = 74;
-            txtMinutoDeTermino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtMinutoDeTermino.TextChanged += txtMinutoDeTermino_TextChanged;
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Location = new System.Drawing.Point(160, 135);
-            label28.Name = "label28";
-            label28.Size = new System.Drawing.Size(10, 15);
-            label28.TabIndex = 73;
-            label28.Text = ":";
-            // 
-            // txtHoraDeTermino
-            // 
-            txtHoraDeTermino.Location = new System.Drawing.Point(119, 132);
-            txtHoraDeTermino.MaxLength = 2;
-            txtHoraDeTermino.Name = "txtHoraDeTermino";
-            txtHoraDeTermino.Size = new System.Drawing.Size(36, 23);
-            txtHoraDeTermino.TabIndex = 72;
-            txtHoraDeTermino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtHoraDeTermino.TextChanged += txtHoraDeTermino_TextChanged;
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Location = new System.Drawing.Point(116, 116);
-            label29.Name = "label29";
-            label29.Size = new System.Drawing.Size(96, 15);
-            label29.TabIndex = 71;
-            label29.Text = "Hora de Termino";
-            // 
-            // txtMinutoDeComienzo
-            // 
-            txtMinutoDeComienzo.Location = new System.Drawing.Point(175, 94);
-            txtMinutoDeComienzo.MaxLength = 2;
-            txtMinutoDeComienzo.Name = "txtMinutoDeComienzo";
-            txtMinutoDeComienzo.Size = new System.Drawing.Size(36, 23);
-            txtMinutoDeComienzo.TabIndex = 70;
-            txtMinutoDeComienzo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtMinutoDeComienzo.TextChanged += txtMinutoDeComienzo_TextChanged;
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Location = new System.Drawing.Point(160, 97);
-            label30.Name = "label30";
-            label30.Size = new System.Drawing.Size(10, 15);
-            label30.TabIndex = 69;
-            label30.Text = ":";
-            // 
-            // txtHoraDeComienzo
-            // 
-            txtHoraDeComienzo.Location = new System.Drawing.Point(119, 94);
-            txtHoraDeComienzo.MaxLength = 2;
-            txtHoraDeComienzo.Name = "txtHoraDeComienzo";
-            txtHoraDeComienzo.Size = new System.Drawing.Size(36, 23);
-            txtHoraDeComienzo.TabIndex = 68;
-            txtHoraDeComienzo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtHoraDeComienzo.TextChanged += txtHoraDeComienzo_TextChanged;
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Location = new System.Drawing.Point(116, 78);
-            label31.Name = "label31";
-            label31.Size = new System.Drawing.Size(106, 15);
-            label31.TabIndex = 67;
-            label31.Text = "Hora de Comienzo";
-            // 
-            // txtMinutoLlegada
-            // 
-            txtMinutoLlegada.Location = new System.Drawing.Point(63, 132);
-            txtMinutoLlegada.MaxLength = 2;
-            txtMinutoLlegada.Name = "txtMinutoLlegada";
-            txtMinutoLlegada.Size = new System.Drawing.Size(36, 23);
-            txtMinutoLlegada.TabIndex = 66;
-            txtMinutoLlegada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtMinutoLlegada.TextChanged += txtMinutoLlegada_TextChanged;
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Location = new System.Drawing.Point(48, 135);
-            label32.Name = "label32";
-            label32.Size = new System.Drawing.Size(10, 15);
-            label32.TabIndex = 65;
-            label32.Text = ":";
-            // 
-            // txtHoraLlegada
-            // 
-            txtHoraLlegada.Location = new System.Drawing.Point(7, 132);
-            txtHoraLlegada.MaxLength = 2;
-            txtHoraLlegada.Name = "txtHoraLlegada";
-            txtHoraLlegada.Size = new System.Drawing.Size(36, 23);
-            txtHoraLlegada.TabIndex = 64;
-            txtHoraLlegada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtHoraLlegada.TextChanged += txtHoraLlegada_TextChanged;
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Location = new System.Drawing.Point(4, 116);
-            label33.Name = "label33";
-            label33.Size = new System.Drawing.Size(93, 15);
-            label33.TabIndex = 63;
-            label33.Text = "Hora de Llegada";
-            // 
-            // txtMinutoInicioTraslado
-            // 
-            txtMinutoInicioTraslado.Location = new System.Drawing.Point(63, 94);
-            txtMinutoInicioTraslado.MaxLength = 2;
-            txtMinutoInicioTraslado.Name = "txtMinutoInicioTraslado";
-            txtMinutoInicioTraslado.Size = new System.Drawing.Size(36, 23);
-            txtMinutoInicioTraslado.TabIndex = 62;
-            txtMinutoInicioTraslado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtMinutoInicioTraslado.TextChanged += txtMinutoInicioTraslado_TextChanged;
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Location = new System.Drawing.Point(48, 97);
-            label34.Name = "label34";
-            label34.Size = new System.Drawing.Size(10, 15);
-            label34.TabIndex = 61;
-            label34.Text = ":";
-            // 
-            // txtHoraInicioTraslado
-            // 
-            txtHoraInicioTraslado.Location = new System.Drawing.Point(7, 94);
-            txtHoraInicioTraslado.MaxLength = 2;
-            txtHoraInicioTraslado.Name = "txtHoraInicioTraslado";
-            txtHoraInicioTraslado.Size = new System.Drawing.Size(36, 23);
-            txtHoraInicioTraslado.TabIndex = 60;
-            txtHoraInicioTraslado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtHoraInicioTraslado.TextChanged += txtHoraInicioTraslado_TextChanged;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Location = new System.Drawing.Point(4, 78);
-            label35.Name = "label35";
-            label35.Size = new System.Drawing.Size(96, 15);
-            label35.TabIndex = 59;
-            label35.Text = "Hora de Traslado";
-            // 
-            // txtCausasDeNoCierre
-            // 
-            txtCausasDeNoCierre.Location = new System.Drawing.Point(7, 238);
-            txtCausasDeNoCierre.Name = "txtCausasDeNoCierre";
-            txtCausasDeNoCierre.Size = new System.Drawing.Size(606, 23);
-            txtCausasDeNoCierre.TabIndex = 90;
-            txtCausasDeNoCierre.Enter += txtCausasDeNoCierre_Enter;
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.Location = new System.Drawing.Point(4, 222);
-            label36.Name = "label36";
-            label36.Size = new System.Drawing.Size(157, 15);
-            label36.TabIndex = 89;
-            label36.Text = "Especificar causas y/o partes";
-            // 
-            // rbtnReporteCerradoNo
-            // 
-            rbtnReporteCerradoNo.AutoSize = true;
-            rbtnReporteCerradoNo.Location = new System.Drawing.Point(54, 204);
-            rbtnReporteCerradoNo.Name = "rbtnReporteCerradoNo";
-            rbtnReporteCerradoNo.Size = new System.Drawing.Size(41, 19);
-            rbtnReporteCerradoNo.TabIndex = 88;
-            rbtnReporteCerradoNo.TabStop = true;
-            rbtnReporteCerradoNo.Text = "No";
-            rbtnReporteCerradoNo.UseVisualStyleBackColor = true;
-            rbtnReporteCerradoNo.CheckedChanged += rbtnNo_CheckedChanged;
-            // 
-            // rbtnReporteCerradoSi
-            // 
-            rbtnReporteCerradoSi.AutoSize = true;
-            rbtnReporteCerradoSi.Location = new System.Drawing.Point(12, 204);
-            rbtnReporteCerradoSi.Name = "rbtnReporteCerradoSi";
-            rbtnReporteCerradoSi.Size = new System.Drawing.Size(34, 19);
-            rbtnReporteCerradoSi.TabIndex = 87;
-            rbtnReporteCerradoSi.TabStop = true;
-            rbtnReporteCerradoSi.Text = "Si";
-            rbtnReporteCerradoSi.UseVisualStyleBackColor = true;
-            rbtnReporteCerradoSi.CheckedChanged += rbtnSi_CheckedChanged;
-            // 
-            // txtRefaccionesUtilizadas
-            // 
-            txtRefaccionesUtilizadas.Location = new System.Drawing.Point(156, 22);
-            txtRefaccionesUtilizadas.Name = "txtRefaccionesUtilizadas";
-            txtRefaccionesUtilizadas.Size = new System.Drawing.Size(439, 23);
-            txtRefaccionesUtilizadas.TabIndex = 56;
-            txtRefaccionesUtilizadas.Enter += txtRefaccionesUtilizadas_Enter;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Location = new System.Drawing.Point(9, 188);
-            label37.Name = "label37";
-            label37.Size = new System.Drawing.Size(93, 15);
-            label37.TabIndex = 86;
-            label37.Text = "Reporte Cerrado";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Location = new System.Drawing.Point(153, 6);
-            label38.Name = "label38";
-            label38.Size = new System.Drawing.Size(122, 15);
-            label38.TabIndex = 55;
-            label38.Text = "Refacciones utilizadas";
-            // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.AutoSize = true;
-            tableLayoutPanel2.ColumnCount = 2;
-            tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 723F));
-            tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 279F));
-            tableLayoutPanel2.Controls.Add(groupBox2, 1, 0);
-            tableLayoutPanel2.Controls.Add(groupBox1, 0, 0);
-            tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            tableLayoutPanel2.Location = new System.Drawing.Point(0, 101);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 1;
-            tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            tableLayoutPanel2.Size = new System.Drawing.Size(1003, 68);
-            tableLayoutPanel2.TabIndex = 1;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(richTextBoxContadorDeRIT);
-            groupBox2.Location = new System.Drawing.Point(726, 3);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new System.Drawing.Size(214, 62);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Contador de Folio";
-            // 
-            // richTextBoxContadorDeRIT
-            // 
-            richTextBoxContadorDeRIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            richTextBoxContadorDeRIT.Location = new System.Drawing.Point(54, 22);
-            richTextBoxContadorDeRIT.Mask = "999999";
-            richTextBoxContadorDeRIT.Name = "richTextBoxContadorDeRIT";
-            richTextBoxContadorDeRIT.Size = new System.Drawing.Size(106, 35);
-            richTextBoxContadorDeRIT.TabIndex = 0;
-            richTextBoxContadorDeRIT.Text = "100100";
-            richTextBoxContadorDeRIT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            richTextBoxContadorDeRIT.ValidatingType = typeof(int);
-            richTextBoxContadorDeRIT.Enter += richTextBoxContadorDeRIT_Enter;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(txtFallaReportada);
-            groupBox1.Location = new System.Drawing.Point(3, 3);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(717, 62);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Datos";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(6, 16);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(189, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Falla reportada / Trabajo solicitado";
-            // 
-            // txtFallaReportada
-            // 
-            txtFallaReportada.Location = new System.Drawing.Point(10, 31);
-            txtFallaReportada.Name = "txtFallaReportada";
-            txtFallaReportada.Size = new System.Drawing.Size(677, 23);
-            txtFallaReportada.TabIndex = 3;
-            txtFallaReportada.TextChanged += txtFallaReportada_TextChanged;
-            txtFallaReportada.Enter += txtFallaReportada_Enter;
+            // panelClientCompany
+            // 
+            panelClientCompany.BackgroundImage = Properties.Resources.gmxt_logo;
+            panelClientCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            panelClientCompany.Location = new System.Drawing.Point(334, 8);
+            panelClientCompany.Name = "panelClientCompany";
+            panelClientCompany.Size = new System.Drawing.Size(321, 84);
+            panelClientCompany.TabIndex = 1;
+            // 
+            // panelHostCompany
+            // 
+            panelHostCompany.BackgroundImage = Properties.Resources.NOMBRE_Y_EMBLEMA__NEW_;
+            panelHostCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            panelHostCompany.Location = new System.Drawing.Point(6, 8);
+            panelHostCompany.Name = "panelHostCompany";
+            panelHostCompany.Size = new System.Drawing.Size(321, 84);
+            panelHostCompany.TabIndex = 0;
             // 
             // tableLayoutPanel_GeneralLayout
             // 
             tableLayoutPanel_GeneralLayout.AutoScroll = true;
+            tableLayoutPanel_GeneralLayout.BackColor = System.Drawing.SystemColors.InactiveCaption;
             tableLayoutPanel_GeneralLayout.ColumnCount = 3;
             tableLayoutPanel_GeneralLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tableLayoutPanel_GeneralLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             tableLayoutPanel_GeneralLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel_GeneralLayout.Controls.Add(panel4, 1, 1);
             tableLayoutPanel_GeneralLayout.Controls.Add(panel9, 0, 0);
-            tableLayoutPanel_GeneralLayout.Controls.Add(tableLayoutPanel2, 1, 1);
             tableLayoutPanel_GeneralLayout.Controls.Add(panelFondoSuperior, 1, 0);
-            tableLayoutPanel_GeneralLayout.Controls.Add(groupBox3, 1, 2);
-            tableLayoutPanel_GeneralLayout.Controls.Add(groupBox4, 1, 6);
-            tableLayoutPanel_GeneralLayout.Controls.Add(panel3, 1, 8);
             tableLayoutPanel_GeneralLayout.Controls.Add(panel8, 2, 0);
             tableLayoutPanel_GeneralLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             tableLayoutPanel_GeneralLayout.Location = new System.Drawing.Point(0, 66);
             tableLayoutPanel_GeneralLayout.Margin = new System.Windows.Forms.Padding(0);
             tableLayoutPanel_GeneralLayout.Name = "tableLayoutPanel_GeneralLayout";
-            tableLayoutPanel_GeneralLayout.RowCount = 9;
+            tableLayoutPanel_GeneralLayout.RowCount = 8;
+            tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            tableLayoutPanel_GeneralLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
-            tableLayoutPanel_GeneralLayout.Size = new System.Drawing.Size(1002, 444);
+            tableLayoutPanel_GeneralLayout.Size = new System.Drawing.Size(1064, 964);
             tableLayoutPanel_GeneralLayout.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            panel4.AutoScroll = true;
+            panel4.Controls.Add(flExtendedTabControl1);
+            panel4.Controls.Add(label1);
+            panel4.Controls.Add(btnCargarHostname);
+            panel4.Controls.Add(txtNoEmp);
+            panel4.Controls.Add(txtTecnicoAsignado);
+            panel4.Controls.Add(txtCentroServicio);
+            panel4.Controls.Add(txtTelefono);
+            panel4.Controls.Add(txtHostname);
+            panel4.Controls.Add(txtDepartamento);
+            panel4.Controls.Add(btnCargarUsuario);
+            panel4.Controls.Add(txtSucursal);
+            panel4.Controls.Add(txtPoblacion);
+            panel4.Controls.Add(txtDireccion);
+            panel4.Controls.Add(txtNoSucursal);
+            panel4.Controls.Add(txtUsuarioFinal);
+            panel4.Controls.Add(calendarFechaGeneracion);
+            panel4.Controls.Add(lblFechaDeGeneracion);
+            panel4.Controls.Add(txtCliente);
+            panel4.Controls.Add(btnVerReporte);
+            panel4.Controls.Add(txtNoSerie);
+            panel4.Controls.Add(txtModeloEquipo);
+            panel4.Controls.Add(txtMarcaEquipo);
+            panel4.Controls.Add(txtTipoDeEquipo);
+            panel4.Controls.Add(txtNoReporte);
+            panel4.Controls.Add(flSeparatorLine1);
+            panel4.Controls.Add(flCustomLabel1);
+            panel4.Controls.Add(flNumericUpDownLabelJoint1);
+            panel4.Controls.Add(quickMenu_UtilityFunctions);
+            panel4.Controls.Add(txtFallaReportada);
+            panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel4.Location = new System.Drawing.Point(27, 98);
+            panel4.Margin = new System.Windows.Forms.Padding(0);
+            panel4.Name = "panel4";
+            panel4.Padding = new System.Windows.Forms.Padding(3);
+            panel4.Size = new System.Drawing.Size(1009, 866);
+            panel4.TabIndex = 58;
+            // 
+            // flExtendedTabControl1
+            // 
+            flExtendedTabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flExtendedTabControl1.CanCloseTabs = false;
+            flExtendedTabControl1.CloseButtonHoverColor = System.Drawing.Color.Red;
+            flExtendedTabControl1.ControlBackColor = System.Drawing.SystemColors.InactiveCaption;
+            flExtendedTabControl1.Controls.Add(tabPage_Cierre);
+            flExtendedTabControl1.Controls.Add(tabPage_FacturaServicio);
+            flExtendedTabControl1.Controls.Add(tabPage_DatosDeConvenio);
+            flExtendedTabControl1.Controls.Add(tabPage_ValoresEnBruto);
+            flExtendedTabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            flExtendedTabControl1.ForeSelectionColor = System.Drawing.Color.White;
+            flExtendedTabControl1.ForeUnselectedColor = System.Drawing.Color.DimGray;
+            flExtendedTabControl1.HoverColor = System.Drawing.Color.FromArgb(50, 200, 200, 200);
+            flExtendedTabControl1.ItemSize = new System.Drawing.Size(150, 30);
+            flExtendedTabControl1.Location = new System.Drawing.Point(9, 420);
+            flExtendedTabControl1.Name = "flExtendedTabControl1";
+            flExtendedTabControl1.SelectedIndex = 0;
+            flExtendedTabControl1.SelectionColor = System.Drawing.Color.DeepSkyBlue;
+            flExtendedTabControl1.Size = new System.Drawing.Size(977, 440);
+            flExtendedTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            flExtendedTabControl1.TabIndex = 45;
+            flExtendedTabControl1.UnselectionColor = System.Drawing.Color.LightGray;
+            // 
+            // tabPage_Cierre
+            // 
+            tabPage_Cierre.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            tabPage_Cierre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage_Cierre.Controls.Add(flTabMenuControl1);
+            tabPage_Cierre.Location = new System.Drawing.Point(4, 34);
+            tabPage_Cierre.Name = "tabPage_Cierre";
+            tabPage_Cierre.Padding = new System.Windows.Forms.Padding(3);
+            tabPage_Cierre.Size = new System.Drawing.Size(969, 402);
+            tabPage_Cierre.TabIndex = 0;
+            tabPage_Cierre.Text = "Cierre";
+            // 
+            // flTabMenuControl1
+            // 
+            flTabMenuControl1.Alignment = System.Windows.Forms.TabAlignment.Right;
+            flTabMenuControl1.ControlBackColor = System.Drawing.SystemColors.ActiveCaption;
+            flTabMenuControl1.Controls.Add(tabPage5);
+            flTabMenuControl1.Controls.Add(tabPage6);
+            flTabMenuControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            flTabMenuControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            flTabMenuControl1.ForeSelectionColor = System.Drawing.Color.White;
+            flTabMenuControl1.ForeUnselectedColor = System.Drawing.Color.DimGray;
+            flTabMenuControl1.HoverColor = System.Drawing.Color.FromArgb(50, 200, 200, 200);
+            flTabMenuControl1.ItemSize = new System.Drawing.Size(35, 120);
+            flTabMenuControl1.Location = new System.Drawing.Point(3, 3);
+            flTabMenuControl1.Multiline = true;
+            flTabMenuControl1.Name = "flTabMenuControl1";
+            flTabMenuControl1.SelectedIndex = 0;
+            flTabMenuControl1.SelectionColor = System.Drawing.Color.DeepSkyBlue;
+            flTabMenuControl1.Size = new System.Drawing.Size(961, 394);
+            flTabMenuControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            flTabMenuControl1.TabIndex = 41;
+            flTabMenuControl1.UnselectionColor = System.Drawing.Color.LightGray;
+            // 
+            // tabPage5
+            // 
+            tabPage5.AutoScroll = true;
+            tabPage5.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            tabPage5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage5.Controls.Add(flCustomLabel5);
+            tabPage5.Controls.Add(flSeparatorLine5);
+            tabPage5.Controls.Add(flCustomLabel2);
+            tabPage5.Controls.Add(flSeparatorLine2);
+            tabPage5.Controls.Add(lblFechaDeAtencion);
+            tabPage5.Controls.Add(calendarFechaAtencion);
+            tabPage5.Location = new System.Drawing.Point(4, 4);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            tabPage5.Size = new System.Drawing.Size(833, 386);
+            tabPage5.TabIndex = 0;
+            tabPage5.Text = "Registro de tiempo";
+            // 
+            // lblFechaDeAtencion
+            // 
+            lblFechaDeAtencion.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            lblFechaDeAtencion.InfoLabelFont = new System.Drawing.Font("Segoe UI", 9F);
+            lblFechaDeAtencion.InfoLabelForeColor = System.Drawing.SystemColors.MenuHighlight;
+            lblFechaDeAtencion.InfoLabelText = "Informacion";
+            lblFechaDeAtencion.Label = "Fecha de Atencion:";
+            lblFechaDeAtencion.Location = new System.Drawing.Point(457, 51);
+            lblFechaDeAtencion.MinimumSize = new System.Drawing.Size(150, 30);
+            lblFechaDeAtencion.Name = "lblFechaDeAtencion";
+            lblFechaDeAtencion.RootLineColor = System.Drawing.Color.Gray;
+            lblFechaDeAtencion.Size = new System.Drawing.Size(248, 30);
+            lblFechaDeAtencion.TabIndex = 36;
+            // 
+            // calendarFechaAtencion
+            // 
+            calendarFechaAtencion.Location = new System.Drawing.Point(457, 87);
+            calendarFechaAtencion.Name = "calendarFechaAtencion";
+            calendarFechaAtencion.TabIndex = 37;
+            // 
+            // tabPage6
+            // 
+            tabPage6.AutoScroll = true;
+            tabPage6.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            tabPage6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage6.Controls.Add(hypertxtResolucion);
+            tabPage6.Controls.Add(flCustomLabel3);
+            tabPage6.Controls.Add(txtMotivoDeNoCierre);
+            tabPage6.Controls.Add(flSeparatorLine3);
+            tabPage6.Controls.Add(chckboxReporteCerrado);
+            tabPage6.Location = new System.Drawing.Point(4, 4);
+            tabPage6.Name = "tabPage6";
+            tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            tabPage6.Size = new System.Drawing.Size(833, 386);
+            tabPage6.TabIndex = 1;
+            tabPage6.Text = "Resolucion";
+            // 
+            // flCustomLabel3
+            // 
+            flCustomLabel3.AutoSize = true;
+            flCustomLabel3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            flCustomLabel3.ImagePadding = 5;
+            flCustomLabel3.LeftImage = Properties.Resources.wrench_24;
+            flCustomLabel3.Location = new System.Drawing.Point(10, 58);
+            flCustomLabel3.Name = "flCustomLabel3";
+            flCustomLabel3.Size = new System.Drawing.Size(165, 24);
+            flCustomLabel3.TabIndex = 39;
+            flCustomLabel3.Text = "Acciones Tomadas";
+            // 
+            // txtMotivoDeNoCierre
+            // 
+            txtMotivoDeNoCierre.Enabled = false;
+            txtMotivoDeNoCierre.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtMotivoDeNoCierre.InputContentType = InputMode.GENERAL;
+            txtMotivoDeNoCierre.Label = "Causa/Motivo:";
+            txtMotivoDeNoCierre.Location = new System.Drawing.Point(200, 6);
+            txtMotivoDeNoCierre.MinimumSize = new System.Drawing.Size(100, 30);
+            txtMotivoDeNoCierre.Name = "txtMotivoDeNoCierre";
+            txtMotivoDeNoCierre.Placeholder = "";
+            txtMotivoDeNoCierre.RootLineColor = System.Drawing.Color.Gray;
+            txtMotivoDeNoCierre.Size = new System.Drawing.Size(545, 30);
+            txtMotivoDeNoCierre.TabIndex = 42;
+            txtMotivoDeNoCierre.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtMotivoDeNoCierre.TextBoxWidth = 375;
+            txtMotivoDeNoCierre.Value = "";
+            // 
+            // flSeparatorLine3
+            // 
+            flSeparatorLine3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flSeparatorLine3.LineColor = System.Drawing.Color.Gray;
+            flSeparatorLine3.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
+            flSeparatorLine3.LineThickness = 1;
+            flSeparatorLine3.Location = new System.Drawing.Point(6, 85);
+            flSeparatorLine3.MinimumSize = new System.Drawing.Size(0, 6);
+            flSeparatorLine3.Name = "flSeparatorLine3";
+            flSeparatorLine3.Size = new System.Drawing.Size(819, 10);
+            flSeparatorLine3.TabIndex = 40;
+            flSeparatorLine3.Text = "flSeparatorLine3";
+            // 
+            // chckboxReporteCerrado
+            // 
+            chckboxReporteCerrado.CheckBoxBackColor = System.Drawing.SystemColors.InactiveCaption;
+            chckboxReporteCerrado.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            chckboxReporteCerrado.Label = "¿Reporte cerrado?";
+            chckboxReporteCerrado.Location = new System.Drawing.Point(6, 6);
+            chckboxReporteCerrado.MinimumSize = new System.Drawing.Size(150, 30);
+            chckboxReporteCerrado.Name = "chckboxReporteCerrado";
+            chckboxReporteCerrado.RootLineColor = System.Drawing.Color.Gray;
+            chckboxReporteCerrado.Size = new System.Drawing.Size(188, 30);
+            chckboxReporteCerrado.TabIndex = 41;
+            // 
+            // tabPage_FacturaServicio
+            // 
+            tabPage_FacturaServicio.AutoScroll = true;
+            tabPage_FacturaServicio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            tabPage_FacturaServicio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage_FacturaServicio.Controls.Add(quickMenu_FuncionesFactura);
+            tabPage_FacturaServicio.Controls.Add(flTabMenuControl2);
+            tabPage_FacturaServicio.Location = new System.Drawing.Point(4, 34);
+            tabPage_FacturaServicio.Name = "tabPage_FacturaServicio";
+            tabPage_FacturaServicio.Padding = new System.Windows.Forms.Padding(3);
+            tabPage_FacturaServicio.Size = new System.Drawing.Size(969, 402);
+            tabPage_FacturaServicio.TabIndex = 1;
+            tabPage_FacturaServicio.Text = "Factura de Servicio";
+            // 
+            // quickMenu_FuncionesFactura
+            // 
+            quickMenu_FuncionesFactura.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            quickAccessButton1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton1.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton1.BorderLineThickness = 1;
+            quickAccessButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton1.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton1.Image = null;
+            quickAccessButton1.Name = "ctrlBtnImprimirFactura";
+            quickAccessButton1.Text = "Imprimir Factura";
+            quickAccessButton2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton2.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton2.BorderLineThickness = 1;
+            quickAccessButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton2.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton2.Image = null;
+            quickAccessButton2.Name = "ctrlBtnVisualizarObjetos";
+            quickAccessButton2.Text = "Visualizar Objetos";
+            quickMenu_FuncionesFactura.Buttons.Add(quickAccessButton1);
+            quickMenu_FuncionesFactura.Buttons.Add(quickAccessButton2);
+            quickMenu_FuncionesFactura.LineColor = System.Drawing.Color.Black;
+            quickMenu_FuncionesFactura.LineThickness = 1;
+            quickMenu_FuncionesFactura.Location = new System.Drawing.Point(11, 6);
+            quickMenu_FuncionesFactura.MinimumSize = new System.Drawing.Size(98, 32);
+            quickMenu_FuncionesFactura.Name = "quickMenu_FuncionesFactura";
+            quickMenu_FuncionesFactura.Size = new System.Drawing.Size(819, 34);
+            quickMenu_FuncionesFactura.TabIndex = 1;
+            // 
+            // flTabMenuControl2
+            // 
+            flTabMenuControl2.Alignment = System.Windows.Forms.TabAlignment.Right;
+            flTabMenuControl2.ControlBackColor = System.Drawing.SystemColors.ActiveCaption;
+            flTabMenuControl2.Controls.Add(tabPage7);
+            flTabMenuControl2.Controls.Add(tabPage8);
+            flTabMenuControl2.Controls.Add(pageRegistroDeTrabajo);
+            flTabMenuControl2.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            flTabMenuControl2.ForeSelectionColor = System.Drawing.Color.White;
+            flTabMenuControl2.ForeUnselectedColor = System.Drawing.Color.DimGray;
+            flTabMenuControl2.HoverColor = System.Drawing.Color.FromArgb(50, 200, 200, 200);
+            flTabMenuControl2.ItemSize = new System.Drawing.Size(35, 120);
+            flTabMenuControl2.Location = new System.Drawing.Point(3, 46);
+            flTabMenuControl2.Multiline = true;
+            flTabMenuControl2.Name = "flTabMenuControl2";
+            flTabMenuControl2.SelectedIndex = 0;
+            flTabMenuControl2.SelectionColor = System.Drawing.Color.DeepSkyBlue;
+            flTabMenuControl2.Size = new System.Drawing.Size(951, 348);
+            flTabMenuControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            flTabMenuControl2.TabIndex = 0;
+            flTabMenuControl2.UnselectionColor = System.Drawing.Color.LightGray;
+            // 
+            // tabPage7
+            // 
+            tabPage7.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            tabPage7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage7.Controls.Add(dgvAmortizacionDeCobro);
+            tabPage7.Location = new System.Drawing.Point(4, 4);
+            tabPage7.Name = "tabPage7";
+            tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            tabPage7.Size = new System.Drawing.Size(823, 340);
+            tabPage7.TabIndex = 0;
+            tabPage7.Text = "Servicios y Piezas";
+            // 
+            // dgvAmortizacionDeCobro
+            // 
+            dgvAmortizacionDeCobro.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(248, 248, 248);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Orange;
+            dgvAmortizacionDeCobro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvAmortizacionDeCobro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgvAmortizacionDeCobro.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            dgvAmortizacionDeCobro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dgvAmortizacionDeCobro.ButtonAddEnabled = true;
+            dgvAmortizacionDeCobro.ButtonEditEnabled = true;
+            dgvAmortizacionDeCobro.ButtonRemoveEnabled = true;
+            dgvAmortizacionDeCobro.ButtonViewEnabled = true;
+            dgvAmortizacionDeCobro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            dgvAmortizacionDeCobro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvAmortizacionDeCobro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            dgvAmortizacionDeCobro.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvAmortizacionDeCobro.Dock = System.Windows.Forms.DockStyle.Fill;
+            dgvAmortizacionDeCobro.EnableHeadersVisualStyles = false;
+            dgvAmortizacionDeCobro.GridColor = System.Drawing.Color.FromArgb(210, 210, 210);
+            dgvAmortizacionDeCobro.Location = new System.Drawing.Point(3, 3);
+            dgvAmortizacionDeCobro.MultiSelect = false;
+            dgvAmortizacionDeCobro.Name = "dgvAmortizacionDeCobro";
+            dgvAmortizacionDeCobro.RowHeadersVisible = false;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Orange;
+            dgvAmortizacionDeCobro.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dgvAmortizacionDeCobro.RowTemplate.Height = 25;
+            dgvAmortizacionDeCobro.SelectedCellColor = System.Drawing.Color.Moccasin;
+            dgvAmortizacionDeCobro.SelectedRowColor = System.Drawing.Color.Orange;
+            dgvAmortizacionDeCobro.SelectionForeColor = System.Drawing.Color.Black;
+            dgvAmortizacionDeCobro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgvAmortizacionDeCobro.Size = new System.Drawing.Size(815, 332);
+            dgvAmortizacionDeCobro.TabIndex = 1;
+            // 
+            // tabPage8
+            // 
+            tabPage8.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            tabPage8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage8.Location = new System.Drawing.Point(4, 4);
+            tabPage8.Name = "tabPage8";
+            tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            tabPage8.Size = new System.Drawing.Size(823, 340);
+            tabPage8.TabIndex = 1;
+            tabPage8.Text = "Poliza de Garantia";
+            // 
+            // pageRegistroDeTrabajo
+            // 
+            pageRegistroDeTrabajo.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            pageRegistroDeTrabajo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            pageRegistroDeTrabajo.Location = new System.Drawing.Point(4, 4);
+            pageRegistroDeTrabajo.Name = "pageRegistroDeTrabajo";
+            pageRegistroDeTrabajo.Padding = new System.Windows.Forms.Padding(3);
+            pageRegistroDeTrabajo.Size = new System.Drawing.Size(823, 340);
+            pageRegistroDeTrabajo.TabIndex = 2;
+            pageRegistroDeTrabajo.Text = "Registro de Trabajo";
+            // 
+            // tabPage_DatosDeConvenio
+            // 
+            tabPage_DatosDeConvenio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            tabPage_DatosDeConvenio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage_DatosDeConvenio.Controls.Add(flRichTextBoxLabelJoint1);
+            tabPage_DatosDeConvenio.Controls.Add(flTextBoxLabelJoint1);
+            tabPage_DatosDeConvenio.Controls.Add(lblHasta);
+            tabPage_DatosDeConvenio.Controls.Add(lblConvenioInicio);
+            tabPage_DatosDeConvenio.Controls.Add(chckboxConvenioEstablecido);
+            tabPage_DatosDeConvenio.Location = new System.Drawing.Point(4, 34);
+            tabPage_DatosDeConvenio.Name = "tabPage_DatosDeConvenio";
+            tabPage_DatosDeConvenio.Padding = new System.Windows.Forms.Padding(3);
+            tabPage_DatosDeConvenio.Size = new System.Drawing.Size(969, 402);
+            tabPage_DatosDeConvenio.TabIndex = 2;
+            tabPage_DatosDeConvenio.Text = "Datos de Convenio";
+            tabPage_DatosDeConvenio.Click += tabPage_DatosDeConvenio_Click;
+            // 
+            // flRichTextBoxLabelJoint1
+            // 
+            flRichTextBoxLabelJoint1.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            flRichTextBoxLabelJoint1.Label = "Texto:";
+            flRichTextBoxLabelJoint1.Location = new System.Drawing.Point(8, 121);
+            flRichTextBoxLabelJoint1.MinimumSize = new System.Drawing.Size(100, 60);
+            flRichTextBoxLabelJoint1.Name = "flRichTextBoxLabelJoint1";
+            flRichTextBoxLabelJoint1.Placeholder = "Escribe aquí...";
+            flRichTextBoxLabelJoint1.RichTextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            flRichTextBoxLabelJoint1.RichTextBoxWidth = 400;
+            flRichTextBoxLabelJoint1.RootLineColor = System.Drawing.Color.Gray;
+            flRichTextBoxLabelJoint1.Size = new System.Drawing.Size(551, 120);
+            flRichTextBoxLabelJoint1.TabIndex = 50;
+            flRichTextBoxLabelJoint1.Value = "";
+            // 
+            // flTextBoxLabelJoint1
+            // 
+            flTextBoxLabelJoint1.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            flTextBoxLabelJoint1.InputContentType = InputMode.GENERAL;
+            flTextBoxLabelJoint1.Label = "Titulo de Conv.:";
+            flTextBoxLabelJoint1.Location = new System.Drawing.Point(8, 49);
+            flTextBoxLabelJoint1.MinimumSize = new System.Drawing.Size(100, 30);
+            flTextBoxLabelJoint1.Name = "flTextBoxLabelJoint1";
+            flTextBoxLabelJoint1.Placeholder = "";
+            flTextBoxLabelJoint1.RootLineColor = System.Drawing.Color.Gray;
+            flTextBoxLabelJoint1.Size = new System.Drawing.Size(551, 30);
+            flTextBoxLabelJoint1.TabIndex = 49;
+            flTextBoxLabelJoint1.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            flTextBoxLabelJoint1.TextBoxWidth = 425;
+            flTextBoxLabelJoint1.Value = "";
+            // 
+            // lblHasta
+            // 
+            lblHasta.Distance = 5;
+            lblHasta.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            lblHasta.InfoLabelFont = new System.Drawing.Font("Consolas", 9F);
+            lblHasta.InfoLabelForeColor = System.Drawing.SystemColors.HotTrack;
+            lblHasta.InfoLabelText = "dd de MM de yyyy HH:mm:tt";
+            lblHasta.Label = "Hasta:";
+            lblHasta.Location = new System.Drawing.Point(304, 85);
+            lblHasta.MinimumSize = new System.Drawing.Size(150, 30);
+            lblHasta.Name = "lblHasta";
+            lblHasta.RootLineColor = System.Drawing.Color.Gray;
+            lblHasta.Size = new System.Drawing.Size(255, 30);
+            lblHasta.TabIndex = 48;
+            // 
+            // lblConvenioInicio
+            // 
+            lblConvenioInicio.Distance = 5;
+            lblConvenioInicio.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            lblConvenioInicio.InfoLabelFont = new System.Drawing.Font("Consolas", 9F);
+            lblConvenioInicio.InfoLabelForeColor = System.Drawing.SystemColors.HotTrack;
+            lblConvenioInicio.InfoLabelText = "dd de MM de yyyy HH:mm:tt";
+            lblConvenioInicio.Label = "Desde:";
+            lblConvenioInicio.Location = new System.Drawing.Point(8, 85);
+            lblConvenioInicio.MinimumSize = new System.Drawing.Size(150, 30);
+            lblConvenioInicio.Name = "lblConvenioInicio";
+            lblConvenioInicio.RootLineColor = System.Drawing.Color.Gray;
+            lblConvenioInicio.Size = new System.Drawing.Size(255, 30);
+            lblConvenioInicio.TabIndex = 46;
+            // 
+            // chckboxConvenioEstablecido
+            // 
+            chckboxConvenioEstablecido.CheckBoxBackColor = System.Drawing.SystemColors.ActiveCaption;
+            chckboxConvenioEstablecido.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            chckboxConvenioEstablecido.Label = "Convenio Establecido:";
+            chckboxConvenioEstablecido.Location = new System.Drawing.Point(8, 13);
+            chckboxConvenioEstablecido.MinimumSize = new System.Drawing.Size(150, 30);
+            chckboxConvenioEstablecido.Name = "chckboxConvenioEstablecido";
+            chckboxConvenioEstablecido.RootLineColor = System.Drawing.Color.Gray;
+            chckboxConvenioEstablecido.Size = new System.Drawing.Size(255, 30);
+            chckboxConvenioEstablecido.TabIndex = 47;
+            // 
+            // tabPage_ValoresEnBruto
+            // 
+            tabPage_ValoresEnBruto.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            tabPage_ValoresEnBruto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            tabPage_ValoresEnBruto.Controls.Add(flTextBoxLabelJoint3);
+            tabPage_ValoresEnBruto.Controls.Add(flTextBoxLabelJoint2);
+            tabPage_ValoresEnBruto.Controls.Add(flCustomLabel7);
+            tabPage_ValoresEnBruto.Controls.Add(flSeparatorLine7);
+            tabPage_ValoresEnBruto.Controls.Add(flCustomLabel6);
+            tabPage_ValoresEnBruto.Controls.Add(flSeparatorLine6);
+            tabPage_ValoresEnBruto.Controls.Add(flCustomLabel4);
+            tabPage_ValoresEnBruto.Controls.Add(flSeparatorLine4);
+            tabPage_ValoresEnBruto.Location = new System.Drawing.Point(4, 34);
+            tabPage_ValoresEnBruto.Name = "tabPage_ValoresEnBruto";
+            tabPage_ValoresEnBruto.Padding = new System.Windows.Forms.Padding(3);
+            tabPage_ValoresEnBruto.Size = new System.Drawing.Size(969, 402);
+            tabPage_ValoresEnBruto.TabIndex = 3;
+            tabPage_ValoresEnBruto.Text = "Valores en Bruto";
+            // 
+            // flCustomLabel4
+            // 
+            flCustomLabel4.AutoSize = true;
+            flCustomLabel4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            flCustomLabel4.ImagePadding = 5;
+            flCustomLabel4.LeftImage = Properties.Resources.file_info_24;
+            flCustomLabel4.Location = new System.Drawing.Point(13, 8);
+            flCustomLabel4.Name = "flCustomLabel4";
+            flCustomLabel4.Size = new System.Drawing.Size(205, 24);
+            flCustomLabel4.TabIndex = 43;
+            flCustomLabel4.Text = "Informacion del Archivo";
+            // 
+            // flSeparatorLine4
+            // 
+            flSeparatorLine4.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flSeparatorLine4.LineColor = System.Drawing.Color.Gray;
+            flSeparatorLine4.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
+            flSeparatorLine4.LineThickness = 1;
+            flSeparatorLine4.Location = new System.Drawing.Point(9, 35);
+            flSeparatorLine4.MinimumSize = new System.Drawing.Size(0, 6);
+            flSeparatorLine4.Name = "flSeparatorLine4";
+            flSeparatorLine4.Size = new System.Drawing.Size(742, 10);
+            flSeparatorLine4.TabIndex = 44;
+            flSeparatorLine4.Text = "flSeparatorLine4";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label1.Location = new System.Drawing.Point(3, 857);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(10, 15);
+            label1.TabIndex = 33;
+            label1.Text = " ";
+            // 
+            // btnCargarHostname
+            // 
+            btnCargarHostname.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCargarHostname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnCargarHostname.Image = Properties.Resources.check;
+            btnCargarHostname.Location = new System.Drawing.Point(938, 76);
+            btnCargarHostname.Name = "btnCargarHostname";
+            btnCargarHostname.Size = new System.Drawing.Size(30, 22);
+            btnCargarHostname.TabIndex = 30;
+            btnCargarHostname.UseVisualStyleBackColor = true;
+            // 
+            // txtNoEmp
+            // 
+            txtNoEmp.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtNoEmp.InputContentType = InputMode.GENERAL;
+            txtNoEmp.Label = "No. Emp./Nom.:";
+            txtNoEmp.Location = new System.Drawing.Point(576, 340);
+            txtNoEmp.MinimumSize = new System.Drawing.Size(100, 30);
+            txtNoEmp.Name = "txtNoEmp";
+            txtNoEmp.Placeholder = "";
+            txtNoEmp.RootLineColor = System.Drawing.Color.Gray;
+            txtNoEmp.Size = new System.Drawing.Size(299, 30);
+            txtNoEmp.TabIndex = 24;
+            txtNoEmp.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtNoEmp.Value = "";
+            // 
+            // txtTecnicoAsignado
+            // 
+            txtTecnicoAsignado.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtTecnicoAsignado.InputContentType = InputMode.GENERAL;
+            txtTecnicoAsignado.Label = "Tecnico asignado:";
+            txtTecnicoAsignado.Location = new System.Drawing.Point(13, 376);
+            txtTecnicoAsignado.MinimumSize = new System.Drawing.Size(100, 30);
+            txtTecnicoAsignado.Name = "txtTecnicoAsignado";
+            txtTecnicoAsignado.Placeholder = "";
+            txtTecnicoAsignado.RootLineColor = System.Drawing.Color.Gray;
+            txtTecnicoAsignado.Size = new System.Drawing.Size(340, 30);
+            txtTecnicoAsignado.TabIndex = 27;
+            txtTecnicoAsignado.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtTecnicoAsignado.TextBoxWidth = 200;
+            txtTecnicoAsignado.Value = "";
+            // 
+            // txtCentroServicio
+            // 
+            txtCentroServicio.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtCentroServicio.InputContentType = InputMode.GENERAL;
+            txtCentroServicio.Label = "Centro de Servs.:";
+            txtCentroServicio.Location = new System.Drawing.Point(13, 340);
+            txtCentroServicio.MinimumSize = new System.Drawing.Size(100, 30);
+            txtCentroServicio.Name = "txtCentroServicio";
+            txtCentroServicio.Placeholder = "";
+            txtCentroServicio.RootLineColor = System.Drawing.Color.Gray;
+            txtCentroServicio.Size = new System.Drawing.Size(291, 30);
+            txtCentroServicio.TabIndex = 26;
+            txtCentroServicio.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtCentroServicio.Value = "";
+            // 
+            // txtTelefono
+            // 
+            txtTelefono.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtTelefono.InputContentType = InputMode.GENERAL;
+            txtTelefono.Label = "Telefono:";
+            txtTelefono.Location = new System.Drawing.Point(576, 376);
+            txtTelefono.MinimumSize = new System.Drawing.Size(100, 30);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Placeholder = "";
+            txtTelefono.RootLineColor = System.Drawing.Color.Gray;
+            txtTelefono.Size = new System.Drawing.Size(299, 30);
+            txtTelefono.TabIndex = 25;
+            txtTelefono.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtTelefono.Value = "";
+            // 
+            // txtHostname
+            // 
+            txtHostname.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtHostname.InputContentType = InputMode.GENERAL;
+            txtHostname.Label = "Hostname:";
+            txtHostname.Location = new System.Drawing.Point(719, 72);
+            txtHostname.MinimumSize = new System.Drawing.Size(100, 30);
+            txtHostname.Name = "txtHostname";
+            txtHostname.Placeholder = "";
+            txtHostname.RootLineColor = System.Drawing.Color.Gray;
+            txtHostname.Size = new System.Drawing.Size(225, 30);
+            txtHostname.TabIndex = 29;
+            txtHostname.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtHostname.TextBoxWidth = 120;
+            txtHostname.Value = "";
+            // 
+            // txtDepartamento
+            // 
+            txtDepartamento.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtDepartamento.InputContentType = InputMode.GENERAL;
+            txtDepartamento.Label = "Departamento:";
+            txtDepartamento.Location = new System.Drawing.Point(576, 304);
+            txtDepartamento.MinimumSize = new System.Drawing.Size(100, 30);
+            txtDepartamento.Name = "txtDepartamento";
+            txtDepartamento.Placeholder = "";
+            txtDepartamento.RootLineColor = System.Drawing.Color.Gray;
+            txtDepartamento.Size = new System.Drawing.Size(350, 30);
+            txtDepartamento.TabIndex = 23;
+            txtDepartamento.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtDepartamento.TextBoxWidth = 200;
+            txtDepartamento.Value = "";
+            // 
+            // btnCargarUsuario
+            // 
+            btnCargarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCargarUsuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnCargarUsuario.Image = Properties.Resources.check;
+            btnCargarUsuario.Location = new System.Drawing.Point(900, 272);
+            btnCargarUsuario.Name = "btnCargarUsuario";
+            btnCargarUsuario.Size = new System.Drawing.Size(30, 22);
+            btnCargarUsuario.TabIndex = 22;
+            btnCargarUsuario.UseVisualStyleBackColor = true;
+            btnCargarUsuario.Click += btnVerTarjetaDeUsuarioActual_Click;
+            // 
+            // txtSucursal
+            // 
+            txtSucursal.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtSucursal.InputContentType = InputMode.GENERAL;
+            txtSucursal.Label = "Sucursal:";
+            txtSucursal.Location = new System.Drawing.Point(576, 124);
+            txtSucursal.MinimumSize = new System.Drawing.Size(100, 30);
+            txtSucursal.Name = "txtSucursal";
+            txtSucursal.Placeholder = "";
+            txtSucursal.RootLineColor = System.Drawing.Color.Gray;
+            txtSucursal.Size = new System.Drawing.Size(350, 30);
+            txtSucursal.TabIndex = 17;
+            txtSucursal.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtSucursal.TextBoxWidth = 200;
+            txtSucursal.Value = "";
+            // 
+            // txtPoblacion
+            // 
+            txtPoblacion.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtPoblacion.InputContentType = InputMode.GENERAL;
+            txtPoblacion.Label = "Poblacion:";
+            txtPoblacion.Location = new System.Drawing.Point(576, 232);
+            txtPoblacion.MinimumSize = new System.Drawing.Size(100, 30);
+            txtPoblacion.Name = "txtPoblacion";
+            txtPoblacion.Placeholder = "";
+            txtPoblacion.RootLineColor = System.Drawing.Color.Gray;
+            txtPoblacion.Size = new System.Drawing.Size(350, 30);
+            txtPoblacion.TabIndex = 20;
+            txtPoblacion.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtPoblacion.TextBoxWidth = 200;
+            txtPoblacion.Value = "";
+            // 
+            // txtDireccion
+            // 
+            txtDireccion.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtDireccion.InputContentType = InputMode.GENERAL;
+            txtDireccion.Label = "Direccion:";
+            txtDireccion.Location = new System.Drawing.Point(576, 196);
+            txtDireccion.MinimumSize = new System.Drawing.Size(100, 30);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Placeholder = "";
+            txtDireccion.RootLineColor = System.Drawing.Color.Gray;
+            txtDireccion.Size = new System.Drawing.Size(350, 30);
+            txtDireccion.TabIndex = 19;
+            txtDireccion.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtDireccion.TextBoxWidth = 200;
+            txtDireccion.Value = "";
+            // 
+            // txtNoSucursal
+            // 
+            txtNoSucursal.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtNoSucursal.InputContentType = InputMode.GENERAL;
+            txtNoSucursal.Label = "No. de Sucursal:";
+            txtNoSucursal.Location = new System.Drawing.Point(576, 160);
+            txtNoSucursal.MinimumSize = new System.Drawing.Size(100, 30);
+            txtNoSucursal.Name = "txtNoSucursal";
+            txtNoSucursal.Placeholder = "";
+            txtNoSucursal.RootLineColor = System.Drawing.Color.Gray;
+            txtNoSucursal.Size = new System.Drawing.Size(350, 30);
+            txtNoSucursal.TabIndex = 18;
+            txtNoSucursal.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtNoSucursal.TextBoxWidth = 200;
+            txtNoSucursal.Value = "";
+            // 
+            // txtUsuarioFinal
+            // 
+            txtUsuarioFinal.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtUsuarioFinal.InputContentType = InputMode.GENERAL;
+            txtUsuarioFinal.Label = "Usuario Final:";
+            txtUsuarioFinal.Location = new System.Drawing.Point(576, 268);
+            txtUsuarioFinal.MinimumSize = new System.Drawing.Size(100, 30);
+            txtUsuarioFinal.Name = "txtUsuarioFinal";
+            txtUsuarioFinal.Placeholder = "";
+            txtUsuarioFinal.RootLineColor = System.Drawing.Color.Gray;
+            txtUsuarioFinal.Size = new System.Drawing.Size(330, 30);
+            txtUsuarioFinal.TabIndex = 21;
+            txtUsuarioFinal.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtUsuarioFinal.TextBoxWidth = 180;
+            txtUsuarioFinal.Value = "";
+            // 
+            // calendarFechaGeneracion
+            // 
+            calendarFechaGeneracion.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            calendarFechaGeneracion.Location = new System.Drawing.Point(316, 160);
+            calendarFechaGeneracion.Name = "calendarFechaGeneracion";
+            calendarFechaGeneracion.TabIndex = 16;
+            calendarFechaGeneracion.DateChanged += calendarFecha_DateChanged;
+            // 
+            // lblFechaDeGeneracion
+            // 
+            lblFechaDeGeneracion.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            lblFechaDeGeneracion.InfoLabelFont = new System.Drawing.Font("Segoe UI", 9F);
+            lblFechaDeGeneracion.InfoLabelForeColor = System.Drawing.SystemColors.MenuHighlight;
+            lblFechaDeGeneracion.InfoLabelText = "Informacion";
+            lblFechaDeGeneracion.Label = "Fecha de Generacion:";
+            lblFechaDeGeneracion.Location = new System.Drawing.Point(316, 124);
+            lblFechaDeGeneracion.MinimumSize = new System.Drawing.Size(150, 30);
+            lblFechaDeGeneracion.Name = "lblFechaDeGeneracion";
+            lblFechaDeGeneracion.RootLineColor = System.Drawing.Color.Gray;
+            lblFechaDeGeneracion.Size = new System.Drawing.Size(248, 30);
+            lblFechaDeGeneracion.TabIndex = 15;
+            // 
+            // txtCliente
+            // 
+            txtCliente.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtCliente.InputContentType = InputMode.GENERAL;
+            txtCliente.Label = "Cliente:";
+            txtCliente.Location = new System.Drawing.Point(13, 304);
+            txtCliente.MinimumSize = new System.Drawing.Size(100, 30);
+            txtCliente.Name = "txtCliente";
+            txtCliente.Placeholder = "";
+            txtCliente.RootLineColor = System.Drawing.Color.Gray;
+            txtCliente.Size = new System.Drawing.Size(291, 30);
+            txtCliente.TabIndex = 14;
+            txtCliente.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtCliente.Value = "";
+            // 
+            // btnVerReporte
+            // 
+            btnVerReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnVerReporte.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnVerReporte.Image = Properties.Resources.check;
+            btnVerReporte.Location = new System.Drawing.Point(269, 128);
+            btnVerReporte.Name = "btnVerReporte";
+            btnVerReporte.Size = new System.Drawing.Size(30, 22);
+            btnVerReporte.TabIndex = 13;
+            btnVerReporte.UseVisualStyleBackColor = true;
+            btnVerReporte.Click += btnVisualizarReporte_Click;
+            // 
+            // txtNoSerie
+            // 
+            txtNoSerie.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtNoSerie.InputContentType = InputMode.GENERAL;
+            txtNoSerie.Label = "Serie:";
+            txtNoSerie.Location = new System.Drawing.Point(13, 268);
+            txtNoSerie.MinimumSize = new System.Drawing.Size(100, 30);
+            txtNoSerie.Name = "txtNoSerie";
+            txtNoSerie.Placeholder = "";
+            txtNoSerie.RootLineColor = System.Drawing.Color.Gray;
+            txtNoSerie.Size = new System.Drawing.Size(291, 30);
+            txtNoSerie.TabIndex = 12;
+            txtNoSerie.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtNoSerie.Value = "";
+            // 
+            // txtModeloEquipo
+            // 
+            txtModeloEquipo.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtModeloEquipo.InputContentType = InputMode.GENERAL;
+            txtModeloEquipo.Label = "Modelo:";
+            txtModeloEquipo.Location = new System.Drawing.Point(13, 232);
+            txtModeloEquipo.MinimumSize = new System.Drawing.Size(100, 30);
+            txtModeloEquipo.Name = "txtModeloEquipo";
+            txtModeloEquipo.Placeholder = "";
+            txtModeloEquipo.RootLineColor = System.Drawing.Color.Gray;
+            txtModeloEquipo.Size = new System.Drawing.Size(291, 30);
+            txtModeloEquipo.TabIndex = 11;
+            txtModeloEquipo.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtModeloEquipo.Value = "";
+            // 
+            // txtMarcaEquipo
+            // 
+            txtMarcaEquipo.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtMarcaEquipo.InputContentType = InputMode.GENERAL;
+            txtMarcaEquipo.Label = "Marca:";
+            txtMarcaEquipo.Location = new System.Drawing.Point(13, 196);
+            txtMarcaEquipo.MinimumSize = new System.Drawing.Size(100, 30);
+            txtMarcaEquipo.Name = "txtMarcaEquipo";
+            txtMarcaEquipo.Placeholder = "";
+            txtMarcaEquipo.RootLineColor = System.Drawing.Color.Gray;
+            txtMarcaEquipo.Size = new System.Drawing.Size(291, 30);
+            txtMarcaEquipo.TabIndex = 10;
+            txtMarcaEquipo.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtMarcaEquipo.Value = "";
+            // 
+            // txtTipoDeEquipo
+            // 
+            txtTipoDeEquipo.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtTipoDeEquipo.InputContentType = InputMode.GENERAL;
+            txtTipoDeEquipo.Label = "Tipo de Equipo:";
+            txtTipoDeEquipo.Location = new System.Drawing.Point(13, 160);
+            txtTipoDeEquipo.MinimumSize = new System.Drawing.Size(100, 30);
+            txtTipoDeEquipo.Name = "txtTipoDeEquipo";
+            txtTipoDeEquipo.Placeholder = "";
+            txtTipoDeEquipo.RootLineColor = System.Drawing.Color.Gray;
+            txtTipoDeEquipo.Size = new System.Drawing.Size(291, 30);
+            txtTipoDeEquipo.TabIndex = 9;
+            txtTipoDeEquipo.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtTipoDeEquipo.Value = "";
+            // 
+            // txtNoReporte
+            // 
+            txtNoReporte.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            txtNoReporte.InputContentType = InputMode.GENERAL;
+            txtNoReporte.Label = "No. Reporte:";
+            txtNoReporte.Location = new System.Drawing.Point(13, 124);
+            txtNoReporte.MinimumSize = new System.Drawing.Size(100, 30);
+            txtNoReporte.Name = "txtNoReporte";
+            txtNoReporte.Placeholder = "";
+            txtNoReporte.RootLineColor = System.Drawing.Color.Gray;
+            txtNoReporte.Size = new System.Drawing.Size(262, 30);
+            txtNoReporte.TabIndex = 7;
+            txtNoReporte.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtNoReporte.TextBoxWidth = 120;
+            txtNoReporte.Value = "";
+            // 
+            // flSeparatorLine1
+            // 
+            flSeparatorLine1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flSeparatorLine1.LineColor = System.Drawing.Color.Gray;
+            flSeparatorLine1.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
+            flSeparatorLine1.LineThickness = 1;
+            flSeparatorLine1.Location = new System.Drawing.Point(14, 111);
+            flSeparatorLine1.MinimumSize = new System.Drawing.Size(0, 6);
+            flSeparatorLine1.Name = "flSeparatorLine1";
+            flSeparatorLine1.Size = new System.Drawing.Size(963, 10);
+            flSeparatorLine1.TabIndex = 6;
+            flSeparatorLine1.Text = "flSeparatorLine1";
+            // 
+            // flCustomLabel1
+            // 
+            flCustomLabel1.AutoSize = true;
+            flCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            flCustomLabel1.ImagePadding = 5;
+            flCustomLabel1.LeftImage = Properties.Resources.info_24;
+            flCustomLabel1.Location = new System.Drawing.Point(18, 84);
+            flCustomLabel1.Name = "flCustomLabel1";
+            flCustomLabel1.Size = new System.Drawing.Size(207, 24);
+            flCustomLabel1.TabIndex = 5;
+            flCustomLabel1.Text = "Informacion del Reporte";
+            // 
+            // flNumericUpDownLabelJoint1
+            // 
+            flNumericUpDownLabelJoint1.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            flNumericUpDownLabelJoint1.Label = "Folio:";
+            flNumericUpDownLabelJoint1.Location = new System.Drawing.Point(719, 41);
+            flNumericUpDownLabelJoint1.MaxValue = new decimal(new int[] { 999999, 0, 0, 0 });
+            flNumericUpDownLabelJoint1.MinimumSize = new System.Drawing.Size(150, 30);
+            flNumericUpDownLabelJoint1.Name = "flNumericUpDownLabelJoint1";
+            flNumericUpDownLabelJoint1.NumBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            flNumericUpDownLabelJoint1.NumericUpDownWidth = 75;
+            flNumericUpDownLabelJoint1.NumTextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            flNumericUpDownLabelJoint1.RootLineColor = System.Drawing.Color.Gray;
+            flNumericUpDownLabelJoint1.RootLineWidth = 1;
+            flNumericUpDownLabelJoint1.Size = new System.Drawing.Size(194, 30);
+            flNumericUpDownLabelJoint1.TabIndex = 4;
+            flNumericUpDownLabelJoint1.Value = new decimal(new int[] { 100100, 0, 0, 0 });
+            // 
+            // quickMenu_UtilityFunctions
+            // 
+            quickMenu_UtilityFunctions.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            quickAccessButton3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton3.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton3.BorderLineThickness = 1;
+            quickAccessButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton3.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton3.Image = Properties.Resources.printer_16;
+            quickAccessButton3.Name = "ctrlBtnImprimir";
+            quickAccessButton3.Text = "Imprimir";
+            quickAccessButton4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton4.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton4.BorderLineThickness = 1;
+            quickAccessButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton4.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton4.Image = Properties.Resources.pdf_161;
+            quickAccessButton4.Name = "ctrlBtnGuardarPdf";
+            quickAccessButton4.Text = "Guardar PDF";
+            quickAccessButton5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton5.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton5.BorderLineThickness = 1;
+            quickAccessButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton5.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton5.Image = Properties.Resources.printer_pdf2_16;
+            quickAccessButton5.Name = "ctrlBtnGuardarEImprimir";
+            quickAccessButton5.Text = "Guardar e Imprimir";
+            quickAccessButton6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton6.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton6.BorderLineThickness = 1;
+            quickAccessButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton6.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton6.Image = Properties.Resources.importar2_16;
+            quickAccessButton6.Name = "ctrlBtnImportarReporte";
+            quickAccessButton6.Text = "Importar reporte";
+            quickAccessButton7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton7.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton7.BorderLineThickness = 1;
+            quickAccessButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton7.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton7.Image = Properties.Resources.exportar2_16;
+            quickAccessButton7.Name = "ctrlBtnGenerarReporte";
+            quickAccessButton7.Text = "Generar reporte";
+            quickAccessButton8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton8.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton8.BorderLineThickness = 1;
+            quickAccessButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton8.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton8.Image = Properties.Resources.spare_parts2_16;
+            quickAccessButton8.Name = "ctrlBtnReducirToner";
+            quickAccessButton8.Text = "Reducir toner";
+            quickAccessButton9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton9.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton9.BorderLineThickness = 1;
+            quickAccessButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton9.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton9.Image = Properties.Resources.toners_16;
+            quickAccessButton9.Name = "ctrlBtnReducirRefaccion";
+            quickAccessButton9.Text = "Reducir refaccion";
+            quickAccessButton10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            quickAccessButton10.BorderLineColor = System.Drawing.Color.Silver;
+            quickAccessButton10.BorderLineThickness = 1;
+            quickAccessButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            quickAccessButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            quickAccessButton10.ForeColor = System.Drawing.SystemColors.ControlText;
+            quickAccessButton10.Image = Properties.Resources.cerrar2_16;
+            quickAccessButton10.Name = "ctrlBtnCerrar";
+            quickAccessButton10.Text = "Cerrar";
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton3);
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton4);
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton5);
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton6);
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton7);
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton8);
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton9);
+            quickMenu_UtilityFunctions.Buttons.Add(quickAccessButton10);
+            quickMenu_UtilityFunctions.Dock = System.Windows.Forms.DockStyle.Top;
+            quickMenu_UtilityFunctions.LineColor = System.Drawing.Color.Black;
+            quickMenu_UtilityFunctions.LineThickness = 1;
+            quickMenu_UtilityFunctions.Location = new System.Drawing.Point(3, 3);
+            quickMenu_UtilityFunctions.MinimumSize = new System.Drawing.Size(98, 32);
+            quickMenu_UtilityFunctions.Name = "quickMenu_UtilityFunctions";
+            quickMenu_UtilityFunctions.Size = new System.Drawing.Size(986, 34);
+            quickMenu_UtilityFunctions.TabIndex = 0;
+            // 
+            // txtFallaReportada
+            // 
+            txtFallaReportada.EntryFont = new System.Drawing.Font("Segoe UI", 9F);
+            txtFallaReportada.InputContentType = InputMode.GENERAL;
+            txtFallaReportada.Label = "Falla reportada / Trabajo solicitado:";
+            txtFallaReportada.Location = new System.Drawing.Point(9, 41);
+            txtFallaReportada.MinimumSize = new System.Drawing.Size(100, 30);
+            txtFallaReportada.Name = "txtFallaReportada";
+            txtFallaReportada.Placeholder = "";
+            txtFallaReportada.RootLineColor = System.Drawing.Color.Gray;
+            txtFallaReportada.Size = new System.Drawing.Size(704, 30);
+            txtFallaReportada.TabIndex = 3;
+            txtFallaReportada.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            txtFallaReportada.TextBoxWidth = 475;
+            txtFallaReportada.Value = "";
             // 
             // panel9
             // 
@@ -1963,215 +1685,17 @@
             panel9.Location = new System.Drawing.Point(0, 0);
             panel9.Margin = new System.Windows.Forms.Padding(0);
             panel9.Name = "panel9";
-            panel9.Size = new System.Drawing.Size(1, 98);
+            panel9.Size = new System.Drawing.Size(27, 98);
             panel9.TabIndex = 95;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(groupBox6);
-            panel3.Controls.Add(groupBox5);
-            panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel3.Location = new System.Drawing.Point(0, 769);
-            panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(1003, 244);
-            panel3.TabIndex = 93;
-            // 
-            // groupBox6
-            // 
-            groupBox6.Controls.Add(linklblRitComprobado);
-            groupBox6.Controls.Add(label42);
-            groupBox6.Controls.Add(linklblRitFirmado);
-            groupBox6.Controls.Add(label41);
-            groupBox6.Controls.Add(linklblRitImpreso);
-            groupBox6.Controls.Add(label40);
-            groupBox6.Controls.Add(linklblTicketGeneradoEnSAS);
-            groupBox6.Controls.Add(label39);
-            groupBox6.Location = new System.Drawing.Point(655, 3);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Size = new System.Drawing.Size(286, 160);
-            groupBox6.TabIndex = 93;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "Valores en Bruto";
-            // 
-            // linklblRitComprobado
-            // 
-            linklblRitComprobado.AutoSize = true;
-            linklblRitComprobado.Location = new System.Drawing.Point(150, 84);
-            linklblRitComprobado.Name = "linklblRitComprobado";
-            linklblRitComprobado.Size = new System.Drawing.Size(30, 15);
-            linklblRitComprobado.TabIndex = 7;
-            linklblRitComprobado.TabStop = true;
-            linklblRitComprobado.Text = "True";
-            linklblRitComprobado.LinkClicked += linklblRitComprobado_LinkClicked;
-            // 
-            // label42
-            // 
-            label42.AutoSize = true;
-            label42.Location = new System.Drawing.Point(15, 84);
-            label42.Name = "label42";
-            label42.Size = new System.Drawing.Size(101, 15);
-            label42.TabIndex = 6;
-            label42.Text = "RIT Comprobado:";
-            // 
-            // linklblRitFirmado
-            // 
-            linklblRitFirmado.AutoSize = true;
-            linklblRitFirmado.Location = new System.Drawing.Point(150, 64);
-            linklblRitFirmado.Name = "linklblRitFirmado";
-            linklblRitFirmado.Size = new System.Drawing.Size(30, 15);
-            linklblRitFirmado.TabIndex = 5;
-            linklblRitFirmado.TabStop = true;
-            linklblRitFirmado.Text = "True";
-            linklblRitFirmado.LinkClicked += linklblRitFirmado_LinkClicked;
-            // 
-            // label41
-            // 
-            label41.AutoSize = true;
-            label41.Location = new System.Drawing.Point(15, 64);
-            label41.Name = "label41";
-            label41.Size = new System.Drawing.Size(74, 15);
-            label41.TabIndex = 4;
-            label41.Text = "RIT Firmado:";
-            // 
-            // linklblRitImpreso
-            // 
-            linklblRitImpreso.AutoSize = true;
-            linklblRitImpreso.Location = new System.Drawing.Point(150, 45);
-            linklblRitImpreso.Name = "linklblRitImpreso";
-            linklblRitImpreso.Size = new System.Drawing.Size(30, 15);
-            linklblRitImpreso.TabIndex = 3;
-            linklblRitImpreso.TabStop = true;
-            linklblRitImpreso.Text = "True";
-            linklblRitImpreso.LinkClicked += linklblRitImpreso_LinkClicked;
-            // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Location = new System.Drawing.Point(15, 45);
-            label40.Name = "label40";
-            label40.Size = new System.Drawing.Size(73, 15);
-            label40.TabIndex = 2;
-            label40.Text = "RIT Impreso:";
-            // 
-            // linklblTicketGeneradoEnSAS
-            // 
-            linklblTicketGeneradoEnSAS.AutoSize = true;
-            linklblTicketGeneradoEnSAS.Location = new System.Drawing.Point(150, 26);
-            linklblTicketGeneradoEnSAS.Name = "linklblTicketGeneradoEnSAS";
-            linklblTicketGeneradoEnSAS.Size = new System.Drawing.Size(30, 15);
-            linklblTicketGeneradoEnSAS.TabIndex = 1;
-            linklblTicketGeneradoEnSAS.TabStop = true;
-            linklblTicketGeneradoEnSAS.Text = "True";
-            linklblTicketGeneradoEnSAS.LinkClicked += linklblTicketGeneradoEnSAS_LinkClicked;
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Location = new System.Drawing.Point(15, 26);
-            label39.Name = "label39";
-            label39.Size = new System.Drawing.Size(135, 15);
-            label39.TabIndex = 0;
-            label39.Text = "Ticket Generado en SAS:";
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(dataGridViewInventarios);
-            groupBox5.Controls.Add(txtLinea7);
-            groupBox5.Controls.Add(txtLinea6);
-            groupBox5.Controls.Add(txtLinea5);
-            groupBox5.Controls.Add(txtLinea4);
-            groupBox5.Controls.Add(txtLinea3);
-            groupBox5.Controls.Add(txtLinea2);
-            groupBox5.Controls.Add(txtLinea1);
-            groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            groupBox5.Location = new System.Drawing.Point(6, 3);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new System.Drawing.Size(642, 166);
-            groupBox5.TabIndex = 92;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Acciones tomadas";
-            // 
-            // dataGridViewInventarios
-            // 
-            dataGridViewInventarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewInventarios.Location = new System.Drawing.Point(494, 12);
-            dataGridViewInventarios.Name = "dataGridViewInventarios";
-            dataGridViewInventarios.RowHeadersWidth = 51;
-            dataGridViewInventarios.Size = new System.Drawing.Size(256, 148);
-            dataGridViewInventarios.TabIndex = 99;
-            dataGridViewInventarios.Visible = false;
-            // 
-            // txtLinea7
-            // 
-            txtLinea7.Location = new System.Drawing.Point(6, 131);
-            txtLinea7.Name = "txtLinea7";
-            txtLinea7.Size = new System.Drawing.Size(482, 20);
-            txtLinea7.TabIndex = 98;
-            txtLinea7.Enter += txtLinea7_Enter;
-            txtLinea7.KeyDown += txtLinea7_KeyDown;
-            // 
-            // txtLinea6
-            // 
-            txtLinea6.Location = new System.Drawing.Point(6, 114);
-            txtLinea6.Name = "txtLinea6";
-            txtLinea6.Size = new System.Drawing.Size(482, 20);
-            txtLinea6.TabIndex = 97;
-            txtLinea6.Enter += txtLinea6_Enter;
-            txtLinea6.KeyDown += txtLinea6_KeyDown;
-            // 
-            // txtLinea5
-            // 
-            txtLinea5.Location = new System.Drawing.Point(6, 96);
-            txtLinea5.Name = "txtLinea5";
-            txtLinea5.Size = new System.Drawing.Size(482, 20);
-            txtLinea5.TabIndex = 96;
-            txtLinea5.Enter += txtLinea5_Enter;
-            txtLinea5.KeyDown += txtLinea5_KeyDown;
-            // 
-            // txtLinea4
-            // 
-            txtLinea4.Location = new System.Drawing.Point(6, 78);
-            txtLinea4.Name = "txtLinea4";
-            txtLinea4.Size = new System.Drawing.Size(482, 20);
-            txtLinea4.TabIndex = 95;
-            txtLinea4.Enter += txtLinea4_Enter;
-            txtLinea4.KeyDown += txtLinea4_KeyDown;
-            // 
-            // txtLinea3
-            // 
-            txtLinea3.Location = new System.Drawing.Point(6, 61);
-            txtLinea3.Name = "txtLinea3";
-            txtLinea3.Size = new System.Drawing.Size(482, 20);
-            txtLinea3.TabIndex = 94;
-            txtLinea3.Enter += txtLinea3_Enter;
-            txtLinea3.KeyDown += txtLinea3_KeyDown;
-            // 
-            // txtLinea2
-            // 
-            txtLinea2.Location = new System.Drawing.Point(6, 43);
-            txtLinea2.Name = "txtLinea2";
-            txtLinea2.Size = new System.Drawing.Size(482, 20);
-            txtLinea2.TabIndex = 93;
-            txtLinea2.Enter += txtLinea2_Enter;
-            txtLinea2.KeyDown += txtLinea2_KeyDown;
-            // 
-            // txtLinea1
-            // 
-            txtLinea1.Location = new System.Drawing.Point(6, 26);
-            txtLinea1.Name = "txtLinea1";
-            txtLinea1.Size = new System.Drawing.Size(482, 20);
-            txtLinea1.TabIndex = 92;
-            txtLinea1.Enter += txtLinea1_Enter;
-            txtLinea1.KeyDown += txtLinea1_KeyDown;
             // 
             // panel8
             // 
             panel8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel8.Location = new System.Drawing.Point(1006, 0);
+            panel8.Location = new System.Drawing.Point(1036, 0);
             panel8.Margin = new System.Windows.Forms.Padding(0);
             panel8.Name = "panel8";
-            panel8.Size = new System.Drawing.Size(1, 98);
+            panel8.Size = new System.Drawing.Size(28, 98);
             panel8.TabIndex = 94;
             // 
             // toolStripStatusLabel2
@@ -2209,7 +1733,7 @@
             toolJobMessage.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
             toolJobMessage.ForeColor = System.Drawing.Color.Green;
             toolJobMessage.Name = "toolJobMessage";
-            toolJobMessage.Size = new System.Drawing.Size(694, 20);
+            toolJobMessage.Size = new System.Drawing.Size(756, 20);
             toolJobMessage.Spring = true;
             toolJobMessage.Text = "Status de operacion!";
             // 
@@ -2218,28 +1742,174 @@
             statusStrip1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripStatusLabel2, toolJobStatus, toolStripProgressBar1, toolStripStatusLabel1, toolMDI_ID, toolJobMessage });
-            statusStrip1.Location = new System.Drawing.Point(0, 510);
+            statusStrip1.Location = new System.Drawing.Point(0, 1030);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 15, 0);
-            statusStrip1.Size = new System.Drawing.Size(1002, 25);
+            statusStrip1.Size = new System.Drawing.Size(1064, 25);
             statusStrip1.TabIndex = 102;
             statusStrip1.Text = "statusStrip1";
+            // 
+            // flCustomLabel2
+            // 
+            flCustomLabel2.AutoSize = true;
+            flCustomLabel2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            flCustomLabel2.ImagePadding = 5;
+            flCustomLabel2.LeftImage = Properties.Resources.wrench_24;
+            flCustomLabel2.Location = new System.Drawing.Point(13, 8);
+            flCustomLabel2.Name = "flCustomLabel2";
+            flCustomLabel2.Size = new System.Drawing.Size(115, 24);
+            flCustomLabel2.TabIndex = 45;
+            flCustomLabel2.Text = "Resolucion";
+            // 
+            // flSeparatorLine2
+            // 
+            flSeparatorLine2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flSeparatorLine2.LineColor = System.Drawing.Color.Gray;
+            flSeparatorLine2.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
+            flSeparatorLine2.LineThickness = 1;
+            flSeparatorLine2.Location = new System.Drawing.Point(9, 35);
+            flSeparatorLine2.MinimumSize = new System.Drawing.Size(0, 6);
+            flSeparatorLine2.Name = "flSeparatorLine2";
+            flSeparatorLine2.Size = new System.Drawing.Size(400, 10);
+            flSeparatorLine2.TabIndex = 46;
+            flSeparatorLine2.Text = "flSeparatorLine2";
+            // 
+            // flCustomLabel5
+            // 
+            flCustomLabel5.AutoSize = true;
+            flCustomLabel5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            flCustomLabel5.ImagePadding = 5;
+            flCustomLabel5.LeftImage = Properties.Resources.time_24;
+            flCustomLabel5.Location = new System.Drawing.Point(448, 8);
+            flCustomLabel5.Name = "flCustomLabel5";
+            flCustomLabel5.Size = new System.Drawing.Size(181, 24);
+            flCustomLabel5.TabIndex = 47;
+            flCustomLabel5.Text = "Tiempo de Ejecucion";
+            // 
+            // flSeparatorLine5
+            // 
+            flSeparatorLine5.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flSeparatorLine5.LineColor = System.Drawing.Color.Gray;
+            flSeparatorLine5.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
+            flSeparatorLine5.LineThickness = 1;
+            flSeparatorLine5.Location = new System.Drawing.Point(444, 35);
+            flSeparatorLine5.MinimumSize = new System.Drawing.Size(0, 6);
+            flSeparatorLine5.Name = "flSeparatorLine5";
+            flSeparatorLine5.Size = new System.Drawing.Size(347, 10);
+            flSeparatorLine5.TabIndex = 48;
+            flSeparatorLine5.Text = "flSeparatorLine5";
+            // 
+            // hypertxtResolucion
+            // 
+            hypertxtResolucion.CanEdit = true;
+            hypertxtResolucion.EditAreaBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            hypertxtResolucion.EditModeAlwaysMaximized = false;
+            hypertxtResolucion.EditModeMaximizedContainer = tabPage_Cierre;
+            hypertxtResolucion.EditToolbarsBackColor = System.Drawing.SystemColors.ActiveCaption;
+            hypertxtResolucion.HyperText = "";
+            hypertxtResolucion.Location = new System.Drawing.Point(6, 101);
+            hypertxtResolucion.Name = "hypertxtResolucion";
+            hypertxtResolucion.Size = new System.Drawing.Size(819, 277);
+            hypertxtResolucion.TabIndex = 50;
+            hypertxtResolucion.TextName = "Resolucion de Reporte";
+            // 
+            // flCustomLabel6
+            // 
+            flCustomLabel6.AutoSize = true;
+            flCustomLabel6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            flCustomLabel6.ImagePadding = 5;
+            flCustomLabel6.LeftImage = Properties.Resources.checklist2_24;
+            flCustomLabel6.Location = new System.Drawing.Point(13, 153);
+            flCustomLabel6.Name = "flCustomLabel6";
+            flCustomLabel6.Size = new System.Drawing.Size(187, 24);
+            flCustomLabel6.TabIndex = 45;
+            flCustomLabel6.Text = "Valores Almacenados";
+            // 
+            // flSeparatorLine6
+            // 
+            flSeparatorLine6.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flSeparatorLine6.LineColor = System.Drawing.Color.Gray;
+            flSeparatorLine6.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
+            flSeparatorLine6.LineThickness = 1;
+            flSeparatorLine6.Location = new System.Drawing.Point(9, 180);
+            flSeparatorLine6.MinimumSize = new System.Drawing.Size(0, 6);
+            flSeparatorLine6.Name = "flSeparatorLine6";
+            flSeparatorLine6.Size = new System.Drawing.Size(742, 10);
+            flSeparatorLine6.TabIndex = 46;
+            flSeparatorLine6.Text = "flSeparatorLine6";
+            // 
+            // flCustomLabel7
+            // 
+            flCustomLabel7.AutoSize = true;
+            flCustomLabel7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            flCustomLabel7.ImagePadding = 5;
+            flCustomLabel7.LeftImage = Properties.Resources.person_24;
+            flCustomLabel7.Location = new System.Drawing.Point(13, 294);
+            flCustomLabel7.Name = "flCustomLabel7";
+            flCustomLabel7.Size = new System.Drawing.Size(209, 24);
+            flCustomLabel7.TabIndex = 47;
+            flCustomLabel7.Text = "Informacion de Creacion";
+            // 
+            // flSeparatorLine7
+            // 
+            flSeparatorLine7.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flSeparatorLine7.LineColor = System.Drawing.Color.Gray;
+            flSeparatorLine7.LineOrientation = System.Windows.Forms.Orientation.Horizontal;
+            flSeparatorLine7.LineThickness = 1;
+            flSeparatorLine7.Location = new System.Drawing.Point(9, 321);
+            flSeparatorLine7.MinimumSize = new System.Drawing.Size(0, 6);
+            flSeparatorLine7.Name = "flSeparatorLine7";
+            flSeparatorLine7.Size = new System.Drawing.Size(742, 10);
+            flSeparatorLine7.TabIndex = 48;
+            flSeparatorLine7.Text = "flSeparatorLine7";
+            // 
+            // flTextBoxLabelJoint2
+            // 
+            flTextBoxLabelJoint2.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            flTextBoxLabelJoint2.InputContentType = InputMode.GENERAL;
+            flTextBoxLabelJoint2.Label = "Titulo del Proyecto:";
+            flTextBoxLabelJoint2.Location = new System.Drawing.Point(13, 51);
+            flTextBoxLabelJoint2.MinimumSize = new System.Drawing.Size(100, 30);
+            flTextBoxLabelJoint2.Name = "flTextBoxLabelJoint2";
+            flTextBoxLabelJoint2.Placeholder = "";
+            flTextBoxLabelJoint2.RootLineColor = System.Drawing.Color.Gray;
+            flTextBoxLabelJoint2.Size = new System.Drawing.Size(475, 30);
+            flTextBoxLabelJoint2.TabIndex = 50;
+            flTextBoxLabelJoint2.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            flTextBoxLabelJoint2.TextBoxWidth = 300;
+            flTextBoxLabelJoint2.Value = "";
+            // 
+            // flTextBoxLabelJoint3
+            // 
+            flTextBoxLabelJoint3.EntryFont = new System.Drawing.Font("Consolas", 9F);
+            flTextBoxLabelJoint3.InputContentType = InputMode.GENERAL;
+            flTextBoxLabelJoint3.Label = "Ruta del Proyecto:";
+            flTextBoxLabelJoint3.Location = new System.Drawing.Point(13, 87);
+            flTextBoxLabelJoint3.MinimumSize = new System.Drawing.Size(100, 30);
+            flTextBoxLabelJoint3.Name = "flTextBoxLabelJoint3";
+            flTextBoxLabelJoint3.Placeholder = "";
+            flTextBoxLabelJoint3.RootLineColor = System.Drawing.Color.Gray;
+            flTextBoxLabelJoint3.Size = new System.Drawing.Size(576, 30);
+            flTextBoxLabelJoint3.TabIndex = 51;
+            flTextBoxLabelJoint3.TextBoxBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            flTextBoxLabelJoint3.TextBoxWidth = 400;
+            flTextBoxLabelJoint3.Value = "";
             // 
             // rit_mdi_form
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            BackColor = System.Drawing.SystemColors.ActiveCaption;
             CausesValidation = false;
-            ClientSize = new System.Drawing.Size(1002, 535);
+            ClientSize = new System.Drawing.Size(1064, 1055);
             Controls.Add(tableLayoutPanel_GeneralLayout);
             Controls.Add(statusStrip1);
             Controls.Add(toolStrip2);
-            Controls.Add(toolStrip1);
+            Controls.Add(toolStrip_MainTools);
             Controls.Add(menuStrip1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MaximumSize = new System.Drawing.Size(1002, 1055);
             MinimumSize = new System.Drawing.Size(1002, 530);
             Name = "rit_mdi_form";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2251,31 +1921,26 @@
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
-            toolStrip1.ResumeLayout(false);
-            toolStrip1.PerformLayout();
+            toolStrip_MainTools.ResumeLayout(false);
+            toolStrip_MainTools.PerformLayout();
             panelFondoSuperior.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
+            tableLayoutPanel_GeneralLayout.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            panel7.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            tableLayoutPanel2.ResumeLayout(false);
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            tableLayoutPanel_GeneralLayout.ResumeLayout(false);
-            tableLayoutPanel_GeneralLayout.PerformLayout();
-            panel3.ResumeLayout(false);
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewInventarios).EndInit();
+            flExtendedTabControl1.ResumeLayout(false);
+            tabPage_Cierre.ResumeLayout(false);
+            flTabMenuControl1.ResumeLayout(false);
+            tabPage5.ResumeLayout(false);
+            tabPage5.PerformLayout();
+            tabPage6.ResumeLayout(false);
+            tabPage6.PerformLayout();
+            tabPage_FacturaServicio.ResumeLayout(false);
+            flTabMenuControl2.ResumeLayout(false);
+            tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvAmortizacionDeCobro).EndInit();
+            tabPage_DatosDeConvenio.ResumeLayout(false);
+            tabPage_ValoresEnBruto.ResumeLayout(false);
+            tabPage_ValoresEnBruto.PerformLayout();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
             ResumeLayout(false);
@@ -2309,7 +1974,7 @@
         private System.Windows.Forms.ToolStripMenuItem solicitarRefaccionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem solicitarTonerToolStripMenuItem;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private flCustomToolStrip toolStrip_MainTools;
         private System.Windows.Forms.ToolStripButton toolAbrirProyecto;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton toolLimbiarFormulario;
@@ -2327,11 +1992,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         public System.ComponentModel.BackgroundWorker backgroundWorker_WaitScreen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripTextBox txtNombreDelProyecto;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton toolAbrirPDF;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripMenuItem guardarComoToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton btnAtras;
         private System.Windows.Forms.ToolStripButton btnSiguiente;
@@ -2344,12 +2006,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolMDI_ID;
         private System.Windows.Forms.ToolStripStatusLabel toolJobMessage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_GeneralLayout;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox txtFallaReportada;
-        private System.Windows.Forms.GroupBox groupBox2;
-        public System.Windows.Forms.MaskedTextBox richTextBoxContadorDeRIT;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnGenerarReporteEnSASVia911;
@@ -2398,62 +2054,15 @@
         private System.Windows.Forms.Label label36;
         public System.Windows.Forms.RadioButton rbtnReporteCerradoNo;
         public System.Windows.Forms.RadioButton rbtnReporteCerradoSi;
-        public System.Windows.Forms.TextBox txtRefaccionesUtilizadas;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Panel panel4;
-        public System.Windows.Forms.TextBox txtHostname;
-        public System.Windows.Forms.Label label22;
-        public System.Windows.Forms.ComboBox cboxPoblacion;
-        public System.Windows.Forms.TextBox txtTelefono;
-        public System.Windows.Forms.ComboBox cboxUsuariofinal;
-        public System.Windows.Forms.Label lblFechaDeReporte;
-        public System.Windows.Forms.TextBox txtTecnico;
-        public System.Windows.Forms.Label label20;
-        public System.Windows.Forms.TextBox txtCentroDeServicios;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label label19;
-        public System.Windows.Forms.TextBox txtNoDeEmpleado;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        public System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label label14;
-        public System.Windows.Forms.TextBox txtNoDeSucursal;
-        private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox txtSucursal;
-        private System.Windows.Forms.Label label12;
-        public System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.TextBox txtNoDeSerie;
-        private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txtTipoDeEquipo;
-        public System.Windows.Forms.TextBox txtMinuto;
-        private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox txtHora;
-        public System.Windows.Forms.MonthCalendar calendarFecha;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelFondoSuperior;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelClientCompany;
+        private System.Windows.Forms.Panel panelHostCompany;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.Button btnCargarEquipo;
-        private System.Windows.Forms.Button btnVisualizarReporte;
-        public System.Windows.Forms.MaskedTextBox txtNoDeReporteDelCliente;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripMenuItem minimizarReporteToolStripMenuItem;
-        private System.Windows.Forms.Button btnVerTarjetaDeUsuarioActual;
-        private System.Windows.Forms.Button btnVerHistorialDeEquipo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox6;
         public System.Windows.Forms.LinkLabel linklblRitComprobado;
@@ -2476,10 +2085,76 @@
         public System.Windows.Forms.ToolStripButton toolGuardarProyecto;
         public System.Windows.Forms.ToolStripButton toolMinimizarReporte;
         public System.Windows.Forms.ToolStripButton toolStrpBtnCerrarProyecto;
-        public System.Windows.Forms.ComboBox txtDepartamento;
         private System.Windows.Forms.Button btnReducirRefaccion;
         private System.Windows.Forms.Button btnReducirToner;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel4;
+        private flSeparatorLine flSeparatorLine4;
+        private flCustomLabel flCustomLabel4;
+        private flTextBoxLabelJoint txtMotivoDeNoCierre;
+        private flCheckBoxLabelJoint chckboxReporteCerrado;
+        private flSeparatorLine flSeparatorLine3;
+        private flCustomLabel flCustomLabel3;
+        private System.Windows.Forms.MonthCalendar calendarFechaAtencion;
+        private flLabelJoint lblFechaDeAtencion;
+        private System.Windows.Forms.Label label1;
+        private flCustomButton btnCargarHostname;
+        private flTextBoxLabelJoint txtNoEmp;
+        private flTextBoxLabelJoint txtTecnicoAsignado;
+        private flTextBoxLabelJoint txtCentroServicio;
+        private flTextBoxLabelJoint txtTelefono;
+        private flTextBoxLabelJoint txtHostname;
+        private flTextBoxLabelJoint txtDepartamento;
+        private flCustomButton btnCargarUsuario;
+        private flTextBoxLabelJoint txtSucursal;
+        private flTextBoxLabelJoint txtPoblacion;
+        private flTextBoxLabelJoint txtDireccion;
+        private flTextBoxLabelJoint txtNoSucursal;
+        private flTextBoxLabelJoint txtUsuarioFinal;
+        private System.Windows.Forms.MonthCalendar calendarFechaGeneracion;
+        private flLabelJoint lblFechaDeGeneracion;
+        private flTextBoxLabelJoint txtCliente;
+        private flCustomButton btnVerReporte;
+        private flTextBoxLabelJoint txtNoSerie;
+        private flTextBoxLabelJoint txtModeloEquipo;
+        private flTextBoxLabelJoint txtMarcaEquipo;
+        private flTextBoxLabelJoint txtTipoDeEquipo;
+        private flTextBoxLabelJoint txtNoReporte;
+        private flSeparatorLine flSeparatorLine1;
+        private flCustomLabel flCustomLabel1;
+        private flNumericUpDownLabelJoint flNumericUpDownLabelJoint1;
+        private flQuickAccessPanel quickMenu_UtilityFunctions;
+        private flExtendedTabControl flExtendedTabControl1;
+        private System.Windows.Forms.TabPage tabPage_Cierre;
+        private System.Windows.Forms.TabPage tabPage_FacturaServicio;
+        private System.Windows.Forms.TabPage tabPage_DatosDeConvenio;
+        private System.Windows.Forms.TabPage tabPage_ValoresEnBruto;
+        private flTabMenuControl flTabMenuControl1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private flTabMenuControl flTabMenuControl2;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private flExtendedDataGridView dgvAmortizacionDeCobro;
+        internal flTextBoxLabelJoint txtFallaReportada;
+        private flQuickAccessPanel quickMenu_FuncionesFactura;
+        private flLabelJoint lblConvenioInicio;
+        private flCheckBoxLabelJoint chckboxConvenioEstablecido;
+        private flLabelJoint lblHasta;
+        private flTextBoxLabelJoint flTextBoxLabelJoint1;
+        private flRichTextBoxLabelJoint flRichTextBoxLabelJoint1;
+        private System.Windows.Forms.TabPage pageRegistroDeTrabajo;
+        private flCustomLabel flCustomLabel2;
+        private flSeparatorLine flSeparatorLine2;
+        private flCustomLabel flCustomLabel5;
+        private flSeparatorLine flSeparatorLine5;
+        private FlowControls.HyperTextLegacyViewer.flHyperTextLegacyViewer hypertxtResolucion;
+        private flCustomLabel flCustomLabel7;
+        private flSeparatorLine flSeparatorLine7;
+        private flCustomLabel flCustomLabel6;
+        private flSeparatorLine flSeparatorLine6;
+        private flTextBoxLabelJoint flTextBoxLabelJoint3;
+        private flTextBoxLabelJoint flTextBoxLabelJoint2;
     }
 }

@@ -100,6 +100,8 @@ namespace Flow_Solver
         private string FillPDFForm()
         {
             #region CODIGO PARA EL LLENADO DE LOS FORMULARIOS RIT PDF
+            /*
+
             try
             {
                 Properties.Settings.Default.NoDeReporte = this.txtNoDeReporteDelCliente.Text;
@@ -254,6 +256,7 @@ namespace Flow_Solver
             {
                 UpdateJobStatus(false, $"{ex.Message}");
             }
+            */
             #endregion
 
             /* SE INGRESA LA FOTO DE LA FIRMA DEL IDC */
@@ -287,7 +290,8 @@ namespace Flow_Solver
 
                 PrinterForm frm = new PrinterForm(path, "rit_mdi_form", this);
                 frm.ShowDialog();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 RJMessageBox.Show("No podemos imprimir el formato PDF desde la App! asegurese de que Adobe Acrobat Reader se encuentre instalado en el equipo y vuelva a intentarlo", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -303,6 +307,7 @@ namespace Flow_Solver
             try
             {
                 #region CARGA LOS DATOS DEL PROYECTO AL FORMULARIO
+                /*
                 txtNombreDelProyecto.Text = json.NombreProyecto;
                 richTextBoxContadorDeRIT.Text = json.NoFolio;
                 txtFallaReportada.Text = json.Falla;
@@ -329,12 +334,13 @@ namespace Flow_Solver
                 DateTime date = json.FechaDeGeneracionReporte;
                 //this.lblFechaDeReporte.Text = $"{dia_reporte} / {mes_reporte} / {año_reporte}";
                 calendarFecha.SetDate(date);
-
+                */
                 /** INFORMACION DEL TRABAJO Y FINALIZACION **/
                 if (json.UsaronRefacciones)
                 {
                     this.rbtnRefaccionesSi.Checked = true;
-                } else
+                }
+                else
                 {
                     this.rbtnRefaccionesNo.Checked = true;
                 }
@@ -405,7 +411,8 @@ namespace Flow_Solver
                 // toolJobMessage
                 this.toolJobMessage.ForeColor = System.Drawing.Color.Green;
                 this.toolJobMessage.Text = JobMessage;
-            } else
+            }
+            else
             {
                 // toolJobStatus
                 this.toolJobStatus.Text = "Error de trabajo!";
@@ -480,7 +487,8 @@ namespace Flow_Solver
                             }
 
                         }
-                    } else
+                    }
+                    else
                     {
                         foreach (TreeNode node in padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes)
                         {
@@ -495,7 +503,8 @@ namespace Flow_Solver
 
                         }
                     }
-                } else
+                }
+                else
                 {
                     foreach (TreeNode node in padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes)
                     {
@@ -512,11 +521,12 @@ namespace Flow_Solver
                 }
             }
 
+
             MensualStadistics.ReportStData data = new MensualStadistics.ReportStData()
             {
                 FallaReportada = this.txtFallaReportada.Text,
-                NoDeFolio = this.richTextBoxContadorDeRIT.Text,
-                NoDeReporte = !String.IsNullOrEmpty(this.txtNoDeReporteDelCliente.Text.Trim()) ? $"#{txtNoDeReporteDelCliente.Text}" : "",
+                NoDeFolio = this.flNumericUpDownLabelJoint1.Value.ToString(),
+                NoDeReporte = !String.IsNullOrEmpty(this.txtNoReporte.Value.Trim()) ? $"#{txtNoReporte.Value}" : "",
                 IsPrinted = this.IsRitAlreadyPrinted,
                 IsGenerated = this.IsAlreadyTicketGenerated,
                 IsSigned = this.IsRitAlreadySigned,
@@ -526,6 +536,7 @@ namespace Flow_Solver
             int a_year = Int32.Parse(this.calendarFechaDeServicio.SelectionStart.ToString("yyyy"));
             string a_month = this.calendarFechaDeServicio.SelectionStart.ToString("MMMM");
             MensualStadistics.UpdateMonthData(a_year, a_month, ActualProject.HASH, data);
+
         }
         #endregion
         #endregion
@@ -539,28 +550,6 @@ namespace Flow_Solver
             padre = LegacyForm;
 
             AssignDate();
-
-            /* CARGAMOS LOS DATOS DE REPORTE POR DEFECTO */
-            #region SECCION DE DATOS PRECARGADOS DE RIT
-            this.txtRefaccionesUtilizadas.Enabled = false;
-            this.btnSolicitarRefaccion.Enabled = false;
-            this.btnSolicitarToner.Enabled = true;
-
-            this.lblFechaDeReporte.Text = "Sin fecha";
-            this.lblFechaDeServicio.Text = "Sin fecha";
-
-            this.lblFechaDeReporte.Text = "";
-            this.lblFechaDeServicio.Text = "";
-            this.txtCausasDeNoCierre.Enabled = false;
-
-            //this.txtCliente.Text = Properties.Settings.Default.Cliente;
-            //this.txtPoblacion.Text = Properties.Settings.Default.LocalidadIDC;
-            this.txtTecnico.Text = Properties.Settings.Default.NombreIDC;
-            //this.txtDireccion.Text = Properties.Settings.Default.Direccion;
-            //this.txtCentroDeServicios.Text = Properties.Settings.Default.CentroDeServicios;
-
-            this.cboxPerfiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            #endregion
 
             #region SECCION DE PERFILES DE DATOS
             /*
@@ -592,17 +581,17 @@ namespace Flow_Solver
 
             Properties.Settings.Default.RITCounter++;
             Properties.Settings.Default.Save();
-            this.richTextBoxContadorDeRIT.Text = Properties.Settings.Default.RITCounter.ToString();
+            this.flNumericUpDownLabelJoint1.Value = Properties.Settings.Default.RITCounter;
 
             int counter = LegacyForm.treeViewProyectos.Nodes[0].Nodes.Count;
             string formText = $"Nuevo proyecto RIT {counter + 1}...";
 
-            padre.lblProyectos_Text.Visible = false;
+            //padre.lblProyectos_Text.Visible = false;
             ActualProject.NombreProyecto = formText;    // Asignamos el nombre por defecto
             ActualProject.HASH = MDI_ID;                // Asignamos el HASH del proyecto en caso de ser nuevo
 
             this.Text = ActualProject.NombreProyecto;
-            this.txtNombreDelProyecto.Text = ActualProject.NombreProyecto;
+            //this.txtNombreDelProyecto.Text = ActualProject.NombreProyecto;
         }
 
 
@@ -616,27 +605,6 @@ namespace Flow_Solver
             ActualProject = RitJsonProject.LoadProject(LEGACY_PROJECTJSON_PATH);
 
             AssignDate();
-
-            #region SECCION DE DATOS PRECARGADOS DE RIT
-            this.txtRefaccionesUtilizadas.Enabled = false;
-            this.btnSolicitarRefaccion.Enabled = false;
-            this.btnSolicitarToner.Enabled = true;
-
-            this.lblFechaDeReporte.Text = "Sin fecha";
-            this.lblFechaDeServicio.Text = "Sin fecha";
-
-            this.lblFechaDeReporte.Text = "";
-            this.lblFechaDeServicio.Text = "";
-            this.txtCausasDeNoCierre.Enabled = false;
-
-            this.txtCliente.Text = Properties.Settings.Default.Cliente;
-            this.cboxPoblacion.Text = Properties.Settings.Default.LocalidadIDC;
-            this.txtTecnico.Text = Properties.Settings.Default.NombreIDC;
-            this.txtDireccion.Text = Properties.Settings.Default.Direccion;
-            this.txtCentroDeServicios.Text = Properties.Settings.Default.CentroDeServicios;
-
-            this.cboxPerfiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            #endregion
 
             #region SECCION DE PERFILES DE DATOS
             /*
@@ -671,10 +639,10 @@ namespace Flow_Solver
             this.Text = this.txtFallaReportada.Text + " - " + ProjectFilePath;
             //MessageBox.Show("PAUSA");
 
-            padre.lblProyectos_Text.Visible = false;
+            //padre.lblProyectos_Text.Visible = false;
         }
 
-        public void AssignDate ()
+        public void AssignDate()
         {
             #region CREAMOS EL DIRECTORIO CORRESPONDIENTE AL MES ACTUAL EN CURSO
             DateTime fechaActual = DateTime.Now;
@@ -781,7 +749,7 @@ namespace Flow_Solver
 
             this.toolJobStatus.Text = "";
             this.toolJobMessage.Text = "";
-            
+
             if (string.IsNullOrEmpty(Properties.Settings.Default.SYSDATA_LOCALIDAD_DEFAULT))
             {
                 // Asignamos la localidad 'Direccion_default.json'
@@ -807,13 +775,14 @@ namespace Flow_Solver
                 foreach (FileInfo file in files)
                 {
                     JObject json = JObject.Parse(File.ReadAllText(file.FullName));
-                    this.cboxPoblacion.Items.Add(json["poblacion"]);
+                    //this.cboxPoblacion.Items.Add(json["poblacion"]);
                 }
             }
 
 
             string poblacion = Properties.Settings.Default.SYSDATA_LOCALIDAD_DEFAULT;
             int index = 0;
+            /*
             foreach (var i in this.cboxPoblacion.Items)
             {
                 if (i == poblacion)
@@ -821,12 +790,12 @@ namespace Flow_Solver
                     this.cboxPoblacion.SelectedIndex = index;
                 }
                 index++;
-            }
+            }*/
 
 
             /* AÑADIMOS AL ARBOL DE NODOS */
             padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes.Add(MDI_ID.ToString(), ActualProject.NombreProyecto);         // POR FACILIDAD SE ASIGNA EL MISMO VALOR DE NOMBRE Y CLAVE
-            
+
             padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes[MDI_ID.ToString()].ContextMenuStrip = padre.contextMenuStripNodos;
             padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes[MDI_ID.ToString()].ImageIndex = 1;
             padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes[MDI_ID.ToString()].SelectedImageIndex = 1;
@@ -840,11 +809,6 @@ namespace Flow_Solver
             this.linklblRitComprobado.Text = IsRitAlreadyComprobado.ToString();
 
             UpdateNodeColorByProgress();    // Actualizamos el color del nodo segun el estatus
-            //this.txtDepartamento.AutoCompleteCustomSource = Departamentos.Lista;
-            foreach (string i in new Departamentos().Lista)
-            {
-                this.txtDepartamento.Items.Add(i);
-            }
 
             padre.toolLblActualMDIReporteName.Text = this.Text;
             #endregion
@@ -855,15 +819,15 @@ namespace Flow_Solver
 
         private void calendarFecha_DateChanged(object sender, DateRangeEventArgs e)
         {
-           // MessageBox.Show("Se cambio el valor de fecha del reporte");
+            // MessageBox.Show("Se cambio el valor de fecha del reporte");
 
-            DateTime inicio = calendarFecha.SelectionStart;
+            DateTime inicio = calendarFechaGeneracion.SelectionStart;
 
             string dia = inicio.Day.ToString();
             string mes = inicio.Month.ToString();
             string año = inicio.Year.ToString();
 
-            lblFechaDeReporte.Text = $"{dia} / {mes} / {año}";
+            this.lblFechaDeGeneracion.Label = $"{dia} / {mes} / {año}";
 
             dia_reporte = dia;
             mes_reporte = mes;
@@ -944,6 +908,7 @@ namespace Flow_Solver
                 // Establecemos algunos valores por defecto
 
                 // Se envian valores al siguiente formulario
+                /*
                 frm.txtNoDeReporte.Text = this.txtNoDeReporteDelCliente.Text;
                 frm.txtProyecto.Text = Properties.Settings.Default.ProyectoIDC;
                 frm.txtLocalidad.Text = this.cboxPoblacion.Text;
@@ -954,6 +919,7 @@ namespace Flow_Solver
                 frm.txtModelo.Text = this.txtModelo.Text;
                 frm.txtSolicitante.Text = this.txtTecnico.Text;
                 frm.txtDescripcion.Text = this.txtRefaccionesUtilizadas.Text;
+                */
 
                 // Abrimos la instancia para enviar correo
                 frm.Show();
@@ -1016,7 +982,7 @@ namespace Flow_Solver
         /// Almacena los usuarios con una tarjeta de Perfil disponible.
         /// </summary>
         List<Usuario> listUsuarios = new List<Usuario>();
-        
+
         /// <summary>
         /// Carga las tarjetas de los usuarios disponibles en la lista Usuarios.
         /// </summary>
@@ -1043,7 +1009,7 @@ namespace Flow_Solver
                         // Carga todos los usuarios en la lista
                         //MessageBox.Show(file.FullName);
                         JObject json_parsed = JObject.Parse(File.ReadAllText(file.FullName));
-                        
+
                         Usuario obj = new Usuario();
                         obj.Nombre = RemoveAccentsWithRegEx(file.Name.Remove(s_len - 13, 13).ToLower().Trim());
                         obj.NoEmpleado = json_parsed["no_empleado"].ToString();
@@ -1055,7 +1021,8 @@ namespace Flow_Solver
 
                         listUsuarios.Add(obj);
                     }
-                } catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show($"{ex.Message} {Environment.NewLine + Environment.NewLine} {ex.ToString()}");
                 }
@@ -1077,7 +1044,7 @@ namespace Flow_Solver
         /// <br></br>
         /// T1 -> equipo de computo del usuario selecionado
         /// </returns>
-        private Tuple<bool, Usuario, bool, InventarioViewModel> FindReportUser (string ReportUserName)
+        private Tuple<bool, Usuario, bool, InventarioViewModel> FindReportUser(string ReportUserName)
         {
             ReportUserName = RemoveAccentsWithRegEx(ReportUserName);  // Removemos los acentos
             string userInLocalList = "";
@@ -1100,7 +1067,7 @@ namespace Flow_Solver
                 {
                     userInLocalList = RemoveAccentsWithRegEx(user.Nombre);
                     ReportUserName = ReportUserName.ToLower();
-                
+
                     string[] partesNombre1 = ReportUserName.Split(' ');
                     string[] partesNombre2 = userInLocalList.Split(' ');
                     bool sonIguales = partesNombre1.All(parte => partesNombre2.Contains(parte, StringComparer.OrdinalIgnoreCase));
@@ -1119,10 +1086,11 @@ namespace Flow_Solver
                     if (sonIguales)
                     {
                         Exists = true;
-                        
+
                         //MessageBox.Show($"{a}//{b} :: {Exists}");
                         break;
-                    } else
+                    }
+                    else
                     {
                         Exists = false;
                         //MessageBox.Show($"{a}//{b} :: {Exists}");
@@ -1155,19 +1123,20 @@ namespace Flow_Solver
                             if (sonIguales)
                             {
                                 MessageBox.Show($"Si existe la tarjeta para el usuario ***{file.Name}***");
-                                
+
                                 string json_card = File.ReadAllText(file.FullName);
                                 JObject json_parsed = JObject.Parse(json_card);
 
                                 userCard.Departamento = json_parsed["departamento"].ToString();
                                 userCard.NoEmpleado = json_parsed["no_empleado"].ToString();
                                 userCard.Extension = json_parsed["extension"].ToString();
-                                
+
                                 haveProfileCard = true;
                                 break;
                             }
                         }
-                    } catch (Exception ex) 
+                    }
+                    catch (Exception ex)
                     {
                         MessageBox.Show($"{ex.Message}\n{ex}");
                     }
@@ -1220,7 +1189,7 @@ namespace Flow_Solver
                                 MessageBox.Show(equipo.Departamento);
                                 equipo.Comentarios = sl.GetCellValueAsString(iRow, 13);
                                 MessageBox.Show(equipo.Comentarios);
-                                
+
                                 iRow++;
 
                                 //string VALOR_ANALIZANDO = grilla.Rows[iRow - 2].Cells["NOMBRE"].Value.ToString();
@@ -1238,7 +1207,8 @@ namespace Flow_Solver
                                 {
                                     MessageBox.Show($"MAQUINA ENCONTRADAAAAA: {equipo.HOSTNAME}");
                                     lst.Add(equipo);
-                                } else
+                                }
+                                else
                                 {
                                     MessageBox.Show($"NO ES ESTA: {equipo.HOSTNAME}");
                                 }
@@ -1262,7 +1232,8 @@ namespace Flow_Solver
                         }
                         #endregion
                     }
-                } else
+                }
+                else
                 {
                     MessageBox.Show("No tenemos una tarjeta del usuario");
                 }
@@ -1339,7 +1310,7 @@ namespace Flow_Solver
         /* CARGA LOS DATOS DE UN REPORTE ABIERTO EN SAS */
         async void importarDatosDeReporteDeSASAFormularioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -1362,7 +1333,7 @@ namespace Flow_Solver
                     Dictionary<string, string> dic = new Dictionary<string, string>();
 
                     dic.Add("falla", this.txtFallaReportada.Text);
-                    if (rbtnRefaccionesSi.Checked == true) { dic.Add("opc_refaccion", "1"); dic.Add("refaccion", this.txtRefaccionesUtilizadas.Text); } else if (rbtnRefaccionesNo.Checked == true) { dic.Add("opc_refaccion", "0"); dic.Add("refaccion", "NULL"); }
+                    //if (rbtnRefaccionesSi.Checked == true) { dic.Add("opc_refaccion", "1"); dic.Add("refaccion", this.txtRefaccionesUtilizadas.Text); } else if (rbtnRefaccionesNo.Checked == true) { dic.Add("opc_refaccion", "0"); dic.Add("refaccion", "NULL"); }
                     if (rbtnRefaccionesSi.Checked == true) { dic.Add("opc_cerrado", "1"); dic.Add("causa_pendiente", "NULL"); } else if (rbtnRefaccionesNo.Checked == true) { dic.Add("opc_cerrado", "0"); dic.Add("causa_pendiente", this.txtCausasDeNoCierre.Text); }
                     dic.Add("accion_1", txtLinea1.Text);
                     dic.Add("accion_2", txtLinea2.Text);
@@ -1442,7 +1413,7 @@ namespace Flow_Solver
                         if ((string)json["opc_refaccion"] == "1")
                         {
                             this.rbtnRefaccionesSi.Checked = true;
-                            this.txtRefaccionesUtilizadas.Text = json["refaccion"].ToString();
+                            //this.txtRefaccionesUtilizadas.Text = json["refaccion"].ToString();
                         }
                         else
                         {
@@ -1482,95 +1453,9 @@ namespace Flow_Solver
 
         public void LimpiarCampos()
         {
-            #region LIMPIA TODOS LOS CAMPOS DEL FORM
-            this.txtFallaReportada.Text = "";
-
-            this.txtNoDeReporteDelCliente.Text = "";
-            this.txtTipoDeEquipo.Text = "";
-            this.txtMarca.Text = "";
-            this.txtModelo.Text = "";
-            this.txtNoDeSerie.Text = "";
-            this.txtHora.Text = "";
-            this.txtMinuto.Text = "";
-            this.txtSucursal.Text = "";
-            this.txtNoDeSucursal.Text = "";
-            this.cboxUsuariofinal.Text = "";
-            this.txtDepartamento.Text = "";
-            this.txtTelefono.Text = "";
-            this.txtNoDeEmpleado.Text = "";
-            this.lblFechaDeReporte.Text = "";
-
-            this.txtRefaccionesUtilizadas.Text = "";
-
-            this.rbtnRefaccionesNo.Checked = false;
-            this.rbtnRefaccionesSi.Checked = false;
-
-            this.lblFechaDeServicio.Text = "";
-
-            this.txtHoraInicioTraslado.Text = "";
-            this.txtMinutoInicioTraslado.Text = "";
-
-            this.txtHoraLlegada.Text = "";
-            this.txtMinutoLlegada.Text = "";
-
-            this.txtHoraDeComienzo.Text = "";
-            this.txtMinutoDeComienzo.Text = "";
-
-            this.txtHoraDeTermino.Text = "";
-            this.txtMinutoDeTermino.Text = "";
-
-            this.txtHoraDeEspera.Text = "";
-            this.txtMinutoDeEspera.Text = "";
-
-            this.txtHoraDeRetorno.Text = "";
-            this.txtMinutoDeRetorno.Text = "";
-
-            this.txtCausasDeNoCierre.Text = "";
-
-            this.txtLinea1.Text = "";
-            this.txtLinea2.Text = "";
-            this.txtLinea3.Text = "";
-            this.txtLinea4.Text = "";
-            this.txtLinea5.Text = "";
-            this.txtLinea6.Text = "";
-            this.txtLinea7.Text = "";
-
-            this.rbtnReporteCerradoNo.Checked = false;
-            this.rbtnReporteCerradoSi.Checked = false;
-
-            this.txtCausasDeNoCierre.Enabled = false;
-            this.txtRefaccionesUtilizadas.Enabled = false;
-
-            DateTime fechaActual = DateTime.Now;
-            año_reporte = fechaActual.Year.ToString();
-            mes_reporte = fechaActual.ToString("MM");
-            dia_reporte = fechaActual.ToString("dd");
-            this.lblFechaDeReporte.Text = $"{dia_reporte} / {mes_reporte} / {año_reporte}";
-
-
-            // CARGAR DATOS DE FECHA DE ATENCION
-            año_servicio = fechaActual.Year.ToString();
-            mes_servicio = fechaActual.ToString("MM");
-            dia_servicio = fechaActual.ToString("dd");
-            this.lblFechaDeServicio.Text = $"{dia_servicio} / {mes_servicio} / {año_servicio}";
-
-            this.cboxPerfiles.SelectedIndex = 0;
-            this.txtHostname.Text = "";
-
-            IsAlreadyTicketGenerated = false;
-            IsRitAlreadyPrinted = false;
-            IsRitAlreadySigned = false;
-            IsRitAlreadyComprobado = false;
-
-            this.linklblTicketGeneradoEnSAS.Text = IsAlreadyTicketGenerated.ToString();
-            this.linklblRitImpreso.Text = IsRitAlreadyPrinted.ToString();
-            this.linklblRitFirmado.Text = IsRitAlreadySigned.ToString();
-            this.linklblRitComprobado.Text = IsRitAlreadyComprobado.ToString();
-
-            UpdateNodeColorByProgress();
-
-            this.toolJobStatus.Text = "Listo!";
-            #endregion
+            /* 
+             * Limpiamos todos los campos del formulario
+             * */
         }
 
 
@@ -1765,6 +1650,7 @@ namespace Flow_Solver
         /* Guarda el RIT en PDF sin imprimir */
         private void guardarRITPDFToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            /*
             if (string.IsNullOrEmpty(this.txtFallaReportada.Text))
             {
                 this.errorProvider1.SetError(this.txtFallaReportada, "Campo vacio!");
@@ -1781,14 +1667,15 @@ namespace Flow_Solver
                 this.errorProvider1.Clear();
                 FillPDFForm();
             }
+            */
         }
 
 
         /* Abre proyecto de ticket JSON */
         private void abrirTicketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-             try
-             {
+            try
+            {
                 openFileDialog1.Title = "Abrir proyecto de ticket...";
                 openFileDialog1.Filter = "Archivo de Formulario RIT | *.ritproj|Archivo JSON | *.json";
 
@@ -1812,11 +1699,12 @@ namespace Flow_Solver
             }
         }
 
-        
+
         /* Imprime RIT sin guardar (arreglar) */
         private void imprimirRITToolStripMenuItem_Click(object sender, EventArgs e)
         {
             /* Solamente imrpime el formato RIT */
+            /*
             if (string.IsNullOrEmpty(this.txtFallaReportada.Text))
             {
                 this.errorProvider1.SetError(this.txtFallaReportada, "Campo vacio!");
@@ -1834,6 +1722,7 @@ namespace Flow_Solver
                 printPDFWithAcrobat(FillPDFForm()); // Imprimimos el archivo
                 UpdateJobStatus(true, "Preparando metodo de impresion!"); 
             }
+            */
         }
 
         private void txtFallaReportada_TextChanged(object sender, EventArgs e)
@@ -1842,13 +1731,12 @@ namespace Flow_Solver
 
             foreach (string i in INVALID_CHARS)
             {
-                if (this.txtFallaReportada.Text.Contains(i))
+                if (this.txtFallaReportada.Value.Contains(i))
                 {
-                    this.txtFallaReportada.Text = this.txtFallaReportada.Text.Replace(i, "-");
-                    this.txtFallaReportada.SelectionStart = this.txtFallaReportada.TextLength;
+                    this.txtFallaReportada.Value = this.txtFallaReportada.Text.Replace(i, "-");
+                    //this.txtFallaReportada.SelectionStart = this.txtFallaReportada.TextLength;
                 }
             }
-
         }
 
         private void perfilesToolStripMenuItem_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -1870,7 +1758,7 @@ namespace Flow_Solver
                     {
                         saveFileDialog1.Title = "Guardar proyecto de ticket...";
                         saveFileDialog1.Filter = "Archivo de Formulario RIT | *.ritproj|Archivo JSON | *.json";
-                        saveFileDialog1.FileName = $"{this.txtNombreDelProyecto.Text}";
+                        //saveFileDialog1.FileName = $"{this.txtNombreDelProyecto.Text}";
 
                         if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                         {
@@ -1882,10 +1770,10 @@ namespace Flow_Solver
                             ActualProject.NombreProyecto = fi.Name.Replace(".json", "").Replace(".ritproj", "");
                             ActualProject.FillUpdate(this);
                             ActualProject.SaveProject(saveFileDialog1.FileName);
-                            
+
                             // Actualizamos los valores de visualizaciones
                             this.Text = this.txtFallaReportada.Text + " - " + jsonProjectPath;
-                            this.txtNombreDelProyecto.Text = ActualProject.NombreProyecto;
+                            //this.txtNombreDelProyecto.Text = ActualProject.NombreProyecto;
                             padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes[MDI_ID.ToString()].Text = ActualProject.NombreProyecto;
 
                             LEGACY_PROJECTJSON_PATH = saveFileDialog1.FileName;
@@ -1913,7 +1801,8 @@ namespace Flow_Solver
                     RJMessageBox.Show(ex.ToString());
                 }
 
-            } else
+            }
+            else
             {
                 errorProvider1.SetError(txtFallaReportada, "Ingresa la falla reportada!");
             }
@@ -1927,6 +1816,7 @@ namespace Flow_Solver
         private void guardarEImpirmirRITToolStripMenuItem_Click(object sender, EventArgs e)
         {
             /* Guarda e imprime el RIT */
+            /*
             if (string.IsNullOrEmpty(this.txtFallaReportada.Text))
             {
                 this.errorProvider1.SetError(this.txtFallaReportada, "Campo vacio!");
@@ -1944,6 +1834,7 @@ namespace Flow_Solver
                 printPDFWithAcrobat(FillPDFForm()); // Imprimimos el archivo
                 UpdateJobStatus(true, "Preparando metodo de impresion!");
             }
+            */
         }
 
         private void solicitarTonerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1954,7 +1845,7 @@ namespace Flow_Solver
 
         private void rbtnRefaccionesNo_CheckedChanged(object sender, EventArgs e)
         {
-            this.txtRefaccionesUtilizadas.Enabled = false;
+            //this.txtRefaccionesUtilizadas.Enabled = false;
             this.btnReducirToner.Enabled = false;
             this.btnSolicitarRefaccion.Enabled = false;
             this.btnReducirRefaccion.Enabled = false;
@@ -1962,14 +1853,14 @@ namespace Flow_Solver
 
         private void rbtnRefaccionesSi_CheckedChanged(object sender, EventArgs e)
         {
-            this.txtRefaccionesUtilizadas.Enabled = true;
+            //this.txtRefaccionesUtilizadas.Enabled = true;
             this.btnReducirToner.Enabled = true;
             this.btnSolicitarRefaccion.Enabled = true;
             this.btnReducirRefaccion.Enabled = true;
         }
 
         private void rit_mdi_form_FormClosed(object sender, FormClosedEventArgs e)
-        {            
+        {
             // Removemos el nodo de este proyecto de la vista de arbol
             padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes[MDI_ID.ToString()].Remove();
 
@@ -1987,9 +1878,10 @@ namespace Flow_Solver
             if (i > 0)
             {
                 // Ignoramos ...
-            } else
+            }
+            else
             {
-                padre.lblProyectos_Text.Visible = true;
+                //padre.lblProyectos_Text.Visible = true;
             }
 
             padre.lblNodoDeProyectosSeleccionado.Text = $"Mis Proyectos ({padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes.Count})";
@@ -2040,168 +1932,15 @@ namespace Flow_Solver
             frm.ShowDialog();
         }
 
-
-        #region PASES DE FOCO EN LOS TEXTBOX DE TIEMPOS
-        private void txtHora_TextChanged_1(object sender, EventArgs e)
-        {
-            if (txtHora.TextLength == 2)
-            {
-                this.txtMinuto.Focus();
-            }
-        }
-
-        private void txtMinuto_TextChanged_1(object sender, EventArgs e)
-        {
-            if (txtMinuto.TextLength == 0)
-            {
-                this.txtHora.Focus();
-            }
-        }
-
-        private void txtHoraInicioTraslado_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtHoraInicioTraslado.TextLength == 2)
-            {
-                this.txtMinutoInicioTraslado.Focus();
-            }
-        }
-
-        private void txtMinutoInicioTraslado_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtMinutoInicioTraslado.TextLength == 2)
-            {
-                this.txtHoraLlegada.Focus();
-            } else if (this.txtMinutoInicioTraslado.TextLength == 0)
-            {
-                this.txtHoraInicioTraslado.Focus();
-            }
-        }
-
-        private void txtHoraLlegada_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtHoraLlegada.TextLength == 2)
-            {
-                this.txtMinutoLlegada.Focus();
-            }
-            else if (this.txtHoraLlegada.TextLength == 0)
-            {
-                this.txtMinutoInicioTraslado.Focus();
-            }
-        }
-
-        private void txtMinutoLlegada_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtMinutoLlegada.TextLength == 2)
-            {
-                this.txtHoraDeComienzo.Focus();
-            }
-            else if (this.txtMinutoLlegada.TextLength == 0)
-            {
-                this.txtHoraLlegada.Focus();
-            }
-        }
-
-        private void txtHoraDeComienzo_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtHoraDeComienzo.TextLength == 2)
-            {
-                this.txtMinutoDeComienzo.Focus();
-            }
-            else if (this.txtHoraDeComienzo.TextLength == 0)
-            {
-                this.txtMinutoLlegada.Focus();
-            }
-        }
-
-        private void txtMinutoDeComienzo_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtMinutoDeComienzo.TextLength == 2)
-            {
-                this.txtHoraDeTermino.Focus();
-            }
-            else if (this.txtMinutoDeComienzo.TextLength == 0)
-            {
-                this.txtHoraDeComienzo.Focus();
-            }
-        }
-
-        private void txtHoraDeTermino_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtHoraDeTermino.TextLength == 2)
-            {
-                this.txtMinutoDeTermino.Focus();
-            }
-            else if (this.txtHoraDeTermino.TextLength == 0)
-            {
-                this.txtMinutoDeComienzo.Focus();
-            }
-        }
-
-        private void txtMinutoDeTermino_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtMinutoDeTermino.TextLength == 2)
-            {
-                this.txtHoraDeEspera.Focus();
-            }
-            else if (this.txtMinutoDeTermino.TextLength == 0)
-            {
-                this.txtHoraDeTermino.Focus();
-            }
-        }
-
-        private void txtHoraDeEspera_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtHoraDeEspera.TextLength == 2)
-            {
-                this.txtMinutoDeEspera.Focus();
-            }
-            else if (this.txtHoraDeEspera.TextLength == 0)
-            {
-                this.txtMinutoDeTermino.Focus();
-            }
-        }
-
-        private void txtMinutoDeEspera_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtMinutoDeEspera.TextLength == 2)
-            {
-                this.txtHoraDeRetorno.Focus();
-            }
-            else if (this.txtMinutoDeEspera.TextLength == 0)
-            {
-                this.txtHoraDeEspera.Focus();
-            }
-        }
-
-        private void txtHoraDeRetorno_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtHoraDeRetorno.TextLength == 2)
-            {
-                this.txtMinutoDeRetorno.Focus();
-            }
-            else if (this.txtHoraDeRetorno.TextLength == 0)
-            {
-                this.txtMinutoDeEspera.Focus();
-            }
-        }
-
-        private void txtMinutoDeRetorno_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtMinutoDeRetorno.TextLength == 0)
-            {
-                this.txtHoraDeRetorno.Focus();
-            }
-        }
-        #endregion
-
         /// <summary>
         /// Busca los equipos viculados a este usuario
         /// </summary>
-        private void LoadUsersList ()
+        private void LoadUsersList()
         {
             // Cargamos los datos del usuario seleccionado en el formulario
             try
             {
+                /*
                 this.txtHostname.AutoCompleteMode = AutoCompleteMode.None;
 
                 JObject json_parsed = JObject.Parse(File.ReadAllText($@"{Application.StartupPath}\UsersCard\{this.cboxUsuariofinal.Text}_Profile.card"));
@@ -2252,7 +1991,7 @@ namespace Flow_Solver
                     this.txtHostname.Text = hostnamesOfThisUser[0];
                 }
                 #endregion
-
+                */
                 UpdateJobStatus(true, "Datos de usuario cargados con exito!");
             }
             catch (Exception ex)
@@ -2271,6 +2010,7 @@ namespace Flow_Solver
         private void txtPoblacion_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Cambiar la lista de usuarios disponibles segun la localidad seleccionada
+            /*
             this.cboxUsuariofinal.Items.Clear();
 
             string CARDS_PATH = $@"{Application.StartupPath}\UsersCard";
@@ -2322,11 +2062,13 @@ namespace Flow_Solver
             {
                 CommonMethodsLibrary.OutMessage("in", "rit_mdi_form.cs", "No se encontro el archivo Json de localidad asignada!", "ERR");
             }
+            */
         }
 
         private void toolImprimirYGuardarRIT_Click(object sender, EventArgs e)
         {
             /**  Imprime y guarda el PDF de RIT **/
+            /*
             if (string.IsNullOrEmpty(this.txtFallaReportada.Text))
             {
                 this.errorProvider1.SetError(this.txtFallaReportada, "Campo vacio!");
@@ -2344,6 +2086,7 @@ namespace Flow_Solver
                 printPDFWithAcrobat(FillPDFForm());
                 UpdateJobStatus(true, "Preparando metodo de impresion!");
             }
+            */
         }
 
         public TaskLoadingForm loadingForm;
@@ -2361,6 +2104,7 @@ namespace Flow_Solver
 
         void ResignProjectName()
         {
+            /*
             if (String.IsNullOrEmpty(this.txtNombreDelProyecto.Text.Trim()))
             {
                 ActualProject.NombreProyecto = this.txtNombreDelProyecto.Text;
@@ -2369,6 +2113,7 @@ namespace Flow_Solver
             {
                 UpdateJobStatus(false, $"No se puede reasignar un nombre de proyecto vacio!");
             }
+            */
         }
 
         private void txtNombreDelProyecto_Leave(object sender, EventArgs e)
@@ -2397,7 +2142,8 @@ namespace Flow_Solver
                         UpdateJobStatus(false, ex.Message);
                         //MessageBox.Show($"{ex.Message}\n\n{ex}");
                     }
-                } else if (File.Exists(place) && Path.GetExtension(place) == ".json")
+                }
+                else if (File.Exists(place) && Path.GetExtension(place) == ".json")
                 {
                     UpdateJobStatus(false, "Primero guarda el PDF y despues ejecuta esta funcion nuevamente!");
                 }
@@ -2413,7 +2159,7 @@ namespace Flow_Solver
             Dictionary<string, string> dic = new Dictionary<string, string>();
 
             dic.Add("falla", this.txtFallaReportada.Text);
-            if (rbtnRefaccionesSi.Checked == true) { dic.Add("opc_refaccion", "1"); dic.Add("refaccion", this.txtRefaccionesUtilizadas.Text); } else if (rbtnRefaccionesNo.Checked == true) { dic.Add("opc_refaccion", "0"); dic.Add("refaccion", "NULL"); }
+            //if (rbtnRefaccionesSi.Checked == true) { dic.Add("opc_refaccion", "1"); dic.Add("refaccion", this.txtRefaccionesUtilizadas.Text); } else if (rbtnRefaccionesNo.Checked == true) { dic.Add("opc_refaccion", "0"); dic.Add("refaccion", "NULL"); }
             if (rbtnRefaccionesSi.Checked == true) { dic.Add("opc_cerrado", "1"); dic.Add("causa_pendiente", "NULL"); } else if (rbtnRefaccionesNo.Checked == true) { dic.Add("opc_cerrado", "0"); dic.Add("causa_pendiente", this.txtCausasDeNoCierre.Text); }
             dic.Add("accion_1", txtLinea1.Text);
             dic.Add("accion_2", txtLinea2.Text);
@@ -2453,191 +2199,6 @@ namespace Flow_Solver
             #endregion
         }
 
-
-        #region CODIGO PARA ESTABLECER LA SELECCION AL ENTRAR EN LOS TEXTBOX
-        private void txtFallaReportada_Enter(object sender, EventArgs e)
-        {
-            this.txtFallaReportada.SelectionStart = txtFallaReportada.Text.Length;
-        }
-
-        private void txtNoDeReporteDelCliente_Enter(object sender, EventArgs e)
-        {
-            this.txtNoDeReporteDelCliente.SelectionStart = txtNoDeReporteDelCliente.Text.Length;
-        }
-
-        private void txtMarca_Enter(object sender, EventArgs e)
-        {
-            this.txtMarca.SelectionStart = txtMarca.Text.Length;
-        }
-
-        private void txtModelo_Enter(object sender, EventArgs e)
-        {
-            this.txtModelo.SelectionStart = txtModelo.Text.Length;
-        }
-
-        private void txtNoDeSerie_Enter(object sender, EventArgs e)
-        {
-            this.txtNoDeSerie.SelectionStart = txtNoDeSerie.Text.Length;
-        }
-
-        private void txtCliente_Enter(object sender, EventArgs e)
-        {
-            this.txtCliente.SelectionStart = txtCliente.Text.Length;
-        }
-
-        private void txtSucursal_Enter(object sender, EventArgs e)
-        {
-            this.txtSucursal.SelectionStart = txtSucursal.Text.Length;
-        }
-
-        private void txtNoDeSucursal_Enter(object sender, EventArgs e)
-        {
-            this.txtNoDeSucursal.SelectionStart = txtNoDeSucursal.Text.Length;
-        }
-
-        private void txtDireccion_Enter(object sender, EventArgs e)
-        {
-            this.txtDireccion.SelectionStart = txtDireccion.Text.Length;
-        }
-
-        private void cboxPoblacion_Enter(object sender, EventArgs e)
-        {
-            this.cboxPoblacion.SelectionStart = txtDireccion.Text.Length;
-        }
-
-        private void cboxUsuariofinal_Enter(object sender, EventArgs e)
-        {
-            this.cboxUsuariofinal.SelectionStart = txtDireccion.Text.Length;
-        }
-
-        private void txtDepartamento_Enter(object sender, EventArgs e)
-        {
-            this.txtDepartamento.SelectionStart = txtDepartamento.Text.Length;
-        }
-
-        private void txtNoDeEmpleado_Enter(object sender, EventArgs e)
-        {
-            this.txtNoDeEmpleado.SelectionStart = txtNoDeEmpleado.Text.Length;
-        }
-
-        private void txtTelefono_Enter(object sender, EventArgs e)
-        {
-            this.txtTelefono.SelectionStart = txtTelefono.Text.Length;
-        }
-
-        private void txtCentroDeServicios_Enter(object sender, EventArgs e)
-        {
-            this.txtCentroDeServicios.SelectionStart = txtCentroDeServicios.Text.Length;
-        }
-
-        private void txtTecnico_Enter(object sender, EventArgs e)
-        {
-            this.txtTecnico.SelectionStart = txtTecnico.Text.Length;
-        }
-
-        private void txtRefaccionesUtilizadas_Enter(object sender, EventArgs e)
-        {
-            this.txtRefaccionesUtilizadas.SelectionStart = txtRefaccionesUtilizadas.Text.Length;
-        }
-
-        private void txtCausasDeNoCierre_Enter(object sender, EventArgs e)
-        {
-            this.txtCausasDeNoCierre.SelectionStart = txtCausasDeNoCierre.Text.Length;
-        }
-
-        private void txtNombreDelProyecto_Enter(object sender, EventArgs e)
-        {
-            this.txtNombreDelProyecto.SelectionStart = txtNombreDelProyecto.Text.Length;
-        }
-        
-        private void richTextBoxContadorDeRIT_Enter(object sender, EventArgs e)
-        {
-            this.richTextBoxContadorDeRIT.SelectionStart = richTextBoxContadorDeRIT.Text.Length;
-        }
-        #endregion
-
-        private void btnGenerarEnSAS_Click(object sender, EventArgs e)
-        {
-            // Datos de autenticación y URL de la API
-            string apiUrl = "https://gmxtsas.mx:8080/sdpapi/request";
-            string username = "avenegas_e";
-            string password = "Ferromex4";
-
-            // Crear una solicitud para crear un nuevo ticket
-            string requestBody = @"
-                <operation>
-                    <Details>
-                        <requester>
-                            <operation>GET_REQUESTER_ID</operation>
-                            <username>john.doe</username>
-                        </requester>
-                        <subject>Nuevo ticket creado desde la API</subject>
-                        <description>Descripción detallada del problema aquí.</description>
-                        <priority>High</priority>
-                        <site>Head Office</site>
-                        <category>Software</category>
-                        <subCategory>Application</subCategory>
-                        <item>Microsoft Word</item>
-                    </Details>
-                </operation>";
-
-            // Crear la solicitud HTTP
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(apiUrl);
-            request.Method = "POST";
-            request.ContentType = "application/xml";
-            request.Headers.Add("Authorization", "Basic " + Convert.ToBase64String(Encoding.Default.GetBytes(username + ":" + password)));
-
-            // Escribir el cuerpo de la solicitud en el flujo de la solicitud
-            using (StreamWriter writer = new StreamWriter(request.GetRequestStream()))
-            {
-                writer.Write(requestBody);
-            }
-
-            // Enviar la solicitud y obtener la respuesta
-            try
-            {
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                StreamReader reader = new StreamReader(response.GetResponseStream());
-                string responseText = reader.ReadToEnd();
-                Console.WriteLine("Respuesta de la API: " + responseText);
-            }
-            catch (WebException ex)
-            {
-                Console.WriteLine("Error al llamar a la API: " + ex.Message);
-            }
-        }
-
-        private void txtNombreDelProyecto_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue == (char)Keys.Enter)
-            {
-                ResignProjectName();
-            }
-        }
-
-        private void txtHostname_TextChanged(object sender, EventArgs e)
-        {
-            this.txtHostname.Text = txtHostname.Text.ToUpper();
-            this.txtHostname.SelectionStart = txtHostname.TextLength;
-
-            // Cargamos los datos del hostname si fue cargado manualmente
-            if (!String.IsNullOrEmpty(this.txtHostname.Text.Trim()))
-            {
-                this.btnVerHistorialDeEquipo.Enabled = true;
-                this.btnCargarEquipo.Enabled = true;
-                foreach (DataGridViewRow fila in dataGridViewInventarios.Rows)
-                {
-                    if (fila.Cells[0].Value.ToString() == this.cboxUsuariofinal.Text && fila.Cells[5].Value != null)
-                    {
-                        // To Do...
-                    }
-                }
-            } else
-            {
-                this.btnVerHistorialDeEquipo.Enabled = false;
-                this.btnCargarEquipo.Enabled = false;
-            }
-        }
 
         void _DoubleClickEmulator(TreeNode targetNode)
         {
@@ -2732,7 +2293,8 @@ namespace Flow_Solver
                         break;
                     }
                 }
-            } else
+            }
+            else
             {
                 UpdateJobStatus(false, "No puedes cargar un hostname vacio!");
             }
@@ -2740,9 +2302,9 @@ namespace Flow_Solver
             if (coincs > 0)
             {
                 this.txtTipoDeEquipo.Text = machine.TipoDeEquipo;
-                this.txtMarca.Text = machine.Marca;
-                this.txtModelo.Text = machine.Modelo;
-                this.txtNoDeSerie.Text = machine.SN;
+                this.txtMarcaEquipo.Text = machine.Marca;
+                this.txtModeloEquipo.Text = machine.Modelo;
+                this.txtNoSerie.Text = machine.SN;
 
                 UpdateJobStatus(true, $"Equipo de computo de hostname '{_hostname}' cargado con exito!!");
             }
@@ -2754,19 +2316,19 @@ namespace Flow_Solver
 
         private void txtNoDeReporteDelCliente_TextChanged(object sender, EventArgs e)
         {
-            if (this.txtNoDeReporteDelCliente.Text.Length == 6)
+            if (this.txtNoReporte.Text.Length == 6)
             {
                 // No. de Reporte insertado
                 this.IsAlreadyTicketGenerated = true;
                 UpdateNodeColorByProgress();
-                this.btnVisualizarReporte.Enabled = true;
+                this.btnVerReporte.Enabled = true;
             }
             else
             {
                 // No. de reporte no ingresado
                 this.IsAlreadyTicketGenerated = false;
                 UpdateNodeColorByProgress();
-                this.btnVisualizarReporte.Enabled = false;
+                this.btnVerReporte.Enabled = false;
             }
 
             this.linklblTicketGeneradoEnSAS.Text = IsAlreadyTicketGenerated.ToString();
@@ -2774,7 +2336,7 @@ namespace Flow_Solver
 
         private void btnVisualizarReporte_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void linklblTicketGeneradoEnSAS_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -2782,7 +2344,8 @@ namespace Flow_Solver
             if (IsAlreadyTicketGenerated == true)
             {
                 IsAlreadyTicketGenerated = false;
-            } else
+            }
+            else
             {
                 IsAlreadyTicketGenerated = true;
             }
@@ -2838,7 +2401,7 @@ namespace Flow_Solver
 
         private void toolStrpBtnCerrarProyecto_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(txtFallaReportada.Text.Trim()))
+            if (!String.IsNullOrEmpty(this.txtFallaReportada.Text.Trim()))
             {
                 DialogResult dg = MessageBox.Show($"¿Deseas guardar el proyecto '{this.txtFallaReportada.Text}' - {this.MDI_ID} antes de cerrar el proyecto?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
@@ -2857,7 +2420,8 @@ namespace Flow_Solver
                         // No cerramos el Reporte
                         break;
                 }
-            } else
+            }
+            else
             {
                 this.Close();
             }
@@ -2868,7 +2432,7 @@ namespace Flow_Solver
             this.WindowState = FormWindowState.Normal;
             this.WindowState = FormWindowState.Minimized;
         }
-        
+
         private void cboxUsuariofinal_TextChanged(object sender, EventArgs e)
         {
             /*
@@ -2888,7 +2452,7 @@ namespace Flow_Solver
 
         private void btnVerTarjetaDeUsuarioActual_Click(object sender, EventArgs e)
         {
-            lista_usuarios frm = new lista_usuarios(this, this.cboxUsuariofinal.Text.Trim());
+            lista_usuarios frm = new lista_usuarios(this, this.txtUsuarioFinal.Value.Trim());
             frm.ShowDialog();
         }
 
@@ -2937,7 +2501,7 @@ namespace Flow_Solver
                 {
                     saveFileDialog1.Title = "Guardar proyecto de ticket como...";
                     saveFileDialog1.Filter = "Archivo de Formulario RIT | *.ritproj|Archivo JSON | *.json";
-                    saveFileDialog1.FileName = $"{this.txtNombreDelProyecto.Text}";
+                    //saveFileDialog1.FileName = $"{this..Text}";
 
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
@@ -2952,7 +2516,7 @@ namespace Flow_Solver
 
                         // Actualizamos los valores de visualizaciones
                         this.Text = this.txtFallaReportada.Text + " - " + jsonProjectPath;
-                        this.txtNombreDelProyecto.Text = ActualProject.NombreProyecto;
+                        //this.txtNombreDelProyecto.Text = ActualProject.NombreProyecto;
                         padre.treeViewProyectos.Nodes["nodeMisProyectos"].Nodes[MDI_ID.ToString()].Text = ActualProject.NombreProyecto;
 
                         LEGACY_PROJECTJSON_PATH = saveFileDialog1.FileName;
@@ -2978,6 +2542,11 @@ namespace Flow_Solver
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void tabPage_DatosDeConvenio_Click(object sender, EventArgs e)
         {
 
         }

@@ -152,6 +152,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             ClientSize = new System.Drawing.Size(468, 291);
             Controls.Add(btnSalir);
             Controls.Add(btnIngresar);

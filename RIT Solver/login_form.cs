@@ -24,7 +24,10 @@ namespace Flow_Solver
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("¿Estas seguro que deseas salir del programa?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void login_form_Load(object sender, EventArgs e)

@@ -124,10 +124,7 @@ namespace Flow_Solver
                     //
                     tabProyectos.BackColor = TERTIARY_COLOR;
                     tabProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel4.BackColor = Color.Transparent;   // Titulo
                     lblNodoDeProyectosSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel6.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreDeNodoSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
                     MDI_RIT_Panel.BackColor = Color.FromKnownColor(KnownColor.LightGray);
                     treeViewProyectos.BackColor = TERTIARY_COLOR;
                     treeViewProyectos.ForeColor = SECONDARY_TEXT_COLOR;
@@ -147,414 +144,12 @@ namespace Flow_Solver
                     //
                     // Colores de los StatusStrips de los navegadores
                     //
-                    statusStripForms.BackColor = TERTIARY_COLOR;
-                    statusStripForms.ForeColor = SECONDARY_TEXT_COLOR;
                     statusStripSDPGMXT.BackColor = TERTIARY_COLOR;
                     statusStripSDPGMXT.ForeColor = SECONDARY_TEXT_COLOR;
                     statusStripSDPCompusof.BackColor = TERTIARY_COLOR;
                     statusStripSDPCompusof.ForeColor = SECONDARY_TEXT_COLOR;
                     statusStripEndPointcentral.BackColor = TERTIARY_COLOR;
                     statusStripEndPointcentral.ForeColor = SECONDARY_TEXT_COLOR;
-                    #endregion
-
-                    saveThemeColors();
-                    break;
-                case "GMXT Theme (High Contrast)":
-                    #region CODIGO
-                    // Colores de fondo
-                    BG_COLOR = Color.FromArgb(107, 129, 142);           // Gris FXE
-                    SECONDARY_COLOR = Color.FromArgb(233, 1, 1);        // Rojo FXE
-                    TERTIARY_COLOR = Color.FromKnownColor(KnownColor.DarkGray);
-                    FOURSOME_COLOR = Color.FromKnownColor(KnownColor.ControlLight);
-                    // Colores de texto
-                    PRIMARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.ControlText);
-                    SECONDARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.Snow);
-
-
-                    /** Tema GMXT **/
-                    menuOpcionesDeProyectos.BackColor = SECONDARY_COLOR;
-                    menuOpcionesDeProyectos.ForeColor = SECONDARY_TEXT_COLOR;
-                    tableLayoutPanelFondoGeneral.BackColor = SECONDARY_COLOR;
-                    //
-                    // Establecemos colores de fondo
-                    //
-                    //panelCentroAbajo.BackColor = SECONDARY_COLOR;
-                    //
-                    // Establecemos los colores de la barra multifuncional
-                    //
-                    tableLayoutPanelBarraMultifuncion.BackColor = System.Drawing.Color.FromKnownColor(KnownColor.LightGray);
-                    linkLabel1.LinkColor = PRIMARY_TEXT_COLOR;
-                    lblContactoFallos.LinkColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de proyectos
-                    //
-                    tabProyectos.BackColor = TERTIARY_COLOR;
-                    tabProyectos.ForeColor = PRIMARY_TEXT_COLOR;    // Si afectamos esto, se cambia color de fuente en MDI
-                    panel4.BackColor = Color.Transparent;   // Titulo
-                    lblNodoDeProyectosSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel6.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreDeNodoSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    MDI_RIT_Panel.BackColor = Color.Gray;
-                    treeViewProyectos.BackColor = TERTIARY_COLOR;
-                    treeViewProyectos.ForeColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de centro de control
-                    //
-                    tabCentroDeControl.BackColor = TERTIARY_COLOR;
-                    //tabCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;  // Si afectamos esto, se cambia color de fuente en MDI
-                    panel1.BackColor = Color.Transparent;   // Titulo
-                    lblNombreSeccion.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel3.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreNodoSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    lblDescripcionDeNodo.ForeColor = SECONDARY_TEXT_COLOR;
-                    MDI_ACT_Panel.BackColor = Color.Gray;
-                    treeViewCentroDeControl.BackColor = TERTIARY_COLOR;
-                    treeViewCentroDeControl.ForeColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Colores de los StatusStrips de los navegadores
-                    //
-                    statusStripForms.BackColor = TERTIARY_COLOR;
-                    statusStripForms.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripSDPGMXT.BackColor = TERTIARY_COLOR;
-                    statusStripSDPGMXT.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripSDPCompusof.BackColor = TERTIARY_COLOR;
-                    statusStripSDPCompusof.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripEndPointcentral.BackColor = TERTIARY_COLOR;
-                    statusStripEndPointcentral.ForeColor = SECONDARY_TEXT_COLOR;
-                    #endregion
-
-                    saveThemeColors();
-                    break;
-                case "GMXT Theme":
-                    #region CODIGO
-                    // Colores de fondo
-                    BG_COLOR = Color.FromArgb(107, 129, 142);           // Gris FXE
-                    SECONDARY_COLOR = Color.FromArgb(233, 1, 1);        // Rojo FXE
-                    TERTIARY_COLOR = Color.FromKnownColor(KnownColor.DarkGray);
-                    FOURSOME_COLOR = Color.FromKnownColor(KnownColor.ControlLight);
-                    // Colores de texto
-                    PRIMARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.ControlText);
-                    SECONDARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.Snow);
-
-                    /** Tema GMXT (Bajo contraste) **/
-                    menuOpcionesDeProyectos.BackColor = SECONDARY_COLOR;
-                    menuOpcionesDeProyectos.ForeColor = SECONDARY_TEXT_COLOR;
-                    tableLayoutPanelFondoGeneral.BackColor = BG_COLOR;//
-                    // Establecemos colores de fondo
-                    //
-                    //panelCentroAbajo.BackColor = SECONDARY_COLOR;
-                    //
-                    // Establecemos los colores de la barra multifuncional
-                    //
-                    tableLayoutPanelBarraMultifuncion.BackColor = BG_COLOR;
-                    linkLabel1.LinkColor = SECONDARY_TEXT_COLOR;
-                    lblContactoFallos.LinkColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de proyectos
-                    //
-                    tabProyectos.BackColor = TERTIARY_COLOR;
-                    tabProyectos.ForeColor = PRIMARY_TEXT_COLOR;    // Si afectamos esto, se cambia color de fuente en MDI
-                    panel4.BackColor = Color.Transparent;   // Titulo
-                    lblNodoDeProyectosSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel6.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreDeNodoSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    MDI_RIT_Panel.BackColor = Color.Gray;
-                    treeViewProyectos.BackColor = TERTIARY_COLOR;
-                    treeViewProyectos.ForeColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de centro de control
-                    //
-                    tabCentroDeControl.BackColor = TERTIARY_COLOR;
-                    //tabCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;  // Si afectamos esto, se cambia color de fuente en MDI
-                    panel1.BackColor = Color.Transparent;   // Titulo
-                    lblNombreSeccion.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel3.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreNodoSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    lblDescripcionDeNodo.ForeColor = SECONDARY_TEXT_COLOR;
-                    MDI_ACT_Panel.BackColor = Color.Gray;
-                    treeViewCentroDeControl.BackColor = TERTIARY_COLOR;
-                    treeViewCentroDeControl.ForeColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Colores de los StatusStrips de los navegadores
-                    //
-                    statusStripForms.BackColor = TERTIARY_COLOR;
-                    statusStripForms.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripSDPGMXT.BackColor = TERTIARY_COLOR;
-                    statusStripSDPGMXT.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripSDPCompusof.BackColor = TERTIARY_COLOR;
-                    statusStripSDPCompusof.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripEndPointcentral.BackColor = TERTIARY_COLOR;
-                    statusStripEndPointcentral.ForeColor = SECONDARY_TEXT_COLOR;
-                    #endregion
-
-                    saveThemeColors();
-                    break;
-                case "Dark":
-                    #region CODIGO
-                    // Colores de fondo
-                    BG_COLOR = Color.FromArgb(45, 59, 67);
-                    SECONDARY_COLOR = Color.FromArgb(66, 76, 82);
-                    TERTIARY_COLOR = Color.FromArgb(76, 85, 90);
-                    FOURSOME_COLOR = Color.FromArgb(97, 102, 105);
-                    // Colores de texto
-                    PRIMARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.Snow);
-
-
-                    /** Tema oscuro (Dark) **/
-                    //
-                    // Establecemos colores de la primera seccion
-                    //
-                    menuOpcionesDeProyectos.BackColor = BG_COLOR;
-                    menuOpcionesDeProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    tableLayoutPanelFondoGeneral.BackColor = BG_COLOR;
-                    //
-                    // Establecemos colores de fondo
-                    //
-                    //panelCentroAbajo.BackColor = SECONDARY_COLOR;
-                    //
-                    // Establecemos los colores de la barra multifuncional
-                    //
-                    tableLayoutPanelBarraMultifuncion.BackColor = BG_COLOR;
-                    linkLabel1.LinkColor = PRIMARY_TEXT_COLOR;
-                    lblContactoFallos.LinkColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de proyectos
-                    //
-                    tabProyectos.BackColor = TERTIARY_COLOR;
-                    tabProyectos.ForeColor = PRIMARY_TEXT_COLOR;    // Si afectamos esto, se cambia color de fuente en MDI
-                    panel4.BackColor = Color.Transparent;   // Titulo
-                    lblNodoDeProyectosSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel6.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreDeNodoSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    MDI_RIT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewProyectos.BackColor = TERTIARY_COLOR;
-                    treeViewProyectos.ForeColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de centro de control
-                    //
-                    tabCentroDeControl.BackColor = TERTIARY_COLOR;
-                    //tabCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;  // Si afectamos esto, se cambia color de fuente en MDI
-                    panel1.BackColor = Color.Transparent;   // Titulo
-                    lblNombreSeccion.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel3.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreNodoSeleccionado.ForeColor = SECONDARY_TEXT_COLOR;
-                    lblDescripcionDeNodo.ForeColor = SECONDARY_TEXT_COLOR;
-                    MDI_ACT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewCentroDeControl.BackColor = TERTIARY_COLOR;
-                    treeViewCentroDeControl.ForeColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Colores de los StatusStrips de los navegadores
-                    //
-                    statusStripForms.BackColor = TERTIARY_COLOR;
-                    statusStripForms.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripSDPGMXT.BackColor = TERTIARY_COLOR;
-                    statusStripSDPGMXT.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripSDPCompusof.BackColor = TERTIARY_COLOR;
-                    statusStripSDPCompusof.ForeColor = SECONDARY_TEXT_COLOR;
-                    statusStripEndPointcentral.BackColor = TERTIARY_COLOR;
-                    statusStripEndPointcentral.ForeColor = SECONDARY_TEXT_COLOR;
-                    #endregion
-
-                    saveThemeColors();
-                    break;
-                case "Light":
-                    #region CODIGO
-                    // Colores de fondo
-                    BG_COLOR = Color.FromArgb(224, 224, 224);
-                    SECONDARY_COLOR = Color.FromKnownColor(KnownColor.ControlLightLight);
-                    TERTIARY_COLOR = Color.FromKnownColor(KnownColor.ControlLight);
-                    FOURSOME_COLOR = Color.FromArgb(207, 207, 207);
-                    // Colores de texto
-                    PRIMARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.ControlText);
-
-                    /** Tema luminoso (Light) **/
-                    //
-                    // Establecemos los colores de la primera seccion
-                    //
-                    menuOpcionesDeProyectos.BackColor = BG_COLOR;
-                    menuOpcionesDeProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    tableLayoutPanelFondoGeneral.BackColor = BG_COLOR;
-                    //
-                    // Establecemos colores de fondo
-                    //
-                    //panelCentroAbajo.BackColor = SECONDARY_COLOR;
-                    //
-                    // Establecemos los colores de la barra multifuncional
-                    //
-                    tableLayoutPanelBarraMultifuncion.BackColor = SECONDARY_COLOR;
-                    linkLabel1.LinkColor = PRIMARY_TEXT_COLOR;
-                    lblContactoFallos.LinkColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de proyectos
-                    //
-                    tabProyectos.BackColor = TERTIARY_COLOR;
-                    tabProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel4.BackColor = Color.Transparent;   // Titulo
-                    lblNodoDeProyectosSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel6.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreDeNodoSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    MDI_RIT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewProyectos.BackColor = TERTIARY_COLOR;
-                    treeViewProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de centro de control
-                    //
-                    tabCentroDeControl.BackColor = TERTIARY_COLOR;
-                    //tabCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel1.BackColor = Color.Transparent;   // Titulo
-                    lblNombreSeccion.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel3.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreNodoSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    lblDescripcionDeNodo.ForeColor = PRIMARY_TEXT_COLOR;
-                    MDI_ACT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewCentroDeControl.BackColor = TERTIARY_COLOR;
-                    treeViewCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Colores de los StatusStrips de los navegadores
-                    //
-                    statusStripForms.BackColor = TERTIARY_COLOR;
-                    statusStripForms.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripSDPGMXT.BackColor = TERTIARY_COLOR;
-                    statusStripSDPGMXT.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripSDPCompusof.BackColor = TERTIARY_COLOR;
-                    statusStripSDPCompusof.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripEndPointcentral.BackColor = TERTIARY_COLOR;
-                    statusStripEndPointcentral.ForeColor = PRIMARY_TEXT_COLOR;
-                    #endregion
-
-                    saveThemeColors();
-                    break;
-                case "Dark Blue":
-                    #region CODIGO
-                    // Colores de fondo
-                    BG_COLOR = Color.FromArgb(0, 77, 121);
-                    SECONDARY_COLOR = Color.FromArgb(32, 90, 123);
-                    TERTIARY_COLOR = Color.FromArgb(64, 102, 124);
-                    FOURSOME_COLOR = Color.FromArgb(96, 115, 126);
-                    // Colores de texto
-                    PRIMARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.Snow);
-
-                    /** Tema Blue (oscuro) **/
-                    //
-                    // Establecemos los colores de la primera seccion
-                    //
-                    menuOpcionesDeProyectos.BackColor = BG_COLOR;
-                    menuOpcionesDeProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    tableLayoutPanelFondoGeneral.BackColor = BG_COLOR;
-                    //
-                    // Establecemos colores de fondo
-                    //
-                    //panelCentroAbajo.BackColor = SECONDARY_COLOR;
-                    //
-                    // Establecemos los colores de la barra multifuncional
-                    //
-                    tableLayoutPanelBarraMultifuncion.BackColor = SECONDARY_COLOR;
-                    linkLabel1.LinkColor = PRIMARY_TEXT_COLOR;
-                    lblContactoFallos.LinkColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de proyectos
-                    //
-                    tabProyectos.BackColor = TERTIARY_COLOR;
-                    tabProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel4.BackColor = Color.Transparent;   // Titulo
-                    lblNodoDeProyectosSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel6.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreDeNodoSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    MDI_RIT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewProyectos.BackColor = TERTIARY_COLOR;
-                    treeViewProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de centro de control
-                    //
-                    tabCentroDeControl.BackColor = TERTIARY_COLOR;
-                    //tabCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel1.BackColor = Color.Transparent;   // Titulo
-                    lblNombreSeccion.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel3.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreNodoSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    lblDescripcionDeNodo.ForeColor = PRIMARY_TEXT_COLOR;
-                    MDI_ACT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewCentroDeControl.BackColor = TERTIARY_COLOR;
-                    treeViewCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Colores de los StatusStrips de los navegadores
-                    //
-                    statusStripForms.BackColor = TERTIARY_COLOR;
-                    statusStripForms.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripSDPGMXT.BackColor = TERTIARY_COLOR;
-                    statusStripSDPGMXT.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripSDPCompusof.BackColor = TERTIARY_COLOR;
-                    statusStripSDPCompusof.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripEndPointcentral.BackColor = TERTIARY_COLOR;
-                    statusStripEndPointcentral.ForeColor = PRIMARY_TEXT_COLOR;
-                    #endregion
-
-                    saveThemeColors();
-                    break;
-                case "Light Blue":
-                    #region CODIGO
-                    // Colores de fondo
-                    BG_COLOR = Color.FromArgb(58, 163, 222);
-                    SECONDARY_COLOR = Color.FromKnownColor(KnownColor.ControlLight);
-                    TERTIARY_COLOR = Color.FromArgb(81, 151, 191);
-                    FOURSOME_COLOR = Color.FromArgb(104, 139, 159);
-                    // Colores de texto
-                    PRIMARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.Snow);
-                    SECONDARY_TEXT_COLOR = Color.FromKnownColor(KnownColor.ControlText);
-
-                    /** Tema Blue (luminoso) **/
-                    //
-                    // Establecemos los colores de la primera seccion
-                    //
-                    menuOpcionesDeProyectos.BackColor = BG_COLOR;
-                    menuOpcionesDeProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    tableLayoutPanelFondoGeneral.BackColor = BG_COLOR;
-                    //
-                    // Establecemos colores de fondo
-                    //
-                    //panelCentroAbajo.BackColor = SECONDARY_COLOR;
-                    //
-                    // Establecemos los colores de la barra multifuncional
-                    //
-                    tableLayoutPanelBarraMultifuncion.BackColor = SECONDARY_COLOR;
-                    linkLabel1.LinkColor = SECONDARY_TEXT_COLOR;
-                    lblContactoFallos.LinkColor = SECONDARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de proyectos
-                    //
-                    tabProyectos.BackColor = TERTIARY_COLOR;
-                    tabProyectos.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel4.BackColor = Color.Transparent;   // Titulo
-                    lblNodoDeProyectosSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel6.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreDeNodoSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    MDI_RIT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewProyectos.BackColor = TERTIARY_COLOR;
-                    treeViewProyectos.ForeColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Establecemos los colores del panel de centro de control
-                    //
-                    tabCentroDeControl.BackColor = TERTIARY_COLOR;
-                    //tabCentroDeControl.ForeColor = SECONDARY_TEXT_COLOR;
-                    panel1.BackColor = Color.Transparent;   // Titulo
-                    lblNombreSeccion.ForeColor = PRIMARY_TEXT_COLOR;
-                    panel3.BackColor = Color.Transparent;   // Descripcion
-                    lblNombreNodoSeleccionado.ForeColor = PRIMARY_TEXT_COLOR;
-                    lblDescripcionDeNodo.ForeColor = PRIMARY_TEXT_COLOR;
-                    MDI_ACT_Panel.BackColor = FOURSOME_COLOR;
-                    treeViewCentroDeControl.BackColor = TERTIARY_COLOR;
-                    treeViewCentroDeControl.ForeColor = PRIMARY_TEXT_COLOR;
-                    //
-                    // Colores de los StatusStrips de los navegadores
-                    //
-                    statusStripForms.BackColor = TERTIARY_COLOR;
-                    statusStripForms.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripSDPGMXT.BackColor = TERTIARY_COLOR;
-                    statusStripSDPGMXT.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripSDPCompusof.BackColor = TERTIARY_COLOR;
-                    statusStripSDPCompusof.ForeColor = PRIMARY_TEXT_COLOR;
-                    statusStripEndPointcentral.BackColor = TERTIARY_COLOR;
-                    statusStripEndPointcentral.ForeColor = PRIMARY_TEXT_COLOR;
                     #endregion
 
                     saveThemeColors();
@@ -689,7 +284,6 @@ namespace Flow_Solver
 
             #region CONFIGURACION ORIGINAL AL ABRIR FORMULARIO
             this.MinimumSize = this.Size;
-            this.pgrssbarAbrirFormularios.Visible = false;
 
             this.btnFuncion1.Text = "Importar datos de SAS (Ctrl + F1)";
             this.btnFuncion3.Text = "Guardar PDF e imprimir (Ctrl + F3)";
@@ -697,27 +291,6 @@ namespace Flow_Solver
             this.lblContactoFallos.Text = "¿Presentas fallos con el programa? ¡Reportalos aqui!";
 
             this.toolEliminarProyecto.Enabled = false;
-
-            #region PARAMETROS DE APERTURA DE LOS EXPLORADORES CHROMIUM Y EDGE
-            // Cargamos las paginas
-
-            // FORM COMPUSOF
-            this.webView_CompusofForms.EnsureCoreWebView2Async(null);
-            this.URL_RIT_Forms_Label.Text = URL_FORMS_ACTUAL;
-
-            // SAS COMPUSOF
-            this.webView_ServiceDeskCompusof.EnsureCoreWebView2Async(null);
-            this.URL_SDP_Compusof_Label.Text = URL_COMPUSOF_SAS_ACTUAL;
-
-            /*
-            Cef.Initialize(new cef);
-            CefSharpSettings asettings = new CefSharpSettings();
-
-            string cache_dir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\CEF";
-            asettings.CachePath = cache_dir;
-            asettings.CefCommandLineArgs.Add("persist_session_cookies", "1");
-            */
-            #endregion
             #endregion
 
             this.DoubleBuffered = true;
@@ -804,8 +377,6 @@ namespace Flow_Solver
         {
             _RitFileNamesQueue = filePaths;
 
-            this.pgrssbarAbrirFormularios.Visible = true;
-            this.pgrssbarAbrirFormularios.Maximum = _RitFileNamesQueue.Length;
             this.bgworkerMDIsFormsLoader.RunWorkerAsync();
         }
 
@@ -850,60 +421,6 @@ namespace Flow_Solver
              * SE OTORGAN LOS COMANDOS SEGUN SEA EL TABPAGE SELECCIONADO
              */
 
-            if (tabControl_Pages.SelectedTab == tabControl_Pages.TabPages["tabProyectos"])
-            {
-                #region CODIGO FUERA DE SERVICIO
-                ///* EN CASO DE QUE SE ESTE TRABAJANDO EN LA TABPAGE3 ("LLENAR RIT") */
-
-                //string AÑO;
-                //string MES;
-                //string path;
-
-                //DateTime fechaActual = DateTime.Now;
-                //AÑO = fechaActual.Year.ToString();
-                //MES = fechaActual.ToString("MMMM");
-                //path = Properties.Settings.Default.RITFormPathDestiny + $@"\RITs\{AÑO}\{MES}\";
-
-                //if (!Directory.Exists(path))
-                //{
-                //    Directory.CreateDirectory(path);
-                //}
-
-                //path_rit_destiny = path;
-
-                //// Impresion de RIT en base a datos guardados
-                //if (string.IsNullOrEmpty(this.txtFallaReportada.Text) | string.IsNullOrEmpty(this.txtUsuariofinal.Text))
-                //{
-                //    RJMessageBox.Show("No se puede asignar los datos! favor de llenar el campo de falla reportada y/o usuario final.", "Error - campos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                //}
-                //else
-                //{
-                //    FillPDFForm();
-                //    printPDFWithAcrobat(); // Imprimimos el archivo
-                //}
-                #endregion
-            }
-            else if (tabControl_Pages.SelectedTab == tabControl_Pages.TabPages["tabFormCompusof"])
-            {
-                /* EN CASO DE QUE SE ESTE TRABAJANDO EN LA TABPAGE4 ("SUBIR RIT") */
-
-                webView_CompusofForms.Focus();
-
-                project_selector_form frm = new project_selector_form(this, project_selector_form.ProjectSelectorSenders.SOLVE_FORM_TICKET);
-                frm.ShowDialog();
-
-                //Forms_Methods.FillCompusofForms(this.txtUsuariofinal.Text, this.txtNoDeEmpleado.Text, this.txtNoDeReporteDelCliente.Text, this.txtTecnico.Text, this.txtPoblacion.Text, mes_reporte, dia_reporte, año_reporte);
-            }
-            else if (tabControl_Pages.SelectedTab == tabControl_Pages.TabPages["tabServiceDeskGMXT"])
-            {
-                /*  EN CASO DE QUE SE ESTE TRABAJANDO EN LA TABPAGE4 (MESA DE GMXT)*/
-                /* CREAR MACRO PARA ACCESO AUTOMATICO A SAS GMXT */
-                SAS_Methods.EnterAccessSAS();
-            }
-            else if (tabControl_Pages.SelectedTab == tabControl_Pages.TabPages["tabServiceDeskCompusof"])
-            {
-                /* MESA DE COMPUSOF */
-            }
         }
 
 
@@ -927,7 +444,7 @@ namespace Flow_Solver
 
             // Configuracion de Proyectos
             this.lblNodoDeProyectosSeleccionado.Text = "Mis Proyectos";
-            this.lblNombreDeNodoSeleccionado.Text = "";
+            this.lblNombreNodoSeleccionado.Text = "";
 
             /* Inicializacion de TreeViews */
             // Arbol "Mis Proyectos"
@@ -1264,8 +781,6 @@ namespace Flow_Solver
                 {
                     _RitFileNamesQueue = openFileDialog1.FileNames;
 
-                    this.pgrssbarAbrirFormularios.Visible = true;
-                    this.pgrssbarAbrirFormularios.Maximum = openFileDialog1.FileNames.Length;
                     this.bgworkerMDIsFormsLoader.RunWorkerAsync();
                 }
             }
@@ -1349,12 +864,7 @@ namespace Flow_Solver
 
         private void recargarFormsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.webView_CompusofForms.CoreWebView2 != null)
-            {
-                CommonMethodsLibrary.OutMessage("out", this.Name, $"SE RECARGO LA URL '{URL_FORMS_ACTUAL}' DE 'chromiumWebBrowserRITForms'", "OKA");
 
-                this.webView_CompusofForms.CoreWebView2.Reload();
-            }
         }
 
         // SE RENOMBRO EL CONTROL DEL EVENTO DE SERVICEDESK COMPUSOF => ENDPOINTCENTRAL
@@ -1366,12 +876,7 @@ namespace Flow_Solver
         // SE RENOMBRO EL CONTROL DEL EVENTO DE ENDPOINTCENTRAL => SERVICEDESK COMPUSOF
         private void recargarEndpointCentralToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.webView_ServiceDeskCompusof.CoreWebView2 != null)
-            {
-                CommonMethodsLibrary.OutMessage("out", this.Name, $"SE RECARGO LA URL '{URL_COMPUSOF_SAS_ACTUAL}' DE 'chromiumWebBrowserManageEngineEndPoint'", "OKA");
-
-                this.webView_ServiceDeskCompusof.CoreWebView2.Reload();
-            }
+            
         }
         #endregion
 
@@ -1941,18 +1446,6 @@ namespace Flow_Solver
             #endregion
         }
 
-        #region CAMBIO DE DIRECCION URL DE LOS NAVEGADORES
-        private void webView_CompusofForms_NavigationStarting(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs e)
-        {
-            this.URL_RIT_Forms_Label.Text = e.Uri;
-        }
-
-        private void webView_ManageEngineEndpointCentral_NavigationStarting(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs e)
-        {
-            this.URL_SDP_Compusof_Label.Text = e.Uri;
-        }
-        #endregion
-
         private void toolCrearActividad_Click(object sender, EventArgs e)
         {
              // Creamos una nueva actividad
@@ -2219,16 +1712,6 @@ namespace Flow_Solver
             /* 
              * MOSTRAMOS LA NOTIFICACION DE ACTUALIZACION ENCONTRADAS
              * */
-        }
-
-        private void webView_ManageEngineEndpointCentral_CoreWebView2InitializationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs e)
-        {
-            this.webView_ServiceDeskCompusof.CoreWebView2.Navigate(URL_COMPUSOF_SAS_ACTUAL);
-        }
-
-        private void webView_CompusofForms_CoreWebView2InitializationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs e)
-        {
-            this.webView_CompusofForms.CoreWebView2.Navigate(URL_FORMS_ACTUAL);
         }
 
         private void panelMDIContainerActividades_ControlAdded(object sender, ControlEventArgs e)
@@ -2529,14 +2012,12 @@ namespace Flow_Solver
         {
             // Reestablecemos los valores a 0
             totalMdisAbiertos = 0;
-            this.pgrssbarAbrirFormularios.Visible = false;
             _RitFileNamesQueue = new string[] { "" };
         }
 
         private void bgworkerMDIsFormsLoader_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             // Actualizamos el progreso informado
-            this.pgrssbarAbrirFormularios.Value = e.ProgressPercentage;
         }
 
         private void main_Resize(object sender, EventArgs e)
@@ -2711,7 +2192,7 @@ namespace Flow_Solver
                 this.toolStrpBtnCerrarProyectoActual.Enabled = true;
 
                 //this.lblNodoDeProyectosSeleccionado.Text = e.Node.Parent.Text;
-                this.lblNombreDeNodoSeleccionado.Text = e.Node.Text;
+                this.lblNombreNodoSeleccionado.Text = e.Node.Text;
 
                 node_select = e.Node;
 
@@ -2758,7 +2239,8 @@ namespace Flow_Solver
                         RIT_FIRMADO = target.IsRitAlreadySigned.ToString();
                         RIT_COMPROBADO = target.IsRitAlreadyComprobado.ToString();
 
-                        RIT_ATENCION = target.lblFechaDeReporte.Text;
+                        //RIT_ATENCION = target.lblFechaDeReporte.Text;
+                        throw new Exception();
                     }
                     catch (Exception ex)
                     {
@@ -2767,7 +2249,7 @@ namespace Flow_Solver
                     }
                 }
 
-                this.lblNombreDeNodoSeleccionado.Text = $@"
+                this.lblNombreNodoSeleccionado.Text = $@"
 {e.Node.Text}
 Estado: {RIT_STATUS}
 Generado: {RIT_ATENCION}
@@ -2784,7 +2266,7 @@ Generado: {RIT_ATENCION}
                 this.toolEliminarProyecto.Enabled = false;
                 this.toolStrpBtnCerrarProyectoActual.Enabled = false;
 
-                this.lblNombreDeNodoSeleccionado.Text = String.Empty;
+                this.lblNombreNodoSeleccionado.Text = String.Empty;
             }
         }
 
@@ -2896,8 +2378,6 @@ Generado: {RIT_ATENCION}
                                                     .Select(r => r.FilePath)
                                                     .ToArray();
 
-                this.pgrssbarAbrirFormularios.Visible = true;
-                this.pgrssbarAbrirFormularios.Maximum = _RitFileNamesQueue.Length;
                 this.bgworkerMDIsFormsLoader.RunWorkerAsync();
             }
         }
